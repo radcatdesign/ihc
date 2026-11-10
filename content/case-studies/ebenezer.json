@@ -1,0 +1,442 @@
+{
+ "slug": "ebenezer",
+ "pageId": "6aa233735266f6afdfee13b2",
+ "seoTitle": "Ebenezer",
+ "description": "",
+ "noindex": false,
+ "title": "Ebenezer SDCC",
+ "client": "Paramount Pictures",
+ "subtitle": "",
+ "heroImage": {
+  "src": "/images/6ae2343f7b199ec705df943d_577A0924_7jECkGIL-p-2000.jpg",
+  "srcset": "/images/6ae2343f7b199ec705df943d_577A0924_7jECkGIL-p-500.jpg 500w, /images/6ae2343f7b199ec705df943d_577A0924_7jECkGIL-p-800.jpg 800w, /images/6ae2343f7b199ec705df943d_577A0924_7jECkGIL-p-1080.jpg 1080w, /images/6ae2343f7b199ec705df943d_577A0924_7jECkGIL-p-1600.jpg 1600w, /images/6ae2343f7b199ec705df943d_577A0924_7jECkGIL-p-2000.jpg 2000w",
+  "sizes": "100vw"
+ },
+ "heroVimeo": "",
+ "stats": [
+  {
+   "value": "1.2B+",
+   "label": "Social Reach"
+  },
+  {
+   "value": "40+",
+   "label": "Press Hits"
+  },
+  {
+   "value": "131M+",
+   "label": "Views"
+  },
+  {
+   "value": "$6M+",
+   "label": "Media Value"
+  }
+ ],
+ "services": [
+  {
+   "name": "Creative Concept",
+   "slug": "creative-concept"
+  },
+  {
+   "name": "Creative Direction",
+   "slug": "creative-direction"
+  },
+  {
+   "name": "Development",
+   "slug": "development"
+  },
+  {
+   "name": "Digital Strategy",
+   "slug": "digital-strategy"
+  },
+  {
+   "name": "Environment Design",
+   "slug": "environment-design"
+  },
+  {
+   "name": "Fabrication Production",
+   "slug": "fabrication-production"
+  },
+  {
+   "name": "Marketing",
+   "slug": "marketing"
+  },
+  {
+   "name": "Narrative Development",
+   "slug": "narrative-development"
+  },
+  {
+   "name": "Creators",
+   "slug": "creators"
+  }
+ ],
+ "headline": "“This is a lifetime experience.”<em> - @FALLGIRL2499</em>",
+ "intro": "ihc brought scrooge's victorian era office to sdcc for The launch of PARAMOUNT'S new film <em>ebenezer</em>.",
+ "introPieces": [
+  {
+   "type": "introGallery",
+   "media": [
+    {
+     "type": "image",
+     "src": "/images/6ac0509c5f590dd7a8396e55_IHEARTCOMICS_EBENEZER_COMICCON2026_07_23_153255-07397_AMV-1-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6ac0509c2b70c7dd170600ea_577A0814_ozkk7gcF-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6ac0509985edc228ca9465e6_DSC09779.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6ac0509b1f353525a37ddf32_IHEARTCOMICS_EBENEZER_COMICCON2026_0725_204645_201714-EDS-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6ac04e9d9f3d34c666624585_IHEARTCOMICS_EBENEZER_COMICCON2026_07_23_145044-9374_AMV-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6ac01af741d282b59328c2ec_577A0251_FCIlEoQ4-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6ac0509be1bdf8eccc077564_IHEARTCOMICS_EBENEZER_COMICCON2026_07_23_145016-9344_AMV-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6ac0509b84e660d1966db623_IHEARTCOMICS_EBENEZER_COMICCON2026_07_24_135939-08286_AMV-p-2000.avif",
+     "alt": ""
+    }
+   ],
+   "html": "<p><strong>IHC</strong> transformed a high-traffic location in the heart of SDCC into a large-scale, living diorama of Scrooge’s Victorian-era office, complete with a snow-covered exterior and richly detailed interiors that recreated the world of <em>Ebenezer</em> through immersive theatrical performances and evolving day-to-night moments.</p>\n<p>The activation culminated in a once-in-a-lifetime fan moment: <strong>a surprise appearance from Johnny Depp</strong>, with a cast of 12 actors. Paid and earned creators, including Johnny Depp superfans dressed as his iconic characters, were strategically positioned to capture and amplify the moment.</p>\n<p>The result was a dual-purpose activation that functioned as both a high-impact public spectacle, entertaining thousands of passing convention-goers without requiring them to wait in line, and a strategic content engine that provided a dedicated environment for press and creator content capture.</p>"
+  }
+ ],
+ "sections": [
+  {
+   "title": "The Build",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p>Over six days, we transformed a building in the San Diego Gaslamp Quarter into a faithful recreation of Scrooge &amp; Marley's Victornia-era shop. We replaced the existing awning, doors, and windows of our facade to fully immerse guests in the world of the upcoming film and bring some Christmas spirit to SDCC.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/6ac0378878038caad9b3c80c_IHEARTCOMIX_Build-11-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6ac0373f73b198c45ebaa43a_IHEARTCOMIX_Build-28-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6ac037877b94d4b52b846346_IHEARTCOMIX_Build-96-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6ac0373e18b0018c5cf2d10d_IHEARTCOMIX_Build-113-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6ac020b6f7926897cda6a0a5_IHEARTCOMIX_Build-130-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6ac020fba4e56a661a70c284_IHC_BuildDay2-89-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6ac01fb16dd493a4be664486_IHEARTCOMICS_EBENEZER_COMICCON2026_0725_200139_201611-EDS-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6ac01fb16eddba6df6bea5c4_IHEARTCOMICS_EBENEZER_COMICCON2026_07_24_213411-09400_AMV-p-2000.avif",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Exterior Details",
+   "pieces": [
+    {
+     "type": "text2",
+     "left": "<p>The exterior came to life with custom scenic animatronic details, including a jaw dropping Marley door knocker, haunted shutters, a swinging chandelier, and a supernatural clock that triggered cinematic moments. A perched animated crow and swinging Scrooge &amp; Marley storefront sign added more dynamic, story-driven moments. </p>",
+     "right": "<p>Snowfall and sound design enhanced the Victorian winter, building suspense for key narrative moments. As night fell, the experience transformed into a supernatural spectacle with ghostly apparitions, low-hanging fog, flickering candlelight, and illuminated exterior ice bringing the haunted Victorian setting to life.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/6ab81f6c345451158df1e229_IHEARTCOMICS_EBENEZER_COMICCON2026_07_23_180319-07927_AMV-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6ab81f6ce1d1384aa967edba_IHEARTCOMICS_EBENEZER_COMICCON2026_0725_201556_108996-EDS-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6ab81f6b8050d8f99bdd33f9_IHEARTCOMICS_EBENEZER_COMICCON2026_07_24_135814-08276_AMV-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6ab81f6b0d823bf32facd66e_IHEARTCOMICS_EBENEZER_COMICCON2026_07_23_123118-8743_AMV-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6ab81f6b599f8e93c92a7ece_IHEARTCOMICS_EBENEZER_COMICCON2026_07_23_150139-9671_AMV-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6ab81f6b345451158df1e1ff_IHEARTCOMICS_EBENEZER_COMICCON2026_07_23_113723-06818_AMV-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6ab81f6c346a3c97a7e0a5ae_IHEARTCOMICS_EBENEZER_COMICCON2026_07_23_211600-08128_AMV-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6ab81f6bf4abbf2c6f023c05_IHEARTCOMICS_EBENEZER_COMICCON2026_07_24_211046-09308_AMV-p-2000.avif",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Interior Details",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p>The interior featured a richly detailed set design, including Scrooge’s desk, a fireplace, and carefully curated details including various props sourced directly from the film that made the space feel full of life.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/6ac017f124248ce2928a8f65_IHEARTCOMICS_EBENEZER_COMICCON2026_07_24_153920-08539_AMV-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6ac017f1f4cee3f3935426dd_IHEARTCOMICS_EBENEZER_COMICCON2026_07_24_154421-08622_AMV-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6ac017f1d88579b4ab5dd766_IHEARTCOMICS_EBENEZER_COMICCON2026_07_24_153855-08534_AMV-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6ac0181b24248ce2928a9cd3_IHEARTCOMICS_EBENEZER_COMICCON2026_07_23_112654-06727_AMV.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6ac017f141d282b593278bb9_IHEARTCOMICS_EBENEZER_COMICCON2026_0725_182654_201577-EDS-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6ab81f6c7846f7eab4d13121_IHEARTCOMICS_EBENEZER_COMICCON2026_0725_183420_108962-EDS-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6ac017f1ff0fea1746d369da_IHEARTCOMICS_EBENEZER_COMICCON2026_07_24_154258-08594_AMV-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6ac017f1d88579b4ab5dd769_IHEARTCOMICS_EBENEZER_COMICCON2026_07_23_120658-06925_AMV-p-2000.avif",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Johnny Depp SUrprise",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p>For a mega surprise, Johnny Depp into character to rain his disdain for cheer upon SDCC attendees. Appearing in full costume and makeup, Johnny interacted with guests through live microphone-amplified commentary. To bring the world of Ebenezer to life beyond the main performance, a robust cast of Victorian-era characters interacted with Johnny and passerbyers throughout the day.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/6ac01add2b82955a90c85250_IHEARTCOMICS_EBENEZER_COMICCON2026_07_23_142230-9033_AMV-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6ac01addaf39fe52c9839219_IHEARTCOMICS_EBENEZER_COMICCON2026_07_23_171528-9793_AMV-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6ac01adcd978bcd02d190935_IHEARTCOMICS_EBENEZER_COMICCON2026_07_23_145722-9539_AMV-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6ac01adc280b29a709a9bed3_IHEARTCOMICS_EBENEZER_COMICCON2026_07_23_175106-07817_AMV-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6ac01adcfa53db869b7c82e1_IHEARTCOMICS_EBENEZER_COMICCON2026_07_24_180850-09087_AMV-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6ac01add6e576b413e474c2e_IHEARTCOMICS_EBENEZER_COMICCON2026_07_23_160726-07674_AMV-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6ac01adcf4cee3f393553810_IHEARTCOMICS_EBENEZER_COMICCON2026_07_24_131353-0244_AMV-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6ac01adb856eed9f8326b513_577A0646.avif",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "CREATOR amplification",
+   "pieces": [
+    {
+     "type": "text2",
+     "left": "<p>We developed a creator strategy built around affinity creators connected to Johnny Depp’s iconic characters, alongside general convention goers who could extend the story beyond the SDCC news cycle. </p>",
+     "right": "<p>In addition to creators, we strategically placed cosplayers with larger followings who were themselves Johnny Depp superfans, positioning them to be part of the surprise moment that ultimately went viral.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/6ac04b872807389b90d47e87_Story-5-logan_allison_.avif",
+       "alt": ""
+      },
+      {
+       "type": "video",
+       "embed": "<div class=\"w-video w-embed\" style=\"padding-top:177.76595744680853%\"><iframe allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture\" allowfullscreen=\"true\" class=\"embedly-embed\" frameborder=\"0\" height=\"1671\" scrolling=\"no\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F1232511602%3Fapp_id%3D122963&amp;dntp=1&amp;display_name=Vimeo&amp;url=https%3A%2F%2Fvimeo.com%2F1232511602%3Fshare%3Dcopy%26fl%3Dsv%26fe%3Dci&amp;image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F2207956251-15f1e53dc8706373a09cbeade4ac7e20c05d8710a395fb328a537e3252388cc4-d_640%3Fregion%3Dus&amp;type=text%2Fhtml&amp;schema=vimeo\" title=\"Ebenezer SDCC: Creator Content\" width=\"940\"></iframe></div>"
+      },
+      {
+       "type": "image",
+       "src": "/images/6ac04b875f590dd7a838c245_Post-2-chadhatter-WONT-DOWNLOAD-AS-VIDEO.avif",
+       "alt": ""
+      },
+      {
+       "type": "video",
+       "embed": "<div class=\"w-video w-embed\" style=\"padding-top:177.76595744680853%\"><iframe allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture\" allowfullscreen=\"true\" class=\"embedly-embed\" frameborder=\"0\" height=\"1671\" scrolling=\"no\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F1232511856%3Fapp_id%3D122963&amp;dntp=1&amp;display_name=Vimeo&amp;url=https%3A%2F%2Fvimeo.com%2F1232511856%3Fshare%3Dcopy%26fl%3Dsv%26fe%3Dci&amp;image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F2207956552-6e7cff0aad9810aa2aa16867806e1acb4025f8a8ec9c5274df99387df3bb3b19-d_640%3Fregion%3Dus&amp;type=text%2Fhtml&amp;schema=vimeo\" title=\"Ebenezer SDCC: Creator Content 2\" width=\"940\"></iframe></div>"
+      },
+      {
+       "type": "image",
+       "src": "/images/6ac04b87be85aba7df0084e3_Post-1-logan_allison_-WONT-DOWNLOAD-AS-VIDEO.avif",
+       "alt": ""
+      },
+      {
+       "type": "video",
+       "embed": "<div class=\"w-video w-embed\" style=\"padding-top:177.76595744680853%\"><iframe allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture\" allowfullscreen=\"true\" class=\"embedly-embed\" frameborder=\"0\" height=\"1671\" scrolling=\"no\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F1232512972%3Fapp_id%3D122963&amp;dntp=1&amp;display_name=Vimeo&amp;url=https%3A%2F%2Fvimeo.com%2F1232512972%3Fshare%3Dcopy%26fl%3Dsv%26fe%3Dci&amp;image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F2207957769-a915323f339f5bc0200a81df0813d614e0cd6a0957e54a5746e7a0628c727a7f-d_640%3Fregion%3Dus&amp;type=text%2Fhtml&amp;schema=vimeo\" title=\"Ebenezer SDCC: Creator Content 3\" width=\"940\"></iframe></div>"
+      },
+      {
+       "type": "image",
+       "src": "/images/6ac04b87d46e0009caf84b2f_Story-7-chadhatter.avif",
+       "alt": ""
+      },
+      {
+       "type": "video",
+       "embed": "<div class=\"w-video w-embed\" style=\"padding-top:177.76595744680853%\"><iframe allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture\" allowfullscreen=\"true\" class=\"embedly-embed\" frameborder=\"0\" height=\"1671\" scrolling=\"no\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F1240394239%3Fapp_id%3D122963&amp;dntp=1&amp;display_name=Vimeo&amp;url=https%3A%2F%2Fvimeo.com%2F1240394239%3Fshare%3Dcopy%26fl%3Dsv%26fe%3Dci&amp;image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F2218186700-522902b04ef229d4d8fc5b4e53c33258ff07bc7c3da125d6c6af8b9a27a705a9-d_640%3Fregion%3Dus&amp;type=text%2Fhtml&amp;schema=vimeo\" title=\"Ebenezer Interior Content [¼]\" width=\"940\"></iframe></div>"
+      },
+      {
+       "type": "video",
+       "embed": "<div class=\"w-video w-embed\" style=\"padding-top:177.76595744680853%\"><iframe allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture\" allowfullscreen=\"true\" class=\"embedly-embed\" frameborder=\"0\" height=\"1671\" scrolling=\"no\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F1240398498%3Fapp_id%3D122963&amp;dntp=1&amp;display_name=Vimeo&amp;url=https%3A%2F%2Fvimeo.com%2F1240398498%3Fshare%3Dcopy%26fl%3Dsv%26fe%3Dci&amp;image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F2218190772-635c889a7dd84e7bc6e7c21f045a8e80d4a64afe4150a9be6d3cac41487fbc62-d_640%3Fregion%3Dus&amp;type=text%2Fhtml&amp;schema=vimeo\" title=\"Ebenezer Interior Content [2:4]\" width=\"940\"></iframe></div>"
+      },
+      {
+       "type": "video",
+       "embed": "<div class=\"w-video w-embed\" style=\"padding-top:177.76595744680853%\"><iframe allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture\" allowfullscreen=\"true\" class=\"embedly-embed\" frameborder=\"0\" height=\"1671\" scrolling=\"no\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F1240399153%3Fapp_id%3D122963&amp;dntp=1&amp;display_name=Vimeo&amp;url=https%3A%2F%2Fvimeo.com%2F1240399153%3Fshare%3Dcopy%26fl%3Dsv%26fe%3Dci&amp;image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F2218191328-b2671eccd0d890a1af93eedff016f01d6660ee7d132f3ddd3707301ad01a77cf-d_640%3Fregion%3Dus&amp;type=text%2Fhtml&amp;schema=vimeo\" title=\"Ebenezer Interior Content [¾]\" width=\"940\"></iframe></div>"
+      },
+      {
+       "type": "video",
+       "embed": "<div class=\"w-video w-embed\" style=\"padding-top:177.76595744680853%\"><iframe allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture\" allowfullscreen=\"true\" class=\"embedly-embed\" frameborder=\"0\" height=\"1671\" scrolling=\"no\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F1240399207%3Fapp_id%3D122963&amp;dntp=1&amp;display_name=Vimeo&amp;url=https%3A%2F%2Fvimeo.com%2F1240399207%3Fshare%3Dcopy%26fl%3Dsv%26fe%3Dci&amp;image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F2218191344-69e6063ec432f45f154b312f4c6cf6712b5e6f465fcddf4e0a486b0248fe9fef-d_640%3Fregion%3Dus&amp;type=text%2Fhtml&amp;schema=vimeo\" title=\"Ebenezer Interior Content [4:4]\" width=\"940\"></iframe></div>"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "WATCH THE RECAP",
+   "pieces": [
+    {
+     "type": "video",
+     "embed": "<div class=\"p-cs__video__el w-video w-embed\" style=\"padding-top:56.27659574468085%\"><iframe allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture\" allowfullscreen=\"true\" class=\"embedly-embed\" frameborder=\"0\" height=\"529\" scrolling=\"no\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F1225498777%3Fapp_id%3D122963&amp;dntp=1&amp;display_name=Vimeo&amp;url=https%3A%2F%2Fvimeo.com%2F1225498777%3Fshare%3Dcopy%26fl%3Dsv%26fe%3Dci&amp;image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F2199239796-c1bf427fcaa61ef4bdd4ffaae34f6ddeca67c228405a19c98e63c1d7db4eaf59-d_1280%3Fregion%3Dus&amp;type=text%2Fhtml&amp;schema=vimeo\" title=\"Paramount: Ebenezer SDCC\" width=\"940\"></iframe></div>"
+    }
+   ]
+  }
+ ],
+ "listing": {
+  "listed": true,
+  "work": {
+   "summary": "We transformed a building within the heart of SDCC into a large-scale, living diorama of Scrooge’s Victorian-era office.",
+   "href": "/case-studies-items/ebenezer",
+   "month": "Jul",
+   "year": "2026",
+   "bg": {
+    "src": "/images/6ae2343f7b199ec705df943d_577A0924_7jECkGIL-p-2000.jpg",
+    "srcset": "/images/6ae2343f7b199ec705df943d_577A0924_7jECkGIL-p-500.jpg 500w, /images/6ae2343f7b199ec705df943d_577A0924_7jECkGIL-p-800.jpg 800w, /images/6ae2343f7b199ec705df943d_577A0924_7jECkGIL-p-1080.jpg 1080w, /images/6ae2343f7b199ec705df943d_577A0924_7jECkGIL-p-1600.jpg 1600w, /images/6ae2343f7b199ec705df943d_577A0924_7jECkGIL-p-2000.jpg 2000w",
+    "sizes": "100vw",
+    "data-bg": "/images/6ae2343f7b199ec705df943d_577A0924_7jECkGIL-p-1600.jpg",
+    "alt": ""
+   }
+  },
+  "home": {
+   "showHomepage": true,
+   "category": "Film",
+   "image": "/images/6ae2343f7b199ec705df943d_577A0924_7jECkGIL-t800.webp",
+   "gif": "",
+   "vimeo": "",
+   "ip": "",
+   "award": false,
+   "awardTitle": "",
+   "awardLogo1": "",
+   "awardLogo2": "",
+   "video": ""
+  }
+ }
+}

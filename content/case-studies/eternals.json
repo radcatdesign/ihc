@@ -1,0 +1,162 @@
+{
+ "slug": "eternals",
+ "pageId": "6614c620acc7d0e019013d29",
+ "seoTitle": "Eternals",
+ "description": "IHC tapped notable music and portrait photographer Jesse Lirola to capture talent at the world premiere of *Eternals*.",
+ "noindex": false,
+ "title": "Eternals",
+ "client": "Marvel Studios • Disney",
+ "subtitle": "ETERNALS PREMIERE PHOTOGRAPHY",
+ "heroImage": {
+  "src": "/images/660b6f6bab76e57af2b06e5b_65ea244f8c09d74da7f7294c_l1140114.avif"
+ },
+ "heroVimeo": "",
+ "stats": [],
+ "services": [
+  {
+   "name": "Content Production",
+   "slug": "content-production"
+  },
+  {
+   "name": "Creative Concept",
+   "slug": "creative-concept"
+  },
+  {
+   "name": "Creative Direction",
+   "slug": "creative-direction"
+  }
+ ],
+ "headline": "",
+ "intro": "we came with the mission to return hollywood glamour to the blue \"eternals\" carpet.",
+ "introPieces": [
+  {
+   "type": "introGallery",
+   "media": [
+    {
+     "type": "image",
+     "src": "/images/6614c65cd0f237f4dfc3bda0_l1140070-1800x-min.webp",
+     "alt": ""
+    }
+   ],
+   "html": "<p>IHC tapped music and portrait photographer <strong>Jesse Lirola </strong>to capture talent at the world premiere of<em> </em><strong><em>Eternals </em></strong>on the blue carpet<em>. </em></p>\n<p>Notable cast members captured included Salma Hayek, Angelina Jolie Lia McHugh, Don Lee, Bryan Tyree Henry, Richard Madden, Kit Harrington, Kumail Nanjiani, and Lauren Ridlof, along with Oscar Award-winning Director Chloe Zhao.</p>\n<p>‍</p>"
+  }
+ ],
+ "sections": [
+  {
+   "title": "Blue carpet bts",
+   "pieces": [
+    {
+     "type": "text2",
+     "left": "<p>Fashioned after the highly stylized, behind-the-scenes portraits typically reserved for talent backstage at Oscars, Jesse brought his expert eye to the blue carpet to provide elevated talent and atmospheric snapshots worthy of the film.</p>\n<p>‍</p>",
+     "right": "<p>Color, black and white and polaroid selects were provided the morning after to share with fans across Disney’s socials.</p>"
+    },
+    {
+     "type": "fullGallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/6614c65b063b64169cffe7cf_l1340091-1800x-min.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6614c66186e358fe93d23445_angelina-1800x-min.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6614c65bbf7ea0b80332517b_l1060554-1800x-min.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6614c65b98c5b426bb13180f_l1550413-1800x-min.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6614c65cd73cc92eed0d4782_l1140137-1800x-min.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6614c65b9bb33b0cb1bac1dd_l1140060-1800x-min.webp",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "glamour showcase",
+   "pieces": [
+    {
+     "type": "text2",
+     "left": "<p>Jesse Lirola was additionally tasked to capture relevant influencers at the premiere to showcase the overall glamor and excitement of the scene. Such notables included Taika Watiti, Thundercat, Patrick Starr, Rita Ora, Jeffery Wright, Bella Poarch, and The Merrell Twins.</p>",
+     "right": "<p>All content was then edited and shared via Marvel Studios socials the following morning as an ‘About last night’ post. The pics were a major hit inspiring several pick-ups in the media and sharing from the cast directly. Disney was so pleased with the response that IHC was immediately hired to perform the same task for West Side Story.</p>\n<p>‍</p>"
+    },
+    {
+     "type": "fullGallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/6614c6e9bfb66db129dd9cda_l1140120-1800x-min.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6614c6e998c5b426bb13886a_l1550175-2-1800x-min.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6614c6ea46871afa53006b88_l1550192-2-1800x-min.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6614c6e992650775a82d373f_l1550388-2-1800x-min.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6614c6e9b5afde395dbb7794_l1550580-1800x-min.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6614c6e9c952b41275279686_l1550617-1800x-min.webp",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "listing": {
+  "listed": true,
+  "work": {
+   "summary": "IHC tapped notable music and portrait photographer Jesse Lirola to capture talent at the world premiere of Eternals.",
+   "href": "/case-studies-items/eternals",
+   "month": "Oct",
+   "year": "2021",
+   "bg": {
+    "src": "/images/660b6f6bab76e57af2b06e5b_65ea244f8c09d74da7f7294c_l1140114.avif",
+    "alt": ""
+   }
+  },
+  "home": {
+   "showHomepage": false,
+   "category": "Film",
+   "image": "/images/660b6f6bab76e57af2b06e5b_65ea244f8c09d74da7f7294c_l1140114-t800.webp",
+   "gif": "",
+   "vimeo": "",
+   "ip": "",
+   "award": false,
+   "awardTitle": "",
+   "awardLogo1": "",
+   "awardLogo2": "",
+   "video": ""
+  }
+ }
+}

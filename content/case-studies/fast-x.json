@@ -1,0 +1,180 @@
+{
+ "slug": "fast-x",
+ "pageId": "661e007bbe6ebf99dd91f918",
+ "seoTitle": "Fast X",
+ "description": "",
+ "noindex": false,
+ "title": "Fast X",
+ "client": "Universal Pictures",
+ "subtitle": "",
+ "heroImage": {
+  "src": "/images/66c479255ea65af9b5d7d350_FastX.avif"
+ },
+ "heroVimeo": "834896868?h=abccfc8f4c",
+ "stats": [],
+ "services": [],
+ "headline": "",
+ "intro": "DURING THE STAR-STUDDED FAST-X TRAILER PREMIERE, IHC PRODUCED ICONIC PHOTO MOMENTS placing GUESTS IN THE HEART OF the FAST &amp; FURIOUS.",
+ "introPieces": [
+  {
+   "type": "introGallery",
+   "media": [
+    {
+     "type": "image",
+     "src": "/images/6a69278eb8c27f5bbdfa9638_YASI1146.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6a69278f333eab61cdc9a602_YASI1183.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6a69278fc68a91b5c70cde99_YASI1024.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6a69278f82f65f52be5f7451_YASI0958.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6a69278fbb5b685fa25692bd_YASI0882.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6a69278e654165b9b0f625ed_YASI1118.avif",
+     "alt": ""
+    }
+   ],
+   "html": "<p>Universal tapped IHC to create two memorable photo moments at their Fast X trailer premiere event. At the end of each Fast film, the beloved family reunites in Dom's backyard, marking a moment of connection and celebration after their challenging adventures. IHC paid homage to this iconic scene, recreating the setting to allow fans the opportunity to join the gathering.</p>\n<p>Additionally, we allowed fans to become a part of the trailer themselves with our Continous Cars video opp. IHC supported Lost Legion in bringing this photo moment to hundreds of Fast &amp; Furious fans at the event. </p>"
+  }
+ ],
+ "sections": [
+  {
+   "title": "FAMILY COOKOUT PHOTO",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p>A combined practical set and green screen video booth provided a chance for fans to create a sharable video on one side and capture pictures with their friends on the other. Hundreds of fans participated, including the film’s director himself!</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/661e01939543d43b5e6f5eb2_1676004446-125-1800x.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/661e0193de149e31007770c2_1675992988-11-1800x.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/661e01943587e5adbe83d4ec_1676002645-67-1800x.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/661e01932c111e6a3b1d20df_1676005770-145-1800x.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/661e019392011b9fadee4677_1676000665-29-1800x.webp",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "FAMILY COOKOUT VIDEO",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p>This video opp allowed fans to become a part of the just-revealed trailer themselves! IHC provided onsite event support and output delivery to all guests. Everyone at the event was clamoring for a chance to sit in the hot seat.</p>"
+    },
+    {
+     "type": "video",
+     "embed": "<div class=\"p-cs__video__el w-video w-embed\" style=\"padding-top:56.27659574468085%\"><iframe allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture\" allowfullscreen=\"true\" class=\"embedly-embed\" frameborder=\"0\" height=\"529\" scrolling=\"no\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F1213734721%3Fapp_id%3D122963&amp;dntp=1&amp;display_name=Vimeo&amp;url=https%3A%2F%2Fvimeo.com%2F1213734721%3Fshare%3Dcopy%26fl%3Dsv%26fe%3Dci&amp;image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F2184473484-f719b244d4bc832580b5e4c226dbcdd2f6beafa2ade672e4d6d3f9965fa22d48-d_1280%3Fregion%3Dus&amp;type=text%2Fhtml&amp;schema=vimeo\" title=\"Fast X: Family Cookout Video Output\" width=\"940\"></iframe></div>"
+    }
+   ]
+  },
+  {
+   "title": "CONTINUOUS CARS",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p>This video opp allowed fans to become a part of the just-revealed trailer themselves! IHC provided onsite event support and output delivery to all guests. Everyone at the event was clamoring for a chance to sit in the hot seat.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "video",
+       "embed": "<div class=\"w-video w-embed\" style=\"padding-top:100%\"><iframe allowfullscreen=\"\" class=\"embedly-embed\" height=\"940\" scrolling=\"no\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F835607470%3Fh%3Dbe8b160d1b%26app_id%3D122963&amp;dntp=1&amp;display_name=Vimeo&amp;url=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F835607470%3Fh%3Dbe8b160d1b&amp;image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F1683132058-dcb307ea419a60f4dedf42273e9149fed1b9af38347a1a1ba9f016df2fdc8cb9-d_960&amp;key=96f1f04c5f4143bcb0f2e68c87d65feb&amp;type=text%2Fhtml&amp;schema=vimeo\" title=\"1676004422_67\" width=\"940\"></iframe></div>"
+      },
+      {
+       "type": "video",
+       "embed": "<div class=\"w-video w-embed\" style=\"padding-top:100%\"><iframe allowfullscreen=\"\" class=\"embedly-embed\" height=\"940\" scrolling=\"no\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F835607509%3Fh%3Da30409c7ee%26app_id%3D122963&amp;dntp=1&amp;display_name=Vimeo&amp;url=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F835607509%3Fh%3Da30409c7ee&amp;image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F1683132099-cab46305e41e441af20793c64ff93d856f09629dea096f641f77fd3bde9a187c-d_960&amp;key=96f1f04c5f4143bcb0f2e68c87d65feb&amp;type=text%2Fhtml&amp;schema=vimeo\" title=\"1676004697_71\" width=\"940\"></iframe></div>"
+      },
+      {
+       "type": "video",
+       "embed": "<div class=\"w-video w-embed\" style=\"padding-top:100%\"><iframe allowfullscreen=\"\" class=\"embedly-embed\" height=\"940\" scrolling=\"no\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F835607544%3Fh%3D140cdcb6c0%26app_id%3D122963&amp;dntp=1&amp;display_name=Vimeo&amp;url=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F835607544%3Fh%3D140cdcb6c0&amp;image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F1683132259-43ccf81fb71f6ced9b6a8a3996ffb8acab2ef43574f4ceb22290a95565d80b7e-d_960&amp;key=96f1f04c5f4143bcb0f2e68c87d65feb&amp;type=text%2Fhtml&amp;schema=vimeo\" title=\"1676004979_74\" width=\"940\"></iframe></div>"
+      },
+      {
+       "type": "video",
+       "embed": "<div class=\"w-video w-embed\" style=\"padding-top:100%\"><iframe allowfullscreen=\"\" class=\"embedly-embed\" height=\"940\" scrolling=\"no\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F835607574%3Fh%3D00cb52ab74%26app_id%3D122963&amp;dntp=1&amp;display_name=Vimeo&amp;url=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F835607574%3Fh%3D00cb52ab74&amp;image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F1683132265-9d3ea54e4c24a59883b60e67f3b2fa12d0183dfee51e44843261fdb4c0cb476c-d_960&amp;key=96f1f04c5f4143bcb0f2e68c87d65feb&amp;type=text%2Fhtml&amp;schema=vimeo\" title=\"1676006394_92\" width=\"940\"></iframe></div>"
+      },
+      {
+       "type": "video",
+       "embed": "<div class=\"w-video w-embed\" style=\"padding-top:100%\"><iframe allowfullscreen=\"\" class=\"embedly-embed\" height=\"940\" scrolling=\"no\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F835607439%3Fh%3D1a596a72b0%26app_id%3D122963&amp;dntp=1&amp;display_name=Vimeo&amp;url=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F835607439%3Fh%3D1a596a72b0&amp;image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F1683132074-e9a8fa85c4b4bdb4810ed7ed2c916798dd92a73121f5b82afb9f20518d5ff133-d_960&amp;key=96f1f04c5f4143bcb0f2e68c87d65feb&amp;type=text%2Fhtml&amp;schema=vimeo\" title=\"1676002218_39\" width=\"940\"></iframe></div>"
+      }
+     ],
+     "dataClass": ""
+    }
+   ]
+  },
+  {
+   "title": "WATCH THE RECAP",
+   "pieces": [
+    {
+     "type": "video",
+     "embed": "<div class=\"p-cs__video__el w-video w-embed\" style=\"padding-top:56.27659574468085%\"><iframe allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture\" allowfullscreen=\"true\" class=\"embedly-embed\" frameborder=\"0\" height=\"529\" scrolling=\"no\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F1213722468%3Fapp_id%3D122963&amp;dntp=1&amp;display_name=Vimeo&amp;url=https%3A%2F%2Fvimeo.com%2F1213722468%3Fshare%3Dcopy%26fl%3Dsv%26fe%3Dci&amp;image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F2184458419-69e796f39c41ef3ccca1d9848436869ef60165447be5ca31a8f9dc60ed0adcf0-d_1280%3Fregion%3Dus&amp;type=text%2Fhtml&amp;schema=vimeo\" title=\"Universal Pictures: Fast X\" width=\"940\"></iframe></div>"
+    }
+   ]
+  }
+ ],
+ "listing": {
+  "listed": true,
+  "work": {
+   "summary": "",
+   "href": "/case-studies-items/fast-x",
+   "month": "Feb",
+   "year": "2023",
+   "bg": {
+    "src": "/images/66c479255ea65af9b5d7d350_FastX.avif",
+    "alt": ""
+   }
+  },
+  "home": {
+   "showHomepage": false,
+   "category": "",
+   "image": "/images/66c479255ea65af9b5d7d350_FastX-t800.webp",
+   "gif": "/images/673ce3f205cbba3e9dfe58d2_Fast-X-min.webp",
+   "vimeo": "834896868?h=abccfc8f4c",
+   "ip": "",
+   "award": false,
+   "awardTitle": "",
+   "awardLogo1": "",
+   "awardLogo2": "",
+   "video": ""
+  }
+ }
+}

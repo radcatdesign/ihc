@@ -1,0 +1,184 @@
+{
+ "slug": "a-haunting-in-venice",
+ "pageId": "6a7631014697b3c02103b441",
+ "seoTitle": "A Haunting in Venice",
+ "description": "",
+ "noindex": false,
+ "title": "A Haunting in Venice",
+ "client": "20th Century Studios",
+ "subtitle": "",
+ "heroImage": {
+  "src": "/images/6a763439dc7cb86e310fe01e_09062023-Haunting-in-Venice-Screening-101987-p-2000.jpeg",
+  "srcset": "/images/6a763439dc7cb86e310fe01e_09062023-Haunting-in-Venice-Screening-101987-p-500.jpeg 500w, /images/6a763439dc7cb86e310fe01e_09062023-Haunting-in-Venice-Screening-101987-p-800.jpeg 800w, /images/6a763439dc7cb86e310fe01e_09062023-Haunting-in-Venice-Screening-101987-p-1080.jpeg 1080w, /images/6a763439dc7cb86e310fe01e_09062023-Haunting-in-Venice-Screening-101987-p-1600.jpeg 1600w, /images/6a763439dc7cb86e310fe01e_09062023-Haunting-in-Venice-Screening-101987-p-2000.jpeg 2000w",
+  "sizes": "100vw"
+ },
+ "heroVimeo": "",
+ "stats": [
+  {
+   "value": "1.2M+",
+   "label": "SOCIAL REACH"
+  }
+ ],
+ "services": [
+  {
+   "name": "Creative Direction",
+   "slug": "creative-direction"
+  },
+  {
+   "name": "Event Production",
+   "slug": "event-production"
+  },
+  {
+   "name": "Environment Design",
+   "slug": "environment-design"
+  },
+  {
+   "name": "Influencer Guestlist",
+   "slug": "influencer-guestlist"
+  }
+ ],
+ "headline": "",
+ "intro": "IHC WORKED WITH 20TH CENTURY TO ELEVATE THEIR BI-COASTAL PREMIeRES OF <em>A HAUNTING IN VENICE</em>.",
+ "introPieces": [
+  {
+   "type": "introGallery",
+   "media": [
+    {
+     "type": "image",
+     "src": "/images/6a763b98ca6ec4102df94cc5__R1A5897.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6a763b9881e6948522bdd82f__R1A5852.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6a764a8211ad40ae75c720b1_09062023-Haunting-in-Venice-Screening-206005.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6a763b9b6e035aa34e44e578_09062023-Haunting-in-Venice-Screening-206042.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6a763b995282d2cbf0430392_09062023-Haunting-in-Venice-Screening-205626.avif",
+     "alt": ""
+    }
+   ],
+   "html": "<p>For the launch of the latest Agatha Christie adaptation, <em>A Haunting in Venice</em>, IHC worked wtih 20th Century Studios to support dueling screenings across the coast in Los Angeles and New York City. </p>\n<p>We amplified the events with an interactive photo opp, in-world brand ambassadors, themed snacks, and targeted invite outreach.</p>"
+  }
+ ],
+ "sections": [
+  {
+   "title": "THE SCREENINGS",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p>In NYC, moody decor, themed refreshments, and costumed brand ambassadors immersed guests within the SVA Theatre. The Cobrasnake captured candid guest photos throughout the night. At the Roosevelt Hotel in LA, our brand ambassadors in masks and cloaks, provided a spooky element to the screening event while running the photo booth. </p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/6a763b990c41962ba3fc55a5_09062023-Haunting-in-Venice-Screening-102857.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a763b9846ca0785f6731605__R1A5843.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a763b998faed5229f6f149f_09062023-Haunting-in-Venice-Screening-205356.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a763b97505d6eb14d007777__R1A5700.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a763b999a37e83d61e8f820_09062023-Haunting-in-Venice-Screening-205931.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a764a81555da2c1c915c6c1__R1A5732.avif",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "PHOTO MOMENT",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p>Guests could participate in the Seance Photo Booth, a group photo experience with spooky results! Guests received a branded digital copy to share on socials.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/6a763b15d424c21de397b01b_2023_09_06_VENICE-148-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a763b15eaaf6b3fa987a288_2023_09_06_VENICE-109-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a763b163557d7bef905b2bd_184728.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a763b160c6ebe03a8c4733d_181808.avif",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "listing": {
+  "listed": true,
+  "work": {
+   "summary": "IHC worked with 20th Century to create an immersive experience followed by a private screening of A Haunting in Venice.",
+   "href": "/case-studies-items/a-haunting-in-venice",
+   "month": "Sep",
+   "year": "2023",
+   "bg": {
+    "src": "/images/6a763439dc7cb86e310fe01e_09062023-Haunting-in-Venice-Screening-101987-p-2000.jpeg",
+    "srcset": "/images/6a763439dc7cb86e310fe01e_09062023-Haunting-in-Venice-Screening-101987-p-500.jpeg 500w, /images/6a763439dc7cb86e310fe01e_09062023-Haunting-in-Venice-Screening-101987-p-800.jpeg 800w, /images/6a763439dc7cb86e310fe01e_09062023-Haunting-in-Venice-Screening-101987-p-1080.jpeg 1080w, /images/6a763439dc7cb86e310fe01e_09062023-Haunting-in-Venice-Screening-101987-p-1600.jpeg 1600w, /images/6a763439dc7cb86e310fe01e_09062023-Haunting-in-Venice-Screening-101987-p-2000.jpeg 2000w",
+    "sizes": "100vw",
+    "data-bg": "/images/6a763439dc7cb86e310fe01e_09062023-Haunting-in-Venice-Screening-101987-p-1600.jpeg",
+    "alt": ""
+   }
+  },
+  "home": {
+   "showHomepage": false,
+   "category": "Film",
+   "image": "/images/6a763439dc7cb86e310fe01e_09062023-Haunting-in-Venice-Screening-101987-t800.webp",
+   "gif": "",
+   "vimeo": "",
+   "ip": "",
+   "award": false,
+   "awardTitle": "",
+   "awardLogo1": "",
+   "awardLogo2": "",
+   "video": ""
+  }
+ }
+}

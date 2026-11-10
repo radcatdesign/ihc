@@ -1,0 +1,285 @@
+{
+ "slug": "dullsville-and-the-doodleverse",
+ "pageId": "6753039abdf2c0d7d96fb515",
+ "seoTitle": "Dullsville and the Doodleverse",
+ "description": "",
+ "noindex": false,
+ "title": "Dullsville and the Doodleverse",
+ "client": "Doodles",
+ "subtitle": "",
+ "heroImage": {
+  "src": "/images/67530d98c543a1f2ed24edf8_doodles-index.webp",
+  "srcset": "/images/67530d98c543a1f2ed24edf8_doodles-index-p-500.webp 500w, /images/67530d98c543a1f2ed24edf8_doodles-index-p-800.webp 800w, /images/67530d98c543a1f2ed24edf8_doodles-index-p-1080.webp 1080w, /images/67530d98c543a1f2ed24edf8_doodles-index.webp 1138w",
+  "sizes": "100vw"
+ },
+ "heroVimeo": "",
+ "stats": [
+  {
+   "value": "176M+",
+   "label": "PRESS IMPRESSIONS"
+  },
+  {
+   "value": "56M+",
+   "label": "SOCIAL IMPRESSIONS"
+  },
+  {
+   "value": "900+",
+   "label": "GUESTS"
+  }
+ ],
+ "services": [
+  {
+   "name": "Creative Concept",
+   "slug": "creative-concept"
+  },
+  {
+   "name": "Creative Direction",
+   "slug": "creative-direction"
+  },
+  {
+   "name": "Environment Design",
+   "slug": "environment-design"
+  },
+  {
+   "name": "Event Production",
+   "slug": "event-production"
+  },
+  {
+   "name": "Fabrication Production",
+   "slug": "fabrication-production"
+  }
+ ],
+ "headline": "\"The creativity behind it is so cool. It’s such a different world.” - Coi Leray",
+ "intro": "<em>DOODLES PARTNERED WITH IHC FOR THE DEBUT OF DULLESVILLE AND THE DOODLEVERSE </em>'S AT TIFF.",
+ "introPieces": [
+  {
+   "type": "introGallery",
+   "media": [
+    {
+     "type": "image",
+     "src": "/images/6753083bd43a64ed95f6608c_doodles_main-02-p-2000.webp",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6753083b5447afd7f6c2f6c7_doodles_main-01-p-2000.webp",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6753083c90253e77ac5ea95f_doodles_main-03-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6753083a14844b935f3584d6_doodles_main-04-p-2000.webp",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6753083be2f0cebc548cb3ea_doodles_main-05-p-2000.webp",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6753032c74f792f09d150172_doodles_merch-09-p-2000.webp",
+     "alt": ""
+    }
+   ],
+   "html": "<p><strong>Doodles</strong>, the NFT brand known for its playful characters and joyful use of colors, sought a creative partner to help premiere their original film to the world at the <strong>Toronto International Film Festival</strong>. </p>\n<p>IHC was enlisted to translate the brand and its ethos into a memorable red carpet debut coupled with a who’s who celebratory party. Months of teasers, original music releases, and production development culminated in an immersive evening with musical stars <strong>Pharrell</strong>, <strong>Coi Leray</strong>, <strong>Trippie Redd,</strong> and more in attendance.</p>"
+  }
+ ],
+ "sections": [
+  {
+   "title": "IMMERSIVE DECOR",
+   "pieces": [
+    {
+     "type": "text2",
+     "left": "<p>Giant rainbow drips were projected onto the exterior of our venue, <strong>Design Exchange</strong>, creating a striking and colorful arrival moment. Guests walked through a rainbow portal onto the pink carpet. </p>",
+     "right": "<p>Inside showcased a fully animated world with floor to ceiling projections across the main walls that evolved throughout the evening. Lush plant arrangements completed the aesthetic.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/6a74384bb6815eb1f045ca0d_DOODLE-126_1-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a74384af0f1ba26b2d10dcf_UptownMedia_BA907232_1-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a74384bb126e803c9e7fd1e_UptownMedia_BA908750_1-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6753032a584857558b3eeb82_doodles_decor-05-p-2000.jpg",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6753032a92e4547acc19f817_doodles_decor-06-p-2000.jpg",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6753032d0029d4bfca378dfb_doodles_decor-10-p-2000.webp",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "party & screening",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p>Inside, a virtual tour de force on the international club and special event circuit,<strong> DJ Spider</strong> spun live all night long to keep the dance floor grooving. As guests accumulated, we screened two brand new Doodles music videos, followed by CEO Julian Holguin introducing the premiere of <strong><em>Dullsillve and the Doodleverse</em></strong> to the crowd. The moment closed out with another debut of an unreleased Doodles track.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/6753032def57e0a002421119_doodles_party-02-p-2000.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6753032c2b97ea44609b6b05_doodles_party-03-p-2000.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6753032c1b4a9b28a1582fe8_doodles_party-05-p-2000.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6753032cc92ee38a89045f91_doodles_party-04-p-2000.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/675302b7ef57e0a002419b1b_doodles_party-08-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a74392ed98f53bd0e6092ba_UptownMedia_UTM03261-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6753032c3b717bc22461cfb3_doodles_party-11-p-2000.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6753032cb1c44be7ea761c83_doodles_party-07-p-2000.webp",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "merch store",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p>The boutique-style merch store was a custom-built space offering exclusive Doodles products for purchase, including brand collaboration pieces with <strong>G-SHOCK</strong>, <strong>Jibbitz</strong>, <strong>Adidas,</strong> and <strong>Arizona Iced Tea</strong>.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/6753032a701a596c426c67ee_doodles_merch-01-p-2000.jpg",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6753032c75066e82570ef5a5_doodles_merch-08-p-2000.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6753032a0680178905c24318_doodles_merch-06-p-2000.jpg",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6753032a5d7f6b5422093105_doodles_merch-04-p-2000.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6753032a43216731848fa91b_doodles_merch-02-p-2000.jpg",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6753032ac92ee38a89045d4c_doodles_merch-03-p-2000.jpg",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6753032a584857558b3eeb66_doodles_merch-07-p-2000.jpg",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6753032aee0ac68eea09634e_doodles_merch-05-p-2000.jpg",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "watch the recap",
+   "pieces": [
+    {
+     "type": "video",
+     "embed": "<div class=\"p-cs__video__el w-video w-embed\" style=\"padding-top:56.27659574468085%\"><iframe allowfullscreen=\"\" class=\"embedly-embed\" height=\"529\" scrolling=\"no\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F1028936377%3Fapp_id%3D122963&amp;dntp=1&amp;display_name=Vimeo&amp;url=https%3A%2F%2Fvimeo.com%2F1028936377&amp;image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F1957774697-48b474e85d7743a924355a0d77af60f0257a0367242f76403732cdf668053723-d_1280&amp;type=text%2Fhtml&amp;schema=vimeo\" title=\"Doodles: Dullsville and the Doodlesverse Tiff Premiere\" width=\"940\"></iframe></div>"
+    }
+   ]
+  }
+ ],
+ "listing": {
+  "listed": true,
+  "work": {
+   "summary": "A Pink Carpet premiere for Doodles' debut original film at TIFF.",
+   "href": "/case-studies-items/dullsville-and-the-doodleverse",
+   "month": "",
+   "year": "",
+   "bg": {
+    "src": "/images/67530d98c543a1f2ed24edf8_doodles-index.webp",
+    "srcset": "/images/67530d98c543a1f2ed24edf8_doodles-index-p-500.webp 500w, /images/67530d98c543a1f2ed24edf8_doodles-index-p-800.webp 800w, /images/67530d98c543a1f2ed24edf8_doodles-index-p-1080.webp 1080w, /images/67530d98c543a1f2ed24edf8_doodles-index.webp 1138w",
+    "sizes": "100vw",
+    "data-bg": "/images/67530d98c543a1f2ed24edf8_doodles-index.webp",
+    "alt": ""
+   }
+  },
+  "home": {
+   "showHomepage": true,
+   "category": "Film",
+   "image": "/images/67530d98c543a1f2ed24edf8_doodles-index-t800.webp",
+   "gif": "",
+   "vimeo": "",
+   "ip": "",
+   "award": false,
+   "awardTitle": "",
+   "awardLogo1": "",
+   "awardLogo2": "",
+   "video": ""
+  }
+ }
+}

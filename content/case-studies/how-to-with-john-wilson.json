@@ -1,0 +1,193 @@
+{
+ "slug": "how-to-with-john-wilson",
+ "pageId": "6615fe38ebb1b03d50d2816b",
+ "seoTitle": "How To with John Wilson",
+ "description": "An influencer and fan mailer campaign that garnered 2.3 million+ social impressions.",
+ "noindex": false,
+ "title": "How To With John Wilson",
+ "client": "HBO",
+ "subtitle": "INFLUENCER MAILER CAMPAIGN",
+ "heroImage": {
+  "src": "/images/660b6f6c0a4e24b200b22b6e_65ea25ac99bf80678b9fb98c_wil_02152020_ab_23.jpeg",
+  "srcset": "/images/660b6f6c0a4e24b200b22b6e_65ea25ac99bf80678b9fb98c_wil_02152020_ab_23-p-500.webp 500w, /images/660b6f6c0a4e24b200b22b6e_65ea25ac99bf80678b9fb98c_wil_02152020_ab_23-p-800.webp 800w, /images/660b6f6c0a4e24b200b22b6e_65ea25ac99bf80678b9fb98c_wil_02152020_ab_23.jpeg 980w",
+  "sizes": "100vw"
+ },
+ "heroVimeo": "",
+ "stats": [
+  {
+   "value": "2.3M",
+   "label": "COMBINED IMPRESSIONS"
+  },
+  {
+   "value": "1.2M",
+   "label": "SOCIAL IMPRESSIONS"
+  },
+  {
+   "value": "900+",
+   "label": "FANS SERVED"
+  },
+  {
+   "value": "100+",
+   "label": "INFLUENCERS GIFTED"
+  }
+ ],
+ "services": [
+  {
+   "name": "Content Production",
+   "slug": "content-production"
+  },
+  {
+   "name": "Creative Concept",
+   "slug": "creative-concept"
+  },
+  {
+   "name": "Creative Direction",
+   "slug": "creative-direction"
+  }
+ ],
+ "headline": "“THANK YOU FOR REMINDING ME I AM NOT ALONE IN THIS WORLD AND INSPIRING ME” - Super Fan",
+ "intro": "AN INFLUENCER AND FAN MAILER CAMPAIGN THAT GARNERED 2.3M+ SOCIAL IMPRESSIONS!",
+ "introPieces": [
+  {
+   "type": "introGallery",
+   "media": [
+    {
+     "type": "image",
+     "src": "/images/6615febcfc0a87d72a1eea79_jw-group-1800x-min.webp",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6615febdc5fa14853162dcb1_jw-calendarjan-1800x-min.webp",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6615febf6dc6521f4765dc82_jw-tshirtfolded-1800x-min.webp",
+     "alt": ""
+    }
+   ],
+   "html": "<p>HBO enlisted IHC to imagine an engaging promotional campaign for the debut season of How To with John Wilson. The program evolved into a targeted series of gift packages filled with exclusively designed merch items all in the tone of the show.</p>\n<p>Following the premiere episode, mailers were shipped out to a hand-selected list of 100+ cultural influencers. To maintain excitement, over 700 super fans were rewarded throughout the season for tuning in with their own packages.</p>\n<p>The response was overwhelmingly positive. An outpouring of posts and enthusiastic fan feedback demonstrated great appreciation for both the show and the thoughtful promotional items.</p>"
+  }
+ ],
+ "sections": [
+  {
+   "title": "INFLUENCER CAMPAIGN",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p>To start, IHC curated a select group of 100+ influencers to receive the gift mailers and advance episodes. Targets included fans of Nathan Fielder, NYC and LA based comedians, quirky musicians, TV/film industry insiders, illustrators and internet personalities. Influencers included Hannah Einbeinder, Phoebe Bridgers, Rosa Salazar, Kate Berlant, Zack Fox and many more.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/6615ffdc5772a46028f74b2f_grantcotter-igstory2-1800x-min.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/669f13e8e7573029c04ac2da_rosasalazar.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6615ff0db54fff1a198cb915_1-hannaheinbinder-igstorypic-1800x-min.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6615ff0d568123b08ec92455_chrissymeds-igstory-1800x-min.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6615ff0dc8ec68e49601ab90_nickgazin-igstory-1800x-min.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6615ff0c64b6ed4999a0bdd8_harmarsuperstar-igfeed-1800x-min.webp",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "FAN CAMPAIGN",
+   "pieces": [
+    {
+     "type": "text2",
+     "left": "<p>Following the second episode, IHC began direct fan outreach to over 900 John Wilson followers and admirers. From rewarding those who posted to individual DMs to the most die-hard fans, the campaign increased online conversation about the show and got audiences excited for the mailers.</p>",
+     "right": "<p>Social influencers in their own right — from internet sensations like Kyle the Goose and Paige Elkington, to rising filmmakers, photographers and artists — were excited about the show and thrilled to receive a surprise merchandise package, which they shared with all their followers.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/669f1c9fe80b5487c00d4519_clare.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/669f1ca0d341140b570532ed_philb.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/669f1c9f8df48951428f3c6b_aaronhale.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/669f1c9fea8e57f57cd67d26_bijan.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/669f1ca06bffdf98a4500103_cchrish.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/669f1abb04c07735be9354bb_specialnothing.webp",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "listing": {
+  "listed": true,
+  "work": {
+   "summary": "An influencer and fan mailer campaign that garnered over 2.3 million social impressions.",
+   "href": "/case-studies-items/how-to-with-john-wilson",
+   "month": "Nov",
+   "year": "2020",
+   "bg": {
+    "src": "/images/660b6f6c0a4e24b200b22b6e_65ea25ac99bf80678b9fb98c_wil_02152020_ab_23.jpeg",
+    "srcset": "/images/660b6f6c0a4e24b200b22b6e_65ea25ac99bf80678b9fb98c_wil_02152020_ab_23-p-500.webp 500w, /images/660b6f6c0a4e24b200b22b6e_65ea25ac99bf80678b9fb98c_wil_02152020_ab_23-p-800.webp 800w, /images/660b6f6c0a4e24b200b22b6e_65ea25ac99bf80678b9fb98c_wil_02152020_ab_23.jpeg 980w",
+    "sizes": "100vw",
+    "data-bg": "/images/660b6f6c0a4e24b200b22b6e_65ea25ac99bf80678b9fb98c_wil_02152020_ab_23.jpeg",
+    "alt": ""
+   }
+  },
+  "home": {
+   "showHomepage": false,
+   "category": "Lifestyle",
+   "image": "/images/660b6f6c0a4e24b200b22b6e_65ea25ac99bf80678b9fb98c_wil_02152020_ab_23-t800.webp",
+   "gif": "",
+   "vimeo": "",
+   "ip": "",
+   "award": false,
+   "awardTitle": "",
+   "awardLogo1": "",
+   "awardLogo2": "",
+   "video": ""
+  }
+ }
+}

@@ -1,0 +1,98 @@
+{
+ "slug": "valorant-sound-los-angeles",
+ "pageId": "6a7e657cb365aab2c4171beb",
+ "seoTitle": "Valorant Sound: Los Angeles",
+ "description": "",
+ "noindex": false,
+ "title": "Valorant Sound: Los Angeles",
+ "client": "Riot Games",
+ "subtitle": "",
+ "heroImage": null,
+ "heroVimeo": "",
+ "stats": [
+  {
+   "value": "900",
+   "label": "total attendees"
+  },
+  {
+   "value": "600",
+   "label": "tickets sold"
+  }
+ ],
+ "services": [],
+ "headline": "",
+ "intro": "<strong>riot games tapped ihc to launch VALORANT INTO 2026 WITH A FRESH CAMPAIGN.</strong>",
+ "introPieces": [
+  {
+   "type": "introGallery",
+   "media": [],
+   "html": "<p>To reinvigorate fans of Valorant, Riot Games is kicked the year off right with a creator and fan forward event full of teases.</p>\n<p>Based around the latest campaign, <strong>Why We Fight Back</strong>, this one night only jump off included exclusive content mixed with a fully immersive environment and headlined by a set from Grabbitz. </p>\n<p>To bring this to life for a fully in-world experience, this event was  called <strong>Valorant Sound: Los Angeles</strong>.</p>"
+  }
+ ],
+ "sections": [
+  {
+   "title": "TITLE HERE",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": []
+    }
+   ]
+  },
+  {
+   "title": "TITLE HERE",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": []
+    }
+   ]
+  },
+  {
+   "title": "TITLE HERE",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": []
+    }
+   ]
+  },
+  {
+   "title": "TITLE HERE",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": []
+    }
+   ]
+  },
+  {
+   "title": "WATCH THE RECAP",
+   "pieces": [
+    {
+     "type": "video",
+     "embed": "<div class=\"p-cs__video__el w-video w-embed\" style=\"padding-top:56.27659574468085%\"><iframe allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture\" allowfullscreen=\"true\" class=\"embedly-embed\" frameborder=\"0\" height=\"529\" scrolling=\"no\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F1218171322%3Fapp_id%3D122963&amp;dntp=1&amp;display_name=Vimeo&amp;url=https%3A%2F%2Fvimeo.com%2F1218171322&amp;image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F2190026202-6772bb5b7dbe3c3842c7dc4464dcf0c002892b2bcb7c6ea563860c2b8f01f7ca-d_1280%3Fregion%3Dus&amp;type=text%2Fhtml&amp;schema=vimeo\" title=\"Riot Games: Valorant Sound LA Recap\" width=\"940\"></iframe></div>"
+    }
+   ]
+  }
+ ],
+ "listing": {
+  "listed": false
+ }
+}

@@ -1,0 +1,213 @@
+{
+ "slug": "guts-bus-college-tour",
+ "pageId": "69fa4a4bdcf42b8ce0d388d1",
+ "seoTitle": "GUTS Bus College Tour",
+ "description": "",
+ "noindex": false,
+ "title": "GUTS Bus College Tour",
+ "client": "Lancôme",
+ "subtitle": "",
+ "heroImage": {
+  "src": "/images/69fa4bc47f4b19095b505fb9_YASI7589-p-2000.jpg",
+  "srcset": "/images/69fa4bc47f4b19095b505fb9_YASI7589-p-500.jpg 500w, /images/69fa4bc47f4b19095b505fb9_YASI7589-p-800.jpg 800w, /images/69fa4bc47f4b19095b505fb9_YASI7589-p-1080.jpg 1080w, /images/69fa4bc47f4b19095b505fb9_YASI7589-p-1600.jpg 1600w, /images/69fa4bc47f4b19095b505fb9_YASI7589-p-2000.jpg 2000w",
+  "sizes": "100vw"
+ },
+ "heroVimeo": "",
+ "stats": [
+  {
+   "value": "9",
+   "label": "Stops"
+  },
+  {
+   "value": "7.6k",
+   "label": "Attendees"
+  },
+  {
+   "value": "27.4k",
+   "label": "Total Samples Distributed"
+  }
+ ],
+ "services": [
+  {
+   "name": "Creative Direction",
+   "slug": "creative-direction"
+  },
+  {
+   "name": "Event Production",
+   "slug": "event-production"
+  },
+  {
+   "name": "Fabrication Production",
+   "slug": "fabrication-production"
+  }
+ ],
+ "headline": "\"I saw this on TikTok and I drove 45 minutes to see it!\" - Attendee",
+ "intro": "THE GUTS BUS RETURNED TO SUPPORT OLIVIA RODRIGO’S MASSIVE PARTNERSHIP WITH LANCÔME.",
+ "introPieces": [
+  {
+   "type": "introGallery",
+   "media": [
+    {
+     "type": "image",
+     "src": "/images/6a0e1d5cb8544193e160bfe1_YASI7628-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/69fa6e7a250f4082cd31cbb8_YASI7820-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6a0e1d78a408c5eed334ca43_Millie-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/69fa6e7b7976b1546f7e695c_YASI7660-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/69fa6e7a97c3fd12b5aab21f_YASI8062-p-2000.avif",
+     "alt": ""
+    }
+   ],
+   "html": "<p>To celebrate the brand’s first major U.S. partnership with Olivia, Lancôme revived the GUTS Tour Bus for a three-week run. It offered fans an immersive brand experience centered around two new products, as well as fan-favorite Juicy Tubes. The bus toured top college campuses and nearby Ulta stores, spreading awareness, facilitating product try-ons, and engaging with the community. Each stop was accompanied with an Olivia merch booth to keep fans connected throughout the journey.</p>"
+  }
+ ],
+ "sections": [
+  {
+   "title": "BUS CREATIVE",
+   "pieces": [
+    {
+     "type": "text2",
+     "left": "<p>The Olivia bus received a full Lancôme-inspired makeover, blending Idôle with Olivia’s GUTS era aesthetic. Both the interior and exterior featured branded elements and key art with the signature rose and touches of pink updates transformed the space. </p>",
+     "right": "<p>Highlights included a custom Lancôme rose logo behind the moon bench, a life-size Flutter Mascara, a Juicy Tubes baby tee, and refreshed vanity displays showcasing Idôle Power and Lash Idôle Flutter. The beloved elements from the original GUTS tour maintained the fan-first experience and those direct ties to our star. </p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/6a0e1d5bc7356e147a8cd9cd_BAYLOR-9.jpg",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69fa6e7ac24f7e2fd6c436e9_YASI8055-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a0e1d5a82e0d4111228e2c0_tcu7.jpg",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69fa6e7b581263b82df2d651_YASI7992-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a0e1d5aa0c32ddaf9a1c7c1_tcu11.jpg",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69fa6e797e246c2ec4815846_YASI7971-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69fa6e79e50999f3bc727858_YASI8038-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a0e1d5b31f4b0106d5a16d0_YASI8102.jpg",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "ADDITIONAL ACTIVITIES",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p>Before stepping onto the bus, guests visited our custom push cart to explore Lancôme’s Idôle Power scent and snap photos with a giant 8' fragrance bottle. Brand Ambassadors facilitated product testing, handed out samples, and gifted neon tote bags to the first 100 visitors daily. Fans could also shop at the pop-up merch tent; and the full footprint included custom branded tents and signage to ensure smooth flow and comfort throughout the activation.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/69fa6e79a915ee14390369f4_YASI7838-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69fa6e7a65a472f6d3200e7a_YASI7821-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a0e1d5a07c19fefd914736e_TEXAS-STATE-5.jpg",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69fa6e7aa020a9c7fe5d9f1e_YASI7848-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a0cec4a8b3bb255ec3bcec8_YASI7894-p-2000.avif",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "WATCH THE RECAP",
+   "pieces": [
+    {
+     "type": "video",
+     "embed": "<div class=\"p-cs__video__el w-video w-embed\" style=\"padding-top:56.17021276595745%\"><iframe allowfullscreen=\"\" class=\"embedly-embed\" height=\"528\" scrolling=\"no\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FZQXeumF4VGs%3Ffeature%3Doembed&amp;display_name=YouTube&amp;url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DZQXeumF4VGs&amp;image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FZQXeumF4VGs%2Fhqdefault.jpg&amp;type=text%2Fhtml&amp;schema=youtube\" title=\"Lacôme: Olivia Rodrigo \" width=\"940\"></iframe></div>"
+    }
+   ]
+  }
+ ],
+ "listing": {
+  "listed": true,
+  "work": {
+   "summary": "Lancôme brought back the GUTS Tour Bus to celebrate their first stateside partnership with Olivia Rodrigo and promote two new products from the collection.",
+   "href": "/case-studies-items/guts-bus-college-tour",
+   "month": "",
+   "year": "",
+   "bg": {
+    "src": "/images/69fa4bc47f4b19095b505fb9_YASI7589-p-2000.jpg",
+    "srcset": "/images/69fa4bc47f4b19095b505fb9_YASI7589-p-500.jpg 500w, /images/69fa4bc47f4b19095b505fb9_YASI7589-p-800.jpg 800w, /images/69fa4bc47f4b19095b505fb9_YASI7589-p-1080.jpg 1080w, /images/69fa4bc47f4b19095b505fb9_YASI7589-p-1600.jpg 1600w, /images/69fa4bc47f4b19095b505fb9_YASI7589-p-2000.jpg 2000w",
+    "sizes": "100vw",
+    "data-bg": "/images/69fa4bc47f4b19095b505fb9_YASI7589-p-1600.jpg",
+    "alt": ""
+   }
+  },
+  "home": {
+   "showHomepage": true,
+   "category": "Music",
+   "image": "/images/69fa4bc47f4b19095b505fb9_YASI7589-t800.webp",
+   "gif": "",
+   "vimeo": "",
+   "ip": "",
+   "award": false,
+   "awardTitle": "",
+   "awardLogo1": "",
+   "awardLogo2": "",
+   "video": ""
+  }
+ }
+}

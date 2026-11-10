@@ -1,0 +1,249 @@
+{
+ "slug": "massive-talent",
+ "pageId": "6616057e5772a46028fc1517",
+ "seoTitle": "Massive Talent",
+ "description": "In honor of Nicolas Cage’s film The Unbearable Weight of Massive Talent, artists in Los Angeles, Miami, and Seattle painted live murals on giant sculptures of his head.",
+ "noindex": false,
+ "title": "The Unbearable Weight of Massive Talent",
+ "client": "Lionsgate",
+ "subtitle": "",
+ "heroImage": {
+  "src": "/images/660b6f6cfb0a396cb2164f16_65ea27716d84d3acaee4d110_img_9475_recropped.avif"
+ },
+ "heroVimeo": "774027568?h=095060a06c",
+ "stats": [
+  {
+   "value": "3",
+   "label": "Days"
+  },
+  {
+   "value": "1M+",
+   "label": "Total Social Reach"
+  },
+  {
+   "value": "200k+",
+   "label": "Estimated Foot Traffic"
+  },
+  {
+   "value": "70",
+   "label": "Hours Live"
+  }
+ ],
+ "services": [
+  {
+   "name": "Content Production",
+   "slug": "content-production"
+  },
+  {
+   "name": "Creative Concept",
+   "slug": "creative-concept"
+  },
+  {
+   "name": "Creative Direction",
+   "slug": "creative-direction"
+  },
+  {
+   "name": "Event Production",
+   "slug": "event-production"
+  }
+ ],
+ "headline": "“This is a must-experience exhibit for any Cage fan with art as fun and colorful as the iconic actor himself” -Collider",
+ "intro": "IN HONOR OF NICOLAS CAGE’S NEW FILM , ARTISTS IN LA, MIAMI, &amp; SEATTLE PAINTED LIVE MURALS ON GIANT SCULPTURES OF HIS HEAD.",
+ "introPieces": [
+  {
+   "type": "introGallery",
+   "media": [
+    {
+     "type": "image",
+     "src": "/images/66160610ebb1b03d50d93635_unnamed-1-1800x-min.webp",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6616061149657167978ff0c7_unnamed-2-1800x-min.webp",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/661606119700dd4d78773acd_unnamed-3-1800x-min.webp",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/66160611a337366d4b1453fc_unnamed-4-1800x-min.webp",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/66160610ebb1b03d50d93635_unnamed-1-1800x-min.webp",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/66160614ad8cc375d8ada6ca_unnamed-11-1800x-min.webp",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/66160611ebb1b03d50d936d8_unnamed-1800x-min.webp",
+     "alt": ""
+    }
+   ],
+   "html": "<p>IHC produced a series of massive, larger-than-life Nick Cage heads that popped up overnight ahead of the film’s opening weekend. We tapped artists <strong>Jules Mock</strong>, <strong>David Lavernia</strong>, and <strong>Nikita Ares</strong> to live paint these sculptures, which were later turned into Cage shrines, aligning with the film’s premise of paying homage to the star’s iconic roles and career. The result was a massively fun time for fans of all ages!</p>\n<p>Passersby were encouraged to share their experience on socials for a chance to take one of the head sculptures home, along with limited edition signed memorabilia from the film. Once the shrines were wrapped, the heads were transported to major theaters in the neighboring cities, where they greeted movie-goers through opening weekend.</p>"
+  }
+ ],
+ "sections": [
+  {
+   "title": "SEATTLE",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p>Philippine-born, Seattle-based painter <strong>Nikita Ares</strong> (<a href=\"https://www.instagram.com/kita.licious/\">@kita.licious</a>) evokes movement and energy through her abstract and vibrant work. While her detailed painting approach took time, the result was a stunning full-color spectrum display. </p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/661606944e740554d20b4775_img-9475-recropped-1800x-min.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/66160694fc0a87d72a25e38d_img-8573-recropped-1800x-min.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/661606950a726c9f1dc3b015_img-9746-recropped-1800x-min.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/66160695995b061b34d57c9f_img-9820-recropped-1800x-min.webp",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "MIAMI",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p>Philippine-born, Seattle-based painter <strong>Nikita Ares</strong> (<a href=\"https://www.instagram.com/kita.licious/\">@kita.licious</a>) evokes movement and energy through her abstract and vibrant work. While her detailed painting approach took time, the result was a stunning full-color spectrum display. </p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/661606d0653508b1689d2002_cjp3043-1800x-min.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/661606d1a7b88f7235fef3a5_cjp3193-1800x-min.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/661606d1ebb1b03d50d9d5f0_cjp3402-1800x-min.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/661606d14e740554d20b8c0b_massive-1800x-min.webp",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "LOS ANGELES",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p>Venice-based graffiti artist <strong>Jules Muck</strong> (<a href=\"https://www.instagram.com/muckrock/\">@muckrock</a>) tapped into Nicholas Cage as an iconoclast with a cheeky Illuminati-inspired design and tears of her signature rainbows. Fans reveled in watching her live spray paint while lighting a prayer candle to honor their favorite actor. Our prominent location attracted a lot of attention and enticed many to stop and snap a picture.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/661606fe0a726c9f1dc3ff57_dsc-9210-1800x-min.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/661606fe4e740554d20bbf65_dsc-9247-1800x-min.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/661606fe916b47f721e0f67a_dsc-9521-1800x-min.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/661607006588f044aefc06dd_dsc-9362-1800x-min.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/66a092ec11d40024313b3dc1_massive-talent-gallery-1-1.webp",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "GRAND EXHIBITION",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p>Fans worldwide could also experience the custom heads as part of CaGe Virtual Museum, inspired by the film’s character Javi’s (Pedro Pascal) extensive collection of Nick Cage memorabilia. The website included 3D renderings of each shrine, fan art, and an audio tour by Javi himself. <strong>Check out the article on </strong><a href=\"https://collider.com/unbearable-weight-of-massive-talent-nicolas-cage-virtual-museum/\"><strong>Collider</strong></a>.</p>"
+    },
+    {
+     "type": "fullGallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/66160786082dc95f5ac73d01_virtual-museum-full-min.webp",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "listing": {
+  "listed": true,
+  "work": {
+   "summary": "In honor of Nicolas Cage's film, The Unbearable Weight of Massive Talent, artists in Los Angeles, Miami, and Seattle painted live murals on giant sculptures of his head.",
+   "href": "/case-studies-items/massive-talent",
+   "month": "May",
+   "year": "2022",
+   "bg": {
+    "src": "/images/660b6f6cfb0a396cb2164f16_65ea27716d84d3acaee4d110_img_9475_recropped.avif",
+    "alt": ""
+   }
+  },
+  "home": {
+   "showHomepage": false,
+   "category": "Events",
+   "image": "/images/660b6f6cfb0a396cb2164f16_65ea27716d84d3acaee4d110_img_9475_recropped-t800.webp",
+   "gif": "/images/673ce46dca62c67067f00536_Massive-Talent-min.webp",
+   "vimeo": "774027568?h=095060a06c",
+   "ip": "",
+   "award": false,
+   "awardTitle": "",
+   "awardLogo1": "",
+   "awardLogo2": "",
+   "video": ""
+  }
+ }
+}

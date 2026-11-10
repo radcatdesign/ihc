@@ -1,0 +1,314 @@
+{
+ "slug": "we-ve-got-company",
+ "pageId": "661495d18909369aba2d5959",
+ "seoTitle": "We've Got Company",
+ "description": "We created and produced *We’ve Got Company*, a talk show within a sitcom hosted by Marc Rebillet.",
+ "noindex": false,
+ "title": "We've Got Company",
+ "client": "Amazon Music",
+ "subtitle": "LIVE STREAM SERIES HOSTED BY MARC REBILLET",
+ "heroImage": {
+  "src": "/images/660b6f6aab7517b3d7d925a3_65ea35672345e04f369e86c3_1-case-studies-_-wgc-_-general-_-main-gallery-_-finale-group-photo.avif"
+ },
+ "heroVimeo": "773929170?h=a3daf42cb8",
+ "stats": [
+  {
+   "value": "6",
+   "label": "EPISODES TOTAL"
+  },
+  {
+   "value": "11.5",
+   "label": "HOURS LIVE"
+  },
+  {
+   "value": "3.17M+",
+   "label": "VIEWERS"
+  },
+  {
+   "value": "147M+",
+   "label": "ORGANIC SOCIAL IMPRESSIONS"
+  }
+ ],
+ "services": [
+  {
+   "name": "Creative Direction",
+   "slug": "creative-direction"
+  },
+  {
+   "name": "Content Production",
+   "slug": "content-production"
+  },
+  {
+   "name": "Talent Booking",
+   "slug": "talent-booking"
+  },
+  {
+   "name": "Creative Concept",
+   "slug": "creative-concept"
+  },
+  {
+   "name": "Digital Strategy",
+   "slug": "digital-strategy"
+  }
+ ],
+ "headline": "“THIS IS LEGIT THE MOST UNIQUE AND HONEST MUSIC HAPPENING ON THE NET. FUTURE IS NOW.” - Viewer",
+ "intro": "WE CREATED AND PRODUCED WE’VE GOT COMPANY, A TALK SHOW WITHIN A SITCOM HOSTED BY MARC REBILLET",
+ "introPieces": [
+  {
+   "type": "introGallery",
+   "media": [
+    {
+     "type": "image",
+     "src": "/images/661496b229f243a01858b670_1-case-studies-wgc-general-main-gallery-finale-group-photo-1800x-min.webp",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/661496b2c4639675e71536f6_2-dsc-0933-1800x-min.webp",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/661496b2349a4c29a24ae49d_3-case-studies-wgc-general-main-gallery-marc-and-dylan-1800x-min.webp",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/661496b196a2696549aa6c24_4-dsc-5044-1800x-min.webp",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/661496b1985f75bd08d7af63_5-case-studies-wgc-general-main-gallery-marc-and-wyclef-1800x-min.webp",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/661496b2c66b24d2c44bc9ec_6-cnl-6855-1800x-min.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/661496b115dcb9d45e87381c_7-case-studies-wgc-general-main-gallery-toki-and-alison-1800x-min.webp",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/661496b253a8bd2bbd5ff10f_8-marc-rebillet-24-1800x-min.webp",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/661496b2b7a6695ac5fbca24_9-case-studies-wgc-general-main-gallery-marc-and-erykah-1800x-min.webp",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/661496b1bb053f9d2fae66f2_10wgc-marc-rebillet-ep-2-selects-13-1800x-min.webp",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/661496b1211eea99c19ae860_11-dsc-9881-1800x-min.webp",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/661496b04ad6c4be4ea9ce9b_12-z72-1482-1800x-min.avif",
+     "alt": ""
+    }
+   ],
+   "html": "<p>Amazon Music approached IHEARTCOMIX to help conceptualize a flagship series for the brand’s Twitch channel. With a shared goal of attracting the next generation of music lovers, we sought to capitalize on this opportunity to rethink how audiences can consume music culture and content.</p>\n<p>“We’ve Got Company” was born as a series hosted entirely LIVE on Twitch every other week by musician and creator <strong>Marc Rebillet</strong>, also known by his adoring fans as “Loop Daddy.” Taking place inside a sitcom house and reveling in sitcom tropes, each episode featured musical guests (<strong>Erykah Badu</strong>, <strong>Tenacious D</strong>, etc), special snacks, an endless selection of games, improv jams and an environment where the audience is in as much control as our host.</p>\n<p>With an average of 500,000+ unique live viewers per episode, it became <strong>Amazon Music’s</strong> highest-rated Twitch show at the time! When it comes to average watch time, anything over 5 minutes is usually considered “golden users” for Twitch -- our episodes had an average of roughly 30 minutes!</p>"
+  }
+ ],
+ "sections": [
+  {
+   "title": "WATCH THE RECAP",
+   "pieces": [
+    {
+     "type": "video",
+     "embed": "<div class=\"p-cs__video__el w-video w-embed\" style=\"padding-top:56.27659574468085%\"><iframe allowfullscreen=\"\" class=\"embedly-embed\" height=\"529\" scrolling=\"no\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F773941424%3Fh%3Db6ab348ed6%26app_id%3D122963&amp;dntp=1&amp;display_name=Vimeo&amp;url=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F773941424%3Fh%3Db6ab348ed6&amp;image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F1552971314-3b4a6b7b4056d9ee185c33b81d17171dd8edb4b4b1984dc121cbe27f9336bb35-d_1280&amp;key=96f1f04c5f4143bcb0f2e68c87d65feb&amp;type=text%2Fhtml&amp;schema=vimeo\" title=\"We've Got Company - Recap\" width=\"940\"></iframe></div>"
+    }
+   ]
+  },
+  {
+   "title": "DEVELOPMENT & PRE PRODUCTION",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p>Over a year in the making, IHC led the 360 development of the show from its directional intent and original studio set, to its creative identity, opening animation and overall brand to the day-to-day production. To execute this first of its kind series, special care had to be taken into defining the format, structure and creative elements.</p>\n<p>A key piece to this puzzle was landing on the right host. They needed the confidence and charisma to carry an entirely live show from start to finish, and the capacity for comedic improv and meaningful conversations with musical guests. After many months, Marc Rebillet was finally confirmed, and with that, <strong><em>Wednesday nights got a whole lot streamier</em></strong>!</p>\n<p>The show aimed to embrace the audience of Twitch beyond just the chat, incorporating several segments that defined the creative and interactivity of each episode, including “We’ve Got…”, “What’s in the couch”, and our chat troll “Maude”.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/661497ac23880e0f96678ee5_1-case-studies-wgc-general-development-and-production-meeting-1800x-min.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/661497ab71144580e2ba5f81_2-case-studies-wgc-general-development-and-production-franki-clown-1800x-min.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/661497ae925aa98bbee652f2_3-case-studies-wgc-general-development-and-production-directors-room-1800x-min.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/661497f79885418d3759da6d_case-studies-wgc-general-development-and-production-game-room-1800x-min.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/661497ac9f498f758036a78f_case-studies-wgc-general-development-and-production-jesus-1800x-min.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/661497ab52c823b24e017974_case-studies-wgc-general-development-and-production-playing-games-1800x-min.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/661497ac9540178890910613_case-studies-wgc-general-development-and-production-set-1800x-min.webp",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "MARKETING",
+   "pieces": [
+    {
+     "type": "text2",
+     "left": "<p>To launch the show and get the word out to tune in, we conceptualized, directed and produced a photo and video shoot to satisfy all promotional content needs. IHC created nearly every asset of marketing collateral, from the show brand guideline, the OOH templates for NYC (<strong>Times Square</strong>) and LA billboards, to all social and digital assets for launch and every episode of the show. <strong>We even created an original song for the series with indie icon Sasami</strong>.</p>",
+     "right": "<p>In addition, IHC also delivered episodic-specific marketing assets to announce show guests, and post episode VOD edits for various formats. <strong>All materials were delivered within 48 hours of each taping</strong>.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/66a09cef9f1665f250ab0bcb_we-ve-got-company-gallery-1-2.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6614984d46871afa53d63e1e_2-case-studies-wgc-general-marketing-erykah-nyc-ooh-1800x-min.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6614984d802853cbfaee303e_case-studies-wgc-general-marketing-promo-shoot-1800x-min.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6614984d864e900c43c331b1_case-studies-wgc-general-marketing-tokimonsta-and-alison-la-ooh-1800x-min.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/66a09ceffd37b4ffe43fdf7f_we-ve-got-company-gallery-1-1.webp",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "SHOWTIME!",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p>IHC did a vast majority of the booking, securing <strong>Flying Lotus</strong>, <strong>Alison Wonderland</strong>, <strong>TOKiMONSTA</strong>, <strong>Tenacious D</strong>, <strong>Reggie Watts</strong> and <strong>Dillon Francis</strong> as guests. Other heavy-hitters who joined Marc on the couch included <strong>Erykah Badu </strong>and <strong>Wyclef Jean</strong>!</p>\n<p>Talent would participate in the sitcom narrative playing along inside a fully-improvised setup that was curated to their personalities. Basic structure included an opening monologue, interview segment, snacks &amp; chat, game selection, game play and ultimately, an improv jam, which was the real magic at the center of the show.</p>\n<p>Guests were enthused to be a part of We’ve Got Company, generously participating in promoting their appearance and gleefully sharing clips from the episodes. This support helped the series amass over 147 million organic social impressions.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/6614994398c5b426bbeb2ea4_case-studies-wgc-general-main-gallery-marc-and-clown-compressed-1800x-min.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/661499433249b4d2c72cce19_case-studies-wgc-general-showtime-erykah-marc-reggie-game-compressed-1800x-min.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/661499424d5bedf0bd674836_case-studies-wgc-general-showtime-marc-and-dillon-compressed-1800x-min.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/66149947b5afde395d91adc1_case-studies-wgc-general-showtime-marc-and-dog-compressed-1800x-min.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/661499439885418d375b3cad_case-studies-wgc-general-showtime-marc-and-td-eating-compressed-1800x-min.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/66149943063b64169cd73412_case-studies-wgc-general-showtime-marc-bar-compressed-1800x-min.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/66149942954017889092603a_case-studies-wgc-general-showtime-marc-finale-compressed-1800x-min.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/66149944802853cbfaeef086_case-studies-wgc-general-showtime-marc-lotus-door-compressed-1800x-min.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/661499439bb33b0cb1933d1b_case-studies-wgc-general-showtime-marc-tokimonsta-alison-jam-compressed-1800x-min.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/661499431979f7d1042759a0_case-studies-wgc-general-showtime-puppets-compressed-1800x-min.webp",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "listing": {
+  "listed": true,
+  "work": {
+   "summary": "We created and produced a live talk show within a sitcom, hosted by Marc Rebillet.",
+   "href": "/case-studies-items/we-ve-got-company",
+   "month": "Jul",
+   "year": "2022",
+   "bg": {
+    "src": "/images/660b6f6aab7517b3d7d925a3_65ea35672345e04f369e86c3_1-case-studies-_-wgc-_-general-_-main-gallery-_-finale-group-photo.avif",
+    "alt": ""
+   }
+  },
+  "home": {
+   "showHomepage": true,
+   "category": "Music",
+   "image": "/images/660b6f6aab7517b3d7d925a3_65ea35672345e04f369e86c3_1-case-studies-_-wgc-_-general-_-main-gallery-_-finale-group-photo-t800.webp",
+   "gif": "",
+   "vimeo": "773929170?h=a3daf42cb8",
+   "ip": "",
+   "award": false,
+   "awardTitle": "",
+   "awardLogo1": "",
+   "awardLogo2": "",
+   "video": ""
+  }
+ }
+}

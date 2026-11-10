@@ -1,0 +1,251 @@
+{
+ "slug": "tiktok-halloween",
+ "pageId": "661e099664245bb8988d5e8a",
+ "seoTitle": "TikTok Halloween",
+ "description": "We brought the digital world of TikTok’s biggest trends to life for a spook-tacular creator Halloween party.",
+ "noindex": false,
+ "title": "TikTok Halloween",
+ "client": "TikTok",
+ "subtitle": "CREATOR HALLOWEEN PARTY",
+ "heroImage": {
+  "src": "/images/66c480bb5d24f31670aab553_tiktok-halloween.avif",
+  "srcset": "/images/66c480bb5d24f31670aab553_tiktok-halloween-p-500.avif 500w, /images/66c480bb5d24f31670aab553_tiktok-halloween-p-800.avif 800w, /images/66c480bb5d24f31670aab553_tiktok-halloween-p-1080.avif 1080w, /images/66c480bb5d24f31670aab553_tiktok-halloween.avif 1920w",
+  "sizes": "100vw"
+ },
+ "heroVimeo": "774022115?h=b559992944",
+ "stats": [
+  {
+   "value": "22.38M",
+   "label": "TOTAL SOCIAL IMPRESSIONS"
+  },
+  {
+   "value": "10.29M",
+   "label": "TIKTOK REACH"
+  },
+  {
+   "value": "12.08M",
+   "label": "INSTAGRAM REACH"
+  }
+ ],
+ "services": [
+  {
+   "name": "Content Production",
+   "slug": "content-production"
+  },
+  {
+   "name": "Creative Concept",
+   "slug": "creative-concept"
+  },
+  {
+   "name": "Creative Direction",
+   "slug": "creative-direction"
+  },
+  {
+   "name": "Event Production",
+   "slug": "event-production"
+  }
+ ],
+ "headline": "“‍TIKTOK HALLOWEEN PARTY WAS LIT!!!!!!” - Kyle Massey",
+ "intro": "WE BROUGHT TIKTOK’S BIGGEST TRENDS TO LIFE FOR A SPOOK-TACULAR CREATOR HALLOWEEN PARTY.",
+ "introPieces": [
+  {
+   "type": "introGallery",
+   "media": [
+    {
+     "type": "image",
+     "src": "/images/661e0a4213f3a8c9658f4bd1_case-studies-tik-tok-halloween-general-main-gallery-exterior-1800x-p-2000.webp",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/661e0a42e7aac97d4fb8923c_dsc-2304-1800x.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/661e0a4298b2d700ee04b317_case-studies-tik-tok-halloween-general-main-gallery-cleopatra-1800x.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/661e0a4392011b9fadf5d67b_case-studies-tik-tok-halloween-general-main-gallery-frida-1800x-p-2000.webp",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/661e0a424129d5f3a45c316c_case-studies-tik-tok-halloween-general-main-gallery-lyft-truck-1800x-p-2000.webp",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/661e0a422c111e6a3b238ab3_case-studies-tik-tok-halloween-general-main-gallery-mirror-1800x.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/661e0a429fde38d37ef446a8_case-studies-tik-tok-halloween-general-main-gallery-performance-1800x.avif",
+     "alt": ""
+    }
+   ],
+   "html": "<p>TikTok tapped IHC to conceptualize and translate a growing digital community into a dynamic, engaging, can’t-miss Halloween Party for their Creator community. The event featured some of TikTok’s biggest Creators including <strong>Baby Ariel</strong>, <strong>Cameron Dallas</strong> and <strong>Jacob Sartorius</strong>.</p>"
+  }
+ ],
+ "sections": [
+  {
+   "title": "Spooky Scary Skeletons",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p>Taking inspiration from the viral “Spooky Scary Skeletons” TikTok trend with an 80’s twist, we turned <strong>The Hollywood Castle</strong> into the ultimate Halloween party with ghostly decor, photo moments, live performances, and skeletons galore. We also brought Lyft onboard as principal sponsor to provide free rides to and from the party for all attendees.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/661e0b17ca3c1b66b9040727_dsc-2543-1800x.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/661e0b19de149e31007fbf02_case-studies-tik-tok-halloween-general-inside-the-party-rooms-dj-1800x.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/661e0b16156a71dee628cba0_case-studies-tik-tok-halloween-general-inside-the-party-rooms-group-1800x.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/661e0b1691c258d8ac25055a_case-studies-tik-tok-halloween-general-inside-the-party-rooms-harley-1800x.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/661e0b162f30839913d8b5e2_case-studies-tik-tok-halloween-general-inside-the-party-rooms-performance-1800x.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/661e0b168052d0dc12fb6635_case-studies-tik-tok-halloween-general-inside-the-party-rooms-sitting-clown-1800x.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/661e0b1664245bb8988ed1d1_case-studies-tik-tok-halloween-general-inside-the-party-rooms-tellatubby-1800x.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/661e0b16e7aac97d4fb95b8b_dsc-2017-1800x.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/661e0b19de149e31007fbefc_dsc-2461-1800x.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/661e0b1b92b143ef241a269e_dsc-2674-1800x.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/661e0b1613f3a8c965900cb7_dsc05383-1800x.webp",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "the Party Rooms",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p>Each room had a dedicated theme relating to top TikTok trends which informed the decor and interactivity within each space. Featured rooms included <strong>Area 51</strong>, <strong>Clown Town</strong>, <strong>Distortion Zone,</strong> and <strong>Zombie VSCO Girl</strong>. The entire property was converted into a thrilling Halloween environment accented with projection mapping and billowing fog. Guests were treated to live performances from <strong>Supa Dupa Humble</strong>, <strong>Sueco the Child</strong>, <strong>Stunna Girl</strong>, <strong>Jasiah</strong>, and <strong>YBN Nahmir</strong>.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/661e0b9f4981f187da27d148_dsc-2484-1800x.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/661e0b9ff44f2f3fd637fe1d_dsc-2855-1800x.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/661e0b9f32b08d84fdc65608_dsc-2598-1800x.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/661e0b9f19c647c1b07e8339_dsc-2335-1800x.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/661e0b9f9543d43b5e776147_dsc-2882-1-1800x.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/661e0b9f9d8479b0cb49ef0d_dsc-2139-1800x.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/661e0b9faaca0fc2ab076227_case-studies-tik-tok-halloween-general-inside-the-party-rooms-alien-1800x.webp",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "WATCH THE RECAP",
+   "pieces": [
+    {
+     "type": "video",
+     "embed": "<div class=\"p-cs__video__el w-video w-embed\" style=\"padding-top:56.27659574468085%\"><iframe allowfullscreen=\"\" class=\"embedly-embed\" height=\"529\" scrolling=\"no\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F774022303%3Fh%3D4fe4f42489%26app_id%3D122963&amp;dntp=1&amp;display_name=Vimeo&amp;url=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F774022303%3Fh%3D4fe4f42489&amp;image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F1553121326-4cded53ff88b26ab50e22b6ae81c71eda2672e0ab6da4d65e9742637c29d61e7-d_1280&amp;key=96f1f04c5f4143bcb0f2e68c87d65feb&amp;type=text%2Fhtml&amp;schema=vimeo\" title=\"TikTok Halloween Party Recap\" width=\"940\"></iframe></div>"
+    }
+   ]
+  }
+ ],
+ "listing": {
+  "listed": true,
+  "work": {
+   "summary": "We brought the TikTok digital world to life for a spooktacular Halloween party.",
+   "href": "/case-studies-items/tiktok-halloween",
+   "month": "Oct",
+   "year": "2019",
+   "bg": {
+    "src": "/images/66c480bb5d24f31670aab553_tiktok-halloween.avif",
+    "srcset": "/images/66c480bb5d24f31670aab553_tiktok-halloween-p-500.avif 500w, /images/66c480bb5d24f31670aab553_tiktok-halloween-p-800.avif 800w, /images/66c480bb5d24f31670aab553_tiktok-halloween-p-1080.avif 1080w, /images/66c480bb5d24f31670aab553_tiktok-halloween.avif 1920w",
+    "sizes": "100vw",
+    "data-bg": "/images/66c480bb5d24f31670aab553_tiktok-halloween-p-1080.avif",
+    "alt": ""
+   }
+  },
+  "home": {
+   "showHomepage": false,
+   "category": "Events",
+   "image": "/images/66c480bb5d24f31670aab553_tiktok-halloween-t800.webp",
+   "gif": "/images/673ce50c8901bd420db880be_TikTok-Halloween-min.webp",
+   "vimeo": "774022115?h=b559992944",
+   "ip": "",
+   "award": false,
+   "awardTitle": "",
+   "awardLogo1": "",
+   "awardLogo2": "",
+   "video": ""
+  }
+ }
+}

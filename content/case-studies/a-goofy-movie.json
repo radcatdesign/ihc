@@ -1,0 +1,236 @@
+{
+ "slug": "a-goofy-movie",
+ "pageId": "69d4397e5bd5d315dd3bc2fe",
+ "seoTitle": "A Goofy Movie 30th Anniversary Mailer",
+ "description": "",
+ "noindex": false,
+ "title": "A Goofy Movie 30th Anniversary Mailer",
+ "client": "Disney",
+ "subtitle": "",
+ "heroImage": {
+  "src": "/images/69d454700e4411023b6cfaab_20250402_MFG_IHC_0439-p-2000.webp",
+  "srcset": "/images/69d454700e4411023b6cfaab_20250402_MFG_IHC_0439-p-500.webp 500w, /images/69d454700e4411023b6cfaab_20250402_MFG_IHC_0439-p-800.webp 800w, /images/69d454700e4411023b6cfaab_20250402_MFG_IHC_0439-p-1080.webp 1080w, /images/69d454700e4411023b6cfaab_20250402_MFG_IHC_0439-p-1600.webp 1600w, /images/69d454700e4411023b6cfaab_20250402_MFG_IHC_0439-p-2000.webp 2000w",
+  "sizes": "100vw"
+ },
+ "heroVimeo": "",
+ "stats": [
+  {
+   "value": "70.4M",
+   "label": "Social Impressions"
+  },
+  {
+   "value": "1",
+   "label": "Silver Clio"
+  },
+  {
+   "value": "126",
+   "label": "Mailers Fulfilled"
+  },
+  {
+   "value": "153",
+   "label": "Socials Posts"
+  }
+ ],
+ "services": [
+  {
+   "name": "Creative Direction",
+   "slug": "creative-direction"
+  },
+  {
+   "name": "Digital Strategy",
+   "slug": "digital-strategy"
+  },
+  {
+   "name": "Narrative Development",
+   "slug": "narrative-development"
+  },
+  {
+   "name": "Custom Mailers",
+   "slug": "custom-mailers"
+  }
+ ],
+ "headline": "“This is the coolest package I’ve ever received in my life.” - Elias Contessotto",
+ "intro": "THE “JOIN THE TOUR” 30TH ANNIVERSARY KIT INVITED FANS TO STEP INTO THE ACTION, RELIVE ICONIC MOMENTS, AND CELEBRATE A GOOFY MOVIE LIKE NEVER BEFORE!",
+ "introPieces": [
+  {
+   "type": "introGallery",
+   "media": [
+    {
+     "type": "video",
+     "embed": "<div class=\"w-video w-embed\" style=\"padding-top:177.76595744680853%\"><iframe allowfullscreen=\"\" class=\"embedly-embed\" height=\"1671\" scrolling=\"no\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F1189868122%3Fapp_id%3D122963&amp;dntp=1&amp;display_name=Vimeo&amp;url=https%3A%2F%2Fvimeo.com%2F1189868122%3Fshare%3Dcopy%26fl%3Dsv%26fe%3Dci&amp;image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F2154496266-bdf002820581b500a9281dc62e7dfe57a85e9ae54a2e0d6a2e7e57a2bd2dc7f1-d_640%3Fregion%3Dus&amp;type=text%2Fhtml&amp;schema=vimeo\" title=\"DISNEY: A GOOFY MOVIE | 30 YEAR ANNIVERSARY MAILER\" width=\"940\"></iframe></div>"
+    }
+   ],
+   "html": "<p>We created a mailer that wasn’t just nostalgic - it was an interactive experience. Delivered with a visit from tour roadies, this kit invited fans to do more than just remember the movie - they got to live it!</p>\n<p>The kit included exclusive collectibles and activities that brought the film to life, and with every challenge, snack, and dance move, creators became part of the pop culture celebration.</p>\n<p>IHC was awarded a Clio Silver Award in 2025 within the social media influencer &amp; talent category for this \"Join The Tour\" Mailer.</p>"
+  }
+ ],
+ "sections": [
+  {
+   "title": "MAILER CONTENTS",
+   "pieces": [
+    {
+     "type": "text2",
+     "left": "<p>Each mailer began with a blast from the past in the form of a premium retro-style boombox and custom Powerline cassingle featuring the iconic tracks. Fans were invited to join the fictional Powerline World Tour with exclusive merch. </p>\n<p>The VIP experience continued with a collectible backstage pass, bringing authentic concert flair. Adding to the wearables, we included a satin-lined Lester’s Possum Park bucket hat and a custom “Hi Dad” soup mug, adding a heartfelt nod to the emotional core of the movie.</p>",
+     "right": "<p>The kit included a “Leaning Tower of Cheeze-a” Jenga set, paired with Easy Cheese and a laser-engraved “Bigfoot Sighting” leather luggage tag. A custom “It’s Pizza Time” clock brought a slice-of-life humor straight from the screen. Lastly, a glow-in-the-dark, screen-printed blacklight Powerline poster and custom stickers wrapped every item with flair. </p>\n<p>Each kit featured a replica of Goofy’s road trip map, turning the unboxing into a guided journey; and the mailer itself functioned like an advent calendar, encouraging fans to follow along, unlock each surprise, and relive the movie in an interactive, collectible-filled experience. </p>\n<p>‍</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/69d548ba93b440fd2ae52859_20250402_MFG_IHC_0109-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69d548b95fb9c46bc9cc5747_20250402_MFG_IHC_0267-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69d548b95528f35786b15131_20250402_MFG_IHC_0268-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69d548b9c1b80cc53b9b7da8_20250402_MFG_IHC_0396-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69d548bb8d1114e269f291f1_20250402_MFG_IHC_0401-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69d548b961b3bc9e4b0b7b2a_20250402_MFG_IHC_0193-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69d548b9dfbc7f8bc7f31cc8_20250402_MFG_IHC_0203-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69d548b9ef65145c5728deb3_20250402_MFG_IHC_0215-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69d548b9f3717e6add332fc8_20250402_MFG_IHC_0325-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69d548b9e6fb6b9a8ebe64a5_20250402_MFG_IHC_0323-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69d548bafd4f50b6ba0c8488_20250402_MFG_IHC_0280-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69d548b95b2e47f830a56fa8_20250402_MFG_IHC_0390-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69d548bb1ccd82de93b8e156_20250402_MFG_IHC_0482-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69d548bb5e4f8b706d5d1b1c_20250402_MFG_IHC_0407-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69d548bbd4a999779086e456_20250402_MFG_IHC_0493-p-2000.avif",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "DELIVERY",
+   "pieces": [
+    {
+     "type": "text2",
+     "left": "<p>To bring the Powerline World Tour to life, fans and influencers were surprised by two roadies at their doors, wheeling a custom Powerline-branded road case and inviting them to join the tour. Inspired by iconic sidekicks from Spinal Tap, Purple Rain, and Wayne’s World, the roadies were cast as longtime friends with great comedic chemistry. </p>",
+     "right": "<p>Mini versions of the case were custom-created for talent and executives, with notable recipients including Tatyana Ali and Questlove. Each was treated, stenciled, and painted by IHC to feel well-traveled. Upon arrival, the roadies dramatically opening the case to unveil the kit inside.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/69d54db39035dcdcdaa81d6e_IMG_2778-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69d54db31b93fbcf4ab4a745_IMG_2963-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69d54db3749e36f81f873a43_IMG_9215-p-2000.jpg",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69d54db2cea97744ba87b7a2_IMG_3183-p-2000.jpg",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69d54db3bbdd02e7ee86a811_20250402_MFG_IHC_0137-p-2000.avif",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "WATCH THE RECAP",
+   "pieces": [
+    {
+     "type": "video",
+     "embed": "<div class=\"p-cs__video__el w-video w-embed\" style=\"padding-top:56.27659574468085%\"><iframe allowfullscreen=\"\" class=\"embedly-embed\" height=\"529\" scrolling=\"no\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F1181740872%3Fapp_id%3D122963&amp;dntp=1&amp;display_name=Vimeo&amp;url=https%3A%2F%2Fvimeo.com%2F1181740872%3Ffl%3Dml%26fe%3Dec&amp;image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F2144184762-2603cf4be49190da44034c38113e62f871ea9d3de7ad5b052798df94d4ecb440-d_1280%3Fregion%3Dus&amp;type=text%2Fhtml&amp;schema=vimeo\" title=\"DISNEY: A GOOFY MOVIE\" width=\"940\"></iframe></div>"
+    }
+   ]
+  }
+ ],
+ "listing": {
+  "listed": true,
+  "work": {
+   "summary": "We created a mailer that offered more than just nostalgia - it was a full-on interactive experience. Delivered alongside a visit from tour roadies and a surprise special guest, the kit invited fans to do more than relive the movie - they got to step into it. Packed with exclusive collectibles and hands-on activities, it brought the film to life. With every challenge completed, snack enjoyed, and dance move busted, fans became part of the ultimate pop culture celebration.",
+   "href": "/case-studies-items/a-goofy-movie",
+   "month": "Apr",
+   "year": "2025",
+   "bg": {
+    "src": "/images/69d454700e4411023b6cfaab_20250402_MFG_IHC_0439-p-2000.webp",
+    "srcset": "/images/69d454700e4411023b6cfaab_20250402_MFG_IHC_0439-p-500.webp 500w, /images/69d454700e4411023b6cfaab_20250402_MFG_IHC_0439-p-800.webp 800w, /images/69d454700e4411023b6cfaab_20250402_MFG_IHC_0439-p-1080.webp 1080w, /images/69d454700e4411023b6cfaab_20250402_MFG_IHC_0439-p-1600.webp 1600w, /images/69d454700e4411023b6cfaab_20250402_MFG_IHC_0439-p-2000.webp 2000w",
+    "sizes": "100vw",
+    "data-bg": "/images/69d454700e4411023b6cfaab_20250402_MFG_IHC_0439-p-1600.webp",
+    "alt": ""
+   }
+  },
+  "home": {
+   "showHomepage": true,
+   "category": "Film",
+   "image": "/images/69d454700e4411023b6cfaab_20250402_MFG_IHC_0439-t800.webp",
+   "gif": "",
+   "vimeo": "",
+   "ip": "",
+   "award": false,
+   "awardTitle": "",
+   "awardLogo1": "",
+   "awardLogo2": "",
+   "video": ""
+  }
+ }
+}

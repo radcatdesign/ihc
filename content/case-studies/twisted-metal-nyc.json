@@ -1,0 +1,239 @@
+{
+ "slug": "twisted-metal-nyc",
+ "pageId": "673cdda77a77f753017870d0",
+ "seoTitle": "Twisted Metal NY",
+ "description": "",
+ "noindex": false,
+ "title": "Twisted Metal S1 NYC",
+ "client": "Peacock",
+ "subtitle": "NYC SCREENING",
+ "heroImage": {
+  "src": "/images/674f8854edda700309b0d048_107252023-Twisted-Metal-202152.webp",
+  "srcset": "/images/674f8854edda700309b0d048_107252023-Twisted-Metal-202152-p-500.webp 500w, /images/674f8854edda700309b0d048_107252023-Twisted-Metal-202152-p-800.webp 800w, /images/674f8854edda700309b0d048_107252023-Twisted-Metal-202152-p-1080.webp 1080w, /images/674f8854edda700309b0d048_107252023-Twisted-Metal-202152-p-1600.webp 1600w, /images/674f8854edda700309b0d048_107252023-Twisted-Metal-202152.webp 2000w",
+  "sizes": "100vw"
+ },
+ "heroVimeo": "",
+ "stats": [],
+ "services": [
+  {
+   "name": "Creative Concept",
+   "slug": "creative-concept"
+  },
+  {
+   "name": "Creative Direction",
+   "slug": "creative-direction"
+  },
+  {
+   "name": "Environment Design",
+   "slug": "environment-design"
+  },
+  {
+   "name": "Event Production",
+   "slug": "event-production"
+  },
+  {
+   "name": "Influencer Guestlist",
+   "slug": "influencer-guestlist"
+  }
+ ],
+ "headline": "“Mister Softee might have some competition in these New York Streets tonight.” - @CRSone",
+ "intro": "IHC PRODUCED A SPECIAL SCREENING OF PEACOCK’S NEW SHOW <em>TWISTED METAL</em>.",
+ "introPieces": [
+  {
+   "type": "introGallery",
+   "media": [
+    {
+     "type": "image",
+     "src": "/images/674f7413f4e201d61811651c_107252023-Twisted-Metal-202152.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/674f7847f4e201d6181591b9_07252023-Twisted-Metal-106515-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/674f7413da72bc1c1b12352d_507252023-Twisted-Metal-106494.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/674f7847f4e201d6181591ec_07252023-Twisted-Metal-106116-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/674f74133298754964fde96f_607252023-Twisted-Metal-106260.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/674f7413cb8e26b728b85051_07252023-Twisted-Metal-202488.avif",
+     "alt": ""
+    }
+   ],
+   "html": "<p>Coming off the success of our stunt in San Diego, we spearheaded an exclusive screening the week after in NYC for tastemakers and cultural influencers. </p>\n<p>We transformed the AMC Lincoln Square into an apocalyptic casino reminiscent of Sweet Tooth’s Lair. Upon arrival, guests were greeted by Sweet Tooth’s ice cream truck, set among more apocalyptic decor and set pieces, which served as a must-have photo backdrop even in the rain. </p>"
+  }
+ ],
+ "sections": [
+  {
+   "title": "SWEET TOOTH'S LAIR",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p>Once inside, guests were transported into Lost Vegas, Sweet Tooth’s playground, complete with slot machines, mood lighting and carpet. Costumes of the eight key characters were also on display. </p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/6a6a6fe0fb031439152d2957__R1A4414.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a6a6fe161a5f0ab419bd6cc_07252023-Twisted-Metal-106494.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a6a6fe14aefd3f353ddd679__R1A4388.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a6a6fe1a119e67dcaaefcff_07252023-Twisted-Metal-106098.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a6a6fe0fcdd131a1b92efc3__R1A4380.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a6a6fe11623bb4f6ff8c33d_707252023-Twisted-Metal-201678.avif",
+       "alt": ""
+      }
+     ],
+     "dataClass": ""
+    }
+   ]
+  },
+  {
+   "title": "nyc screening",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p>Inside the theater, BAs handed out branded Von Dutch trucker hats while Pictureplane DJ'd 90’s and 00’s hits. Comedian, Evan Williams, introduced the film along with a special video from Anthony Mackie before the first 2 episodes were premiered. The Cobrasnake roamed the venue capturing guests throughout the evening.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/674f76433f97c152962cee57__R1A4523.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/674f7641196fea474f187994__R1A4496.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/674f7642644638d7f10f0e5d__R1A4528.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/674f764212d21a0cc96f1810_07252023-Twisted-Metal-202436.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a6a722f6da6987e00750c60_07252023-Twisted-Metal-202991.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a6a70b03b1ce87eb92bccbe__R1A4667.avif",
+       "alt": ""
+      }
+     ],
+     "dataClass": ""
+    }
+   ]
+  },
+  {
+   "title": "PHOTO MOMENT",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p>A large scale title treatment display served as our hero photo moment, where NBC Universal's house photographer captured notable guests as they headed inside the theater. </p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/6a6a723108498306dab3d2f2_07252023-Twisted-Metal-202299.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/674f7413cb8e26b728b85051_07252023-Twisted-Metal-202488.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a6a722fbbed0d3351cc9b81_07252023-Twisted-Metal-202350.avif",
+       "alt": ""
+      }
+     ],
+     "dataClass": ""
+    }
+   ]
+  },
+  {
+   "title": "WATCH THE RECAP",
+   "pieces": [
+    {
+     "type": "video",
+     "embed": "<div class=\"p-cs__video__el w-video w-embed\" style=\"padding-top:56.27659574468085%\"><iframe allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture\" allowfullscreen=\"true\" class=\"embedly-embed\" frameborder=\"0\" height=\"529\" scrolling=\"no\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F1036146055%3Fapp_id%3D122963&amp;dntp=1&amp;display_name=Vimeo&amp;url=https%3A%2F%2Fvimeo.com%2F1036146055%3Ffl%3Dls%26fe%3Dec&amp;image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F1957798049-3e3b9ba4e8862a788c69f5228a405f017998d3b57fb17c9f5cb8814c3051b100-d_1280%3Fregion%3Dus&amp;type=text%2Fhtml&amp;schema=vimeo\" title=\"Peacock: Twisted Metal NYC\" width=\"940\"></iframe></div>"
+    }
+   ]
+  }
+ ],
+ "listing": {
+  "listed": true,
+  "work": {
+   "summary": "IHC DEVELOPED AND EXECUTED A SPECIAL ADVANCED SCREENING OF PEACOCK’S NEW SHOW TWISTED METAL.",
+   "href": "/case-studies-items/twisted-metal-nyc",
+   "month": "Jul",
+   "year": "2023",
+   "bg": {
+    "src": "/images/674f8854edda700309b0d048_107252023-Twisted-Metal-202152.webp",
+    "srcset": "/images/674f8854edda700309b0d048_107252023-Twisted-Metal-202152-p-500.webp 500w, /images/674f8854edda700309b0d048_107252023-Twisted-Metal-202152-p-800.webp 800w, /images/674f8854edda700309b0d048_107252023-Twisted-Metal-202152-p-1080.webp 1080w, /images/674f8854edda700309b0d048_107252023-Twisted-Metal-202152-p-1600.webp 1600w, /images/674f8854edda700309b0d048_107252023-Twisted-Metal-202152.webp 2000w",
+    "sizes": "100vw",
+    "data-bg": "/images/674f8854edda700309b0d048_107252023-Twisted-Metal-202152-p-1600.webp",
+    "alt": ""
+   }
+  },
+  "home": {
+   "showHomepage": false,
+   "category": "Television",
+   "image": "/images/674f8854edda700309b0d048_107252023-Twisted-Metal-202152-t800.webp",
+   "gif": "",
+   "vimeo": "",
+   "ip": "",
+   "award": false,
+   "awardTitle": "",
+   "awardLogo1": "",
+   "awardLogo2": "",
+   "video": ""
+  }
+ }
+}

@@ -1,0 +1,172 @@
+{
+ "slug": "babes",
+ "pageId": "69cef0c3ce4594e7a23c0c32",
+ "seoTitle": "Babes",
+ "description": "",
+ "noindex": false,
+ "title": "Babes",
+ "client": "Neon",
+ "subtitle": "STREET TEAM STUNT",
+ "heroImage": {
+  "src": "/images/69cef10926e85ecc6f37c4d4_20240512-Babes_032-p-2000.webp",
+  "srcset": "/images/69cef10926e85ecc6f37c4d4_20240512-Babes_032-p-500.webp 500w, /images/69cef10926e85ecc6f37c4d4_20240512-Babes_032-p-800.webp 800w, /images/69cef10926e85ecc6f37c4d4_20240512-Babes_032-p-1080.webp 1080w, /images/69cef10926e85ecc6f37c4d4_20240512-Babes_032-p-1600.webp 1600w, /images/69cef10926e85ecc6f37c4d4_20240512-Babes_032-p-2000.webp 2000w",
+  "sizes": "100vw"
+ },
+ "heroVimeo": "",
+ "stats": [
+  {
+   "value": "2",
+   "label": "Days Live"
+  },
+  {
+   "value": "10k",
+   "label": "Giveaways Distributed"
+  },
+  {
+   "value": "24",
+   "label": "Hours Live"
+  },
+  {
+   "value": "7",
+   "label": "Locations"
+  }
+ ],
+ "services": [
+  {
+   "name": "Creative Direction",
+   "slug": "creative-direction"
+  },
+  {
+   "name": "Development",
+   "slug": "development"
+  },
+  {
+   "name": "Talent Booking",
+   "slug": "talent-booking"
+  }
+ ],
+ "headline": "“And that’s what we like to call a labor of love.” - EventMarketer",
+ "intro": "WE UNLEASHED A PREGNANT TROUPE ON THE STREETS OF LA TO PROMOTE THE THEATRICAL RELEASE OF BABES.",
+ "introPieces": [
+  {
+   "type": "introGallery",
+   "media": [
+    {
+     "type": "image",
+     "src": "/images/69cef681bb12530be1c5f745_20240511-Babes_030-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/69cfe49574494ce53329f3f6_20240510-Babes_040-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/69cef64e5badfa04b9b2cb01_20240510-Babes_027-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/69cef64e99a1d2296386c8fe_20240511-Babes_006-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/69cef6811797011cd6fb815f_20240511-Babes_034-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/69cef64ec61acf9ac07e58a3_20240511-Babes_003-p-2000.avif",
+     "alt": ""
+    }
+   ],
+   "html": "<p>Babes star Michelle Buteau was booked to headline the Netflix Is A Joke Festival, and Neon wanted to capitalize on this massive funny fan gathering. We brought together some of the world’s top comedians in iconic venues across Los Angeles. </p>\n<p>To promote the theatrical release of an unconventional film about expecting mothers, our pregnant street team was accompanied by a mobile LED truck to spread awareness with outlandish antics, key messaging and free giveaways.  </p>\n<p>‍</p>"
+  }
+ ],
+ "sections": [
+  {
+   "title": "THE STREET Team",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p>Our street team was dressed in matching shirts and expecting bellies, poised to turn heads and spark conversation. They leaned into the film’s theme of being unprepared for all that goes into being pregnant, with character bits including a skating babe and by handing out stickers and condoms.</p>\n<p>On launch day, we focused on canvassing The Wiltern and Hollywood Palladium, where Michelle Buteau was performing. Over the next two days, we sent our team to various areas of high visibility and foot traffic from Netflix Is A Joke including the Santa Monica Pier, Youtube Theater, and The Wiltern. </p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/69cfe495bf9db144436bb82d_20240510-Babes_014-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69cfe4dc7cfe448853fc963a_20240510-Babes_038-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69cfe495a5156857610bdcbd_20240512-Babes_015-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69cfe4dce9af8be9b5ccc69e_20240511-Babes_029-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69cef68136daf6838faf9813_20240512-Babes_036-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69cfe4956349623e5f9c95fa_20240510-Babes_020-p-2000.avif",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "WATCH THE RECAP",
+   "pieces": [
+    {
+     "type": "video",
+     "embed": "<div class=\"p-cs__video__el w-video w-embed\" style=\"padding-top:56.27659574468085%\"><iframe allowfullscreen=\"\" class=\"embedly-embed\" height=\"529\" scrolling=\"no\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F1027739141%3Fapp_id%3D122963&amp;dntp=1&amp;display_name=Vimeo&amp;url=https%3A%2F%2Fvimeo.com%2F1027739141&amp;image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F1947764651-5e2b8fd5be4769f937bd6e27688e6d8dfb4086c48a14900e4c05137745ee35b8-d_1280%3Fregion%3Dus&amp;type=text%2Fhtml&amp;schema=vimeo\" title=\"Neon: Babes\" width=\"940\"></iframe></div>"
+    }
+   ]
+  }
+ ],
+ "listing": {
+  "listed": true,
+  "work": {
+   "summary": "IHC invaded Netflix Is A Joke with a street team stunt that turned heads and made a splash!",
+   "href": "/case-studies-items/babes",
+   "month": "",
+   "year": "",
+   "bg": {
+    "src": "/images/69cef10926e85ecc6f37c4d4_20240512-Babes_032-p-2000.webp",
+    "srcset": "/images/69cef10926e85ecc6f37c4d4_20240512-Babes_032-p-500.webp 500w, /images/69cef10926e85ecc6f37c4d4_20240512-Babes_032-p-800.webp 800w, /images/69cef10926e85ecc6f37c4d4_20240512-Babes_032-p-1080.webp 1080w, /images/69cef10926e85ecc6f37c4d4_20240512-Babes_032-p-1600.webp 1600w, /images/69cef10926e85ecc6f37c4d4_20240512-Babes_032-p-2000.webp 2000w",
+    "sizes": "100vw",
+    "data-bg": "/images/69cef10926e85ecc6f37c4d4_20240512-Babes_032-p-1600.webp",
+    "alt": ""
+   }
+  },
+  "home": {
+   "showHomepage": true,
+   "category": "Film",
+   "image": "/images/69cef10926e85ecc6f37c4d4_20240512-Babes_032-t800.webp",
+   "gif": "",
+   "vimeo": "",
+   "ip": "",
+   "award": false,
+   "awardTitle": "",
+   "awardLogo1": "",
+   "awardLogo2": "",
+   "video": ""
+  }
+ }
+}

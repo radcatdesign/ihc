@@ -1,0 +1,207 @@
+{
+ "slug": "willow",
+ "pageId": "661dfb0c64245bb8988088ac",
+ "seoTitle": "Willow",
+ "description": "",
+ "noindex": false,
+ "title": "Willow",
+ "client": "Disney • Lucasfilm",
+ "subtitle": "",
+ "heroImage": {
+  "src": "/images/66c4816760fdfa68c09589bf_willow-s.avif",
+  "srcset": "/images/66c4816760fdfa68c09589bf_willow-s-p-500.avif 500w, /images/66c4816760fdfa68c09589bf_willow-s-p-800.avif 800w, /images/66c4816760fdfa68c09589bf_willow-s-p-1080.avif 1080w, /images/66c4816760fdfa68c09589bf_willow-s.avif 1920w",
+  "sizes": "100vw"
+ },
+ "heroVimeo": "788122744?h=aa00276d85",
+ "stats": [],
+ "services": [
+  {
+   "name": "Creative Direction",
+   "slug": "creative-direction"
+  },
+  {
+   "name": "Event Production",
+   "slug": "event-production"
+  }
+ ],
+ "headline": "",
+ "intro": "We brought the mystical world of Willow to life with a screening at the historic Magic Castle in Hollywood.",
+ "introPieces": [
+  {
+   "type": "introGallery",
+   "media": [
+    {
+     "type": "image",
+     "src": "/images/661dfbaf7163c99bb4af90a2_1-zyasi0418-1800x-p-2000.webp",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/661dfbafca3c1b66b9f5d5d9_case-studies-willow-general-main-gallery-image4-1800x-p-2000.webp",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/661dfbafd8910f4d42e78441_case-studies-willow-general-main-gallery-image2-1800x-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/661dfbaf750dff87ecc6b8a2_zyasi0478-1800x-p-2000.webp",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/661dfbaf9d8479b0cb3ce96e_case-studies-willow-general-main-gallery-image5-1800x-p-2000.webp",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/661dfbaf8052d0dc12ee5c0e_case-studies-willow-general-main-gallery-image7-1800x-p-2000.webp",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/661dfbaf82496473663af691_zyasi0513-1800x-p-2000.webp",
+     "alt": ""
+    }
+   ],
+   "html": "<p>Disney tapped IHC to oversee the production of an exclusive early screening event for Willow. VIPs and creators joined the full cast for an intriguing afternoon, as guests were immersed in the wonder and magic of the story upon arrival where in-character door staff ushered them to the Castle. </p>\n<p>A special password unlocked a library revealing the secret foyer, where guests indulged in drinks and appetizers before enjoying a special two-episode screening of the series.</p>"
+  }
+ ],
+ "sections": [
+  {
+   "title": "Inside the Magic",
+   "pieces": [
+    {
+     "type": "text2",
+     "left": "<p>The afternoon was filled with enchanting moments from start to finish. Cloaked greeters guided guests through the castle and into the Piano Bar for a cocktail hour followed by a performance by magician, David Golddrake, and an introduction by series star, Warwick Davis.</p>",
+     "right": "<p>While guests enjoyed the private screening, the series stars witnessed a VIP magic show in the Parlour of Prestidigitation. The afternoon concluded with several roaming magicians engaging the guests in close up magic.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/6a6a54e363b4cf4e0e47b154_zYASI0067-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a6a54e5c9f2202749ebc3ef_zYASI0311-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a6a54e510bdd60f43800b03_zYASI0329-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a6a54e3316d28416668d659_zYASI0387-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a6a54e30239105796280da2_zYASI0466-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a6a54e254e3112953758e81_zYASI0438-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a6a54e283ba37c86dab0be2_zYASI0803-p-2000.avif",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "the World of Willow",
+   "pieces": [
+    {
+     "type": "text2",
+     "left": "<p>No detail was forgotten, as key elements of the film were intertwined with the interior of the venue, including actual props and costumes from the show for guests to pose with. </p>",
+     "right": "<p>Serving as the photo moment, a backdrop featuring a polished metal, die-cut WILLOW logo projected from the surface to create a 3D effect. Layers of faux foliage and winding tree vines, transformed it into a forest-inspired environment.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/6a6a643fadb51640aa389147_zYASI0003-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a6a54e30239105796280da8_zYASI0578-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a6a64401c130d05e8894674_zYASI0009-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a6a54e3e50b73abe6f844a6_zYASI0556-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a6a54e33d0ee61fb9160698_zYASI0639.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a6a54e56d1f66c9b871571c_zYASI0497.avif",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "WATCH THE RECAP",
+   "pieces": [
+    {
+     "type": "video",
+     "embed": "<div class=\"p-cs__video__el w-video w-embed\" style=\"padding-top:56.27659574468085%\"><iframe allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture\" allowfullscreen=\"true\" class=\"embedly-embed\" frameborder=\"0\" height=\"529\" scrolling=\"no\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F787789674%3Fapp_id%3D122963&amp;dntp=1&amp;display_name=Vimeo&amp;url=https%3A%2F%2Fvimeo.com%2F787789674%3Fshare%3Dcopy%26fl%3Dcl%26fe%3Dci&amp;image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F1584200234-684bf7e417c9175d68cc9696b093475af642ec1feb074b2d87fda42ca86bd009-d_1280%3Fregion%3Dus&amp;type=text%2Fhtml&amp;schema=vimeo\" title=\"Willow Recap Video\" width=\"940\"></iframe></div>"
+    }
+   ]
+  }
+ ],
+ "listing": {
+  "listed": true,
+  "work": {
+   "summary": "We brought the mystical world of \"Willow\" to life with a private screening at the historic Magic Castle in Hollywood, CA.",
+   "href": "/case-studies-items/willow",
+   "month": "Dec",
+   "year": "2022",
+   "bg": {
+    "src": "/images/66c4816760fdfa68c09589bf_willow-s.avif",
+    "srcset": "/images/66c4816760fdfa68c09589bf_willow-s-p-500.avif 500w, /images/66c4816760fdfa68c09589bf_willow-s-p-800.avif 800w, /images/66c4816760fdfa68c09589bf_willow-s-p-1080.avif 1080w, /images/66c4816760fdfa68c09589bf_willow-s.avif 1920w",
+    "sizes": "100vw",
+    "data-bg": "/images/66c4816760fdfa68c09589bf_willow-s-p-1080.avif",
+    "alt": ""
+   }
+  },
+  "home": {
+   "showHomepage": false,
+   "category": "Film",
+   "image": "/images/66c4816760fdfa68c09589bf_willow-s-t800.webp",
+   "gif": "/images/673ce528ad043c4a74709d0c_Willow-min.webp",
+   "vimeo": "788122744?h=aa00276d85",
+   "ip": "",
+   "award": false,
+   "awardTitle": "",
+   "awardLogo1": "",
+   "awardLogo2": "",
+   "video": ""
+  }
+ }
+}

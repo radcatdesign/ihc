@@ -1,0 +1,242 @@
+{
+ "slug": "elio-pixar-creator-day",
+ "pageId": "69dfd76b3d201e0cb1e79b85",
+ "seoTitle": "Elio Pixar Creator Day",
+ "description": "",
+ "noindex": false,
+ "title": "Elio Pixar Creator Day",
+ "client": "Disney • Pixar",
+ "subtitle": "",
+ "heroImage": {
+  "src": "/images/6a0502f5eb7942ccefb0743b_IMG_5208-p-2000.jpg",
+  "srcset": "/images/6a0502f5eb7942ccefb0743b_IMG_5208-p-500.jpg 500w, /images/6a0502f5eb7942ccefb0743b_IMG_5208-p-800.jpg 800w, /images/6a0502f5eb7942ccefb0743b_IMG_5208-p-1080.jpg 1080w, /images/6a0502f5eb7942ccefb0743b_IMG_5208-p-1600.jpg 1600w, /images/6a0502f5eb7942ccefb0743b_IMG_5208-p-2000.jpg 2000w",
+  "sizes": "100vw"
+ },
+ "heroVimeo": "",
+ "stats": [
+  {
+   "value": "9M+",
+   "label": "Social Impressions"
+  },
+  {
+   "value": "10",
+   "label": "IHC Creators"
+  },
+  {
+   "value": "77",
+   "label": "Social Posts"
+  }
+ ],
+ "services": [
+  {
+   "name": "Creative Direction",
+   "slug": "creative-direction"
+  },
+  {
+   "name": "Development",
+   "slug": "development"
+  },
+  {
+   "name": "Environment Design",
+   "slug": "environment-design"
+  },
+  {
+   "name": "Event Production",
+   "slug": "event-production"
+  },
+  {
+   "name": "Influencer Guestlist",
+   "slug": "influencer-guestlist"
+  }
+ ],
+ "headline": "“THAT WAS SERIOUSLY ONE OF THE COOLEST EXPERIENCES WE'VE EVER HAD!” — Dylan Bradshaw, Creator",
+ "intro": "A DAY OF COSMIC EXPLORATION AT THE PIXAR CAMPUS TO CELEBRATE ELIO!",
+ "introPieces": [
+  {
+   "type": "introGallery",
+   "media": [
+    {
+     "type": "image",
+     "src": "/images/69dfe46fef4ae5fb3f9f3509_elio_programming_03.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/69dfe46e3fa19c7a9b2e89c6_elio_decor_05.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/69dfe684ef6079a53ce8b5e9_IMG_5247-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/69dfe46f39508724c964428d_elio_programming_04.avif",
+     "alt": ""
+    }
+   ],
+   "html": "<p>To promote the upcoming release of Elio, we developed a creator content day of celestial creativity and expression for a handpicked group of global influencers.</p>\n<p>Guests were immersed into the world through a series of thoughtfully designed, intergalactic-themed activities and content opportunities - from cosmic light photography and slime experiences to friendship bracelet stations, stargazing, and immersive photo ops.</p>"
+  }
+ ],
+ "sections": [
+  {
+   "title": "SOCIAL SELECTS",
+   "pieces": [
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/69dfe46fcb4b1faa2cc89319_elio_creatorscontent_01.avif",
+       "alt": ""
+      },
+      {
+       "type": "video",
+       "embed": "<div class=\"w-video w-embed\" style=\"padding-top:177.76595744680853%\"><iframe allowfullscreen=\"\" class=\"embedly-embed\" height=\"1671\" scrolling=\"no\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F1192672842%3Fapp_id%3D122963&amp;dntp=1&amp;display_name=Vimeo&amp;url=https%3A%2F%2Fvimeo.com%2F1192672842%3Fshare%3Dcopy%26fl%3Dsv%26fe%3Dci&amp;image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F2157984118-d7fac465b3d84f5c663e26c199f9c0efa8f64c66c5b05db05a23d3461d8a4724-d_640%3Fregion%3Dus&amp;type=text%2Fhtml&amp;schema=vimeo\" title=\"Elio: Creator Day (1/5)\" width=\"940\"></iframe></div>"
+      },
+      {
+       "type": "image",
+       "src": "/images/69dfe46f16ca0b36b5f65923_elio_creatorscontent_02.avif",
+       "alt": ""
+      },
+      {
+       "type": "video",
+       "embed": "<div class=\"w-video w-embed\" style=\"padding-top:177.76595744680853%\"><iframe allowfullscreen=\"\" class=\"embedly-embed\" height=\"1671\" scrolling=\"no\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F1192673068%3Fapp_id%3D122963&amp;dntp=1&amp;display_name=Vimeo&amp;url=https%3A%2F%2Fvimeo.com%2F1192673068&amp;image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F2157984362-83438fe0b50a696f0b7789b1b19db8ed22a69cc27d0b77b5c5a716b268a1fe68-d_640%3Fregion%3Dus&amp;type=text%2Fhtml&amp;schema=vimeo\" title=\"Elio: Creator Day (2/5)\" width=\"940\"></iframe></div>"
+      },
+      {
+       "type": "image",
+       "src": "/images/69dfe46f6bf19f5e4fd18309_elio_creatorscontent_03.avif",
+       "alt": ""
+      },
+      {
+       "type": "video",
+       "embed": "<div class=\"w-video w-embed\" style=\"padding-top:177.76595744680853%\"><iframe allowfullscreen=\"\" class=\"embedly-embed\" height=\"1671\" scrolling=\"no\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F1192673364%3Fapp_id%3D122963&amp;dntp=1&amp;display_name=Vimeo&amp;url=https%3A%2F%2Fvimeo.com%2F1192673364&amp;image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F2157984752-1fcf09074e7d22c34ad8c817ec7561c7d77987a3e82b7f80514fcb65883328ff-d_640%3Fregion%3Dus&amp;type=text%2Fhtml&amp;schema=vimeo\" title=\"Elio: Creator Day (3/5)\" width=\"940\"></iframe></div>"
+      },
+      {
+       "type": "image",
+       "src": "/images/69f127e4e46ac98ba42b894e_498928891_18289343563247156_5477522308674769268_n.avif",
+       "alt": ""
+      },
+      {
+       "type": "video",
+       "embed": "<div class=\"w-video w-embed\" style=\"padding-top:177.76595744680853%\"><iframe allowfullscreen=\"\" class=\"embedly-embed\" height=\"1671\" scrolling=\"no\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F1192674076%3Fapp_id%3D122963&amp;dntp=1&amp;display_name=Vimeo&amp;url=https%3A%2F%2Fvimeo.com%2F1192674076%3Fshare%3Dcopy%26fl%3Dsv%26fe%3Dci&amp;image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F2157985636-016e528805653c30eb1b0abfe3667aa859dc50e6ec9698a8f07748376349a05e-d_640%3Fregion%3Dus&amp;type=text%2Fhtml&amp;schema=vimeo\" title=\"Elio: Creator Day (4/5)\" width=\"940\"></iframe></div>"
+      },
+      {
+       "type": "video",
+       "embed": "<div class=\"w-video w-embed\" style=\"padding-top:177.76595744680853%\"><iframe allowfullscreen=\"\" class=\"embedly-embed\" height=\"1671\" scrolling=\"no\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F1192674667%3Fapp_id%3D122963&amp;dntp=1&amp;display_name=Vimeo&amp;url=https%3A%2F%2Fvimeo.com%2F1192674667&amp;image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F2157986392-f0fb5b91b80c440f36e222d897e1fff38399a10bf5735477a3eac7d5248296d7-d_640%3Fregion%3Dus&amp;type=text%2Fhtml&amp;schema=vimeo\" title=\"Elio: Creator Day (5/5)\" width=\"940\"></iframe></div>"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "PROGRAMMING",
+   "pieces": [
+    {
+     "type": "text2",
+     "left": "<p>Pixar tapped us to build a full programming schedule around an exclusive inside look at the making of Elio on their campus. The day was packed with content-driven moments - including a cinematic recreation of Elio's \"Abduct Me!\" scene with laser-cut sand carvings and drone capture, and a dinner on the decorated terrace overlooking a soccer field where glowing green lights spelled out Elio.</p>",
+     "right": "<p>As the sun set, guests shifted into an evening of intergalactic exploration designed to spark childlike wonder. Guests moved through an Elio-inspired environment featuring a guided fiber optic light photography session with LA-based artist Katrina Brown, intergalactic slime-making with the Sloomoo Institute, and DIY glow-in-the-dark friendship bracelets. We ended the night under the stars with a professional astronomer-led stargazing session.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/69f124a8d4838a997442ea88_IMG_5208-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69dfe2d172998cd3fb9c664f_elio_main_02.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69f125532a51342bb9c91e0c_pixar-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69f12647dbb568cf77c1cec8_IMG_3241-p-2000.jpg",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69dfe470895d2a9802085773_elio_programming_10.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69dfe47091dc95a4a3e29da7_elio_programming_11.avif",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "DECOR",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p>Environmental lighting played a key role in setting the tone, with star laser projections, glowing orbs, and washes of blue, purple, and amber transforming the space. As creators exited the campus, fog-lined LED arches, light portals and takeaway goodie bags created a magical farewell.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/69dfe47055ac33c1fb20a267_elio_programming_08.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69dfe46ec3beb4adf878fe8d_elio_decor_02.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69dfe46f4859151af3346a0e_elio_decor_04-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69dfe46f16ca0b36b5f65926_elio_decor_03.avif",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "listing": {
+  "listed": true,
+  "work": {
+   "summary": "To promote the release of Elio, we helped curate cosmic-inspired activities for a select group of creators, immersing them in the film’s intergalactic world through themed experiences designed to spark expression and endless content.",
+   "href": "/case-studies-items/elio-pixar-creator-day",
+   "month": "May",
+   "year": "2025",
+   "bg": {
+    "src": "/images/6a0502f5eb7942ccefb0743b_IMG_5208-p-2000.jpg",
+    "srcset": "/images/6a0502f5eb7942ccefb0743b_IMG_5208-p-500.jpg 500w, /images/6a0502f5eb7942ccefb0743b_IMG_5208-p-800.jpg 800w, /images/6a0502f5eb7942ccefb0743b_IMG_5208-p-1080.jpg 1080w, /images/6a0502f5eb7942ccefb0743b_IMG_5208-p-1600.jpg 1600w, /images/6a0502f5eb7942ccefb0743b_IMG_5208-p-2000.jpg 2000w",
+    "sizes": "100vw",
+    "data-bg": "/images/6a0502f5eb7942ccefb0743b_IMG_5208-p-1600.jpg",
+    "alt": ""
+   }
+  },
+  "home": {
+   "showHomepage": true,
+   "category": "Film",
+   "image": "/images/6a0502f5eb7942ccefb0743b_IMG_5208-t800.webp",
+   "gif": "",
+   "vimeo": "",
+   "ip": "",
+   "award": false,
+   "awardTitle": "",
+   "awardLogo1": "",
+   "awardLogo2": "",
+   "video": ""
+  }
+ }
+}

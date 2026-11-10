@@ -1,0 +1,222 @@
+{
+ "slug": "after-the-hunt",
+ "pageId": "69d41aee4a87ab50b76ce789",
+ "seoTitle": "After The Hunt",
+ "description": "",
+ "noindex": false,
+ "title": "After The Hunt",
+ "client": "Amazon MGM",
+ "subtitle": "",
+ "heroImage": {
+  "src": "/images/69d41b878a64fb8a30121efc_afterthehunt_index-p-2000.webp",
+  "srcset": "/images/69d41b878a64fb8a30121efc_afterthehunt_index-p-500.webp 500w, /images/69d41b878a64fb8a30121efc_afterthehunt_index-p-800.webp 800w, /images/69d41b878a64fb8a30121efc_afterthehunt_index-p-1080.webp 1080w, /images/69d41b878a64fb8a30121efc_afterthehunt_index-p-1600.webp 1600w, /images/69d41b878a64fb8a30121efc_afterthehunt_index-p-2000.webp 2000w",
+  "sizes": "100vw"
+ },
+ "heroVimeo": "",
+ "stats": [
+  {
+   "value": "1",
+   "label": "Evening Only"
+  },
+  {
+   "value": "109",
+   "label": "Total Attendees"
+  },
+  {
+   "value": "8.3M+",
+   "label": "Estimated Impressions"
+  }
+ ],
+ "services": [
+  {
+   "name": "Development",
+   "slug": "development"
+  },
+  {
+   "name": "Event Production",
+   "slug": "event-production"
+  },
+  {
+   "name": "Content Production",
+   "slug": "content-production"
+  },
+  {
+   "name": "Influencer Guestlist",
+   "slug": "influencer-guestlist"
+  },
+  {
+   "name": "Digital Strategy",
+   "slug": "digital-strategy"
+  }
+ ],
+ "headline": "",
+ "intro": "A CURATED NIGHT OF FILM, FOOD, AND DISCUSSION CELEBRATING LUCA GUADAGNINO’S Latest film.",
+ "introPieces": [
+  {
+   "type": "introGallery",
+   "media": [
+    {
+     "type": "image",
+     "src": "/images/69d41d63a76044ba01d59cc2_afterthehunt_main_07-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/69d41ed1bef52e29931dece1_afterthehunt315-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/69d81e91e41a5fd81a68c8e0_afterthehunt816-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/69d41d639d057359bd10a2af_afterthehunt_main_09-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/69d41ebfb2fdc93c8d4d0e55_afterthehunt_arrivalprereception_09-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/69d41d63d1bfcfa46f60e66a_afterthehunt_main_08-p-2000.avif",
+     "alt": ""
+    }
+   ],
+   "html": "<p>To celebrate and promote visionary filmmaker Luca Guadagnino’s psychological drama After The Hunt, we brought together a handpicked group of creators, tastemakers, and film thought leaders for a special advanced screening and discussion moderated by hosts Tabitha Denholm, founder of Women Under the Influencer, and multimedia artist, Mandy Harris Williams </p>\n<p>The private event, complete with themed food and beverage, was captured for social content to promote the upcoming release, drive ticket sales, and spark online discussion.</p>"
+  }
+ ],
+ "sections": [
+  {
+   "title": "ARRIVAL & PRE-RECEPTION",
+   "pieces": [
+    {
+     "type": "text2",
+     "left": "<p>Guests were greeted at check-in and received black wristbands before being guided into the Boxwood Lounge for a private reception. Moody florals and carefully arranged old books decorated tables throughout the room, reflecting the film’s opening scene. Conversation cards were placed throughout to prompt discussion themes for the evening.</p>",
+     "right": "<p>All who were invited enjoyed a sophisticated reception designed to spark conversation, accompanied by a classical soundtrack. Passed bites, including chicken satay and herb pancakes with smoked salmon, were paired with themed cocktails such as “The Professor.”</p>\n<p>‍</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/69d4256d64e3fd2b62aedcaf_afterthehunt170-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69d4256d4796afb5074d9584_afterthehunt202-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69d424374906132a56d7692a_afterthehunt_arrivalprereception_06-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69d43734ce67279689eddc7b_afterthehunt117-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69d41d634b8110a729364514_afterthehunt_main_03-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69d424373186e5ec760d44c8_afterthehunt_arrivalprereception_07.avif",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "SCREENING & DISCUSSION",
+   "pieces": [
+    {
+     "type": "text2",
+     "left": "<p>Before the screening, staff guided guests to the theater, where they grabbed popcorn and refreshments prior to seating. Once everyone was settled, Tabitha and Mandy provided a brief introduction, highlighting the line, “Not everything is supposed to make you comfortable.”</p>",
+     "right": "<p>After the credits rolled, the moderators led the audience in a wider conversation, asking thought-provoking questions about the film’s themes and key ideas. To capture additional content, our team mic’d guests as they exited the screening, recording their raw reactions to both the film and the discussion.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/69d433d253b6a4ceca2971ce_afterthehunt_screeningdiscussion_07-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69d433d244e6f76fa5b1e19c_afterthehunt_screeningdiscussion_08-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69d433d24a1f8875ffa85220_afterthehunt_screeningdiscussion_06-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69d433d21d5632d721bf1981_afterthehunt_screeningdiscussion_05-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69d433d24da0b41595518344_afterthehunt_screeningdiscussion_11-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69d433d2f68bded5f034b5f5_afterthehunt_screeningdiscussion_10-p-2000.avif",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "WATCH THE RECAP",
+   "pieces": [
+    {
+     "type": "video",
+     "embed": "<div class=\"p-cs__video__el w-video w-embed\" style=\"padding-top:56.17021276595745%\"><iframe allowfullscreen=\"\" class=\"embedly-embed\" height=\"528\" scrolling=\"no\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FfSvQ5K6Ta_g%3Ffeature%3Doembed&amp;display_name=YouTube&amp;url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DfSvQ5K6Ta_g&amp;image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FfSvQ5K6Ta_g%2Fhqdefault.jpg&amp;type=text%2Fhtml&amp;schema=youtube\" title=\"Amazon MGM: After The Hunt \" width=\"940\"></iframe></div>"
+    }
+   ]
+  }
+ ],
+ "listing": {
+  "listed": true,
+  "work": {
+   "summary": "A curated evening of film, food, and conversation, this exclusive screening of After The Hunt united creators and tastemakers for a thought-provoking night designed to spark online dialogue and anticipation for the film’s release.",
+   "href": "/case-studies-items/after-the-hunt",
+   "month": "",
+   "year": "",
+   "bg": {
+    "src": "/images/69d41b878a64fb8a30121efc_afterthehunt_index-p-2000.webp",
+    "srcset": "/images/69d41b878a64fb8a30121efc_afterthehunt_index-p-500.webp 500w, /images/69d41b878a64fb8a30121efc_afterthehunt_index-p-800.webp 800w, /images/69d41b878a64fb8a30121efc_afterthehunt_index-p-1080.webp 1080w, /images/69d41b878a64fb8a30121efc_afterthehunt_index-p-1600.webp 1600w, /images/69d41b878a64fb8a30121efc_afterthehunt_index-p-2000.webp 2000w",
+    "sizes": "100vw",
+    "data-bg": "/images/69d41b878a64fb8a30121efc_afterthehunt_index-p-1600.webp",
+    "alt": ""
+   }
+  },
+  "home": {
+   "showHomepage": true,
+   "category": "Film",
+   "image": "/images/69d41b878a64fb8a30121efc_afterthehunt_index-t800.webp",
+   "gif": "",
+   "vimeo": "",
+   "ip": "",
+   "award": false,
+   "awardTitle": "",
+   "awardLogo1": "",
+   "awardLogo2": "",
+   "video": ""
+  }
+ }
+}

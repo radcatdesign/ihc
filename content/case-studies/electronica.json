@@ -1,0 +1,332 @@
+{
+ "slug": "electronica",
+ "pageId": "69b9bf550f234d02c02510b6",
+ "seoTitle": "Club ElecTRONica",
+ "description": "",
+ "noindex": false,
+ "title": "ElecTRONica",
+ "client": "Disney",
+ "subtitle": "",
+ "heroImage": {
+  "src": "/images/69bc3b94fbef996b18580658_tron_eventprogramming_01-p-2000.webp",
+  "srcset": "/images/69bc3b94fbef996b18580658_tron_eventprogramming_01-p-500.webp 500w, /images/69bc3b94fbef996b18580658_tron_eventprogramming_01-p-800.webp 800w, /images/69bc3b94fbef996b18580658_tron_eventprogramming_01-p-1080.webp 1080w, /images/69bc3b94fbef996b18580658_tron_eventprogramming_01-p-1600.webp 1600w, /images/69bc3b94fbef996b18580658_tron_eventprogramming_01-p-2000.webp 2000w",
+  "sizes": "100vw"
+ },
+ "heroVimeo": "",
+ "stats": [
+  {
+   "value": "",
+   "label": ""
+  },
+  {
+   "value": "1,032",
+   "label": "Total Attendees"
+  },
+  {
+   "value": "83.99M+",
+   "label": "Impressions"
+  },
+  {
+   "value": "550+",
+   "label": "Photo Opps"
+  }
+ ],
+ "services": [
+  {
+   "name": "Creative Direction",
+   "slug": "creative-direction"
+  },
+  {
+   "name": "Environment Design",
+   "slug": "environment-design"
+  },
+  {
+   "name": "Event Production",
+   "slug": "event-production"
+  },
+  {
+   "name": "Content Production",
+   "slug": "content-production"
+  },
+  {
+   "name": "Talent Booking",
+   "slug": "talent-booking"
+  }
+ ],
+ "headline": "“Event so good it made it… onto the grid” - Attendee",
+ "intro": "ELECTRONICA RETURNED FOR ONE NIGHT ONLY FOR CREATORS TO ENTER THE GRID AND STEP INTO TRON: ARES.",
+ "introPieces": [
+  {
+   "type": "introGallery",
+   "media": [
+    {
+     "type": "image",
+     "src": "/images/69c3277aa73b72a48a19df01_RONY3574-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/69b9b91e34da6678f8f436cc_tron_main_02-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/69c32779a37dabc4aa524779_RONY1878-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/69b9e4d04c8329d66c73c616_tron_onstageprogramming_13-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/69b9e668d747a7c40d762179_tron_invitescontentstrategy_08-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/69cebfabffed7315b1176688_pic.avif",
+     "alt": ""
+    }
+   ],
+   "html": "<p>To celebrate the upcoming release of Tron: Ares, we invaded downtown Los Angeles and transformed The Bellwether into ElecTRONica for a massive creator event. </p>\n<p>Part spectacle, part immersion and all fully rezzed, guests entered the world of Tron: Ares. From live DJs Avalon and Boys Noize spinning tracks to red-neon drenched photo opps to a special Laser Assassin performance, attendees were confronted with a night in the Grid built for social capture, fueling online buzz, and driving ticket sales.</p>"
+  }
+ ],
+ "sections": [
+  {
+   "title": "CREATIVE DECOR",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p>We collaborated with Precision Lasers to turn The Bellwether into the world of TRON - enveloping guests in an immersive and interactive laser show. An elaborate, multi-dimensional laser environment wrapped the entire space in vivid beams and sweeping patterns allowing guests to feel transported inside the film. </p>\n<p>The experience began the moment they arrived: a striking red laser grid served as the entryway, setting the tone for the sensory spectacle ahead. A dedicated counter showcased film props in clear acrylic cases atop lightbox pedestals. Each display included gallery-style description cards and was anchored by a red backlit logo. Branded signage guided guests throughout the space, while tabletop displays encouraged social sharing and tagging.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/69b9c9457f7dd52e432fe75e_tron_creativedecor_02-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69b9e4cfadcb91754f960e48_tron_onstageprogramming_02-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69c3277a34fdd81fc1a4e81d_RONY3898-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69b9e4d0d606334f55c1ff89_tron_onstageprogramming_12-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69c3277ad26018c9ebbdbd9d_RONY2268-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69b9c945ed81bb028acae13f_tron_creativedecor_09-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69b9b91e34da6678f8f436cc_tron_main_02-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69b9c945b232c12f0418cade_tron_creativedecor_11-p-2000.avif",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "INTERACTIVE DETAILS",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p>Guests had the opportunity to pose on an authentic Light Cycle set against a massive graphic backdrop featuring a dimensional LED-lit logo. Photographer Wes Ellis guided guests into the Grid for spotlight sessions, capturing striking shots and providing 4x6 keepsake printed portraits.</p>\n<p>A Tron-themed Snapchat Mirror on wheels offered a playful chance for guests to create custom content using a special filter. In the main lobby, guests enjoyed playing a classic Tron arcade game, a nod to the film’s iconic retro roots and nostalgic appeal.</p>\n<p>Red lighting and themed drink menus adorned all bars, which served specialty cocktails such as “The Grid” and “Gin &amp; TRONic,” each accompanied by glowing red waterproof LED lights. Guests were encouraged to dance in the main room, where music pulsed all night long in true ElecTRONica fashion.</p>\n<p>‍</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/69b9cd2b906fe60da370a50a_tron_eventprogramming_03-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69c5bb6120f446e50fa2af48_TronAres615-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69b9cd2a43cac5a0f66a7f0b_tron_eventprogramming_08-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69cec2aea976e8dd45441440_troneca.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69b9cd2bca11409cda494031_tron_eventprogramming_05.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69b9cd2b10f892dc62234c36_tron_eventprogramming_11-p-2000.avif",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "ONSTAGE PROGRAMMING",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p>The event opened with DJ Avalon spinning Tron-inspired tracks before the music cut to a glitch alarm, cueing a surge of exclusive onscreen content. A pre-recorded cast introduction led into exclusive film clips, a premiere of the Nine Inch Nails music video for \"As Alive As You Need Me To Be,\" and a choreographed, dynamic laser show.</p>\n<p>A performance by Laser Assassin then took the stage for a custom laser performance set to remixed Nine Inch Nails tracks. The night was headlined by Boys Noize who collaborated with Nine Inch Nails on the Tron: Ares soundtrack closing out the event with a high-energy DJ set backed by intense lasers and vivid red lighting.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/69b9e4cfeea73494532daa2a_tron_onstageprogramming_01-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69b9e4d08e32fea0a005b3f8_tron_onstageprogramming_04-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69b9e4cfed5db348edc75569_tron_onstageprogramming_05-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69b9e4cf7e93d718d241d8ca_tron_onstageprogramming_10-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69d5a0d14596bde5fe3f607b_RONY4192-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69b9e4d0a335049fe3305d62_tron_onstageprogramming_14-p-2000.avif",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "CREATOR STRATEGY",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p>Taking full ownership of the guestlist, we curated a crowd of the most relevant, stylish, and culturally impactful attendees. This included major influencers, breakout musicians and DJs, emerging talent, TikTok and Instagram creators, LA creatives, and nightlife tastemakers. By mobilizing our community around a unifying theme, we created a visually stunning, conversation-driving event.</p>\n<p>A thoughtfully crafted style guide and mood board inspired guests to dress up, resulting in a turnout of Tron-inspired, eye-catching looks that elevated the event’s overall production value. These looks sparked dedicated social buzz and #GRWM content. To capture the energy and excitement of the evening, we enlisted nightlife photographers Glen Han, RONY'S PHOTO BOOTH, and The Lounge Booth.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/69b9e66825032ec6ba69f8cd_tron_invitescontentstrategy_01-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69b9e668a23a835efd51d65f_tron_invitescontentstrategy_02-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69b9e668d5e6f2a25977989e_tron_invitescontentstrategy_03-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69b9e66880d24abcc8bfe85a_tron_invitescontentstrategy_04-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69b9e6689c7ec8b45b716520_tron_invitescontentstrategy_05-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69b9e668adcb91754f963d49_tron_invitescontentstrategy_06-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69b9e668a4800fa8c9c64cd1_tron_invitescontentstrategy_07-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69b9e668d747a7c40d762179_tron_invitescontentstrategy_08-p-2000.avif",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "WATCH THE RECAP",
+   "pieces": [
+    {
+     "type": "video",
+     "embed": "<div class=\"p-cs__video__el w-video w-embed\" style=\"padding-top:56.27659574468085%\"><iframe allowfullscreen=\"\" class=\"embedly-embed\" height=\"529\" scrolling=\"no\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F1134751862%3Fapp_id%3D122963&amp;dntp=1&amp;display_name=Vimeo&amp;url=https%3A%2F%2Fvimeo.com%2F1134751862&amp;image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F2079829582-956c1daea7605663e22ace34eef1532eb1b3e8d93883bc64e80fc159bc916eae-d_1280%3Fregion%3Dus&amp;type=text%2Fhtml&amp;schema=vimeo\" title=\"DISNEY: ELECTRONICA\" width=\"940\"></iframe></div>"
+    }
+   ]
+  }
+ ],
+ "listing": {
+  "listed": true,
+  "work": {
+   "summary": "A one-night-only takeover of downtown LA, ElecTRONica transformed The Bellwether into a fully rezzed Tron: Ares experience immersing creators in a neon-fueled world of music, spectacle, and social buzz.",
+   "href": "/case-studies-items/electronica",
+   "month": "",
+   "year": "",
+   "bg": {
+    "src": "/images/69bc3b94fbef996b18580658_tron_eventprogramming_01-p-2000.webp",
+    "srcset": "/images/69bc3b94fbef996b18580658_tron_eventprogramming_01-p-500.webp 500w, /images/69bc3b94fbef996b18580658_tron_eventprogramming_01-p-800.webp 800w, /images/69bc3b94fbef996b18580658_tron_eventprogramming_01-p-1080.webp 1080w, /images/69bc3b94fbef996b18580658_tron_eventprogramming_01-p-1600.webp 1600w, /images/69bc3b94fbef996b18580658_tron_eventprogramming_01-p-2000.webp 2000w",
+    "sizes": "100vw",
+    "data-bg": "/images/69bc3b94fbef996b18580658_tron_eventprogramming_01-p-1600.webp",
+    "alt": ""
+   }
+  },
+  "home": {
+   "showHomepage": true,
+   "category": "Film",
+   "image": "/images/69bc3b94fbef996b18580658_tron_eventprogramming_01-t800.webp",
+   "gif": "",
+   "vimeo": "",
+   "ip": "",
+   "award": false,
+   "awardTitle": "",
+   "awardLogo1": "",
+   "awardLogo2": "",
+   "video": ""
+  }
+ }
+}

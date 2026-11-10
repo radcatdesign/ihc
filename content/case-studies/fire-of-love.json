@@ -1,0 +1,263 @@
+{
+ "slug": "fire-of-love",
+ "pageId": "673fba73189e34b0880190c6",
+ "seoTitle": "Fire of Love",
+ "description": "",
+ "noindex": false,
+ "title": "Fire of Love",
+ "client": "Sandbox Films",
+ "subtitle": "",
+ "heroImage": {
+  "src": "/images/6751b5a833c1e000ea08ddda_CNL_8685-p-2000.webp",
+  "srcset": "/images/6751b5a833c1e000ea08ddda_CNL_8685-p-500.webp 500w, /images/6751b5a833c1e000ea08ddda_CNL_8685-p-800.webp 800w, /images/6751b5a833c1e000ea08ddda_CNL_8685-p-1080.webp 1080w, /images/6751b5a833c1e000ea08ddda_CNL_8685-p-1600.webp 1600w, /images/6751b5a833c1e000ea08ddda_CNL_8685-p-2000.webp 2000w",
+  "sizes": "100vw"
+ },
+ "heroVimeo": "",
+ "stats": [
+  {
+   "value": "1",
+   "label": "Night"
+  },
+  {
+   "value": "6",
+   "label": "Hours Live"
+  },
+  {
+   "value": "275+",
+   "label": "Guests"
+  }
+ ],
+ "services": [
+  {
+   "name": "Event Production",
+   "slug": "event-production"
+  },
+  {
+   "name": "Creative Direction",
+   "slug": "creative-direction"
+  },
+  {
+   "name": "Environment Design",
+   "slug": "environment-design"
+  },
+  {
+   "name": "Content Production",
+   "slug": "content-production"
+  }
+ ],
+ "headline": "",
+ "intro": "TO CELEBRATE fire of love's oscar nomination, WE LIT THE HOLLYWOOD HILLS RED FOR A SPECIAL RED CARPET PARTY.",
+ "introPieces": [
+  {
+   "type": "introGallery",
+   "media": [
+    {
+     "type": "image",
+     "src": "/images/6752fadcbbd4827d13e8adb6_CNL_8683-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6752fadcb13a8c48495ca342_CNL_8868-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6752fadc56488532ee942155_CNL_8947-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6752faddd3dcfaa2f9fecb6f_CNL_9841-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6752fe71a4d512d7ce085268_1472750008-1-p-2000.jpg",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6752faddbdae1f05ad6d9e4c_CNL_8972-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6752fade088171a380d148f6_CNL_9805-p-2000.avif",
+     "alt": ""
+    }
+   ],
+   "html": "<p>Filled with an exclusive guest list of the critically acclaimed documentary’s closest friends, partners and colleagues, we decked out a Hollywood Hills estate to immerse attendees in a disco-tinged, volcano-inspired atmosphere. </p>\n<p>We amplified the mansion’s existing features, creating a fiery red-lit driveway arrival and highlighted the black rock waterfall with additional moody lighting. Inside, the space was decorated to encourage guests to explore and enjoy while DJs <strong>A-TRAK</strong>, <strong>GODDOLLARS</strong>, and <strong>Bianca Lexis</strong> set the tone. </p>"
+  }
+ ],
+ "sections": [
+  {
+   "title": "VENUE & LOGISTICS",
+   "pieces": [
+    {
+     "type": "text2",
+     "left": "<p>IHC oversaw event production from top to bottom to ensure a seamless and exclusive experience. Guests were directed to check-in at an offsite location where they would board a shuttle that drove them to the house. Once they arrived, guests were escorted by staff with umbrellas to walk up the fiery red-lit driveway. </p>",
+     "right": "<p>Then guests were ushered inside to the exciting evening that awaited them. Specialty cocktails and a selection of hand-made finger foods by Travis Hayden, including late night grilled cheeses, kept guests satisfied all night long.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/6752fd6f00f014e66a7f67ea_CNL_8608-1-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6752fadc9715746039578675_CNL_8860-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6752fd808d93cf943b868fb1_CNL_8601-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6752fd95514ad6929aeb0f41_CNL_8634-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6752fdce9d11e46631c64f4e_CNL_8644-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6752fadcee12555a650dcd8f_CNL_8685-1-p-2000.jpg",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6752fadbbe6fbd036354ab52_CNL_8636-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/675362d39123544881e1487c_CNL_8595-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/675362d39123544881e14817_CNL_8596-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6753631b9910fef29ed79980_CNL_8624-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6752fadcbfe91fbf91584acf_CNL_9050-p-2000.avif",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "STAR FILLED GUEST LIST",
+   "pieces": [
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/6752fadb5b35370db2e446cc_CNL_9196-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6752fadcde363807237cafee_CNL_9141-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6752fadbe17c0fa4fa58c14c_CNL_9205-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6752fadd5af010c582ed8b07_CNL_9591-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6752fadd5af010c582ed8ad9_CNL_9730-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/675300378f8ffcd3dbc052fe_1472747748-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6752faddde363807237cb032_CNL_9720-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6752fadb6589280e6747eded_CNL_9151-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6753016a85f82b4f41c74203_CNL_9259-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6753016a633f8991bcc4b342_CNL_9532-p-2000.avif",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "watch the recap",
+   "pieces": [
+    {
+     "type": "video",
+     "embed": "<div class=\"p-cs__video__el w-video w-embed\" style=\"padding-top:56.27659574468085%\"><iframe allowfullscreen=\"\" class=\"embedly-embed\" height=\"529\" scrolling=\"no\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F1036148326%3Fapp_id%3D122963&amp;dntp=1&amp;display_name=Vimeo&amp;url=https%3A%2F%2Fvimeo.com%2F1036148326&amp;image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F1957801258-f18d71baaa32364d6f3d999f672a12da58a2a6200f09393e921b3533474fbb66-d_1280&amp;type=text%2Fhtml&amp;schema=vimeo\" title=\"Sandbox: Fire of Love Oscar Party\" width=\"940\"></iframe></div>"
+    }
+   ]
+  }
+ ],
+ "listing": {
+  "listed": true,
+  "work": {
+   "summary": "Sandbox Films tapped us to produce an exclusive party to celebrate Fire of Love’s Oscar nomination.",
+   "href": "/case-studies-items/fire-of-love",
+   "month": "Jan",
+   "year": "2022",
+   "bg": {
+    "src": "/images/6751b5a833c1e000ea08ddda_CNL_8685-p-2000.webp",
+    "srcset": "/images/6751b5a833c1e000ea08ddda_CNL_8685-p-500.webp 500w, /images/6751b5a833c1e000ea08ddda_CNL_8685-p-800.webp 800w, /images/6751b5a833c1e000ea08ddda_CNL_8685-p-1080.webp 1080w, /images/6751b5a833c1e000ea08ddda_CNL_8685-p-1600.webp 1600w, /images/6751b5a833c1e000ea08ddda_CNL_8685-p-2000.webp 2000w",
+    "sizes": "100vw",
+    "data-bg": "/images/6751b5a833c1e000ea08ddda_CNL_8685-p-1600.webp",
+    "alt": ""
+   }
+  },
+  "home": {
+   "showHomepage": true,
+   "category": "Film",
+   "image": "/images/6751b5a833c1e000ea08ddda_CNL_8685-t800.webp",
+   "gif": "",
+   "vimeo": "",
+   "ip": "",
+   "award": false,
+   "awardTitle": "",
+   "awardLogo1": "",
+   "awardLogo2": "",
+   "video": ""
+  }
+ }
+}

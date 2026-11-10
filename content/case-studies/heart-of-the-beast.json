@@ -1,0 +1,277 @@
+{
+ "slug": "heart-of-the-beast",
+ "pageId": "6ae118bcfe34e067d7cc0035",
+ "seoTitle": "Heart of the Beast",
+ "description": "",
+ "noindex": false,
+ "title": "Heart of the Beast",
+ "client": "Paramount Pictures",
+ "subtitle": "",
+ "heroImage": {
+  "src": "/images/6ae11e6213c7123ec4bb0259_DSC_7438_mUaChh2Z-p-2000.jpeg",
+  "srcset": "/images/6ae11e6213c7123ec4bb0259_DSC_7438_mUaChh2Z-p-500.jpeg 500w, /images/6ae11e6213c7123ec4bb0259_DSC_7438_mUaChh2Z-p-800.jpeg 800w, /images/6ae11e6213c7123ec4bb0259_DSC_7438_mUaChh2Z-p-1080.jpeg 1080w, /images/6ae11e6213c7123ec4bb0259_DSC_7438_mUaChh2Z-p-1600.jpeg 1600w, /images/6ae11e6213c7123ec4bb0259_DSC_7438_mUaChh2Z-p-2000.jpeg 2000w",
+  "sizes": "100vw"
+ },
+ "heroVimeo": "",
+ "stats": [],
+ "services": [
+  {
+   "name": "Digital Strategy",
+   "slug": "digital-strategy"
+  },
+  {
+   "name": "Environment Design",
+   "slug": "environment-design"
+  },
+  {
+   "name": "Event Production",
+   "slug": "event-production"
+  },
+  {
+   "name": "Influencer Guestlist",
+   "slug": "influencer-guestlist"
+  }
+ ],
+ "headline": "<strong>\"Brad and puppies? Name a better day!\"</strong> <em>- </em><a href=\"https://www.instagram.com/kaitkohl\"><em>kaitkohl</em></a>",
+ "intro": "paramount hired IHC to help spread big dog adoption awareness for their new film <em>heart of the beast.</em>",
+ "introPieces": [
+  {
+   "type": "introGallery",
+   "media": [
+    {
+     "type": "image",
+     "src": "/images/6ae12d0d8ba03de43a493cf4_DSC_7553_xXTbniBF-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6ae12cfc80b8d691a7f15ed5_20260917_WnWEvent_Web-197-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6ae125f0ccc14afd44c99808_20260917_WnWEvent_Web-006-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6ae12647a4e0dc5af39329c3_20260917_WnWEvent_Web-080.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6ae12cfd2a9af7cbdc5dcc61_20260917_WnWEvent_Web-131.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6ae12e4d13c7123ec4bf2488_20260917_WnWEvent_Web-165.avif",
+     "alt": ""
+    }
+   ],
+   "html": "<p>Guests were invited to step into the world of <strong>Heart of the Beast </strong>through a meaningful, dog-first experience designed to bring people closer to the animals at the heart of the story. In partnership with <a href=\"https://www.wagsandwalks.org/\"><strong>Wags &amp; Walks</strong></a>, we threw an event for big dog awareness to educating guests about senior dog rescue, responsible big dog ownership, and the adult dog adoption process, while creating intentional time and space to interact with adoptable big (or soon to be!) dogs.</p>\n<p><strong>Brad Pitt </strong>made a special surprise appearance to promote the film and encourage dog adoption resulting in a memorable and impactful community experience.  </p>"
+  }
+ ],
+ "sections": [
+  {
+   "title": "Decor & vibes",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p>We took over Copperline Ranch, a 60-acre private destination, just outside Nashville. We decorated their barn deck with rustic, woodsy furniture and floral arrangements providing an authentic and earthy touch. Local fare of chicken sandwich bites, brisket meatballs, charcuterie, and sliders were available. Guests received a custom embroidered bandana and a treat for their pup back home.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/6ae125f0ccc14afd44c9980b_20260917_WnWEvent_Web-004-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6ae126484969070026533223_20260917_WnWEvent_Web-245.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6ae1264805a79dba6a18854f_20260917_WnWEvent_Web-227-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6ae126b3fe34e067d7cffcd8_20260917_WnWEvent_Web-037-1-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6ae127d35d308244f59a2ba1_20260917_WnWEvent_Web-042-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6ae127d2a2c3bf5ff4e35c79_20260917_WnWEvent_Web-094.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6ae125f031d89f8a291b9f16_20260917_WnWEvent_Web-022-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6ae125f0bae08a9d8c227b9d_20260917_WnWEvent_Web-029-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6ae1260780b8d691a7ef9ff9_DSC_7742_lyne2Gnl-p-2000.avif",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Wags & Walks partnership",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p>Wags &amp; Walks showcased real dogs up for adoption, with a focus on big dogs (or pups that will grow up to be big dogs) as they are often the most neglected. <a href=\"https://www.instagram.com/kathrynhurley_/?hl=en\"><strong>Kathryn Hurley</strong></a>, founder of Wags &amp; Walks Nashville, anchored the afternoon as our host for the event. </p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/6ae126ea26f17e24ecf74a95_20260917_WnWEvent_Web-088.jpg",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6ae12703589a1d25e27a2f6d_20260917_WnWEvent_Print-139-p-2000.jpeg",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6ae126eaee59c098a6cc077d_20260917_WnWEvent_Web-107.jpg",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6ae126e9a3c1a6efbb00af7c_20260917_WnWEvent_Web-083.jpg",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6ae127433a7273e3b57bab81_DSC_7183_hEnFNpkT-p-2000.jpeg",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Brad pitt appearance",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p><strong>Brad Pitt</strong> joined us along with the film’s on set Animal Coordinator, <a href=\"https://en.wikipedia.org/wiki/Andrew_Simpson_(animal_trainer)\"><strong>Andrew Simpson</strong></a>, to share some words on the importance of big dog adoptions and pose with the pups looking for homes. </p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/6ae12a49c8ce7307902da371_DSC_7217_zlUu0yGy-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6ae12a2b2a9af7cbdc5d2683_20260917_WnWEvent_Web-162-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6ae12a4905f751a7c9d1c542_DSC_7441_L0TWrRwV-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6ae12a2caede4bbe58c2af88_20260917_WnWEvent_Web-175.avif",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Photo moments",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p>An editorial-style portrait moment provided a space for guests to pose with their beloved pups. Guests immediately received their shot with a branded overlay to encourage social sharing. Additionally, a branded step &amp; repeat allowed guests and their dogs to pose and share on socials.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/6ae1295705f751a7c9d18f1e_DANE8693-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6ae129585d308244f59a8516_DANE8715-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6ae1295713c7123ec4bdcdad_DSC_7579_7Yl0w65o-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6ae12927c7dbc0079f32ba47_20260917_WnWEvent_Web-208-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6ae12927a9530d0013c56971_20260917_WnWEvent_Web-202.avif",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "listing": {
+  "listed": true,
+  "work": {
+   "summary": "Guests were invited to step into the world of Heart of the Beast through a meaningful, dog-first experience designed to bring people closer to the animals at the heart of the story.",
+   "href": "/case-studies-items/heart-of-the-beast",
+   "month": "Sep",
+   "year": "2026",
+   "bg": {
+    "src": "/images/6ae11e6213c7123ec4bb0259_DSC_7438_mUaChh2Z-p-2000.jpeg",
+    "srcset": "/images/6ae11e6213c7123ec4bb0259_DSC_7438_mUaChh2Z-p-500.jpeg 500w, /images/6ae11e6213c7123ec4bb0259_DSC_7438_mUaChh2Z-p-800.jpeg 800w, /images/6ae11e6213c7123ec4bb0259_DSC_7438_mUaChh2Z-p-1080.jpeg 1080w, /images/6ae11e6213c7123ec4bb0259_DSC_7438_mUaChh2Z-p-1600.jpeg 1600w, /images/6ae11e6213c7123ec4bb0259_DSC_7438_mUaChh2Z-p-2000.jpeg 2000w",
+    "sizes": "100vw",
+    "data-bg": "/images/6ae11e6213c7123ec4bb0259_DSC_7438_mUaChh2Z-p-1600.jpeg",
+    "alt": ""
+   }
+  },
+  "home": {
+   "showHomepage": false,
+   "category": "Film",
+   "image": "/images/6ae11e6213c7123ec4bb0259_DSC_7438_mUaChh2Z-t800.webp",
+   "gif": "",
+   "vimeo": "",
+   "ip": "",
+   "award": false,
+   "awardTitle": "",
+   "awardLogo1": "",
+   "awardLogo2": "",
+   "video": ""
+  }
+ }
+}

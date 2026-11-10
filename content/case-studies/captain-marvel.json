@@ -1,0 +1,230 @@
+{
+ "slug": "captain-marvel",
+ "pageId": "661617d59d8e674ca1624923",
+ "seoTitle": "Captain Marvel",
+ "description": "IHC conceptualized five *Captain Marvel*-themed stereograms that were shared across Marvel properties and garnered over 1 billion media impressions.",
+ "noindex": false,
+ "title": "Captain Marvel",
+ "client": "Marvel Studios • Disney",
+ "subtitle": "3-D STEREOGRAMS",
+ "heroImage": {
+  "src": "/images/660b6f6d3d2aa9315e996a5c_65ea297abd2873d48cd36fe3_captain-marvel-feature.avif"
+ },
+ "heroVimeo": "",
+ "stats": [
+  {
+   "value": "1.14+ BILLION",
+   "label": "NEWS IMPRESSIONS"
+  },
+  {
+   "value": "14.7M",
+   "label": "PRESS SOCIAL REACH"
+  },
+  {
+   "value": "91.8M",
+   "label": "MARVEL IMPRESSIONS"
+  },
+  {
+   "value": "685K+",
+   "label": "LIKES"
+  }
+ ],
+ "services": [
+  {
+   "name": "Content Production",
+   "slug": "content-production"
+  },
+  {
+   "name": "Creative Concept",
+   "slug": "creative-concept"
+  },
+  {
+   "name": "Creative Direction",
+   "slug": "creative-direction"
+  },
+  {
+   "name": "Digital Strategy",
+   "slug": "digital-strategy"
+  }
+ ],
+ "headline": "",
+ "intro": "IHC CONCEPTUALIZED 5 ‘CAPTAIN MARVEL’-THEMED STEREOGRAMS THAT WERE SHARED ACROSS MARVEL PROPERTIES AND GARNERED OVER 1 BILLION MEDIA IMPRESSIONS.",
+ "introPieces": [
+  {
+   "type": "text",
+   "html": "<p>‍</p>"
+  },
+  {
+   "type": "introGallery",
+   "media": [
+    {
+     "type": "image",
+     "src": "/images/66161938653508b168ac9343_helmet-sird01-1800x-min.webp",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/66161939fe25de0407ff5524_cap-battleoutfit-1800x-min.webp",
+     "alt": ""
+    }
+   ],
+   "html": "<p>For the release of Captain Marvel, Marvel Studios enlisted IHC to create a series of stereograms as a digital stunt. From 1993-1995 the ‘Magic Eye’ craze tore through the globe, these seemingly random digital patterns revealed hidden images if the user stared at them long enough.</p>\n<p>Set in 1995, Captain Marvel takes place at the height of the mania surrounding the puzzles and employs a narrative full of hidden meanings, duplicitous characters, and unassuming clues. A seemingly perfect pairing for an online campaign utilizing 3D stereograms.</p>"
+  }
+ ],
+ "sections": [
+  {
+   "title": "LAUNCH CONTENT",
+   "pieces": [
+    {
+     "type": "text2",
+     "left": "<p>We created 5 unique stereograms, each capturing a character in the forthcoming Captain Marvel film. The illusions serve as both a clear promotion for the film’s release as well as a fun reminder of the magic from the time.</p>",
+     "right": "<p>Since the technology used to create these images was primarily outdated, IHC needed to work internally to re-make it in a way that captured the original effect while also working on social media.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/661618fa916b47f721f09f30_capmarvel-sg-vert-brie02-768x960-compressed-1800x-min.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/66161901b23c0e13464953ae_case-studies-ma-main-gallery-blue-compressed-1800x-min.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/661618fa96e9446eaf9ec90d_case-studies-ma-main-gallery-green-compressed-1800x-min.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/661618fbb23c0e1346494faf_case-studies-ma-main-gallery-orange-compressed-1800x-min.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/66161900995b061b34e60acf_case-studies-ma-main-gallery-pink-compressed-1800x-min.avif",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "EYE MAGIC",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p>All 5 stereograms were shared across the @MarvelStudios, @Marvel and @CaptainMarvel social networks over the course of a week. The ’90s throwback garnered plenty of media attention and were featured across news platforms including Yahoo, Mashable, SyFy, Slash Film, PopSugar, Gizmodo and Fandango. Fans were ecstatic over the campaign generating one of the single most successful digital campaigns they had seen at the time.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/661619389e5dcc0b31cc7294_skrull-sird01-1800x-min.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/66161939fe25de0407ff552f_skrull-1800x-min.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/66161938653508b168ac9343_helmet-sird01-1800x-min.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/66161939fe25de0407ff5524_cap-battleoutfit-1800x-min.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/661619389700dd4d7887b499_star-sird-02-1800x-min.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/661619390d89d11442b43676_capmarvelstar-1800x-min.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/66161938916b47f721f0ecdb_fury-og-sird-01-1800x-min.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/66161939ebb1b03d50e94372_nickfury-1800x-min.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/66161938fcaa5289fda45343_aviators-sird-02-1800x-min.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/66161938c8ec68e49618c0c2_aviators-1800x-min.webp",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "WEBSITE gallery",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p>The venture was so successful that Disney also added the stereograms to the fake <a href=\"https://www.marvel.com/captainmarvel/\">Captain Marvel website</a> created for the film.</p>"
+    },
+    {
+     "type": "fullGallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/66161992eae5afeed3fb5a5d_screen-shot-2023-01-03-at-3-21-11-pm-1800x-min-p-1600.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/661619919700dd4d7887ed92_screen-shot-2023-01-03-at-3-21-26-pm-1800x-min-p-1600.avif",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "listing": {
+  "listed": true,
+  "work": {
+   "summary": "IHC conceptualized 5 Captian Marvel themed stereograms that were shared across Marvel properties and garnered over 1 billion media impressions.",
+   "href": "/case-studies-items/captain-marvel",
+   "month": "Mar",
+   "year": "2019",
+   "bg": {
+    "src": "/images/660b6f6d3d2aa9315e996a5c_65ea297abd2873d48cd36fe3_captain-marvel-feature.avif",
+    "alt": ""
+   }
+  },
+  "home": {
+   "showHomepage": false,
+   "category": "Film",
+   "image": "/images/660b6f6d3d2aa9315e996a5c_65ea297abd2873d48cd36fe3_captain-marvel-feature-t800.webp",
+   "gif": "",
+   "vimeo": "",
+   "ip": "",
+   "award": false,
+   "awardTitle": "",
+   "awardLogo1": "",
+   "awardLogo2": "",
+   "video": ""
+  }
+ }
+}

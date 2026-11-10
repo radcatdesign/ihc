@@ -1,0 +1,184 @@
+{
+ "slug": "fantastic-four",
+ "pageId": "69dee208bea0489eff446ad6",
+ "seoTitle": "Fantastic Four",
+ "description": "",
+ "noindex": false,
+ "title": "Fantastic Four",
+ "client": "Disney",
+ "subtitle": "",
+ "heroImage": {
+  "src": "/images/69dfd5cc2f7d49702f7f7ea2_IHC2025_0704_124054-2582_KKB-p-2000.webp",
+  "srcset": "/images/69dfd5cc2f7d49702f7f7ea2_IHC2025_0704_124054-2582_KKB-p-500.webp 500w, /images/69dfd5cc2f7d49702f7f7ea2_IHC2025_0704_124054-2582_KKB-p-800.webp 800w, /images/69dfd5cc2f7d49702f7f7ea2_IHC2025_0704_124054-2582_KKB-p-1080.webp 1080w, /images/69dfd5cc2f7d49702f7f7ea2_IHC2025_0704_124054-2582_KKB-p-1600.webp 1600w, /images/69dfd5cc2f7d49702f7f7ea2_IHC2025_0704_124054-2582_KKB-p-2000.webp 2000w",
+  "sizes": "100vw"
+ },
+ "heroVimeo": "",
+ "stats": [
+  {
+   "value": "36M+",
+   "label": "Social Media Reach"
+  },
+  {
+   "value": "27M+",
+   "label": "Social Media Views"
+  },
+  {
+   "value": "7",
+   "label": "Hours Live"
+  },
+  {
+   "value": "1",
+   "label": "Day Only"
+  }
+ ],
+ "services": [
+  {
+   "name": "Creative Concept",
+   "slug": "creative-concept"
+  },
+  {
+   "name": "Content Production",
+   "slug": "content-production"
+  }
+ ],
+ "headline": "“THIS IS SO SICK, DUDE!” - GUEST",
+ "intro": "FANTASTIC FOUR OWNED THE SHORE WITH A 4th of July STUNT!",
+ "introPieces": [
+  {
+   "type": "introGallery",
+   "media": [
+    {
+     "type": "image",
+     "src": "/images/69dfcf9d27443b73dad0985a_IHC2025_0704_100016-2311_KKB-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/69dfcf9dc6d9426375664c44_IHC2025_0704_113347-2473_KKB-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/69dfcf9e902c8ced28ff626b_IHC2025_0704_123622-2579_KKB-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/69dfcf9cd5c70a066b08259e_IHC2025_0704_093248-2244_KKB-p-2000.avif",
+     "alt": ""
+    }
+   ],
+   "html": "<p>The Fantastic Four made its mark on July 4th with a larger-than-life stunt designed to surprise, delight and dominate social feeds. A massive sand sculpture in the shape of the legendary “4” rose from the shore, turning heads and stopping beachgoers in their tracks.</p>\n<p>Combined with custom branded giveaways, this moment blended spectacle with sentiment, driving connection and content from families, fans and media.</p>"
+  }
+ ],
+ "sections": [
+  {
+   "title": "THE SCULPTURE",
+   "pieces": [
+    {
+     "type": "text2",
+     "left": "<p>The activation centered around a sand sculpture of the iconic Fantastic Four emblem, brought to life by a team of world-class sand artists. Sculpted directly into the San Clemente shoreline, the 44-foot-wide installation pushed the limits of space and scale, delivering a bold visual statement with cinematic flair.</p>",
+     "right": "<p>Unveiled on July 4th through Marvel Studios’ social channels, the massive \"4\" became a focal point of the beach, drawing curious beachgoers who brought the \"Fantastic\" spirit to life, turning the stunt into a shared celebration of summer, spectacle, and superhero storytelling.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/69dfcf9d97eded2b293eecd7_IHC2025_0703_114626-1725_KKB-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69dfcf9d2b887e52f1e33d59_IHC2025_0703_165244-2099_KKB-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69dfcf9eba6dab7d6febc785_IHC2025_0703_174619-2187_KKB-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69dfcf9e62604782e7434e49_IHC2025_0704_092206-2208_KKB-p-2000.avif",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "GIVEAWAYS",
+   "pieces": [
+    {
+     "type": "text2",
+     "left": "<p>To elevate the on-site experience, Fantastic Four-branded umbrellas were handed out and placed around the sand sculpture. Each umbrella came with a custom carrying case, encouraging guests to take them home and extend the \"Fantastic\" energy throughout the summer. </p>",
+     "right": "<p>Brand ambassadors engaged beachgoers with additional giveaways, including Fantastic Four hats, Snapple, and Pop-Tarts creating fun, fan-forward touchpoints that reinforced the spirit of the Fourth. </p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/69dfcf9ef2d42524afbec0fa_IHC2025_0704_114433-2506_KKB-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69dfcf9e8608da5dc00755d3_IHC2025_0704_100249-2322_KKB-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69dfcf9d923f380b8d1c38c1_IHC2025_0704_103013-2355_KKB-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69dfcf9d63b68fffc6760e75_IHC2025_0704_114046-2495_KKB-p-2000.avif",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "WATCH THE RECAP",
+   "pieces": [
+    {
+     "type": "video",
+     "embed": "<div class=\"p-cs__video__el w-video w-embed\" style=\"padding-top:56.27659574468085%\"><iframe allowfullscreen=\"\" class=\"embedly-embed\" height=\"529\" scrolling=\"no\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F1116661056%3Fapp_id%3D122963&amp;dntp=1&amp;display_name=Vimeo&amp;url=https%3A%2F%2Fvimeo.com%2F1116661056&amp;image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F2056374625-148c0af9c18132171d2e20a3c0487a945ddfc719f6e31259dfd94c0d01c32d0e-d_1280%3Fregion%3Dus&amp;type=text%2Fhtml&amp;schema=vimeo\" title=\"DISNEY: FANTASTIC FOUR\" width=\"940\"></iframe></div>"
+    }
+   ]
+  }
+ ],
+ "listing": {
+  "listed": true,
+  "work": {
+   "summary": "A massive installation put the Fantastic in the Fourth by turning a holiday moment into a social media spectacle.",
+   "href": "/case-studies-items/fantastic-four",
+   "month": "Jul",
+   "year": "2025",
+   "bg": {
+    "src": "/images/69dfd5cc2f7d49702f7f7ea2_IHC2025_0704_124054-2582_KKB-p-2000.webp",
+    "srcset": "/images/69dfd5cc2f7d49702f7f7ea2_IHC2025_0704_124054-2582_KKB-p-500.webp 500w, /images/69dfd5cc2f7d49702f7f7ea2_IHC2025_0704_124054-2582_KKB-p-800.webp 800w, /images/69dfd5cc2f7d49702f7f7ea2_IHC2025_0704_124054-2582_KKB-p-1080.webp 1080w, /images/69dfd5cc2f7d49702f7f7ea2_IHC2025_0704_124054-2582_KKB-p-1600.webp 1600w, /images/69dfd5cc2f7d49702f7f7ea2_IHC2025_0704_124054-2582_KKB-p-2000.webp 2000w",
+    "sizes": "100vw",
+    "data-bg": "/images/69dfd5cc2f7d49702f7f7ea2_IHC2025_0704_124054-2582_KKB-p-1600.webp",
+    "alt": ""
+   }
+  },
+  "home": {
+   "showHomepage": true,
+   "category": "Film",
+   "image": "/images/69dfd5cc2f7d49702f7f7ea2_IHC2025_0704_124054-2582_KKB-t800.webp",
+   "gif": "",
+   "vimeo": "",
+   "ip": "",
+   "award": false,
+   "awardTitle": "",
+   "awardLogo1": "",
+   "awardLogo2": "",
+   "video": ""
+  }
+ }
+}

@@ -1,0 +1,356 @@
+{
+ "slug": "adult-swim-special-events",
+ "pageId": "6a39b4a0075a828ddd6df628",
+ "seoTitle": "Adult Swim",
+ "description": "",
+ "noindex": true,
+ "title": "Adult Swim Special Events",
+ "client": "Adult Swim",
+ "subtitle": "",
+ "heroImage": {
+  "src": "/images/6a3afb024c6299842a6253de_1077818_341226639342500_1900902647_o.jpg",
+  "srcset": "/images/6a3afb024c6299842a6253de_1077818_341226639342500_1900902647_o-p-500.jpg 500w, /images/6a3afb024c6299842a6253de_1077818_341226639342500_1900902647_o-p-800.jpg 800w, /images/6a3afb024c6299842a6253de_1077818_341226639342500_1900902647_o-p-1080.jpg 1080w, /images/6a3afb024c6299842a6253de_1077818_341226639342500_1900902647_o-p-1600.jpg 1600w, /images/6a3afb024c6299842a6253de_1077818_341226639342500_1900902647_o.jpg 2000w",
+  "sizes": "100vw"
+ },
+ "heroVimeo": "",
+ "stats": [],
+ "services": [
+  {
+   "name": "Marketing",
+   "slug": "marketing"
+  },
+  {
+   "name": "Custom Mailers",
+   "slug": "custom-mailers"
+  },
+  {
+   "name": "Digital Strategy",
+   "slug": "digital-strategy"
+  },
+  {
+   "name": "Event Production",
+   "slug": "event-production"
+  }
+ ],
+ "headline": "",
+ "intro": "FOR OVER A DECADE, IHC SUPPORTED ADULT SWIM ACROSS MULTIPLE ACTIVATIONS and DIGITAL CAMPAIGNS.",
+ "introPieces": [
+  {
+   "type": "introGallery",
+   "media": [
+    {
+     "type": "image",
+     "src": "/images/6a3dc80004e5c26ed953ee66_53013883_1558029320995553_4236162897295704064_n-p-1600.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6a39d3b204afeecf667daa9a_desertgold2.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6a39d5c69015c9c6064e6cb7_decker1-p-1600.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6a3dcf67f7fb9cbb03bd1673_501377738_3572359139562551_3389752280019838047_n.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6a3ebf529eb49152d4cdaf49_501755967_3572350109563454_4576404683814056206_n.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6a3afb3b7e71a71ea7965a25_1402811_403304593134704_2101219001_o.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6a43fb50d46d439c085a543e_Pitchfork.avif",
+     "alt": ""
+    }
+   ],
+   "html": "<p>Between the years of 2012 and 2020, IHC produced mini campaigns for Adult Swim including tours for the KRFT PUNK’S Political Party Premiere, Desert Gold Coachella Party, Decker Meet &amp; Greet, Adult Swim at San Diego Comicon, Eric Andre Show Live! Tour, and the Adult Swim Pitchfork Festival.</p>"
+  }
+ ],
+ "sections": [
+  {
+   "title": "KRFT PUNK’S Political Party Premiere 2019",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p>We hosted an exclusive early screening of the Eric Andre Show spin-off, paired with the first and only performance from KRFT PUNK himself Dan Curry, a Q&amp;A with Eric, and cheesy Kraft Singles parting gift for all.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/6a39ce46679fe9b2791efa1d_kraft1-p-1600.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a39ce46045c6e0d48683ad5_kraft2-p-1600.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a3dc800cb489eff6ee2cc83_53813324_1558029870995498_1786314410650763264_n-p-1600.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a39ce4689f800a4a373b5ed_kraft4-p-1600.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a3dc800a52c26e2ed46b13a_53795396_1558029254328893_3316845441307377664_n-p-1600.avif",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Desert Gold Coachella Party 2018",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p>We partnered with BMW to produce two days of music, sound baths, Aqua Teen Hunger Force’s Meatwad narrated yoga, giveaways, and more at the Palm Springs Ace Hotel.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/6a3dca0ccb489eff6ee3232c_515500664_3633277316804066_2711454129509654556_n-p-1600.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a3dca0db4f6313b4af02f77_514942802_3633277303470734_1882728991417936219_n-p-1600.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a3dca0c255298da2726356c_514794817_3633277570137374_6385068350511477280_n-p-1600.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a3dca0b255298da2726354e_514801007_3633277340137397_1053857194861486967_n-p-1600.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a3dca0d8ca358afaccc6a95_514878737_3633277263470738_1730397503849910972_n-p-1600.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a3dca0db4b9b9ac70b12c46_514611579_3633277310137400_7631030479669770163_n-p-1600.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a3dca0b92a81eeced048fcf_515007216_3633277196804078_7928690513906778886_n-p-1600.avif",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Decker Meet & Greet 2017",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p>To celebrate the new season of the #1 American TV show: Decker, we hosted and produced a fan meet and greet at Baller Hardware in Los Angeles, complete with an exclusive music listening experience and special prizes.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/6a3dce0a3318d81882a8f296_513850087_3628272617304536_1684159589129037286_n-p-1600.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a3dce0a5e942844812aaac8_514400803_3628272650637866_860272042682779490_n-p-1600.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a3dce0a010f35a65e11c39b_514401605_3628272883971176_8156148925749681802_n-p-1600.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a39d5c6729f1fc16bdeabed_decker3-p-1600.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a3dce094cc80f178088a1f2_514374907_3628272720637859_3404870943054542288_n-p-1600.avif",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Adult Swim at SDCC 2013",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p>Multiple years IHC supported Adult Swim’s presence at SDCC through targeted and stunty marketing campaigns. When they needed additional event production, IHC also oversaw any off-site events, including live performances of The Eric Andre Show and Hot Package.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/6a3dcf664cc80f178088d967_501362402_3572358676229264_1582224286171827454_n.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a3dcf66a61dbc99e1c0eac9_501699794_3572359092895889_7542328022756082116_n.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a3dcf66a9305e77b698521c_501750599_3572359059562559_2422628708328949700_n.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a3dcf66a8fde2574aa2920f_500737296_3572358686229263_4109549965074337211_n.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a3ebf52186a512437c07447_500579254_3572349082896890_7854584404306708708_n.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a3ebf52662fbc84b8f0a709_499991907_3572350422896756_5313846096848564805_n.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a3ebf520d3e109d0c69788d_501754046_3572350212896777_7174345655095798749_n.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a3ebf52b7be7a4bf9140550_499930541_3572350426230089_5090950202394995369_n.avif",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Eric Andre Show Live! Tour 2013",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p>Following the success of Pitchfork Festival, we continued to produce shows in Los Angeles and at Comic-Con, also featuring Yacht, for the series. We also tour managed and oversaw marketing for both national tours.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/6a43faa2aff7dd7fda4f094d_501527239_3577146345750497_441460845811078201_n.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a43faa2273f8f6e8854003a_502534322_3577145152417283_291978075545983572_n.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a43faa2bbf671b3919240ad_501527240_3577145305750601_4322469780709993576_n.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a43faa249d2174ba9be7753_502455564_3577145149083950_7129138373906272868_n.avif",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Adult Swim Pitchfork Festival 2021",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p>We produced the Adult Swim Pitchfork Festival event in Chicago featuring The Eric Andre Show Live and Flying Lotus.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/6a43fb509c9e145d841d6bc2_-4.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a43fb5035fed4958944c951_-3.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a445e3f946c19bf68a4692b_599543_10151104546614085_179166612_n.avif",
+       "alt": ""
+      }
+     ],
+     "dataClass": ""
+    }
+   ]
+  }
+ ],
+ "listing": {
+  "listed": true,
+  "work": {
+   "summary": "",
+   "href": "/case-studies-items/adult-swim-special-events",
+   "month": "",
+   "year": "",
+   "bg": {
+    "src": "/images/6a3afb024c6299842a6253de_1077818_341226639342500_1900902647_o.jpg",
+    "srcset": "/images/6a3afb024c6299842a6253de_1077818_341226639342500_1900902647_o-p-500.jpg 500w, /images/6a3afb024c6299842a6253de_1077818_341226639342500_1900902647_o-p-800.jpg 800w, /images/6a3afb024c6299842a6253de_1077818_341226639342500_1900902647_o-p-1080.jpg 1080w, /images/6a3afb024c6299842a6253de_1077818_341226639342500_1900902647_o-p-1600.jpg 1600w, /images/6a3afb024c6299842a6253de_1077818_341226639342500_1900902647_o.jpg 2000w",
+    "sizes": "100vw",
+    "data-bg": "/images/6a3afb024c6299842a6253de_1077818_341226639342500_1900902647_o-p-1600.jpg",
+    "alt": ""
+   }
+  },
+  "home": {
+   "showHomepage": false,
+   "category": "Events",
+   "image": "/images/6a3afb024c6299842a6253de_1077818_341226639342500_1900902647_o-t800.webp",
+   "gif": "",
+   "vimeo": "",
+   "ip": "",
+   "award": false,
+   "awardTitle": "",
+   "awardLogo1": "",
+   "awardLogo2": "",
+   "video": ""
+  }
+ }
+}

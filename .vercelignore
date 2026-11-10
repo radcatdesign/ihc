@@ -1,0 +1,4 @@
+# Source files that only matter when editing, not on the live site
+scripts/
+builder/src/
+node_modules/

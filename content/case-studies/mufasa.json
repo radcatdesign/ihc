@@ -1,0 +1,247 @@
+{
+ "slug": "mufasa",
+ "pageId": "6a0cf108566d9abe463d2bf9",
+ "seoTitle": "Mufasa",
+ "description": "",
+ "noindex": false,
+ "title": "Mufasa",
+ "client": "Disney",
+ "subtitle": "",
+ "heroImage": {
+  "src": "/images/6a1634b1dab18a92bb83620a_mufasa_index_01.jpg",
+  "srcset": "/images/6a1634b1dab18a92bb83620a_mufasa_index_01-p-500.jpg 500w, /images/6a1634b1dab18a92bb83620a_mufasa_index_01-p-800.jpg 800w, /images/6a1634b1dab18a92bb83620a_mufasa_index_01-p-1080.jpg 1080w, /images/6a1634b1dab18a92bb83620a_mufasa_index_01-p-1600.jpg 1600w, /images/6a1634b1dab18a92bb83620a_mufasa_index_01.jpg 2000w",
+  "sizes": "100vw"
+ },
+ "heroVimeo": "",
+ "stats": [
+  {
+   "value": "34M+",
+   "label": "Social Impressions"
+  },
+  {
+   "value": "169",
+   "label": "Social Posts"
+  },
+  {
+   "value": "114",
+   "label": "Total Attendees"
+  }
+ ],
+ "services": [
+  {
+   "name": "Creative Direction",
+   "slug": "creative-direction"
+  },
+  {
+   "name": "Environment Design",
+   "slug": "environment-design"
+  },
+  {
+   "name": "Event Production",
+   "slug": "event-production"
+  },
+  {
+   "name": "Influencer Guestlist",
+   "slug": "influencer-guestlist"
+  }
+ ],
+ "headline": "“My inner child is smiling.” - Attendee",
+ "intro": "WE BROUGHT MUFASA TO LIFE FOR AN EXCLUSIVE ADVANCED SCREENING WITH THE CAST.",
+ "introPieces": [
+  {
+   "type": "introGallery",
+   "media": [
+    {
+     "type": "image",
+     "src": "/images/6a15f5f81c12eeb7bcdaa93c_12172024-Mufasa-102592.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6a15f5f7d23f2c3349b19177_mufasa_main_01.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6a15f5f779d78cfc7f61afb3_mufasa_main_05.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6a15f5f782b7be75b250dbbc_12172024-Mufasa-102321.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6a17a1d171435c1aee638f49__QQQ7247.JPG",
+     "alt": ""
+    }
+   ],
+   "html": "<p>A curated group of influencers, creators and personalities joined us for an exclusive advanced screening of The Lion King live-action prequel <em>Mufasa</em> at the Roxy Theater in New York City.  </p>\n<p>We had a Q&amp;A with Aaron Pierre, Tiffany Boone, Kelvin Harrison Jr. and Anika Noni Rose, hosted by Cori Murray, downstairs in cellar jazz club The Django kicked off the evening. Bespoke decor, refreshments, musical programming and photo moments rounded out the unforgettable evening.</p>"
+  }
+ ],
+ "sections": [
+  {
+   "title": "pre-reception",
+   "pieces": [
+    {
+     "type": "text2",
+     "left": "<p>The pre-reception kicked off the evening with entertainment and content opportunities, including a surprise and delight performance by African drummer Jason B. Lucas and a set from Afrobeats DJ Red Corvette. </p>",
+     "right": "<p>Guests posed for a photo opp with the film’s title treatment and a scenic backdrop along with passed appetizers and custom cocktails named after key film scenes and themes.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/6a160098ab7ebba4b56f4db1_mufasa_prereception_01.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a160098f3acfd3f083e1968_12172024-Mufasa-101496.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a160098de4c4d9f9f492e36_mufasa_prereception_04.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a15f5f719b4309054a44211_12172024-Mufasa-102624.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a160096676abcffef0bc6cb_mufasa_prereception_05.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a16009813db5eba5d777806_mufasa_prereception_06.avif",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "SCREENING AND Q&A",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p>Notable editor, writer and personality Cori Murray moderated an exclusive Q&amp;A with film talent Aaron Pierre, Tiffany Boone, Kelvin Harrison Jr., and Anika Noni Rose. Afterwards, guests were guided to grab complimentary concessions before heading into the theater to enjoy the advanced screening of the film.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/6a16286f917854ce9f7ff7ec_12172024-Mufasa-102082.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a16286fd3b4a95d7ad32381_mufasa_screening_05.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a16286fd69144fbff9e00f0_mufasa_screening_06.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a16286e211f2621fe7c7010_mufasa_screening_04.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a16286fba854b009bfccaf6_12172024-Mufasa-102728.avif",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "CREATIVE DECOR",
+   "pieces": [
+    {
+     "type": "text2",
+     "left": "<p>Lush greenery brought the African landscape to life transforming the space and highlighting the film’s creative details. Additional lighting touches further brought guests in-world, including sunkissed lights, watery textures and ‘firefly’ lights. Dioramas featuring zoo animals recreating moments from 'The Lion King'<em> </em>franchise were featured on various bar and tabletops.</p>",
+     "right": "<p>A custom ice sculpture, complete with our main character and title treatment, was placed on stage as a key photo moment for guests. Film posters were placed in the light boxes outside of the cinema and branded signage directed guest flow.  </p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/6a1630f90f080cdcf43b6a47_mufasa_creativedecor_02.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a1630f9d72195b1e5971421_mufasa_creativedecor_03.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a163981f7611199e0429e8d_12172024-Mufasa-100640.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a1630f9f6d3038c00992b8a_mufasa_creativedecor_07.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a1630f899aa262953e5fbf9__QQQ6888.avif",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "WATCH THE RECAP",
+   "pieces": [
+    {
+     "type": "video",
+     "embed": "<div class=\"p-cs__video__el w-video w-embed\" style=\"padding-top:56.17021276595745%\"><iframe allowfullscreen=\"\" class=\"embedly-embed\" height=\"528\" scrolling=\"no\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FUa3JvKEZgNc%3Ffeature%3Doembed&amp;display_name=YouTube&amp;url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DUa3JvKEZgNc&amp;image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FUa3JvKEZgNc%2Fhqdefault.jpg&amp;type=text%2Fhtml&amp;schema=youtube\" title=\"DISNEY MUFASA SCREENING AT THE ROXY HOTEL\" width=\"940\"></iframe></div>"
+    }
+   ]
+  }
+ ],
+ "listing": {
+  "listed": true,
+  "work": {
+   "summary": "A curated group of influencers, creators and personalities joined us for an exclusive advanced screening of The Lion King live-action prequel Mufasa at the Roxy Theater in New York City.",
+   "href": "/case-studies-items/mufasa",
+   "month": "",
+   "year": "",
+   "bg": {
+    "src": "/images/6a1634b1dab18a92bb83620a_mufasa_index_01.jpg",
+    "srcset": "/images/6a1634b1dab18a92bb83620a_mufasa_index_01-p-500.jpg 500w, /images/6a1634b1dab18a92bb83620a_mufasa_index_01-p-800.jpg 800w, /images/6a1634b1dab18a92bb83620a_mufasa_index_01-p-1080.jpg 1080w, /images/6a1634b1dab18a92bb83620a_mufasa_index_01-p-1600.jpg 1600w, /images/6a1634b1dab18a92bb83620a_mufasa_index_01.jpg 2000w",
+    "sizes": "100vw",
+    "data-bg": "/images/6a1634b1dab18a92bb83620a_mufasa_index_01-p-1600.jpg",
+    "alt": ""
+   }
+  },
+  "home": {
+   "showHomepage": true,
+   "category": "Film",
+   "image": "/images/6a1634b1dab18a92bb83620a_mufasa_index_01-t800.webp",
+   "gif": "",
+   "vimeo": "",
+   "ip": "",
+   "award": false,
+   "awardTitle": "",
+   "awardLogo1": "",
+   "awardLogo2": "",
+   "video": ""
+  }
+ }
+}

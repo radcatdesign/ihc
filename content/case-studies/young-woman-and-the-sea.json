@@ -1,0 +1,139 @@
+{
+ "slug": "young-woman-and-the-sea",
+ "pageId": "6a1f26457c59577f8534bf39",
+ "seoTitle": "Young Woman and the Sea",
+ "description": "",
+ "noindex": false,
+ "title": "Young Woman and the Sea",
+ "client": "Disney",
+ "subtitle": "",
+ "heroImage": {
+  "src": "/images/6a1f26ef3eee20ae9d76f5ca_YWTS_index_01.jpg",
+  "srcset": "/images/6a1f26ef3eee20ae9d76f5ca_YWTS_index_01-p-500.jpg 500w, /images/6a1f26ef3eee20ae9d76f5ca_YWTS_index_01-p-800.jpg 800w, /images/6a1f26ef3eee20ae9d76f5ca_YWTS_index_01-p-1080.jpg 1080w, /images/6a1f26ef3eee20ae9d76f5ca_YWTS_index_01-p-1600.jpg 1600w, /images/6a1f26ef3eee20ae9d76f5ca_YWTS_index_01.jpg 1975w",
+  "sizes": "100vw"
+ },
+ "heroVimeo": "",
+ "stats": [
+  {
+   "value": "1.1M+",
+   "label": "Social Media Reach"
+  },
+  {
+   "value": "38K+",
+   "label": "Social Media Views"
+  },
+  {
+   "value": "10",
+   "label": "Mailers Sent"
+  }
+ ],
+ "services": [
+  {
+   "name": "Creative Concept",
+   "slug": "creative-concept"
+  },
+  {
+   "name": "Creative Direction",
+   "slug": "creative-direction"
+  },
+  {
+   "name": "Custom Mailers",
+   "slug": "custom-mailers"
+  },
+  {
+   "name": "Digital Strategy",
+   "slug": "digital-strategy"
+  }
+ ],
+ "headline": "This is crazy! - Steve Cole, Influencer",
+ "intro": "A PERSONALIZED TREASURE OF NAUTICAL HISTORY WITH RETRO FLAIR TO INSPIRE INFLUENCERS ACROSS THE COUNTRY.",
+ "introPieces": [
+  {
+   "type": "introGallery",
+   "media": [
+    {
+     "type": "image",
+     "src": "/images/6a1f310fc16d71e68a4aaa4c_YWTS_index_01.avif",
+     "alt": ""
+    }
+   ],
+   "html": "<p>Young Woman And The Sea tells the story of Trudy Ederle, the first woman to ever swim across the English Channel in 1926 -- and the fastest by 2 hours to accomplish the feat. </p>\n<p>To celebrate the compelling story of this epic achievement and promote the Disney+ release, we developed Travel Trunk Mailers for a curated group of 10 Disney-selected influencers to inspire social sharing and enhance their viewing experience. </p>\n<p>IHC led creative development of the package and its contents, and also facilitated packaging and shipping, transporting recipients back to Trudy’s historic era.</p>"
+  }
+ ],
+ "sections": [
+  {
+   "title": "MAILER CONTENT",
+   "pieces": [
+    {
+     "type": "text2",
+     "left": "<p>Designed to resemble vintage 1920s luggage, each trunk case was stuffed with branded items, including a beach blanket, luggage tag, books, and water sourced from the English Channel. Exact coordinates of the location were printed on the bottle’s label, and a QR code played proof of the water collection.</p>",
+     "right": "<p>A phonograph bluetooth speaker, swim goggles, SPF Balm, and a chicken dinner gift card rounded out the kit, nodding to key themes from the film. For a personal touch, we included a one-of-a-kind, period-specific memorabilia, such as original press photos, newspaper clippings and even a personalized autograph.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/6a1f310e3341bf66c6cb3710_YWTS_mailercontents_01-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a1f310d3cec27e2f022bcc6_unnamed.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a1f310f829074d385d028f1_unnamed.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a1f310eac99a259b3798a27_unnamed-3-.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a1f310f533556d48b7b38f2_unnamed-1-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a1f310da25c1ed9883e832e_unnamed-2-.avif",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "listing": {
+  "listed": true,
+  "work": {
+   "summary": "We designed and produced personalized keepsake mailers to promote the film’s release on Disney+.",
+   "href": "/case-studies-items/young-woman-and-the-sea",
+   "month": "",
+   "year": "",
+   "bg": {
+    "src": "/images/6a1f26ef3eee20ae9d76f5ca_YWTS_index_01.jpg",
+    "srcset": "/images/6a1f26ef3eee20ae9d76f5ca_YWTS_index_01-p-500.jpg 500w, /images/6a1f26ef3eee20ae9d76f5ca_YWTS_index_01-p-800.jpg 800w, /images/6a1f26ef3eee20ae9d76f5ca_YWTS_index_01-p-1080.jpg 1080w, /images/6a1f26ef3eee20ae9d76f5ca_YWTS_index_01-p-1600.jpg 1600w, /images/6a1f26ef3eee20ae9d76f5ca_YWTS_index_01.jpg 1975w",
+    "sizes": "100vw",
+    "data-bg": "/images/6a1f26ef3eee20ae9d76f5ca_YWTS_index_01-p-1600.jpg",
+    "alt": ""
+   }
+  },
+  "home": {
+   "showHomepage": false,
+   "category": "Film",
+   "image": "/images/6a1f26ef3eee20ae9d76f5ca_YWTS_index_01-t800.webp",
+   "gif": "",
+   "vimeo": "",
+   "ip": "",
+   "award": false,
+   "awardTitle": "",
+   "awardLogo1": "",
+   "awardLogo2": "",
+   "video": ""
+  }
+ }
+}

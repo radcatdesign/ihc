@@ -31,3 +31,9 @@ SOFTWARE.
 ## jQuery
 
 `js/jquery-3.5.1.min.js` is jQuery 3.5.1, MIT License, Copyright OpenJS Foundation and other contributors.
+
+## Case study builder
+
+`builder/vendor/sortable.1.15.6.min.js` is SortableJS 1.15.6, MIT License, Copyright (c) 2019 All contributors to Sortable.
+
+`builder/vendor/blob-client.2.8.2.js` is the browser upload client from `@vercel/blob` 2.8.2, Apache License 2.0, Copyright Vercel, Inc. It bundles small MIT-licensed helpers whose notices are kept at the end of the file. `api/builder/upload.js` uses the same package from npm.

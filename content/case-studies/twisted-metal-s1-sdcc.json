@@ -1,0 +1,232 @@
+{
+ "slug": "twisted-metal-s1-sdcc",
+ "pageId": "6a6a75a92cafdefe2c1e1691",
+ "seoTitle": "Twisted Metal S1 (SDCC)",
+ "description": "",
+ "noindex": false,
+ "title": "Twisted Metal S1 SDCC",
+ "client": "Peacock",
+ "subtitle": "SDCC STUNT",
+ "heroImage": {
+  "src": "/images/6a6a76a88129e7462007569f_TM2023_0720_160345-10872_RSH-p-2000.jpg",
+  "srcset": "/images/6a6a76a88129e7462007569f_TM2023_0720_160345-10872_RSH-p-500.jpg 500w, /images/6a6a76a88129e7462007569f_TM2023_0720_160345-10872_RSH-p-800.jpg 800w, /images/6a6a76a88129e7462007569f_TM2023_0720_160345-10872_RSH-p-1080.jpg 1080w, /images/6a6a76a88129e7462007569f_TM2023_0720_160345-10872_RSH-p-1600.jpg 1600w, /images/6a6a76a88129e7462007569f_TM2023_0720_160345-10872_RSH-p-2000.jpg 2000w",
+  "sizes": "100vw"
+ },
+ "heroVimeo": "",
+ "stats": [
+  {
+   "value": "556.7M+",
+   "label": "EARNED IMPRESSIONS"
+  },
+  {
+   "value": "2,350",
+   "label": "GUESTS"
+  },
+  {
+   "value": "7",
+   "label": "HOURS LIVE"
+  },
+  {
+   "value": "40",
+   "label": "PRESS HITS"
+  }
+ ],
+ "services": [
+  {
+   "name": "Creative Concept",
+   "slug": "creative-concept"
+  },
+  {
+   "name": "Creative Direction",
+   "slug": "creative-direction"
+  },
+  {
+   "name": "Narrative Development",
+   "slug": "narrative-development"
+  },
+  {
+   "name": "Content Production",
+   "slug": "content-production"
+  },
+  {
+   "name": "Talent Booking",
+   "slug": "talent-booking"
+  }
+ ],
+ "headline": "“The day got crazier with a drumline performance down the street just outside of the convention center and a surprise performance from Sisqo!” - @jvtechtea",
+ "intro": "PEACOCK TAPPED IHC AND TO CREATE A SURPRISE MARCHING BAND AND SISQO PERFORMANCE DURING SDCC TO PROMOTE THE RELEASE OF<em> TWISTED METAL</em>.",
+ "introPieces": [
+  {
+   "type": "introGallery",
+   "media": [
+    {
+     "type": "image",
+     "src": "/images/6a73dad1961f7f27abad3d9d_TM2023_0720_171311-11150_RSH-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6a6a85054099efc9bdf95460_Copy-of-TM2023_0720_175518-11216_RSH-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6a6a85050f08265bd181de6e_TM2023_0720_150448-10769_RSH-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6a6a85054099efc9bdf95443_TM2023_0720_162134-10989_RSH-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6a6a850567a90252c7e432c2_TM2023_0720_165148-11059_RSH-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6a6a850467a90252c7e43138_TM2023_0720_164935-11051_RSH-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6a6a8507e24f1eca727e4dcb_TM2023_0720_145930-10748_RSH-p-2000.avif",
+     "alt": ""
+    }
+   ],
+   "html": "<p>Peacock tapped IHC to break through an oversaturated market during an unprecedented period of industry strikes. The result was a fan-first stunt that captured the attention and hearts of Comic-Con attendees.</p>\n<p>Led by Sweet Tooth himself, we organized an in-world, post-apocalyptical marching band through the Gaslamp Quarters in San Diego. The musicians played all Y2K and 90s hits while the immersive talent shared key tune-in messaging and rallied the crowd to come see the clown villain’s “show” later that day. </p>"
+  }
+ ],
+ "sections": [
+  {
+   "title": "street stunt & marching band",
+   "pieces": [
+    {
+     "type": "text2",
+     "left": "<p>Sweet Tooth led the marching band through the Gaslamp District towards the Twisted Metal lot, for a surprise performance from his favorite artist, the Silver Haired God himself: Sisqo! Along the way, the procession grew as fans joined in from the streets towards the main stage.</p>",
+     "right": "<p>We had 6 members from the <a href=\"https://www.lamarchingband.com/\"><strong>LA Marching Band</strong></a> play pump-up, Y2K-leaning songs along the marching path. The band was dressed as ‘in-world’ characters and with dirtied up instruments including a trumpet, saxophone, trombone, sousaphone, snare drum and bass drum.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/6a6a850625c783fcd280e7ba_Copy-of-TM2023_0720_161548-24654_RSH-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a6a8505d5deea3905b60f27_TM2023_0720_160755-10918_RSH-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a6a85056f0893cb5d74bfdc_TM2023_0720_161613-10947_RSH-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a6a850586f29b486f83082b_TM2023_0720_161204-10931_RSH-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a6a8505bb7a253f2a2ef969_TM2023_0720_161816-10958_RSH-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a6a85041849b6f6316b750b_TM2023_0720_162421-24670_RSH-p-2000.avif",
+       "alt": ""
+      }
+     ],
+     "dataClass": ""
+    }
+   ]
+  },
+  {
+   "title": "on stage performance",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p>As the march crew returned to the lot, Sweet Tooth took the stage while the band and immersive talent continued to hype up the crowd. Sweet Tooth announced their panel, then introduced our surprise true star, Sisquo. As Sweet Tooth belted “Unleash the Dragon,” our cast released pink smoke for Sisqo’s grand entrance. Sweet Tooth joined his idol onstage for a joint performance of “Thong Song” to close out the day. </p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/6a6a8a2addcaf621cdad9d21_TM2023_0720_170115-11089_RSH-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a73dad1961f7f27abad3d96_TM2023_0720_171308-25054_RSH-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a6a8a2b9b4532df1ad50b59_TM2023_0720_170901-24958_RSH-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a6a8a2b48af10d6e955f5d9_TM2023_0720_171633-11164_RSH-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a6a8a2bfa9f2e861b8f92de_TM2023_0720_171824-11169_RSH-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a6a8a2bac62be431275bba2_TM2023_0720_172444-11193_RSH-p-2000.avif",
+       "alt": ""
+      }
+     ],
+     "dataClass": ""
+    }
+   ]
+  },
+  {
+   "title": "WATCH THE RECAP",
+   "pieces": [
+    {
+     "type": "video",
+     "embed": "<div class=\"p-cs__video__el w-video w-embed\" style=\"padding-top:56.27659574468085%\"><iframe allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture\" allowfullscreen=\"true\" class=\"embedly-embed\" frameborder=\"0\" height=\"529\" scrolling=\"no\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F1036146395%3Fapp_id%3D122963&amp;dntp=1&amp;display_name=Vimeo&amp;url=https%3A%2F%2Fvimeo.com%2F1036146395%3Ffl%3Dls%26fe%3Dec&amp;image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F1957798256-06a83bfc6a33f135d1d02234b1e74ff203ffad81fda0dfe3c1a604b436e43721-d_1280%3Fregion%3Dus&amp;type=text%2Fhtml&amp;schema=vimeo\" title=\"Peacock: Twisted Metal SDCC\" width=\"940\"></iframe></div>"
+    }
+   ]
+  }
+ ],
+ "listing": {
+  "listed": true,
+  "work": {
+   "summary": "A surprise marching band stunt and performance from Sweet Tooth and Sisqo in the middle of San Diego Comic Con.",
+   "href": "/case-studies-items/twisted-metal-s1-sdcc",
+   "month": "Jul",
+   "year": "2023",
+   "bg": {
+    "src": "/images/6a6a76a88129e7462007569f_TM2023_0720_160345-10872_RSH-p-2000.jpg",
+    "srcset": "/images/6a6a76a88129e7462007569f_TM2023_0720_160345-10872_RSH-p-500.jpg 500w, /images/6a6a76a88129e7462007569f_TM2023_0720_160345-10872_RSH-p-800.jpg 800w, /images/6a6a76a88129e7462007569f_TM2023_0720_160345-10872_RSH-p-1080.jpg 1080w, /images/6a6a76a88129e7462007569f_TM2023_0720_160345-10872_RSH-p-1600.jpg 1600w, /images/6a6a76a88129e7462007569f_TM2023_0720_160345-10872_RSH-p-2000.jpg 2000w",
+    "sizes": "100vw",
+    "data-bg": "/images/6a6a76a88129e7462007569f_TM2023_0720_160345-10872_RSH-p-1600.jpg",
+    "alt": ""
+   }
+  },
+  "home": {
+   "showHomepage": false,
+   "category": "Television",
+   "image": "/images/6a6a76a88129e7462007569f_TM2023_0720_160345-10872_RSH-t800.webp",
+   "gif": "",
+   "vimeo": "",
+   "ip": "",
+   "award": false,
+   "awardTitle": "",
+   "awardLogo1": "",
+   "awardLogo2": "",
+   "video": ""
+  }
+ }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "iheartcomix-site",
+  "private": true,
+  "description": "iheartcomix.com: static pages plus the serverless functions for forms and the case study builder.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "case-studies": "node scripts/build-case-studies.js"
+  },
+  "dependencies": {
+    "@vercel/blob": "2.8.2"
+  }
+}

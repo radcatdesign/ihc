@@ -1,0 +1,191 @@
+{
+ "slug": "blink-twice",
+ "pageId": "69d0142711777f7d1dd36408",
+ "seoTitle": "Blink Twice",
+ "description": "",
+ "noindex": false,
+ "title": "Blink Twice",
+ "client": "MGM Amazon",
+ "subtitle": "",
+ "heroImage": {
+  "src": "/images/69d81b23027dcb92899a8f95_IMG_7476-p-2000.webp",
+  "srcset": "/images/69d81b23027dcb92899a8f95_IMG_7476-p-500.webp 500w, /images/69d81b23027dcb92899a8f95_IMG_7476-p-800.webp 800w, /images/69d81b23027dcb92899a8f95_IMG_7476-p-1080.webp 1080w, /images/69d81b23027dcb92899a8f95_IMG_7476-p-1600.webp 1600w, /images/69d81b23027dcb92899a8f95_IMG_7476-p-2000.webp 2000w",
+  "sizes": "100vw"
+ },
+ "heroVimeo": "",
+ "stats": [
+  {
+   "value": "4",
+   "label": "Days Live"
+  },
+  {
+   "value": "33",
+   "label": "Hours Live"
+  },
+  {
+   "value": "1.5K+",
+   "label": "Guests Total"
+  }
+ ],
+ "services": [
+  {
+   "name": "Creative Concept",
+   "slug": "creative-concept"
+  },
+  {
+   "name": "Creative Direction",
+   "slug": "creative-direction"
+  },
+  {
+   "name": "Event Production",
+   "slug": "event-production"
+  },
+  {
+   "name": "Environment Design",
+   "slug": "environment-design"
+  }
+ ],
+ "headline": "",
+ "intro": "CAPITALIZING ON SPLASH HOUSE AHEAD, BLINK TWICE INVADED ONE OF SUMMER’S HOTTEST POOL PARTIES.",
+ "introPieces": [
+  {
+   "type": "introGallery",
+   "media": [
+    {
+     "type": "image",
+     "src": "/images/69d40650abbfb363992d6e73_IMG_7412-p-2000.jpeg",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/69d4065033b7c05d7ab05fff_IMG_7484-p-2000.jpeg",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/69d81c25b2a7c8510ca64362_4D5A3381-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/69d4033309b364885dc4cb0f_SH24_August_W1_Gabriella-Hughes_010640-2-p-2000.jpeg",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/69d4033423a9cfbe6b7d867a_4D5A1899-p-2000.jpeg",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/69d4065143a20bc0868ea271_4D5A2350-p-2000.jpeg",
+     "alt": ""
+    }
+   ],
+   "html": "<p>Replicating the tropical island backdrop in the film, IHC developed the ultimate spa experience, complete with free amenities and branded giveaways, to cement both the tagline “Are you having a good time?” and the film itself in the minds of all attendees. </p>\n<p>With colorful backdrops to encourage custom content and complimentary spa services, this impactful activation left all attendees eager to see the film in theaters. </p>"
+  }
+ ],
+ "sections": [
+  {
+   "title": "ACTIVITIES & PHOTO MOMENTS",
+   "pieces": [
+    {
+     "type": "text2",
+     "left": "<p>Our Brand Ambassadors, decked out in the same all-white resort wear seen in the film, greeted guests into our lush and luxurious spa oasis, complete with scented candles, infused water, and complimentary popsicles. They could relax in lounge chairs while they enjoyed a cooling blue face mask, naturally recreating an iconic shot from the movie.</p>",
+     "right": "<p>Two professional nail technicians provided pool-ready nails, including hand-painted premium press-ons in custom designs inspired by the film’s themes and setting. Staff also took polaroid shots of guests in front of our “living” green photo wall, providing a branded takeaway to remember the fun.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/69d40334d4365b5a3b8d683f_4D5A3206-p-2000.jpeg",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69d40bbe4390aca12ce0f95c_SH24_August_W1_Brandee-Allen_003339-p-2000.jpeg",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69d40f2479e9d91f114af1e0_4D5A1550-p-2000.jpeg",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69d40cf219b49cacb16f762a_4D5A1793-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69d4065087506c08721282d3_SH24_August_W1_Gabriella-Hughes_010582-2-p-2000.jpeg",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69d40650ae62b0ac8b7c5afc_4D5A3320-p-2000.jpeg",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "PARTNERSHIPS & GIVEAWAYS",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p>Guests who stopped by the Lounge were also gifted a branded goodie bag complete with coveted items to stay cool all weekend, relax and unwind.  </p>\n<p>All festival attendees staying at partner hotels were provided a Thrive Kit at check-in. Branded chapstick and sunblock, along with an informational card, alerted guests about both the activation and the film itself, further driving attendance over the weekend. </p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/69d4033423a9cfbe6b7d867a_4D5A1899-p-2000.jpeg",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69d4064f1b8a505885979d15_4D5A3117-p-2000.jpeg",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69d40334f4f9f8f4f9947710_4D5A3262-p-2000.jpeg",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69d4035a817326113113e4ed_4D5A3166-p-2000.jpeg",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69d40334e7955ee3c11b092b_4D5A1919-p-2000.jpeg",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69d4035ac1de3e73706eeb9f_4D5A1318-p-2000.jpeg",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "WATCH THE RECAP",
+   "pieces": [
+    {
+     "type": "video",
+     "embed": "<div class=\"p-cs__video__el w-video w-embed\" style=\"padding-top:56.27659574468085%\"><iframe allowfullscreen=\"\" class=\"embedly-embed\" height=\"529\" scrolling=\"no\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F1036129292%3Fapp_id%3D122963&amp;dntp=1&amp;display_name=Vimeo&amp;url=https%3A%2F%2Fvimeo.com%2F1036129292&amp;image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F1957776551-4c91c3cc1c0a871466218b3fa4b252dbec75fc34baabced4db9d0529fb598844-d_1280%3Fregion%3Dus&amp;type=text%2Fhtml&amp;schema=vimeo\" title=\"MGM Amazon: Blink Twice\" width=\"940\"></iframe></div>"
+    }
+   ]
+  }
+ ],
+ "listing": {
+  "listed": false
+ }
+}

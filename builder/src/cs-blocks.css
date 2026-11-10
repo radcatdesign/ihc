@@ -1,0 +1,165 @@
+/* Case study pieces added with the builder: big media, two-up, stats row, pull quote.
+   Colors inherit from the section (white text on the colored panels). */
+
+.p-cs__x-media,
+.p-cs__x-duo,
+.p-cs__x-stats,
+.p-cs__x-quote {
+  width: 100%;
+}
+
+/* Big image or looping video */
+.p-cs__x-media__fig,
+.p-cs__x-duo__fig {
+  width: 100%;
+  margin: 0;
+}
+
+.p-cs__x-media__media,
+.p-cs__x-duo__media {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 40px;
+  background-color: rgba(0, 0, 0, 0.12);
+}
+
+.p-cs__x-media.v--full .c {
+  max-width: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.p-cs__x-media.v--full .p-cs__x-media__media {
+  border-radius: 0;
+}
+
+.p-cs__x-media.v--full .p-cs__x-cap {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.p-cs__x-cap {
+  margin-top: 14px;
+  font-family: Archivo, sans-serif;
+  font-size: 14px;
+  line-height: 130%;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  opacity: 0.85;
+}
+
+/* Two-up */
+.p-cs__x-duo__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  width: 100%;
+  align-items: start;
+}
+
+.p-cs__x-duo.v--square .p-cs__x-duo__media,
+.p-cs__x-duo.v--portrait .p-cs__x-duo__media,
+.p-cs__x-duo.v--landscape .p-cs__x-duo__media {
+  object-fit: cover;
+  height: auto;
+}
+
+.p-cs__x-duo.v--square .p-cs__x-duo__media { aspect-ratio: 1 / 1; }
+.p-cs__x-duo.v--portrait .p-cs__x-duo__media { aspect-ratio: 4 / 5; }
+.p-cs__x-duo.v--landscape .p-cs__x-duo__media { aspect-ratio: 16 / 9; }
+
+/* Stats row */
+.p-cs__x-stats__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  border-top: 1px solid currentColor;
+}
+
+.p-cs__x-stats__grid[data-count="1"] { grid-template-columns: 1fr; }
+.p-cs__x-stats__grid[data-count="2"] { grid-template-columns: repeat(2, 1fr); }
+.p-cs__x-stats__grid[data-count="3"] { grid-template-columns: repeat(3, 1fr); }
+
+.p-cs__x-stat {
+  padding: 28px 24px 0 0;
+}
+
+.p-cs__x-stat + .p-cs__x-stat {
+  padding-left: 24px;
+  border-left: 1px solid currentColor;
+}
+
+.p-cs__x-stat__v {
+  font-family: FoundersGroteskXCondensed, sans-serif;
+  font-size: 160px;
+  font-weight: 700;
+  line-height: 80%;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.p-cs__x-stat__l {
+  margin-top: 14px;
+  font-family: "Archivo Black", sans-serif;
+  font-size: 16px;
+  line-height: 110%;
+  text-transform: uppercase;
+}
+
+/* Pull quote */
+.p-cs__x-quote__q {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0;
+  border: 0;
+  text-align: center;
+}
+
+.p-cs__x-quote__t {
+  margin: 0;
+  font-family: FoundersGroteskXCondensed, sans-serif;
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 90%;
+  text-transform: uppercase;
+}
+
+.p-cs__x-quote__t:before { content: "\201C"; }
+.p-cs__x-quote__t:after { content: "\201D"; }
+
+.p-cs__x-quote__who {
+  display: block;
+  margin-top: 24px;
+  font-family: "Archivo Black", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 110%;
+  text-transform: uppercase;
+}
+
+.p-cs__x-quote__who:before { content: "\2014\00a0"; }
+
+@media screen and (max-width: 991px) {
+  .p-cs__x-stat__v { font-size: 104px; }
+  .p-cs__x-quote__t { font-size: 72px; }
+}
+
+@media screen and (max-width: 767px) {
+  .p-cs__x-media__media,
+  .p-cs__x-duo__media { border-radius: 12px; }
+  .p-cs__x-media.v--full .p-cs__x-cap { padding-left: 14px; padding-right: 14px; }
+  .p-cs__x-duo__grid { grid-template-columns: 1fr; gap: 6px; }
+  .p-cs__x-stats__grid,
+  .p-cs__x-stats__grid[data-count="3"] { grid-template-columns: repeat(2, 1fr); }
+  .p-cs__x-stats__grid[data-count="1"] { grid-template-columns: 1fr; }
+  .p-cs__x-stat,
+  .p-cs__x-stat + .p-cs__x-stat { padding: 20px 14px 4px 0; border-left: 0; }
+  .p-cs__x-stat:nth-child(even) { padding-left: 14px; border-left: 1px solid currentColor; }
+  .p-cs__x-stat:nth-child(n+3) { border-top: 1px solid currentColor; }
+  .p-cs__x-stat__v { font-size: 72px; }
+  .p-cs__x-stat__l { font-size: 13px; }
+  .p-cs__x-quote__t { font-size: 48px; }
+  .p-cs__x-quote__who { font-size: 13px; margin-top: 16px; }
+}

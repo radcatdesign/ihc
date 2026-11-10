@@ -1,0 +1,116 @@
+{
+ "slug": "wandavision",
+ "pageId": "66df420e2ce70b7da6399d9d",
+ "seoTitle": "Wandavision",
+ "description": "To celebrate the debut of WandaVision, Marvel Studios’ first live-action TV series, IHC conceptualized a custom at-home viewing kit.",
+ "noindex": false,
+ "title": "Wandavision",
+ "client": "Disney, Marvel Studios",
+ "subtitle": "",
+ "heroImage": {
+  "src": "/images/660b6f6fd445f22b8332c639_65ea2e9024b8a233d1ae352c_3833a8e0-802f-11eb-9ff7-e80de734bed5.cf-p-2000.avif",
+  "srcset": "/images/660b6f6fd445f22b8332c639_65ea2e9024b8a233d1ae352c_3833a8e0-802f-11eb-9ff7-e80de734bed5.cf-p-500.avif 500w, /images/660b6f6fd445f22b8332c639_65ea2e9024b8a233d1ae352c_3833a8e0-802f-11eb-9ff7-e80de734bed5.cf-p-800.avif 800w, /images/660b6f6fd445f22b8332c639_65ea2e9024b8a233d1ae352c_3833a8e0-802f-11eb-9ff7-e80de734bed5.cf-p-1080.avif 1080w, /images/660b6f6fd445f22b8332c639_65ea2e9024b8a233d1ae352c_3833a8e0-802f-11eb-9ff7-e80de734bed5.cf-p-1600.avif 1600w, /images/660b6f6fd445f22b8332c639_65ea2e9024b8a233d1ae352c_3833a8e0-802f-11eb-9ff7-e80de734bed5.cf-p-2000.avif 2000w",
+  "sizes": "100vw"
+ },
+ "heroVimeo": "",
+ "stats": [
+  {
+   "value": "1,400",
+   "label": "Kits"
+  },
+  {
+   "value": "2.14B",
+   "label": "Total Impressions"
+  }
+ ],
+ "services": [
+  {
+   "name": "Creative Concept",
+   "slug": "creative-concept"
+  },
+  {
+   "name": "Custom Mailers",
+   "slug": "custom-mailers"
+  }
+ ],
+ "headline": "“VERY cool goodie package” - Brian Michael Bendis",
+ "intro": "To celebrate the debut of Marvel Studios’ first live-action series, IHC conceptualized a custom at-home viewing kit.",
+ "introPieces": [
+  {
+   "type": "introGallery",
+   "media": [
+    {
+     "type": "image",
+     "src": "/images/66df45a32db05ef1a5da080d_Case-Studies-_-Wandavision-_-General-_-Main-Gallery-_-Display-p-1600.webp",
+     "alt": ""
+    }
+   ],
+   "html": "<p>WandaVision was the perfect show for Marvel Studios to launch their new wave of content on Disney+. Celebrating the history of TV, the series struck a cord for an at-home viewing audience stuck indoors.</p>\n<p>Inspired by the show, we pitched a vintage TV dinner themed mailer, reminiscent of the classic sitcom era in which this story takes place. The goal was to give audiences the most premium at-home experience watching the series debut.</p>"
+  }
+ ],
+ "sections": [
+  {
+   "title": "The campaign",
+   "pieces": [
+    {
+     "type": "text2",
+     "left": "<p>Disney+ shipped out over 1,400 kits to talent, influencers, and press through a Postmates partnership. A social media contest gave fans a chance to score a box as well. The campaign garnered press from Deadline and generated massive buzz among key cultural tastemakers.</p>",
+     "right": "<p>Led by unboxing videos featuring Paul Betany (Vision), press and influencers were ecstatic to receive the gift boxes. Disney incorporated the campaign into their overarching global marketing plan.</p>"
+    },
+    {
+     "type": "fullGallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/66df45a37aced2cdf7ef3f4e_Case-Studies-_-Wandavision-_-General-_-Main-Gallery-_-Box-Cover.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/66df45a31fcfd58a9c83fa2b_Case-Studies-_-Wandavision-_-General-_-Main-Gallery-_-Display-Box.webp",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "WATCH THE UNBOXING",
+   "pieces": [
+    {
+     "type": "video",
+     "embed": "<div class=\"p-cs__video__el w-video w-embed\" style=\"padding-top:56.27659574468085%\"><iframe allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture\" allowfullscreen=\"true\" class=\"embedly-embed\" frameborder=\"0\" height=\"529\" scrolling=\"no\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F774026321%3Fh%3D6582fa4d41%26app_id%3D122963&amp;dntp=1&amp;display_name=Vimeo&amp;url=https%3A%2F%2Fvimeo.com%2F774026321%2F6582fa4d41%3Fshare%3Dcopy%26fl%3Dcl%26fe%3Dci&amp;image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F1553127586-3d73b5263369eb35b9025d957690360d128db6be19ccb7f21011f3f2a40ef772-d_1280%3Fregion%3Dus&amp;type=text%2Fhtml&amp;schema=vimeo\" title=\"DISNEY: WANDAVISION\" width=\"940\"></iframe></div>"
+    }
+   ]
+  }
+ ],
+ "listing": {
+  "listed": true,
+  "work": {
+   "summary": "To celebrate the debut of WandaVision, Marvel Studios’ first live-action TV series, IHC conceptualized a vintage TV dinner themed mailer kit, reminiscent of the classic sitcom era in which this story takes place.",
+   "href": "/case-studies-items/wandavision",
+   "month": "Jan",
+   "year": "2022",
+   "bg": {
+    "src": "/images/660b6f6fd445f22b8332c639_65ea2e9024b8a233d1ae352c_3833a8e0-802f-11eb-9ff7-e80de734bed5.cf-p-2000.avif",
+    "srcset": "/images/660b6f6fd445f22b8332c639_65ea2e9024b8a233d1ae352c_3833a8e0-802f-11eb-9ff7-e80de734bed5.cf-p-500.avif 500w, /images/660b6f6fd445f22b8332c639_65ea2e9024b8a233d1ae352c_3833a8e0-802f-11eb-9ff7-e80de734bed5.cf-p-800.avif 800w, /images/660b6f6fd445f22b8332c639_65ea2e9024b8a233d1ae352c_3833a8e0-802f-11eb-9ff7-e80de734bed5.cf-p-1080.avif 1080w, /images/660b6f6fd445f22b8332c639_65ea2e9024b8a233d1ae352c_3833a8e0-802f-11eb-9ff7-e80de734bed5.cf-p-1600.avif 1600w, /images/660b6f6fd445f22b8332c639_65ea2e9024b8a233d1ae352c_3833a8e0-802f-11eb-9ff7-e80de734bed5.cf-p-2000.avif 2000w",
+    "sizes": "100vw",
+    "data-bg": "/images/660b6f6fd445f22b8332c639_65ea2e9024b8a233d1ae352c_3833a8e0-802f-11eb-9ff7-e80de734bed5.cf-p-1600.avif",
+    "alt": ""
+   }
+  },
+  "home": {
+   "showHomepage": false,
+   "category": "Film",
+   "image": "/images/660b6f6fd445f22b8332c639_65ea2e9024b8a233d1ae352c_3833a8e0-802f-11eb-9ff7-e80de734bed5.cf-t800.webp",
+   "gif": "",
+   "vimeo": "",
+   "ip": "",
+   "award": false,
+   "awardTitle": "",
+   "awardLogo1": "",
+   "awardLogo2": "",
+   "video": ""
+  }
+ }
+}

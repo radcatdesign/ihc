@@ -1,0 +1,176 @@
+{
+ "slug": "c-xoxo",
+ "pageId": "6740dee6df4ac5d155ac9a46",
+ "seoTitle": "C, XOXO",
+ "description": "",
+ "noindex": false,
+ "title": "C, XOXO",
+ "client": "Interscope",
+ "subtitle": "",
+ "heroImage": {
+  "src": "/images/675193d6a40f201e8db8e725_cxoxo_index.webp",
+  "srcset": "/images/675193d6a40f201e8db8e725_cxoxo_index-p-500.webp 500w, /images/675193d6a40f201e8db8e725_cxoxo_index-p-800.webp 800w, /images/675193d6a40f201e8db8e725_cxoxo_index-p-1080.webp 1080w, /images/675193d6a40f201e8db8e725_cxoxo_index-p-1600.webp 1600w, /images/675193d6a40f201e8db8e725_cxoxo_index.webp 1800w",
+  "sizes": "100vw"
+ },
+ "heroVimeo": "",
+ "stats": [
+  {
+   "value": "2",
+   "label": "Days Live"
+  },
+  {
+   "value": "8",
+   "label": "Hours Live"
+  },
+  {
+   "value": "350+",
+   "label": "Guests"
+  }
+ ],
+ "services": [
+  {
+   "name": "Event Production",
+   "slug": "event-production"
+  },
+  {
+   "name": "Environment Design",
+   "slug": "environment-design"
+  }
+ ],
+ "headline": "",
+ "intro": "TO SUPPORT THE  RELEASE OF CAMILLA CABELLO’S FOURTH STUDIO ALBUM, WE TOOK IT BACK TO HER MIAMI ROOTS WITH A TWO-PART ACTIVATION FOR SUPER FANS, PRESS AND INFLUENCERS ALIKE.",
+ "introPieces": [
+  {
+   "type": "introGallery",
+   "media": [
+    {
+     "type": "image",
+     "src": "/images/67519f3de15e81739b33814e_CC-MAIN.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/67519e3a65eb72ddee595e45_CC-4.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6751a01df30b8a908837339c_CC-711.avif",
+     "alt": ""
+    }
+   ],
+   "html": "<p>First, we produced a one-night only Miami yacht party to host a curated crowd. The  docked yacht overlooked the Miami skyline, providing the perfect backdrop for guests to hear Camilla’s new tracks.  </p>\n<p>The very next day, we transformed a local <strong>7-Eleven</strong> gas station, providing fans and the wider public an opportunity to shop inside a totally rebranded bodega.</p>"
+  }
+ ],
+ "sections": [
+  {
+   "title": "YACHT PARTY",
+   "pieces": [
+    {
+     "type": "text2",
+     "left": "<p>Influencers, tastemakers, press and a select handful of lucky super fans were invited to attend an intimate evening on a decorated yacht, complete with specialty <strong>Bacardi</strong> cocktails, boozy popsicles and Cuban-inspired refreshments and Bacardi infused cocktails and popsicles, amplifying her partnership with the brand. </p>",
+     "right": "<p>Camila arrived to the surprise and delight of all, hosting a first listen of the record alongside new visuals, adding her own intimate details and notes of inspiration. The preview ended with a  celebratory <em>C,XOXO</em> cake and a live DJ to round out the evening; all left with exclusive merch takeaway bags.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/675199f949769dd3199e8db1_Photo-6-7-24-17-32-15-p-2000.jpg",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/67519ac15c2a32815468c323_Photo-6-7-24-17-46-13.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/67519aaa49769dd3199f177a_Photo-6-7-24-17-00-44.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/67519cb9a75a756e90aa7fdd_giphy-14-.gif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/675199f9f785566850e9225f_Photo-6-7-24-17-00-33-p-2000.jpg",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/675199f95944443cac4c47eb_Photo-6-7-24-17-52-24-p-2000.jpg",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "BODEGA 7-ELEVEN",
+   "pieces": [
+    {
+     "type": "text2",
+     "left": "<p>To serve a wider fanbase and the general public, we transformed a 7-Eleven into a shoppable bodega of all things <em>C,XOXO</em>. Leaning into the dusk blue that was the inspiration to her album art, we completely rebranded the space with her signature logo, moody lighting and bold graphics. </p>",
+     "right": "<p>Exclusive merch, free slurpees, our self-designed zine and unique photo moments drew a line down the block that fans talked about all week long. Camila made a surprise appearance, waving to fans and capturing content inside of the store.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/67519e3a6c29abe4328189d4_CC-5.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/67519e3a2c8ea584dd9d46c8_CC-1.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/67519e3a65eb72ddee595e45_CC-4.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/67519e3b8107fac284f67420_CC-3.avif",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "listing": {
+  "listed": true,
+  "work": {
+   "summary": "To celebrate the release of Camila Cabello’s C,XOXO, we took over a 7-Eleven in Miami to sell merch and hosted superfans, influencers and notable press on a docked yacht to preview the new music.",
+   "href": "/case-studies-items/c-xoxo",
+   "month": "",
+   "year": "",
+   "bg": {
+    "src": "/images/675193d6a40f201e8db8e725_cxoxo_index.webp",
+    "srcset": "/images/675193d6a40f201e8db8e725_cxoxo_index-p-500.webp 500w, /images/675193d6a40f201e8db8e725_cxoxo_index-p-800.webp 800w, /images/675193d6a40f201e8db8e725_cxoxo_index-p-1080.webp 1080w, /images/675193d6a40f201e8db8e725_cxoxo_index-p-1600.webp 1600w, /images/675193d6a40f201e8db8e725_cxoxo_index.webp 1800w",
+    "sizes": "100vw",
+    "data-bg": "/images/675193d6a40f201e8db8e725_cxoxo_index-p-1600.webp",
+    "alt": ""
+   }
+  },
+  "home": {
+   "showHomepage": true,
+   "category": "Music",
+   "image": "/images/675193d6a40f201e8db8e725_cxoxo_index-t800.webp",
+   "gif": "",
+   "vimeo": "",
+   "ip": "",
+   "award": false,
+   "awardTitle": "",
+   "awardLogo1": "",
+   "awardLogo2": "",
+   "video": ""
+  }
+ }
+}

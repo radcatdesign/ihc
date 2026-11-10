@@ -1,0 +1,136 @@
+{
+ "slug": "wakanda-forever",
+ "pageId": "661ced59f68a1d352ec005d2",
+ "seoTitle": "Wakanda Forever",
+ "description": "",
+ "noindex": false,
+ "title": "Black Panther: Wakanda Forever",
+ "client": "Disney • Marvel Studios",
+ "subtitle": "",
+ "heroImage": {
+  "src": "/images/660b6f6f3d2aa9315e996ca7_65ea2f268877527693e70974_main-banner.avif",
+  "srcset": "/images/660b6f6f3d2aa9315e996ca7_65ea2f268877527693e70974_main-banner-p-500.avif 500w, /images/660b6f6f3d2aa9315e996ca7_65ea2f268877527693e70974_main-banner-p-800.avif 800w, /images/660b6f6f3d2aa9315e996ca7_65ea2f268877527693e70974_main-banner-p-1080.avif 1080w, /images/660b6f6f3d2aa9315e996ca7_65ea2f268877527693e70974_main-banner.avif 1920w",
+  "sizes": "100vw"
+ },
+ "heroVimeo": "",
+ "stats": [],
+ "services": [
+  {
+   "name": "Creative Concept",
+   "slug": "creative-concept"
+  },
+  {
+   "name": "Creative Direction",
+   "slug": "creative-direction"
+  },
+  {
+   "name": "Event Production",
+   "slug": "event-production"
+  }
+ ],
+ "headline": "",
+ "intro": "IHC PRODUCED THE WAKANDA FOREVER GALLERY FEATURING FOUR INCREDIBLE ARTISTS in celebration of Marvel's new film.",
+ "introPieces": [
+  {
+   "type": "introGallery",
+   "media": [
+    {
+     "type": "image",
+     "src": "/images/6a69a207778f09196d8cbcd1_IMG_4538-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/661cee875e78608c9202aaa2_image-2-case-studies-wakanda-foreverl-general-main-gallery-pose-1800x.webp",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6a69a34315bb75bfa8a7be59_IMG_4423-p-2000.jpeg",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/661cee87ac04478f46f3b84b_image-6-case-studies-wakanda-foreverl-general-main-gallery-group-1800x.webp",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/661cee876735f7457a8ab713_image-5-case-studies-wakanda-foreverl-general-main-gallery-tracey-1800x.webp",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6a6a289bb8d96cfac8d7fda6_IMG_4494-p-2000.jpeg",
+     "alt": ""
+    }
+   ],
+   "html": "<p>IHC commissioned Jonny Rabbit, Gorge Garza, Shizu Saldamando, and Tracy Guiteau to create portraits inspired by the people of the Talokan and Wakandan communities. Their mission was to masterfully incorporate the film’s underlying pillars of tradition and celebrate the powerful women behind them. </p>\n<p>The gallery was produced for a special Straw Hat Goofy prescreening of the film at the Cinemark Theatre in Playa Vista. </p>"
+  }
+ ],
+ "sections": [
+  {
+   "title": "The artwork",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p>Disney featured the work of all four artists across their official Marvel Studios and Black Panther Instagrams and elected to use the artwork for a special auction in support of the Chadwick Boseman foundation.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/6a6a289b6b8f3fefc9e8a86a_IMG_4631-p-2000.jpeg",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a6a289b03dbd84e1e75e130_IMG_4627-p-2000.jpeg",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a6a289b813874d76d2ccc3e_IMG_4621-p-2000.jpeg",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a6a289bc41a598606ea625d_IMG_4639-p-2000.jpeg",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "listing": {
+  "listed": true,
+  "work": {
+   "summary": "In celebration of Marvel Studios’ sequel to Black Panther, IHC produced the Wakanda Forever Gallery featuring four incredible artists who created artwork depicting the cultures of the film’s rivaling tribes.",
+   "href": "/case-studies-items/wakanda-forever",
+   "month": "Nov",
+   "year": "2022",
+   "bg": {
+    "src": "/images/660b6f6f3d2aa9315e996ca7_65ea2f268877527693e70974_main-banner.avif",
+    "srcset": "/images/660b6f6f3d2aa9315e996ca7_65ea2f268877527693e70974_main-banner-p-500.avif 500w, /images/660b6f6f3d2aa9315e996ca7_65ea2f268877527693e70974_main-banner-p-800.avif 800w, /images/660b6f6f3d2aa9315e996ca7_65ea2f268877527693e70974_main-banner-p-1080.avif 1080w, /images/660b6f6f3d2aa9315e996ca7_65ea2f268877527693e70974_main-banner.avif 1920w",
+    "sizes": "100vw",
+    "data-bg": "/images/660b6f6f3d2aa9315e996ca7_65ea2f268877527693e70974_main-banner-p-1080.avif",
+    "alt": ""
+   }
+  },
+  "home": {
+   "showHomepage": false,
+   "category": "Film",
+   "image": "/images/660b6f6f3d2aa9315e996ca7_65ea2f268877527693e70974_main-banner-t800.webp",
+   "gif": "",
+   "vimeo": "",
+   "ip": "",
+   "award": false,
+   "awardTitle": "",
+   "awardLogo1": "",
+   "awardLogo2": "",
+   "video": ""
+  }
+ }
+}

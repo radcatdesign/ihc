@@ -1,0 +1,206 @@
+{
+ "slug": "hurry-up-tomorrow-the-mirror",
+ "pageId": "69f2929a2ddc3b1a2634dee3",
+ "seoTitle": "Hurry Up Tomorrow: The Mirror",
+ "description": "",
+ "noindex": false,
+ "title": "Hurry Up Tomorrow: The Mirror",
+ "client": "Manic Phase",
+ "subtitle": "",
+ "heroImage": {
+  "src": "/images/6a0cc0b739a62d217b459f0c_05092025_Kursza_Glendale_AZ_Photos_Batch-3-9-p-2000.jpeg",
+  "srcset": "/images/6a0cc0b739a62d217b459f0c_05092025_Kursza_Glendale_AZ_Photos_Batch-3-9-p-500.jpeg 500w, /images/6a0cc0b739a62d217b459f0c_05092025_Kursza_Glendale_AZ_Photos_Batch-3-9-p-800.jpeg 800w, /images/6a0cc0b739a62d217b459f0c_05092025_Kursza_Glendale_AZ_Photos_Batch-3-9-p-1080.jpeg 1080w, /images/6a0cc0b739a62d217b459f0c_05092025_Kursza_Glendale_AZ_Photos_Batch-3-9-p-1600.jpeg 1600w, /images/6a0cc0b739a62d217b459f0c_05092025_Kursza_Glendale_AZ_Photos_Batch-3-9-p-2000.jpeg 2000w",
+  "sizes": "100vw"
+ },
+ "heroVimeo": "",
+ "stats": [
+  {
+   "value": "81.2M+",
+   "label": "Social Impressions"
+  },
+  {
+   "value": "13,200+",
+   "label": "Total Attendees"
+  },
+  {
+   "value": "2",
+   "label": "Cities"
+  },
+  {
+   "value": "4",
+   "label": "Days Live"
+  }
+ ],
+ "services": [
+  {
+   "name": "Creative Direction",
+   "slug": "creative-direction"
+  },
+  {
+   "name": "Content Production",
+   "slug": "content-production"
+  },
+  {
+   "name": "Fabrication Production",
+   "slug": "fabrication-production"
+  },
+  {
+   "name": "Technical Design",
+   "slug": "technical-design"
+  }
+ ],
+ "headline": "“So iconic.” - Attendee",
+ "intro": "the weekend FANS FACED 'THE MIRROR' WHILE DISCOVERING THE CEREBRAL DEPTHS OF HURRY UP TOMORROW.",
+ "introPieces": [
+  {
+   "type": "introGallery",
+   "media": [
+    {
+     "type": "image",
+     "src": "/images/69f3b321d1d81381c052519d_hut_main_04-p-2000.jpeg",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/69f3a54ef6f82224e6538d8d_hut_locations_11-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/69f3a54f274296324185a819_hut_locations_09-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/69f3a7fbce9b9636bb2efbda_hut_locations_07-p-2000.avif",
+     "alt": ""
+    }
+   ],
+   "html": "<p>To help promote The Weeknd’s first feature length film <em>Hurry Up Tomorrow</em>, we created a striking installation showcasing a towering 18’ bust with a mirrored face, designed to invite audiences into an unexpected and immersive encounter.</p>\n<p>During the day, viewers saw their own reflections within Abel’s shroud. At night, a concealed screen played a haunting series of shifting faces of the main cast, each seemingly battling for control. The visual narrative unfolded through with cinematic lighting, rolling fog and music, for an exciting installation that pulled fans into the film’s ominous atmosphere.</p>"
+  }
+ ],
+ "sections": [
+  {
+   "title": "THE BUILD",
+   "pieces": [
+    {
+     "type": "text2",
+     "left": "<p>The installation was inspired by contemporary art practices that blur the lines between sculpture and digital illusion. Approaching the installation as both sculpture and stage, we built advanced projection and lighting technology within the carefully crafted structure.</p>",
+     "right": "<p>Drawing from the film’s exploration of fractured identity and blurred realities, the build was conceived as a physical embodiment of Abel’s shifting persona. Surrounding the installation were bold visual elements, including signage, billboards, and interior fabric wraps.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/6a0cba5c8676313035a976ed_05082025_Kursza_Glendale_AZ_Photos_Batch-1-34-p-2000.jpeg",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69f3a7fc1f0d9a19c9002720_hut_thebuild_01-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a0cba5b50ed6c1126d137ea_05082025_Kursza_Glendale_AZ_Photos_Batch-2-14-p-2000.jpeg",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a0cba5ca8cd5c91a73bef26_05082025_Kursza_Glendale_AZ_Photos_Batch-3-01-p-2000.jpeg",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69f3a7fc917cc3a93017ea5b_hut_thebuild_02-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69f3a54d52eb14e39dcba696_hut_thebuild_13-p-2000.avif",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "LOCATIONS",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p><strong> </strong>To kick off The Weeknd’s stadium tour, the installation debuted at State Farm Stadium in Phoenix, strategically placed near the main entrance and merch booth to maximize visibility and drive engagement. A few days later, we brought the experience to the heart of Los Angeles, activating at Hollywood and Vine to spark organic interaction with fans and passersby. The installation would be open to the public for three full days, allowing fans to experience daytime and nighttime versions.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/69f3a54d7a52813b43d77384_hut_main_03-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69f3a7fc93e9cab2a5a090c8_hut_locations_02-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69f3a54fe1856096d02da0a6_hut_locations_04-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69f3a5500b14ba870a7f1990_hut_locations_01-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69f3a55010ad869a00e70cac_hut_thebuild_08-p-2000.avif",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "WATCH THE RECAP",
+   "pieces": [
+    {
+     "type": "video",
+     "embed": "<div class=\"p-cs__video__el w-video w-embed\" style=\"padding-top:56.17021276595745%\"><iframe allowfullscreen=\"\" class=\"embedly-embed\" height=\"528\" scrolling=\"no\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FhzT8Cb_OkX4%3Ffeature%3Doembed&amp;display_name=YouTube&amp;url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DhzT8Cb_OkX4&amp;image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FhzT8Cb_OkX4%2Fhqdefault.jpg&amp;type=text%2Fhtml&amp;schema=youtube\" title=\"Manic Phase: Hurry Up Tomorrow\" width=\"940\"></iframe></div>"
+    }
+   ]
+  }
+ ],
+ "listing": {
+  "listed": true,
+  "work": {
+   "summary": "To promote The Weeknd’s first feature-length film Hurry Up Tomorrow we created a striking 18-foot installation of a mirrored bust that transformed from reflective spectacle by day to haunting cinematic experience by night.",
+   "href": "/case-studies-items/hurry-up-tomorrow-the-mirror",
+   "month": "",
+   "year": "",
+   "bg": {
+    "src": "/images/6a0cc0b739a62d217b459f0c_05092025_Kursza_Glendale_AZ_Photos_Batch-3-9-p-2000.jpeg",
+    "srcset": "/images/6a0cc0b739a62d217b459f0c_05092025_Kursza_Glendale_AZ_Photos_Batch-3-9-p-500.jpeg 500w, /images/6a0cc0b739a62d217b459f0c_05092025_Kursza_Glendale_AZ_Photos_Batch-3-9-p-800.jpeg 800w, /images/6a0cc0b739a62d217b459f0c_05092025_Kursza_Glendale_AZ_Photos_Batch-3-9-p-1080.jpeg 1080w, /images/6a0cc0b739a62d217b459f0c_05092025_Kursza_Glendale_AZ_Photos_Batch-3-9-p-1600.jpeg 1600w, /images/6a0cc0b739a62d217b459f0c_05092025_Kursza_Glendale_AZ_Photos_Batch-3-9-p-2000.jpeg 2000w",
+    "sizes": "100vw",
+    "data-bg": "/images/6a0cc0b739a62d217b459f0c_05092025_Kursza_Glendale_AZ_Photos_Batch-3-9-p-1600.jpeg",
+    "alt": ""
+   }
+  },
+  "home": {
+   "showHomepage": true,
+   "category": "Film",
+   "image": "/images/6a0cc0b739a62d217b459f0c_05092025_Kursza_Glendale_AZ_Photos_Batch-3-9-t800.webp",
+   "gif": "",
+   "vimeo": "",
+   "ip": "",
+   "award": false,
+   "awardTitle": "",
+   "awardLogo1": "",
+   "awardLogo2": "",
+   "video": ""
+  }
+ }
+}

@@ -1,0 +1,291 @@
+{
+ "slug": "marvel-zombies",
+ "pageId": "6a742423b27f0884dd036de7",
+ "seoTitle": "Marvel Zombies",
+ "description": "",
+ "noindex": false,
+ "title": "Marvel Zombies",
+ "client": "Marvel Studios",
+ "subtitle": "",
+ "heroImage": {
+  "src": "/images/6a7426e52f13080ad241398f_zombies_index-p-2000.jpeg",
+  "srcset": "/images/6a7426e52f13080ad241398f_zombies_index-p-500.jpeg 500w, /images/6a7426e52f13080ad241398f_zombies_index-p-800.jpeg 800w, /images/6a7426e52f13080ad241398f_zombies_index-p-1080.jpeg 1080w, /images/6a7426e52f13080ad241398f_zombies_index-p-1600.jpeg 1600w, /images/6a7426e52f13080ad241398f_zombies_index-p-2000.jpeg 2000w",
+  "sizes": "100vw"
+ },
+ "heroVimeo": "",
+ "stats": [
+  {
+   "value": "17.1M+",
+   "label": "SOCIAL IMPRESSIONS"
+  }
+ ],
+ "services": [
+  {
+   "name": "Environment Design",
+   "slug": "environment-design"
+  },
+  {
+   "name": "Event Production",
+   "slug": "event-production"
+  },
+  {
+   "name": "Fabrication Production",
+   "slug": "fabrication-production"
+  },
+  {
+   "name": "Creative Direction",
+   "slug": "creative-direction"
+  }
+ ],
+ "headline": "",
+ "intro": "MARVEL TAPPED IHC TO Rise ZOMBIES FROM THE GRAVE AT HOLLYWOOD FOREVER CEMETERY.",
+ "introPieces": [
+  {
+   "type": "introGallery",
+   "media": [
+    {
+     "type": "image",
+     "src": "/images/6a74279cb8fb342e82a9358d_zombies_main_01-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6a74279d7795e2c6a30a5608_zombies_main_04-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6a74279c2cc4c790cc87a11d_zombies_main_06-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6a8f5910823495d4955b66c4_2236835944-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6a74279b2d38f1d4f95f0fdc_zombies_main_02-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6a8f58f0060d7a0b112b67b1_2236830423-p-2000.avif",
+     "alt": ""
+    }
+   ],
+   "html": "<p>The Masonic Lodge was transformed into a post-apocalyptic wasteland for an exclusive screening of the first four episodes of Marvel Zombies before its official debut on Disney+. </p>\n<p>Filmmakers, press, influencers, and Disney executives stepped into a fully immersive experience featuring gothic DJ Johnny HEALTH, fully zombified staff, and in-world decor. The night included undead-inspired F&amp;B, exclusive giveaways, photo moments, and a themed soda fountain all curated to drop attendees directly into the twisted universe.</p>"
+  }
+ ],
+ "sections": [
+  {
+   "title": "DECOR",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p><strong> </strong>In the courtyard, strewn debris, moody lighting, and heavy fog set the scene for the eerie evening. The fountain was transformed into a glowing Jones Soda display filled with dry ice and surrounded by lounge seating, high-tops, and branded bars for guests to enjoy. Upstairs, guests stepped into the Zombie Queen’s lair and the Hall of New Asgard’s Feast, complete with Blade’s iconic sword wall and faux fire goblets.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/6a8f5ba4fe9447b328665467_MARVEL-ZOMBIES-92-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a74293a03e3fd4b2a08a2d8_zombies_decor_02-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a74293a1ade939ac15db9d0_zombies_decor_01-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a8f5911c5dfe0cc40a28300_RKE_8438_1_y5VT67rC-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a74293ac15cbea785bbc7e3_zombies_decor_04-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a8f5910823495d4955b66c4_2236835944-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a7429396b926a8c17ef8021_zombies_decor_06-p-2000.avif",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "IMMERSIVE EXPERIENCE",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p>The party came alive AS dedicated actors and staff transformed into gory zombies. A handful of cosplayers arrived fully dressed as the undead, adding an additional immersive interaction. Black Moon Cosmetics were onsite as well providing inspired makeup looks and airbrush tattoos. </p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/6a742a362d38f1d4f9604455_zombies_immersiveexperience_02_1-p-2000.jpg",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a742a36565ef7b6636027d5_zombies_immersiveexperience_03_1-p-2000.jpg",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a742a350028970991c97b52_zombies_immersiveexperience_04_1-p-2000.jpg",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a742a36a39fcd4ef1458cb1_zombies_immersiveexperience_05_1-p-2000.jpg",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a742a36b126e803c9e0bcf5_zombies_immersiveexperience_01_1-p-2000.jpg",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "PHOTO MOMENTS",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p>A branded step-and-repeat welcomed guests, providing the first photo moment after check-in. In the courtyard, guests encountered a custom FANGORIA photo opp featuring Marvel Zombies, recreating the iconic magazine cover for playful UGC shots. Guests also posed at Thor’s Throne, perfectly framed by the fireplace, a branded stained-glass logo, and dramatic lighting.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/6a742adf1179991980fb84db_zombies_photomoments_01-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a742adfb126e803c9e10fa3_zombies_photomoments_02-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a742adf9b8f033bd6da7058_zombies_photomoments_03-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a742adfeb481309db063b3d_zombies_photomoments_04-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a742ae0b6815eb1f03e9dfa_zombies_photomoments_05-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a742adf93d8443261c7e2f5_zombies_photomoments_06-p-2000.avif",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "SCREENING",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p>Guests grabbed popcorn topped with “bloody” butter before heading into the theater for the main event, introduced by Director Bryan Andrews and Marvel Television head, Brad Winderbaum. Simultaneously, an outdoor courtyard screening took place, with zombified staff roaming the space to keep the immersive experience alive.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/6a742bd844a60aa2dd06459b_zombies_screening_01-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a742bd893d8443261c84432_zombies_screening_02-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a742bd87795e2c6a30c103e_zombies_screening_03-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a742bd99eac13f82c2c674b_zombies_screening_04-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a742bd90f014c8681307eff_zombies_screening_05-p-2000.avif",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "WATCH THE RECAP",
+   "pieces": [
+    {
+     "type": "video",
+     "embed": "<div class=\"p-cs__video__el w-video w-embed\" style=\"padding-top:56.27659574468085%\"><iframe allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture\" allowfullscreen=\"true\" class=\"embedly-embed\" frameborder=\"0\" height=\"529\" scrolling=\"no\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F1130378336%3Fapp_id%3D122963&amp;dntp=1&amp;display_name=Vimeo&amp;url=https%3A%2F%2Fvimeo.com%2F1130378336%3Fshare%3Dcopy%26fl%3Dcl%26fe%3Dci&amp;image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F2074044654-4bddf18810cc803c5059e11c9408fbffb12089179562b4045232ba5c4b1eb2a6-d_1280%3Fregion%3Dus&amp;type=text%2Fhtml&amp;schema=vimeo\" title=\"MARVEL: ZOMBIES\" width=\"940\"></iframe></div>"
+    }
+   ]
+  }
+ ],
+ "listing": {
+  "listed": true,
+  "work": {
+   "summary": "We produced a post-apocalyptic, immersive wasteland to premiere Marvel Zombies for filmmakers, press, and VIPs.",
+   "href": "/case-studies-items/marvel-zombies",
+   "month": "Sep",
+   "year": "2025",
+   "bg": {
+    "src": "/images/6a7426e52f13080ad241398f_zombies_index-p-2000.jpeg",
+    "srcset": "/images/6a7426e52f13080ad241398f_zombies_index-p-500.jpeg 500w, /images/6a7426e52f13080ad241398f_zombies_index-p-800.jpeg 800w, /images/6a7426e52f13080ad241398f_zombies_index-p-1080.jpeg 1080w, /images/6a7426e52f13080ad241398f_zombies_index-p-1600.jpeg 1600w, /images/6a7426e52f13080ad241398f_zombies_index-p-2000.jpeg 2000w",
+    "sizes": "100vw",
+    "data-bg": "/images/6a7426e52f13080ad241398f_zombies_index-p-1600.jpeg",
+    "alt": ""
+   }
+  },
+  "home": {
+   "showHomepage": false,
+   "category": "Television",
+   "image": "/images/6a7426e52f13080ad241398f_zombies_index-t800.webp",
+   "gif": "",
+   "vimeo": "",
+   "ip": "",
+   "award": false,
+   "awardTitle": "",
+   "awardLogo1": "",
+   "awardLogo2": "",
+   "video": ""
+  }
+ }
+}

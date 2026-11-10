@@ -1,0 +1,961 @@
+{
+ "caseStudies": [
+  {
+   "slug": "a-goofy-movie",
+   "title": "A Goofy Movie 30th Anniversary Mailer",
+   "client": "Disney",
+   "listed": true,
+   "homepage": true,
+   "noindex": false,
+   "thumb": "/images/69d454700e4411023b6cfaab_20250402_MFG_IHC_0439-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "a-haunting-in-venice",
+   "title": "A Haunting in Venice",
+   "client": "20th Century Studios",
+   "listed": true,
+   "homepage": false,
+   "noindex": false,
+   "thumb": "/images/6a763439dc7cb86e310fe01e_09062023-Haunting-in-Venice-Screening-101987-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "abigail",
+   "title": "Abigail",
+   "client": "Universal Pictures",
+   "listed": true,
+   "homepage": true,
+   "noindex": false,
+   "thumb": "/images/69cc58aba71c7a7a2b79804c_TR021026-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "adult-swim-festival",
+   "title": "Adult Swim Festival",
+   "client": "Adult Swim",
+   "listed": true,
+   "homepage": false,
+   "noindex": false,
+   "thumb": "/images/660b6f6f2289a18ea440f672_65ea2ddce4a8795fd20b54f8_hero-image-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "adult-swim-special-events",
+   "title": "Adult Swim Special Events",
+   "client": "Adult Swim",
+   "listed": true,
+   "homepage": false,
+   "noindex": true,
+   "thumb": "/images/6a3afb024c6299842a6253de_1077818_341226639342500_1900902647_o-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "adults-s2",
+   "title": "Adults Season 2",
+   "client": "FX",
+   "listed": false,
+   "homepage": false,
+   "noindex": false,
+   "thumb": "/images/6ae104a7461601927d9cb7a7_MUNCHIEMART2026_0820_203543-3948_-Kursza_-ChrisLavado-p-2000.jpeg",
+   "updatedAt": ""
+  },
+  {
+   "slug": "after-the-hunt",
+   "title": "After The Hunt",
+   "client": "Amazon MGM",
+   "listed": true,
+   "homepage": true,
+   "noindex": false,
+   "thumb": "/images/69d41b878a64fb8a30121efc_afterthehunt_index-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "babes",
+   "title": "Babes",
+   "client": "Neon",
+   "listed": true,
+   "homepage": true,
+   "noindex": false,
+   "thumb": "/images/69cef10926e85ecc6f37c4d4_20240512-Babes_032-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "billie-eilish",
+   "title": "BILLIE EILISH",
+   "client": "SPOTIFY • INTERSCOPE",
+   "listed": true,
+   "homepage": true,
+   "noindex": false,
+   "thumb": "/images/660b6f6afb0a396cb2164cfc_65daf5b421dd9c336d38d605_photo-jul-29-2-56-41-pm-1800x-201-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "black-panther",
+   "title": "Black Panther",
+   "client": "DISNEY • MARVEL STUDIOS",
+   "listed": true,
+   "homepage": true,
+   "noindex": false,
+   "thumb": "/images/66c47f1989ccf0ba814855c4_blackpanther-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "black-widow",
+   "title": "Black Widow",
+   "client": "DISNEY • MARVEL",
+   "listed": false,
+   "homepage": false,
+   "noindex": false,
+   "thumb": "/images/660b6f6cd445f22b8332c4e2_65ea27ada170bf51c2b26083_1-case-studies-black-widow-general-hero-image-p-1600.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "blink-twice",
+   "title": "Blink Twice",
+   "client": "MGM Amazon",
+   "listed": false,
+   "homepage": false,
+   "noindex": false,
+   "thumb": "/images/69d81b23027dcb92899a8f95_IMG_7476-p-2000.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "bottoms",
+   "title": "Bottoms",
+   "client": "Amazon MGM",
+   "listed": true,
+   "homepage": true,
+   "noindex": false,
+   "thumb": "/images/67531ee4df926fab7dc394e7_08222023-Bottoms-108274-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "c-xoxo",
+   "title": "C, XOXO",
+   "client": "Interscope",
+   "listed": true,
+   "homepage": true,
+   "noindex": false,
+   "thumb": "/images/675193d6a40f201e8db8e725_cxoxo_index-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "canon-creator-event",
+   "title": "Canon Creator Event",
+   "client": "Pixel",
+   "listed": true,
+   "homepage": false,
+   "noindex": false,
+   "thumb": "/images/6a76591d46c2e20f7fcd7e7c_Canon-Creator-Experience_IHC-0359-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "captain-marvel",
+   "title": "Captain Marvel",
+   "client": "Marvel Studios • Disney",
+   "listed": true,
+   "homepage": false,
+   "noindex": false,
+   "thumb": "/images/660b6f6d3d2aa9315e996a5c_65ea297abd2873d48cd36fe3_captain-marvel-feature-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "chang-can-dunk",
+   "title": "Chang Can Dunk",
+   "client": "Disney",
+   "listed": true,
+   "homepage": false,
+   "noindex": false,
+   "thumb": "/images/6a751994184a87c5c3e3b37e_Z72_0722-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "cruella",
+   "title": "Cruella",
+   "client": "Disney",
+   "listed": true,
+   "homepage": false,
+   "noindex": false,
+   "thumb": "/images/660b6f6b375dab4be7c4bf6d_65ea249fb538132dfb0e3c1e_case-studies-_-cruella-_-1.-general_-hero-image-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "darby-and-the-dead",
+   "title": "Darby and the Dead",
+   "client": "20th Century Studios • Hulu",
+   "listed": true,
+   "homepage": false,
+   "noindex": false,
+   "thumb": "/images/660b6f6f0229a9bc78ed2578_65ea2f845557c53fd9868cf5_1-case-studies-darby-general-decor-image4-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "daredevil-born-again-mailers",
+   "title": "Daredevil: Born Again Mailers",
+   "client": "Disney",
+   "listed": true,
+   "homepage": false,
+   "noindex": false,
+   "thumb": "/images/69f3be1bd201c2acc22db463_daredevil_index-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "deliver-me-from-nowhere",
+   "title": "Deliver Me From Nowhere",
+   "client": "20th Century Studios",
+   "listed": true,
+   "homepage": false,
+   "noindex": false,
+   "thumb": "/images/6a73cb0385ca250abee7efb2_dmfn_index-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "disneys-summer-throwback",
+   "title": "Disney's Summer Throwback",
+   "client": "Disney",
+   "listed": true,
+   "homepage": false,
+   "noindex": false,
+   "thumb": "/images/69dd78d6e20b8775a4fe76b5_index-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "doctor-strange-2",
+   "title": "Doctor Strange 2",
+   "client": "Marvel Studios",
+   "listed": true,
+   "homepage": true,
+   "noindex": false,
+   "thumb": "/images/660b6f6b2e4378d942130670_65ea23efc884ffbb0b2452d7_case-studies-_-dr.-strange-2-_-general-_-hero-image-_-benedict-olsen-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "dream-productions",
+   "title": "Dream Productions",
+   "client": "Disney",
+   "listed": true,
+   "homepage": true,
+   "noindex": false,
+   "thumb": "/images/6a17ab924c5deaf6ef7a230a_pixar_DPdinner_photo-by-meghanmcneer_142-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "dullsville-and-the-doodleverse",
+   "title": "Dullsville and the Doodleverse",
+   "client": "Doodles",
+   "listed": true,
+   "homepage": true,
+   "noindex": false,
+   "thumb": "/images/67530d98c543a1f2ed24edf8_doodles-index-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "ebenezer",
+   "title": "Ebenezer SDCC",
+   "client": "Paramount Pictures",
+   "listed": true,
+   "homepage": true,
+   "noindex": false,
+   "thumb": "/images/6ae2343f7b199ec705df943d_577A0924_7jECkGIL-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "electronica",
+   "title": "ElecTRONica",
+   "client": "Disney",
+   "listed": true,
+   "homepage": true,
+   "noindex": false,
+   "thumb": "/images/69bc3b94fbef996b18580658_tron_eventprogramming_01-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "elio-pixar-creator-day",
+   "title": "Elio Pixar Creator Day",
+   "client": "Disney • Pixar",
+   "listed": true,
+   "homepage": true,
+   "noindex": false,
+   "thumb": "/images/6a0502f5eb7942ccefb0743b_IMG_5208-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "eternals",
+   "title": "Eternals",
+   "client": "Marvel Studios • Disney",
+   "listed": true,
+   "homepage": false,
+   "noindex": false,
+   "thumb": "/images/660b6f6bab76e57af2b06e5b_65ea244f8c09d74da7f7294c_l1140114-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "fantastic-four",
+   "title": "Fantastic Four",
+   "client": "Disney",
+   "listed": true,
+   "homepage": true,
+   "noindex": false,
+   "thumb": "/images/69dfd5cc2f7d49702f7f7ea2_IHC2025_0704_124054-2582_KKB-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "fast-x",
+   "title": "Fast X",
+   "client": "Universal Pictures",
+   "listed": true,
+   "homepage": false,
+   "noindex": false,
+   "thumb": "/images/66c479255ea65af9b5d7d350_FastX-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "fire-of-love",
+   "title": "Fire of Love",
+   "client": "Sandbox Films",
+   "listed": true,
+   "homepage": true,
+   "noindex": false,
+   "thumb": "/images/6751b5a833c1e000ea08ddda_CNL_8685-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "firestarter",
+   "title": "Firestarter",
+   "client": "Universal Pictures • Peacock",
+   "listed": true,
+   "homepage": false,
+   "noindex": false,
+   "thumb": "/images/660b6f6c912d80a57eb10f37_65ea29d46ce4b4f39a4d7ec5_1-z72_0682_recropped-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "guardians-of-the-galaxy-vol-3",
+   "title": "Guardians of the Galaxy Vol. 3",
+   "client": "Marvel Studios",
+   "listed": true,
+   "homepage": true,
+   "noindex": false,
+   "thumb": "/images/6754a7a561f803b340b16307_gog-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "guts-bus-college-tour",
+   "title": "GUTS Bus College Tour",
+   "client": "Lancôme",
+   "listed": true,
+   "homepage": true,
+   "noindex": false,
+   "thumb": "/images/69fa4bc47f4b19095b505fb9_YASI7589-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "halloween-ends",
+   "title": "Halloween Ends",
+   "client": "Universal Pictures • Peacock",
+   "listed": true,
+   "homepage": true,
+   "noindex": false,
+   "thumb": "/images/660b6f6d2e4378d942130854_65ea2b8d1ce914f342b2ed6e_1-cnl_5498-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "heart-of-the-beast",
+   "title": "Heart of the Beast",
+   "client": "Paramount Pictures",
+   "listed": true,
+   "homepage": false,
+   "noindex": false,
+   "thumb": "/images/6ae11e6213c7123ec4bb0259_DSC_7438_mUaChh2Z-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "honey-boy",
+   "title": "Honey Boy",
+   "client": "Amazon Studios",
+   "listed": true,
+   "homepage": false,
+   "noindex": false,
+   "thumb": "/images/66c47aa45d24f31670a4e7a3_HoneyBoy-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "how-to-with-john-wilson",
+   "title": "How To With John Wilson",
+   "client": "HBO",
+   "listed": true,
+   "homepage": false,
+   "noindex": false,
+   "thumb": "/images/660b6f6c0a4e24b200b22b6e_65ea25ac99bf80678b9fb98c_wil_02152020_ab_23-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "hurry-up-tomorrow-the-mirror",
+   "title": "Hurry Up Tomorrow: The Mirror",
+   "client": "Manic Phase",
+   "listed": true,
+   "homepage": true,
+   "noindex": false,
+   "thumb": "/images/6a0cc0b739a62d217b459f0c_05092025_Kursza_Glendale_AZ_Photos_Batch-3-9-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "ihc20-anniversary-ball",
+   "title": "IHC20 Anniversary Ball",
+   "client": "IHEARTCOMIX",
+   "listed": false,
+   "homepage": false,
+   "noindex": false,
+   "thumb": "/images/6a17798d46bd08018fbd14ce__R1A8738.JPG",
+   "updatedAt": ""
+  },
+  {
+   "slug": "indiana-jones-influencer-campaign",
+   "title": "Indiana Jones and the Dial of Destiny",
+   "client": "Disney",
+   "listed": true,
+   "homepage": false,
+   "noindex": false,
+   "thumb": "/images/6a75034bb99ad6e286fea35a_Review_IndianaJonesDialofDestiny-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "jujus-juneteenth-juke",
+   "title": "JuJu's Juneteenth Juke",
+   "client": "Straw Hat Goofy",
+   "listed": true,
+   "homepage": true,
+   "noindex": false,
+   "thumb": "/images/69ceca9510ee015f64b2785f_20250619-juju_juke_075-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "knock-at-the-cabin",
+   "title": "Knock at the Cabin",
+   "client": "Universal Pictures",
+   "listed": true,
+   "homepage": false,
+   "noindex": false,
+   "thumb": "/images/66c47b00c29d5e6be67b7f19_KnockatTheCabin-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "la-gives-back",
+   "title": "LA Gives Back",
+   "client": "IHEARTCOMIX",
+   "listed": true,
+   "homepage": true,
+   "noindex": false,
+   "thumb": "/images/660b6f6f339b1e206c9ca651_65ea2e336157e007c77f6edd_case-studies-lagb-origins-2016-1-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "la-gives-back-fire-relief",
+   "title": "LA Gives Back: Fire Relief",
+   "client": "IHEARTCOMIX",
+   "listed": true,
+   "homepage": false,
+   "noindex": false,
+   "thumb": "/images/6aa08b173acf3630b4d5264a_DSC01306-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "lil-nas-x",
+   "title": "Lil Nas X",
+   "client": "Beats By Dre • Columbia Records",
+   "listed": true,
+   "homepage": true,
+   "noindex": false,
+   "thumb": "/images/660b6f6e139f799a9bec02fb_65ea2d53bdc580d9bb108c10_case-studies-lil-nas-x-general-main-gallery-chloeandhaller-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "ma",
+   "title": "MA",
+   "client": "Universal Pictures • Blumhouse",
+   "listed": true,
+   "homepage": false,
+   "noindex": false,
+   "thumb": "/images/660b6f6bb97718d3dddd945c_65ea24e9a25a70e31e4658a6_1-dsc02171-recropped-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "margos-got-money-troubles",
+   "title": "Margo's Got Money Troubles",
+   "client": "Apple TV",
+   "listed": true,
+   "homepage": false,
+   "noindex": false,
+   "thumb": "/images/6ac054684b73a87c95694989__NTS7832-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "marvel-zombies",
+   "title": "Marvel Zombies",
+   "client": "Marvel Studios",
+   "listed": true,
+   "homepage": false,
+   "noindex": false,
+   "thumb": "/images/6a7426e52f13080ad241398f_zombies_index-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "massive-talent",
+   "title": "The Unbearable Weight of Massive Talent",
+   "client": "Lionsgate",
+   "listed": true,
+   "homepage": false,
+   "noindex": false,
+   "thumb": "/images/660b6f6cfb0a396cb2164f16_65ea27716d84d3acaee4d110_img_9475_recropped-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "mtv-vmas-2026",
+   "title": "MTV VMAs 2026",
+   "client": "CBS • Paramount Pictures",
+   "listed": false,
+   "homepage": false,
+   "noindex": false,
+   "thumb": "/images/6aeba6837a6134d16cca0abb_VMA_MOON_MOBILE_SATURDAY-01445-p-2000.jpeg",
+   "updatedAt": ""
+  },
+  {
+   "slug": "mufasa",
+   "title": "Mufasa",
+   "client": "Disney",
+   "listed": true,
+   "homepage": true,
+   "noindex": false,
+   "thumb": "/images/6a1634b1dab18a92bb83620a_mufasa_index_01-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "nigo-i-know-nigo",
+   "title": "Nigo: I Know Nigo",
+   "client": "Spotify",
+   "listed": true,
+   "homepage": false,
+   "noindex": false,
+   "thumb": "/images/660b6f6dfb0a396cb2164fa7_65ea2a192dbd1ded5a16bb5d_1-case-studies-i-know-nigo-general-inside-the-party-nigo-pusha-t-pharrell-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "nobody",
+   "title": "NOBODY",
+   "client": "Universal Pictures",
+   "listed": true,
+   "homepage": true,
+   "noindex": false,
+   "thumb": "/images/66c47c79e185c587f5212093_Nobody-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "nobody-2",
+   "title": "Nobody 2",
+   "client": "Universal Pictures",
+   "listed": true,
+   "homepage": true,
+   "noindex": false,
+   "thumb": "/images/69fb9d9c3b995aa9e2670680_2227977271-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "olivia-rodrigo-guts-world-tour-bus-experience",
+   "title": "Olivia Rodrigo: GUTS World Tour Bus Experience",
+   "client": "Interscope • Geffen Records",
+   "listed": true,
+   "homepage": true,
+   "noindex": false,
+   "thumb": "/images/6752e25c4cc305ab69f886e6_olivia_buscreative-09-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "overnightmare",
+   "title": "OVERNIGHTMARE",
+   "client": "PEACOCK • BLUMHOUSE",
+   "listed": true,
+   "homepage": true,
+   "noindex": false,
+   "thumb": "/images/67531b71d92b7dc6ec8989b9_IMG_3273-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "pabst",
+   "title": "Pabst Roadshow",
+   "client": "Pabst",
+   "listed": true,
+   "homepage": false,
+   "noindex": false,
+   "thumb": "/images/660b6f6c48eaa4dd22756d40_65ea26d2104ca4c1f10bbd3a_dsc_8751-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "prey",
+   "title": "Prey",
+   "client": "20th Century Studios • Disney",
+   "listed": true,
+   "homepage": false,
+   "noindex": false,
+   "thumb": "/images/660b6f6ebc7ef434f68e690e_65ea2bd35b905ab387314b95_case-studies-prey-general-main-image.jpg-2-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "released",
+   "title": "Released!",
+   "client": "Beats By Dre",
+   "listed": true,
+   "homepage": true,
+   "noindex": false,
+   "thumb": "/images/660b6f6db97718d3dddd9558_65ea236fc455d9defabc9554_1-case-studies-released-1.-premise-house-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "rolling-stones-hackney-diamonds",
+   "title": "The Rolling Stones: Hackney Diamonds",
+   "client": "Universal Music Group",
+   "listed": true,
+   "homepage": true,
+   "noindex": false,
+   "thumb": "/images/6751aff5461eb55ecd165105_rolling-stones-tour-announcement-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "silo",
+   "title": "Silo",
+   "client": "Apple TV",
+   "listed": true,
+   "homepage": false,
+   "noindex": false,
+   "thumb": "/images/6a7398d02bdf4edb85760c4d_20240727-Silo_116-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "sincerely-kali-uchis",
+   "title": "Sincerely, Kali Uchis",
+   "client": "Capitol Records",
+   "listed": true,
+   "homepage": true,
+   "noindex": false,
+   "thumb": "/images/6a0cdb786d553ec619a462c6_20250327-KaliUchisVideoLaunch_159-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "space-jam",
+   "title": "SPACE JAM: A NEW LEGACY",
+   "client": "Warner Bros. Pictures",
+   "listed": true,
+   "homepage": true,
+   "noindex": false,
+   "thumb": "/images/667e1bf737459472806c86f1_space-jam-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "strays",
+   "title": "Strays",
+   "client": "Universal Pictures",
+   "listed": true,
+   "homepage": false,
+   "noindex": false,
+   "thumb": "/images/6a74c275e56f2344ab372445_4-230813_233936-Strays_JamesColetta-1565-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "sundance-2022",
+   "title": "Sundance 2022",
+   "client": "Sundance Film Festival",
+   "listed": true,
+   "homepage": false,
+   "noindex": false,
+   "thumb": "/images/66c47d5789ccf0ba8146cd16_Sundance-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "supergirl",
+   "title": "Supergirl",
+   "client": "Warner Bros. Pictures",
+   "listed": true,
+   "homepage": false,
+   "noindex": false,
+   "thumb": "/images/6a7ceec8d271359f0af6422a_DSC_3357-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "the-flaming-lips",
+   "title": "The Flaming Lips",
+   "client": "Warner Bros. Records • Beats By Dre",
+   "listed": true,
+   "homepage": false,
+   "noindex": false,
+   "thumb": "/images/660b6f6ecfe490c443a8db30_65ea2d9d12327bd43d74b211_1-15995244_999478823517275_4846020637321864392_o-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "the-greatest-hits",
+   "title": "The Greatest Hits",
+   "client": "Searchlight Pictures",
+   "listed": true,
+   "homepage": false,
+   "noindex": false,
+   "thumb": "/images/67216126db3f964652a1a135__R1A1293-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "the-guardians-of-the-galaxy-holiday-special",
+   "title": "The Guardians of The Galaxy Holiday Special",
+   "client": "Disney • Marvel Studios",
+   "listed": true,
+   "homepage": false,
+   "noindex": false,
+   "thumb": "/images/660b6f719f800c74265aae74_65ea2ed1f0a4ffa3be15e406_image-1-case-studies-gotg-holiday-special-general-main-gallery-pom-sean-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "the-marvels",
+   "title": "The Marvels",
+   "client": "Disney",
+   "listed": true,
+   "homepage": false,
+   "noindex": false,
+   "thumb": "/images/6a742e9928023a5bb1e51e27_Screen-Shot-2023-11-02-at-6.23.56-PM-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "the-report",
+   "title": "The Report",
+   "client": "Amazon Studios",
+   "listed": true,
+   "homepage": false,
+   "noindex": false,
+   "thumb": "/images/660b6f6d2289a18ea440f5bf_65ea2ae8ef9241b80a0af994_case-studies-the-report-general-main-gallery-killer-truck-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "they-them",
+   "title": "THEY/THEM",
+   "client": "Peacock",
+   "listed": true,
+   "homepage": false,
+   "noindex": false,
+   "thumb": "/images/66c481105e9b89981f5dd8de_theythem-1--t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "thor-love-and-thunder",
+   "title": "THOR: Love and Thunder",
+   "client": "Marvel Studios",
+   "listed": true,
+   "homepage": true,
+   "noindex": false,
+   "thumb": "/images/660b6f6d9f800c74265aacc8_65ea2a54d56dd9eb3918d6cd_case-studies-thor-general-main-gallery-thor-cosplah-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "tiktok-halloween",
+   "title": "TikTok Halloween",
+   "client": "TikTok",
+   "listed": true,
+   "homepage": false,
+   "noindex": false,
+   "thumb": "/images/66c480bb5d24f31670aab553_tiktok-halloween-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "tiktok-sxsw",
+   "title": "TikTok SXSW",
+   "client": "TikTok",
+   "listed": true,
+   "homepage": false,
+   "noindex": false,
+   "thumb": "/images/660b6f6e375dab4be7c4c07b_65ea2c48e693906ad6f1d86a_case-studies-tiktok-sxsw-main-gallery-dancer-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "twisted-metal-nyc",
+   "title": "Twisted Metal S1 NYC",
+   "client": "Peacock",
+   "listed": true,
+   "homepage": false,
+   "noindex": false,
+   "thumb": "/images/674f8854edda700309b0d048_107252023-Twisted-Metal-202152-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "twisted-metal-s1-sdcc",
+   "title": "Twisted Metal S1 SDCC",
+   "client": "Peacock",
+   "listed": true,
+   "homepage": false,
+   "noindex": false,
+   "thumb": "/images/6a6a76a88129e7462007569f_TM2023_0720_160345-10872_RSH-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "twisted-metal-season-2",
+   "title": "Twisted Metal Season 2",
+   "client": "Peacock",
+   "listed": true,
+   "homepage": true,
+   "noindex": false,
+   "thumb": "/images/69dd62465715231748b5e00b_twistedmetal2_index-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "valorant-sound-los-angeles",
+   "title": "Valorant Sound: Los Angeles",
+   "client": "Riot Games",
+   "listed": false,
+   "homepage": false,
+   "noindex": false,
+   "thumb": "",
+   "updatedAt": ""
+  },
+  {
+   "slug": "wakanda-forever",
+   "title": "Black Panther: Wakanda Forever",
+   "client": "Disney • Marvel Studios",
+   "listed": true,
+   "homepage": false,
+   "noindex": false,
+   "thumb": "/images/660b6f6f3d2aa9315e996ca7_65ea2f268877527693e70974_main-banner-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "wandavision",
+   "title": "Wandavision",
+   "client": "Disney, Marvel Studios",
+   "listed": true,
+   "homepage": false,
+   "noindex": false,
+   "thumb": "/images/660b6f6fd445f22b8332c639_65ea2e9024b8a233d1ae352c_3833a8e0-802f-11eb-9ff7-e80de734bed5.cf-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "we-ve-got-company",
+   "title": "We've Got Company",
+   "client": "Amazon Music",
+   "listed": true,
+   "homepage": true,
+   "noindex": false,
+   "thumb": "/images/660b6f6aab7517b3d7d925a3_65ea35672345e04f369e86c3_1-case-studies-_-wgc-_-general-_-main-gallery-_-finale-group-photo-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "werewolf-by-night",
+   "title": "Werewolf by Night",
+   "client": "Disney • Marvel Studios",
+   "listed": true,
+   "homepage": false,
+   "noindex": false,
+   "thumb": "/images/660b6f6f0a4e24b200b22e40_65ea2ce273cf1e1664b346e1_case-studies-_-werewolf-by-night-_-general-_-hero-image-_-director-intro-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "west-side-story",
+   "title": "West Side Story",
+   "client": "Disney",
+   "listed": true,
+   "homepage": false,
+   "noindex": false,
+   "thumb": "/images/6a698dc3f3efcdb0992e6d6c_L1000793-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "willow",
+   "title": "Willow",
+   "client": "Disney • Lucasfilm",
+   "listed": true,
+   "homepage": false,
+   "noindex": false,
+   "thumb": "/images/66c4816760fdfa68c09589bf_willow-s-t800.webp",
+   "updatedAt": ""
+  },
+  {
+   "slug": "young-woman-and-the-sea",
+   "title": "Young Woman and the Sea",
+   "client": "Disney",
+   "listed": true,
+   "homepage": false,
+   "noindex": false,
+   "thumb": "/images/6a1f26ef3eee20ae9d76f5ca_YWTS_index_01-t800.webp",
+   "updatedAt": ""
+  }
+ ],
+ "services": [
+  {
+   "name": "Clio Shortlist Award",
+   "slug": "clio-shortlist-award"
+  },
+  {
+   "name": "Community Management",
+   "slug": "community-management"
+  },
+  {
+   "name": "Content Production",
+   "slug": "content-production"
+  },
+  {
+   "name": "Creative Concept",
+   "slug": "creative-concept"
+  },
+  {
+   "name": "Creative Direction",
+   "slug": "creative-direction"
+  },
+  {
+   "name": "Creators",
+   "slug": "creators"
+  },
+  {
+   "name": "Custom Mailers",
+   "slug": "custom-mailers"
+  },
+  {
+   "name": "Development",
+   "slug": "development"
+  },
+  {
+   "name": "Digital Strategy",
+   "slug": "digital-strategy"
+  },
+  {
+   "name": "Environment Design",
+   "slug": "environment-design"
+  },
+  {
+   "name": "Event Production",
+   "slug": "event-production"
+  },
+  {
+   "name": "Fabrication Production",
+   "slug": "fabrication-production"
+  },
+  {
+   "name": "Influencer Guestlist",
+   "slug": "influencer-guestlist"
+  },
+  {
+   "name": "Marketing",
+   "slug": "marketing"
+  },
+  {
+   "name": "Narrative Development",
+   "slug": "narrative-development"
+  },
+  {
+   "name": "Talent Booking",
+   "slug": "talent-booking"
+  },
+  {
+   "name": "Technical Design",
+   "slug": "technical-design"
+  }
+ ],
+ "categories": [
+  "Events",
+  "Film",
+  "Lifestyle",
+  "Music",
+  "Television"
+ ]
+}

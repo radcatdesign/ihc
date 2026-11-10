@@ -1,0 +1,145 @@
+{
+ "slug": "cruella",
+ "pageId": "6614c743e0829b41e4feecfc",
+ "seoTitle": "Cruella",
+ "description": "To celebrate the world premiere of Cruella, we created a customized graffiti wall made from fan Tweets to provide a unique and on-theme backdrop for Disney’s first post-pandemic red carpet premiere.",
+ "noindex": false,
+ "title": "Cruella",
+ "client": "Disney",
+ "subtitle": "GRAFFITI TWITTER WALL",
+ "heroImage": {
+  "src": "/images/660b6f6b375dab4be7c4bf6d_65ea249fb538132dfb0e3c1e_case-studies-_-cruella-_-1.-general_-hero-image.avif"
+ },
+ "heroVimeo": "",
+ "stats": [],
+ "services": [
+  {
+   "name": "Content Production",
+   "slug": "content-production"
+  },
+  {
+   "name": "Creative Concept",
+   "slug": "creative-concept"
+  },
+  {
+   "name": "Creative Direction",
+   "slug": "creative-direction"
+  },
+  {
+   "name": "Digital Strategy",
+   "slug": "digital-strategy"
+  }
+ ],
+ "headline": "“I’m actually about to cry” - fan whose Tweet made it on the wall",
+ "intro": "WE CREATED A CUSTOMIZED GRAFFITI WALL MADE FROM FAN TWEETS TO PROVIDE A UNIQUE BACKDROP FOR DISNEY’S FIRST POST-PANDEMIC RED CARPET PREMIERE.",
+ "introPieces": [
+  {
+   "type": "introGallery",
+   "media": [
+    {
+     "type": "image",
+     "src": "/images/6a397c161baf14dd5abb5b32_cruella-p-1600.avif",
+     "alt": ""
+    }
+   ],
+   "html": "<p>Using pre-approved tweets from fans across the globe, our artist partner, <strong>Camilla Lonis</strong> (Art Director, Studio One &amp; OBEY Clothing), brought the disruptive excitement to life with Beggars Banquet-style doodles and scrawls on the life-size canvas.</p>\n<p>Camilla utilized paint pens, spray paint, and wheatpasting to achieve a textured result emulating the attitude from the film. Fans went wild seeing their tweets turn into art. Many happily shared screenshots of star Emma Stone posing in front of their tweets on the wall.</p>"
+  }
+ ],
+ "sections": [
+  {
+   "title": "MAKING THE RED CARPET",
+   "pieces": [
+    {
+     "type": "text2",
+     "left": "<p>The art piece was designed over two weeks beginning as a Twitter contest for fans to enter. From there, given COVID protocols, Camilla painted the wall at an exterior location days before the event. Once ready, it was transported to the red carpet where it was finished and attached to the main walkway.</p>",
+     "right": "<p>Once the premiere opened, talent and influencers made their way down the press line using our graffiti wall as a backdrop for interviews and photos. The highlight for all the fans at home was seeing <em>Cruella</em> herself, <strong>Emma Stone</strong>, embracing their messages!</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/6614c7f899492478420d513d_1-case-studies-cruella-1-general-main-gallery-finished-product-1800x-min.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6614c7fa925aa98bbe10d9ff_2-case-studies-cruella-1-general-main-gallery-emma-1800x-min.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6614c7f99bb33b0cb1bc6891_3-img-6877-1800x-min.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6614c7f8a0d94522e9a054e4_img-6852-1800x-min.webp",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "WITH SPECIAL GUESTS",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p>Additionally, we invited a group of our favorite fashion influencers to attend the premiere screening where the wall was unveiled at the El Capitan Theater in Los Angeles. Attending guests included <strong>Viktoria Modesta</strong>, <strong>Yulia Shur</strong>, <strong>Ninocence</strong> and <strong>Graham Sydney</strong> who excitedly posted and shared images from the limited capacity red carpet.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/6614cb572df581e05a1aa6f7_1-case-studies-cruella-1-general-main-gallery-influencer-2-1800x-min.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6614cb589bb33b0cb1bf5d19_2-case-studies-cruella-1-general-main-gallery-influencer-1-1800x-min.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6614cb58d321633a5379ba02_img-4300-1800x-min.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6614cb58bf7ea0b80336ec07_img-8209-1800x-min.webp",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "listing": {
+  "listed": true,
+  "work": {
+   "summary": "To celebrate the world premiere of Cruella, we enlisted graphic artist Camilla Lonis to create a customized graffiti wall to provide a unique and on-theme backdrop for the red carpet premiere -- Disney's first post-pandemic!",
+   "href": "/case-studies-items/cruella",
+   "month": "May",
+   "year": "2021",
+   "bg": {
+    "src": "/images/660b6f6b375dab4be7c4bf6d_65ea249fb538132dfb0e3c1e_case-studies-_-cruella-_-1.-general_-hero-image.avif",
+    "alt": ""
+   }
+  },
+  "home": {
+   "showHomepage": false,
+   "category": "Film",
+   "image": "/images/660b6f6b375dab4be7c4bf6d_65ea249fb538132dfb0e3c1e_case-studies-_-cruella-_-1.-general_-hero-image-t800.webp",
+   "gif": "",
+   "vimeo": "",
+   "ip": "",
+   "award": false,
+   "awardTitle": "",
+   "awardLogo1": "",
+   "awardLogo2": "",
+   "video": ""
+  }
+ }
+}

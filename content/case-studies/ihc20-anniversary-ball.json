@@ -1,0 +1,309 @@
+{
+ "slug": "ihc20-anniversary-ball",
+ "pageId": "6a1760d86a10ed608c2f6475",
+ "seoTitle": "IHC20 Anniversary Ball",
+ "description": "",
+ "noindex": false,
+ "title": "IHC20 Anniversary Ball",
+ "client": "IHEARTCOMIX",
+ "subtitle": "",
+ "heroImage": {
+  "src": "/images/6a17798d46bd08018fbd14ce__R1A8738.JPG",
+  "srcset": "/images/6a17798d46bd08018fbd14ce__R1A8738-p-500.jpg 500w, /images/6a17798d46bd08018fbd14ce__R1A8738-p-800.jpg 800w, /images/6a17798d46bd08018fbd14ce__R1A8738-p-1080.jpg 1080w, /images/6a17798d46bd08018fbd14ce__R1A8738-p-1600.jpg 1600w, /images/6a17798d46bd08018fbd14ce__R1A8738.JPG 1620w",
+  "sizes": "100vw"
+ },
+ "heroVimeo": "",
+ "stats": [
+  {
+   "value": "25M+",
+   "label": "Total Social Impressions"
+  },
+  {
+   "value": "1.3K",
+   "label": "Total Guests"
+  },
+  {
+   "value": "5",
+   "label": "Hours Live"
+  },
+  {
+   "value": "4",
+   "label": "Press Hits"
+  }
+ ],
+ "services": [
+  {
+   "name": "Creative Concept",
+   "slug": "creative-concept"
+  },
+  {
+   "name": "Creative Direction",
+   "slug": "creative-direction"
+  },
+  {
+   "name": "Event Production",
+   "slug": "event-production"
+  },
+  {
+   "name": "Talent Booking",
+   "slug": "talent-booking"
+  },
+  {
+   "name": "Digital Strategy",
+   "slug": "digital-strategy"
+  },
+  {
+   "name": "Influencer Guestlist",
+   "slug": "influencer-guestlist"
+  },
+  {
+   "name": "Community Management",
+   "slug": "community-management"
+  }
+ ],
+ "headline": "“A once-in-a-lifetime unique experience that you will remember for years to come.” - Janky Smooth",
+ "intro": "WE CALLED FRIENDS, FAMILY, PARTNERS, &amp; CLIENTS TOGETHER UNDER ONE ROOF TO CELEBRATE 20 YEARS OF IHEARTCOMIX, FOR AN EVENING CHOCK FULL OF SURPRISES.",
+ "introPieces": [
+  {
+   "type": "introGallery",
+   "media": [
+    {
+     "type": "image",
+     "src": "/images/6a3986e30b04373ac88bc93f_GLEN624-075-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6a398855828312acc181bcf2__R1A8133.JPG",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6a177b9aa25c3204fb3fa6b7_BDG_1151.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6a177bda827b5502993d161e_GLEN624-173-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6a177bda719f7ecaa28470c9_GLEN624-177-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6a177b9ab9f731047594abb0_BDG_1286.avif",
+     "alt": ""
+    }
+   ],
+   "html": "<p>Dressed to the nines “IHC style,” guests gathered while a cascade of talent shared the limelight, all exploring the annals of IHC’s past through interactive installations, photo and art displays, experiential art, and branded photo moments.</p>"
+  }
+ ],
+ "sections": [
+  {
+   "title": "TALENT & SURPRISE GUESTS",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p>Comedian Reggie Watts kicked off the night center stage as the evening’s host. The evening continued with various music, talent and surprise guests including a DJ set by The Dare, Nation of Language, Fcukers' debut Los Angeles performance, DJ Suga Shay, Chela, and surprise guest Boys Noize. The climax of the evening featured a suprise video from Benedict Wong, a special magic show by The Cosmic Romantics and Yo Gabba Gabba appearing to sing Happy Birthday to IHC.</p>\n<p>‍</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/6a1e07a0ee37ab7ef1e28ff6_Copy-of-BDG_1234.avif",
+       "alt": ""
+      },
+      {
+       "type": "video",
+       "embed": "<div class=\"w-video w-embed\" style=\"padding-top:56.27659574468085%\"><iframe allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture\" allowfullscreen=\"true\" class=\"embedly-embed\" frameborder=\"0\" height=\"529\" scrolling=\"no\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F1203589709%3Fapp_id%3D122963&amp;dntp=1&amp;display_name=Vimeo&amp;url=https%3A%2F%2Fvimeo.com%2F1203589709%3Fshare%3Dcopy%26fl%3Dsv%26fe%3Dci&amp;image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F2171672451-75d649c9acc7202f556287755e3ed6c14502fff47b1b614b16d89e70c48b267e-d_960%3Fregion%3Dus&amp;type=text%2Fhtml&amp;schema=vimeo\" title=\"IHC 20TH ANNIVERSARY - BENEDICT WONG\" width=\"940\"></iframe></div>"
+      },
+      {
+       "type": "image",
+       "src": "/images/6a1e07a008f22c043633d2b3_unnamed.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a1e07a17c3ee54831f82f5d_2176628972-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a1e07a00ce9c43ed3a966c2_unnamed-2-.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a1e079f1a9a4408c4fa344a__R1A8072.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a1e079fee37ab7ef1e28f54__R1A8325.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a1ef344fb7bf69414cd80de__R1A8469.avif",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "GUEST LIST & ATMOSPHERE",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p>All were encouraged to dress in “IHC Chic” and showed off their flashy fits while entering the party; inspiration was drawn from our curated moodboard shared within the invite. The interior was inspired by our bold brand colors, drenching the space in colored lights, velvet curtains and bespoke furniture.</p>\n<p>‍</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/6a1ef0ad957eb99a5ee1659a__R1A8339.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a1e079f1518bfb93d88ba5f__R1A8124.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a1ef0ae5173f8c1240ea05a__R1A7657.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a1e079f6fc19dbda1516497_unnamed-6-.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a1ef0aee4971720ef0f8206__R1A9396.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a1e079fc82ce1f327f5fab0_unnamed-5-.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a398f5d010fbda31107d6a6_INVITE-FLYER-5X6_VECTOR-p-2000.jpg",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "PHOTO MOMENTS",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p>A branded Tommy B Photo Booth and a custom IHC20 set gave guests an opportunity to memorialize the night and act as hosts of their very own show. Additionally, we had a lively karaoke room to sing their hearts out. The front lobby boasted multiple photo moments, including a Media Pollution installation showcasing a video montage of IHC’s greatest hits.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/6a1ef85aa45f00f961471bb5_photo_1728029622.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a398fe548b53520daad31c5_unnamed.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a1ef34526332905ff249c4b_Copy-of-BDG_0900.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a1ef682d492b1f293e9e054_nPpMomm3i91w-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a1e079fdd362c3e16a00fee__R1A7677.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a1ef90d05db27a3087d353f_photo.avif",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "DECOR & TOUCHPOINTS",
+   "pieces": [
+    {
+     "type": "text2",
+     "left": "<p>The iconic Heartschallenger truck, decked out in countless Swarovski crystals, made a rare appearance outside the venue, greeting arrivals with a sparkling backdrop and goodies. Guests could discover a full gallery room with art installations showcasing 20 years of IHC history.</p>",
+     "right": "<p>The Virginian restaurant inside the venue provided guests with light bites and pizza while the bar served wine, beer and specialty cocktails including the Fucking Awesome Spicy Margarita and Comix Classic Old Fashioned.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/6a1f1e9acae117a8d05f97f6__R1A7765.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a1e07a07c3ee54831f82f49__R1A7820.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a1e07a05aa361bfb2bd32d7__R1A7756.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a1ef85a44382dc9d8fee319_unnamed-2-.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a1ef859383f7ba313f96c90_unnamed-1-.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a1ef3454e7512c650fe7c01__R1A8617.avif",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "WATCH THE RECAP",
+   "pieces": [
+    {
+     "type": "video",
+     "embed": "<div class=\"p-cs__video__el w-video w-embed\" style=\"padding-top:56.17021276595745%\"><iframe allowfullscreen=\"\" class=\"embedly-embed\" height=\"528\" scrolling=\"no\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FRSBSBykOHDI%3Ffeature%3Doembed&amp;display_name=YouTube&amp;url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DRSBSBykOHDI&amp;image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FRSBSBykOHDI%2Fhqdefault.jpg&amp;type=text%2Fhtml&amp;schema=youtube\" title=\"IHEARTCOMIX's 20th Anniversary Ball with The Dare, Nation of Language, Fcukers and more...\" width=\"940\"></iframe></div>"
+    }
+   ]
+  }
+ ],
+ "listing": {
+  "listed": false
+ }
+}

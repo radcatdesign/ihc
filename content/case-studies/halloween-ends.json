@@ -1,0 +1,253 @@
+{
+ "slug": "halloween-ends",
+ "pageId": "661e108d750dff87ecd89032",
+ "seoTitle": "Halloween Ends",
+ "description": "",
+ "noindex": false,
+ "title": "Halloween Ends",
+ "client": "Universal Pictures • Peacock",
+ "subtitle": "PREMIERE AFTER PARTY",
+ "heroImage": {
+  "src": "/images/660b6f6d2e4378d942130854_65ea2b8d1ce914f342b2ed6e_1-cnl_5498.avif",
+  "srcset": "/images/660b6f6d2e4378d942130854_65ea2b8d1ce914f342b2ed6e_1-cnl_5498-p-500.avif 500w, /images/660b6f6d2e4378d942130854_65ea2b8d1ce914f342b2ed6e_1-cnl_5498-p-800.avif 800w, /images/660b6f6d2e4378d942130854_65ea2b8d1ce914f342b2ed6e_1-cnl_5498.avif 1396w",
+  "sizes": "100vw"
+ },
+ "heroVimeo": "773960964?h=bb7f41b0a0",
+ "stats": [],
+ "services": [
+  {
+   "name": "Event Production",
+   "slug": "event-production"
+  },
+  {
+   "name": "Creative Direction",
+   "slug": "creative-direction"
+  }
+ ],
+ "headline": "“Sushi boat + scary movies + beautiful humans = what dreams are made of” @ellatheoddflower",
+ "intro": "We transformed the beloved Yamashiro restaurant into a horror scene of Michael Myers’ destruction to celebrate the premiere of Halloween Ends.",
+ "introPieces": [
+  {
+   "type": "introGallery",
+   "media": [
+    {
+     "type": "image",
+     "src": "/images/661e11019fde38d37ef9ec70_1-cnl-5498-1800x.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/661e11018052d0dc12007fda_cnl-6380-1800x.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/661e110124524e66c1a2493e_wow6980-1800x.webp",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/661e1102c825a13b3fbeaa64_wow7095-1800x.webp",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/661e1101750dff87ecd9030f_wow7205-1800x.webp",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/661e110198b2d700ee0af871_wow7258-1800x.webp",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/661e11017163c99bb4c2d5ca_wow7368-1800x.webp",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/661e11019d8c67c1855ad93a_cnl-6084-1800x.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/661e11014129d5f3a4621c65_cnl-6351-1800x.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/661e1101775d251b9549da24_cnl-6429-1800x.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/661e1101156a71dee62e33ed_cnl-60844-1800x.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/661e11010bf595cfb7157c47_unnamed-1-1800x.webp",
+     "alt": ""
+    }
+   ],
+   "html": "<p>Universal Studios and Peacock once again tapped IHEARTCOMIX to produce an unforgettable VIP, press and influencer after party event following two simultaneous premiere screenings of Halloween Ends.</p>\n<p>We completely transformed and decked out the restaurant into a spooky hotspot with surprises to discover around every corner. Pumpkins galore, dedicated trick or treat stations, tarot reading room, themed cocktails and food, bumping tunes, unique photo moments and special appearances by Michael Myers made this a night to remember and to share, garnering a 72M+ social reach.</p>"
+  }
+ ],
+ "sections": [
+  {
+   "title": "WATCH THE RECAP",
+   "pieces": [
+    {
+     "type": "video",
+     "embed": "<div class=\"p-cs__video__el w-video w-embed\" style=\"padding-top:56.27659574468085%\"><iframe allowfullscreen=\"\" class=\"embedly-embed\" height=\"529\" scrolling=\"no\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F779704042%3Fh%3D93298f6526%26app_id%3D122963&amp;dntp=1&amp;display_name=Vimeo&amp;url=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F779704042%3Fh%3D93298f6526&amp;image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F1564803495-a97f8cd506c200591bd45e140475c9dd58af112488fdde33bf81944e3b5e8d9d-d_1280&amp;key=96f1f04c5f4143bcb0f2e68c87d65feb&amp;type=text%2Fhtml&amp;schema=vimeo\" title=\"Halloween Ends - Recap\" width=\"940\"></iframe></div>"
+    }
+   ]
+  },
+  {
+   "title": "Immersive Decor",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p>Giant Jack O’Laterns, glowing pumpkins, strategic uplighting and gory body parts set the scene and immediately transported guests upon arrival. Staff wore Halloween costumes, and we even transformed the large Japanese garden in the center of the venue into a scene of Michael Myers’ destruction! In-world touches with the DJ booth staged as a radio station and Laurie’s diary on display made direct call backs to the film. Even the sushi platter got in on the action, spelling out ENDS.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/661e122069f1521b1614bd0e_body-1800x.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/661e1220be6ebf99dda09fba_cnl-5380-1800x.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/661e122169f1521b1614bd32_cnl-5419-recropped-1800x.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/661e12205b7c7b2c3df8ddc1_cnl-5426-1800x.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/661e122097b5c65859a1d71a_cnl-5515-1800x.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/661e12212f30839913dfbac7_cnl-5611-1800x.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/661e1221ca3c1b66b90a5139_cnl-5683-recropped-1800x.webp",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/661e122097b5c65859a1d6dd_cnl-5988-1800x.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/661e1221156a71dee62f5977_cnl-6084-1800x.avif",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Photo Moments",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p>A lifesize ENDS logo surrounded by Jack O’ Lanterns served as our hero branding moment and must-have photo backdrop for the night. In the custom 360 video booth, guests had the opportunity to stand back to back with Michael Myers, in a re-creation of the film’s poster. The final video output included blood splatter across the screen and a title treatment closer. Y2K nightlife photographer The Cobrasnake was also onsite capturing all the best party moments.</p>\n<p>“Photobooth 10/10 experience” - @eatherbrains</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/6752b2580b00c84cb6b3d66a__WOW6747.avif",
+       "alt": ""
+      },
+      {
+       "type": "video",
+       "embed": "<div class=\"w-video w-embed\" style=\"padding-top:177.76595744680853%\"><iframe allowfullscreen=\"\" class=\"embedly-embed\" height=\"1671\" scrolling=\"no\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F774447369%3Fh%3De0eeaea230%26app_id%3D122963&amp;dntp=1&amp;display_name=Vimeo&amp;url=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F774447369%3Fh%3De0eeaea230&amp;image=http%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F1553839850-b5608b8595827f8850c0f53d4a065410647987123d3c1f4db5d35a27a5d3eb06-d_960&amp;key=c4e54deccf4d4ec997a64902e9a30300&amp;type=text%2Fhtml&amp;schema=vimeo\" title=\"Halloween Ends - Photo Moments 1\" width=\"940\"></iframe></div>"
+      },
+      {
+       "type": "image",
+       "src": "/images/6752b2579e24322ef8f882c3__WOW6716.avif",
+       "alt": ""
+      },
+      {
+       "type": "video",
+       "embed": "<div class=\"w-video w-embed\" style=\"padding-top:177.76595744680853%\"><iframe allowfullscreen=\"\" class=\"embedly-embed\" height=\"1671\" scrolling=\"no\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F774447902%3Fh%3De9b0d671ef%26app_id%3D122963&amp;dntp=1&amp;display_name=Vimeo&amp;url=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F774447902%3Fh%3De9b0d671ef&amp;image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F1553841351-49893e40f6b1e3fa5dde0ffc50777c2e2b938a61cf64e861eb90aa632a239de4-d_960&amp;key=96f1f04c5f4143bcb0f2e68c87d65feb&amp;type=text%2Fhtml&amp;schema=vimeo\" title=\"Halloween Ends - Photo Moments 2\" width=\"940\"></iframe></div>"
+      },
+      {
+       "type": "image",
+       "src": "/images/6752b3a7bff04d80758f4ed3_CNL_5969.avif",
+       "alt": ""
+      },
+      {
+       "type": "video",
+       "embed": "<div class=\"w-video w-embed\" style=\"padding-top:177.76595744680853%\"><iframe allowfullscreen=\"\" class=\"embedly-embed\" height=\"1671\" scrolling=\"no\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F774448128%3Fh%3De51fc10447%26app_id%3D122963&amp;dntp=1&amp;display_name=Vimeo&amp;url=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F774448128%3Fh%3De51fc10447&amp;image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F1553841588-4f896d6d4c43c35f2d3bb11458bedf3546ff1860240d9d8a3469cc957274a259-d_960&amp;key=96f1f04c5f4143bcb0f2e68c87d65feb&amp;type=text%2Fhtml&amp;schema=vimeo\" title=\"Halloween Ends - Photo Moments 3\" width=\"940\"></iframe></div>"
+      },
+      {
+       "type": "video",
+       "embed": "<div class=\"w-video w-embed\" style=\"padding-top:177.76595744680853%\"><iframe allowfullscreen=\"\" class=\"embedly-embed\" height=\"1671\" scrolling=\"no\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F774448585%3Fh%3Db2cedbdf03%26app_id%3D122963&amp;dntp=1&amp;display_name=Vimeo&amp;url=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F774448585%3Fh%3Db2cedbdf03&amp;image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F1553842444-84351323f21057f611a888893a264bab29c7daf2b80f76eabda7b4dfde697092-d_960&amp;key=96f1f04c5f4143bcb0f2e68c87d65feb&amp;type=text%2Fhtml&amp;schema=vimeo\" title=\"Halloween Ends - Photo Moments 4\" width=\"940\"></iframe></div>"
+      },
+      {
+       "type": "video",
+       "embed": "<div class=\"w-video w-embed\" style=\"padding-top:177.76595744680853%\"><iframe allowfullscreen=\"\" class=\"embedly-embed\" height=\"1671\" scrolling=\"no\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F774449339%3Fh%3D88892a27d9%26app_id%3D122963&amp;dntp=1&amp;display_name=Vimeo&amp;url=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F774449339%3Fh%3D88892a27d9&amp;image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F1553843822-02cc5ddf1ade5491b629aa5444c83ee55c16ed55befd95375d7489ea6e90537c-d_960&amp;key=96f1f04c5f4143bcb0f2e68c87d65feb&amp;type=text%2Fhtml&amp;schema=vimeo\" title=\"Halloween Ends - Photo Moments 5\" width=\"940\"></iframe></div>"
+      },
+      {
+       "type": "video",
+       "embed": "<div class=\"w-video w-embed\" style=\"padding-top:177.76595744680853%\"><iframe allowfullscreen=\"\" class=\"embedly-embed\" height=\"1671\" scrolling=\"no\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F774449506%3Fh%3Dba21bdeb54%26app_id%3D122963&amp;dntp=1&amp;display_name=Vimeo&amp;url=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F774449506%3Fh%3Dba21bdeb54&amp;image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F1553844120-871902e5df33507e5a5e05d43bc527b19f9ed956b0d87c929475716cd2ed7d34-d_960&amp;key=c4e54deccf4d4ec997a64902e9a30300&amp;type=text%2Fhtml&amp;schema=vimeo\" title=\"Halloween Ends - Photo Moments 6\" width=\"940\"></iframe></div>"
+      },
+      {
+       "type": "video",
+       "embed": "<div class=\"w-video w-embed\" style=\"padding-top:177.76595744680853%\"><iframe allowfullscreen=\"\" class=\"embedly-embed\" height=\"1671\" scrolling=\"no\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F774449734%3Fh%3Da3b798fee1%26app_id%3D122963&amp;dntp=1&amp;display_name=Vimeo&amp;url=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F774449734%3Fh%3Da3b798fee1&amp;image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F1553844505-bdd8849c49ad5d27326906de03286ce2aa361789639df97ba1298ad140b95700-d_960&amp;key=96f1f04c5f4143bcb0f2e68c87d65feb&amp;type=text%2Fhtml&amp;schema=vimeo\" title=\"Halloween Ends - Photo Moments 7\" width=\"940\"></iframe></div>"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "listing": {
+  "listed": true,
+  "work": {
+   "summary": "We transformed the beloved Yamashiro restaurant into a horror scene of Michael Myers' destruction to celebrate the premiere of Halloween Ends.",
+   "href": "/case-studies-items/halloween-ends",
+   "month": "Oct",
+   "year": "2022",
+   "bg": {
+    "src": "/images/660b6f6d2e4378d942130854_65ea2b8d1ce914f342b2ed6e_1-cnl_5498.avif",
+    "srcset": "/images/660b6f6d2e4378d942130854_65ea2b8d1ce914f342b2ed6e_1-cnl_5498-p-500.avif 500w, /images/660b6f6d2e4378d942130854_65ea2b8d1ce914f342b2ed6e_1-cnl_5498-p-800.avif 800w, /images/660b6f6d2e4378d942130854_65ea2b8d1ce914f342b2ed6e_1-cnl_5498.avif 1396w",
+    "sizes": "100vw",
+    "data-bg": "/images/660b6f6d2e4378d942130854_65ea2b8d1ce914f342b2ed6e_1-cnl_5498.avif",
+    "alt": ""
+   }
+  },
+  "home": {
+   "showHomepage": true,
+   "category": "Events",
+   "image": "/images/660b6f6d2e4378d942130854_65ea2b8d1ce914f342b2ed6e_1-cnl_5498-t800.webp",
+   "gif": "/images/673ce42aa6a2e22fd03f32ed_Halloween-Ends-min.webp",
+   "vimeo": "773960964?h=bb7f41b0a0",
+   "ip": "",
+   "award": false,
+   "awardTitle": "",
+   "awardLogo1": "",
+   "awardLogo2": "",
+   "video": ""
+  }
+ }
+}

@@ -1,0 +1,264 @@
+{
+ "slug": "supergirl",
+ "pageId": "6a7ce3104dfd303aaf26a388",
+ "seoTitle": "Supergirl",
+ "description": "",
+ "noindex": false,
+ "title": "Supergirl",
+ "client": "Warner Bros. Pictures",
+ "subtitle": "",
+ "heroImage": {
+  "src": "/images/6a7ceec8d271359f0af6422a_DSC_3357-p-2000.jpg",
+  "srcset": "/images/6a7ceec8d271359f0af6422a_DSC_3357-p-500.jpg 500w, /images/6a7ceec8d271359f0af6422a_DSC_3357-p-800.jpg 800w, /images/6a7ceec8d271359f0af6422a_DSC_3357-p-1080.jpg 1080w, /images/6a7ceec8d271359f0af6422a_DSC_3357-p-1600.jpg 1600w, /images/6a7ceec8d271359f0af6422a_DSC_3357-p-2000.jpg 2000w",
+  "sizes": "100vw"
+ },
+ "heroVimeo": "",
+ "stats": [],
+ "services": [
+  {
+   "name": "Creative Concept",
+   "slug": "creative-concept"
+  },
+  {
+   "name": "Influencer Guestlist",
+   "slug": "influencer-guestlist"
+  },
+  {
+   "name": "Event Production",
+   "slug": "event-production"
+  },
+  {
+   "name": "Talent Booking",
+   "slug": "talent-booking"
+  }
+ ],
+ "headline": "",
+ "intro": "IHC WAS TAPPED BY WARNER BROS TO PRODUCE AN NYC TRAILER LAUNCH PARTY FIT FOR THE WOMAN OF TOMORROW.",
+ "introPieces": [
+  {
+   "type": "introGallery",
+   "media": [
+    {
+     "type": "image",
+     "src": "/images/6a7d0f7fdf0284035277d0a2_DSC_3400-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6a7d0f7fac5136a2330860f0_DSC_3167-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6a7d0f7ff1286016db81ceba_DSC_3265-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6a7d0f7f9c169d3eafd34f12_DSC_3466-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6a7d0f7e8c56b435a2036df4_DSC_3472-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6a7d0f7d219803197d383445_DSC_3173-p-2000.avif",
+     "alt": ""
+    }
+   ],
+   "html": "<p><strong>Supergirl </strong>arrived with a message of her own, creating a media moment around her introduction and taking over the Artspace at The Public Hotel in NYC to debut the trailer. Surrounded by a themed atmosphere and programming, we showcased the out-of-this-world intergalactic adventure that is <em>Supergirl.</em></p>\n<p>Hosted by <strong>James Gunn</strong>, <strong>Milly Alcock</strong>, and <strong>Craig Gilespie</strong>, the night offered an exclusive first look at the latest release from DC Studios, but done in a way to set the stage for her era.</p>"
+  }
+ ],
+ "sections": [
+  {
+   "title": "atmosphere & Decor",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p>Guests entered through branded glowing red rubber curtains, flowing into a neon stairwell highlighted by Supergirl's emblem on reflective mirrored walls. The space was styled with throw pillows, acrylic emblem centerpieces, and a blue Krypto dog bowl, offering a charming nod to the beloved sidekick. A title treatment photo wall featured a cosmic-blue backdrop with splatter texture, a 3D logo, and striking blue-and-red pulsing LED tube lights.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/6a7d0c12efdbc2259e06bf03_IMG_0757-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a7d0c1163822483396195e8_IMG_0754-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a7d0be9668ad93742ea5ac6_DSC_3530-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a7d0bea57c295fd87d9c8fe_DSC_3219.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a7d0bebc4f6144706189277_DSC_3138.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a7d0beb6382248339618ede_DSC_3139-p-2000.avif",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "trailer launch",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p><strong>James Gunn</strong> introduced <strong>Craig Gillespie</strong> before the teaser trailer played twice, giving guests a second chance to catch every detail. They welcomed Supergirl, <strong>Milly Alcock,</strong> to the stage for a brief Q&amp;A before transitioning to a casual party.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/6a7d07632f98e6d4855d922e_DSC_3245-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a7d0764284b8479cf4c857d_DSC_3247-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a7d07649166aa6bc4dd47bb_DSC_3280-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a7d076494a5d3a002671520_DSC_3243-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a7d07642daec1b39bf137e5_DSC_3333-p-2000.avif",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "trailer reaction booth",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p>After the trailer premiere, guests stepped into a branded booth to rewatch it, record their reactions, and share the videos with their audiences after the event.</p>"
+    },
+    {
+     "type": "fullGallery",
+     "media": [
+      {
+       "type": "video",
+       "embed": "<div class=\"w-video w-embed\" style=\"padding-top:56.27659574468085%\"><iframe allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture\" allowfullscreen=\"true\" class=\"embedly-embed\" frameborder=\"0\" height=\"529\" scrolling=\"no\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F1217792342%3Fapp_id%3D122963&amp;dntp=1&amp;display_name=Vimeo&amp;url=https%3A%2F%2Fvimeo.com%2F1217792342%3Fshare%3Dcopy%26fl%3Dsv%26fe%3Dci&amp;image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F2189566700-4e39f3ab94e0c894b49920330648e49a2793961428ea746bd9b5e255e91d1d20-d_1280%3Fregion%3Dus&amp;type=text%2Fhtml&amp;schema=vimeo\" title=\"Supergirl: Trailer Reaction Booth [1/2]\" width=\"940\"></iframe></div>"
+      },
+      {
+       "type": "video",
+       "embed": "<div class=\"w-video w-embed\" style=\"padding-top:56.27659574468085%\"><iframe allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture\" allowfullscreen=\"true\" class=\"embedly-embed\" frameborder=\"0\" height=\"529\" scrolling=\"no\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F1217792487%3Fapp_id%3D122963&amp;dntp=1&amp;display_name=Vimeo&amp;url=https%3A%2F%2Fvimeo.com%2F1217792487%3Fshare%3Dcopy%26fl%3Dsv%26fe%3Dci&amp;image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F2189566869-496533cf5999bee3be4bb8b9818e07702e8adb6c1d0c0ba4faac284a0380a685-d_1280%3Fregion%3Dus&amp;type=text%2Fhtml&amp;schema=vimeo\" title=\"Supergirl: Trailer Reaction Booth [2/2]\" width=\"940\"></iframe></div>"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "party vibes",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p>To directly tie back to the trailer, which featured Blondie’s “Call Me,” <strong>Tammy Faye Starlite</strong> took the stage immediately afterward with a Blondie cover band, delivering a 30-minute set of greatest hits. Between stage moments, a curated playlist inspired by Supergirl kept the energy high while guests danced and nightlife photographer <strong>Matt Weinberger</strong> captured the evening.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/6a7d0cf5df02840352774eb9_DSC_3468-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a7d0cf5df02840352774e85_DSC_3390-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a7d0cf5d53dc85465f664df_DSC_3393-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a7d0cf68b4e332fa8a2718d_DSC_3551-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a7d0cf62aa7968e7d6017df_DSC_3231-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a7d0cf62a34338c1a229c25_DSC_3194-p-2000.avif",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "WATCH THE RECAP",
+   "pieces": [
+    {
+     "type": "video",
+     "embed": "<div class=\"p-cs__video__el w-video w-embed\" style=\"padding-top:177.76595744680853%\"><iframe allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture\" allowfullscreen=\"true\" class=\"embedly-embed\" frameborder=\"0\" height=\"1671\" scrolling=\"no\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F1217791160%3Fapp_id%3D122963&amp;dntp=1&amp;display_name=Vimeo&amp;url=https%3A%2F%2Fvimeo.com%2F1217791160%3Fshare%3Dcopy%26fl%3Dsv%26fe%3Dci&amp;image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F2189565749-8958bbb17a7f8083a36f95799ff2b1c157a3dbc5255475f1d9d44ee03c1547a9-d_960%3Fregion%3Dus&amp;type=text%2Fhtml&amp;schema=vimeo\" title=\"Warner Bros: Supergirl Trailer Launch\" width=\"940\"></iframe></div>"
+    }
+   ]
+  }
+ ],
+ "listing": {
+  "listed": true,
+  "work": {
+   "summary": "In celebration of Supergirl, IHC produced a trailer premiere launch party in NYC at the Public Hotel. We showcased the out-of-this-world intergalactic adventure in a space fit for the woman of tomorrow.",
+   "href": "/case-studies-items/supergirl",
+   "month": "Dec",
+   "year": "2025",
+   "bg": {
+    "src": "/images/6a7ceec8d271359f0af6422a_DSC_3357-p-2000.jpg",
+    "srcset": "/images/6a7ceec8d271359f0af6422a_DSC_3357-p-500.jpg 500w, /images/6a7ceec8d271359f0af6422a_DSC_3357-p-800.jpg 800w, /images/6a7ceec8d271359f0af6422a_DSC_3357-p-1080.jpg 1080w, /images/6a7ceec8d271359f0af6422a_DSC_3357-p-1600.jpg 1600w, /images/6a7ceec8d271359f0af6422a_DSC_3357-p-2000.jpg 2000w",
+    "sizes": "100vw",
+    "data-bg": "/images/6a7ceec8d271359f0af6422a_DSC_3357-p-1600.jpg",
+    "alt": ""
+   }
+  },
+  "home": {
+   "showHomepage": false,
+   "category": "",
+   "image": "/images/6a7ceec8d271359f0af6422a_DSC_3357-t800.webp",
+   "gif": "",
+   "vimeo": "",
+   "ip": "",
+   "award": false,
+   "awardTitle": "",
+   "awardLogo1": "",
+   "awardLogo2": "",
+   "video": ""
+  }
+ }
+}

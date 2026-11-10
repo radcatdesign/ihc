@@ -1,0 +1,228 @@
+{
+ "slug": "twisted-metal-season-2",
+ "pageId": "69dd6113bd65486bc94b6767",
+ "seoTitle": "Twisted Metal Season 2",
+ "description": "",
+ "noindex": false,
+ "title": "Twisted Metal Season 2",
+ "client": "Peacock",
+ "subtitle": "",
+ "heroImage": {
+  "src": "/images/69dd62465715231748b5e00b_twistedmetal2_index-p-2000.webp",
+  "srcset": "/images/69dd62465715231748b5e00b_twistedmetal2_index-p-500.webp 500w, /images/69dd62465715231748b5e00b_twistedmetal2_index-p-800.webp 800w, /images/69dd62465715231748b5e00b_twistedmetal2_index-p-1080.webp 1080w, /images/69dd62465715231748b5e00b_twistedmetal2_index-p-1600.webp 1600w, /images/69dd62465715231748b5e00b_twistedmetal2_index-p-2000.webp 2000w",
+  "sizes": "100vw"
+ },
+ "heroVimeo": "",
+ "stats": [
+  {
+   "value": "256M+",
+   "label": "Estimated Impressions"
+  },
+  {
+   "value": "13.6K",
+   "label": "Attendees"
+  },
+  {
+   "value": "3.9K+",
+   "label": "Bumper Car RIdes"
+  },
+  {
+   "value": "3",
+   "label": "Days Live"
+  }
+ ],
+ "services": [
+  {
+   "name": "Creative Concept",
+   "slug": "creative-concept"
+  },
+  {
+   "name": "Creative Direction",
+   "slug": "creative-direction"
+  },
+  {
+   "name": "Environment Design",
+   "slug": "environment-design"
+  },
+  {
+   "name": "Development",
+   "slug": "development"
+  },
+  {
+   "name": "Content Production",
+   "slug": "content-production"
+  }
+ ],
+ "headline": "“A STANDOUT ACTIVATION. SO FUN AND A LITTLE SCARY. DEFINITELY FULL IMMERSION!” - EVENT MARKETER",
+ "intro": "TWISTED METAL CRASHED INTO COMIC-CON WITH A FULL-THROTTLE BUMPER BATTLE!",
+ "introPieces": [
+  {
+   "type": "introGallery",
+   "media": [
+    {
+     "type": "image",
+     "src": "/images/6a04bc5114289494da48b223_20250724_TMSDCC_Hadji_0064-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6a04bc51c22c3d3970c8f1ce_20250724_TMSDCC_Day_1_Hadji_0145-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6a04bc51f28e6261bcac74cb_20250724_TMSDCC_Hadji_0046-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/69dd64902b65820212d0d9ce_twistedmetal2_main_02-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/69dd645af46f7347df3ead6a_twistedmetal2_main_06-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/69dd6cc63fc8ed78fbf8311b_20250725_TMSDCC_Day_2_Hadji_0033_1-p-2000.avif",
+     "alt": ""
+    }
+   ],
+   "html": "<p>The Twisted Metal Bumper Battle hurled fans straight into the over-the-top world of Peacock’s hit series. With the franchise’s most iconic vehicles reimagined as custom bumper cars, guests trained for Season 2’s tournament inside a gritty, post-apocalyptic playground. They strapped in and collided in no-holds-barred mayhem while roaming characters heckled and hyped them along the way. </p>\n<p>Beyond the bumper arena, life-size prop cars, cinematic photo opps, free ice cream, and impromptu karaoke, entertained fans at every turn. Appearances from the cast including Anthony Mackie and Stephanie Beatriz transformed our lot into a hotspot drawing crowds, influencers, and media crews that made Twisted Metal one of the most talked about Comic-Con experiences.</p>\n<p>‍</p>"
+  }
+ ],
+ "sections": [
+  {
+   "title": "CONTENT CUES",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p><strong> </strong>In a city overflowing with fandoms, Twisted Metal didn’t just show up, it crashed the party. From the moment fans stepped into the line, the chaos had a pulse. We turned the queue into part of the experience: characters roamed the crowd, fans belted karaoke duets with Sweet Tooth, and interactive in-world sets featuring real props from the show pulled guests directly into the universe. Photo booths, surprise giveaways, and free ice cream kept the energy high while delivering shareable moments at every turn.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/69dd6aa3124cb58860367729_contentcue_01-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a04be9db1f711fbf1784be8_20250724_TMSDCC_Day_1_Hadji_0173-p-2000.jpeg",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69dd6cc688e573f4dd331d9d_1753387148_36_1-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a04bc28e34902b14261ae31_20250724_TMSDCC_Day_1_Hadji_0147-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a04be8ead48f4c589bfb9eb_20250725_TMSDCC_Day_2_Hadji_0080-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a04bfcbb7bf6ae822be4cfa_20250725_TMSDCC_Day_2_Hadji_0103-p-2000.jpeg",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "THE BUMPER CARS",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p>Inside the arena, Twisted Metal exploded to life. Led by in-world MC Calypso and fueled by a live DJ, fans stepped into custom-built bumper cars inspired by the show’s most iconic vehicles. Cryo cannons blasted icy fog as engines revved and metal clashed, transforming a classic carnival ride into a high-stakes demolition derby straight out of Season 2. Every detail, from the arena buildout to the character-driven commentary, was designed to turn passive fans into participants and spectators into storytellers.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/69dd6efb4a4337820acf99e7_bumpercars_02-p-2000.jpg",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69dd6efbe2a7820e6dbde0a4_bumpercars_07-p-2000.jpg",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69dd6efb0fdcede38d80e02f_bumpercars_06-p-2000.jpg",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69dd71507ed610b228b5c8c6_20250725_TMSDCC_Day_2_Hadji_0144-p-2000.jpeg",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69dd6efc8e5d85b1471136a0_bumpercars_05-p-2000.jpg",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69dd6efa26e2d8d40059f545_bumpercars_03-p-2000.jpg",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "VIP MOMENTS",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p>When the Twisted Metal cast arrived, the chaos went into overdrive. Anthony Mackie and Stephanie Beatriz didn’t just show up, they activated the moment. The lot transformed into a content studio and media hub, with interviews for major press outlets, walkthroughs with creators, and surprise interactions that flooded social feeds in real time. And in true Twisted Metal fashion, the stars suited up and got behind the wheel themselves, delivering a show-stopping moment fans and media couldn’t stop talking about.</p>"
+    },
+    {
+     "type": "video",
+     "embed": "<div class=\"p-cs__video__el w-video w-embed\" style=\"padding-top:56.17021276595745%\"><iframe allowfullscreen=\"\" class=\"embedly-embed\" height=\"528\" scrolling=\"no\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FpMfUZhothzo%3Ffeature%3Doembed&amp;display_name=YouTube&amp;url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DpMfUZhothzo&amp;image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FpMfUZhothzo%2Fhqdefault.jpg&amp;type=text%2Fhtml&amp;schema=youtube\" title=\"PEACOCK: TWISTED METAL\" width=\"940\"></iframe></div>"
+    }
+   ]
+  }
+ ],
+ "listing": {
+  "listed": true,
+  "work": {
+   "summary": "To launch Twisted Metal Season 2 into high gear, we crashed Comic-Con with an all-out bumper car battle and immersive wasteland experience that drew fans, press, and cast alike.",
+   "href": "/case-studies-items/twisted-metal-season-2",
+   "month": "",
+   "year": "",
+   "bg": {
+    "src": "/images/69dd62465715231748b5e00b_twistedmetal2_index-p-2000.webp",
+    "srcset": "/images/69dd62465715231748b5e00b_twistedmetal2_index-p-500.webp 500w, /images/69dd62465715231748b5e00b_twistedmetal2_index-p-800.webp 800w, /images/69dd62465715231748b5e00b_twistedmetal2_index-p-1080.webp 1080w, /images/69dd62465715231748b5e00b_twistedmetal2_index-p-1600.webp 1600w, /images/69dd62465715231748b5e00b_twistedmetal2_index-p-2000.webp 2000w",
+    "sizes": "100vw",
+    "data-bg": "/images/69dd62465715231748b5e00b_twistedmetal2_index-p-1600.webp",
+    "alt": ""
+   }
+  },
+  "home": {
+   "showHomepage": true,
+   "category": "Television",
+   "image": "/images/69dd62465715231748b5e00b_twistedmetal2_index-t800.webp",
+   "gif": "",
+   "vimeo": "",
+   "ip": "",
+   "award": false,
+   "awardTitle": "",
+   "awardLogo1": "",
+   "awardLogo2": "",
+   "video": ""
+  }
+ }
+}

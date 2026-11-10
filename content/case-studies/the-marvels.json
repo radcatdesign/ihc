@@ -1,0 +1,214 @@
+{
+ "slug": "the-marvels",
+ "pageId": "6a742d45d39678ec28091c67",
+ "seoTitle": "The Marvels",
+ "description": "",
+ "noindex": false,
+ "title": "The Marvels",
+ "client": "Disney",
+ "subtitle": "The Marvels Cat Cafe Livestream",
+ "heroImage": {
+  "src": "/images/6a742e9928023a5bb1e51e27_Screen-Shot-2023-11-02-at-6.23.56-PM.png",
+  "srcset": "/images/6a742e9928023a5bb1e51e27_Screen-Shot-2023-11-02-at-6.23.56-PM-p-500.png 500w, /images/6a742e9928023a5bb1e51e27_Screen-Shot-2023-11-02-at-6.23.56-PM-p-800.png 800w, /images/6a742e9928023a5bb1e51e27_Screen-Shot-2023-11-02-at-6.23.56-PM.png 804w",
+  "sizes": "100vw"
+ },
+ "heroVimeo": "",
+ "stats": [],
+ "services": [
+  {
+   "name": "Creative Concept",
+   "slug": "creative-concept"
+  },
+  {
+   "name": "Creative Direction",
+   "slug": "creative-direction"
+  },
+  {
+   "name": "Environment Design",
+   "slug": "environment-design"
+  },
+  {
+   "name": "Technical Design",
+   "slug": "technical-design"
+  },
+  {
+   "name": "Event Production",
+   "slug": "event-production"
+  },
+  {
+   "name": "Content Production",
+   "slug": "content-production"
+  },
+  {
+   "name": "Digital Strategy",
+   "slug": "digital-strategy"
+  },
+  {
+   "name": "Marketing",
+   "slug": "marketing"
+  }
+ ],
+ "headline": "“THIS IS THE BEST LIVESTREAM MARVEL HAS EVER DONE!” - John Werner",
+ "intro": "DISNEY TAPPED IHC TO PRODUCE AN INTERACTIVE LIVESTREAM AT A LOS ANGELES CAT CAFE FOR <em>THE MARVELS </em>.",
+ "introPieces": [
+  {
+   "type": "introGallery",
+   "media": [
+    {
+     "type": "image",
+     "src": "/images/6a7430ab10ccae5bf612cee6_DSC_9568-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6a7430ad3cfff99009b8fc7e_DSC_9546-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6a7430adc6a80142bb6769ca_DSC_9806-p-2000.jpg",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6a7430ad584b9c46e5408392_DSC_0002-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6a7430ad3b00e5a91f7400f5_Screenshot-2023-11-02-at-1.24.09-PM-p-2000.png",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6a7430ac1674b95bdfe58140_DSC_0220-p-2000.avif",
+     "alt": ""
+    }
+   ],
+   "html": "<p>Partnering with the CatCafe in Los Angeles, IHC produced an all-day livestream highlighting cats for Marvel's upcoming film<em> The Marvels.</em> IHC developed the stream narrative and crafted a detailed run of the show, including segments and custom on-screen graphics.The cafe was transformed to  resemble a S.A.B.E.R. space station with custom built elements for the cats to navigate through. </p>\n<p>Fans of the film were able to tune in over the span of eight hours and virtually interact with the cats, building excitement for the film’s release  while also supporting the cafe’s main goal to bring awareness to these fluffs up for adoption.</p>"
+  }
+ ],
+ "sections": [
+  {
+   "title": "unboxing",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p>Disney Consumer Products provided a variety of <em>Marvels</em> themed toys and merchandise, including Funko Pops, Legos, Flerkittens, and a Loungefly backpack, for display during the livestream. This was framed through unboxing segments in which cats were brought onto a table to interact and play with the items.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/6a7431a5c15cbea785c0ae71_DSC_9782-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a7431a52534f8c0b4b235b6_DSC_0311-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a7431a4584b9c46e5412d10_DSC_0099-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a7431a4f0f1ba26b2cd82a8_DSC_0270-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a7431a3c15cbea785c0ad1e_Screen-Shot-2023-11-02-at-6.18.39-PM.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a7431a510ccae5bf61337ba_Screenshot-2023-11-02-at-5.30.41-PM-p-2000.avif",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "special segments",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p>The livestream included segments such as “Meet the Team,” “Superhero Training,” “ASMR,” “Light Powers Battle,” and trivia. Each allowed for audience interactions to learn more about the cats on screen and immerse them in the film's world.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/6a7432daa66dd7f5c7e8f6c2_Screenshot-2023-11-02-at-8.00.02-PM-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a74329db6815eb1f04293b3_DSC_0212-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a74329df0f1ba26b2ce09ba_DSC_0186-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a74329d2cc4c790cc8d28a3_Screenshot-2023-11-02-at-2.05.28-PM-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a74329cda2a57168a739972_Screenshot-2023-11-02-at-3.17.49-PM-p-2000.avif",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "WATCH THE RECAP",
+   "pieces": [
+    {
+     "type": "video",
+     "embed": "<div class=\"p-cs__video__el w-video w-embed\" style=\"padding-top:56.27659574468085%\"><iframe allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture\" allowfullscreen=\"true\" class=\"embedly-embed\" frameborder=\"0\" height=\"529\" scrolling=\"no\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F1216027519%3Fapp_id%3D122963&amp;dntp=1&amp;display_name=Vimeo&amp;url=https%3A%2F%2Fvimeo.com%2F1216027519%3Fshare%3Dcopy%26fl%3Dsv%26fe%3Dci&amp;image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F2187351492-d41c2055a0e9899c06be9283f74b1f7e7093ec5ef0be4f9615af68b6bba2343d-d_1280%3Fregion%3Dus&amp;type=text%2Fhtml&amp;schema=vimeo\" title=\"The Marvels CatCafe Livestream Recap\" width=\"940\"></iframe></div>"
+    }
+   ]
+  }
+ ],
+ "listing": {
+  "listed": true,
+  "work": {
+   "summary": "In preparation for The Marvels, we produced a livestream from the CatCafe in Los Angeles filled with different themed segments throughout the day.",
+   "href": "/case-studies-items/the-marvels",
+   "month": "Nov",
+   "year": "2023",
+   "bg": {
+    "src": "/images/6a742e9928023a5bb1e51e27_Screen-Shot-2023-11-02-at-6.23.56-PM.png",
+    "srcset": "/images/6a742e9928023a5bb1e51e27_Screen-Shot-2023-11-02-at-6.23.56-PM-p-500.png 500w, /images/6a742e9928023a5bb1e51e27_Screen-Shot-2023-11-02-at-6.23.56-PM-p-800.png 800w, /images/6a742e9928023a5bb1e51e27_Screen-Shot-2023-11-02-at-6.23.56-PM.png 804w",
+    "sizes": "100vw",
+    "data-bg": "/images/6a742e9928023a5bb1e51e27_Screen-Shot-2023-11-02-at-6.23.56-PM.png",
+    "alt": ""
+   }
+  },
+  "home": {
+   "showHomepage": false,
+   "category": "Film",
+   "image": "/images/6a742e9928023a5bb1e51e27_Screen-Shot-2023-11-02-at-6.23.56-PM-t800.webp",
+   "gif": "",
+   "vimeo": "",
+   "ip": "",
+   "award": false,
+   "awardTitle": "",
+   "awardLogo1": "",
+   "awardLogo2": "",
+   "video": ""
+  }
+ }
+}

@@ -1,0 +1,231 @@
+{
+ "slug": "disneys-summer-throwback",
+ "pageId": "69dd7527d88b5fdad36b4255",
+ "seoTitle": "Disney's Summer Throwback",
+ "description": "",
+ "noindex": false,
+ "title": "Disney's Summer Throwback",
+ "client": "Disney",
+ "subtitle": "",
+ "heroImage": {
+  "src": "/images/69dd78d6e20b8775a4fe76b5_index-p-2000.webp",
+  "srcset": "/images/69dd78d6e20b8775a4fe76b5_index-p-500.webp 500w, /images/69dd78d6e20b8775a4fe76b5_index-p-800.webp 800w, /images/69dd78d6e20b8775a4fe76b5_index-p-1080.webp 1080w, /images/69dd78d6e20b8775a4fe76b5_index-p-1600.webp 1600w, /images/69dd78d6e20b8775a4fe76b5_index-p-2000.webp 2000w",
+  "sizes": "100vw"
+ },
+ "heroVimeo": "",
+ "stats": [
+  {
+   "value": "26.4M",
+   "label": "Social Impressions"
+  },
+  {
+   "value": "3.3M",
+   "label": "Views"
+  },
+  {
+   "value": "137",
+   "label": "Dedicated Social Posts"
+  }
+ ],
+ "services": [
+  {
+   "name": "Creative Concept",
+   "slug": "creative-concept"
+  },
+  {
+   "name": "Creative Direction",
+   "slug": "creative-direction"
+  },
+  {
+   "name": "Digital Strategy",
+   "slug": "digital-strategy"
+  },
+  {
+   "name": "Custom Mailers",
+   "slug": "custom-mailers"
+  }
+ ],
+ "headline": "“OBSESSED DOESN’T EVEN COVER IT!” - LAUREN ASHLEY BECK",
+ "intro": "A NOSTALGIC, HIGHLY PERSONALIZED MAILER INSPIRED BY ICONIC SCHOOL LOCKERS.",
+ "introPieces": [
+  {
+   "type": "introGallery",
+   "media": [
+    {
+     "type": "video",
+     "embed": "<div class=\"w-video w-embed\" style=\"padding-top:177.76595744680853%\"><iframe allowfullscreen=\"\" class=\"embedly-embed\" height=\"1671\" scrolling=\"no\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F1194173286%3Fapp_id%3D122963&amp;dntp=1&amp;display_name=Vimeo&amp;url=https%3A%2F%2Fvimeo.com%2F1194173286%3Fshare%3Dcopy%26fl%3Dsv%26fe%3Dci&amp;image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F2159759375-7042e8a697c94f81ca13507fdb2e3b405a6ed5da0a4495bedcd1da2233556bd6-d_640%3Fregion%3Dus&amp;type=text%2Fhtml&amp;schema=vimeo\" title=\"Disney: Summer Throwback (1/7)\" width=\"940\"></iframe></div>"
+    },
+    {
+     "type": "video",
+     "embed": "<div class=\"w-video w-embed\" style=\"padding-top:177.76595744680853%\"><iframe allowfullscreen=\"\" class=\"embedly-embed\" height=\"1671\" scrolling=\"no\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F1194173784%3Fapp_id%3D122963&amp;dntp=1&amp;display_name=Vimeo&amp;url=https%3A%2F%2Fvimeo.com%2F1194173784&amp;image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F2159759923-71aff92feb9f90a84d443e5ed4f78fc9f4c7a6d593582d2b6f089640128c342c-d_640%3Fregion%3Dus&amp;type=text%2Fhtml&amp;schema=vimeo\" title=\"Disney: Summer Throwback (2/7)\" width=\"940\"></iframe></div>"
+    },
+    {
+     "type": "video",
+     "embed": "<div class=\"w-video w-embed\" style=\"padding-top:177.76595744680853%\"><iframe allowfullscreen=\"\" class=\"embedly-embed\" height=\"1671\" scrolling=\"no\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F1194174249%3Fapp_id%3D122963&amp;dntp=1&amp;display_name=Vimeo&amp;url=https%3A%2F%2Fvimeo.com%2F1194174249&amp;image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F2159760452-08484060ec207a23e789940dc27f75a53b2ffdd465335542d3cec191befa7fa9-d_640%3Fregion%3Dus&amp;type=text%2Fhtml&amp;schema=vimeo\" title=\"Disney: Summer Throwback (3/7)\" width=\"940\"></iframe></div>"
+    },
+    {
+     "type": "video",
+     "embed": "<div class=\"w-video w-embed\" style=\"padding-top:177.76595744680853%\"><iframe allowfullscreen=\"\" class=\"embedly-embed\" height=\"1671\" scrolling=\"no\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F1194174392%3Fapp_id%3D122963&amp;dntp=1&amp;display_name=Vimeo&amp;url=https%3A%2F%2Fvimeo.com%2F1194174392&amp;image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F2159760641-e659005139c5226acde27c0a547cf149abb86943b6fc4b6f3cdd60d21f970ce3-d_640%3Fregion%3Dus&amp;type=text%2Fhtml&amp;schema=vimeo\" title=\"Disney: Summer Throwback (4/7)\" width=\"940\"></iframe></div>"
+    },
+    {
+     "type": "video",
+     "embed": "<div class=\"w-video w-embed\" style=\"padding-top:177.76595744680853%\"><iframe allowfullscreen=\"\" class=\"embedly-embed\" height=\"1671\" scrolling=\"no\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F1194174851%3Fapp_id%3D122963&amp;dntp=1&amp;display_name=Vimeo&amp;url=https%3A%2F%2Fvimeo.com%2F1194174851&amp;image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F2159761179-4002e594db55ada8bc8126754bd7e302dbd0a033e115f9d72e89923c98a04fe8-d_640%3Fregion%3Dus&amp;type=text%2Fhtml&amp;schema=vimeo\" title=\"Disney: Summer Throwback (5/7)\" width=\"940\"></iframe></div>"
+    },
+    {
+     "type": "video",
+     "embed": "<div class=\"w-video w-embed\" style=\"padding-top:177.76595744680853%\"><iframe allowfullscreen=\"\" class=\"embedly-embed\" height=\"1671\" scrolling=\"no\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F1194174972%3Fapp_id%3D122963&amp;dntp=1&amp;display_name=Vimeo&amp;url=https%3A%2F%2Fvimeo.com%2F1194174972&amp;image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F2159761352-40b8d072517c19764f0274ff80b00c723d81cea0e9b3858d6b1c3f4908a7b916-d_640%3Fregion%3Dus&amp;type=text%2Fhtml&amp;schema=vimeo\" title=\"Disney: Summer Throwback (6/7)\" width=\"940\"></iframe></div>"
+    },
+    {
+     "type": "video",
+     "embed": "<div class=\"w-video w-embed\" style=\"padding-top:177.76595744680853%\"><iframe allowfullscreen=\"\" class=\"embedly-embed\" height=\"1671\" scrolling=\"no\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F1194175476%3Fapp_id%3D122963&amp;dntp=1&amp;display_name=Vimeo&amp;url=https%3A%2F%2Fvimeo.com%2F1194175476&amp;image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F2159761993-b818b5e53edb0202c0eec0e0af1b97c5e4908889b428899ec4e2c97a5789fa8b-d_640%3Fregion%3Dus&amp;type=text%2Fhtml&amp;schema=vimeo\" title=\"Disney: Summer Throwback (7/7)\" width=\"940\"></iframe></div>"
+    }
+   ],
+   "html": "<p>We designed an exclusive mailer to amplify the Disney+ Throwback Campaign that functioned as a cultural time capsule for mid-90s and early 2000s identity. Rooted in the idea that lockers were our first form of self-expression, each was personalized based on the recipients “Throwback Mood” and jam packed with character-inspired artifacts and era-specific gems.</p>\n<p>Our audience included creators, press, execs, and internal stakeholders - each receiving a version designed to spark joy, inspire unboxings, and reignite their love for some classic Disney programming. We facilitated all creator communications and shipping logistics, resulting in massive shareability - proving that even digital natives will go analog when the packaging hits home.</p>"
+  }
+ ],
+ "sections": [
+  {
+   "title": "MAILER CONTENTS",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p>To capture the carefree spirit of summer, each mailer included a retro-inspired photo kit with an instant camera, a nostalgic Disney+ sticker sheet, and a branded zip case for easy transport. Alongside this, recipients received a custom pin set and journaling kit, and a personalized retro-style CD player with headphones loaded with authentic era CDs curated to each recipient’s summer mood. Rounding out the package was a campaign-branded Igloo cooler backpack and a standout denim varsity jacket, custom-embroidered and patched with key IP and campaign icons to embody the bold, personalized style of the era.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/69dd7b4ff52fca0fb18c485b_mailercontents_1-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69dd7b4f0ec35e0678149af0_mailercontents_2-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69dd7b50a73d63d6e448847c_mailercontents_3-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69dd7b4fb03f3c8247b681c2_mailercontents_4-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69dd7b4fb04ecfa4cadb9c1f_mailercontents_5-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69dd7b50323d805fd0e12540_mailercontents_6-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69dd7b505d7e66893683a044_mailercontents_7-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69dd7b50311812d129e3e988_mailercontents_8-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69dd7b50c9b54ce9efa98ce9_mailercontents_9-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69dd7b501c48e79aa9e4d45a_mailercontents_10-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69dd7b50eb90e0423e826ed4_mailercontents_11-p-2000.avif",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "LOCKER CUSTOMIZATION",
+   "pieces": [
+    {
+     "type": "text2",
+     "left": "<p>While the base locker design stayed consistent, each mailer was uniquely tailored to the recipient’s chosen Summer Throwback mood, determined through an intake survey with four distinct options. Each locker was thoughtfully personalized with custom-printed Polaroids, a name plaque, and decorative magnets including a musical magnet that played a special song when opened, making every mailer a unique celebration of the recipient’s vibe.</p>",
+     "right": "<p>Expressive kits highlighted music lovers featuring Hannah Montana and High School Musical. Cozy kits catered to nostalgia seekers featuring mementos from Gilmore Girls and Full House. Glam kits channeled Y2K fashion with nods to Lizzie McGuire and That’s So Raven, while Spontaneous kits highlighted Kim Possible and Phineas and Ferb.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/69dd7f534fcc9c80c039511e_lockercustomization_02-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69dd7f55ff21e4ec3db2046f_lockercustomization_06-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69dd7f54fc8194b580197d38_lockercustomization_04-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69dd7f5368452a58fdb36835_lockercustomization_19-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69dd7f554e09b20abe28b130_lockercustomization_22-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/69dd7f53f0b23fc916a1634e_lockercustomization_21-p-2000.avif",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "listing": {
+  "listed": true,
+  "work": {
+   "summary": "We brought the Disney+ Throwback campaign to life with a fully custom locker mailer that served as a personalized time capsule of late ‘90s and early 2000s culture.",
+   "href": "/case-studies-items/disneys-summer-throwback",
+   "month": "Jul",
+   "year": "2025",
+   "bg": {
+    "src": "/images/69dd78d6e20b8775a4fe76b5_index-p-2000.webp",
+    "srcset": "/images/69dd78d6e20b8775a4fe76b5_index-p-500.webp 500w, /images/69dd78d6e20b8775a4fe76b5_index-p-800.webp 800w, /images/69dd78d6e20b8775a4fe76b5_index-p-1080.webp 1080w, /images/69dd78d6e20b8775a4fe76b5_index-p-1600.webp 1600w, /images/69dd78d6e20b8775a4fe76b5_index-p-2000.webp 2000w",
+    "sizes": "100vw",
+    "data-bg": "/images/69dd78d6e20b8775a4fe76b5_index-p-1600.webp",
+    "alt": ""
+   }
+  },
+  "home": {
+   "showHomepage": false,
+   "category": "Television",
+   "image": "/images/69dd78d6e20b8775a4fe76b5_index-t800.webp",
+   "gif": "",
+   "vimeo": "",
+   "ip": "",
+   "award": false,
+   "awardTitle": "",
+   "awardLogo1": "",
+   "awardLogo2": "",
+   "video": ""
+  }
+ }
+}

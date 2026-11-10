@@ -1,0 +1,242 @@
+{
+ "slug": "canon-creator-event",
+ "pageId": "6a7651bcbeed375e9db91776",
+ "seoTitle": "Canon Creator Event",
+ "description": "",
+ "noindex": false,
+ "title": "Canon Creator Event",
+ "client": "Pixel",
+ "subtitle": "",
+ "heroImage": {
+  "src": "/images/6a76591d46c2e20f7fcd7e7c_Canon-Creator-Experience_IHC-0359-p-2000.jpeg",
+  "srcset": "/images/6a76591d46c2e20f7fcd7e7c_Canon-Creator-Experience_IHC-0359-p-500.jpeg 500w, /images/6a76591d46c2e20f7fcd7e7c_Canon-Creator-Experience_IHC-0359-p-800.jpeg 800w, /images/6a76591d46c2e20f7fcd7e7c_Canon-Creator-Experience_IHC-0359-p-1080.jpeg 1080w, /images/6a76591d46c2e20f7fcd7e7c_Canon-Creator-Experience_IHC-0359-p-1600.jpeg 1600w, /images/6a76591d46c2e20f7fcd7e7c_Canon-Creator-Experience_IHC-0359-p-2000.jpeg 2000w",
+  "sizes": "100vw"
+ },
+ "heroVimeo": "",
+ "stats": [
+  {
+   "value": "12.2M+",
+   "label": "VIDEO VIEWS"
+  },
+  {
+   "value": "885K+",
+   "label": "ENGAGEMENT"
+  }
+ ],
+ "services": [
+  {
+   "name": "Creative Direction",
+   "slug": "creative-direction"
+  },
+  {
+   "name": "Fabrication Production",
+   "slug": "fabrication-production"
+  },
+  {
+   "name": "Event Production",
+   "slug": "event-production"
+  }
+ ],
+ "headline": "“Between mingling, amusement park rides, fair food, carnival games, and pro headshots — where to first?” - @TravelingJules",
+ "intro": "IHC CURATED An experience FOR CANON’S NEW EVENT SERIES CELEBRATing CREATORS AND INSPIRing FUTURE ARTISTS.",
+ "introPieces": [
+  {
+   "type": "introGallery",
+   "media": [
+    {
+     "type": "image",
+     "src": "/images/6a76617ac71280f2b8eafef8_Canon-Creator-Experience_IHC-0403_1-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6a76617a3522274613e2bcad_Canon-Creator-Experience_IHC-0487_1-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6a76617ae9a54e686b91ff21_Canon-Creator-Experience_IHC-0333_1-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6a76617a7ddbf49c4b171536_Canon-Creator-Experience_IHC-0641_1-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6a76617a935fd9351f00dc4d_Canon-Creator-Experience_IHC-0016_1-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6a76617adbcaebbedc64cced_Canon-Creator-Experience_IHC-0472_1-p-2000.avif",
+     "alt": ""
+    }
+   ],
+   "html": "<p>As part of Pixel's new series, “Canon Creator Events,” we took over the Santa Monica Pier for an invite-only evening that celebrated the hard work and creativity of 14 creators, while simultaneously connecting and inspiring the next generation of creators.</p>\n<p>Guests had exclusive access to all the carnival rides, games, and food within the park. Alongside billboard-sized odes to the creators, they had the chance to win exclusive and brand new Canon gear. </p>"
+  }
+ ],
+ "sections": [
+  {
+   "title": "Creator & Video Wall",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p>Upon arrival, all guests were greeted by our Creator Wall which paid tribute to the highlighted creators of the evening and their work. It also served as a backdrop for photos and future content. Within the park we constructed a Video Wall to display motion content from these creators, enticing guests  to further share on socials. </p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/6a7669de3971042c1c6c4079_Canon-Creator-Experience_IHC-1038_1-p-2000.jpg",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a76617a2070bd6c798903f3_Canon-Creator-Experience_IHC-0439_1-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a7669df7c56980b4e0932a7_Canon-Creator-Experience_IHC-0418_1-p-2000.jpg",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a7669df20b00410ae813593_Canon-Creator-Experience_IHC-0347_1-p-2000.jpg",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "PIER FUN & GAMES",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p>Big ticketprizes and brand new Canon products were available to win at select games around the pier. One of LA’s hottest up and coming DJs Suga Shay set the vibe for the evening while guests tested out every ride! </p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/6a767d6cb08fbe251546399d_Canon-Creator-Experience_IHC-1343_1-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a767d6ca594e82a1e847325_Canon-Creator-Experience_IHC-1272_1-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a767d6c3fc87e8931b54d64_Canon-Creator-Experience_IHC-0947_1-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a767d6bd6588f0a29c981d2_Canon-Creator-Experience_IHC-1009_1-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a767d6c73d53acae18e1682_Canon-Creator-Experience_IHC-1044_1-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a767d6b6a155020f1981cd7_Canon-Creator-Experience_IHC-0560_1-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a767d6c4ee5c63708224ff5_Canon-Creator-Experience_IHC-0335_1-p-2000.avif",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Portrait Station",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p>World-renowned photographer Sal Cincotta was on-site taking professional portraits of guests that were printed onsite via Canon printers for a physical keepsake of the evening.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/6a76680aa1ae8b99774649aa_Canon-Creator-Experience_IHC-0658_1-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a76677709f629fde45e0055_Pro-Capture-One-0278_1-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a76677811c9375460c1865c_Pro-Capture-One-0162_1-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a76677709f629fde45e0034_Canon-Creator-Experience_IHC-0635_1-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a766777bcb7a6068487a1f5_Canon-Creator-Experience_IHC-0648_1-p-2000.avif",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "WATCH THE RECAP",
+   "pieces": [
+    {
+     "type": "video",
+     "embed": "<div class=\"p-cs__video__el w-video w-embed\" style=\"padding-top:56.27659574468085%\"><iframe allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture\" allowfullscreen=\"true\" class=\"embedly-embed\" frameborder=\"0\" height=\"529\" scrolling=\"no\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F1036211817%3Fh%3Dfc89c8d8d3%26app_id%3D122963&amp;dntp=1&amp;display_name=Vimeo&amp;url=https%3A%2F%2Fvimeo.com%2F1036211817%2Ffc89c8d8d3%3Fturnstile%3D1.oKuLDE1r1FiFX2W5FeqftofJ0zzh-H6BgQl6lUmdbf07dJ9JCrEv-KSjM0o5KFIMki4Bm4anFM4YlAoe7efeIKKYoA-BdDKl0fxkQpDsqdSmyOPe-GWcKuQNPT6JwhsYfIxg964uK9pFDeSksMcVmId87frVmZvFCEqp9vmMYyC7IKlSptrY_r6jon7YB1aUj9Gl_U0oY0hVPTp2CKrqtStdLg7CmCIEVufZd89NaVEfffB8BFyVjFMt3qkiqSUhseMnp5hEPKohvOF74N_Ht0F33aXp6Cd5xdEOPTUjbJAWnhXzRXfE5POm534wesAkFvncg4Itrq9Ppy27bpibLK7jh4bS26xZAvR5gsAHjoN5k9xjF8BwRFfyxJjkrP7kE1L1wlLQU591wqHAbyoAmnF2NJr6a1PNkb9Uuwn-4oGmXjpRFRCDr3iAliNwxujABc6jkoVEYS4C8mC0G2PFstkaT9oAD3BOIGvm3hnFjyTv5aGG5RZJqtfU78Ai9OKCSZ62pE5eM1ZQYe7Ce83QqGRMzWDbs-XVVJSYhcIcfOJOAwbsweM30YDpjLdGL9vH4--zEP5ImtjfaU1-DDVdzJmji5hBjiPZcw326JXTxGgczqrn4-8MoiU0uiwwZjRGb7dwC4TfEydxMX4OF2MqttkeLkoVMhvGGWXd-NlV7CKXb3HSK90wuu4ou6w00uOsX5Kospe64BipHOLaQiwPkg.9fYRluvHDX8LknRZ4sf89Q.a84a0beca7b666cb88505e303cf5feaa2c404920bcbc90f55ed244de7af4a17b&amp;image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F1957882037-bb85ccc95c9f4f242e4ef48e0c0ec123b430eae4933c0108110b3316f70ac4aa-d_1280%3Fregion%3Dus&amp;type=text%2Fhtml&amp;schema=vimeo\" title=\"Pixel: Canon Creator Event\" width=\"940\"></iframe></div>"
+    }
+   ]
+  }
+ ],
+ "listing": {
+  "listed": true,
+  "work": {
+   "summary": "IHC curated a private evening for Canon’s new event series to celebrate creators and new products.",
+   "href": "/case-studies-items/canon-creator-event",
+   "month": "Jun",
+   "year": "2023",
+   "bg": {
+    "src": "/images/6a76591d46c2e20f7fcd7e7c_Canon-Creator-Experience_IHC-0359-p-2000.jpeg",
+    "srcset": "/images/6a76591d46c2e20f7fcd7e7c_Canon-Creator-Experience_IHC-0359-p-500.jpeg 500w, /images/6a76591d46c2e20f7fcd7e7c_Canon-Creator-Experience_IHC-0359-p-800.jpeg 800w, /images/6a76591d46c2e20f7fcd7e7c_Canon-Creator-Experience_IHC-0359-p-1080.jpeg 1080w, /images/6a76591d46c2e20f7fcd7e7c_Canon-Creator-Experience_IHC-0359-p-1600.jpeg 1600w, /images/6a76591d46c2e20f7fcd7e7c_Canon-Creator-Experience_IHC-0359-p-2000.jpeg 2000w",
+    "sizes": "100vw",
+    "data-bg": "/images/6a76591d46c2e20f7fcd7e7c_Canon-Creator-Experience_IHC-0359-p-1600.jpeg",
+    "alt": ""
+   }
+  },
+  "home": {
+   "showHomepage": false,
+   "category": "Events",
+   "image": "/images/6a76591d46c2e20f7fcd7e7c_Canon-Creator-Experience_IHC-0359-t800.webp",
+   "gif": "",
+   "vimeo": "",
+   "ip": "",
+   "award": false,
+   "awardTitle": "",
+   "awardLogo1": "",
+   "awardLogo2": "",
+   "video": ""
+  }
+ }
+}

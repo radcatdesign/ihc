@@ -1,0 +1,229 @@
+{
+ "slug": "strays",
+ "pageId": "6a74bd16474d3724a38813cb",
+ "seoTitle": "Strays",
+ "description": "",
+ "noindex": false,
+ "title": "Strays",
+ "client": "Universal Pictures",
+ "subtitle": "",
+ "heroImage": {
+  "src": "/images/6a74c275e56f2344ab372445_4-230813_233936-Strays_JamesColetta-1565-p-2000.jpg",
+  "srcset": "/images/6a74c275e56f2344ab372445_4-230813_233936-Strays_JamesColetta-1565-p-500.jpg 500w, /images/6a74c275e56f2344ab372445_4-230813_233936-Strays_JamesColetta-1565-p-800.jpg 800w, /images/6a74c275e56f2344ab372445_4-230813_233936-Strays_JamesColetta-1565-p-1080.jpg 1080w, /images/6a74c275e56f2344ab372445_4-230813_233936-Strays_JamesColetta-1565-p-1600.jpg 1600w, /images/6a74c275e56f2344ab372445_4-230813_233936-Strays_JamesColetta-1565-p-2000.jpg 2000w",
+  "sizes": "100vw"
+ },
+ "heroVimeo": "",
+ "stats": [
+  {
+   "value": "1.6K+",
+   "label": "HUMANS SERVED"
+  },
+  {
+   "value": "260+",
+   "label": "DOGS SERVED"
+  },
+  {
+   "value": "47",
+   "label": "POOPS SCOOPED"
+  }
+ ],
+ "services": [
+  {
+   "name": "Creative Direction",
+   "slug": "creative-direction"
+  },
+  {
+   "name": "Event Production",
+   "slug": "event-production"
+  },
+  {
+   "name": "Content Production",
+   "slug": "content-production"
+  },
+  {
+   "name": "Development",
+   "slug": "development"
+  }
+ ],
+ "headline": "“This is awesome! Thank you for the pee and poop.” - attendee",
+ "intro": "universal tapped IHC to PRODUCE AN<em> </em>ICE CREAM TRUCK that drove AROUND LA &amp; NY promoting their film <em>STRAYS</em>.",
+ "introPieces": [
+  {
+   "type": "introGallery",
+   "media": [
+    {
+     "type": "image",
+     "src": "/images/6a74f8a05c3b048b42be8bc0_230813_233709-Strays_JamesColetta-1503-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6a74cfa720f5f317cf7a7aa9_IHC2023_0812_150204-14169_RSH-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6a74cfa7395e5d57f655712e_7-230812_180951_Strays_JamesColetta-0767-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6a74cfa71d3476e2410b2e2a_9-IHC2023_0812_121131-26341_RSH-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6a74f70eb4d434787c2dbe7a_230812_220937_Strays_JamesColetta-2674-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6a74cfa6de458b47ad899b9b_230813_201631-Strays_JamesColetta-0792-p-2000.avif",
+     "alt": ""
+    }
+   ],
+   "html": "<p>Universal sought a wildly outlandish idea worthy of this R-rated dog comedy to excite audiences and drive them to theaters. </p>\n<p>Enter the Strays Ice Cream Truck, simultaneously hitting the streets of NYC and LA ahead of opening weekend. Armed with their own \"Poop Patrol,\" these trucks served “poop” and “pee” ice cream treats outside of local dog parks for both humans and dogs. </p>\n<p>To help spread the word, we created branded assets to share on social media and sent out a dedicated newsletter to the wider IHC community. </p>"
+  }
+ ],
+ "sections": [
+  {
+   "title": "ice cream truck",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p>Branded trucks made surprise stops at dog parks on both coasts, offering ice cream, branded swag, and potty-mouth laughs. Humans could choose between <strong>Poop Fairy Cup </strong>(Chocolate Gelato) or  <strong>Pee Because You Own It </strong>(Lemon Italian Ice in NY and Shaved Ice in LA), while their pups were treated to<strong> </strong>a <strong>Stray Snack </strong>(dog bone in custard from Shake Shack). </p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/6a74cfa8d10a5c159cacc91b_IHC2023_0813_122426-27010_RSH-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a74f8a1a5a8904473506e08_230813_180158-Strays_JamesColetta-0391-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a74f8a147c9cf506940902b_230812_183144_Strays_JamesColetta-1136-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a74f8a147dbe25159c8ed16_230812_180658_Strays_JamesColetta-0725-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a74f9cd41877f428272a2d2_IHC2023_0813_115533-26917_RSH-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a74f9cc43b6905ac9ad488e_IHC2023_0813_120006-26920_RSH-p-2000.avif",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "POOP PATROL",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p>Our Poop Patrol squad accompanied each truck stop, collecting the droppings of man's best friend, all recorded as prank video content. Led by comedians with improv prowess, the team stormed dog parks, unleashing irreverent antics and candid on-the-street interviews on unsuspecting passersby. </p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/6a74fcb7eeeee6bfa16ff785_230813_185145-Strays_JamesColetta-0652-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a74fcfd47c58f9d1ae9b095_230813_183656-Strays_JamesColetta-0540-p-2000.jpg",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a74fcfeae0d2e411a018afa_230813_214721-Strays_JamesColetta-1163-p-2000.jpg",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a74fcfeeeeee6bfa17012c8_230813_184520-Strays_JamesColetta-0603-p-2000.jpg",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a74fcb70154a240f63bb5d5_230813_181649-Strays_JamesColetta-0455-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a74fcb7b99ad6e286fc3fbd_230812_221928_Strays_JamesColetta-2838-p-2000.avif",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "poop patrol content",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p>We crafted a hilarious doc-style comedy marketing video, akin to 'Reno 911', spotlighting the 'Poop Patrol,' a quirky crew dedicated to cleaning up dog messes in public spaces.</p>"
+    },
+    {
+     "type": "video",
+     "embed": "<div class=\"p-cs__video__el w-video w-embed\" style=\"padding-top:52.76595744680851%\"><iframe allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture\" allowfullscreen=\"true\" class=\"embedly-embed\" frameborder=\"0\" height=\"496\" scrolling=\"no\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F1216247235%3Fapp_id%3D122963&amp;dntp=1&amp;display_name=Vimeo&amp;url=https%3A%2F%2Fvimeo.com%2F1216247235%3Fshare%3Dcopy%26fl%3Dsv%26fe%3Dci&amp;image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F2187629037-d3cf2078000a48e00df2cfbfe148e3be43fb218cff956f7806d086ad7dede2d3-d_1280%3Fregion%3Dus&amp;type=text%2Fhtml&amp;schema=vimeo\" title=\"Strays: Poop Patrol\" width=\"940\"></iframe></div>"
+    }
+   ]
+  },
+  {
+   "title": "WATCH THE RECAP",
+   "pieces": [
+    {
+     "type": "video",
+     "embed": "<div class=\"p-cs__video__el w-video w-embed\" style=\"padding-top:56.27659574468085%\"><iframe allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture\" allowfullscreen=\"true\" class=\"embedly-embed\" frameborder=\"0\" height=\"529\" scrolling=\"no\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F1216179910%3Fapp_id%3D122963&amp;dntp=1&amp;display_name=Vimeo&amp;url=https%3A%2F%2Fvimeo.com%2F1216179910%3Fshare%3Dcopy%26fl%3Dsv%26fe%3Dci&amp;image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F2187543978-36bafabde2d1470936b84fed3ae6b89952bb40e2f3bcc8535ba65d375d0169a9-d_1280%3Fregion%3Dus&amp;type=text%2Fhtml&amp;schema=vimeo\" title=\"Universal: Strays\" width=\"940\"></iframe></div>"
+    }
+   ]
+  }
+ ],
+ "listing": {
+  "listed": true,
+  "work": {
+   "summary": "A Strays Ice Cream truck, accompanied by the “Poop Patrol”, provided sweet treats to fans and pooches ahead of opening weekend.",
+   "href": "/case-studies-items/strays",
+   "month": "Aug",
+   "year": "2023",
+   "bg": {
+    "src": "/images/6a74c275e56f2344ab372445_4-230813_233936-Strays_JamesColetta-1565-p-2000.jpg",
+    "srcset": "/images/6a74c275e56f2344ab372445_4-230813_233936-Strays_JamesColetta-1565-p-500.jpg 500w, /images/6a74c275e56f2344ab372445_4-230813_233936-Strays_JamesColetta-1565-p-800.jpg 800w, /images/6a74c275e56f2344ab372445_4-230813_233936-Strays_JamesColetta-1565-p-1080.jpg 1080w, /images/6a74c275e56f2344ab372445_4-230813_233936-Strays_JamesColetta-1565-p-1600.jpg 1600w, /images/6a74c275e56f2344ab372445_4-230813_233936-Strays_JamesColetta-1565-p-2000.jpg 2000w",
+    "sizes": "100vw",
+    "data-bg": "/images/6a74c275e56f2344ab372445_4-230813_233936-Strays_JamesColetta-1565-p-1600.jpg",
+    "alt": ""
+   }
+  },
+  "home": {
+   "showHomepage": false,
+   "category": "Film",
+   "image": "/images/6a74c275e56f2344ab372445_4-230813_233936-Strays_JamesColetta-1565-t800.webp",
+   "gif": "",
+   "vimeo": "",
+   "ip": "",
+   "award": false,
+   "awardTitle": "",
+   "awardLogo1": "",
+   "awardLogo2": "",
+   "video": ""
+  }
+ }
+}

@@ -1,0 +1,259 @@
+{
+ "slug": "dream-productions",
+ "pageId": "6a163abef7611199e042f7a4",
+ "seoTitle": "Dream Productions",
+ "description": "",
+ "noindex": false,
+ "title": "Dream Productions",
+ "client": "Disney",
+ "subtitle": "",
+ "heroImage": {
+  "src": "/images/6a17ab924c5deaf6ef7a230a_pixar_DPdinner_photo-by-meghanmcneer_142-p-2000.jpeg",
+  "srcset": "/images/6a17ab924c5deaf6ef7a230a_pixar_DPdinner_photo-by-meghanmcneer_142-p-500.jpeg 500w, /images/6a17ab924c5deaf6ef7a230a_pixar_DPdinner_photo-by-meghanmcneer_142-p-800.jpeg 800w, /images/6a17ab924c5deaf6ef7a230a_pixar_DPdinner_photo-by-meghanmcneer_142-p-1080.jpeg 1080w, /images/6a17ab924c5deaf6ef7a230a_pixar_DPdinner_photo-by-meghanmcneer_142-p-1600.jpeg 1600w, /images/6a17ab924c5deaf6ef7a230a_pixar_DPdinner_photo-by-meghanmcneer_142-p-2000.jpeg 2000w",
+  "sizes": "100vw"
+ },
+ "heroVimeo": "",
+ "stats": [
+  {
+   "value": "63M+",
+   "label": "Social Media Impressions"
+  },
+  {
+   "value": "9",
+   "label": "Guests"
+  },
+  {
+   "value": "1",
+   "label": "Night Only"
+  }
+ ],
+ "services": [
+  {
+   "name": "Creative Direction",
+   "slug": "creative-direction"
+  },
+  {
+   "name": "Environment Design",
+   "slug": "environment-design"
+  },
+  {
+   "name": "Event Production",
+   "slug": "event-production"
+  }
+ ],
+ "headline": "“I’ll never forget this day.” - Attendee",
+ "intro": "A LIVING DREAM DINNER COLLABORATION!",
+ "introPieces": [
+  {
+   "type": "introGallery",
+   "media": [
+    {
+     "type": "image",
+     "src": "/images/6a175173876668f21ab5259f_pixar_DPdinner_photo-by-meghanmcneer_120-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6a1751723b109f5aabc2cb6f_dreamproductions_main_04-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6a17a9b3eee56f95d90a75a0_pixar_DPdinner_photo-by-meghanmcneer_034-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6a1751727e01cbae8baa1a1a_dreamproductions_main_03-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6a1751722e3e5a94224720f8_dreamproductions_main_01-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6a17a9b46fa0aacf36b6065f_pixar_DPdinner_photo-by-meghanmcneer_175-p-2000.avif",
+     "alt": ""
+    }
+   ],
+   "html": "<p>Disney hosted a small group of creators at Pixar Studios to celebrate the upcoming Disney+ release of Dream Productions, a special 4-part series centered around the movie studio from <em>Inside Out</em> that develops nightly adventures in Riley’s sleeping mind. </p>\n<p>To cap the day of exploration, IHC produced an immersive, multi-sensory five course dinner that turned dreams into reality – complete with a whimsical tablescape, personalized place settings and other-worldly dishes.</p>\n<p>To achieve this we collaborated with chef, artist and food designer, Jen Monroe, of Bad Taste, noted for her commitment to boundary-pushing, fantastical food exploration.</p>"
+  }
+ ],
+ "sections": [
+  {
+   "title": "IMMERSIVE EXPERIENCE",
+   "pieces": [
+    {
+     "type": "text2",
+     "left": "<p>As guests entered the venue their senses were immediately captivated by a harpist weaving ethereal melodies. Friendly staff, styled in cozy pajamas, offered guests a choice of two signature themed cocktails or a non-alcoholic alternative.</p>",
+     "right": "<p>Guests were ushered into a private dining room where guest chef, Jen Monroe, welcomed everyone. With each course, the harp sounded, cueing the lighting to shift, bathing the room in evolving colors, and immersing guests in a multisensory journey.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/6a175f807db7a603d7e2886e_dreamproductions_decor_02-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a1751719f26e0be2488caf8_pixar_DPdinner_photo-by-meghanmcneer_112-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a17abe201e24bf3477583eb_pixar_DPdinner_photo-by-meghanmcneer_188-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a1756fb46bd08018fb305b3_pixar_DPdinner_photo-by-meghanmcneer_181-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a175172411443935beb3681_dreamproductions_main_06-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a1756fa1fdaacf23f013212_pixar_DPdinner_photo-by-meghanmcneer_244-p-2000.avif",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "MENU",
+   "pieces": [
+    {
+     "type": "text2",
+     "left": "<p>Dream Productions introduces categorical genres that all dreams exist within. Our dinner embraced and connected these to what was served, while retaining the colorful, playful and whimsical intentions the <em>Inside Out </em>franchise has become known for. </p>",
+     "right": "<p>Each course gave guests a slightly surreal and dreamlike experience. The dinner consisted of an amuse-bouche served on a dry ice plate, a maze shaped carrot and watermelon salad, a colorful and candy-shaped pasta, a pop rock rainbow unicorn ice cream cone, and a mignardise daydream with a cloud jelly and gelatin balloon.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/6a175d29e26efe4dcc6bb73c_dreamproductions_menu_03-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a175d29992e1d665e093d52_dreamproductions_menu_05-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a175d292ff7f5b53db6b713_dreamproductions_menu_04-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a175d295875b81361d80dc3_dreamproductions_menu_06-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a175d28c47ba0e1d1359689_dreamproductions_menu_07-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a175d2972dfb618b0fb33f8_dreamproductions_menu_01-p-2000.avif",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "DECOR",
+   "pieces": [
+    {
+     "type": "text2",
+     "left": "<p>Leaning into the themes of the show, we transformed the space into an immersive dreamscape complete with lush greenery, in-world movie posters, and a gobo light of the show’s title treatment. The room was bathed in the soft glow of candlelight, enhancing the dreamlike atmosphere, with glowing stars and drapery suspended above.</p>",
+     "right": "<p>Fantastical decor and details created a magical private dining experience. Each place setting was designed with its own distinct color scheme, a personalized sleep mask and printed menu, adding an extra layer of thoughtfulness to the experience. </p>\n<p>‍</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/6a1756fb946ab45ec1940a10_pixar_DPdinner_photo-by-meghanmcneer_088-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a175f7f876668f21aba0a3b_pixar_DPdinner_photo-by-meghanmcneer_076-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a175f7f3af3682af6cf6b78_pixar_DPdinner_photo-by-meghanmcneer_103-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a175f7f3598132e63e8e03d_dreamproductions_decor_01-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a175f7f72dfb618b0fbe072_pixar_DPdinner_photo-by-meghanmcneer_021-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a17a5793acbf487b46ecc2c_dreamproductions_index_01-p-2000.avif",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "WATCH THE RECAP",
+   "pieces": [
+    {
+     "type": "video",
+     "embed": "<div class=\"p-cs__video__el w-video w-embed\" style=\"padding-top:177.76595744680853%\"><iframe allowfullscreen=\"\" class=\"embedly-embed\" height=\"1671\" scrolling=\"no\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F1045876462%3Fapp_id%3D122963&amp;dntp=1&amp;display_name=Vimeo&amp;url=https%3A%2F%2Fvimeo.com%2F1045876462&amp;image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F1969532338-c4bb649a0f9d9cd796129d78c2ad2d55a58168f12cc1f1446a225f793997c8fa-d_640%3Fregion%3Dus&amp;type=text%2Fhtml&amp;schema=vimeo\" title=\"Disney: Dream Productions\" width=\"940\"></iframe></div>"
+    }
+   ]
+  }
+ ],
+ "listing": {
+  "listed": true,
+  "work": {
+   "summary": "An immersive, multi-sensory five course dinner for a small group of creators to celebrate the Disney+ release of Dream Productions.",
+   "href": "/case-studies-items/dream-productions",
+   "month": "",
+   "year": "",
+   "bg": {
+    "src": "/images/6a17ab924c5deaf6ef7a230a_pixar_DPdinner_photo-by-meghanmcneer_142-p-2000.jpeg",
+    "srcset": "/images/6a17ab924c5deaf6ef7a230a_pixar_DPdinner_photo-by-meghanmcneer_142-p-500.jpeg 500w, /images/6a17ab924c5deaf6ef7a230a_pixar_DPdinner_photo-by-meghanmcneer_142-p-800.jpeg 800w, /images/6a17ab924c5deaf6ef7a230a_pixar_DPdinner_photo-by-meghanmcneer_142-p-1080.jpeg 1080w, /images/6a17ab924c5deaf6ef7a230a_pixar_DPdinner_photo-by-meghanmcneer_142-p-1600.jpeg 1600w, /images/6a17ab924c5deaf6ef7a230a_pixar_DPdinner_photo-by-meghanmcneer_142-p-2000.jpeg 2000w",
+    "sizes": "100vw",
+    "data-bg": "/images/6a17ab924c5deaf6ef7a230a_pixar_DPdinner_photo-by-meghanmcneer_142-p-1600.jpeg",
+    "alt": ""
+   }
+  },
+  "home": {
+   "showHomepage": true,
+   "category": "Television",
+   "image": "/images/6a17ab924c5deaf6ef7a230a_pixar_DPdinner_photo-by-meghanmcneer_142-t800.webp",
+   "gif": "",
+   "vimeo": "",
+   "ip": "",
+   "award": false,
+   "awardTitle": "",
+   "awardLogo1": "",
+   "awardLogo2": "",
+   "video": ""
+  }
+ }
+}

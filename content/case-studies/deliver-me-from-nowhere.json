@@ -1,0 +1,236 @@
+{
+ "slug": "deliver-me-from-nowhere",
+ "pageId": "6a73bbfacfd94ca8f664805c",
+ "seoTitle": "Deliver Me From Nowhere",
+ "description": "",
+ "noindex": false,
+ "title": "Deliver Me From Nowhere",
+ "client": "20th Century Studios",
+ "subtitle": "",
+ "heroImage": {
+  "src": "/images/6a73cb0385ca250abee7efb2_dmfn_index-p-2000.jpg",
+  "srcset": "/images/6a73cb0385ca250abee7efb2_dmfn_index-p-500.jpg 500w, /images/6a73cb0385ca250abee7efb2_dmfn_index-p-800.jpg 800w, /images/6a73cb0385ca250abee7efb2_dmfn_index-p-1080.jpg 1080w, /images/6a73cb0385ca250abee7efb2_dmfn_index-p-1600.jpg 1600w, /images/6a73cb0385ca250abee7efb2_dmfn_index-p-2000.jpg 2000w",
+  "sizes": "100vw"
+ },
+ "heroVimeo": "",
+ "stats": [
+  {
+   "value": "9.77M+",
+   "label": "SOCIAL IMPRESSIONS"
+  },
+  {
+   "value": "6.3M+",
+   "label": "VIEWS"
+  },
+  {
+   "value": "567K+",
+   "label": "ENGAGEMENTS"
+  },
+  {
+   "value": "95",
+   "label": "SOCIAL POSTS"
+  }
+ ],
+ "services": [
+  {
+   "name": "Narrative Development",
+   "slug": "narrative-development"
+  },
+  {
+   "name": "Content Production",
+   "slug": "content-production"
+  },
+  {
+   "name": "Event Production",
+   "slug": "event-production"
+  },
+  {
+   "name": "Talent Booking",
+   "slug": "talent-booking"
+  },
+  {
+   "name": "Influencer Guestlist",
+   "slug": "influencer-guestlist"
+  },
+  {
+   "name": "Digital Strategy",
+   "slug": "digital-strategy"
+  },
+  {
+   "name": "Marketing",
+   "slug": "marketing"
+  }
+ ],
+ "headline": "",
+ "intro": "20th Century tapped ihc to create A ONCE IN A LIFETIME TRIP DESIGNED FOR DIGITAL STORYTELLING.",
+ "introPieces": [
+  {
+   "type": "introGallery",
+   "media": [
+    {
+     "type": "image",
+     "src": "/images/6a73cbed85ca250abee83b7a_dmfn_main_01-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6a73cbed387467e72a15fedb_dmfn_main_02-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "/images/6a73cbed7cb50782fe8b97ad_dmfn_main_03-p-2000.avif",
+     "alt": ""
+    }
+   ],
+   "html": "<p>To spark conversation around the release of Deliver Me From Nowhere, IHC curated an intimate creator trip to NYC to celebrate special pieces of Bruce Springsteen’s iconic musical history showcased in the film.  </p>\n<p>From a festival screening to a visit to Power Station Studios where “Born in the U.S.A.” came to life, creators were immersed in the glamour, anticipation, and cultural spotlight that defined Bruce’s rise.</p>"
+  }
+ ],
+ "sections": [
+  {
+   "title": "STUDIO SESSION",
+   "pieces": [
+    {
+     "type": "text2",
+     "left": "<p>We brought creators to the studio where demos from Nebraska evolved into Springsteen’s album, Born in the U.S.A. The studio provided a Four-Track technical explanation, detailing how Nebraska was recorded. Pitchfork Founder, Ryan Schreiber, led a Q&amp;A with Lucy Dacus, Matt Berninger, and Walt Martin. The group discussed Springsteen’s influence on their lives before recording songs onto a four-track. </p>",
+     "right": "<p>The session concluded with a surprise preview of three unreleased songs from the film’s soundtrack while our content team captured raw reactions. These moments became some of the highest-performing content in the film’s promotional campaign outside of official trailers.The experience highlighted the power of authentic curation, connecting legacy fans with millennial and Gen Z audiences.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/6a73f42836bef33c291d2e65_DSC07795-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a73f427df47bb0f6a2f7e09_DSC08094-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a73f427a1aaf797fe64fbb7_DSC07849-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a73f427468e0f3d7524be94_DSC08107-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a73f428e8de80600a6411af_DSC08128-p-2000.avif",
+       "alt": ""
+      },
+      {
+       "type": "image",
+       "src": "/images/6a73f43c290814d37501397a_DSC07760-p-2000.avif",
+       "alt": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "NYFF SCREENING",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p>After the studio session, creators were shuttled to the New York Film Festival screening of the biopic for a once-in-a-lifetime experience. Following the screening, director Scott Cooper introduced the full cast, alongside Bruce Springsteen, who treated the audience to an intimate acoustic performance of “Land of Hope and Dreams.” The evening concluded with an after-party at Ascent Lounge, where creators mingled with the cast, filmmakers, and other VIP. guests</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "image",
+       "src": "/images/6a73ce1d9f4fdc4ee523f29f_dmfn_nyffscreening_01.avif",
+       "alt": ""
+      },
+      {
+       "type": "video",
+       "embed": "<div class=\"w-video w-embed\" style=\"padding-top:177.76595744680853%\"><iframe allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture\" allowfullscreen=\"true\" class=\"embedly-embed\" frameborder=\"0\" height=\"1671\" scrolling=\"no\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F1215988132%3Fapp_id%3D122963&amp;dntp=1&amp;display_name=Vimeo&amp;url=https%3A%2F%2Fvimeo.com%2F1215988132%3Fshare%3Dcopy%26fl%3Dsv%26fe%3Dci&amp;image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F2187303309-1be62db584c39c0705e90e937e6c27f15320b71ea885da2a059c1a3d3d14e023-d_640%3Fregion%3Dus&amp;type=text%2Fhtml&amp;schema=vimeo\" title=\"NYFF Screening 1/2\" width=\"940\"></iframe></div>"
+      },
+      {
+       "type": "video",
+       "embed": "<div class=\"w-video w-embed\" style=\"padding-top:177.76595744680853%\"><iframe allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture\" allowfullscreen=\"true\" class=\"embedly-embed\" frameborder=\"0\" height=\"1671\" scrolling=\"no\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F1215987091%3Fapp_id%3D122963&amp;dntp=1&amp;display_name=Vimeo&amp;url=https%3A%2F%2Fvimeo.com%2F1215987091%3Fshare%3Dcopy%26fl%3Dsv%26fe%3Dci&amp;image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F2187302040-f9ba425536904c65faf7757c08e22f678a0356ee4cbc597eb1db9b390849086e-d_640%3Fregion%3Dus&amp;type=text%2Fhtml&amp;schema=vimeo\" title=\"NYFF Screening 2/2\" width=\"940\"></iframe></div>"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "CREATOR & CONTENT STRATEGY",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p>We executed a multi-part strategy to inspire conversation and drive content creation. A handpicked mix of creators bridged music history, film, and broader cultural commentary. We selected voices with the authority, passion, and creativity to authentically connect Deliver Me From Nowhere to both devoted fans and new audiences across social platforms. Our creators included Straw Hat Goofy, Maddi Koch, Nicky Reardon, Sarah Lugor, Kacey Fifield, Mic The Snare, Saint Virgil, and Cinemonika.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": [
+      {
+       "type": "video",
+       "embed": "<div class=\"w-video w-embed\" style=\"padding-top:177.76595744680853%\"><iframe allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture\" allowfullscreen=\"true\" class=\"embedly-embed\" frameborder=\"0\" height=\"1671\" scrolling=\"no\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F1215988361%3Fapp_id%3D122963&amp;dntp=1&amp;display_name=Vimeo&amp;url=https%3A%2F%2Fvimeo.com%2F1215988361%3Fshare%3Dcopy%26fl%3Dsv%26fe%3Dci&amp;image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F2187303559-eb19e9dec808aef3d3c69459cd109fb15fc6c37688f3a5b2a5bbf3c0cf74ce67-d_640%3Fregion%3Dus&amp;type=text%2Fhtml&amp;schema=vimeo\" title=\"Studio Session 1/4\" width=\"940\"></iframe></div>"
+      },
+      {
+       "type": "video",
+       "embed": "<div class=\"w-video w-embed\" style=\"padding-top:177.76595744680853%\"><iframe allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture\" allowfullscreen=\"true\" class=\"embedly-embed\" frameborder=\"0\" height=\"1671\" scrolling=\"no\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F1215988632%3Fapp_id%3D122963&amp;dntp=1&amp;display_name=Vimeo&amp;url=https%3A%2F%2Fvimeo.com%2F1215988632%3Fshare%3Dcopy%26fl%3Dsv%26fe%3Dci&amp;image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F2187303897-c45ce682a4dc6ea899b371e62253ddd57375b4bafb701da7c43e464edf0c7c15-d_640%3Fregion%3Dus&amp;type=text%2Fhtml&amp;schema=vimeo\" title=\"Studio Session 2/4\" width=\"940\"></iframe></div>"
+      },
+      {
+       "type": "video",
+       "embed": "<div class=\"w-video w-embed\" style=\"padding-top:177.76595744680853%\"><iframe allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture\" allowfullscreen=\"true\" class=\"embedly-embed\" frameborder=\"0\" height=\"1671\" scrolling=\"no\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F1215989022%3Fapp_id%3D122963&amp;dntp=1&amp;display_name=Vimeo&amp;url=https%3A%2F%2Fvimeo.com%2F1215989022%3Fshare%3Dcopy%26fl%3Dsv%26fe%3Dci&amp;image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F2187304353-3e07aad7163e709e89d71d3e0ce60ead8903cf2a9233268ad9b08ba8f2cc7cfb-d_640%3Fregion%3Dus&amp;type=text%2Fhtml&amp;schema=vimeo\" title=\"Studio Session 3/4\" width=\"940\"></iframe></div>"
+      },
+      {
+       "type": "video",
+       "embed": "<div class=\"w-video w-embed\" style=\"padding-top:177.76595744680853%\"><iframe allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture\" allowfullscreen=\"true\" class=\"embedly-embed\" frameborder=\"0\" height=\"1671\" scrolling=\"no\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F1215989196%3Fapp_id%3D122963&amp;dntp=1&amp;display_name=Vimeo&amp;url=https%3A%2F%2Fvimeo.com%2F1215989196%3Fshare%3Dcopy%26fl%3Dsv%26fe%3Dci&amp;image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F2187304574-3fa23d31b0c7677da08c51f2e7ca3f38bd6a4e3679887617845037ac16ebf10f-d_640%3Fregion%3Dus&amp;type=text%2Fhtml&amp;schema=vimeo\" title=\"Studio Session 4/4\" width=\"940\"></iframe></div>"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "TRACKSTAR SHOOT",
+   "pieces": [
+    {
+     "type": "text2",
+     "left": "<p>We executed a social-first media strategy Track Star, a cultural documentarian whose platform centers on music, film, and legacy storytelling. Track Star attended the NYFF premiere, to fully absorb the film’s emotional tone and narrative. We collaborated with him to develop a storytelling approach focused on cultural impact rather than standard press coverage.</p>",
+     "right": "<p>The Track Star Show filmed an episode with Jeremy Allen White and Scott Cooper, along with a suite of social-first companion content. Track Star led a conversation about the making of Nebraska, with interviews from White, Cooper, and Warren Zanes. He shared personal memories and archival footage from past interviews, highlighting Bruce’s enduring cultural influence.</p>"
+    },
+    {
+     "type": "video",
+     "embed": "<div class=\"p-cs__video__el w-video w-embed\" style=\"padding-top:56.17021276595745%\"><iframe allow=\"autoplay; fullscreen; encrypted-media; picture-in-picture\" allowfullscreen=\"true\" class=\"embedly-embed\" frameborder=\"0\" height=\"528\" scrolling=\"no\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FMclTsKxOUWU%3Ffeature%3Doembed&amp;display_name=YouTube&amp;url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DMclTsKxOUWU&amp;image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FMclTsKxOUWU%2Fhqdefault.jpg&amp;type=text%2Fhtml&amp;schema=youtube\" title=\"Jeremy Allen White, Scott Cooper (director), and Warren Zanes (Author) Talk Springsteen Biopic\" width=\"940\"></iframe></div>"
+    }
+   ]
+  }
+ ],
+ "listing": {
+  "listed": true,
+  "work": {
+   "summary": "An intimate NYC creator trip celebrating Deliver Me From Nowhere immersed guests in Bruce Springsteen’s musical legacy, blending film, history, and storytelling moments built for digital content and cultural conversation.",
+   "href": "/case-studies-items/deliver-me-from-nowhere",
+   "month": "Sep",
+   "year": "2025",
+   "bg": {
+    "src": "/images/6a73cb0385ca250abee7efb2_dmfn_index-p-2000.jpg",
+    "srcset": "/images/6a73cb0385ca250abee7efb2_dmfn_index-p-500.jpg 500w, /images/6a73cb0385ca250abee7efb2_dmfn_index-p-800.jpg 800w, /images/6a73cb0385ca250abee7efb2_dmfn_index-p-1080.jpg 1080w, /images/6a73cb0385ca250abee7efb2_dmfn_index-p-1600.jpg 1600w, /images/6a73cb0385ca250abee7efb2_dmfn_index-p-2000.jpg 2000w",
+    "sizes": "100vw",
+    "data-bg": "/images/6a73cb0385ca250abee7efb2_dmfn_index-p-1600.jpg",
+    "alt": ""
+   }
+  },
+  "home": {
+   "showHomepage": false,
+   "category": "Film",
+   "image": "/images/6a73cb0385ca250abee7efb2_dmfn_index-t800.webp",
+   "gif": "",
+   "vimeo": "",
+   "ip": "",
+   "award": false,
+   "awardTitle": "",
+   "awardLogo1": "",
+   "awardLogo2": "",
+   "video": ""
+  }
+ }
+}
