@@ -37,8 +37,8 @@ Both sign-up forms post to `/api/subscribe`, which forwards the email as JSON to
 There's no CMS anymore, so content changes are HTML edits.
 
 - **New case study:** duplicate a file in `case-studies-items/`, swap the copy and images, add a card for it in `work.html`, and add its URL to `sitemap.xml`.
-- **New images:** drop them in `images/` and reference them as `/images/<file>`. Export web sizes (2000px wide max) and keep files under a few hundred KB where you can.
-- **CSS or JS changes:** if you edit a hashed file like `css/ihc.203c8a3824.css`, rename it with a new hash (or any new suffix) and update the references, otherwise returning visitors keep the cached copy for up to a year.
+- **New images:** drop them in `images/` and reference them as `/images/<file>`. Export web sizes (2000px wide max, WebP or AVIF) and keep files under a few hundred KB.
+- **CSS or JS changes:** CSS and JS are minified. If you edit a hashed file like `css/ihc.<hash>.css`, rename it with a new hash (or any new suffix) and update the references, otherwise returning visitors keep the cached copy for up to a year.
 
 ## Previewing locally
 
@@ -51,5 +51,8 @@ npx serve .
 ## Notes
 
 - Responsive image variants wider than 2000px were left out to keep the deployment under Vercel's 1 GB static file limit. Pages already fall back to the 2000px versions.
-- A few videos (the bunny loop and reel backgrounds) load from IHC's own CloudFront bucket at `d1e09wm0wupq53.cloudfront.net/ihc/`. They were never on the old host, so they're unchanged.
+- Homepage bubbles use 800px WebP thumbnails (`*-t800.webp`), and the hover previews are animated WebP instead of GIF. Both are referenced from `cms/cs.html`, which the homepage reads for its project list.
+- Hover backgrounds on the Work list, homepage previews and the reel video only load when they're on screen (see the small `ihc*` helpers at the top of each page's `<head>`).
+- Videos live in `media/`. Re-encode new ones with FFmpeg before adding them: VP9 WebM at CRF 42 plus H.265 MP4 at CRF 30, sized to about twice their on-screen width, audio removed for muted backgrounds.
+- The mobile intro animation still loads from IHC's CloudFront bucket (`d1e09wm0wupq53.cloudfront.net/ihc/ihc-mob-intro`).
 - `news-press---test*.html` are test pages that were live on the old site. They're not in the sitemap and can be deleted any time.
