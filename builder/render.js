@@ -602,55 +602,8 @@
     return JSON.stringify(idx, null, 1) + '\n';
   }
 
-  // ---------- homepage bubble photos ----------
-  // A few photos from the page (spread across it) for its homepage bubble to fade through.
-  // pick(m) can swap in a smaller copy of a photo; by default the closest srcset size to 800px is used.
-  function smallest(m) {
-    var best = null;
-    String(m.srcset || '').split(',').forEach(function (part) {
-      var bits = part.trim().split(/\s+/), w = parseInt(bits[1], 10);
-      if (!bits[0] || !w) return;
-      if (!best || Math.abs(w - 800) < Math.abs(best.w - 800)) best = { url: bits[0], w: w };
-    });
-    return best ? best.url : m.src;
-  }
-  function bubbleImages(d, pick, max) {
-    max = max || 4;
-    var found = [];
-    var add = function (m) { if (m && m.src && !m.video && (!m.type || m.type === 'image') && !/\.(gif|svg)(\?|$)/i.test(m.src)) found.push(m); };
-    var visit = function (p) {
-      if (!p || p.type === 'logos') return;
-      if (Array.isArray(p.media)) p.media.forEach(add); else add(p.media);
-      if (p.type === 'duo') (p.items || []).forEach(add);
-      if (p.type === 'compare') add(p.after);
-    };
-    (d.introPieces || []).forEach(visit);
-    (d.sections || []).forEach(function (s) { (s.pieces || []).forEach(visit); });
-    var pool = (d.heroImage && d.heroImage.src ? [d.heroImage] : []).concat(found);
-    var home = (d.listing && d.listing.home && d.listing.home.image) || '';
-    var out = [];
-    // hero first, then photos evenly spaced through the page
-    var picks = pool.length <= max + 1 ? pool : [pool[0]].concat([0, 1, 2].slice(0, max - 1).map(function (i) { return found[Math.round((i + 0.5) * found.length / (max - 1))] || found[found.length - 1]; }));
-    picks.forEach(function (m) {
-      var url = (pick && pick(m)) || smallest(m);
-      if (url && url !== home && out.indexOf(url) < 0 && out.length < max) out.push(url);
-    });
-    return out;
-  }
-  function spliceBubbles(text, d) {
-    var all = {};
-    try { all = JSON.parse(text || '{}'); } catch (e) { all = {}; }
-    var l = d.listing || {};
-    var list = l.listed && l.home && l.home.showHomepage ? bubbleImages(d) : [];
-    if (list.length) all[d.slug] = list; else delete all[d.slug];
-    var sorted = {};
-    Object.keys(all).sort().forEach(function (k) { sorted[k] = all[k]; });
-    return JSON.stringify(sorted, null, 1) + '\n';
-  }
-
   return {
     page: page, body: body, meta: meta, piece: piece, workItem: workItem, cmsItem: cmsItem, TONES: TONES,
-    bubbleImages: bubbleImages, spliceBubbles: spliceBubbles,
     indexEntry: indexEntry, spliceWork: spliceWork, spliceCms: spliceCms, spliceSitemap: spliceSitemap, spliceIndex: spliceIndex,
     esc: esc, attr: attr, slugify: slugify, sortKey: sortKey, newPageId: newPageId, ind: ind, absUrl: absUrl
   };

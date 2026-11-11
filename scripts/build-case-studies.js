@@ -82,20 +82,4 @@ const index = {
 };
 fs.writeFileSync(path.join(ROOT, 'content', 'index.json'), JSON.stringify(index, null, 1) + '\n');
 
-// content/home-images.json: the photos each homepage bubble fades through. Uses the small
-// "-t800.webp" copies when they exist (scripts/bubble-thumbs.js makes them).
-const thumbOf = (src) => src.replace(/(-p-\d+)?\.(avif|webp|jpe?g|png)$/i, '') + '-t800.webp';
-const bubbles = {};
-for (const d of all) {
-  const l = d.listing || {};
-  if (!(l.listed && l.home && l.home.showHomepage)) continue;
-  const list = R.bubbleImages(d, (m) => {
-    if (!m.src.startsWith('/images/')) return null;
-    const t = thumbOf(m.src);
-    return fs.existsSync(path.join(ROOT, t)) ? t : null;
-  });
-  if (list.length) bubbles[d.slug] = list;
-}
-fs.writeFileSync(path.join(ROOT, 'content', 'home-images.json'), JSON.stringify(bubbles, null, 1) + '\n');
-
 console.log(`Rebuilt ${n} case stud${n === 1 ? 'y' : 'ies'} (${cssName}, ${jsName}), index of ${all.length}`);

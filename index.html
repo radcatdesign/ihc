@@ -4711,83 +4711,26 @@ window.addEventListener('load',function(){var go=function(){document.querySelect
       }
     </script>
     <script src="/js/forms.7bd16d33c2.js" defer></script>
-    <style>
-      .p-home__infinity__g__el .p-home__infinity__cell__media img.ihc-cycle { position: absolute; inset: 0; opacity: 0; transition: none; }
-      .p-home__infinity__g__el .p-home__infinity__cell__media img.ihc-cycle.is-on { opacity: 1; }
-    </style>
     <script>
-      // Project bubbles flip through a few photos from their case study, each on its own clock, and
-      // only while they're on screen. Each change is a small bounce: the bubble dips, the photo
-      // swaps at the bottom of the dip, and it springs back. The list comes from content/home-images.json.
+      // phones: tapping a bubble gives it a quick bounce (not when dragging the field)
       (function () {
         if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-        const wait = (ms) => new Promise((ok) => setTimeout(ok, ms));
-        // a quick dip and spring back; the scale property stacks on the page's own transforms
-        const bounce = (node, deep = 0.93, high = 1.045, duration = 720) => node.animate(
-          [{ scale: 1 }, { scale: deep, offset: 0.28 }, { scale: high, offset: 0.62 }, { scale: 0.99, offset: 0.84 }, { scale: 1 }],
-          { duration, easing: 'ease-in-out' });
-
-        // phones: tapping a bubble gives it the same bounce (not when dragging the field)
         const field = document.getElementById('p-home__infinity');
+        if (!field) return;
+        // the scale property stacks on the page's own transforms
+        const bounce = (node) => node.animate(
+          [{ scale: 1 }, { scale: 0.9, offset: 0.28 }, { scale: 1.07, offset: 0.62 }, { scale: 0.99, offset: 0.84 }, { scale: 1 }],
+          { duration: 460, easing: 'ease-in-out' });
         let press = null;
-        if (field) {
-          field.addEventListener('pointerdown', (e) => { press = e.pointerType === 'mouse' ? null : { x: e.clientX, y: e.clientY, t: performance.now() }; }, { passive: true });
-          field.addEventListener('pointerup', (e) => {
-            const p = press; press = null;
-            if (!p || Math.hypot(e.clientX - p.x, e.clientY - p.y) > 10 || performance.now() - p.t > 600) return;
-            const el = e.target.closest && e.target.closest('.p-home__infinity__g__el');
-            const part = el && el.querySelector('.p-home__infinity__cell__media, .p-home__infinity__testimonial, .p-home__infinity__pow');
-            // quick, so it reads before the page wipes to the case study
-            if (part) bounce(part, 0.9, 1.07, 460);
-          }, { passive: true });
-        }
-        const io = 'IntersectionObserver' in window ? new IntersectionObserver((es) => es.forEach((e) => { if (e.target.__cycle) e.target.__cycle.seen = e.isIntersecting; }), { rootMargin: '80px' }) : null;
-        let photos = null;
-
-        function setup(el) {
-          el.dataset.cycle = '';
-          const link = el.querySelector('[data-link]');
-          const media = el.querySelector('.p-home__infinity__cell__media');
-          const base = media && media.querySelector('img');
-          if (!link || !base) return;
-          const slug = (link.dataset.link.split('/case-study/')[1] || '').replace(/[?#].*$/, '');
-          const first = base.getAttribute('src');
-          const frames = [first].concat((photos[slug] || []).filter((u) => u !== first));
-          if (frames.length < 2) return;
-          const top = document.createElement('img');
-          top.className = 'ihc-cycle'; top.alt = ''; top.decoding = 'async';
-          media.appendChild(top);
-          const st = el.__cycle = { i: 0, seen: !io };
-          if (io) io.observe(el);
-          (async function loop() {
-            await wait(3000 + Math.random() * 7000); // start at different times
-            for (;;) {
-              if (!el.isConnected) return;
-              if (st.seen && !document.hidden && !el.matches(':hover') && !el.classList.contains('active')) {
-                st.i = (st.i + 1) % frames.length;
-                top.src = frames[st.i];
-                try { await top.decode(); } catch (e) { await wait(4000); continue; }
-                const hop = bounce(media);
-                await wait(200);
-                top.classList.add('is-on'); // the new photo lands at the bottom of the dip
-                await hop.finished.catch(() => {});
-                // hand the photo to the bottom layer, then drop the top one
-                base.src = frames[st.i];
-                try { await base.decode(); } catch (e) { /* keep the top layer up */ }
-                top.classList.remove('is-on');
-              }
-              await wait(6000 + Math.random() * 6000);
-            }
-          })();
-        }
-        function scan() {
-          if (!photos) return;
-          document.querySelectorAll('.p-home__infinity__g__el[data-type="cs"]:not([data-cycle])').forEach(setup);
-        }
-        fetch('/content/home-images.json').then((r) => (r.ok ? r.json() : {})).then((j) => { photos = j || {}; scan(); }).catch(() => {});
-        // the field gets rebuilt for category filters and resizes, so pick up new bubbles
-        const grid = document.getElementById('p-home__infinity');
-        if (grid && 'MutationObserver' in window) new MutationObserver(scan).observe(grid, { childList: true });
+        field.addEventListener('pointerdown', (e) => { press = e.pointerType === 'mouse' ? null : { x: e.clientX, y: e.clientY, t: performance.now() }; }, { passive: true });
+        field.addEventListener('pointerup', (e) => {
+          const p = press; press = null;
+          if (!p || Math.hypot(e.clientX - p.x, e.clientY - p.y) > 10 || performance.now() - p.t > 600) return;
+          const el = e.target.closest && e.target.closest('.p-home__infinity__g__el');
+          const part = el && el.querySelector('.p-home__infinity__cell__media, .p-home__infinity__testimonial, .p-home__infinity__pow');
+          // quick, so it reads before the page wipes to the case study
+          if (part) bounce(part);
+        }, { passive: true });
       })();
     </script>
     <script>
