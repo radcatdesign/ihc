@@ -50,6 +50,8 @@ Hover a block in the left column to see a real render of it (on a phone, the Add
 
 **Templates** are saved layouts (intro blocks and sections, with their colors and settings). In a case study, the Templates button saves the current layout as one, either just the layout or with the words and photos, or loads one in (replace the blocks or add its sections to the end; Undo puts things back). The Templates tab on the case study list lists them, opens them in the same editor to change, deletes them, and starts new case studies from them. They live in `content/templates/`.
 
+**Awards** sit under Services in the hero card. They show as filled bubbles ahead of the service bubbles on the case study hero and the Work page, the Work page filter gets an Awards group, and `/work?awards=<slug>` links straight to a filtered list.
+
 **Page settings** holds the page title and description for Google and link previews, whether the page shows on the Work page (with its summary and hover photo) and whether it gets a homepage bubble (category, bubble photo, hover clip, award badge).
 
 **Publish** commits the page, its block data, and any changes to `work.html`, `cms/cs.html`, `sitemap.xml` and `content/index.json` to `main` in one commit. Vercel redeploys and the builder tells you when it's live, usually within a minute or two. If someone else published the same case study after you opened it, it stops and asks you to reload first.

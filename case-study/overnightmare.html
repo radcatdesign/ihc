@@ -406,6 +406,18 @@ window.addEventListener('load',function(){var go=function(){document.querySelect
     <script>
       window.heroServices = window.heroServices || [];
       window.heroServices.push({
+        name: 'Clio Shortlist',
+        slug: 'clio-shortlist',
+        award: true
+      });
+    </script>
+  </div>
+</div>
+              <div role="listitem" class="w-dyn-item">
+  <div class="w-embed w-script">
+    <script>
+      window.heroServices = window.heroServices || [];
+      window.heroServices.push({
         name: 'Event Production',
         slug: 'event-production'
       });
@@ -463,17 +475,6 @@ window.addEventListener('load',function(){var go=function(){document.querySelect
       window.heroServices.push({
         name: 'Digital Strategy',
         slug: 'digital-strategy'
-      });
-    </script>
-  </div>
-</div>
-              <div role="listitem" class="w-dyn-item">
-  <div class="w-embed w-script">
-    <script>
-      window.heroServices = window.heroServices || [];
-      window.heroServices.push({
-        name: 'Clio Shortlist Award',
-        slug: 'clio-shortlist-award'
       });
     </script>
   </div>
@@ -704,6 +705,16 @@ window.addEventListener('load',function(){var go=function(){document.querySelect
                   pointer-events: none;
                   z-index: -1;
                   border: 1px solid #fff;
+                }
+
+                /* award bubbles: filled */
+                .p-cs__hero__bottom__left__category.is-award,
+                .p-cs__hero__bottom__left__category.is-award:hover {
+                  color: #000;
+                }
+
+                .p-cs__hero__bottom__left__category.is-award:before {
+                  background: rgba(255, 255, 255, 1);
                 }
 
                 @media screen and (min-width: 992px) {
@@ -1543,8 +1554,9 @@ window.addEventListener('load',function(){var go=function(){document.querySelect
                       a.dataset.vis = `${i + 7}`;
                       a.dataset.pageTransition = '';
                       a.dataset.splitting = '';
-                      a.href = `/work?services=${s.slug}`;
+                      a.href = s.award ? `/work?awards=${s.slug}` : `/work?services=${s.slug}`;
                       a.classList.add('p-cs__hero__bottom__left__category');
+                      if (s.award) a.classList.add('is-award');
                       a.innerHTML = s.name;
 
                       categoriesEl.appendChild(a);
@@ -3474,7 +3486,7 @@ window.addEventListener('load',function(){var go=function(){document.querySelect
             el.dataset.pageTransitionDirectionInverted = 't';
           });
 
-          document.querySelectorAll('.p-cs__hero__bottom__left__category').forEach((el) => {
+          document.querySelectorAll('.p-cs__hero__bottom__left__category:not(.is-award)').forEach((el) => {
             if (el.innerText.length > 0) {
               const slug = el.innerText.slugify();
               el.href = `${window.location.origin}/work?services=${slug}`;

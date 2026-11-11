@@ -55,10 +55,6 @@
   {
    "name": "Digital Strategy",
    "slug": "digital-strategy"
-  },
-  {
-   "name": "Clio Shortlist Award",
-   "slug": "clio-shortlist-award"
   }
  ],
  "headline": "\"Equally exclusive and accessible for horror newbies and diehards alike. Here's hoping this is only the beginning of the Overnightmare.\"  —Collider",
@@ -330,5 +326,11 @@
    "awardLogo2": "",
    "video": ""
   }
- }
+ },
+ "awards": [
+  {
+   "name": "Clio Shortlist",
+   "slug": "clio-shortlist"
+  }
+ ]
 }

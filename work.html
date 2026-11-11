@@ -318,7 +318,8 @@ window.addEventListener('load',function(){var go=function(){document.querySelect
         pointer-events: none !important;
       }
 
-      [data-filter-block="date"]:has(.p-home__list__filter__bottom__block__values:empty) {
+      [data-filter-block="date"]:has(.p-home__list__filter__bottom__block__values:empty),
+      [data-filter-block="awards"]:has(.p-home__list__filter__bottom__block__values:empty) {
         display: none;
       }
     </style>
@@ -360,7 +361,7 @@ window.addEventListener('load',function(){var go=function(){document.querySelect
         }
 
         @media screen and (min-width: 992px) {
-          .p-home__list__items-item:has(.p-home__list__items-link:hover) {
+          body:not([data-layout="grid"]) .p-home__list__items-item:has(.p-home__list__items-link:hover){
             color: var(--c--yellow);
           }
 
@@ -368,7 +369,7 @@ window.addEventListener('load',function(){var go=function(){document.querySelect
             display: flex;
           }
 
-          .p-home__list__items-link:hover .p-home__list__items-left {
+          body:not([data-layout="grid"]) .p-home__list__items-link:hover .p-home__list__items-left{
             max-width: 100%;
             overflow: hidden;
           }
@@ -381,17 +382,17 @@ window.addEventListener('load',function(){var go=function(){document.querySelect
             -webkit-box-orient: vertical;
           }
 
-          .p-home__list__items-item[data-has-marquee="t"] .p-home__list__items-link:hover .p-home__list__items-left__title.hide {
+          body:not([data-layout="grid"]) .p-home__list__items-item[data-has-marquee="t"] .p-home__list__items-link:hover .p-home__list__items-left__title.hide{
             /* display: flex; */
             opacity: 1;
           }
 
-          .p-home__list__items-item[data-has-marquee="t"] .p-home__list__items-link:hover .p-home__list__items-left .p-home__list__items-left__t-w>.t-title {
+          body:not([data-layout="grid"]) .p-home__list__items-item[data-has-marquee="t"] .p-home__list__items-link:hover .p-home__list__items-left .p-home__list__items-left__t-w>.t-title{
             /* display: none; */
             opacity: 0;
           }
 
-          .p-home__list__items-item[data-has-marquee="t"] .p-home__list__items-link:hover [data-title-splitting] .char {
+          body:not([data-layout="grid"]) .p-home__list__items-item[data-has-marquee="t"] .p-home__list__items-link:hover [data-title-splitting] .char{
             transform: translateY(-170%);
           }
 
@@ -405,15 +406,15 @@ window.addEventListener('load',function(){var go=function(){document.querySelect
             overflow: hidden;
           }
 
-          .p-home__list__items-item:has(.p-home__list__items-link:hover) h6 {
+          body:not([data-layout="grid"]) .p-home__list__items-item:has(.p-home__list__items-link:hover) h6{
             display: flex;
             height: auto;
             width: auto;
             opacity: 1;
           }
 
-          .p-home__list__items-item:has(.p-home__list__items-link:hover) .p-home__list__items-summary,
-          .p-home__list__items-item:has(.p-home__list__items-link:hover) .p-home__list__items-services {
+          body:not([data-layout="grid"]) .p-home__list__items-item:has(.p-home__list__items-link:hover) .p-home__list__items-summary,
+          body:not([data-layout="grid"]) .p-home__list__items-item:has(.p-home__list__items-link:hover) .p-home__list__items-services{
             display: flex;
             height: auto;
             width: auto;
@@ -427,7 +428,7 @@ window.addEventListener('load',function(){var go=function(){document.querySelect
             transition: all ease 300ms 200ms;
           }
 
-          .p-home__list__items-item:has(.p-home__list__items-link:hover) .p-home__list__items-link__category {
+          body:not([data-layout="grid"]) .p-home__list__items-item:has(.p-home__list__items-link:hover) .p-home__list__items-link__category{
             opacity: 1;
           }
 
@@ -512,6 +513,236 @@ window.addEventListener('load',function(){var go=function(){document.querySelect
           outline-offset: 4px;
         }
 
+        /* sort on the left, list/grid on the right, one row across the full width */
+        .p-home__list__top__c > .ihc-top-row {
+          grid-column: 1 / -1 !important;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 16px;
+        }
+
+        .ihc-view {
+          display: flex;
+          gap: 4px;
+          margin-right: -8px;
+        }
+
+        .ihc-view__btn {
+          appearance: none;
+          background: none;
+          border: 0;
+          margin: 0;
+          padding: 8px;
+          color: inherit;
+          cursor: pointer;
+          line-height: 0;
+          opacity: 0.4;
+          transition: opacity 200ms ease;
+        }
+
+        .ihc-view__btn svg {
+          fill: currentColor;
+          display: block;
+        }
+
+        .ihc-view__btn[aria-pressed="true"],
+        .ihc-view__btn:hover {
+          opacity: 1;
+        }
+
+        .ihc-view__btn:focus-visible {
+          outline: 2px solid currentColor;
+          outline-offset: 0;
+          border-radius: 4px;
+        }
+
+        /* Award bubbles: filled, ahead of the service bubbles */
+        .p-home__list__items-link__category.is-award {
+          background-color: currentColor;
+          border-color: currentColor;
+        }
+
+        .p-home__list__items-link__category.is-award > div {
+          color: var(--c--yellow);
+        }
+
+        .p-home__body[data-color="blue"] .p-home__list__items-link__category.is-award > div {
+          color: var(--c--blue);
+        }
+
+        .p-home__body[data-color="red"] .p-home__list__items-link__category.is-award > div {
+          color: var(--c--red);
+        }
+
+        @media screen and (min-width: 992px) {
+          body:not([data-layout="grid"]) .p-home__list__items-item:has(.p-home__list__items-link:hover) .p-home__list__items-link__category.is-award > div {
+            color: #000;
+          }
+        }
+
+        /* Grid view: photo cards. Same items, so sorting and filters work the same. */
+        .ihc-thumb {
+          display: none;
+        }
+
+        body[data-layout="grid"] #p-home__list__items-list {
+          display: grid;
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+          gap: 56px 24px;
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 36px 14px 120px;
+          box-sizing: border-box;
+          overflow: visible;
+        }
+
+        body[data-layout="grid"] .p-home__list__items-item {
+          padding: 0;
+          flex-direction: column;
+          justify-content: flex-start;
+          min-width: 0;
+        }
+
+        body[data-layout="grid"] .p-home__list__items-item:before,
+        body[data-layout="grid"] .p-home__list__items-item:after {
+          display: none;
+        }
+
+        body[data-layout="grid"] .p-home__list__items-link,
+        body[data-layout="grid"] .p-home__list__items-link:not(:hover) {
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+          position: relative;
+          border-top: 0;
+          padding: 0;
+          max-width: none;
+          width: 100%;
+        }
+
+        body[data-layout="grid"] .ihc-thumb {
+          display: block;
+          position: relative;
+          aspect-ratio: 4 / 3;
+          overflow: hidden;
+          border-radius: 24px;
+          background: rgba(0, 0, 0, 0.08);
+        }
+
+        body[data-layout="grid"] .ihc-thumb .p-home__list__items-bg {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: scale 600ms cubic-bezier(.25, .46, .45, .94);
+        }
+
+        body[data-layout="grid"] .p-home__list__items-link:hover .ihc-thumb .p-home__list__items-bg {
+          scale: 1.05;
+        }
+
+        body[data-layout="grid"] .p-home__list__items-left {
+          min-height: 0;
+          max-width: none;
+          gap: 4px;
+          justify-content: flex-start;
+        }
+
+        body[data-layout="grid"] .p-home__list__items-left__client {
+          margin: 0;
+        }
+
+        body[data-layout="grid"] .p-home__list__items-link .t-title:not(.no-wrap) {
+          font-size: 40px;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+
+        body[data-layout="grid"] .p-home__list__items-left__title,
+        body[data-layout="grid"] .p-home__list__items-summary {
+          display: none !important;
+        }
+
+        /* only the award bubbles show in grid, pinned to the photo */
+        body[data-layout="grid"] .p-home__list__items-link .p-home__list__items-services {
+          position: absolute;
+          top: 14px;
+          left: 14px;
+          right: 14px;
+          z-index: 2;
+          width: auto;
+          height: auto;
+          opacity: 1;
+          overflow: visible;
+          padding: 0;
+          color: inherit;
+          justify-content: flex-start;
+          pointer-events: none;
+        }
+
+        body[data-layout="grid"] .p-home__list__items-services .p-home__list__items-link__category:not(.is-award) {
+          display: none;
+        }
+
+        body[data-layout="grid"] .p-home__list__items-services .p-home__list__items-link__category.is-award,
+        body[data-layout="grid"] .p-home__list__items-services .p-home__list__items-link__category.is-award:hover {
+          opacity: 1;
+          pointer-events: auto;
+          color: inherit;
+          background-color: currentColor;
+          padding: 4px 8px 3px;
+        }
+
+        @media screen and (max-width: 991px) {
+          body[data-layout="grid"] #p-home__list__items-list {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 40px 16px;
+          }
+
+          body[data-layout="grid"] .p-home__list__items-link .t-title:not(.no-wrap) {
+            font-size: 32px;
+          }
+        }
+
+        @media screen and (max-width: 600px) {
+          body[data-layout="grid"] #p-home__list__items-list {
+            gap: 28px 12px;
+            padding-top: 24px;
+          }
+
+          body[data-layout="grid"] .ihc-thumb {
+            aspect-ratio: 1;
+            border-radius: 16px;
+          }
+
+          body[data-layout="grid"] .p-home__list__items-link {
+            gap: 8px;
+          }
+
+          body[data-layout="grid"] .p-home__list__items-left__client {
+            font-size: 10px;
+          }
+
+          body[data-layout="grid"] .p-home__list__items-link .t-title:not(.no-wrap) {
+            font-size: 22px;
+          }
+
+          body[data-layout="grid"] .p-home__list__items-link .p-home__list__items-services {
+            top: 8px;
+            left: 8px;
+            right: 8px;
+          }
+
+          body[data-layout="grid"] .p-home__list__items-services .p-home__list__items-link__category.is-award {
+            font-size: 10px;
+            padding: 3px 7px 2px;
+          }
+        }
+
         @media screen and (max-width: 991px) {
           .p-home__list__top.n {
             display: block;
@@ -553,58 +784,58 @@ window.addEventListener('load',function(){var go=function(){document.querySelect
 
         @media screen and (min-width: 992px) {
 
-          .p-home__list__items-item:has(.p-home__list__items-link:hover):before,
-          .p-home__list__items-item:has(.p-home__list__items-link:hover):after {
+          body:not([data-layout="grid"]) .p-home__list__items-item:has(.p-home__list__items-link:hover):before,
+          body:not([data-layout="grid"]) .p-home__list__items-item:has(.p-home__list__items-link:hover):after{
             /* height: calc(100% + 2px); */
             height: 100%;
             top: 0%;
           }
 
-          .p-home__list__items-list:has(.p-home__list__items-link:hover) .p-home__list__items-link:not(:hover) {
+          body:not([data-layout="grid"]) .p-home__list__items-list:has(.p-home__list__items-link:hover) .p-home__list__items-link:not(:hover){
             color: rgba(255, 255, 255, 0.2) !important;
             border-color: rgba(255, 255, 255, 0.2) !important;
           }
 
-          .p-home__list__items-list:has(.p-home__list__items-link:hover) .p-home__list__items-link:hover {
+          body:not([data-layout="grid"]) .p-home__list__items-list:has(.p-home__list__items-link:hover) .p-home__list__items-link:hover{
             border-color: rgba(255, 255, 255, 0.2) !important;
           }
 
-          .p-home__list:has(.p-home__list__items-link:hover) .p-home__list__top {
+          body:not([data-layout="grid"]) .p-home__list:has(.p-home__list__items-link:hover) .p-home__list__top{
             color: rgba(255, 255, 255, 0.2) !important;
           }
 
-          .p-home__list:has(.p-home__list__items-link:hover) .p-home__list__top [data-list-order="asc"]:after {
+          body:not([data-layout="grid"]) .p-home__list:has(.p-home__list__items-link:hover) .p-home__list__top [data-list-order="asc"]:after{
             border-top-color: rgba(255, 255, 255, 0.2) !important;
           }
 
-          .p-home__list:has(.p-home__list__items-link:hover) .p-home__list__top [data-list-order="desc"]:after {
+          body:not([data-layout="grid"]) .p-home__list:has(.p-home__list__items-link:hover) .p-home__list__top [data-list-order="desc"]:after{
             border-bottom-color: rgba(255, 255, 255, 0.2) !important;
           }
 
-          .p-home__list:has(.p-home__list__items-link:hover) .p-home__list__top__c:before {
+          body:not([data-layout="grid"]) .p-home__list:has(.p-home__list__items-link:hover) .p-home__list__top__c:before{
             background: rgba(255, 255, 255, 0.0) !important;
           }
 
 
-          .p-home__list:has(.p-home__list__items-link:hover) .p-home__list__filter,
-          .p-home__list:has(.p-home__list__items-link:hover) .p-home__list__title__text {
+          body:not([data-layout="grid"]) .p-home__list:has(.p-home__list__items-link:hover) .p-home__list__filter,
+          body:not([data-layout="grid"]) .p-home__list:has(.p-home__list__items-link:hover) .p-home__list__title__text{
             color: rgba(255, 255, 255, 0.2) !important;
           }
 
-          .p-home__list:has(.p-home__list__items-link:hover) .p-home__list__filter__top,
-          .p-home__list:has(.p-home__list__items-link:hover) .p-home__list__filter__bottom,
-          .p-home__list:has(.p-home__list__items-link:hover) .p-home__list__filter__bottom__block,
-          .p-home__list:has(.p-home__list__items-link:hover) .p-home__list__filter__bottom__block__value {
+          body:not([data-layout="grid"]) .p-home__list:has(.p-home__list__items-link:hover) .p-home__list__filter__top,
+          body:not([data-layout="grid"]) .p-home__list:has(.p-home__list__items-link:hover) .p-home__list__filter__bottom,
+          body:not([data-layout="grid"]) .p-home__list:has(.p-home__list__items-link:hover) .p-home__list__filter__bottom__block,
+          body:not([data-layout="grid"]) .p-home__list:has(.p-home__list__items-link:hover) .p-home__list__filter__bottom__block__value{
             border-color: rgba(255, 255, 255, 0.2) !important;
           }
 
-          .p-home__list:has(.p-home__list__items-link:hover) .p-home__list__filter__bottom__block__value.active {
+          body:not([data-layout="grid"]) .p-home__list:has(.p-home__list__items-link:hover) .p-home__list__filter__bottom__block__value.active{
             border-color: rgba(255, 255, 255, 0.0) !important;
             background: rgba(255, 255, 255, 0.2) !important;
             color: rgba(0, 0, 0, 0.5) !important;
           }
 
-          .p-home__list:has(.p-home__list__items-link:hover) #filter-icon path {
+          body:not([data-layout="grid"]) .p-home__list:has(.p-home__list__items-link:hover) #filter-icon path{
             fill: rgba(255, 255, 255, 0.2) !important;
           }
         }
@@ -647,7 +878,7 @@ window.addEventListener('load',function(){var go=function(){document.querySelect
         }
 
         @media screen and (min-width: 992px) {
-          .p-home__body .p-home__list__items-link:hover .t-title {
+          .p-home__body:not([data-layout="grid"]) .p-home__list__items-link:hover .t-title{
             -webkit-text-stroke-color: #fff;
             -webkit-text-stroke-width: 1px;
             color: transparent;
@@ -833,7 +1064,7 @@ window.addEventListener('load',function(){var go=function(){document.querySelect
           pointer-events: none;
         }
 
-        body:has(.p-home__list__items-link:hover) canvas.webgl {
+        body:not([data-layout="grid"]):has(.p-home__list__items-link:hover) canvas.webgl{
           opacity: 0;
         }
 
@@ -865,12 +1096,12 @@ window.addEventListener('load',function(){var go=function(){document.querySelect
             /* color: transparent; */
           }
 
-          .p-home__list__items-list .p-home__list__items-link:hover .t-title[data-title-splitting] {
+          body:not([data-layout="grid"]) .p-home__list__items-list .p-home__list__items-link:hover .t-title[data-title-splitting]{
             -webkit-text-stroke-color: #fff;
             -webkit-text-stroke-width: 1px;
           }
 
-          .p-home__list__items-list:has(.p-home__list__items-link:hover) .p-home__list__items-link:not(:hover) .t-title[data-title-splitting] {
+          body:not([data-layout="grid"]) .p-home__list__items-list:has(.p-home__list__items-link:hover) .p-home__list__items-link:not(:hover) .t-title[data-title-splitting]{
             -webkit-text-stroke-color: #fff;
             -webkit-text-stroke-width: 1px;
             color: transparent;
@@ -896,7 +1127,7 @@ window.addEventListener('load',function(){var go=function(){document.querySelect
             transition-delay: calc(var(--char-index) * 25ms);
           }
 
-          .p-home__list__items-link:hover [data-title-splitting] .char {
+          body:not([data-layout="grid"]) .p-home__list__items-link:hover [data-title-splitting] .char{
             transform: translateY(-170%);
           }
         }
@@ -1584,6 +1815,10 @@ window.addEventListener('load',function(){var go=function(){document.querySelect
             </div>
           </div>
           <div id="filter-expand" class="p-home__list__filter__bottom w-node-_1a07641b-a9f3-e9ec-131d-b550c1337388-a6a8c77e">
+            <div data-filter-block="awards" class="p-home__list__filter__bottom__block">
+              <h6 class="p-home__list__filter__bottom__block__title">AWARDS</h6>
+              <div data-filters-awards="" class="p-home__list__filter__bottom__block__values"></div>
+            </div>
             <div class="p-home__list__filter__bottom__block">
               <h6 class="p-home__list__filter__bottom__block__title">SERVICES</h6>
               <div data-filters-services="" class="p-home__list__filter__bottom__block__values">
@@ -1640,8 +1875,9 @@ window.addEventListener('load',function(){var go=function(){document.querySelect
       </div>
       <div class="p-home__list__top n">
         <div class="p-home__list__top__c">
-          <div id="w-node-df1b31b6-3c4d-dbab-7a2c-5b05a88f0fe9-a6a8c77e" class="p-home__list__top__c__col">
+          <div id="w-node-df1b31b6-3c4d-dbab-7a2c-5b05a88f0fe9-a6a8c77e" class="p-home__list__top__c__col ihc-top-row">
             <h4 class="ihc-sort" role="group" aria-label="Sort case studies"><button type="button" data-sort="project" data-list-order="asc" aria-pressed="true" class="p-home__list__top__click ihc-sort__btn">project</button><button type="button" data-sort="client" aria-pressed="false" class="p-home__list__top__click ihc-sort__btn">client</button><button type="button" data-sort="year" aria-pressed="false" class="p-home__list__top__click ihc-sort__btn">year</button></h4>
+            <div class="ihc-view" role="group" aria-label="View"><button type="button" data-layout="list" aria-pressed="true" aria-label="List view" title="List view" class="ihc-view__btn"><svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><rect y="2" width="18" height="3" /><rect y="7.5" width="18" height="3" /><rect y="13" width="18" height="3" /></svg></button><button type="button" data-layout="grid" aria-pressed="false" aria-label="Grid view" title="Grid view" class="ihc-view__btn"><svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><rect width="8" height="8" /><rect x="10" width="8" height="8" /><rect y="10" width="8" height="8" /><rect x="10" y="10" width="8" height="8" /></svg></button></div>
           </div>
           <div id="w-node-df1b31b6-3c4d-dbab-7a2c-5b05a88f0fec-a6a8c77e" class="p-home__list__top__c__col hide-mobile">
             <h4 class="hide">summary</h4>
@@ -1826,6 +2062,9 @@ window.addEventListener('load',function(){var go=function(){document.querySelect
             </a>
             <div class="hide w-dyn-list">
               <div role="list" class="p-home__list__items-link__categories w-dyn-items">
+                <div data-btn-splitting="" data-filter-award="silver-clio" data-splitting="" role="listitem" class="p-home__list__items-link__category is-award w-dyn-item">
+                  <div>Silver Clio</div>
+                </div>
                 <div data-btn-splitting="" data-filter-cat="creative-direction" data-splitting="" role="listitem" class="p-home__list__items-link__category w-dyn-item">
                   <div>Creative Direction</div>
                 </div>
@@ -3572,6 +3811,9 @@ window.addEventListener('load',function(){var go=function(){document.querySelect
             </a>
             <div class="hide w-dyn-list">
               <div role="list" class="p-home__list__items-link__categories w-dyn-items">
+                <div data-btn-splitting="" data-filter-award="clio-shortlist" data-splitting="" role="listitem" class="p-home__list__items-link__category is-award w-dyn-item">
+                  <div>Clio Shortlist</div>
+                </div>
                 <div data-btn-splitting="" data-filter-cat="event-production" data-splitting="" role="listitem" class="p-home__list__items-link__category w-dyn-item">
                   <div>Event Production</div>
                 </div>
@@ -5172,7 +5414,7 @@ window.addEventListener('load',function(){var go=function(){document.querySelect
             cEl.addEventListener('click', e => {
               e.stopPropagation();
               e.preventDefault();
-              const btn = document.querySelector(`[data-filter-services="${cEl.dataset.filterCat}"]`);
+              const btn = document.querySelector(`#filter-expand [data-filter-services="${cEl.dataset.filterCat}"]`);
               if (btn) btn.click();
             });
           });
@@ -5251,7 +5493,7 @@ window.addEventListener('load',function(){var go=function(){document.querySelect
           const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
           const vh = window.innerHeight;
           const before = new Map();
-          if (animate && !reduce) els.forEach((el) => { if (el.style.display !== 'none') before.set(el, el.getBoundingClientRect().top); });
+          if (animate && !reduce) els.forEach((el) => { if (el.style.display !== 'none') before.set(el, el.getBoundingClientRect()); });
           const sorted = els.slice().sort((a, b) => {
             const A = info.get(a), B = info.get(b);
             if (state.by === 'year' && (!A.date || !B.date)) {
@@ -5267,13 +5509,13 @@ window.addEventListener('load',function(){var go=function(){document.querySelect
           if (!before.size) return;
           sorted.forEach((el, i) => {
             if (!before.has(el)) return;
-            const now = el.getBoundingClientRect().top;
-            if (now > vh + 200 || now + el.offsetHeight < -200) return;
-            const dy = before.get(el) - now;
+            const r = el.getBoundingClientRect();
+            if (r.top > vh + 200 || r.bottom < -200) return;
+            const dx = before.get(el).left - r.left, dy = before.get(el).top - r.top;
             const opts = { duration: 520, easing: 'cubic-bezier(.2,.8,.2,1)', delay: Math.min(i, 8) * 18 };
-            if (Math.abs(dy) < 1) return;
+            if (Math.abs(dx) < 1 && Math.abs(dy) < 1) return;
             if (Math.abs(dy) > vh) el.animate([{ opacity: 0, translate: '0 32px' }, { opacity: 1, translate: '0 0' }], opts);
-            else el.animate([{ translate: `0 ${dy}px` }, { translate: '0 0' }], opts);
+            else el.animate([{ translate: `${dx}px ${dy}px` }, { translate: '0 0' }], opts);
           });
         }
 
@@ -5296,6 +5538,58 @@ window.addEventListener('load',function(){var go=function(){document.querySelect
         if (state.by !== 'project' || state.dir !== 'asc') apply(false);
       }
 
+      // List or grid. Grid shows each project's Work photo as a card; the items are the
+      // same elements, so sorting and filters carry over. Remembered per browser.
+      function listView() {
+        const btns = [...document.querySelectorAll('.ihc-view__btn')];
+        const listEl = document.getElementById('p-home__list__items-list');
+        if (!btns.length || !listEl) return;
+        // put each card photo inside its link so the whole card opens the case study
+        listEl.querySelectorAll('.p-home__list__items-item').forEach((item) => {
+          const img = item.querySelector(':scope > .p-home__list__items-bg');
+          const link = item.querySelector('.p-home__list__items-link');
+          if (!img || !link) return;
+          const thumb = document.createElement('span');
+          thumb.className = 'ihc-thumb';
+          img.setAttribute('sizes', '(min-width: 992px) 400px, 50vw');
+          thumb.appendChild(img);
+          link.prepend(thumb);
+        });
+        let layout = 'list';
+        try {
+          const q = new URLSearchParams(location.search).get('view');
+          const saved = localStorage.getItem('ihc-work-layout');
+          if (q === 'grid' || q === 'list') layout = q;
+          else if (saved === 'grid') layout = 'grid';
+        } catch (e) {}
+        const set = (next, animate) => {
+          layout = next;
+          document.body.dataset.layout = layout;
+          btns.forEach((b) => b.setAttribute('aria-pressed', b.dataset.layout === layout ? 'true' : 'false'));
+          // long titles scroll on hover in the list; re-measure once the list is showing
+          if (layout === 'list' && animate) requestAnimationFrame(() => {
+            const a = listEl.querySelector('.p-home__list__items-link');
+            if (!a) return;
+            const max = Math.floor(a.offsetWidth * 0.42 - 32);
+            listEl.querySelectorAll('.p-home__list__items-item').forEach((el) => {
+              const t = el.querySelector('.t-title');
+              if (t && t.offsetWidth > max) el.dataset.hasMarquee = 't';
+              else delete el.dataset.hasMarquee;
+            });
+          });
+          if (animate && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            listEl.animate([{ opacity: 0, translate: '0 16px' }, { opacity: 1, translate: '0 0' }], { duration: 420, easing: 'cubic-bezier(.2,.8,.2,1)' });
+          }
+        };
+        btns.forEach((b) => b.addEventListener('click', (e) => {
+          e.preventDefault();
+          if (b.dataset.layout === layout) return;
+          try { localStorage.setItem('ihc-work-layout', b.dataset.layout); } catch (err) {}
+          set(b.dataset.layout, true);
+        }));
+        set(layout, false);
+      }
+
       function startFilter() {
         const filterEl = document.getElementById('p-home__list__filter');
         const filterTopEL = document.getElementById('p-home__list__filter__top');
@@ -5308,10 +5602,12 @@ window.addEventListener('load',function(){var go=function(){document.querySelect
         const filtersClientEl = filterEl.querySelector('[data-filters-client]');
         const filtersServicesEl = filterEl.querySelector('[data-filters-services]');
         const filtersDatesEl = filterEl.querySelector('[data-filters-dates]');
+        const filtersAwardsEl = filterEl.querySelector('[data-filters-awards]');
 
         const clientList = {};
         const servicesList = {};
         const dateList = {};
+        const awardList = {};
 
         const months = {
           Jan: '01',
@@ -5356,6 +5652,24 @@ window.addEventListener('load',function(){var go=function(){document.querySelect
             servicesList[cat.dataset.filterCat] = cat.innerText;
           }
         });
+
+        // awards: filled bubbles on the projects, and their own filter block
+        document.querySelectorAll('.p-home__list__items-item').forEach(item => {
+          const slugs = [];
+          item.querySelectorAll('[data-filter-award]').forEach(a => {
+            slugs.push(a.dataset.filterAward);
+            if (!awardList[a.dataset.filterAward]) awardList[a.dataset.filterAward] = a.textContent.trim();
+            a.addEventListener('click', e => {
+              e.stopPropagation();
+              e.preventDefault();
+              const btn = filterEl.querySelector(`#filter-expand [data-filter-awards="${a.dataset.filterAward}"]`);
+              if (btn) btn.click();
+            });
+          });
+          item.dataset.awards = slugs.join(' ');
+        });
+        filtersAwardsEl.innerHTML = Object.keys(awardList).sort((a, b) => awardList[a].localeCompare(awardList[b])).map(k =>
+          `<div data-filter-awards="${k}" class="p-home__list__filter__bottom__block__value" data-splitting data-btn-splitting>${awardList[k]}</div>`).join('');
 
         document.querySelectorAll('.p-home__list__items-link h6').forEach(client => {
           client.innerText.split(/,|•/).map((s, i) => {
@@ -5431,7 +5745,12 @@ window.addEventListener('load',function(){var go=function(){document.querySelect
           const activeClients = [];
           const activeServices = [];
           const activeDates = [];
+          const activeAwards = [];
 
+          filterEl.querySelectorAll('#filter-expand .p-home__list__filter__bottom__block__value.active[data-filter-awards]')
+            .forEach(el => {
+              activeAwards.push(el.dataset.filterAwards);
+            });
           filterEl.querySelectorAll('#filter-expand .p-home__list__filter__bottom__block__value.active[data-filter-client]')
             .forEach(el => {
               activeClients.push(el.dataset.filterClient);
@@ -5449,6 +5768,7 @@ window.addEventListener('load',function(){var go=function(){document.querySelect
             let hasClients = false;
             let hasServices = false;
             let hasDates = false;
+            const hasAwards = !activeAwards.length || activeAwards.some(a => (w.dataset.awards || '').split(' ').includes(a));
 
             if (!activeClients.length && !activeServices.length && !activeDates.length) {
               hasClients = true;
@@ -5486,7 +5806,7 @@ window.addEventListener('load',function(){var go=function(){document.querySelect
               }
             }
 
-            if (activeClients.length || activeServices.length || activeDates.length) {
+            if (activeClients.length || activeServices.length || activeDates.length || activeAwards.length) {
               resetEl.classList.add('active');
               activeQtyEl.classList.add('active');
             } else {
@@ -5494,7 +5814,7 @@ window.addEventListener('load',function(){var go=function(){document.querySelect
               activeQtyEl.classList.remove('active');
             }
 
-            w.style.display = hasClients && hasServices && hasDates ? 'flex' : 'none';
+            w.style.display = hasClients && hasServices && hasDates && hasAwards ? 'flex' : 'none';
           });
         }
 
@@ -5544,6 +5864,14 @@ window.addEventListener('load',function(){var go=function(){document.querySelect
           });
         });
 
+        filterEl.querySelectorAll('[data-filter-awards]').forEach(item => {
+          item.addEventListener('click', () => {
+            item.classList.toggle('active');
+            filterWorks();
+            verifyActiveFilterItems();
+          });
+        });
+
         filterEl.querySelectorAll('[data-filter-date]').forEach(item => {
           item.addEventListener('click', () => {
             item.classList.toggle('active');
@@ -5571,6 +5899,11 @@ window.addEventListener('load',function(){var go=function(){document.querySelect
           const el = document.querySelector(`[data-filter-services="${servicesFilter}"]`);
           if (el) el.click();
         }
+        const awardsFilter = urlParams.get('awards');
+        if (awardsFilter) {
+          const el = document.querySelector(`[data-filter-awards="${awardsFilter}"]`);
+          if (el) el.click();
+        }
         document.body.dataset.loaded = 't';
       }
 
@@ -5589,6 +5922,7 @@ window.addEventListener('load',function(){var go=function(){document.querySelect
       function init() {
         window.setTimeout(insertCategoriesInListItems, 500);
         fixListItemsLink();
+        listView();
         listOrder();
         startFilter();
         window.setTimeout(verifyUrlParams, 700);

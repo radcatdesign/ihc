@@ -673,6 +673,16 @@ window.addEventListener('load',function(){var go=function(){document.querySelect
                   border: 1px solid #fff;
                 }
 
+                /* award bubbles: filled */
+                .p-cs__hero__bottom__left__category.is-award,
+                .p-cs__hero__bottom__left__category.is-award:hover {
+                  color: #000;
+                }
+
+                .p-cs__hero__bottom__left__category.is-award:before {
+                  background: rgba(255, 255, 255, 1);
+                }
+
                 @media screen and (min-width: 992px) {
                   .p-cs__hero__bottom__left__category:hover:before {
                     background: rgba(255, 255, 255, 1);
@@ -1510,8 +1520,9 @@ window.addEventListener('load',function(){var go=function(){document.querySelect
                       a.dataset.vis = `${i + 7}`;
                       a.dataset.pageTransition = '';
                       a.dataset.splitting = '';
-                      a.href = `/work?services=${s.slug}`;
+                      a.href = s.award ? `/work?awards=${s.slug}` : `/work?services=${s.slug}`;
                       a.classList.add('p-cs__hero__bottom__left__category');
+                      if (s.award) a.classList.add('is-award');
                       a.innerHTML = s.name;
 
                       categoriesEl.appendChild(a);
@@ -3454,7 +3465,7 @@ window.addEventListener('load',function(){var go=function(){document.querySelect
             el.dataset.pageTransitionDirectionInverted = 't';
           });
 
-          document.querySelectorAll('.p-cs__hero__bottom__left__category').forEach((el) => {
+          document.querySelectorAll('.p-cs__hero__bottom__left__category:not(.is-award)').forEach((el) => {
             if (el.innerText.length > 0) {
               const slug = el.innerText.slugify();
               el.href = `${window.location.origin}/work?services=${slug}`;

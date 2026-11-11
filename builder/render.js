@@ -342,8 +342,10 @@
     return ind(4, L) + '\n';
   }
 
-  function heroServices(list) {
-    if (!list || !list.length) {
+  // Hero bubbles: awards first (filled), then services. Both link to the Work page filtered.
+  function heroServices(list, awards) {
+    list = (awards || []).map(function (a) { return { name: a.name, slug: a.slug, award: true }; }).concat(list || []);
+    if (!list.length) {
       return ['            <div class="w-dyn-empty">', '              <div>No items found.</div>', '            </div>', ''].join('\n');
     }
     var items = list.map(function (s) {
@@ -354,12 +356,13 @@
         '      window.heroServices = window.heroServices || [];',
         '      window.heroServices.push({',
         "        name: '" + jsq(s.name) + "',",
-        "        slug: '" + jsq(s.slug || slugify(s.name)) + "'",
+        "        slug: '" + jsq(s.slug || slugify(s.name)) + "'" + (s.award ? ',' : ''),
+        s.award ? '        award: true' : null,
         '      });',
         '    </script>',
         '  </div>',
         '</div>'
-      ].join('\n');
+      ].filter(function (l) { return l !== null; }).join('\n');
     });
     return '            <div role="list" class="w-dyn-items">\n' + ind(14, items) + '\n            </div>\n';
   }
@@ -382,7 +385,7 @@
       pageId: d.pageId || newPageId(),
       meta: meta(d),
       robots: d.noindex ? '    <meta content="noindex" name="robots" />\n' : '',
-      services: heroServices(d.services),
+      services: heroServices(d.services, d.awards),
       title: esc(d.title),
       client: esc(d.client),
       subtitle: esc(d.subtitle),
@@ -405,12 +408,15 @@
     var name = d.title || '';
     var client = d.client;
     var services = (d.services || []).slice(0, 5); // the Work list shows up to five
+    var awards = d.awards || [];
     var href = w.href || '/case-study/' + d.slug;
     var bg = w.bg;
-    var cats = services.length
-      ? '    <div role="list" class="p-home__list__items-link__categories w-dyn-items">\n' + services.map(function (s) {
+    var cats = services.length || awards.length
+      ? '    <div role="list" class="p-home__list__items-link__categories w-dyn-items">\n' + awards.map(function (a) {
+        return '      <div data-btn-splitting="" data-filter-award="' + attr(a.slug || slugify(a.name)) + '" data-splitting="" role="listitem" class="p-home__list__items-link__category is-award w-dyn-item">\n        <div>' + esc(a.name) + '</div>\n      </div>';
+      }).concat(services.map(function (s) {
         return '      <div data-btn-splitting="" data-filter-cat="' + attr(s.slug || slugify(s.name)) + '" data-splitting="" role="listitem" class="p-home__list__items-link__category w-dyn-item">\n        <div>' + esc(s.name) + '</div>\n      </div>';
-      }).join('\n') + '\n    </div>'
+      })).join('\n') + '\n    </div>'
       : '    <div class="w-dyn-empty">\n      <div>No items found.</div>\n    </div>';
     var img = '';
     if (bg && bg.src) {
@@ -507,6 +513,7 @@
       year: (l.work && l.work.year) || '',
       month: (l.work && l.work.month) || '',
       services: (d.services || []).map(function (x) { return x.name; }).filter(Boolean),
+      awards: (d.awards || []).map(function (x) { return x.name; }).filter(Boolean),
       sections: (d.sections || []).length
     };
   }
@@ -585,6 +592,11 @@
       if (!idx.services.some(function (x) { return x.slug === s.slug; })) idx.services.push({ name: s.name, slug: s.slug });
     });
     idx.services.sort(function (a, b) { return a.name.localeCompare(b.name); });
+    idx.awards = idx.awards || [];
+    (d.awards || []).forEach(function (s) {
+      if (!idx.awards.some(function (x) { return x.slug === s.slug; })) idx.awards.push({ name: s.name, slug: s.slug });
+    });
+    idx.awards.sort(function (a, b) { return a.name.localeCompare(b.name); });
     var cat = d.listing && d.listing.home && d.listing.home.category;
     if (cat && idx.categories.indexOf(cat) < 0) { idx.categories.push(cat); idx.categories.sort(); }
     return JSON.stringify(idx, null, 1) + '\n';

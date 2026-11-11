@@ -232,5 +232,11 @@
    "awardLogo2": "",
    "video": ""
   }
- }
+ },
+ "awards": [
+  {
+   "name": "Silver Clio",
+   "slug": "silver-clio"
+  }
+ ]
 }

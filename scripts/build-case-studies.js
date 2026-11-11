@@ -64,17 +64,20 @@ for (const f of fs.readdirSync(dir).sort((a, b) => (a.slice(0, -5) < b.slice(0, 
   n++;
 }
 
-// content/index.json: the builder's list of case studies, services and homepage categories.
+// content/index.json: the builder's list of case studies, services, awards and homepage categories.
 const services = new Map();
+const awards = new Map();
 const categories = new Set();
 for (const d of all) {
   for (const s of d.services || []) if (!services.has(s.slug)) services.set(s.slug, s.name);
+  for (const a of d.awards || []) if (!awards.has(a.slug)) awards.set(a.slug, a.name);
   const home = d.listing && d.listing.home;
   if (home && home.category) categories.add(home.category);
 }
 const index = {
   caseStudies: all.map((d) => R.indexEntry(d)),
   services: [...services].map(([slug, name]) => ({ name, slug })).sort((a, b) => a.name.localeCompare(b.name)),
+  awards: [...awards].map(([slug, name]) => ({ name, slug })).sort((a, b) => a.name.localeCompare(b.name)),
   categories: [...categories].sort(),
 };
 fs.writeFileSync(path.join(ROOT, 'content', 'index.json'), JSON.stringify(index, null, 1) + '\n');

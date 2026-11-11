@@ -342,7 +342,7 @@ async function renderLibrary(app) {
     if (v.service && !(c.services || []).includes(v.service)) return false;
     if (v.client && !clientsOf(c).some((n) => n.toLowerCase() === v.client)) return false;
     if (v.year && (v.year === '-' ? c.year : c.year !== v.year)) return false;
-    if (q && !(c.title + ' ' + c.client + ' ' + c.slug + ' ' + (c.services || []).join(' ')).toLowerCase().includes(q)) return false;
+    if (q && !(c.title + ' ' + c.client + ' ' + c.slug + ' ' + (c.services || []).join(' ') + ' ' + (c.awards || []).join(' ')).toLowerCase().includes(q)) return false;
     return true;
   };
   const byName = (a, b) => R.sortKey(a.title).localeCompare(R.sortKey(b.title));
@@ -806,7 +806,7 @@ async function loadTemplateModal() {
 function blankCaseStudy(slug, title, client) {
   return {
     slug, pageId: R.newPageId(), title, seoTitle: title, description: '', noindex: false,
-    client, subtitle: '', heroImage: null, heroVimeo: '', stats: [], services: [],
+    client, subtitle: '', heroImage: null, heroVimeo: '', stats: [], services: [], awards: [],
     headline: '', intro: '',
     introPieces: [TYPES.introGallery.make()],
     sections: [{ title: 'The idea', pieces: [TYPES.text.make(), TYPES.gallery.make()] }],
@@ -913,6 +913,7 @@ async function openCaseStudy(slug) {
 function normalize(cs) {
   cs.stats = cs.stats || [];
   cs.services = cs.services || [];
+  cs.awards = cs.awards || [];
   cs.introPieces = cs.introPieces || [];
   cs.sections = cs.sections || [];
   cs.listing = cs.listing || { listed: false };
@@ -1376,7 +1377,9 @@ function heroCard(cs) {
         }),
         h('label', { class: 'field', style: { marginTop: '10px' } }, h('span', {}, 'Background video (optional)'), vimeo, h('small', {}, 'A Vimeo link plays behind the title instead of the photo.'))),
       h('div', { class: 'field' }, h('span', {}, 'Bubbles over the hero'), statsBox,
-        h('span', { style: { marginTop: '8px' } }, 'Services'), servicesPicker(cs))));
+        h('span', { style: { marginTop: '8px' } }, 'Services'), tagPicker(cs, 'services', { noun: 'service' }),
+        h('span', { style: { marginTop: '8px' } }, 'Awards'), tagPicker(cs, 'awards', { noun: 'award', example: 'Silver Clio' }),
+        h('small', {}, 'Awards show as filled bubbles on the hero and the Work page, and the Work page can filter by them.'))));
 }
 
 // A one-line title field that wraps instead of cutting long titles off
@@ -1391,25 +1394,27 @@ function autoTitle(value, placeholder, label, onChange, cls) {
   return el;
 }
 
-function servicesPicker(cs) {
+// Chips for a list of {name, slug}: services or awards. Known names come from content/index.json.
+function tagPicker(cs, key, { noun, example = '' }) {
   const box = h('div', { class: 'chips' });
+  const list = () => (cs[key] = cs[key] || []);
   const known = () => {
-    const k = (S.index ? S.index.services : []).slice();
-    cs.services.forEach((s) => { if (!k.some((x) => x.slug === s.slug)) k.push(s); });
+    const k = ((S.index && S.index[key]) || []).slice();
+    list().forEach((s) => { if (!k.some((x) => x.slug === s.slug)) k.push(s); });
     return k;
   };
   const draw = () => {
-    const unused = known().filter((s) => !cs.services.some((x) => x.slug === s.slug)).sort((a, b) => a.name.localeCompare(b.name));
-    const pick = h('select', { class: 'chip add', 'aria-label': 'Add a service' },
-      h('option', { value: '' }, '+ Add a service'),
+    const unused = known().filter((s) => !list().some((x) => x.slug === s.slug)).sort((a, b) => a.name.localeCompare(b.name));
+    const pick = h('select', { class: 'chip add', 'aria-label': `Add ${/^[aeiou]/.test(noun) ? 'an' : 'a'} ${noun}` },
+      h('option', { value: '' }, `+ Add ${/^[aeiou]/.test(noun) ? 'an' : 'a'} ${noun}`),
       unused.map((s) => h('option', { value: s.slug }, s.name)),
       h('option', { value: '__new' }, 'Something new…'));
     pick.addEventListener('change', () => {
       if (pick.value === '__new') {
-        const input = h('input', { class: 'input', placeholder: 'Service name', style: { width: '170px', minHeight: '28px', padding: '2px 10px' } });
+        const input = h('input', { class: 'input', placeholder: example || (noun[0].toUpperCase() + noun.slice(1) + ' name'), 'aria-label': `New ${noun}`, style: { width: '170px', minHeight: '28px', padding: '2px 10px' } });
         const done = () => {
           const name = input.value.trim();
-          if (name && !cs.services.some((x) => x.slug === R.slugify(name))) { cs.services.push({ name, slug: R.slugify(name) }); commit({ redraw: false }); }
+          if (name && !list().some((x) => x.slug === R.slugify(name))) { list().push({ name, slug: R.slugify(name) }); commit({ redraw: false }); }
           draw();
         };
         input.addEventListener('keydown', (ev) => { if (ev.key === 'Enter') { ev.preventDefault(); done(); } if (ev.key === 'Escape') draw(); });
@@ -1418,11 +1423,11 @@ function servicesPicker(cs) {
         return;
       }
       const s = unused.find((x) => x.slug === pick.value);
-      if (s) { cs.services.push({ name: s.name, slug: s.slug }); draw(); commit({ redraw: false }); }
+      if (s) { list().push({ name: s.name, slug: s.slug }); draw(); commit({ redraw: false }); }
     });
-    box.replaceChildren(...cs.services.map((s, i) => h('button', {
-      type: 'button', class: 'chip is-on', title: 'Remove ' + s.name, 'aria-label': 'Remove ' + s.name,
-      onclick: () => { cs.services.splice(i, 1); draw(); commit({ redraw: false }); },
+    box.replaceChildren(...list().map((s, i) => h('button', {
+      type: 'button', class: 'chip is-on' + (key === 'awards' ? ' is-award' : ''), title: 'Remove ' + s.name, 'aria-label': 'Remove ' + s.name,
+      onclick: () => { list().splice(i, 1); draw(); commit({ redraw: false }); },
     }, s.name, ' ×')), pick);
   };
   draw();
