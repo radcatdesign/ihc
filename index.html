@@ -21,7 +21,6 @@ window.addEventListener('load',function(){var go=function(){document.querySelect
     <meta content="https://www.iheartcomix.com/images/67538116eb2c4982f52cc93b_Opengraph.jpg" name="twitter:image" />
     <meta property="og:type" content="website" />
     <meta content="summary_large_image" name="twitter:card" />
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link href="/css/ihc.f0f787827d.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous" />
@@ -35,8 +34,21 @@ window.addEventListener('load',function(){var go=function(){document.querySelect
     </script>
     <link href="/images/65ddf030e6604acc5b35a164_fav.png" rel="shortcut icon" type="image/x-icon" />
     <link href="/images/67537ece864ab9b671182add_web-icon.jpg" rel="apple-touch-icon" />
-    <meta name="theme-color" content="#000000">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="theme-color" content="#ffb728">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+    <style>
+      /* Edge to edge on phones: the bubble field runs under the status bar and the browser's
+         bottom bar, and the buttons pinned to the corners move clear of them. */
+      html #p-home__infinity { height: 100vh; height: 100lvh; }
+      html .c-top-nav, html .c-top-right { top: calc(40px + env(safe-area-inset-top, 0px)); }
+      html .p-home__bottom-left, html .p-home__bottom-right { bottom: calc(35px + env(safe-area-inset-bottom, 0px)); }
+      html .p-home__pow { bottom: calc(20px + env(safe-area-inset-bottom, 0px)); }
+      @media screen and (max-width: 767px) {
+        html .c-top-nav, html .c-top-right { top: calc(20px + env(safe-area-inset-top, 0px)); }
+        html .p-home__bottom-left, html .p-home__bottom-right { bottom: calc(20px + env(safe-area-inset-bottom, 0px)); }
+        html .p-home__pow { bottom: calc(10px + env(safe-area-inset-bottom, 0px)); }
+      }
+    </style>
     <style>
       body {
         --anim-delay: 1
