@@ -40,6 +40,17 @@ window.addEventListener('load',function(){var go=function(){document.querySelect
       /* Edge to edge on phones: the bubble field runs under the status bar and the browser's
          bottom bar, and the buttons pinned to the corners move clear of them. */
       html #p-home__infinity { height: 100vh; height: 100lvh; }
+      /* phones: Safari draws the page under its bottom toolbar and the home bar, below what it counts
+         as the viewport, so the field runs past the bottom edge instead of stopping short of it.
+         Fixed, so the extra height never makes the page scroll. */
+      @media (hover: none) and (pointer: coarse) {
+        html #p-home__infinity { position: fixed; top: 0; left: 0; width: 100%; height: calc(100vh + 160px); height: calc(100lvh + env(safe-area-inset-bottom, 0px) + 160px); }
+      }
+      /* Phones: Safari draws the page behind its floating toolbar and the home bar, below where
+         100lvh ends, so the bubble field runs well past the bottom edge. The extra is clipped. */
+      @media (max-width: 991px), (hover: none) {
+        html #p-home__infinity { height: calc(100vh + 240px); height: calc(100lvh + 240px); }
+      }
       html .c-top-nav, html .c-top-right { top: calc(40px + env(safe-area-inset-top, 0px)); }
       html .p-home__bottom-left, html .p-home__bottom-right { bottom: calc(35px + env(safe-area-inset-bottom, 0px)); }
       html .p-home__pow { bottom: calc(20px + env(safe-area-inset-bottom, 0px)); }
