@@ -116,7 +116,11 @@ img { display: block; }
 .login h1 { font: 700 64px/0.82 var(--display); text-transform: uppercase; margin: 0; letter-spacing: .5px; }
 .login p { margin: 0; color: var(--muted); }
 .login .err { color: var(--red); font-weight: 600; min-height: 20px; }
-.logo-blob { display: inline-grid; place-items: center; width: 54px; height: 46px; border-radius: 48% 52% 46% 54% / 55% 50% 50% 45%; background: var(--red); color: #fff; font: 700 26px/1 var(--display); }
+.logo { display: block; width: 62px; height: auto; }
+.login-logo { width: 78px; }
+.logo-link { display: block; flex: none; border-radius: 12px; }
+.logo-link .logo { transition: transform .15s; }
+.logo-link:hover .logo { transform: rotate(-6deg) scale(1.06); }
 
 /* ---------- top bar ---------- */
 .topbar {
@@ -124,7 +128,7 @@ img { display: block; }
   height: 60px; display: flex; align-items: center; gap: 12px; padding: 0 14px 0 16px;
   background: var(--ink); color: #fff;
 }
-.topbar .logo-blob { width: 42px; height: 36px; font-size: 21px; flex: none; }
+.topbar .logo { width: 46px; }
 .topbar .crumb { display: flex; align-items: baseline; gap: 10px; min-width: 0; }
 .topbar .crumb b { font: 700 28px/1 var(--display); text-transform: uppercase; letter-spacing: .4px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 32vw; }
 .topbar .crumb span { color: rgba(255, 255, 255, .6); font-size: 13px; white-space: nowrap; }

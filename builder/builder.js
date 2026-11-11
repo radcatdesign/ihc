@@ -36,6 +36,8 @@ const svg = (name) => {
   s.innerHTML = ICON[name] || '';
   return s.firstChild;
 };
+// The IHC speech bubble from the site header (letters are cut out, so the background shows through)
+const logo = (cls = '') => h('img', { class: ('logo ' + cls).trim(), src: '/builder/ihc-logo.svg', alt: 'IHC', width: 62, height: 55, draggable: 'false' });
 const debounce = (fn, ms) => { let t; return (...a) => { clearTimeout(t); t = setTimeout(() => fn(...a), ms); }; };
 const clone = (o) => JSON.parse(JSON.stringify(o));
 const decodeHtml = (s) => { const t = document.createElement('textarea'); t.innerHTML = s || ''; return t.value; };
@@ -222,7 +224,7 @@ function renderLogin(app) {
       }
     },
   },
-  h('span', { class: 'logo-blob' }, 'IHC'),
+  logo('login-logo'),
   h('h1', {}, 'Case study builder'),
   h('p', {}, 'Snap pages together from pieces, then publish them straight to the site.'),
   h('label', { class: 'field' }, h('span', {}, 'Password'), pw),
@@ -280,7 +282,7 @@ async function renderLibrary(app) {
 
 function topbarLibrary() {
   return h('header', { class: 'topbar' },
-    h('span', { class: 'logo-blob', 'aria-hidden': 'true' }, 'IHC'),
+    h('a', { class: 'logo-link', href: '/', target: '_blank', rel: 'noopener', title: 'Open the IHC site' }, logo()),
     h('div', { class: 'crumb' }, h('b', {}, 'Case study builder')),
     h('div', { class: 'spacer' }),
     h('a', { class: 'btn on-dark small desk-only', href: '/work', target: '_blank', rel: 'noopener' }, 'View the Work page'),
@@ -498,7 +500,7 @@ async function renderEditor() {
   }
   if (!S.index) loadIndex().then(() => { if (S.cs) renderCanvas(); }).catch(() => {});
   const bar = h('header', { class: 'topbar' },
-    h('a', { class: 'logo-blob', href: '#/', title: 'All case studies', 'aria-label': 'All case studies' }, 'IHC'),
+    h('a', { class: 'logo-link', href: '#/', title: 'All case studies', 'aria-label': 'All case studies' }, logo()),
     h('div', { class: 'crumb' }, h('b', { id: 'bar-title' }), h('span', { id: 'bar-link' })),
     h('div', { class: 'spacer' }),
     h('span', { class: 'state', id: 'bar-state' }),
