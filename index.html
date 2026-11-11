@@ -68,7 +68,6 @@ window.addEventListener('load',function(){var go=function(){document.querySelect
       html #c-top-right[data-popup="search"] ~ .c-top-right__backdrop,
       html .p-home__bottom-right:has(.p-home__bottom-right__btn.active) ~ .c-top-right__backdrop,
       html body:has(#c-top-nav[data-open="t"]) .c-top-right__backdrop { bottom: 0; height: auto; }
-      html { background-color: var(--c--yellow, #ffb728); }
       @media screen and (max-width: 767px) {
         html .c-top-nav, html .c-top-right { top: calc(20px + env(safe-area-inset-top, 0px)); }
         html .p-home__bottom-left, html .p-home__bottom-right { bottom: calc(20px + env(safe-area-inset-bottom, 0px)); }
@@ -4086,7 +4085,7 @@ window.addEventListener('load',function(){var go=function(){document.querySelect
         vec4 viewPosition = viewMatrix * modelPosition;
         vec4 projectedPosition = projectionMatrix * viewPosition;
         gl_Position = projectedPosition;
-        gl_PointSize = 20.0 * tIntensity * uResolution.y;
+        gl_PointSize = 11.0 * tIntensity * uResolution.y;
         gl_PointSize *= (1.0 / - viewPosition.z);
         vColor = vec3(pow(tIntensity, 2.0));
       }
@@ -4210,14 +4209,16 @@ window.addEventListener('load',function(){var go=function(){document.querySelect
 
           displacement.texture = new THREE.CanvasTexture(displacement.canvas)
 
-          const desktopW = Math.floor(window.innerWidth / 34);
-          const desktopH = Math.floor(window.innerHeight / 21);
+          // dot spacing in px: a tight, even grid
+          const DOT_GAP = 18;
+          const desktopW = Math.floor(window.innerWidth / DOT_GAP);
+          const desktopH = Math.floor(window.innerHeight / DOT_GAP);
 
           const particlesGeometry = new THREE.PlaneGeometry(
             1,
             1,
-            Math.floor( /* sizes.width / */ isMobile ? 24 : desktopW), // 24
-            Math.floor( /* sizes.height / */ isMobile ? 24 : desktopH) // 24
+            desktopW,
+            desktopH
           )
 
           const particlesMaterial = new THREE.ShaderMaterial({
