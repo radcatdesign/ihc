@@ -4657,5 +4657,59 @@ window.addEventListener('load',function(){var go=function(){document.querySelect
       }
     </script>
     <script src="/js/forms.7bd16d33c2.js" defer></script>
+    <script>
+      // Bubbles lean a little toward the cursor. Desktop mice only, and off for reduced motion.
+      // Uses the translate property so it stacks on top of the bubbles' own animations.
+      (function () {
+        if (!matchMedia('(hover: hover) and (pointer: fine)').matches || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+        const RANGE = 240; // how far past its edge a bubble feels the cursor, px
+        const PULL = 0.14; // share of the distance it moves when the cursor is right on it
+        const MAX = 16; // never more than this, px
+        const EASE = 0.16;
+        const offsets = new WeakMap();
+        let mx = -1e4, my = -1e4, lastMove = 0, raf = 0;
+        const wake = () => { if (!raf) raf = requestAnimationFrame(tick); };
+        window.addEventListener('mousemove', (e) => { mx = e.clientX; my = e.clientY; lastMove = performance.now(); wake(); }, { passive: true });
+        document.addEventListener('mouseleave', () => { mx = my = -1e4; wake(); });
+        document.addEventListener('visibilitychange', () => { if (document.hidden) { cancelAnimationFrame(raf); raf = 0; } });
+
+        function tick(now) {
+          raf = 0;
+          const grid = document.getElementById('p-home__infinity');
+          if (!grid) return;
+          const off = document.body.dataset.mouseDown === 'true' || window.mouseLock || document.body.dataset.reel === 't';
+          const W = window.innerWidth, H = window.innerHeight;
+          const els = grid.querySelectorAll('.p-home__infinity__g__el');
+          const plan = [];
+          // read everything first, then write, so the browser lays out once per frame
+          for (const el of els) {
+            const o = offsets.get(el) || { x: 0, y: 0 };
+            const r = el.getBoundingClientRect();
+            let tx = 0, ty = 0;
+            if (!off && r.right > -RANGE && r.left < W + RANGE && r.bottom > -RANGE && r.top < H + RANGE) {
+              const cx = r.left + r.width / 2 - o.x, cy = r.top + r.height / 2 - o.y;
+              const dx = mx - cx, dy = my - cy, d = Math.hypot(dx, dy);
+              const reach = RANGE + Math.max(r.width, r.height) / 2;
+              if (d < reach) {
+                const f = 1 - d / reach;
+                tx = dx * PULL * f * f * 2; ty = dy * PULL * f * f * 2;
+                const m = Math.hypot(tx, ty);
+                if (m > MAX) { tx *= MAX / m; ty *= MAX / m; }
+              }
+            }
+            if (o.x || o.y || tx || ty) plan.push([el, o, tx, ty]);
+          }
+          let busy = false;
+          for (const [el, o, tx, ty] of plan) {
+            o.x += (tx - o.x) * EASE; o.y += (ty - o.y) * EASE;
+            if (Math.abs(tx - o.x) < 0.05 && Math.abs(ty - o.y) < 0.05) { o.x = tx; o.y = ty; } else busy = true;
+            offsets.set(el, o);
+            el.style.translate = o.x || o.y ? o.x.toFixed(2) + 'px ' + o.y.toFixed(2) + 'px' : '';
+          }
+          // keep going while anything is still easing, or for a moment after the mouse stops (the field drifts)
+          if (busy || now - lastMove < 1500) wake();
+        }
+      })();
+    </script>
 </body>
 </html>
