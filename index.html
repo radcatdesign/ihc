@@ -3694,45 +3694,104 @@ window.addEventListener('load',function(){var go=function(){document.querySelect
 
           if (window.innerWidth < 767) container.addEventListener('click', removeOldActives);
 
+          // Where each slot sits inside a tile, read from the live layout (it changes with screen size).
+          function measureSlots() {
+            const probe = document.createElement('div');
+            probe.classList.add('p-home__infinity__g');
+            probe.style.visibility = 'hidden';
+            const els = [];
+            for (let j = 0; j < window.gridConfig.elementsPerGrid; j++) {
+              const el = document.createElement('div');
+              el.classList.add('p-home__infinity__g__el', `v${j}`);
+              probe.appendChild(el);
+              els.push(el);
+            }
+            container.appendChild(probe);
+            // computed top/left/width/height come straight from the slot rules, so this holds
+            // even if the main stylesheet is still on its way
+            const slots = els.map((el) => {
+              const cs = getComputedStyle(el);
+              const num = (v, fb) => (isFinite(parseFloat(v)) ? parseFloat(v) : fb);
+              const w = num(cs.width, el.offsetWidth || 160), h = num(cs.height, el.offsetHeight || 140);
+              const x = num(cs.left, el.offsetLeft), y = num(cs.top, el.offsetTop);
+              return { x: x + w / 2, y: y + h / 2, r: Math.max(w, h) / 2 };
+            });
+            probe.remove();
+            return slots;
+          }
+
+          // Hand out items so the same bubble never lands next to itself. The four tiles repeat
+          // forever, so distance wraps around their edges too. Each slot gets the item whose nearest
+          // copy is farthest away; everything gets used once before anything repeats.
+          function spreadOut(slots, items, W, H) {
+            const placed = new Map(); // item -> [slot, ...]
+            const out = new Map();
+            const dist = (a, b) => {
+              let dx = Math.abs(a.x - b.x), dy = Math.abs(a.y - b.y);
+              dx = Math.min(dx, W - dx); dy = Math.min(dy, H - dy);
+              return Math.hypot(dx, dy) - a.r - b.r;
+            };
+            if (!items.length) return out;
+            shuffle(slots.slice()).forEach((slot) => {
+              let best = [], bestScore = -Infinity;
+              items.forEach((item) => {
+                const mine = placed.get(item) || [];
+                let near = Infinity;
+                for (const o of mine) near = Math.min(near, dist(slot, o));
+                const score = near === Infinity ? Infinity : near - mine.length * 40;
+                if (score > bestScore + 1) { best = [item]; bestScore = score; }
+                else if (Math.abs(score - bestScore) <= 1 || (score === Infinity && bestScore === Infinity)) best.push(item);
+              });
+              const pick = best[Math.floor(Math.random() * best.length)];
+              out.set(slot, pick);
+              if (!placed.has(pick)) placed.set(pick, []);
+              placed.get(pick).push(slot);
+            });
+            return out;
+          }
+
           function createGrid() {
             const hasCategory = document.body.dataset.category !== '';
             if (hasCategory && !window.csFilteredList.length) {
               return;
             };
 
+            const uniq = (arr, key) => { const seen = new Set(); return arr.filter((x) => { const k = key(x); if (seen.has(k)) return false; seen.add(k); return true; }); };
+            const list = uniq((hasCategory ? window.csFilteredList : window.csList).filter(c => c.showOnHomePage === true), (c) => c.slug);
+            const pools = {
+              testimonial: uniq(window.testimonialList || [], (t) => t.text),
+              pow: window.powList || [],
+              cs: list.filter(item => item.isAward === false),
+              award: list.filter(item => item.isAward === true),
+            };
+            const typeOf = (j) => {
+              if (window.gridConfig.testimonialPositions.includes(j)) return 'testimonial';
+              if (window.gridConfig.powPositions.includes(j)) return 'pow';
+              if (pools.award.length && window.gridConfig.awardsPositions.includes(j)) return 'award';
+              return 'cs';
+            };
+
+            // every slot in all four tiles, positioned on the shared wrap-around canvas
+            const layout = measureSlots();
+            const all = [];
             for (let i = 0; i < cols * rows; i++) {
+              const ox = (i % cols) * cellSize, oy = Math.floor(i / cols) * cellHeight;
+              layout.forEach((p, j) => all.push({ i, j, type: typeOf(j), x: ox + p.x, y: oy + p.y, r: p.r }));
+            }
+            const plan = new Map();
+            Object.keys(pools).forEach((type) => {
+              const chosen = spreadOut(all.filter((s) => s.type === type), pools[type], cols * cellSize, rows * cellHeight);
+              chosen.forEach((item, slot) => plan.set(slot.i + ':' + slot.j, item));
+            });
 
-              let iTestimonials = 0;
-              let iPows = 0;
-              let iCS = 0;
-              let iAwards = 0;
-
-              const list = hasCategory ? window.csFilteredList.filter(c => c.showOnHomePage === true) : window.csList.filter(c => c.showOnHomePage === true);
-              const tList = shuffle(window.testimonialList);
-              const pList = shuffle(window.powList);
-              const csList = shuffle(list.filter(item => item.isAward === false));
-              const awardsList = shuffle(list.filter(item => item.isAward === true));
-
-
+            const make = { testimonial: createGridTestimonial, pow: createGridPow, award: createGridAward, cs: createGridCel };
+            for (let i = 0; i < cols * rows; i++) {
               const cell = createGridEl();
               cell.id = `cell-${i}`;
-
               for (let j = 0; j < window.gridConfig.elementsPerGrid; j++) {
-                if (window.gridConfig.testimonialPositions.includes(j)) {
-                  const item = tList[iTestimonials++ % tList.length];
-                  cell.append(createGridTestimonial(item, j));
-                } else if (window.gridConfig.powPositions.includes(j)) {
-                  const item = pList[iPows++ % pList.length];
-                  cell.append(createGridPow(item, j));
-                } else if (awardsList.length && window.gridConfig.awardsPositions.includes(j)) {
-                  const item = awardsList[iPows++ % pList.length];
-                  cell.append(createGridAward(item, j));
-                } else {
-                  const item = csList[iCS++ % csList.length];
-                  cell.append(createGridCel(item, j));
-                }
+                const item = plan.get(i + ':' + j);
+                if (item) cell.append(make[typeOf(j)](item, j));
               }
-
               container.appendChild(cell);
               cells.push(cell);
             }
