@@ -202,6 +202,41 @@ function route() {
 }
 
 /* ---------------- login ---------------- */
+// A different hello on every load. First-timers get a welcome, everyone after gets a welcome back.
+const HELLO = [
+  'Welcome in. Please keep your arms and legs inside the builder at all times.',
+  'Hey, new face. The bricks are in the bin and nothing here bites.',
+  'Welcome. No ticket needed, just the password.',
+];
+const HELLO_AGAIN = [
+  'Welcome back. Enter your secret identity below.',
+  'Previously, on Case Study Builder…',
+  'Welcome back. The line is way shorter than Hall H.',
+  'Oh hey, it’s you. The case studies missed you.',
+  'Welcome back. No glue, no Allen wrench, no leftover screws.',
+  'Back again? Respect. The bricks are right where you left them.',
+  'Welcome back. The fog machine is warming up.',
+  'Badge check. Looks legit. Welcome back.',
+  'Welcome back. Somewhere a studio exec is about to be very impressed.',
+  'Sold-out crowd. Well, a crowd of one. Welcome back.',
+  'The hero returns. Your sidekicks are standing by.',
+  'Welcome back. Snap it, stack it, ship it.',
+  'Welcome back. The work isn’t going to brag about itself.',
+  'Good to see you. The confetti cannon is loaded.',
+  'Welcome back. Legos, but for bragging.',
+  'You’re back. Quick, act like you never left.',
+];
+function hello() {
+  const seen = store.get('ihc-builder-seen');
+  const pool = seen ? HELLO_AGAIN : HELLO;
+  const last = store.get('ihc-builder-hello');
+  let line = pool[Math.floor(Math.random() * pool.length)];
+  // never the same line twice in a row
+  if (line === last) line = pool[(pool.indexOf(line) + 1) % pool.length];
+  store.set('ihc-builder-hello', line);
+  return line;
+}
+
 function renderLogin(app) {
   document.title = 'Case Study Builder · IHC';
   const err = h('div', { class: 'err', role: 'alert' });
@@ -216,6 +251,7 @@ function renderLogin(app) {
         const d = await r.json().catch(() => ({}));
         if (!r.ok) throw new Error(d.error || 'Something went wrong.');
         S.key = pw.value; session.set(pw.value); S.local = !!d.local; S.bigUploads = !!d.bigUploads;
+        store.set('ihc-builder-seen', true);
         if (d.missing && d.missing.length) toast('Heads up: ' + d.missing.join(' and ') + ' still need to be set in Vercel.', 'err', 9000);
         route();
       } catch (e2) {
@@ -226,7 +262,7 @@ function renderLogin(app) {
   },
   logo('login-logo'),
   h('h1', {}, 'Case study builder'),
-  h('p', {}, 'Build IHC case studies piece by piece and publish them to the site in one click.'),
+  h('p', { class: 'hello' }, hello()),
   h('label', { class: 'field' }, h('span', {}, 'Password'), pw),
   err, btn);
   app.replaceChildren(h('div', { class: 'login' }, form));
@@ -1589,7 +1625,7 @@ function openSettings() {
       kind: 'bg', label: 'Drop a photo', note: 'Fills the screen behind the list on hover',
     })),
     h('div', { class: 'row' },
-      h('label', { class: 'field' }, h('span', {}, 'Month'), h('select', { class: 'select', onchange: set((v) => { L.work.month = v; }) }, h('option', { value: '' }, '—'), ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'].map((mo) => h('option', { value: mo, selected: mo === L.work.month }, mo)))),
+      h('label', { class: 'field' }, h('span', {}, 'Month'), h('select', { class: 'select', onchange: set((v) => { L.work.month = v; }) }, h('option', { value: '' }, 'None'), ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'].map((mo) => h('option', { value: mo, selected: mo === L.work.month }, mo)))),
       h('label', { class: 'field' }, h('span', {}, 'Year'), h('input', { class: 'input', inputmode: 'numeric', value: L.work.year, placeholder: String(new Date().getFullYear()), oninput: set((v) => { L.work.year = v.replace(/\D/g, '').slice(0, 4); }) }))));
 
   const slugField = S.isNew
