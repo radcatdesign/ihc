@@ -58,7 +58,8 @@ In the Vercel project, **Settings > Environment Variables** (Production):
 | --- | --- |
 | `BUILDER_PASSWORD` | The password for `/builder`. Share it with whoever edits case studies |
 | `GITHUB_TOKEN` | A GitHub fine-grained token: Repository access **Only select repositories > radcatdesign/ihc**, Permissions **Contents: Read and write** |
-| `BLOB_READ_WRITE_TOKEN` | Added for you when the Blob store is connected to the project (**Storage** tab) |
+| `BLOB_STORE_ID` | Added for you when a **public** Blob store is connected to the project (**Storage** tab). A private store won't work: the photos are for the public site |
+| `BLOB_READ_WRITE_TOKEN` | Optional. Only needed to upload files over 4 MB (video loops) straight from the browser. Copy it from the Blob store's `.env.local` tab |
 
 Optional: `GITHUB_REPO` (default `radcatdesign/ihc`) and `GITHUB_BRANCH` (default `main`). Redeploy after adding variables.
 
