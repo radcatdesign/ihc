@@ -175,29 +175,23 @@ img { display: block; }
 .bin h2 { font: 700 30px/0.9 var(--display); text-transform: uppercase; margin: 0 0 4px; }
 .bin p.hint { margin: 0 0 16px; color: var(--muted); font-size: 12.5px; }
 .bin h3 { font-size: 12.5px; font-weight: 700; color: var(--ink-2); margin: 18px 2px 10px; }
-.bricks { display: grid; gap: 12px; padding-top: 6px; }
+/* blocks in the bin: plain rows, color only on the icon */
+.bricks { display: grid; gap: 6px; }
 .brick {
   --c: var(--red);
   --t: #fff;
-  position: relative; display: grid; grid-template-columns: 30px 1fr; align-items: center; gap: 10px;
-  width: 100%; padding: 11px 12px 10px; margin-top: 6px;
-  border: 0; border-radius: 8px; text-align: left;
-  background: var(--c); color: var(--t);
-  box-shadow: inset 0 -5px 0 rgba(0, 0, 0, .18), 0 2px 0 rgba(22, 5, 58, .12);
-  cursor: grab; user-select: none; transition: transform .12s;
+  display: grid; grid-template-columns: 32px minmax(0, 1fr); align-items: center; gap: 10px;
+  width: 100%; padding: 7px 10px 7px 7px;
+  border: 1px solid var(--line); border-radius: 10px; text-align: left;
+  background: #fff; color: var(--ink);
+  cursor: grab; user-select: none; transition: border-color .12s, box-shadow .12s;
 }
-.brick::before, .brick::after {
-  content: ""; position: absolute; top: -6px; width: 20px; height: 8px; border-radius: 5px 5px 2px 2px;
-  background: var(--c); box-shadow: inset 0 2px 0 rgba(255, 255, 255, .35);
-}
-.brick::before { left: 16px; }
-.brick::after { left: 44px; }
-.brick:hover { transform: translateY(-2px) rotate(-.6deg); }
+.brick:hover { border-color: var(--line-2); box-shadow: 0 3px 10px -6px rgba(22, 5, 58, .35); }
 .brick:active { cursor: grabbing; }
-.brick svg { width: 26px; height: 26px; }
-.brick b { display: block; font-weight: 700; font-size: 14px; line-height: 1.1; }
-.brick small { display: block; font-size: 11.5px; opacity: .85; line-height: 1.25; margin-top: 2px; }
-.brick.section-brick { --c: var(--ink); grid-template-columns: 30px 1fr; padding-top: 14px; padding-bottom: 13px; }
+.brick > svg { width: 32px; height: 32px; padding: 7px; border-radius: 8px; background: var(--c); color: var(--t); }
+.brick b { display: block; font-weight: 700; font-size: 13.5px; line-height: 1.15; }
+.brick small { display: block; font-size: 11.5px; line-height: 1.25; margin-top: 1px; color: var(--muted); }
+.brick.section-brick { --c: var(--ink); }
 .brick.is-dim { opacity: .4; }
 
 /* hover preview beside the bin */
@@ -308,7 +302,7 @@ img { display: block; }
 /* sortable states */
 .sortable-ghost { opacity: .35; }
 .sortable-chosen { box-shadow: 0 18px 40px -16px rgba(22, 5, 58, .6) !important; }
-.pieces .brick { margin: 0; cursor: grabbing; } /* brick dropped while dragging */
+.pieces .brick { margin: 0; cursor: grabbing; } /* a block from the bin mid-drag */
 .drag-over { background: rgba(255, 255, 255, .18); }
 
 .add-row { display: flex; gap: 8px; flex-wrap: wrap; }
@@ -545,8 +539,6 @@ img { display: block; }
   .add-card b { display: flex; align-items: center; gap: 6px; margin: 6px 4px 0; font-size: 14px; line-height: 1.1; }
   .add-card b svg { width: 16px; height: 16px; flex: none; color: var(--c); }
   .add-card small { margin: 0 4px; font-size: 11.5px; line-height: 1.25; color: var(--muted); }
-  .sheet-bricks .brick:hover { transform: none; }
-  .sheet-bricks .brick:active { transform: translateY(1px); }
   @keyframes sheet-up { from { transform: translateY(40px); opacity: 0; } to { transform: none; opacity: 1; } }
 
   /* full-screen preview */
@@ -590,7 +582,6 @@ img { display: block; }
 /* touch screens: show photo controls without hovering */
 @media (hover: none) {
   .tile .x, .tile .alt { opacity: 1; }
-  .brick:hover { transform: none; }
 }
 
 @media (prefers-reduced-motion: reduce) {

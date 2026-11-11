@@ -206,7 +206,7 @@ function route() {
 const HELLO = [
   'Oh good, a new person. Try not to break anything on day one.',
   'Welcome. Yes, you need the password. No, it’s not “password.”',
-  'New here? Cute. Bricks are on the left, panic is optional.',
+  'New here? Cute. Blocks are on the left, panic is optional.',
   'Welcome. Someone trusted you with this. Bold move on their part.',
 ];
 const HELLO_AGAIN = [
@@ -587,7 +587,7 @@ function brick(type) {
   }, svg(t.icon), h('span', {}, h('b', {}, t.name), h('small', {}, t.hint)));
 }
 
-// Desktop: hovering or focusing a brick shows a real render of the piece beside the bin
+// Desktop: hovering or focusing a block in the bin shows a real render of it beside the bin
 let peekEl = null;
 function peek(b) {
   const type = b && b.dataset.newType;
@@ -623,9 +623,9 @@ function renderBin() {
       svg('section'), h('span', {}, h('b', {}, 'Section'), h('small', {}, 'A colored panel with a title'))));
   const lists = FAMILIES.map(([, types]) => h('div', { class: 'bricks' }, types.map(brick)));
   const introBricks = h('div', { class: 'bricks', id: 'bin-intro' }, brick('introGallery'));
-  const bin = h('aside', { class: 'bin', 'aria-label': 'Pieces' },
-    h('h2', {}, 'Pieces'),
-    h('p', { class: 'hint' }, 'Drag a piece onto the page, or click one to drop it into the selected section. Hover to see what it looks like.'),
+  const bin = h('aside', { class: 'bin', 'aria-label': 'Blocks' },
+    h('h2', {}, 'Blocks'),
+    h('p', { class: 'hint' }, 'Drag a block onto the page, or click one to add it to the selected section. Hover to see what it looks like.'),
     h('h3', {}, 'Structure'), secBricks,
     FAMILIES.map(([label], i) => [h('h3', {}, label), lists[i]]),
     h('h3', {}, 'Intro only'), introBricks);
@@ -672,7 +672,7 @@ function addPiece(type, target) {
   flash(p._id);
   focusPreview(where);
 }
-// Phones: a sheet of bricks. Pick where the piece goes, tap a brick.
+// Phones: a sheet of blocks. Pick where it goes, tap a block.
 function openAddSheet() {
   const opts = [['intro', 'The intro']].concat(S.cs.sections.map((sec, i) => [String(i), String(i + 1).padStart(2, '0') + ' ' + (sec.title || 'Untitled section')]));
   const active = String(Math.min(S.activeSection, Math.max(0, S.cs.sections.length - 1)));
@@ -688,9 +688,9 @@ function openAddSheet() {
     h('button', { class: 'brick section-brick', type: 'button', 'data-new-type': 'section' }, svg('section'), h('span', {}, h('b', {}, 'New section'), h('small', {}, 'A colored panel with a title'))),
     FAMILIES.map(([label, types]) => group(label, types.map(card))),
     group('Intro only', [card('introGallery')]));
-  const sheet = h('div', { class: 'sheet', role: 'dialog', 'aria-modal': 'true', 'aria-label': 'Add a piece' },
+  const sheet = h('div', { class: 'sheet', role: 'dialog', 'aria-modal': 'true', 'aria-label': 'Add a block' },
     h('div', { class: 'sheet-grab', 'aria-hidden': 'true' }),
-    h('div', { class: 'sheet-head' }, h('h2', {}, 'Add a piece'), h('button', { class: 'icon-btn', 'aria-label': 'Close', onclick: () => close() }, svg('x'))),
+    h('div', { class: 'sheet-head' }, h('h2', {}, 'Add a block'), h('button', { class: 'icon-btn', 'aria-label': 'Close', onclick: () => close() }, svg('x'))),
     h('label', { class: 'field' }, h('span', {}, 'Add it to'), where),
     bricks);
   const scrim = h('div', { class: 'sheet-scrim' }, sheet);
@@ -971,7 +971,7 @@ function sectionCard(s, i) {
       h('button', { class: 'icon-btn', title: collapsed ? 'Expand' : 'Collapse', 'aria-label': collapsed ? 'Expand section' : 'Collapse section', 'aria-expanded': collapsed ? 'false' : 'true', onclick: () => { if (collapsed) S.collapsed.delete(s._id); else S.collapsed.add(s._id); renderCanvas(); } }, svg('fold')))),
   tones,
   h('div', { class: 'section-body' },
-    h('div', { class: 'pieces', 'data-empty': 'Drag pieces in here' }, s.pieces.map((p) => pieceCard(p, { intro: false })))));
+    h('div', { class: 'pieces', 'data-empty': 'Drag blocks in here' }, s.pieces.map((p) => pieceCard(p, { intro: false })))));
   return card;
 }
 function setActive(i) {
@@ -1057,7 +1057,7 @@ function pieceCard(p, ctx) {
       h('button', { class: 'icon-btn', title: 'Move up', 'aria-label': 'Move up', onclick: () => move(-1) }, svg('up')),
       h('button', { class: 'icon-btn', title: 'Move down', 'aria-label': 'Move down', onclick: () => move(1) }, svg('down')),
       h('button', { class: 'icon-btn', title: 'Duplicate', 'aria-label': 'Duplicate', onclick: () => { const l = loc(); l.list.splice(l.at + 1, 0, reId(clone(p))); commit(); } }, svg('copy')),
-      h('button', { class: 'icon-btn danger', title: 'Delete', 'aria-label': 'Delete', onclick: () => { const l = loc(); l.list.splice(l.at, 1); commit(); undoToast(`Deleted a ${t.name.toLowerCase()} piece.`); } }, svg('trash')),
+      h('button', { class: 'icon-btn danger', title: 'Delete', 'aria-label': 'Delete', onclick: () => { const l = loc(); l.list.splice(l.at, 1); commit(); undoToast(`Deleted the ${t.name.toLowerCase()} block.`); } }, svg('trash')),
       h('button', { class: 'icon-btn', title: collapsed ? 'Expand' : 'Collapse', 'aria-label': collapsed ? 'Expand' : 'Collapse', 'aria-expanded': collapsed ? 'false' : 'true', onclick: () => { if (collapsed) S.collapsed.delete(p._id); else S.collapsed.add(p._id); renderCanvas(); } }, svg('fold'))),
     h('div', { class: 'piece-body' }, collapsed ? null : (EDIT[p.type] || EDIT.raw)(p, ctx)));
   return card;
@@ -1395,7 +1395,7 @@ const SIZES = { gallery: 2000, big: 2400, duo: 1600, hero: 2400, bubble: 800, bg
 async function processFile(file, kind, { video = false, raw = false } = {}, onProgress) {
   const isVideo = /^video\/(mp4|webm|quicktime)$/.test(file.type);
   const isImage = /^image\//.test(file.type);
-  if (isVideo && !video) throw new Error(`${file.name}: videos go in as Vimeo links here, or use a Big image or Two-up piece for a short loop.`);
+  if (isVideo && !video) throw new Error(`${file.name}: videos go in as Vimeo links here, or use a Big image or Two-up block for a short loop.`);
   if (!isVideo && !isImage) throw new Error(`${file.name} isn’t a photo or video.`);
   if (isVideo) {
     if (file.type === 'video/quicktime') throw new Error(`${file.name} is a .mov. Export it as MP4 first.`);
@@ -1466,7 +1466,7 @@ function mediaTray(p, { note, group = 'media', kind = 'gallery', video = false, 
   };
   const addFiles = async (files) => {
     if (max && p.media.length + files.length > max) {
-      toast(`This piece holds up to ${max}. The extra ${p.media.length + files.length - max === 1 ? 'one was' : 'ones were'} left out.`, '', 6000);
+      toast(`This block holds up to ${max}. The extra ${p.media.length + files.length - max === 1 ? 'one was' : 'ones were'} left out.`, '', 6000);
       files = files.slice(0, Math.max(0, max - p.media.length));
     }
     for (const f of files) {
@@ -1490,7 +1490,7 @@ function mediaTray(p, { note, group = 'media', kind = 'gallery', video = false, 
   };
   const accept = group === 'logos' ? 'image/svg+xml,image/png,image/webp' : video ? 'image/*,video/mp4,video/webm' : 'image/*';
   tray.append(...p.media.map(tile),
-    h('button', { type: 'button', class: 'tile add', onclick: async () => { if (full()) { toast(`This piece holds up to ${max}.`); return; } addFiles(await pickFiles({ multiple: true, accept })); } }, add));
+    h('button', { type: 'button', class: 'tile add', onclick: async () => { if (full()) { toast(`This block holds up to ${max}.`); return; } addFiles(await pickFiles({ multiple: true, accept })); } }, add));
   dropTarget(tray, addFiles);
   const moveNote = group === 'logos' ? ' Drag to reorder.' : group === 'photos' ? ' Drag tiles to reorder, or move them to another grid or row.' : ' Drag tiles to reorder or move them to another gallery.';
   if (!vimeo) {
@@ -1774,7 +1774,7 @@ function problems(cs) {
   if (L.listed && L.home.showHomepage && !L.home.image) warn.push('It has a homepage bubble but no bubble photo.');
   const all = [...cs.introPieces, ...cs.sections.flatMap((s) => s.pieces)];
   const emptyGal = all.filter((p) => Array.isArray(p.media) && !p.media.length).length;
-  if (emptyGal) warn.push(`${emptyGal} photo piece${emptyGal === 1 ? ' is' : 's are'} still empty. Galleries show as blank space; grids, rows and logos are left off.`);
+  if (emptyGal) warn.push(`${emptyGal} photo block${emptyGal === 1 ? ' is' : 's are'} still empty. Galleries show as blank space; grids, rows and logos are left off.`);
   const halfCompare = all.filter((p) => p.type === 'compare' && !(p.before && p.before.src && p.after && p.after.src)).length;
   if (halfCompare) warn.push(`${halfCompare === 1 ? 'A before and after needs' : halfCompare + ' before and afters need'} both photos to show up.`);
   const untitled = cs.sections.filter((s) => !s.title.trim()).length;
