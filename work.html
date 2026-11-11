@@ -477,8 +477,53 @@ window.addEventListener('load',function(){var go=function(){document.querySelect
           border-bottom: 12px solid #FF142D;
         }
 
-        .p-home__list:has([data-list-order="desc"]) .p-home__list__items-list {
-          flex-direction: column-reverse;
+        /* Sort row: project / client / year. The active one carries the arrow; tap it again to flip. */
+        .ihc-sort {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: baseline;
+          column-gap: 48px;
+          row-gap: 8px;
+          margin: 0;
+        }
+
+        .ihc-sort__btn {
+          appearance: none;
+          background: none;
+          border: 0;
+          padding: 0;
+          margin: 0;
+          color: inherit;
+          letter-spacing: inherit;
+          text-transform: inherit;
+          text-decoration: none;
+          cursor: pointer;
+          opacity: 0.5;
+          transition: opacity 200ms ease;
+        }
+
+        .ihc-sort__btn[aria-pressed="true"],
+        .ihc-sort__btn:hover {
+          opacity: 1;
+        }
+
+        .ihc-sort__btn:focus-visible {
+          outline: 2px solid currentColor;
+          outline-offset: 4px;
+        }
+
+        @media screen and (max-width: 991px) {
+          .p-home__list__top.n {
+            display: block;
+          }
+
+          .p-home__list__top__c {
+            grid-template-columns: 1fr;
+          }
+
+          .p-home__list__filter .p-home__list__filter__bottom {
+            border-bottom-style: solid;
+          }
         }
 
         /* List */
@@ -1596,7 +1641,7 @@ window.addEventListener('load',function(){var go=function(){document.querySelect
       <div class="p-home__list__top n">
         <div class="p-home__list__top__c">
           <div id="w-node-df1b31b6-3c4d-dbab-7a2c-5b05a88f0fe9-a6a8c77e" class="p-home__list__top__c__col">
-            <h4 data-list-order="asc" class="p-home__list__top__click">project</h4>
+            <h4 class="ihc-sort" role="group" aria-label="Sort case studies"><button type="button" data-sort="project" data-list-order="asc" aria-pressed="true" class="p-home__list__top__click ihc-sort__btn">project</button><button type="button" data-sort="client" aria-pressed="false" class="p-home__list__top__click ihc-sort__btn">client</button><button type="button" data-sort="year" aria-pressed="false" class="p-home__list__top__click ihc-sort__btn">year</button></h4>
           </div>
           <div id="w-node-df1b31b6-3c4d-dbab-7a2c-5b05a88f0fec-a6a8c77e" class="p-home__list__top__c__col hide-mobile">
             <h4 class="hide">summary</h4>
@@ -5156,16 +5201,99 @@ window.addEventListener('load',function(){var go=function(){document.querySelect
         });
       }
 
+      // Sort the Work list by project, client or year. "asc" is each key's natural
+      // order (A to Z, newest first); tapping the active key flips it. Undated
+      // projects always sit at the bottom of a year sort.
       function listOrder() {
-        const listEl = document.querySelector('.p-home__list__items-list');
-        const btn = document.querySelector('[data-list-order]');
-        if (btn) btn.addEventListener('click', () => {
-          btn.dataset.listOrder = btn.dataset.listOrder === 'asc' ? 'desc' : 'asc';
-          const els = listEl.querySelectorAll('[data-vis="t"]');
-          if (!els.length) return;
-          const child = btn.dataset.listOrder === 'asc' ? els[0] : els[els.length - 1];
-          child.scrollIntoView();
+        const listEl = document.getElementById('p-home__list__items-list');
+        const topEl = document.querySelector('.p-home__list__top');
+        const btns = [...document.querySelectorAll('.ihc-sort__btn')];
+        if (!listEl || !btns.length) return;
+        const MONTHS = { jan: 1, feb: 2, mar: 3, apr: 4, may: 5, jun: 6, jul: 7, aug: 8, sep: 9, oct: 10, nov: 11, dec: 12 };
+        const LABEL = { project: 'project name', client: 'client', year: 'year' };
+        const NATURAL = { project: 'A to Z', client: 'A to Z', year: 'newest first' };
+        const FLIPPED = { project: 'Z to A', client: 'Z to A', year: 'oldest first' };
+        const key = (s) => String(s || '').toLowerCase().normalize('NFD').replace(/[^a-z0-9]/g, '');
+        const text = (el, sel) => { const n = el.querySelector(sel); return n ? n.textContent : ''; };
+        const info = new Map();
+        const items = () => [...listEl.children].filter((el) => el.classList.contains('p-home__list__items-item'));
+        items().forEach((el) => {
+          const y = parseInt(el.dataset.year, 10);
+          const m = MONTHS[String(el.dataset.month || '').slice(0, 3).toLowerCase()] || 0;
+          info.set(el, { project: key(text(el, '.t-title')), client: key(text(el, '.p-home__list__items-left__client')), date: y ? y * 100 + m : 0 });
         });
+        const cmp = {
+          project: (a, b) => a.project.localeCompare(b.project),
+          client: (a, b) => a.client.localeCompare(b.client) || a.project.localeCompare(b.project),
+          year: (a, b) => b.date - a.date || a.project.localeCompare(b.project),
+        };
+        let state = { by: 'project', dir: 'asc' };
+        try {
+          const q = new URLSearchParams(location.search).get('sort');
+          const saved = JSON.parse(sessionStorage.getItem('ihc-work-sort') || 'null');
+          if (q && cmp[q]) state = { by: q, dir: 'asc' };
+          else if (saved && cmp[saved.by]) state = { by: saved.by, dir: saved.dir === 'desc' ? 'desc' : 'asc' };
+        } catch (e) {}
+
+        function paint() {
+          btns.forEach((b) => {
+            const on = b.dataset.sort === state.by;
+            b.setAttribute('aria-pressed', on ? 'true' : 'false');
+            if (on) b.dataset.listOrder = state.dir;
+            else delete b.dataset.listOrder;
+            const now = on ? (state.dir === 'asc' ? NATURAL : FLIPPED)[b.dataset.sort] : '';
+            b.setAttribute('aria-label', on ? `Sorted by ${LABEL[b.dataset.sort]}, ${now}. Tap to reverse.` : `Sort by ${LABEL[b.dataset.sort]}`);
+          });
+        }
+
+        function apply(animate) {
+          const els = items();
+          const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+          const vh = window.innerHeight;
+          const before = new Map();
+          if (animate && !reduce) els.forEach((el) => { if (el.style.display !== 'none') before.set(el, el.getBoundingClientRect().top); });
+          const sorted = els.slice().sort((a, b) => {
+            const A = info.get(a), B = info.get(b);
+            if (state.by === 'year' && (!A.date || !B.date)) {
+              if (!A.date && !B.date) return A.project.localeCompare(B.project);
+              return A.date ? -1 : 1;
+            }
+            const r = cmp[state.by](A, B);
+            return state.dir === 'asc' ? r : -r;
+          });
+          const frag = document.createDocumentFragment();
+          sorted.forEach((el) => frag.appendChild(el));
+          listEl.appendChild(frag);
+          if (!before.size) return;
+          sorted.forEach((el, i) => {
+            if (!before.has(el)) return;
+            const now = el.getBoundingClientRect().top;
+            if (now > vh + 200 || now + el.offsetHeight < -200) return;
+            const dy = before.get(el) - now;
+            const opts = { duration: 520, easing: 'cubic-bezier(.2,.8,.2,1)', delay: Math.min(i, 8) * 18 };
+            if (Math.abs(dy) < 1) return;
+            if (Math.abs(dy) > vh) el.animate([{ opacity: 0, translate: '0 32px' }, { opacity: 1, translate: '0 0' }], opts);
+            else el.animate([{ translate: `0 ${dy}px` }, { translate: '0 0' }], opts);
+          });
+        }
+
+        btns.forEach((b) => b.addEventListener('click', (e) => {
+          e.preventDefault();
+          const by = b.dataset.sort;
+          state = by === state.by ? { by, dir: state.dir === 'asc' ? 'desc' : 'asc' } : { by, dir: 'asc' };
+          try { sessionStorage.setItem('ihc-work-sort', JSON.stringify(state)); } catch (err) {}
+          paint();
+          // scrolled down the list? bring the sort row back, clear of the top nav
+          const top = topEl ? topEl.getBoundingClientRect().top : 0;
+          if (top < 100) {
+            const sc = topEl.closest('.v--scroll');
+            (sc && sc.scrollHeight > sc.clientHeight ? sc : window).scrollBy(0, top - 120);
+          }
+          apply(true);
+        }));
+
+        paint();
+        if (state.by !== 'project' || state.dir !== 'asc') apply(false);
       }
 
       function startFilter() {
