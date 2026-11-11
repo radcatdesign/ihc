@@ -180,6 +180,43 @@ img { display: block; }
 .lib-count { margin: 0; color: var(--muted); font-size: 13px; }
 .grid-h { grid-column: 1 / -1; margin: 14px 2px -6px; font: 700 40px/0.9 var(--display); text-transform: uppercase; color: var(--ink); }
 .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 18px; }
+
+/* grid / list toggle */
+.view-toggle { display: inline-flex; gap: 2px; padding: 3px; border-radius: 999px; background: #fff; box-shadow: inset 0 0 0 1.5px var(--line-2); }
+.view-toggle button { display: grid; place-items: center; width: 34px; height: 28px; border: 0; border-radius: 999px; background: transparent; color: var(--ink-2); transition: scale .18s ease-out, background-color .15s; }
+.view-toggle button svg { width: 17px; height: 17px; }
+.view-toggle button:hover { color: var(--ink); scale: 1.08; }
+.view-toggle button.is-on { background: var(--ink); color: #fff; }
+
+/* list view */
+.cs-list { display: grid; background: #fff; border-radius: 18px; box-shadow: 0 1px 0 var(--line); overflow: hidden; }
+.cs-row {
+  display: grid; grid-template-columns: 64px minmax(0, 2.2fr) minmax(0, 1.6fr) minmax(0, 1fr) 92px 72px 128px 96px;
+  align-items: center; gap: 14px; width: 100%; padding: 8px 16px 8px 10px; border: 0; border-top: 1px solid var(--line);
+  background: transparent; color: var(--ink); text-align: left; font-size: 13px;
+}
+.cs-row:not(.head):hover { background: var(--paper); }
+.cs-row.head { border-top: 0; padding-top: 12px; padding-bottom: 10px; font-size: 12px; font-weight: 700; color: var(--muted); }
+.cs-row.head button { display: inline-flex; gap: 4px; align-items: center; justify-self: start; padding: 0; border: 0; background: none; font: inherit; color: inherit; cursor: pointer; }
+.cs-row.head button:hover, .cs-row.head button.is-on { color: var(--ink); }
+.cs-row.head button:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; border-radius: 4px; }
+.cs-row.head i { font-style: normal; }
+.cs-row > span { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.cs-row .c-thumb { width: 64px; height: 44px; border-radius: 8px; background: var(--paper-2) center / cover no-repeat; }
+.cs-row.head .c-thumb { height: 0; }
+.cs-row .c-case { display: grid; gap: 2px; }
+.cs-row .c-case b { font: 700 22px/0.95 var(--display); text-transform: uppercase; overflow: hidden; text-overflow: ellipsis; }
+.cs-row .c-case .draft { justify-self: start; font-style: normal; font-size: 11px; font-weight: 700; padding: 1px 7px; border-radius: 99px; background: var(--yellow); }
+.cs-row .c-client, .cs-row .c-category, .cs-row .c-date, .cs-row .c-published { color: var(--ink-2); }
+.cs-row .c-sections { font-variant-numeric: tabular-nums; }
+.cs-row .state { font-style: normal; font-size: 11.5px; font-weight: 700; padding: 3px 9px; border-radius: 99px; background: var(--paper-2); }
+.cs-row .state.hidden { background: transparent; box-shadow: inset 0 0 0 1px var(--line-2); color: var(--muted); }
+.list-h { margin: 0; padding: 18px 16px 8px; border-top: 1px solid var(--line); font: 700 30px/0.9 var(--display); text-transform: uppercase; }
+@media (max-width: 1100px) {
+  .cs-row { grid-template-columns: 56px minmax(0, 2fr) minmax(0, 1.4fr) 84px 120px; }
+  .cs-list .cs-row .c-category, .cs-list .cs-row .c-sections, .cs-list .cs-row .c-published { display: none; }
+  .cs-row .c-thumb { width: 56px; height: 40px; }
+}
 .cs-card { position: relative; display: grid; grid-template-rows: auto 1fr; border: 0; padding: 0; text-align: left; background: #fff; border-radius: 18px; overflow: hidden; box-shadow: 0 1px 0 var(--line); transition: transform .15s, box-shadow .15s; }
 .cs-card:hover { transform: translateY(-3px); box-shadow: 0 14px 30px -18px rgba(22, 5, 58, .55); }
 .cs-card .thumb { aspect-ratio: 4 / 3; background: var(--paper-2) center / cover no-repeat; }
@@ -663,6 +700,15 @@ img { display: block; }
   .lib-spacer { display: none; }
   .pick select { max-width: 160px; }
   .grid-h { font-size: 32px; }
+  .cs-list { margin: 0 -2px; border-radius: 14px; }
+  .cs-row { grid-template-columns: 52px minmax(0, 1fr) auto; gap: 10px; padding: 8px 12px 8px 8px; }
+  .cs-list .cs-row .c-client, .cs-list .cs-row .c-date { display: none; }
+  .cs-list .cs-row.head { display: none; }
+  .cs-list > .cs-row:nth-child(2) { border-top: 0; }
+  .cs-row .c-thumb { width: 52px; height: 40px; }
+  .cs-row .c-case b { font-size: 19px; }
+  .lib-bar .view-toggle { order: -1; flex: none; }
+  .list-h { font-size: 24px; padding: 14px 12px 6px; }
   .filters button { white-space: nowrap; }
 }
 
