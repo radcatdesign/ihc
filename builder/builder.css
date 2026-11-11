@@ -115,7 +115,10 @@ img { display: block; }
 .login form { width: min(420px, 100%); background: #fff; border-radius: 28px; padding: 36px 32px 32px; box-shadow: 0 24px 60px -30px rgba(22, 5, 58, .5); display: grid; gap: 18px; }
 .login h1 { font: 700 64px/0.82 var(--display); text-transform: uppercase; margin: 0; letter-spacing: .5px; }
 .login p { margin: 0; color: var(--muted); }
-.login .err { color: var(--red); font-weight: 600; min-height: 20px; }
+.login .err { color: var(--red); font-weight: 600; font-size: 14px; margin-top: -8px; }
+.login .err:empty { display: none; }
+.login .input { height: 50px; font-size: 16px; padding: 0 16px; }
+.login .btn { height: 52px; justify-content: center; font-size: 16px; font-weight: 700; margin-top: 4px; }
 .logo { display: block; width: 62px; height: auto; }
 .login-logo { width: 78px; }
 .logo-link { display: block; flex: none; border-radius: 12px; }

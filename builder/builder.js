@@ -206,7 +206,7 @@ function renderLogin(app) {
   document.title = 'Case Study Builder · IHC';
   const err = h('div', { class: 'err', role: 'alert' });
   const pw = h('input', { class: 'input', type: 'password', autocomplete: 'current-password', required: true, 'aria-label': 'Password' });
-  const btn = h('button', { class: 'btn primary', type: 'submit' }, 'Open the builder');
+  const btn = h('button', { class: 'btn primary', type: 'submit' }, 'Sign in');
   const form = h('form', {
     onsubmit: async (e) => {
       e.preventDefault();
@@ -226,7 +226,7 @@ function renderLogin(app) {
   },
   logo('login-logo'),
   h('h1', {}, 'Case study builder'),
-  h('p', {}, 'Snap pages together from pieces, then publish them straight to the site.'),
+  h('p', {}, 'Build IHC case studies piece by piece and publish them to the site in one click.'),
   h('label', { class: 'field' }, h('span', {}, 'Password'), pw),
   err, btn);
   app.replaceChildren(h('div', { class: 'login' }, form));
