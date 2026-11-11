@@ -197,6 +197,9 @@ function route() {
   if (!S.key) return renderLogin(app);
   const m = location.hash.match(/^#\/cs\/([a-z0-9-]+)/);
   if (m) return openCaseStudy(m[1]);
+  const t = location.hash.match(/^#\/template\/([a-z0-9-]+)/);
+  if (t) return openTemplate(t[1]);
+  if (location.hash === '#/templates') return renderTemplates(app);
   if (location.hash === '#/new') return renderLibrary(app).then(() => newCaseStudyModal());
   return renderLibrary(app);
 }
@@ -412,7 +415,7 @@ async function renderLibrary(app) {
   const search = h('input', { class: 'input', type: 'search', placeholder: 'Find a case study', 'aria-label': 'Find a case study', oninput: (e) => { q = e.target.value.trim().toLowerCase(); draw(); } });
   $('.library', app).replaceChildren(
     h('div', { class: 'library-head' },
-      h('div', {}, h('h1', {}, 'Case studies'), h('p', {}, 'Open one to rearrange it, or start a new one.')),
+      h('div', {}, libTabs('cs'), h('h1', {}, 'Case studies'), h('p', {}, 'Open one to rearrange it, or start a new one.')),
       h('div', { class: 'library-tools' }, search, h('button', { class: 'btn primary', onclick: () => newCaseStudyModal() }, 'New case study'))),
     chips,
     h('div', { class: 'lib-bar' }, picks, h('span', { class: 'lib-spacer' }), sortPick),
@@ -430,6 +433,332 @@ function topbarLibrary() {
     h('button', { class: 'btn on-dark small', onclick: () => { session.set(''); S.key = ''; route(); } }, 'Sign out'));
 }
 
+/* ---------------- templates ---------------- */
+// Saved layouts: content/templates/<slug>.json, listed in content/templates/index.json.
+// A template holds intro blocks and sections. New case studies can start from one,
+// any page can load one, and they open in the same editor to change them.
+const TPL_INDEX = 'content/templates/index.json';
+const tplPath = (slug) => `content/templates/${slug}.json`;
+async function loadTemplates() {
+  const r = await readFiles([TPL_INDEX]);
+  const f = r.files[TPL_INDEX];
+  S.templates = f ? (JSON.parse(f.text).templates || []) : [];
+  return S.templates;
+}
+async function readTemplate(slug) {
+  const r = await readFiles([tplPath(slug)]);
+  const f = r.files[tplPath(slug)];
+  if (!f) throw new Error('That template is gone. Someone may have deleted it.');
+  return { data: JSON.parse(f.text), sha: f.sha };
+}
+// Layout only: keep every block and its settings, empty out the words, photos and videos.
+function emptyPiece(p) {
+  const q = clone(p);
+  switch (q.type) {
+    case 'text': q.html = ''; break;
+    case 'text2': q.left = ''; q.right = ''; break;
+    case 'split': q.media = null; q.title = ''; q.html = ''; q.caption = ''; break;
+    case 'quote': q.text = ''; q.who = ''; break;
+    case 'marquee': q.text = ''; break;
+    case 'steps': q.items = (q.items || []).map(() => ({ title: '', text: '' })); break;
+    case 'credits': q.items = (q.items || []).map((c) => ({ role: (c && c.role) || '', name: '' })); break;
+    case 'stats': q.items = (q.items || []).map((x) => ({ value: '', label: (x && x.label) || '' })); break;
+    case 'image': q.media = null; q.caption = ''; break;
+    case 'duo': q.items = [null, null]; break;
+    case 'compare': q.before = null; q.after = null; break;
+    case 'video': return { type: 'video' };
+    case 'introGallery': q.media = []; q.html = ''; break;
+    case 'logos': q.media = []; break;
+    default: if (Array.isArray(q.media)) q.media = [];
+  }
+  return q;
+}
+function toTemplate(cs, { slug, name, description, strip }) {
+  const d = cleanForSave({ introPieces: cs.introPieces || [], sections: cs.sections || [] });
+  const pieces = (list) => (list || []).map((p) => (strip ? emptyPiece(p) : p));
+  const t = {
+    slug, name, description: description || '', updatedAt: new Date().toISOString(),
+    introPieces: pieces(d.introPieces),
+    sections: d.sections.map((sec) => Object.assign({ title: sec.title || '' }, sec.tone ? { tone: sec.tone } : {}, { pieces: pieces(sec.pieces) })),
+  };
+  const all = t.introPieces.concat(...t.sections.map((sec) => sec.pieces));
+  t.keep = JSON.stringify(all) !== JSON.stringify(all.map(emptyPiece));
+  return t;
+}
+const tplEntry = (t) => ({
+  slug: t.slug, name: t.name, description: t.description || '', keep: !!t.keep, updatedAt: t.updatedAt,
+  sections: t.sections.length, blocks: t.introPieces.length + t.sections.reduce((n, sec) => n + sec.pieces.length, 0),
+  outline: t.sections.slice(0, 8).map((sec) => ({ t: sec.title || '', c: sec.tone || '', n: sec.pieces.length })),
+});
+async function commitTemplate(t, { remove = false, message }) {
+  const r = await readFiles([TPL_INDEX]);
+  const f = r.files[TPL_INDEX];
+  const idx = f ? JSON.parse(f.text) : { templates: [] };
+  idx.templates = (idx.templates || []).filter((x) => x.slug !== t.slug);
+  if (!remove) idx.templates.push(tplEntry(t));
+  idx.templates.sort((a, b) => a.name.localeCompare(b.name));
+  const files = [
+    { path: tplPath(t.slug), content: remove ? null : JSON.stringify(t, null, 1) + '\n' },
+    { path: TPL_INDEX, content: JSON.stringify(idx, null, 1) + '\n' },
+  ];
+  await api('publish', { method: 'POST', body: { message, files, expect: { [TPL_INDEX]: f ? f.sha : null } } });
+  S.templates = idx.templates;
+}
+function uniqueSlug(name, list) {
+  const base = R.slugify(name) || 'template';
+  let slug = base;
+  for (let n = 2; list.some((t) => t.slug === slug); n++) slug = base + '-' + n;
+  return slug;
+}
+const templateToCs = (t) => {
+  const cs = blankCaseStudy('template-preview', t.name || '', '');
+  cs.description = t.description || '';
+  if (t.introPieces) cs.introPieces = clone(t.introPieces);
+  if (t.sections) cs.sections = clone(t.sections);
+  return cs;
+};
+const plural = (n, word) => `${n} ${word}${n === 1 ? '' : 's'}`;
+const tplMeta = (t) => `${plural(t.sections, 'section')}, ${plural(t.blocks, 'block')}, ${t.keep ? 'with words and photos' : 'layout only'}`;
+// a strip of the template's sections in their colors
+function tplOutline(t) {
+  const rows = (t.outline || []).slice(0, 6);
+  return h('span', { class: 'tpl-outline', 'aria-hidden': 'true' },
+    rows.length ? rows.map((o, i) => {
+      const tone = TONES.find((x) => x[0] === o.c);
+      return h('i', { class: tone && tone[3] ? 'is-light' : '', style: { '--c': tone ? tone[2] : SECTION_COLORS[i % SECTION_COLORS.length] } }, h('b', {}, String(i + 1).padStart(2, '0')), o.t || 'Untitled section');
+    }) : h('i', { style: { '--c': 'var(--line-2)' } }, 'No sections yet'));
+}
+const libTabs = (on) => h('nav', { class: 'lib-tabs', 'aria-label': 'Builder' },
+  h('a', { href: '#/', class: on === 'cs' ? 'is-on' : '', 'aria-current': on === 'cs' ? 'page' : null }, 'Case studies'),
+  h('a', { href: '#/templates', class: on === 'tpl' ? 'is-on' : '', 'aria-current': on === 'tpl' ? 'page' : null }, 'Templates'));
+
+async function renderTemplates(app) {
+  document.title = 'Templates · Builder';
+  S.cs = null;
+  document.body.classList.remove('preview-open');
+  app.replaceChildren(topbarLibrary(), h('div', { class: 'library' }, h('div', { class: 'boot' }, 'Loading templates…')));
+  let list;
+  try { list = await loadTemplates(); } catch (e) {
+    $('.library', app).replaceChildren(h('div', { class: 'empty' }, e.message));
+    return;
+  }
+  const grid = h('div', { class: 'tpl-grid' });
+  const draw = () => {
+    grid.replaceChildren(
+      h('button', { class: 'tpl-new', type: 'button', onclick: newTemplateModal }, h('span', { class: 'plus' }, '+'), 'New template'),
+      ...list.map((t) => h('article', { class: 'tpl-item' },
+        h('a', { class: 'tpl-item-open', href: '#/template/' + t.slug, title: 'Edit ' + t.name }, tplOutline(t),
+          h('b', {}, t.name), t.description ? h('p', {}, t.description) : null, h('small', {}, tplMeta(t))),
+        h('div', { class: 'tpl-item-actions' },
+          h('button', { class: 'btn small primary', type: 'button', onclick: () => newCaseStudyModal({ from: 'tpl:' + t.slug }) }, 'Start a case study'),
+          h('a', { class: 'btn small', href: '#/template/' + t.slug }, 'Edit'),
+          h('button', { class: 'btn small ghost', type: 'button', onclick: () => deleteTemplate(t, () => { list = S.templates; draw(); }) }, 'Delete')))));
+    if (!list.length) grid.append(h('p', { class: 'tpl-empty' }, 'No templates yet. Start one here, or open a case study and hit Templates, then Save as a template.'));
+  };
+  $('.library', app).replaceChildren(
+    h('div', { class: 'library-head' },
+      h('div', {}, libTabs('tpl'), h('h1', {}, 'Templates'), h('p', {}, 'Saved layouts. Start a case study from one, or edit them here.')),
+      h('div', { class: 'library-tools' }, h('button', { class: 'btn primary', onclick: newTemplateModal }, 'New template'))),
+    grid);
+  draw();
+}
+
+function deleteTemplate(t, done) {
+  const go = h('button', { class: 'btn primary', type: 'button' }, 'Delete it');
+  const m = modal(h('div', { class: 'modal' },
+    h('h2', {}, 'Delete this template?'),
+    h('p', {}, `“${t.name}” goes away for everyone. Case studies started from it stay as they are.`),
+    h('div', { class: 'actions' }, h('button', { class: 'btn ghost', type: 'button', onclick: () => m.close() }, 'Keep it'), go)));
+  go.addEventListener('click', async () => {
+    go.disabled = true; go.textContent = 'Deleting…';
+    try {
+      await commitTemplate({ slug: t.slug }, { remove: true, message: `Delete template: ${t.name}` });
+      store.del('ihc-tdraft:' + t.slug);
+      m.close(); toast(`Deleted “${t.name}”.`); done();
+    } catch (e) { toast(e.message, 'err', 8000); go.disabled = false; go.textContent = 'Delete it'; }
+  });
+}
+
+async function newTemplateModal() {
+  let list = [];
+  try { list = await loadTemplates(); if (!S.index) await loadIndex(); } catch (e) { toast(e.message, 'err'); return; }
+  const name = h('input', { class: 'input', required: true, placeholder: 'Premiere activation' });
+  const desc = h('input', { class: 'input', placeholder: 'Launch events with a photo moment and press' });
+  const from = h('select', { class: 'select' }, h('option', { value: '' }, 'A blank template'),
+    list.length ? h('optgroup', { label: 'Templates' }, list.map((t) => h('option', { value: 'tpl:' + t.slug }, 'A copy of ' + t.name))) : null,
+    h('optgroup', { label: 'Case studies (layout only)' }, S.index.caseStudies.slice().sort((a, b) => a.title.localeCompare(b.title)).map((c) => h('option', { value: 'cs:' + c.slug }, 'The layout of ' + c.title))));
+  const go = h('button', { class: 'btn primary', type: 'submit' }, 'Start building');
+  const m = modal(h('form', {
+    class: 'modal',
+    onsubmit: async (e) => {
+      e.preventDefault();
+      if (!name.value.trim()) return;
+      go.disabled = true;
+      const slug = uniqueSlug(name.value, list);
+      let base = { name: name.value.trim(), description: desc.value.trim() };
+      try {
+        if (from.value.startsWith('tpl:')) {
+          const { data } = await readTemplate(from.value.slice(4));
+          base = Object.assign({}, data, base);
+        } else if (from.value.startsWith('cs:')) {
+          const p = `content/case-studies/${from.value.slice(3)}.json`;
+          const r = await readFiles([p]);
+          const t = toTemplate(JSON.parse(r.files[p].text), { slug, strip: true });
+          base = Object.assign(base, { introPieces: t.introPieces, sections: t.sections });
+        }
+      } catch (e2) { toast(e2.message, 'err'); go.disabled = false; return; }
+      m.close();
+      startEditor(templateToCs(base), { isNew: true, sha: null, mode: 'template', tplSlug: slug });
+      location.hash = '#/template/' + slug;
+    },
+  },
+  h('h2', {}, 'New template'),
+  h('label', { class: 'field' }, h('span', {}, 'Name'), name),
+  h('label', { class: 'field' }, h('span', {}, 'When to use it (optional)'), desc),
+  h('label', { class: 'field' }, h('span', {}, 'Start from'), from, h('small', {}, 'Starting from a case study copies its sections and blocks, empty.')),
+  h('div', { class: 'actions' }, h('button', { class: 'btn ghost', type: 'button', onclick: () => m.close() }, 'Cancel'), go)));
+  name.focus();
+}
+
+async function openTemplate(slug) {
+  if (S.cs && S.mode === 'template' && S.tplSlug === slug) return renderEditor();
+  const app = $('#app');
+  app.replaceChildren(topbarLibrary(), h('div', { class: 'library' }, h('div', { class: 'boot' }, 'Opening…')));
+  try {
+    const r = await readFiles([tplPath(slug)]);
+    const f = r.files[tplPath(slug)];
+    if (!f) {
+      const draft = store.get('ihc-tdraft:' + slug);
+      if (draft && draft.data) return startEditor(draft.data, { isNew: true, sha: null, mode: 'template', tplSlug: slug });
+      throw new Error('That template doesn’t exist anymore.');
+    }
+    startEditor(templateToCs(JSON.parse(f.text)), { isNew: false, sha: f.sha, mode: 'template', tplSlug: slug });
+  } catch (e) {
+    $('.library', app).replaceChildren(h('div', { class: 'empty' }, e.message, ' ', h('a', { href: '#/templates' }, 'Back to templates')));
+  }
+}
+
+// editing a template: the name and note sit where the hero would
+function templateCard(cs) {
+  return h('section', { class: 'tpl-card', 'aria-label': 'Template' },
+    h('div', { class: 'zone-label', style: { margin: 0 } }, h('h2', {}, 'Template'), h('p', {}, 'New case studies started from this get its intro blocks and sections.')),
+    h('div', { class: 'row' },
+      h('label', { class: 'field' }, h('span', {}, 'Name'), h('input', { class: 'input', value: cs.title, placeholder: 'Premiere activation', oninput: (e) => { cs.title = e.target.value; typed(); } })),
+      h('label', { class: 'field' }, h('span', {}, 'When to use it (optional)'), h('input', { class: 'input', value: cs.description || '', placeholder: 'Launch events with a photo moment and press', oninput: (e) => { cs.description = e.target.value; typed(); } }))));
+}
+
+async function saveTemplateFlow() {
+  const cs = S.cs;
+  if (!cs.title.trim()) { toast('Give the template a name first.', 'err'); return; }
+  if (S.uploads) { toast('Wait for uploads to finish.', 'err'); return; }
+  const btns = [$('#bar-publish'), $('#dock-publish')].filter(Boolean);
+  btns.forEach((b) => { b.disabled = true; });
+  try {
+    const t = toTemplate(cs, { slug: S.tplSlug, name: cs.title.trim(), description: (cs.description || '').trim(), strip: false });
+    await commitTemplate(t, { message: `${S.isNew ? 'Add' : 'Update'} template: ${t.name}` });
+    store.del(draftKey());
+    S.isNew = false;
+    S.draftNote = null;
+    S.publishedSnap = JSON.stringify(cleanForSave(S.cs));
+    renderCanvas();
+    toast(`Saved “${t.name}”. New case studies can start from it now.`, 'ok');
+  } catch (e) {
+    toast(e.message, 'err', 8000);
+  } finally {
+    btns.forEach((b) => { b.disabled = false; });
+    updateBar();
+  }
+}
+
+// in a case study: save its layout as a template, or pull one in
+function templatesMenu() {
+  const m = modal(h('div', { class: 'modal' },
+    h('h2', {}, 'Templates'),
+    h('div', { class: 'choice-list' },
+      h('button', { class: 'choice', type: 'button', onclick: () => { m.close(); saveTemplateModal(); } }, svg('copy'), h('span', {}, h('b', {}, 'Save as a template'), h('small', {}, 'Keep this page’s sections and blocks to start other case studies from.'))),
+      h('button', { class: 'choice', type: 'button', onclick: () => { m.close(); loadTemplateModal(); } }, svg('down'), h('span', {}, h('b', {}, 'Load a template'), h('small', {}, 'Swap in a saved layout, or add its sections to the end. Undo puts things back.')))),
+    h('div', { class: 'actions' }, h('a', { class: 'btn ghost', href: '#/templates', onclick: () => m.close() }, 'Manage templates'), h('button', { class: 'btn', type: 'button', onclick: () => m.close() }, 'Close'))));
+}
+
+async function saveTemplateModal() {
+  let list = [];
+  try { list = await loadTemplates(); } catch (e) { toast(e.message, 'err'); return; }
+  let strip = true;
+  const name = h('input', { class: 'input', required: true, placeholder: 'Premiere activation' });
+  const desc = h('input', { class: 'input', placeholder: 'Launch events with a photo moment and press' });
+  const target = h('select', {
+    class: 'select',
+    onchange: () => { const t = list.find((x) => x.slug === target.value); if (t) { name.value = t.name; desc.value = t.description || ''; } },
+  }, h('option', { value: '' }, 'A new template'), list.map((t) => h('option', { value: t.slug }, `Replace “${t.name}”`)));
+  const go = h('button', { class: 'btn primary', type: 'submit' }, 'Save template');
+  const m = modal(h('form', {
+    class: 'modal',
+    onsubmit: async (e) => {
+      e.preventDefault();
+      if (!name.value.trim()) return;
+      go.disabled = true; go.textContent = 'Saving…';
+      try {
+        const slug = target.value || uniqueSlug(name.value, list);
+        const t = toTemplate(S.cs, { slug, name: name.value.trim(), description: desc.value.trim(), strip });
+        await commitTemplate(t, { message: `${target.value ? 'Update' : 'Add'} template: ${t.name}` });
+        m.close();
+        toast(`Saved “${t.name}”. It’s under Templates on the case study list.`, 'ok', 6000);
+      } catch (e2) { toast(e2.message, 'err', 8000); go.disabled = false; go.textContent = 'Save template'; }
+    },
+  },
+  h('h2', {}, 'Save as a template'),
+  h('p', {}, 'Saves this page’s intro blocks and sections, in order, with their colors and settings.'),
+  list.length ? h('label', { class: 'field' }, h('span', {}, 'Save it as'), target) : null,
+  h('label', { class: 'field' }, h('span', {}, 'Name'), name),
+  h('label', { class: 'field' }, h('span', {}, 'When to use it (optional)'), desc),
+  h('div', { class: 'field' }, h('span', {}, 'What to keep'),
+    seg([['layout', 'Just the layout'], ['all', 'Layout, words and photos']], 'layout', (v) => { strip = v === 'layout'; }),
+    h('small', {}, 'Just the layout keeps every section, block and setting and empties them out.')),
+  h('div', { class: 'actions' }, h('button', { class: 'btn ghost', type: 'button', onclick: () => m.close() }, 'Cancel'), go)));
+  name.focus();
+}
+
+async function loadTemplateModal() {
+  let list = [];
+  try { list = await loadTemplates(); } catch (e) { toast(e.message, 'err'); return; }
+  if (!list.length) {
+    const m0 = modal(h('div', { class: 'modal' },
+      h('h2', {}, 'No templates yet'),
+      h('p', {}, 'Save this page’s layout as the first one, then load it into other case studies.'),
+      h('div', { class: 'actions' }, h('button', { class: 'btn ghost', type: 'button', onclick: () => m0.close() }, 'Close'),
+        h('button', { class: 'btn primary', type: 'button', onclick: () => { m0.close(); saveTemplateModal(); } }, 'Save as a template'))));
+    return;
+  }
+  let pick = list[0].slug;
+  let how = 'replace';
+  const options = h('div', { class: 'tpl-pick', role: 'radiogroup', 'aria-label': 'Templates' });
+  const drawOptions = () => options.replaceChildren(...list.map((t) => h('button', {
+    type: 'button', role: 'radio', class: 'tpl-option' + (t.slug === pick ? ' is-on' : ''), 'aria-checked': t.slug === pick ? 'true' : 'false',
+    onclick: () => { pick = t.slug; drawOptions(); },
+  }, tplOutline(t), h('b', {}, t.name), h('small', {}, tplMeta(t)))));
+  drawOptions();
+  const go = h('button', { class: 'btn primary', type: 'button' }, 'Load template');
+  const m = modal(h('div', { class: 'modal wide' },
+    h('h2', {}, 'Load a template'),
+    options,
+    h('div', { class: 'field' }, h('span', {}, 'How'),
+      seg([['replace', 'Replace this page’s blocks'], ['add', 'Add its sections to the end']], how, (v) => { how = v; }),
+      h('small', {}, 'Replacing swaps the intro blocks and all sections. The hero, intro text and page settings stay. Undo puts it all back.')),
+    h('div', { class: 'actions' }, h('button', { class: 'btn ghost', type: 'button', onclick: () => m.close() }, 'Cancel'), go)));
+  go.addEventListener('click', async () => {
+    go.disabled = true; go.textContent = 'Loading…';
+    try {
+      const { data } = await readTemplate(pick);
+      const t = normalize({ slug: S.cs.slug, introPieces: clone(data.introPieces || []), sections: clone(data.sections || []) });
+      if (how === 'replace') { S.cs.introPieces = t.introPieces; S.cs.sections = t.sections; S.activeSection = 0; } else S.cs.sections.push(...t.sections);
+      t.sections.forEach((sec) => S.collapsed.add(sec._id));
+      commit();
+      m.close();
+      undoToast(`Loaded “${data.name}”.`);
+    } catch (e) { toast(e.message, 'err', 8000); go.disabled = false; go.textContent = 'Load template'; }
+  });
+}
+
 /* ---------------- new case study ---------------- */
 function blankCaseStudy(slug, title, client) {
   return {
@@ -445,15 +774,26 @@ function defaultHome() {
   return { showHomepage: false, category: '', image: '', gif: '', vimeo: '', ip: '', award: false, awardTitle: '', awardLogo1: '', awardLogo2: '', video: '' };
 }
 
-async function newCaseStudyModal() {
+async function newCaseStudyModal({ from: preset = '' } = {}) {
   if (!S.index) await loadIndex();
+  let templates = S.templates || [];
+  try { templates = await loadTemplates(); } catch (e) { /* templates are optional here */ }
   const taken = new Set(S.index.caseStudies.map((c) => c.slug));
   let slugEdited = false;
   const title = h('input', { class: 'input', required: true, placeholder: 'Deadpool & Wolverine', oninput: () => { if (!slugEdited) slug.value = R.slugify(title.value); check(); } });
   const client = h('input', { class: 'input', placeholder: 'Disney • Marvel Studios' });
   const slug = h('input', { class: 'input', required: true, pattern: '[a-z0-9]+(-[a-z0-9]+)*', oninput: () => { slugEdited = true; slug.value = R.slugify(slug.value); check(); } });
-  const from = h('select', { class: 'select' }, h('option', { value: '' }, 'A blank page'),
-    ...S.index.caseStudies.slice().sort((a, b) => a.title.localeCompare(b.title)).map((c) => h('option', { value: c.slug }, 'A copy of ' + c.title)));
+  const fromNote = h('small', {});
+  const from = h('select', { class: 'select', onchange: () => noteFrom() }, h('option', { value: '' }, 'A blank page'),
+    templates.length ? h('optgroup', { label: 'Templates' }, templates.map((t) => h('option', { value: 'tpl:' + t.slug, selected: preset === 'tpl:' + t.slug }, t.name))) : null,
+    h('optgroup', { label: 'Copy a case study' }, S.index.caseStudies.slice().sort((a, b) => a.title.localeCompare(b.title)).map((c) => h('option', { value: c.slug }, 'A copy of ' + c.title))));
+  const noteFrom = () => {
+    const t = from.value.startsWith('tpl:') && templates.find((x) => 'tpl:' + x.slug === from.value);
+    fromNote.textContent = t ? `Starts with this template’s ${plural(t.sections, 'section')} and ${plural(t.blocks, 'block')}.`
+      : from.value ? 'A copy keeps the sections, text and photos so you can swap in the new project.'
+        : 'Starts with one section to build on.';
+  };
+  noteFrom();
   const note = h('small', {});
   const go = h('button', { class: 'btn primary', type: 'submit' }, 'Start building');
   function check() {
@@ -469,7 +809,13 @@ async function newCaseStudyModal() {
       e.preventDefault();
       go.disabled = true;
       let cs = blankCaseStudy(slug.value, title.value.trim(), client.value.trim());
-      if (from.value) {
+      if (from.value.startsWith('tpl:')) {
+        try {
+          const { data } = await readTemplate(from.value.slice(4));
+          cs.introPieces = clone(data.introPieces || []);
+          cs.sections = clone(data.sections || []);
+        } catch (e2) { toast(e2.message, 'err'); }
+      } else if (from.value) {
         try {
           const r = await readFiles([`content/case-studies/${from.value}.json`]);
           const src = JSON.parse(r.files[`content/case-studies/${from.value}.json`].text);
@@ -486,7 +832,7 @@ async function newCaseStudyModal() {
   h('label', { class: 'field' }, h('span', {}, 'Project name'), title),
   h('label', { class: 'field' }, h('span', {}, 'Client'), client),
   h('label', { class: 'field' }, h('span', {}, 'Page link'), slug, note),
-  h('label', { class: 'field' }, h('span', {}, 'Start from'), from, h('small', {}, 'A copy keeps the sections, text and photos so you can swap in the new project.')),
+  h('label', { class: 'field' }, h('span', {}, 'Start from'), from, fromNote),
   h('div', { class: 'actions' }, h('button', { class: 'btn ghost', type: 'button', onclick: () => m.close() }, 'Cancel'), go)));
   check();
   title.focus();
@@ -504,7 +850,7 @@ function modal(content, { onClose } = {}) {
 
 /* ---------------- open + editor ---------------- */
 async function openCaseStudy(slug) {
-  if (S.cs && S.slug === slug) return renderEditor();
+  if (S.cs && S.mode !== 'template' && S.slug === slug) return renderEditor();
   const app = $('#app');
   app.replaceChildren(topbarLibrary(), h('div', { class: 'library' }, h('div', { class: 'boot' }, 'Opening…')));
   try {
@@ -552,7 +898,10 @@ function cleanForSave(cs) {
   return out;
 }
 
-function startEditor(cs, { isNew, sha }) {
+const draftKey = () => (S.mode === 'template' ? 'ihc-tdraft:' + S.tplSlug : 'ihc-draft:' + S.slug);
+function startEditor(cs, { isNew, sha, mode = 'cs', tplSlug = '' }) {
+  S.mode = mode;
+  S.tplSlug = tplSlug;
   S.cs = normalize(cs);
   S.slug = cs.slug;
   S.isNew = isNew;
@@ -561,7 +910,7 @@ function startEditor(cs, { isNew, sha }) {
   S.publishedSnap = isNew ? '' : JSON.stringify(cleanForSave(S.cs));
   S.activeSection = 0;
   // a draft saved in this browser wins, so nothing typed is ever lost
-  const draft = store.get('ihc-draft:' + cs.slug);
+  const draft = store.get(mode === 'template' ? 'ihc-tdraft:' + tplSlug : 'ihc-draft:' + cs.slug);
   S.draftNote = null;
   if (draft && draft.data && JSON.stringify(draft.data) !== S.publishedSnap) {
     S.cs = normalize(draft.data);
@@ -586,8 +935,8 @@ function afterChange({ preview = true } = {}) {
 }
 const saveDraft = debounce(() => {
   if (!S.cs) return;
-  if (!isDirty()) { store.del('ihc-draft:' + S.slug); return; }
-  store.set('ihc-draft:' + S.slug, { savedAt: new Date().toISOString(), baseSha: S.loadedSha, data: cleanForSave(S.cs) });
+  if (!isDirty()) { store.del(draftKey()); return; }
+  store.set(draftKey(), { savedAt: new Date().toISOString(), baseSha: S.loadedSha, data: cleanForSave(S.cs) });
 }, 600);
 
 // structural change: snapshot for undo, then redraw
@@ -636,21 +985,23 @@ window.addEventListener('beforeunload', (e) => { if (S.uploads > 0) { e.preventD
 /* ---------------- editor layout ---------------- */
 async function renderEditor() {
   const app = $('#app');
-  document.title = (S.cs.title || 'New case study') + ' · Builder';
+  const tpl = S.mode === 'template';
+  document.title = (S.cs.title || (tpl ? 'New template' : 'New case study')) + ' · Builder';
   if (!S.template) {
     try { S.template = await (await fetch('/builder/case-study.template', { cache: 'no-cache' })).text(); } catch (e) { toast('Couldn’t load the page template, so the preview is off.', 'err'); }
   }
   if (!S.index) loadIndex().then(() => { if (S.cs) renderCanvas(); }).catch(() => {});
   const bar = h('header', { class: 'topbar' },
-    h('a', { class: 'logo-link', href: '#/', title: 'All case studies', 'aria-label': 'All case studies' }, logo()),
+    h('a', { class: 'logo-link', href: tpl ? '#/templates' : '#/', title: tpl ? 'All templates' : 'All case studies', 'aria-label': tpl ? 'All templates' : 'All case studies' }, logo()),
     h('div', { class: 'crumb' }, h('b', { id: 'bar-title' }), h('span', { id: 'bar-link' })),
     h('div', { class: 'spacer' }),
     h('span', { class: 'state', id: 'bar-state' }),
     h('button', { class: 'icon-btn', id: 'bar-undo', title: 'Undo', 'aria-label': 'Undo', onclick: undo }, svg('undo')),
     h('button', { class: 'icon-btn', id: 'bar-redo', title: 'Redo', 'aria-label': 'Redo', onclick: redo }, svg('redo')),
-    h('button', { class: 'btn on-dark small desk-only', onclick: openSettings }, 'Page settings'),
+    tpl ? null : h('button', { class: 'btn on-dark small desk-only', onclick: templatesMenu }, 'Templates'),
+    tpl ? null : h('button', { class: 'btn on-dark small desk-only', onclick: openSettings }, 'Page settings'),
     h('button', { class: 'btn on-dark small desk-only' + (S.preview ? ' is-on' : ''), id: 'bar-preview', 'aria-pressed': S.preview ? 'true' : 'false', onclick: togglePreview }, 'Preview'),
-    h('button', { class: 'btn primary small desk-only', id: 'bar-publish', onclick: publishFlow }, 'Publish'));
+    h('button', { class: 'btn primary small desk-only', id: 'bar-publish', onclick: tpl ? saveTemplateFlow : publishFlow }, tpl ? 'Save template' : 'Publish'));
   const editor = h('div', { class: 'editor' + (S.preview ? ' with-preview' : '') },
     renderBin(),
     h('main', { class: 'canvas', id: 'canvas' }, h('div', { class: 'canvas-inner', id: 'canvas-inner' })),
@@ -659,8 +1010,8 @@ async function renderEditor() {
   const dock = h('nav', { class: 'dock', 'aria-label': 'Editor actions' },
     h('button', { class: 'dock-add', type: 'button', onclick: openAddSheet }, svg('plus'), h('span', {}, 'Add')),
     h('button', { type: 'button', onclick: togglePreview }, svg('eye'), h('span', {}, 'Preview')),
-    h('button', { type: 'button', onclick: openSettings }, svg('gear'), h('span', {}, 'Settings')),
-    h('button', { class: 'dock-publish', type: 'button', id: 'dock-publish', onclick: publishFlow }, svg('send'), h('span', {}, 'Publish')));
+    tpl ? null : h('button', { type: 'button', onclick: openSettings }, svg('gear'), h('span', {}, 'Settings')),
+    h('button', { class: 'dock-publish', type: 'button', id: 'dock-publish', onclick: tpl ? saveTemplateFlow : publishFlow }, svg(tpl ? 'copy' : 'send'), h('span', {}, tpl ? 'Save' : 'Publish')));
   app.replaceChildren(bar, editor, dock);
   renderCanvas();
   updateBar();
@@ -669,11 +1020,14 @@ async function renderEditor() {
 
 function updateBar() {
   if (!$('#bar-title')) return;
+  const tpl = S.mode === 'template';
   $('#bar-title').textContent = S.cs.title || 'Untitled';
-  $('#bar-link').textContent = '/case-study/' + S.cs.slug;
+  $('#bar-link').textContent = tpl ? 'Template' : '/case-study/' + S.cs.slug;
   const st = $('#bar-state');
   const dirty = isDirty();
-  st.textContent = S.uploads ? `Uploading ${S.uploads}…` : S.isNew ? 'Not published yet' : dirty ? 'Unpublished changes' : 'Matches the live page';
+  st.textContent = S.uploads ? `Uploading ${S.uploads}…`
+    : tpl ? (S.isNew ? 'Not saved yet' : dirty ? 'Unsaved changes' : 'Saved')
+      : S.isNew ? 'Not published yet' : dirty ? 'Unpublished changes' : 'Matches the live page';
   st.classList.toggle('dirty', dirty || S.uploads > 0);
   $('#bar-undo').disabled = !S.history.length;
   $('#bar-redo').disabled = !S.future.length;
@@ -864,12 +1218,14 @@ function renderCanvas() {
   if (S.draftNote) {
     const when = new Date(S.draftNote.savedAt).toLocaleString();
     kids.push(h('div', { class: 'banner' },
-      h('span', {}, S.draftNote.stale
-        ? `You're looking at unpublished changes saved in this browser (${when}). Someone published this page after that, so publishing will replace their version.`
-        : `You're looking at unpublished changes saved in this browser (${when}).`),
+      h('span', {}, S.mode === 'template'
+        ? `You're looking at unsaved changes to this template from this browser (${when}).`
+        : S.draftNote.stale
+          ? `You're looking at unpublished changes saved in this browser (${when}). Someone published this page after that, so publishing will replace their version.`
+          : `You're looking at unpublished changes saved in this browser (${when}).`),
       S.isNew ? null : h('button', { class: 'btn small', onclick: discardDraft }, 'Discard them')));
   }
-  kids.push(heroCard(cs), introCard(cs));
+  kids.push(S.mode === 'template' ? templateCard(cs) : heroCard(cs), introCard(cs));
   const anyOpen = cs.sections.some((sec) => !S.collapsed.has(sec._id));
   kids.push(h('div', { class: 'zone-label' }, h('h2', {}, 'Sections'),
     h('p', {}, 'Each one opens and closes on the page. Drag the dots to reorder.'),
@@ -931,10 +1287,10 @@ function syncMedia() {
 }
 
 function discardDraft() {
-  store.del('ihc-draft:' + S.slug);
+  store.del(draftKey());
   S.draftNote = null;
   S.cs = null;
-  openCaseStudy(S.slug);
+  if (S.mode === 'template') openTemplate(S.tplSlug); else openCaseStudy(S.slug);
 }
 
 /* ---- hero ---- */
@@ -1033,6 +1389,11 @@ function servicesPicker(cs) {
 /* ---- intro ---- */
 function introCard(cs) {
   const list = h('div', { class: 'pieces', id: 'intro-pieces', 'data-empty': 'Drop intro photos or text here' }, cs.introPieces.map((p) => pieceCard(p, { intro: true })));
+  if (S.mode === 'template') {
+    return h('section', { class: 'intro-card', 'aria-label': 'Intro', onfocusin: () => focusPreview('intro') },
+      h('div', { class: 'zone-label', style: { margin: 0 } }, h('h2', {}, 'Intro'), h('p', {}, 'Blocks that sit next to the intro text.')),
+      list);
+  }
   return h('section', { class: 'intro-card', 'aria-label': 'Intro', onfocusin: () => focusPreview('intro') },
     h('div', { class: 'zone-label', style: { margin: 0 } }, h('h2', {}, 'Intro'), h('p', {}, 'The first thing under the hero.')),
     h('div', { class: 'field pill' }, h('span', {}, 'Quote pill (optional)'), rte(cs.headline, (v) => { cs.headline = v; typed(); }, { inline: true, bare: true, placeholder: 'A short quote in a blue pill' })),
@@ -1756,7 +2117,13 @@ function openSettings() {
       h('label', { class: 'switch' }, h('span', {}, h('b', {}, 'Show on the Work page'), h('small', {}, 'Off keeps the page live at its link but out of the list.')),
         h('input', { type: 'checkbox', checked: L.listed, onchange: set((v) => { L.listed = v; showWork(); }) })),
       workBits),
-    homeSec);
+    homeSec,
+    h('section', {},
+      h('h3', {}, 'Templates'),
+      h('p', { class: 'drawer-note' }, 'Save this layout to start other case studies from, or swap in a saved one.'),
+      h('div', { class: 'add-row' },
+        h('button', { class: 'btn small', type: 'button', onclick: () => { close(); saveTemplateModal(); } }, 'Save as a template'),
+        h('button', { class: 'btn small', type: 'button', onclick: () => { close(); loadTemplateModal(); } }, 'Load a template'))));
   showWork();
   const scrim = h('div', { class: 'scrim' }, drawer);
   const close = () => { scrim.remove(); document.removeEventListener('keydown', onKey); commit({ redraw: false }); renderCanvas(); };
