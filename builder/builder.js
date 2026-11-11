@@ -204,27 +204,29 @@ function route() {
 /* ---------------- login ---------------- */
 // A different hello on every load. First-timers get a welcome, everyone after gets a welcome back.
 const HELLO = [
-  'Welcome in. Please keep your arms and legs inside the builder at all times.',
-  'Hey, new face. The bricks are in the bin and nothing here bites.',
-  'Welcome. No ticket needed, just the password.',
+  'Oh good, a new person. Try not to break anything on day one.',
+  'Welcome. Yes, you need the password. No, it’s not “password.”',
+  'New here? Cute. Bricks are on the left, panic is optional.',
+  'Welcome. Someone trusted you with this. Bold move on their part.',
 ];
 const HELLO_AGAIN = [
-  'Welcome back. Enter your secret identity below.',
-  'Previously, on Case Study Builder…',
-  'Welcome back. The line is way shorter than Hall H.',
-  'Oh hey, it’s you. The case studies missed you.',
-  'Welcome back. No glue, no Allen wrench, no leftover screws.',
-  'Back again? Respect. The bricks are right where you left them.',
-  'Welcome back. The fog machine is warming up.',
-  'Badge check. Looks legit. Welcome back.',
-  'Welcome back. Somewhere a studio exec is about to be very impressed.',
-  'Sold-out crowd. Well, a crowd of one. Welcome back.',
-  'The hero returns. Your sidekicks are standing by.',
-  'Welcome back. Snap it, stack it, ship it.',
-  'Welcome back. The work isn’t going to brag about itself.',
-  'Good to see you. The confetti cannon is loaded.',
-  'Welcome back. Legos, but for bragging.',
-  'You’re back. Quick, act like you never left.',
+  'Oh. It’s you again.',
+  'Took you long enough.',
+  'Back already? The case studies were enjoying the quiet.',
+  'Welcome back. Try to actually publish something this time.',
+  'Look who remembered the password. Proud of you. Kind of.',
+  'Welcome back. The pages didn’t build themselves while you were gone. We checked.',
+  'Previously, on Case Study Builder: you said you’d finish this.',
+  'The line is shorter than Hall H. So is our patience.',
+  'Ah, the creative genius returns. Allegedly.',
+  'Welcome back. Please don’t make it another gallery.',
+  'You again? Fine. Type the password and we’ll pretend we’re excited.',
+  'Badge check. Ugh, fine. Go on in.',
+  'Welcome back. Your drafts have been judging you.',
+  'Oh hey. Did you bring snacks? No? Typical.',
+  'Welcome back. Somewhere a client is typing “is it live yet?”',
+  'Welcome back. The fog machine has seen things. Don’t ask.',
+  'Make it pop. Kidding. We hate that phrase too.',
 ];
 function hello() {
   const seen = store.get('ihc-builder-seen');
