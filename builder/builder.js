@@ -278,6 +278,20 @@ async function loadIndex() {
   return S.index;
 }
 
+const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+const SORTS = [
+  ['az', 'Name, A to Z'], ['za', 'Name, Z to A'], ['new', 'Newest project first'], ['old', 'Oldest project first'],
+  ['client', 'Client, A to Z'], ['published', 'Last published'], ['big', 'Most sections'],
+];
+// "Disney • Marvel Studios" -> ['Disney', 'Marvel Studios']
+const clientsOf = (c) => String(c.client || '').split(/\s*[•,]\s*/).map((x) => x.trim()).filter(Boolean);
+const when = (c) => (+c.year || 0) * 100 + (MONTHS.indexOf(c.month) + 1);
+function draftSlugs() {
+  const out = new Set();
+  try { for (let i = 0; i < localStorage.length; i++) { const k = localStorage.key(i); if (k && k.startsWith('ihc-draft:')) out.add(k.slice(10)); } } catch (e) { /* storage blocked */ }
+  return out;
+}
+
 async function renderLibrary(app) {
   document.title = 'Case Study Builder · IHC';
   S.cs = null;
@@ -288,34 +302,123 @@ async function renderLibrary(app) {
     $('.library', app).replaceChildren(h('div', { class: 'empty' }, e.message));
     return;
   }
+  const all = idx.caseStudies;
+  const drafts = draftSlugs();
+  const blank = { show: 'all', category: '', service: '', client: '', year: '', sort: 'az' };
+  // the view you left is the view you come back to (this browser only)
+  const v = Object.assign({}, blank, store.get('ihc-library-view') || {});
   let q = '';
-  let filter = 'all';
-  const grid = h('div', { class: 'grid' });
-  const draw = () => {
-    const list = idx.caseStudies
-      .filter((c) => filter === 'all' || (filter === 'listed' ? c.listed : !c.listed))
-      .filter((c) => !q || (c.title + ' ' + c.client + ' ' + c.slug).toLowerCase().includes(q))
-      .sort((a, b) => R.sortKey(a.title).localeCompare(R.sortKey(b.title)));
-    grid.replaceChildren(
-      h('button', { class: 'cs-card new-card', onclick: () => newCaseStudyModal() }, h('span', {}, h('span', { class: 'plus' }, '+'), 'New case study')),
-      ...list.map((c) => h('button', { class: 'cs-card', onclick: () => { location.hash = '#/cs/' + c.slug; } },
-        h('div', { class: 'thumb', style: { backgroundImage: c.thumb ? `url("${c.thumb}")` : '' } }),
-        h('span', { class: 'tag' + (c.listed ? '' : ' hidden') }, c.listed ? (c.homepage ? 'Work + homepage' : 'On Work page') : 'Hidden'),
-        h('div', { class: 'meta' }, h('b', {}, c.title || c.slug), h('span', {}, c.client || ' ')))),
-    );
-    if (!list.length && q) grid.append(h('div', { class: 'empty' }, `Nothing matches “${q}”.`));
+
+  // client names: case-insensitive, shown with their most common spelling
+  const clientTally = new Map();
+  all.forEach((c) => clientsOf(c).forEach((n) => {
+    const k = n.toLowerCase();
+    const t = clientTally.get(k) || { n: 0, spellings: new Map() };
+    t.n++; t.spellings.set(n, (t.spellings.get(n) || 0) + 1);
+    clientTally.set(k, t);
+  }));
+  const clientName = (k) => [...clientTally.get(k).spellings.entries()].sort((x, y) => y[1] - x[1])[0][0];
+  const tally = (fn) => { const m = new Map(); all.forEach((c) => [].concat(fn(c)).forEach((x) => { if (x) m.set(x, (m.get(x) || 0) + 1); })); return m; };
+  const cats = tally((c) => c.category);
+  const services = tally((c) => c.services || []);
+  const years = tally((c) => c.year);
+
+  const SHOW = [
+    ['all', 'All', () => true],
+    ['listed', 'On the Work page', (c) => c.listed],
+    ['homepage', 'On the homepage', (c) => c.homepage],
+    ['hidden', 'Hidden', (c) => !c.listed],
+    ['drafts', 'Unpublished changes', (c) => drafts.has(c.slug)],
+  ].filter(([k]) => k !== 'drafts' || drafts.size);
+  if (!SHOW.some(([k]) => k === v.show)) v.show = 'all';
+
+  const matches = (c) => {
+    if (!SHOW.find(([k]) => k === v.show)[2](c)) return false;
+    if (v.category && (v.category === '-' ? c.category : c.category !== v.category)) return false;
+    if (v.service && !(c.services || []).includes(v.service)) return false;
+    if (v.client && !clientsOf(c).some((n) => n.toLowerCase() === v.client)) return false;
+    if (v.year && (v.year === '-' ? c.year : c.year !== v.year)) return false;
+    if (q && !(c.title + ' ' + c.client + ' ' + c.slug + ' ' + (c.services || []).join(' ')).toLowerCase().includes(q)) return false;
+    return true;
   };
+  const byName = (a, b) => R.sortKey(a.title).localeCompare(R.sortKey(b.title));
+  const sorter = {
+    az: byName,
+    za: (a, b) => byName(b, a),
+    new: (a, b) => (when(b) - when(a)) || byName(a, b),
+    old: (a, b) => ((when(a) || 1e9) - (when(b) || 1e9)) || byName(a, b),
+    client: (a, b) => (clientsOf(a)[0] || '~').toLowerCase().localeCompare((clientsOf(b)[0] || '~').toLowerCase()) || byName(a, b),
+    published: (a, b) => String(b.updatedAt || '').localeCompare(String(a.updatedAt || '')) || byName(a, b),
+    big: (a, b) => ((b.sections || 0) - (a.sections || 0)) || byName(a, b),
+  };
+  // date and client sorts get headings so the order is easy to read
+  const groupOf = {
+    new: (c) => c.year || 'No date', old: (c) => c.year || 'No date',
+    client: (c) => (clientsOf(c)[0] ? clientName(clientsOf(c)[0].toLowerCase()) : 'No client'),
+  };
+
+  const grid = h('div', { class: 'grid' });
+  const count = h('p', { class: 'lib-count', 'aria-live': 'polite' });
+  const clearBtn = h('button', { class: 'btn ghost small', type: 'button', onclick: () => { Object.assign(v, blank, { sort: v.sort }); q = ''; search.value = ''; sync(); } }, 'Clear filters');
+  const card = (c) => {
+    const date = [c.month, c.year].filter(Boolean).join(' ');
+    return h('button', { class: 'cs-card', onclick: () => { location.hash = '#/cs/' + c.slug; } },
+      h('div', { class: 'thumb', style: { backgroundImage: c.thumb ? `url("${c.thumb}")` : '' } }),
+      h('span', { class: 'tag' + (c.listed ? '' : ' hidden') }, c.listed ? (c.homepage ? 'Work + homepage' : 'On Work page') : 'Hidden'),
+      drafts.has(c.slug) ? h('span', { class: 'tag draft' }, 'Unpublished changes') : null,
+      h('div', { class: 'meta' }, h('b', {}, c.title || c.slug), h('span', {}, c.client || ' '),
+        (c.category || date) ? h('small', {}, [c.category, date].filter(Boolean).join(', ')) : null));
+  };
+  const draw = () => {
+    const list = all.filter(matches).sort(sorter[v.sort] || byName);
+    const g = groupOf[v.sort];
+    // the New card only leads an ungrouped list; grouped lists use the button up top
+    const kids = g ? [] : [h('button', { class: 'cs-card new-card', onclick: () => newCaseStudyModal() }, h('span', {}, h('span', { class: 'plus' }, '+'), 'New case study'))];
+    let last = null;
+    list.forEach((c) => {
+      if (g) { const k = g(c); if (k !== last) { kids.push(h('h2', { class: 'grid-h' }, k)); last = k; } }
+      kids.push(card(c));
+    });
+    if (!list.length) kids.push(h('div', { class: 'empty' }, q ? `Nothing matches “${q}”.` : 'Nothing matches those filters.'));
+    grid.replaceChildren(...kids);
+    const filtered = q || v.show !== 'all' || v.category || v.service || v.client || v.year;
+    count.textContent = filtered ? `Showing ${list.length} of ${all.length}` : `${all.length} case studies`;
+    clearBtn.hidden = !filtered;
+  };
+
+  const chips = h('div', { class: 'filters', role: 'group', 'aria-label': 'Show' });
+  const pick = (label, key, options) => {
+    const sel = h('select', { 'aria-label': label, onchange: (e) => { v[key] = e.target.value; sync(); } }, options.map(([val, text]) => h('option', { value: val }, text)));
+    return h('label', { class: 'pick', 'data-key': key }, sel);
+  };
+  const withCount = (m) => [...m.entries()];
+  const picks = [
+    pick('Category', 'category', [['', 'All categories']].concat(withCount(cats).sort((a, b) => a[0].localeCompare(b[0])).map(([k, n]) => [k, `${k} (${n})`]), all.some((c) => !c.category) ? [['-', 'No category']] : [])),
+    pick('Service', 'service', [['', 'All services']].concat(withCount(services).sort((a, b) => a[0].localeCompare(b[0])).map(([k, n]) => [k, `${k} (${n})`]))),
+    pick('Client', 'client', [['', 'All clients']].concat([...clientTally.entries()].sort((a, b) => b[1].n - a[1].n || a[0].localeCompare(b[0])).map(([k, t]) => [k, `${clientName(k)} (${t.n})`]))),
+    pick('Year', 'year', [['', 'All years']].concat(withCount(years).sort((a, b) => b[0].localeCompare(a[0])).map(([k, n]) => [k, `${k} (${n})`]), all.some((c) => !c.year) ? [['-', 'No date']] : [])),
+  ];
+  const sortPick = h('label', { class: 'pick sort', 'data-key': 'sort' }, h('span', {}, 'Sort'),
+    h('select', { 'aria-label': 'Sort by', onchange: (e) => { v.sort = e.target.value; sync(); } }, SORTS.map(([k, t]) => h('option', { value: k }, t))));
+
+  function sync() {
+    $$('button', chips).forEach((b) => { const on = b.dataset.k === v.show; b.classList.toggle('is-on', on); b.setAttribute('aria-pressed', on ? 'true' : 'false'); });
+    picks.concat(sortPick).forEach((l) => { const sel = $('select', l); sel.value = v[l.dataset.key]; l.classList.toggle('is-on', l.dataset.key !== 'sort' && !!v[l.dataset.key]); });
+    store.set('ihc-library-view', v);
+    draw();
+  }
+  SHOW.forEach(([k, label, fn]) => chips.append(h('button', { type: 'button', 'data-k': k, onclick: () => { v.show = k; sync(); } }, label, h('span', { class: 'n' }, String(all.filter(fn).length)))));
+
   const search = h('input', { class: 'input', type: 'search', placeholder: 'Find a case study', 'aria-label': 'Find a case study', oninput: (e) => { q = e.target.value.trim().toLowerCase(); draw(); } });
-  const filters = h('div', { class: 'filters', role: 'group', 'aria-label': 'Show' });
-  [['all', 'All'], ['listed', 'On the Work page'], ['hidden', 'Hidden']].forEach(([k, label]) => {
-    filters.append(h('button', { class: filter === k ? 'is-on' : '', 'aria-pressed': filter === k ? 'true' : 'false', onclick: (e) => { filter = k; $$('button', filters).forEach((b) => { b.classList.toggle('is-on', b === e.currentTarget); b.setAttribute('aria-pressed', b === e.currentTarget ? 'true' : 'false'); }); draw(); } }, label));
-  });
   $('.library', app).replaceChildren(
     h('div', { class: 'library-head' },
-      h('div', {}, h('h1', {}, 'Case studies'), h('p', {}, `${idx.caseStudies.length} pages. Open one to rearrange it, or start a new one.`)),
+      h('div', {}, h('h1', {}, 'Case studies'), h('p', {}, 'Open one to rearrange it, or start a new one.')),
       h('div', { class: 'library-tools' }, search, h('button', { class: 'btn primary', onclick: () => newCaseStudyModal() }, 'New case study'))),
-    filters, grid);
-  draw();
+    chips,
+    h('div', { class: 'lib-bar' }, picks, h('span', { class: 'lib-spacer' }), sortPick),
+    h('div', { class: 'lib-status' }, count, clearBtn),
+    grid);
+  sync();
 }
 
 function topbarLibrary() {
@@ -1877,19 +1980,19 @@ function published(r) {
   renderCanvas(); updateBar();
   const live = '/case-study/' + d.slug;
   const t = toast(h('span', {}, 'Published. The site is rebuilding, usually about a minute.'), 'ok', 0);
-  if (S.local) { t.replaceChildren(h('span', {}, 'Published (local). '), h('a', { href: live, target: '_blank' }, 'Open the page')); setTimeout(() => t.remove(), 8000); return; }
+  if (S.local) { t.replaceChildren(h('span', {}, 'Published (local). '), h('a', { class: 'btn small on-dark', href: live, target: '_blank' }, 'Open the page')); setTimeout(() => t.remove(), 8000); return; }
   const started = Date.now();
   const poll = async () => {
     try {
       const j = await (await fetch(`/content/case-studies/${d.slug}.json?t=${Date.now()}`, { cache: 'no-store' })).json();
       if (j.updatedAt === d.updatedAt) {
-        t.replaceChildren(h('span', {}, 'It’s live. '), h('a', { href: live, target: '_blank', rel: 'noopener' }, 'Open the page'));
+        t.replaceChildren(h('span', {}, 'It’s live. '), h('a', { class: 'btn small on-dark', href: live, target: '_blank', rel: 'noopener' }, 'Open the page'));
         setTimeout(() => t.remove(), 15000);
         return;
       }
     } catch (e) { /* not there yet */ }
     if (Date.now() - started > 5 * 60 * 1000) {
-      t.replaceChildren(h('span', {}, 'Still rebuilding. Check Vercel if it doesn’t show up soon. '), h('a', { href: live, target: '_blank', rel: 'noopener' }, 'Open the page'));
+      t.replaceChildren(h('span', {}, 'Still rebuilding. Check Vercel if it doesn’t show up soon. '), h('a', { class: 'btn small on-dark', href: live, target: '_blank', rel: 'noopener' }, 'Open the page'));
       setTimeout(() => t.remove(), 15000);
       return;
     }

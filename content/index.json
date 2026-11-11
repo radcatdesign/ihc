@@ -8,7 +8,17 @@
    "homepage": true,
    "noindex": false,
    "thumb": "/images/69d454700e4411023b6cfaab_20250402_MFG_IHC_0439-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "Film",
+   "year": "2025",
+   "month": "Apr",
+   "services": [
+    "Creative Direction",
+    "Digital Strategy",
+    "Narrative Development",
+    "Custom Mailers"
+   ],
+   "sections": 3
   },
   {
    "slug": "a-haunting-in-venice",
@@ -18,7 +28,17 @@
    "homepage": false,
    "noindex": false,
    "thumb": "/images/6a763439dc7cb86e310fe01e_09062023-Haunting-in-Venice-Screening-101987-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "Film",
+   "year": "2023",
+   "month": "Sep",
+   "services": [
+    "Creative Direction",
+    "Event Production",
+    "Environment Design",
+    "Influencer Guestlist"
+   ],
+   "sections": 2
   },
   {
    "slug": "abigail",
@@ -28,7 +48,17 @@
    "homepage": true,
    "noindex": false,
    "thumb": "/images/69cc58aba71c7a7a2b79804c_TR021026-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "Film",
+   "year": "",
+   "month": "",
+   "services": [
+    "Creative Direction",
+    "Environment Design",
+    "Event Production",
+    "Content Production"
+   ],
+   "sections": 4
   },
   {
    "slug": "adult-swim-festival",
@@ -38,7 +68,17 @@
    "homepage": false,
    "noindex": false,
    "thumb": "/images/660b6f6f2289a18ea440f672_65ea2ddce4a8795fd20b54f8_hero-image-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "Events",
+   "year": "",
+   "month": "",
+   "services": [
+    "Digital Strategy",
+    "Content Production",
+    "Creative Concept",
+    "Creative Direction"
+   ],
+   "sections": 4
   },
   {
    "slug": "adult-swim-special-events",
@@ -48,7 +88,17 @@
    "homepage": false,
    "noindex": true,
    "thumb": "/images/6a3afb024c6299842a6253de_1077818_341226639342500_1900902647_o-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "Events",
+   "year": "",
+   "month": "",
+   "services": [
+    "Marketing",
+    "Custom Mailers",
+    "Digital Strategy",
+    "Event Production"
+   ],
+   "sections": 6
   },
   {
    "slug": "adults-s2",
@@ -58,7 +108,23 @@
    "homepage": false,
    "noindex": false,
    "thumb": "/images/6ae104a7461601927d9cb7a7_MUNCHIEMART2026_0820_203543-3948_-Kursza_-ChrisLavado-p-2000.jpeg",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "",
+   "year": "",
+   "month": "",
+   "services": [
+    "Creative Concept",
+    "Creative Direction",
+    "Development",
+    "Digital Strategy",
+    "Event Production",
+    "Influencer Guestlist",
+    "Talent Booking",
+    "Technical Design",
+    "Content Production",
+    "Creators"
+   ],
+   "sections": 8
   },
   {
    "slug": "after-the-hunt",
@@ -68,7 +134,18 @@
    "homepage": true,
    "noindex": false,
    "thumb": "/images/69d41b878a64fb8a30121efc_afterthehunt_index-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "Film",
+   "year": "",
+   "month": "",
+   "services": [
+    "Development",
+    "Event Production",
+    "Content Production",
+    "Influencer Guestlist",
+    "Digital Strategy"
+   ],
+   "sections": 3
   },
   {
    "slug": "babes",
@@ -78,7 +155,16 @@
    "homepage": true,
    "noindex": false,
    "thumb": "/images/69cef10926e85ecc6f37c4d4_20240512-Babes_032-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "Film",
+   "year": "",
+   "month": "",
+   "services": [
+    "Creative Direction",
+    "Development",
+    "Talent Booking"
+   ],
+   "sections": 2
   },
   {
    "slug": "billie-eilish",
@@ -88,7 +174,17 @@
    "homepage": true,
    "noindex": false,
    "thumb": "/images/660b6f6afb0a396cb2164cfc_65daf5b421dd9c336d38d605_photo-jul-29-2-56-41-pm-1800x-201-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "Music",
+   "year": "2021",
+   "month": "Jul",
+   "services": [
+    "Event Production",
+    "Creative Concept",
+    "Creative Direction",
+    "Content Production"
+   ],
+   "sections": 6
   },
   {
    "slug": "black-panther",
@@ -98,7 +194,18 @@
    "homepage": true,
    "noindex": false,
    "thumb": "/images/66c47f1989ccf0ba814855c4_blackpanther-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "Film",
+   "year": "2018",
+   "month": "Mar",
+   "services": [
+    "Creative Concept",
+    "Creative Direction",
+    "Environment Design",
+    "Talent Booking",
+    "Digital Strategy"
+   ],
+   "sections": 4
   },
   {
    "slug": "black-widow",
@@ -108,7 +215,16 @@
    "homepage": false,
    "noindex": false,
    "thumb": "/images/660b6f6cd445f22b8332c4e2_65ea27ada170bf51c2b26083_1-case-studies-black-widow-general-hero-image-p-1600.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "",
+   "year": "",
+   "month": "",
+   "services": [
+    "Creative Concept",
+    "Creative Direction",
+    "Event Production"
+   ],
+   "sections": 3
   },
   {
    "slug": "blink-twice",
@@ -118,7 +234,17 @@
    "homepage": false,
    "noindex": false,
    "thumb": "/images/69d81b23027dcb92899a8f95_IMG_7476-p-2000.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "",
+   "year": "",
+   "month": "",
+   "services": [
+    "Creative Concept",
+    "Creative Direction",
+    "Event Production",
+    "Environment Design"
+   ],
+   "sections": 3
   },
   {
    "slug": "bottoms",
@@ -128,7 +254,17 @@
    "homepage": true,
    "noindex": false,
    "thumb": "/images/67531ee4df926fab7dc394e7_08222023-Bottoms-108274-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "Film",
+   "year": "2023",
+   "month": "Aug",
+   "services": [
+    "Content Production",
+    "Influencer Guestlist",
+    "Creative Direction",
+    "Event Production"
+   ],
+   "sections": 4
   },
   {
    "slug": "c-xoxo",
@@ -138,7 +274,15 @@
    "homepage": true,
    "noindex": false,
    "thumb": "/images/675193d6a40f201e8db8e725_cxoxo_index-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "Music",
+   "year": "",
+   "month": "",
+   "services": [
+    "Event Production",
+    "Environment Design"
+   ],
+   "sections": 2
   },
   {
    "slug": "canon-creator-event",
@@ -148,7 +292,16 @@
    "homepage": false,
    "noindex": false,
    "thumb": "/images/6a76591d46c2e20f7fcd7e7c_Canon-Creator-Experience_IHC-0359-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "Events",
+   "year": "2023",
+   "month": "Jun",
+   "services": [
+    "Creative Direction",
+    "Fabrication Production",
+    "Event Production"
+   ],
+   "sections": 4
   },
   {
    "slug": "captain-marvel",
@@ -158,7 +311,17 @@
    "homepage": false,
    "noindex": false,
    "thumb": "/images/660b6f6d3d2aa9315e996a5c_65ea297abd2873d48cd36fe3_captain-marvel-feature-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "Film",
+   "year": "2019",
+   "month": "Mar",
+   "services": [
+    "Content Production",
+    "Creative Concept",
+    "Creative Direction",
+    "Digital Strategy"
+   ],
+   "sections": 3
   },
   {
    "slug": "chang-can-dunk",
@@ -168,7 +331,17 @@
    "homepage": false,
    "noindex": false,
    "thumb": "/images/6a751994184a87c5c3e3b37e_Z72_0722-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "Film",
+   "year": "2023",
+   "month": "Mar",
+   "services": [
+    "Creative Direction",
+    "Event Production",
+    "Fabrication Production",
+    "Influencer Guestlist"
+   ],
+   "sections": 2
   },
   {
    "slug": "cruella",
@@ -178,7 +351,17 @@
    "homepage": false,
    "noindex": false,
    "thumb": "/images/660b6f6b375dab4be7c4bf6d_65ea249fb538132dfb0e3c1e_case-studies-_-cruella-_-1.-general_-hero-image-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "Film",
+   "year": "2021",
+   "month": "May",
+   "services": [
+    "Content Production",
+    "Creative Concept",
+    "Creative Direction",
+    "Digital Strategy"
+   ],
+   "sections": 2
   },
   {
    "slug": "darby-and-the-dead",
@@ -188,7 +371,15 @@
    "homepage": false,
    "noindex": false,
    "thumb": "/images/660b6f6f0229a9bc78ed2578_65ea2f845557c53fd9868cf5_1-case-studies-darby-general-decor-image4-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "Film",
+   "year": "2022",
+   "month": "Dec",
+   "services": [
+    "Creative Direction",
+    "Event Production"
+   ],
+   "sections": 4
   },
   {
    "slug": "daredevil-born-again-mailers",
@@ -198,7 +389,18 @@
    "homepage": false,
    "noindex": false,
    "thumb": "/images/69f3be1bd201c2acc22db463_daredevil_index-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "Television",
+   "year": "2025",
+   "month": "Mar",
+   "services": [
+    "Creative Direction",
+    "Digital Strategy",
+    "Community Management",
+    "Custom Mailers",
+    "Narrative Development"
+   ],
+   "sections": 1
   },
   {
    "slug": "deliver-me-from-nowhere",
@@ -208,7 +410,20 @@
    "homepage": false,
    "noindex": false,
    "thumb": "/images/6a73cb0385ca250abee7efb2_dmfn_index-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "Film",
+   "year": "2025",
+   "month": "Sep",
+   "services": [
+    "Narrative Development",
+    "Content Production",
+    "Event Production",
+    "Talent Booking",
+    "Influencer Guestlist",
+    "Digital Strategy",
+    "Marketing"
+   ],
+   "sections": 4
   },
   {
    "slug": "disneys-summer-throwback",
@@ -218,7 +433,17 @@
    "homepage": false,
    "noindex": false,
    "thumb": "/images/69dd78d6e20b8775a4fe76b5_index-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "Television",
+   "year": "2025",
+   "month": "Jul",
+   "services": [
+    "Creative Concept",
+    "Creative Direction",
+    "Digital Strategy",
+    "Custom Mailers"
+   ],
+   "sections": 2
   },
   {
    "slug": "doctor-strange-2",
@@ -228,7 +453,16 @@
    "homepage": true,
    "noindex": false,
    "thumb": "/images/660b6f6b2e4378d942130670_65ea23efc884ffbb0b2452d7_case-studies-_-dr.-strange-2-_-general-_-hero-image-_-benedict-olsen-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "Film",
+   "year": "2022",
+   "month": "May",
+   "services": [
+    "Content Production",
+    "Creative Concept",
+    "Creative Direction"
+   ],
+   "sections": 3
   },
   {
    "slug": "dream-productions",
@@ -238,7 +472,16 @@
    "homepage": true,
    "noindex": false,
    "thumb": "/images/6a17ab924c5deaf6ef7a230a_pixar_DPdinner_photo-by-meghanmcneer_142-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "Television",
+   "year": "",
+   "month": "",
+   "services": [
+    "Creative Direction",
+    "Environment Design",
+    "Event Production"
+   ],
+   "sections": 4
   },
   {
    "slug": "dullsville-and-the-doodleverse",
@@ -248,7 +491,18 @@
    "homepage": true,
    "noindex": false,
    "thumb": "/images/67530d98c543a1f2ed24edf8_doodles-index-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "Film",
+   "year": "",
+   "month": "",
+   "services": [
+    "Creative Concept",
+    "Creative Direction",
+    "Environment Design",
+    "Event Production",
+    "Fabrication Production"
+   ],
+   "sections": 4
   },
   {
    "slug": "ebenezer",
@@ -258,7 +512,22 @@
    "homepage": true,
    "noindex": false,
    "thumb": "/images/6ae2343f7b199ec705df943d_577A0924_7jECkGIL-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "Film",
+   "year": "2026",
+   "month": "Jul",
+   "services": [
+    "Creative Concept",
+    "Creative Direction",
+    "Development",
+    "Digital Strategy",
+    "Environment Design",
+    "Fabrication Production",
+    "Marketing",
+    "Narrative Development",
+    "Creators"
+   ],
+   "sections": 6
   },
   {
    "slug": "electronica",
@@ -268,7 +537,18 @@
    "homepage": true,
    "noindex": false,
    "thumb": "/images/69bc3b94fbef996b18580658_tron_eventprogramming_01-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "Film",
+   "year": "",
+   "month": "",
+   "services": [
+    "Creative Direction",
+    "Environment Design",
+    "Event Production",
+    "Content Production",
+    "Talent Booking"
+   ],
+   "sections": 5
   },
   {
    "slug": "elio-pixar-creator-day",
@@ -278,7 +558,18 @@
    "homepage": true,
    "noindex": false,
    "thumb": "/images/6a0502f5eb7942ccefb0743b_IMG_5208-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "Film",
+   "year": "2025",
+   "month": "May",
+   "services": [
+    "Creative Direction",
+    "Development",
+    "Environment Design",
+    "Event Production",
+    "Influencer Guestlist"
+   ],
+   "sections": 3
   },
   {
    "slug": "eternals",
@@ -288,7 +579,16 @@
    "homepage": false,
    "noindex": false,
    "thumb": "/images/660b6f6bab76e57af2b06e5b_65ea244f8c09d74da7f7294c_l1140114-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "Film",
+   "year": "2021",
+   "month": "Oct",
+   "services": [
+    "Content Production",
+    "Creative Concept",
+    "Creative Direction"
+   ],
+   "sections": 2
   },
   {
    "slug": "fantastic-four",
@@ -298,7 +598,15 @@
    "homepage": true,
    "noindex": false,
    "thumb": "/images/69dfd5cc2f7d49702f7f7ea2_IHC2025_0704_124054-2582_KKB-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "Film",
+   "year": "2025",
+   "month": "Jul",
+   "services": [
+    "Creative Concept",
+    "Content Production"
+   ],
+   "sections": 3
   },
   {
    "slug": "fast-x",
@@ -308,7 +616,12 @@
    "homepage": false,
    "noindex": false,
    "thumb": "/images/66c479255ea65af9b5d7d350_FastX-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "",
+   "year": "2023",
+   "month": "Feb",
+   "services": [],
+   "sections": 4
   },
   {
    "slug": "fire-of-love",
@@ -318,7 +631,17 @@
    "homepage": true,
    "noindex": false,
    "thumb": "/images/6751b5a833c1e000ea08ddda_CNL_8685-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "Film",
+   "year": "2022",
+   "month": "Jan",
+   "services": [
+    "Event Production",
+    "Creative Direction",
+    "Environment Design",
+    "Content Production"
+   ],
+   "sections": 3
   },
   {
    "slug": "firestarter",
@@ -328,7 +651,16 @@
    "homepage": false,
    "noindex": false,
    "thumb": "/images/660b6f6c912d80a57eb10f37_65ea29d46ce4b4f39a4d7ec5_1-z72_0682_recropped-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "Events",
+   "year": "2022",
+   "month": "May",
+   "services": [
+    "Creative Concept",
+    "Creative Direction",
+    "Event Production"
+   ],
+   "sections": 3
   },
   {
    "slug": "guardians-of-the-galaxy-vol-3",
@@ -338,7 +670,18 @@
    "homepage": true,
    "noindex": false,
    "thumb": "/images/6754a7a561f803b340b16307_gog-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "Film",
+   "year": "2023",
+   "month": "May",
+   "services": [
+    "Content Production",
+    "Creative Concept",
+    "Creative Direction",
+    "Digital Strategy",
+    "Event Production"
+   ],
+   "sections": 4
   },
   {
    "slug": "guts-bus-college-tour",
@@ -348,7 +691,16 @@
    "homepage": true,
    "noindex": false,
    "thumb": "/images/69fa4bc47f4b19095b505fb9_YASI7589-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "Music",
+   "year": "",
+   "month": "",
+   "services": [
+    "Creative Direction",
+    "Event Production",
+    "Fabrication Production"
+   ],
+   "sections": 3
   },
   {
    "slug": "halloween-ends",
@@ -358,7 +710,15 @@
    "homepage": true,
    "noindex": false,
    "thumb": "/images/660b6f6d2e4378d942130854_65ea2b8d1ce914f342b2ed6e_1-cnl_5498-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "Events",
+   "year": "2022",
+   "month": "Oct",
+   "services": [
+    "Event Production",
+    "Creative Direction"
+   ],
+   "sections": 3
   },
   {
    "slug": "heart-of-the-beast",
@@ -368,7 +728,17 @@
    "homepage": false,
    "noindex": false,
    "thumb": "/images/6ae11e6213c7123ec4bb0259_DSC_7438_mUaChh2Z-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "Film",
+   "year": "2026",
+   "month": "Sep",
+   "services": [
+    "Digital Strategy",
+    "Environment Design",
+    "Event Production",
+    "Influencer Guestlist"
+   ],
+   "sections": 4
   },
   {
    "slug": "honey-boy",
@@ -378,7 +748,17 @@
    "homepage": false,
    "noindex": false,
    "thumb": "/images/66c47aa45d24f31670a4e7a3_HoneyBoy-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "Film",
+   "year": "2019",
+   "month": "Dec",
+   "services": [
+    "Custom Mailers",
+    "Creative Direction",
+    "Event Production",
+    "Content Production"
+   ],
+   "sections": 6
   },
   {
    "slug": "how-to-with-john-wilson",
@@ -388,7 +768,16 @@
    "homepage": false,
    "noindex": false,
    "thumb": "/images/660b6f6c0a4e24b200b22b6e_65ea25ac99bf80678b9fb98c_wil_02152020_ab_23-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "Lifestyle",
+   "year": "2020",
+   "month": "Nov",
+   "services": [
+    "Content Production",
+    "Creative Concept",
+    "Creative Direction"
+   ],
+   "sections": 2
   },
   {
    "slug": "hurry-up-tomorrow-the-mirror",
@@ -398,7 +787,17 @@
    "homepage": true,
    "noindex": false,
    "thumb": "/images/6a0cc0b739a62d217b459f0c_05092025_Kursza_Glendale_AZ_Photos_Batch-3-9-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "Film",
+   "year": "",
+   "month": "",
+   "services": [
+    "Creative Direction",
+    "Content Production",
+    "Fabrication Production",
+    "Technical Design"
+   ],
+   "sections": 3
   },
   {
    "slug": "ihc20-anniversary-ball",
@@ -408,7 +807,20 @@
    "homepage": false,
    "noindex": false,
    "thumb": "/images/6a17798d46bd08018fbd14ce__R1A8738.JPG",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "",
+   "year": "",
+   "month": "",
+   "services": [
+    "Creative Concept",
+    "Creative Direction",
+    "Event Production",
+    "Talent Booking",
+    "Digital Strategy",
+    "Influencer Guestlist",
+    "Community Management"
+   ],
+   "sections": 5
   },
   {
    "slug": "indiana-jones-influencer-campaign",
@@ -418,7 +830,17 @@
    "homepage": false,
    "noindex": false,
    "thumb": "/images/6a75034bb99ad6e286fea35a_Review_IndianaJonesDialofDestiny-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "Film",
+   "year": "2023",
+   "month": "Jul",
+   "services": [
+    "Creative Concept",
+    "Creative Direction",
+    "Digital Strategy",
+    "Marketing"
+   ],
+   "sections": 1
   },
   {
    "slug": "jujus-juneteenth-juke",
@@ -428,7 +850,14 @@
    "homepage": true,
    "noindex": false,
    "thumb": "/images/69ceca9510ee015f64b2785f_20250619-juju_juke_075-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "Events",
+   "year": "",
+   "month": "",
+   "services": [
+    "Event Production"
+   ],
+   "sections": 4
   },
   {
    "slug": "knock-at-the-cabin",
@@ -438,7 +867,12 @@
    "homepage": false,
    "noindex": false,
    "thumb": "/images/66c47b00c29d5e6be67b7f19_KnockatTheCabin-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "Film",
+   "year": "2023",
+   "month": "Feb",
+   "services": [],
+   "sections": 3
   },
   {
    "slug": "la-gives-back",
@@ -448,7 +882,17 @@
    "homepage": true,
    "noindex": false,
    "thumb": "/images/660b6f6f339b1e206c9ca651_65ea2e336157e007c77f6edd_case-studies-lagb-origins-2016-1-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "Events",
+   "year": "",
+   "month": "",
+   "services": [
+    "Creative Concept",
+    "Creative Direction",
+    "Digital Strategy",
+    "Event Production"
+   ],
+   "sections": 12
   },
   {
    "slug": "la-gives-back-fire-relief",
@@ -458,7 +902,17 @@
    "homepage": false,
    "noindex": false,
    "thumb": "/images/6aa08b173acf3630b4d5264a_DSC01306-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "Events",
+   "year": "2025",
+   "month": "Jan",
+   "services": [
+    "Creative Direction",
+    "Development",
+    "Event Production",
+    "Talent Booking"
+   ],
+   "sections": 3
   },
   {
    "slug": "lil-nas-x",
@@ -468,7 +922,17 @@
    "homepage": true,
    "noindex": false,
    "thumb": "/images/660b6f6e139f799a9bec02fb_65ea2d53bdc580d9bb108c10_case-studies-lil-nas-x-general-main-gallery-chloeandhaller-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "",
+   "year": "2019",
+   "month": "Jun",
+   "services": [
+    "Content Production",
+    "Creative Direction",
+    "Event Production",
+    "Creative Concept"
+   ],
+   "sections": 5
   },
   {
    "slug": "ma",
@@ -478,7 +942,17 @@
    "homepage": false,
    "noindex": false,
    "thumb": "/images/660b6f6bb97718d3dddd945c_65ea24e9a25a70e31e4658a6_1-dsc02171-recropped-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "Events",
+   "year": "2019",
+   "month": "May",
+   "services": [
+    "Content Production",
+    "Creative Concept",
+    "Creative Direction",
+    "Event Production"
+   ],
+   "sections": 4
   },
   {
    "slug": "margos-got-money-troubles",
@@ -488,7 +962,20 @@
    "homepage": false,
    "noindex": false,
    "thumb": "/images/6ac054684b73a87c95694989__NTS7832-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "Television",
+   "year": "2026",
+   "month": "Apr",
+   "services": [
+    "Creative Concept",
+    "Creative Direction",
+    "Environment Design",
+    "Event Production",
+    "Fabrication Production",
+    "Influencer Guestlist",
+    "Creators"
+   ],
+   "sections": 7
   },
   {
    "slug": "marvel-zombies",
@@ -498,7 +985,17 @@
    "homepage": false,
    "noindex": false,
    "thumb": "/images/6a7426e52f13080ad241398f_zombies_index-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "Television",
+   "year": "2025",
+   "month": "Sep",
+   "services": [
+    "Environment Design",
+    "Event Production",
+    "Fabrication Production",
+    "Creative Direction"
+   ],
+   "sections": 5
   },
   {
    "slug": "massive-talent",
@@ -508,7 +1005,17 @@
    "homepage": false,
    "noindex": false,
    "thumb": "/images/660b6f6cfb0a396cb2164f16_65ea27716d84d3acaee4d110_img_9475_recropped-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "Events",
+   "year": "2022",
+   "month": "May",
+   "services": [
+    "Content Production",
+    "Creative Concept",
+    "Creative Direction",
+    "Event Production"
+   ],
+   "sections": 4
   },
   {
    "slug": "mtv-vmas-2026",
@@ -518,7 +1025,18 @@
    "homepage": false,
    "noindex": false,
    "thumb": "/images/6aeba6837a6134d16cca0abb_VMA_MOON_MOBILE_SATURDAY-01445-p-2000.jpeg",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "",
+   "year": "",
+   "month": "",
+   "services": [
+    "Creative Concept",
+    "Creative Direction",
+    "Creators",
+    "Event Production",
+    "Talent Booking"
+   ],
+   "sections": 5
   },
   {
    "slug": "mufasa",
@@ -528,7 +1046,17 @@
    "homepage": true,
    "noindex": false,
    "thumb": "/images/6a1634b1dab18a92bb83620a_mufasa_index_01-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "Film",
+   "year": "",
+   "month": "",
+   "services": [
+    "Creative Direction",
+    "Environment Design",
+    "Event Production",
+    "Influencer Guestlist"
+   ],
+   "sections": 4
   },
   {
    "slug": "nigo-i-know-nigo",
@@ -538,7 +1066,16 @@
    "homepage": false,
    "noindex": false,
    "thumb": "/images/660b6f6dfb0a396cb2164fa7_65ea2a192dbd1ded5a16bb5d_1-case-studies-i-know-nigo-general-inside-the-party-nigo-pusha-t-pharrell-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "Music",
+   "year": "2022",
+   "month": "May",
+   "services": [
+    "Creative Concept",
+    "Creative Direction",
+    "Event Production"
+   ],
+   "sections": 3
   },
   {
    "slug": "nobody",
@@ -548,7 +1085,15 @@
    "homepage": true,
    "noindex": false,
    "thumb": "/images/66c47c79e185c587f5212093_Nobody-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "Film",
+   "year": "2021",
+   "month": "Mar",
+   "services": [
+    "Content Production",
+    "Creative Concept"
+   ],
+   "sections": 6
   },
   {
    "slug": "nobody-2",
@@ -558,7 +1103,16 @@
    "homepage": true,
    "noindex": false,
    "thumb": "/images/69fb9d9c3b995aa9e2670680_2227977271-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "Film",
+   "year": "",
+   "month": "",
+   "services": [
+    "Creative Direction",
+    "Event Production",
+    "Influencer Guestlist"
+   ],
+   "sections": 4
   },
   {
    "slug": "olivia-rodrigo-guts-world-tour-bus-experience",
@@ -568,7 +1122,17 @@
    "homepage": true,
    "noindex": false,
    "thumb": "/images/6752e25c4cc305ab69f886e6_olivia_buscreative-09-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "Music",
+   "year": "",
+   "month": "",
+   "services": [
+    "Creative Concept",
+    "Creative Direction",
+    "Content Production",
+    "Event Production"
+   ],
+   "sections": 4
   },
   {
    "slug": "overnightmare",
@@ -578,7 +1142,20 @@
    "homepage": true,
    "noindex": false,
    "thumb": "/images/67531b71d92b7dc6ec8989b9_IMG_3273-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "Film",
+   "year": "",
+   "month": "",
+   "services": [
+    "Event Production",
+    "Creative Concept",
+    "Creative Direction",
+    "Content Production",
+    "Environment Design",
+    "Digital Strategy",
+    "Clio Shortlist Award"
+   ],
+   "sections": 4
   },
   {
    "slug": "pabst",
@@ -588,7 +1165,16 @@
    "homepage": false,
    "noindex": false,
    "thumb": "/images/660b6f6c48eaa4dd22756d40_65ea26d2104ca4c1f10bbd3a_dsc_8751-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "Events",
+   "year": "2018",
+   "month": "Nov",
+   "services": [
+    "Creative Concept",
+    "Creative Direction",
+    "Event Production"
+   ],
+   "sections": 3
   },
   {
    "slug": "prey",
@@ -598,7 +1184,17 @@
    "homepage": false,
    "noindex": false,
    "thumb": "/images/660b6f6ebc7ef434f68e690e_65ea2bd35b905ab387314b95_case-studies-prey-general-main-image.jpg-2-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "Events",
+   "year": "2022",
+   "month": "Aug",
+   "services": [
+    "Content Production",
+    "Creative Concept",
+    "Creative Direction",
+    "Event Production"
+   ],
+   "sections": 3
   },
   {
    "slug": "released",
@@ -608,7 +1204,17 @@
    "homepage": true,
    "noindex": false,
    "thumb": "/images/660b6f6db97718d3dddd9558_65ea236fc455d9defabc9554_1-case-studies-released-1.-premise-house-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "Music",
+   "year": "2020",
+   "month": "Jul",
+   "services": [
+    "Content Production",
+    "Creative Concept",
+    "Creative Direction",
+    "Event Production"
+   ],
+   "sections": 5
   },
   {
    "slug": "rolling-stones-hackney-diamonds",
@@ -618,7 +1224,17 @@
    "homepage": true,
    "noindex": false,
    "thumb": "/images/6751aff5461eb55ecd165105_rolling-stones-tour-announcement-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "Music",
+   "year": "2023",
+   "month": "Oct",
+   "services": [
+    "Creative Direction",
+    "Event Production",
+    "Environment Design",
+    "Content Production"
+   ],
+   "sections": 3
   },
   {
    "slug": "silo",
@@ -628,7 +1244,16 @@
    "homepage": false,
    "noindex": false,
    "thumb": "/images/6a7398d02bdf4edb85760c4d_20240727-Silo_116-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "Television",
+   "year": "",
+   "month": "",
+   "services": [
+    "Creative Direction",
+    "Event Production",
+    "Environment Design"
+   ],
+   "sections": 2
   },
   {
    "slug": "sincerely-kali-uchis",
@@ -638,7 +1263,15 @@
    "homepage": true,
    "noindex": false,
    "thumb": "/images/6a0cdb786d553ec619a462c6_20250327-KaliUchisVideoLaunch_159-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "Music",
+   "year": "2022",
+   "month": "Sep",
+   "services": [
+    "Creative Direction",
+    "Event Production"
+   ],
+   "sections": 5
   },
   {
    "slug": "space-jam",
@@ -648,7 +1281,16 @@
    "homepage": true,
    "noindex": false,
    "thumb": "/images/667e1bf737459472806c86f1_space-jam-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "Film",
+   "year": "2021",
+   "month": "Jul",
+   "services": [
+    "Content Production",
+    "Creative Concept",
+    "Creative Direction"
+   ],
+   "sections": 4
   },
   {
    "slug": "strays",
@@ -658,7 +1300,17 @@
    "homepage": false,
    "noindex": false,
    "thumb": "/images/6a74c275e56f2344ab372445_4-230813_233936-Strays_JamesColetta-1565-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "Film",
+   "year": "2023",
+   "month": "Aug",
+   "services": [
+    "Creative Direction",
+    "Event Production",
+    "Content Production",
+    "Development"
+   ],
+   "sections": 4
   },
   {
    "slug": "sundance-2022",
@@ -668,7 +1320,18 @@
    "homepage": false,
    "noindex": false,
    "thumb": "/images/66c47d5789ccf0ba8146cd16_Sundance-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "Film",
+   "year": "2022",
+   "month": "Feb",
+   "services": [
+    "Content Production",
+    "Creative Concept",
+    "Creative Direction",
+    "Digital Strategy",
+    "Marketing"
+   ],
+   "sections": 2
   },
   {
    "slug": "supergirl",
@@ -678,7 +1341,17 @@
    "homepage": false,
    "noindex": false,
    "thumb": "/images/6a7ceec8d271359f0af6422a_DSC_3357-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "",
+   "year": "2025",
+   "month": "Dec",
+   "services": [
+    "Creative Concept",
+    "Influencer Guestlist",
+    "Event Production",
+    "Talent Booking"
+   ],
+   "sections": 5
   },
   {
    "slug": "the-flaming-lips",
@@ -688,7 +1361,16 @@
    "homepage": false,
    "noindex": false,
    "thumb": "/images/660b6f6ecfe490c443a8db30_65ea2d9d12327bd43d74b211_1-15995244_999478823517275_4846020637321864392_o-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "Music",
+   "year": "2017",
+   "month": "Jan",
+   "services": [
+    "Creative Direction",
+    "Event Production",
+    "Influencer Guestlist"
+   ],
+   "sections": 3
   },
   {
    "slug": "the-greatest-hits",
@@ -698,7 +1380,17 @@
    "homepage": false,
    "noindex": false,
    "thumb": "/images/67216126db3f964652a1a135__R1A1293-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "Film",
+   "year": "",
+   "month": "",
+   "services": [
+    "Creative Direction",
+    "Environment Design",
+    "Event Production",
+    "Influencer Guestlist"
+   ],
+   "sections": 1
   },
   {
    "slug": "the-guardians-of-the-galaxy-holiday-special",
@@ -708,7 +1400,15 @@
    "homepage": false,
    "noindex": false,
    "thumb": "/images/660b6f719f800c74265aae74_65ea2ed1f0a4ffa3be15e406_image-1-case-studies-gotg-holiday-special-general-main-gallery-pom-sean-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "Film",
+   "year": "2022",
+   "month": "Dec",
+   "services": [
+    "Creative Direction",
+    "Event Production"
+   ],
+   "sections": 4
   },
   {
    "slug": "the-marvels",
@@ -718,7 +1418,21 @@
    "homepage": false,
    "noindex": false,
    "thumb": "/images/6a742e9928023a5bb1e51e27_Screen-Shot-2023-11-02-at-6.23.56-PM-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "Film",
+   "year": "2023",
+   "month": "Nov",
+   "services": [
+    "Creative Concept",
+    "Creative Direction",
+    "Environment Design",
+    "Technical Design",
+    "Event Production",
+    "Content Production",
+    "Digital Strategy",
+    "Marketing"
+   ],
+   "sections": 3
   },
   {
    "slug": "the-report",
@@ -728,7 +1442,16 @@
    "homepage": false,
    "noindex": false,
    "thumb": "/images/660b6f6d2289a18ea440f5bf_65ea2ae8ef9241b80a0af994_case-studies-the-report-general-main-gallery-killer-truck-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "Events",
+   "year": "2019",
+   "month": "Nov",
+   "services": [
+    "Content Production",
+    "Creative Direction",
+    "Event Production"
+   ],
+   "sections": 2
   },
   {
    "slug": "they-them",
@@ -738,7 +1461,15 @@
    "homepage": false,
    "noindex": false,
    "thumb": "/images/66c481105e9b89981f5dd8de_theythem-1--t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "Film",
+   "year": "2022",
+   "month": "Aug",
+   "services": [
+    "Creative Direction",
+    "Event Production"
+   ],
+   "sections": 6
   },
   {
    "slug": "thor-love-and-thunder",
@@ -748,7 +1479,17 @@
    "homepage": true,
    "noindex": false,
    "thumb": "/images/660b6f6d9f800c74265aacc8_65ea2a54d56dd9eb3918d6cd_case-studies-thor-general-main-gallery-thor-cosplah-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "Film",
+   "year": "2022",
+   "month": "Jul",
+   "services": [
+    "Content Production",
+    "Creative Concept",
+    "Creative Direction",
+    "Event Production"
+   ],
+   "sections": 3
   },
   {
    "slug": "tiktok-halloween",
@@ -758,7 +1499,17 @@
    "homepage": false,
    "noindex": false,
    "thumb": "/images/66c480bb5d24f31670aab553_tiktok-halloween-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "Events",
+   "year": "2019",
+   "month": "Oct",
+   "services": [
+    "Content Production",
+    "Creative Concept",
+    "Creative Direction",
+    "Event Production"
+   ],
+   "sections": 3
   },
   {
    "slug": "tiktok-sxsw",
@@ -768,7 +1519,15 @@
    "homepage": false,
    "noindex": false,
    "thumb": "/images/660b6f6e375dab4be7c4c07b_65ea2c48e693906ad6f1d86a_case-studies-tiktok-sxsw-main-gallery-dancer-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "Events",
+   "year": "2022",
+   "month": "Mar",
+   "services": [
+    "Creative Direction",
+    "Event Production"
+   ],
+   "sections": 4
   },
   {
    "slug": "twisted-metal-nyc",
@@ -778,7 +1537,18 @@
    "homepage": false,
    "noindex": false,
    "thumb": "/images/674f8854edda700309b0d048_107252023-Twisted-Metal-202152-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "Television",
+   "year": "2023",
+   "month": "Jul",
+   "services": [
+    "Creative Concept",
+    "Creative Direction",
+    "Environment Design",
+    "Event Production",
+    "Influencer Guestlist"
+   ],
+   "sections": 4
   },
   {
    "slug": "twisted-metal-s1-sdcc",
@@ -788,7 +1558,18 @@
    "homepage": false,
    "noindex": false,
    "thumb": "/images/6a6a76a88129e7462007569f_TM2023_0720_160345-10872_RSH-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "Television",
+   "year": "2023",
+   "month": "Jul",
+   "services": [
+    "Creative Concept",
+    "Creative Direction",
+    "Narrative Development",
+    "Content Production",
+    "Talent Booking"
+   ],
+   "sections": 3
   },
   {
    "slug": "twisted-metal-season-2",
@@ -798,7 +1579,18 @@
    "homepage": true,
    "noindex": false,
    "thumb": "/images/69dd62465715231748b5e00b_twistedmetal2_index-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "Television",
+   "year": "",
+   "month": "",
+   "services": [
+    "Creative Concept",
+    "Creative Direction",
+    "Environment Design",
+    "Development",
+    "Content Production"
+   ],
+   "sections": 3
   },
   {
    "slug": "valorant-sound-los-angeles",
@@ -808,7 +1600,12 @@
    "homepage": false,
    "noindex": false,
    "thumb": "",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "",
+   "year": "",
+   "month": "",
+   "services": [],
+   "sections": 5
   },
   {
    "slug": "wakanda-forever",
@@ -818,7 +1615,16 @@
    "homepage": false,
    "noindex": false,
    "thumb": "/images/660b6f6f3d2aa9315e996ca7_65ea2f268877527693e70974_main-banner-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "Film",
+   "year": "2022",
+   "month": "Nov",
+   "services": [
+    "Creative Concept",
+    "Creative Direction",
+    "Event Production"
+   ],
+   "sections": 1
   },
   {
    "slug": "wandavision",
@@ -828,7 +1634,15 @@
    "homepage": false,
    "noindex": false,
    "thumb": "/images/660b6f6fd445f22b8332c639_65ea2e9024b8a233d1ae352c_3833a8e0-802f-11eb-9ff7-e80de734bed5.cf-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "Film",
+   "year": "2022",
+   "month": "Jan",
+   "services": [
+    "Creative Concept",
+    "Custom Mailers"
+   ],
+   "sections": 2
   },
   {
    "slug": "we-ve-got-company",
@@ -838,7 +1652,18 @@
    "homepage": true,
    "noindex": false,
    "thumb": "/images/660b6f6aab7517b3d7d925a3_65ea35672345e04f369e86c3_1-case-studies-_-wgc-_-general-_-main-gallery-_-finale-group-photo-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "Music",
+   "year": "2022",
+   "month": "Jul",
+   "services": [
+    "Creative Direction",
+    "Content Production",
+    "Talent Booking",
+    "Creative Concept",
+    "Digital Strategy"
+   ],
+   "sections": 4
   },
   {
    "slug": "werewolf-by-night",
@@ -848,7 +1673,15 @@
    "homepage": false,
    "noindex": false,
    "thumb": "/images/660b6f6f0a4e24b200b22e40_65ea2ce273cf1e1664b346e1_case-studies-_-werewolf-by-night-_-general-_-hero-image-_-director-intro-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "Film",
+   "year": "2022",
+   "month": "Oct",
+   "services": [
+    "Creative Direction",
+    "Event Production"
+   ],
+   "sections": 3
   },
   {
    "slug": "west-side-story",
@@ -858,7 +1691,16 @@
    "homepage": false,
    "noindex": false,
    "thumb": "/images/6a698dc3f3efcdb0992e6d6c_L1000793-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "Film",
+   "year": "2021",
+   "month": "Dec",
+   "services": [
+    "Creative Concept",
+    "Creative Direction",
+    "Content Production"
+   ],
+   "sections": 1
   },
   {
    "slug": "willow",
@@ -868,7 +1710,15 @@
    "homepage": false,
    "noindex": false,
    "thumb": "/images/66c4816760fdfa68c09589bf_willow-s-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "Film",
+   "year": "2022",
+   "month": "Dec",
+   "services": [
+    "Creative Direction",
+    "Event Production"
+   ],
+   "sections": 3
   },
   {
    "slug": "young-woman-and-the-sea",
@@ -878,7 +1728,17 @@
    "homepage": false,
    "noindex": false,
    "thumb": "/images/6a1f26ef3eee20ae9d76f5ca_YWTS_index_01-t800.webp",
-   "updatedAt": ""
+   "updatedAt": "",
+   "category": "Film",
+   "year": "",
+   "month": "",
+   "services": [
+    "Creative Concept",
+    "Creative Direction",
+    "Custom Mailers",
+    "Digital Strategy"
+   ],
+   "sections": 1
   }
  ],
  "services": [

@@ -501,7 +501,13 @@
       homepage: !!(l.listed && home.showHomepage),
       noindex: !!d.noindex,
       thumb: home.image || (d.heroImage && d.heroImage.src) || '',
-      updatedAt: d.updatedAt || ''
+      updatedAt: d.updatedAt || '',
+      // for filtering and sorting the builder's list
+      category: home.category || '',
+      year: (l.work && l.work.year) || '',
+      month: (l.work && l.work.month) || '',
+      services: (d.services || []).map(function (x) { return x.name; }).filter(Boolean),
+      sections: (d.sections || []).length
     };
   }
 
