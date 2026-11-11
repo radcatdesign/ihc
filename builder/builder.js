@@ -457,7 +457,6 @@ function startEditor(cs, { isNew, sha }) {
   S.history = []; S.future = [];
   S.publishedSnap = isNew ? '' : JSON.stringify(cleanForSave(S.cs));
   S.activeSection = 0;
-  S.collapsed = new Set();
   // a draft saved in this browser wins, so nothing typed is ever lost
   const draft = store.get('ihc-draft:' + cs.slug);
   S.draftNote = null;
@@ -467,6 +466,8 @@ function startEditor(cs, { isNew, sha }) {
     S.draftNote = { savedAt: draft.savedAt, stale: !isNew && draft.baseSha && draft.baseSha !== sha };
   }
   S.lastSnap = JSON.stringify(S.cs);
+  // sections start folded so the page reads as an outline; open the one you're working on
+  S.collapsed = new Set(S.cs.sections.map((sec) => sec._id));
   renderEditor();
 }
 
@@ -766,7 +767,13 @@ function renderCanvas() {
       S.isNew ? null : h('button', { class: 'btn small', onclick: discardDraft }, 'Discard them')));
   }
   kids.push(heroCard(cs), introCard(cs));
-  kids.push(h('div', { class: 'zone-label' }, h('h2', {}, 'Sections'), h('p', {}, 'Each one opens and closes on the page. Drag the dots to reorder.')));
+  const anyOpen = cs.sections.some((sec) => !S.collapsed.has(sec._id));
+  kids.push(h('div', { class: 'zone-label' }, h('h2', {}, 'Sections'),
+    h('p', {}, 'Each one opens and closes on the page. Drag the dots to reorder.'),
+    cs.sections.length ? h('button', {
+      class: 'btn small fold-all' + (anyOpen ? ' is-open' : ''), type: 'button', 'aria-label': anyOpen ? 'Collapse all sections' : 'Expand all sections',
+      onclick: () => { cs.sections.forEach((sec) => { if (anyOpen) S.collapsed.add(sec._id); else S.collapsed.delete(sec._id); }); renderCanvas(); },
+    }, svg('fold'), anyOpen ? 'Collapse all' : 'Expand all') : null));
   const secList = h('div', { class: 'sections', id: 'sections' }, cs.sections.map((s, i) => sectionCard(s, i)));
   kids.push(secList, h('button', { class: 'add-section', onclick: addSection }, '+ Add a section'));
   inner.replaceChildren(...kids);
@@ -829,7 +836,6 @@ function discardDraft() {
 
 /* ---- hero ---- */
 function heroCard(cs) {
-  const bg = h('div', { class: 'bg', style: { backgroundImage: cs.heroImage && cs.heroImage.src ? `url("${cs.heroImage.src}")` : '' } });
   const title = autoTitle(cs.title, 'Project name', 'Project name', (v) => { cs.title = v; typed(); }, 'title-input');
   const statsBox = h('div', { class: 'stats-edit' });
   const bubbleColors = ['#ff142d', '#004fff', '#4d25c8', '#1810a0'];
@@ -854,7 +860,7 @@ function heroCard(cs) {
       commit({ redraw: false });
     },
   });
-  return h('section', { class: 'hero-card', 'aria-label': 'Hero', onfocusin: () => focusPreview('hero') }, bg,
+  return h('section', { class: 'hero-card', 'aria-label': 'Hero', onfocusin: () => focusPreview('hero') },
     title,
     h('div', { class: 'row' },
       h('label', { class: 'field' }, h('span', {}, 'Client'), h('input', { class: 'input', value: cs.client, placeholder: 'Disney • Marvel Studios', oninput: (e) => { cs.client = e.target.value; typed(); } })),
@@ -863,7 +869,7 @@ function heroCard(cs) {
       h('div', { class: 'field' }, h('span', {}, 'Hero photo'),
         mediaSlot({
           get: () => (cs.heroImage && cs.heroImage.src ? { type: 'image', src: cs.heroImage.src } : null),
-          set: (m) => { cs.heroImage = m ? { src: m.src, srcset: m.srcset || '', sizes: m.srcset ? '100vw' : '' } : null; bg.style.backgroundImage = m ? `url("${m.src}")` : ''; },
+          set: (m) => { cs.heroImage = m ? { src: m.src, srcset: m.srcset || '', sizes: m.srcset ? '100vw' : '' } : null; },
           kind: 'hero', label: 'Drop the hero photo', note: 'Landscape, at least 2000px wide',
         }),
         h('label', { class: 'field', style: { marginTop: '10px' } }, h('span', {}, 'Background video (optional)'), vimeo, h('small', {}, 'A Vimeo link plays behind the title instead of the photo.'))),
@@ -963,6 +969,7 @@ function sectionCard(s, i) {
     h('span', { class: 'num', 'aria-hidden': 'true' }, String(i + 1).padStart(2, '0')),
     autoTitle(s.title, 'Section title', `Section ${i + 1} title`, (v) => { s.title = v; typed(); }, 'sec-title'),
     h('div', { class: 'tools' },
+      collapsed ? h('span', { class: 'sec-count' }, s.pieces.length ? `${s.pieces.length} block${s.pieces.length === 1 ? '' : 's'}` : 'Empty') : null,
       toneBtn,
       h('button', { class: 'icon-btn', title: 'Move up', 'aria-label': 'Move section up', disabled: i === 0, onclick: () => moveSection(i, -1) }, svg('up')),
       h('button', { class: 'icon-btn', title: 'Move down', 'aria-label': 'Move section down', disabled: i === S.cs.sections.length - 1, onclick: () => moveSection(i, 1) }, svg('down')),
