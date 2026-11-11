@@ -175,7 +175,7 @@ function renderLogin(app) {
         const r = await fetch('/api/builder/login', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ password: pw.value }) });
         const d = await r.json().catch(() => ({}));
         if (!r.ok) throw new Error(d.error || 'Something went wrong.');
-        S.key = pw.value; session.set(pw.value); S.local = !!d.local;
+        S.key = pw.value; session.set(pw.value); S.local = !!d.local; S.bigUploads = !!d.bigUploads;
         if (d.missing && d.missing.length) toast('Heads up: ' + d.missing.join(' and ') + ' still need to be set in Vercel.', 'err', 9000);
         route();
       } catch (e2) {
@@ -1071,6 +1071,27 @@ function baseName(name, ext) {
   return (R.slugify(String(name).replace(/\.[a-z0-9]+$/i, '')) || 'file').slice(0, 60) + '.' + ext;
 }
 let blobClient = null;
+const DIRECT_MAX = 4.3 * 1024 * 1024;
+// Small files (every compressed photo) go through /api/builder/upload. Bigger ones, like video
+// loops, go straight to Blob storage from the browser when the store's read-write token is set.
+function uploadDirect(path, blob, onProgress) {
+  return new Promise((ok, no) => {
+    const x = new XMLHttpRequest();
+    x.open('POST', '/api/builder/upload?name=' + encodeURIComponent(path));
+    x.setRequestHeader('x-builder-key', S.key);
+    x.setRequestHeader('x-content-type', blob.type);
+    x.setRequestHeader('content-type', 'application/octet-stream');
+    x.upload.onprogress = (e) => { if (e.lengthComputable && onProgress) onProgress(Math.round((e.loaded / e.total) * 100)); };
+    x.onload = () => {
+      let d = {};
+      try { d = JSON.parse(x.responseText); } catch (e) { /* ignore */ }
+      if (x.status >= 200 && x.status < 300 && d.url) ok(d.url);
+      else no(new Error(d.error || `Upload failed (${x.status}).`));
+    };
+    x.onerror = () => no(new Error('Upload failed. Check your connection and try again.'));
+    x.send(blob);
+  });
+}
 async function uploadBlob(blob, name, onProgress) {
   const path = `case-studies/${S.cs.slug}/${name}`;
   if (S.local) {
@@ -1079,6 +1100,8 @@ async function uploadBlob(blob, name, onProgress) {
     onProgress && onProgress(100);
     return (await r.json()).url;
   }
+  if (blob.size <= DIRECT_MAX) return uploadDirect(path, blob, onProgress);
+  if (!S.bigUploads) throw new Error(`That file is ${(blob.size / 1048576).toFixed(1)} MB. Files over 4 MB need the Blob read-write token set in Vercel (see the README), or put the clip on Vimeo.`);
   if (!blobClient) blobClient = await import('/builder/vendor/blob-client.2.8.2.js');
   const r = await blobClient.upload(path, blob, {
     access: 'public', handleUploadUrl: '/api/builder/upload', clientPayload: JSON.stringify({ key: S.key }),
