@@ -56,9 +56,17 @@ img { display: block; }
   border: 1.5px solid var(--ink); border-radius: 999px;
   background: var(--card); color: var(--ink);
   font-weight: 600; white-space: nowrap;
-  transition: background-color .15s, color .15s, transform .1s;
+  transition: background-color .15s, color .15s, transform .1s, scale .18s ease-out;
 }
 .btn:hover { background: var(--ink); color: #fff; }
+/* a slight grow on hover for everything you can press */
+@media (hover: hover) {
+  .btn:not(:disabled):hover, .filters button:hover, .pick:hover, .fold-all:hover { scale: 1.05; }
+  .icon-btn:not(:disabled):hover { scale: 1.1; }
+  .tile.add:hover { scale: 1.04; }
+  .add-section:hover { scale: 1.01; }
+  .swatch:hover { scale: 1.12; }
+}
 .btn:active { transform: translateY(1px); }
 .btn:disabled { opacity: .45; cursor: default; background: var(--card); color: var(--ink); }
 .btn.primary { background: var(--red); border-color: var(--red); color: #fff; }
@@ -74,6 +82,7 @@ img { display: block; }
   display: inline-grid; place-items: center;
   width: 30px; height: 30px; border-radius: 8px;
   border: 0; background: transparent; color: inherit; opacity: .75;
+  transition: scale .15s ease-out, background-color .15s, opacity .15s;
 }
 .icon-btn:hover { opacity: 1; background: rgba(22, 5, 58, .08); }
 .icon-btn svg { width: 16px; height: 16px; }
@@ -151,7 +160,7 @@ img { display: block; }
 .library-tools { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
 .library-tools .input { width: 260px; border-radius: 999px; padding-left: 16px; }
 .filters { display: flex; gap: 6px; margin: 0 0 12px; flex-wrap: wrap; }
-.filters button { display: inline-flex; align-items: center; gap: 7px; border: 1.5px solid var(--line-2); background: transparent; border-radius: 999px; padding: 6px 8px 6px 13px; font-weight: 600; font-size: 13px; color: var(--ink); }
+.filters button { transition: scale .18s ease-out, border-color .15s; display: inline-flex; align-items: center; gap: 7px; border: 1.5px solid var(--line-2); background: transparent; border-radius: 999px; padding: 6px 8px 6px 13px; font-weight: 600; font-size: 13px; color: var(--ink); }
 .filters button:hover { border-color: var(--ink); }
 .filters button .n { min-width: 22px; padding: 1px 6px; border-radius: 99px; background: var(--paper-2); font-size: 11.5px; text-align: center; }
 .filters button.is-on { background: var(--ink); color: #fff; border-color: var(--ink); }
@@ -159,7 +168,7 @@ img { display: block; }
 /* dropdown filters and sort */
 .lib-bar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 14px; }
 .lib-spacer { flex: 1; }
-.pick { position: relative; display: inline-flex; align-items: center; gap: 6px; height: 34px; padding: 0 30px 0 13px; border: 1.5px solid var(--line-2); border-radius: 999px; background: #fff; color: var(--ink); font-size: 13px; font-weight: 600; }
+.pick { transition: scale .18s ease-out, border-color .15s; position: relative; display: inline-flex; align-items: center; gap: 6px; height: 34px; padding: 0 30px 0 13px; border: 1.5px solid var(--line-2); border-radius: 999px; background: #fff; color: var(--ink); font-size: 13px; font-weight: 600; }
 .pick:hover { border-color: var(--ink); }
 .pick::after { content: ""; position: absolute; right: 13px; top: 50%; width: 6px; height: 6px; margin-top: -5px; border: solid currentColor; border-width: 0 2px 2px 0; transform: rotate(45deg); pointer-events: none; }
 .pick select { appearance: none; -webkit-appearance: none; border: 0; background: transparent; color: inherit; font: inherit; padding: 0; max-width: 220px; cursor: pointer; outline: none; field-sizing: content; }
@@ -290,6 +299,7 @@ img { display: block; }
 .tone-row { display: flex; flex-wrap: wrap; gap: 8px; padding: 0 14px 14px 48px; }
 .tone-row[hidden] { display: none; }
 .swatch {
+  transition: scale .15s ease-out;
   width: 30px; height: 30px; padding: 0; border-radius: 50%; border: 2px solid rgba(255, 255, 255, .75);
   background: var(--sw); color: #fff; display: grid; place-items: center; font: 700 12px/1 var(--ui);
 }
@@ -338,7 +348,7 @@ img { display: block; }
 .drag-over { background: rgba(255, 255, 255, .18); }
 
 .add-row { display: flex; gap: 8px; flex-wrap: wrap; }
-.add-section { width: 100%; border: 2px dashed var(--line-2); background: transparent; border-radius: 22px; padding: 18px; font: 700 30px/0.9 var(--display); text-transform: uppercase; color: var(--ink-2); }
+.add-section { transition: scale .18s ease-out, background-color .15s, border-color .15s; width: 100%; border: 2px dashed var(--line-2); background: transparent; border-radius: 22px; padding: 18px; font: 700 30px/0.9 var(--display); text-transform: uppercase; color: var(--ink-2); }
 .add-section:hover { border-color: var(--ink); color: var(--ink); background: #fff; }
 
 /* rich text */
@@ -371,7 +381,7 @@ img { display: block; }
 .tile .alt.has { background: var(--ok); color: #fff; opacity: 1; }
 .tile.uploading::after { content: ""; position: absolute; left: 0; bottom: 0; height: 5px; width: var(--p, 0%); background: var(--blue); transition: width .2s; }
 .tile.uploading img { opacity: .55; }
-.tile.add { display: grid; place-items: center; border: 2px dashed var(--line-2); background: transparent; color: var(--ink-2); font-weight: 700; font-size: 12.5px; text-align: center; padding: 8px; cursor: pointer; }
+.tile.add { transition: scale .18s ease-out, border-color .15s; display: grid; place-items: center; border: 2px dashed var(--line-2); background: transparent; color: var(--ink-2); font-weight: 700; font-size: 12.5px; text-align: center; padding: 8px; cursor: pointer; }
 .tile.add:hover { border-color: var(--ink); color: var(--ink); }
 .tray.drop-ok, .slot.drop-ok { outline: 3px dashed var(--blue); outline-offset: 3px; }
 .vimeo-add { display: flex; gap: 8px; }
