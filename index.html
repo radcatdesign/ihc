@@ -4657,6 +4657,64 @@ window.addEventListener('load',function(){var go=function(){document.querySelect
       }
     </script>
     <script src="/js/forms.7bd16d33c2.js" defer></script>
+    <style>
+      .p-home__infinity__g__el .p-home__infinity__cell__media img.ihc-cycle { position: absolute; inset: 0; opacity: 0; transition: opacity 1.4s ease; }
+      .p-home__infinity__g__el .p-home__infinity__cell__media img.ihc-cycle.is-on { opacity: 1; }
+      .p-home__infinity__g__el .p-home__infinity__cell__media img.ihc-cycle.is-snap { transition: none; }
+    </style>
+    <script>
+      // Project bubbles fade through a few photos from their case study, each on its own clock,
+      // and only while they're on screen. The list comes from content/home-images.json.
+      (function () {
+        if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+        const wait = (ms) => new Promise((ok) => setTimeout(ok, ms));
+        const io = 'IntersectionObserver' in window ? new IntersectionObserver((es) => es.forEach((e) => { if (e.target.__cycle) e.target.__cycle.seen = e.isIntersecting; }), { rootMargin: '80px' }) : null;
+        let photos = null;
+
+        function setup(el) {
+          el.dataset.cycle = '';
+          const link = el.querySelector('[data-link]');
+          const media = el.querySelector('.p-home__infinity__cell__media');
+          const base = media && media.querySelector('img');
+          if (!link || !base) return;
+          const slug = (link.dataset.link.split('/case-study/')[1] || '').replace(/[?#].*$/, '');
+          const first = base.getAttribute('src');
+          const frames = [first].concat((photos[slug] || []).filter((u) => u !== first));
+          if (frames.length < 2) return;
+          const top = document.createElement('img');
+          top.className = 'ihc-cycle'; top.alt = ''; top.decoding = 'async';
+          media.appendChild(top);
+          const st = el.__cycle = { i: 0, seen: !io };
+          if (io) io.observe(el);
+          (async function loop() {
+            await wait(3000 + Math.random() * 7000); // start at different times
+            for (;;) {
+              if (!el.isConnected) return;
+              if (st.seen && !document.hidden && !el.matches(':hover') && !el.classList.contains('active')) {
+                st.i = (st.i + 1) % frames.length;
+                top.src = frames[st.i];
+                try { await top.decode(); } catch (e) { await wait(4000); continue; }
+                top.classList.add('is-on');
+                await wait(1500);
+                // hand the photo to the bottom layer, then hide the top one without a fade
+                base.src = frames[st.i];
+                try { await base.decode(); } catch (e) { /* keep the top layer up */ }
+                top.classList.add('is-snap'); top.classList.remove('is-on'); void top.offsetWidth; top.classList.remove('is-snap');
+              }
+              await wait(6000 + Math.random() * 6000);
+            }
+          })();
+        }
+        function scan() {
+          if (!photos) return;
+          document.querySelectorAll('.p-home__infinity__g__el[data-type="cs"]:not([data-cycle])').forEach(setup);
+        }
+        fetch('/content/home-images.json').then((r) => (r.ok ? r.json() : {})).then((j) => { photos = j || {}; scan(); }).catch(() => {});
+        // the field gets rebuilt for category filters and resizes, so pick up new bubbles
+        const grid = document.getElementById('p-home__infinity');
+        if (grid && 'MutationObserver' in window) new MutationObserver(scan).observe(grid, { childList: true });
+      })();
+    </script>
     <script>
       // Bubbles lean a little toward the cursor. Desktop mice only, and off for reduced motion.
       // Uses the translate property so it stacks on top of the bubbles' own animations.

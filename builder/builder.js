@@ -2299,7 +2299,7 @@ async function publish() {
   const jsonPath = `content/case-studies/${d.slug}.json`;
   const shared = ['content/index.json', 'work.html', 'cms/cs.html', 'sitemap.xml'];
   const tpl = await (await fetch('/builder/case-study.template', { cache: 'no-cache' })).text();
-  const latest = await readFiles([jsonPath, ...shared]);
+  const latest = await readFiles([jsonPath, ...shared, 'content/home-images.json']);
   const F = latest.files;
   if (S.isNew && F[jsonPath]) throw new Error(`Another case study already uses /case-study/${d.slug}. Change the link in Page settings.`);
   for (const p of shared) if (!F[p]) throw new Error(`Couldn’t read ${p} from the site.`);
@@ -2315,8 +2315,13 @@ async function publish() {
   if (cms !== F['cms/cs.html'].text) files.push({ path: 'cms/cs.html', content: cms });
   const map = R.spliceSitemap(F['sitemap.xml'].text, d);
   if (map !== F['sitemap.xml'].text) files.push({ path: 'sitemap.xml', content: map });
+  // the photos its homepage bubble fades through
+  const HI = 'content/home-images.json';
+  const bubbles = R.spliceBubbles(F[HI] ? F[HI].text : '{}', d);
+  if (!F[HI] || bubbles !== F[HI].text) files.push({ path: HI, content: bubbles });
   const expect = { [jsonPath]: S.isNew ? null : S.loadedSha };
   for (const f of files) if (shared.includes(f.path)) expect[f.path] = F[f.path].sha;
+  if (files.some((f) => f.path === HI)) expect[HI] = F[HI] ? F[HI].sha : null;
   try {
     const r = await api('publish', { method: 'POST', body: { message: `${S.isNew ? 'Add' : 'Update'} case study: ${d.title}`, files, expect } });
     S.loadedSha = await gitSha(json);

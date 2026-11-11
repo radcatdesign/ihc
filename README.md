@@ -76,6 +76,7 @@ Case study pages are rendered from `builder/case-study.template` by `builder/ren
 Case studies are edited in the builder (above). Everything else is plain HTML.
 
 - **New images:** drop them in `images/` and reference them as `/images/<file>`. Export web sizes (2000px wide max, WebP or AVIF) and keep files under a few hundred KB.
+- **Homepage bubble photos:** each project bubble fades through a few photos from its case study, listed in `content/home-images.json`. Publishing from the builder updates that list. `npm run case-studies` rebuilds it, using small `-t800.webp` copies where they exist; `node scripts/bubble-thumbs.js` makes any that are missing (needs `npm i --no-save sharp`).
 - **CSS or JS changes:** CSS and JS are minified. If you edit a hashed file like `css/ihc.<hash>.css`, rename it with a new hash (or any new suffix) and update the references, otherwise returning visitors keep the cached copy for up to a year.
 
 ## Previewing locally
