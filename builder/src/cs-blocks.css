@@ -288,3 +288,8 @@ html .p-cs__layouts .p-cs__block:is([data-tone="yellow"], [data-tone="pink"], [d
   .p-cs__x-logos__list { gap: 24px 32px; }
   .p-cs__x-logos__item img { max-height: 44px; max-width: 120px; }
 }
+
+/* Hero bubbles: sit behind the scroll cue, and can be grabbed, flung and tapped */
+html .p-cs__hero__scroll-el.v--new { z-index: 3; }
+html .p-cs__hero__bottom__right__el.is-grabbable { pointer-events: auto; cursor: grab; touch-action: pan-y; user-select: none; -webkit-user-select: none; -webkit-tap-highlight-color: transparent; }
+html .p-cs__hero__bottom__right__el.is-grabbable.is-grabbed { cursor: grabbing; }

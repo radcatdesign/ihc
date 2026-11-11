@@ -18,12 +18,13 @@ const ROOT = path.join(__dirname, '..');
 const R = require(path.join(ROOT, 'builder', 'render.js'));
 const TPL = path.join(ROOT, 'builder', 'case-study.template');
 
-function hashAsset(src, dir, ext) {
+function hashAsset(src, dir, ext, base = 'cs-blocks') {
   const body = fs.readFileSync(path.join(ROOT, 'builder', 'src', src), 'utf8');
   const h = crypto.createHash('sha1').update(body).digest('hex').slice(0, 10);
-  const name = `cs-blocks.${h}.${ext}`;
+  const name = `${base}.${h}.${ext}`;
+  const old = new RegExp(`^${base}\\.[0-9a-f]{10}\\.`);
   for (const f of fs.readdirSync(path.join(ROOT, dir))) {
-    if (/^cs-blocks\.[0-9a-f]{10}\./.test(f) && f !== name) fs.unlinkSync(path.join(ROOT, dir, f));
+    if (old.test(f) && f !== name) fs.unlinkSync(path.join(ROOT, dir, f));
   }
   fs.writeFileSync(path.join(ROOT, dir, name), body);
   return name;
@@ -31,9 +32,23 @@ function hashAsset(src, dir, ext) {
 
 const cssName = hashAsset('cs-blocks.css', 'css', 'css');
 const jsName = hashAsset('cs-blocks.js', 'js', 'js');
+
+// The page wipe script runs on every page that has the wipe, so point them all at the new copy.
+const wipeName = hashAsset('wipe.js', 'js', 'js', 'wipe');
+(function updateWipe(dir) {
+  for (const f of fs.readdirSync(dir, { withFileTypes: true })) {
+    const p = path.join(dir, f.name);
+    if (f.isDirectory()) { if (!['node_modules', '.git', 'case-study', 'builder', 'api', 'scripts'].includes(f.name)) updateWipe(p); continue; }
+    if (!f.name.endsWith('.html')) continue;
+    const t = fs.readFileSync(p, 'utf8');
+    const next = t.replace(/\/js\/wipe\.[0-9a-f]{10}\.js/g, '/js/' + wipeName);
+    if (next !== t) fs.writeFileSync(p, next);
+  }
+})(ROOT);
 let tpl = fs.readFileSync(TPL, 'utf8')
   .replace(/\/css\/cs-blocks\.[0-9a-f]{10}\.css/, '/css/' + cssName)
-  .replace(/\/js\/cs-blocks\.[0-9a-f]{10}\.js/, '/js/' + jsName);
+  .replace(/\/js\/cs-blocks\.[0-9a-f]{10}\.js/, '/js/' + jsName)
+  .replace(/\/js\/wipe\.[0-9a-f]{10}\.js/, '/js/' + wipeName);
 fs.writeFileSync(TPL, tpl);
 
 const only = process.argv.slice(2);
