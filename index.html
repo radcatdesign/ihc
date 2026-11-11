@@ -3714,7 +3714,7 @@ window.addEventListener('load',function(){var go=function(){document.querySelect
               const num = (v, fb) => (isFinite(parseFloat(v)) ? parseFloat(v) : fb);
               const w = num(cs.width, el.offsetWidth || 160), h = num(cs.height, el.offsetHeight || 140);
               const x = num(cs.left, el.offsetLeft), y = num(cs.top, el.offsetTop);
-              return { x: x + w / 2, y: y + h / 2, r: Math.max(w, h) / 2 };
+              return { x: x + w / 2, y: y + h / 2, r: Math.max(w, h) / 2, w, h };
             });
             probe.remove();
             return slots;
@@ -3764,23 +3764,38 @@ window.addEventListener('load',function(){var go=function(){document.querySelect
               cs: list.filter(item => item.isAward === false),
               award: list.filter(item => item.isAward === true),
             };
-            const typeOf = (j) => {
-              if (window.gridConfig.testimonialPositions.includes(j)) return 'testimonial';
+            // every slot in all four tiles, positioned on the shared wrap-around canvas
+            const layout = measureSlots();
+            const W = cols * cellSize, H = rows * cellHeight;
+            const at = (i, j) => ({ i, j, x: (i % cols) * cellSize + layout[j].x, y: Math.floor(i / cols) * cellHeight + layout[j].y, r: layout[j].r, w: layout[j].w, h: layout[j].h });
+            // quote bubbles keep their distance: some of the quote spots sit close together (or meet
+            // across a tile seam), so each tile keeps only the ones with clear space around them and
+            // the rest show a project instead
+            const boxGap = (a, b) => {
+              let dx = Math.abs(a.x - b.x), dy = Math.abs(a.y - b.y);
+              dx = Math.min(dx, W - dx); dy = Math.min(dy, H - dy);
+              return Math.max(dx - (a.w + b.w) / 2, dy - (a.h + b.h) / 2);
+            };
+            const quoteSpots = new Set();
+            if (pools.testimonial.length) {
+              const minGap = cellSize * 0.15;
+              const kept = [];
+              const cands = [];
+              for (let i = 0; i < cols * rows; i++) window.gridConfig.testimonialPositions.forEach((j) => { if (layout[j]) cands.push(at(i, j)); });
+              shuffle(cands).forEach((c) => { if (kept.every((o) => boxGap(c, o) >= minGap)) kept.push(c); });
+              kept.forEach((c) => quoteSpots.add(c.i + ':' + c.j));
+            }
+            const typeOf = (i, j) => {
+              if (window.gridConfig.testimonialPositions.includes(j)) return quoteSpots.has(i + ':' + j) ? 'testimonial' : 'cs';
               if (window.gridConfig.powPositions.includes(j)) return 'pow';
               if (pools.award.length && window.gridConfig.awardsPositions.includes(j)) return 'award';
               return 'cs';
             };
-
-            // every slot in all four tiles, positioned on the shared wrap-around canvas
-            const layout = measureSlots();
             const all = [];
-            for (let i = 0; i < cols * rows; i++) {
-              const ox = (i % cols) * cellSize, oy = Math.floor(i / cols) * cellHeight;
-              layout.forEach((p, j) => all.push({ i, j, type: typeOf(j), x: ox + p.x, y: oy + p.y, r: p.r }));
-            }
+            for (let i = 0; i < cols * rows; i++) layout.forEach((p, j) => all.push(Object.assign(at(i, j), { type: typeOf(i, j) })));
             const plan = new Map();
             Object.keys(pools).forEach((type) => {
-              const chosen = spreadOut(all.filter((s) => s.type === type), pools[type], cols * cellSize, rows * cellHeight);
+              const chosen = spreadOut(all.filter((s) => s.type === type), pools[type], W, H);
               chosen.forEach((item, slot) => plan.set(slot.i + ':' + slot.j, item));
             });
 
@@ -3790,7 +3805,7 @@ window.addEventListener('load',function(){var go=function(){document.querySelect
               cell.id = `cell-${i}`;
               for (let j = 0; j < window.gridConfig.elementsPerGrid; j++) {
                 const item = plan.get(i + ':' + j);
-                if (item) cell.append(make[typeOf(j)](item, j));
+                if (item) cell.append(make[typeOf(i, j)](item, j));
               }
               container.appendChild(cell);
               cells.push(cell);
