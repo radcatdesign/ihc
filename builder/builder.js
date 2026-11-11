@@ -94,6 +94,9 @@ const ICON = {
   section: I('<rect x="3" y="4" width="18" height="16" rx="3"/><path d="M7 9h10M7 13h6"/>'),
   code: I('<path d="M8 8l-4 4 4 4M16 8l4 4-4 4"/>'),
   plus: I('<path d="M12 5v14M5 12h14"/>'),
+  eye: I('<path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/>'),
+  gear: I('<circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/>'),
+  send: I('<path d="M22 2L11 13M22 2l-7 20-4-9-9-4z"/>'),
 };
 
 /* ---------------- piece types ---------------- */
@@ -111,6 +114,8 @@ const TYPES = {
   raw: { name: 'Custom HTML', hint: '', color: '#6f6488', icon: 'code', make: () => ({ type: 'raw', html: '' }) },
 };
 const SECTION_COLORS = ['#ff463d', '#004fff', '#4d25c8', '#1810a0', '#16053a'];
+// Phones and small tablets get the dock + add sheet layout (matches the CSS breakpoint)
+const compact = () => window.matchMedia('(max-width: 900px)').matches;
 const PALETTE = ['text', 'text2', 'gallery', 'fullGallery', 'video', 'image', 'duo', 'stats', 'quote'];
 
 /* ---------------- app state ---------------- */
@@ -203,6 +208,7 @@ async function loadIndex() {
 async function renderLibrary(app) {
   document.title = 'Case Study Builder · IHC';
   S.cs = null;
+  document.body.classList.remove('preview-open');
   app.replaceChildren(topbarLibrary(), h('div', { class: 'library' }, h('div', { class: 'boot' }, 'Loading case studies…')));
   let idx;
   try { idx = await loadIndex(); } catch (e) {
@@ -244,7 +250,7 @@ function topbarLibrary() {
     h('span', { class: 'logo-blob', 'aria-hidden': 'true' }, 'IHC'),
     h('div', { class: 'crumb' }, h('b', {}, 'Case study builder')),
     h('div', { class: 'spacer' }),
-    h('a', { class: 'btn on-dark small', href: '/work', target: '_blank', rel: 'noopener' }, 'View the Work page'),
+    h('a', { class: 'btn on-dark small desk-only', href: '/work', target: '_blank', rel: 'noopener' }, 'View the Work page'),
     h('button', { class: 'btn on-dark small', onclick: () => { session.set(''); S.key = ''; route(); } }, 'Sign out'));
 }
 
@@ -465,14 +471,20 @@ async function renderEditor() {
     h('span', { class: 'state', id: 'bar-state' }),
     h('button', { class: 'icon-btn', id: 'bar-undo', title: 'Undo', 'aria-label': 'Undo', onclick: undo }, svg('undo')),
     h('button', { class: 'icon-btn', id: 'bar-redo', title: 'Redo', 'aria-label': 'Redo', onclick: redo }, svg('redo')),
-    h('button', { class: 'btn on-dark small', onclick: openSettings }, 'Page settings'),
-    h('button', { class: 'btn on-dark small hide-sm' + (S.preview ? ' is-on' : ''), id: 'bar-preview', 'aria-pressed': S.preview ? 'true' : 'false', onclick: togglePreview }, 'Preview'),
-    h('button', { class: 'btn primary small', id: 'bar-publish', onclick: publishFlow }, 'Publish'));
+    h('button', { class: 'btn on-dark small desk-only', onclick: openSettings }, 'Page settings'),
+    h('button', { class: 'btn on-dark small desk-only' + (S.preview ? ' is-on' : ''), id: 'bar-preview', 'aria-pressed': S.preview ? 'true' : 'false', onclick: togglePreview }, 'Preview'),
+    h('button', { class: 'btn primary small desk-only', id: 'bar-publish', onclick: publishFlow }, 'Publish'));
   const editor = h('div', { class: 'editor' + (S.preview ? ' with-preview' : '') },
     renderBin(),
     h('main', { class: 'canvas', id: 'canvas' }, h('div', { class: 'canvas-inner', id: 'canvas-inner' })),
     renderPreviewPane());
-  app.replaceChildren(bar, editor);
+  // phones: everything you do a lot sits under your thumb
+  const dock = h('nav', { class: 'dock', 'aria-label': 'Editor actions' },
+    h('button', { class: 'dock-add', type: 'button', onclick: openAddSheet }, svg('plus'), h('span', {}, 'Add')),
+    h('button', { type: 'button', onclick: togglePreview }, svg('eye'), h('span', {}, 'Preview')),
+    h('button', { type: 'button', onclick: openSettings }, svg('gear'), h('span', {}, 'Settings')),
+    h('button', { class: 'dock-publish', type: 'button', id: 'dock-publish', onclick: publishFlow }, svg('send'), h('span', {}, 'Publish')));
+  app.replaceChildren(bar, editor, dock);
   renderCanvas();
   updateBar();
   if (S.preview) refreshPreview();
@@ -489,6 +501,8 @@ function updateBar() {
   $('#bar-undo').disabled = !S.history.length;
   $('#bar-redo').disabled = !S.future.length;
   $('#bar-publish').disabled = S.uploads > 0;
+  const dp = $('#dock-publish');
+  if (dp) { dp.disabled = S.uploads > 0; dp.classList.toggle('has-changes', dirty); }
 }
 
 /* ---------------- parts bin ---------------- */
@@ -525,11 +539,17 @@ function renderBin() {
   return bin;
 }
 
-function addPiece(type) {
+function addPiece(type, target) {
   const p = TYPES[type].make();
   p._id = uid();
   let where;
-  if (TYPES[type].introOnly || !S.cs.sections.length) {
+  if (target === 'intro' && !TYPES[type].introOnly) {
+    S.cs.introPieces.push(p); where = 'intro';
+  } else if (typeof target === 'number' && S.cs.sections[target] && !TYPES[type].introOnly) {
+    S.cs.sections[target].pieces.push(p);
+    S.collapsed.delete(S.cs.sections[target]._id);
+    S.activeSection = target; where = target;
+  } else if (TYPES[type].introOnly || !S.cs.sections.length) {
     if (TYPES[type].introOnly) { S.cs.introPieces.push(p); where = 'intro'; } else { S.cs.sections.push({ _id: uid(), title: '', pieces: [p] }); where = 0; }
   } else {
     const i = Math.min(S.activeSection, S.cs.sections.length - 1);
@@ -541,6 +561,34 @@ function addPiece(type) {
   flash(p._id);
   focusPreview(where);
 }
+// Phones: a sheet of bricks. Pick where the piece goes, tap a brick.
+function openAddSheet() {
+  const opts = [['intro', 'The intro']].concat(S.cs.sections.map((sec, i) => [String(i), String(i + 1).padStart(2, '0') + ' ' + (sec.title || 'Untitled section')]));
+  const active = String(Math.min(S.activeSection, Math.max(0, S.cs.sections.length - 1)));
+  const where = h('select', { class: 'select', 'aria-label': 'Add it to' }, opts.map(([v, l]) => h('option', { value: v, selected: v === active }, l)));
+  const bricks = h('div', { class: 'sheet-bricks' },
+    h('button', { class: 'brick section-brick', type: 'button', 'data-new-type': 'section' }, svg('section'), h('span', {}, h('b', {}, 'Section'), h('small', {}, 'A new colored panel'))),
+    PALETTE.map(brick), brick('introGallery'));
+  const sheet = h('div', { class: 'sheet', role: 'dialog', 'aria-modal': 'true', 'aria-label': 'Add a piece' },
+    h('div', { class: 'sheet-grab', 'aria-hidden': 'true' }),
+    h('div', { class: 'sheet-head' }, h('h2', {}, 'Add a piece'), h('button', { class: 'icon-btn', 'aria-label': 'Close', onclick: () => close() }, svg('x'))),
+    h('label', { class: 'field' }, h('span', {}, 'Add it to'), where),
+    bricks);
+  const scrim = h('div', { class: 'sheet-scrim' }, sheet);
+  const close = () => { scrim.remove(); document.removeEventListener('keydown', onKey); };
+  const onKey = (e) => { if (e.key === 'Escape') close(); };
+  scrim.addEventListener('mousedown', (e) => { if (e.target === scrim) close(); });
+  bricks.addEventListener('click', (e) => {
+    const b = e.target.closest('.brick');
+    if (!b) return;
+    close();
+    if (b.dataset.newType === 'section') addSection();
+    else addPiece(b.dataset.newType, where.value === 'intro' ? 'intro' : +where.value);
+  });
+  document.addEventListener('keydown', onKey);
+  document.body.append(scrim);
+}
+
 function addSection() {
   S.cs.sections.push({ _id: uid(), title: '', pieces: [] });
   S.activeSection = S.cs.sections.length - 1;
@@ -622,7 +670,7 @@ function renderCanvas() {
     });
   });
   $$('.tray', inner).forEach((el) => {
-    Sortable.create(el, { group: { name: 'media' }, filter: '.add', preventOnFilter: false, animation: 140, onEnd: syncMedia, onMove: (e) => !e.related.classList.contains('add') || e.willInsertAfter === false });
+    Sortable.create(el, { group: { name: 'media' }, filter: '.add', preventOnFilter: false, animation: 140, delay: 220, delayOnTouchOnly: true, onEnd: syncMedia, onMove: (e) => !e.related.classList.contains('add') || e.willInsertAfter === false });
   });
   canvas.scrollTop = top;
 }
@@ -650,13 +698,7 @@ function discardDraft() {
 /* ---- hero ---- */
 function heroCard(cs) {
   const bg = h('div', { class: 'bg', style: { backgroundImage: cs.heroImage && cs.heroImage.src ? `url("${cs.heroImage.src}")` : '' } });
-  const grow = (el) => { el.style.height = 'auto'; el.style.height = el.scrollHeight + 'px'; };
-  const title = h('textarea', {
-    class: 'title-input', rows: 1, placeholder: 'Project name', 'aria-label': 'Project name',
-    oninput: (e) => { e.target.value = e.target.value.replace(/\n/g, ' '); cs.title = e.target.value; grow(e.target); typed(); },
-  });
-  title.value = cs.title;
-  requestAnimationFrame(() => grow(title));
+  const title = autoTitle(cs.title, 'Project name', 'Project name', (v) => { cs.title = v; typed(); }, 'title-input');
   const statsBox = h('div', { class: 'stats-edit' });
   const bubbleColors = ['#ff142d', '#004fff', '#4d25c8', '#1810a0'];
   for (let i = 0; i < 4; i++) {
@@ -695,6 +737,18 @@ function heroCard(cs) {
         h('label', { class: 'field', style: { marginTop: '10px' } }, h('span', {}, 'Background video (optional)'), vimeo, h('small', {}, 'A Vimeo link plays behind the title instead of the photo.'))),
       h('div', { class: 'field' }, h('span', {}, 'Bubbles over the hero'), statsBox,
         h('span', { style: { marginTop: '8px' } }, 'Services'), servicesPicker(cs))));
+}
+
+// A one-line title field that wraps instead of cutting long titles off
+function autoTitle(value, placeholder, label, onChange, cls) {
+  const el = h('textarea', { class: cls, rows: 1, placeholder, 'aria-label': label, spellcheck: 'true' });
+  el.value = value || '';
+  const grow = () => { el.style.height = 'auto'; el.style.height = el.scrollHeight + 'px'; };
+  el.addEventListener('input', () => { el.value = el.value.replace(/\n/g, ' '); grow(); onChange(el.value); });
+  el.addEventListener('keydown', (e) => { if (e.key === 'Enter') { e.preventDefault(); el.blur(); } });
+  requestAnimationFrame(grow);
+  new ResizeObserver(grow).observe(el);
+  return el;
 }
 
 function servicesPicker(cs) {
@@ -756,7 +810,7 @@ function sectionCard(s, i) {
   h('div', { class: 'section-head' },
     h('span', { class: 'grip sec-grip', title: 'Drag to reorder', 'aria-hidden': 'true' }, svg('grip')),
     h('span', { class: 'num', 'aria-hidden': 'true' }, String(i + 1).padStart(2, '0')),
-    h('input', { class: 'sec-title', value: s.title, placeholder: 'Section title', 'aria-label': `Section ${i + 1} title`, oninput: (e) => { s.title = e.target.value; typed(); } }),
+    autoTitle(s.title, 'Section title', `Section ${i + 1} title`, (v) => { s.title = v; typed(); }, 'sec-title'),
     h('div', { class: 'tools' },
       h('button', { class: 'icon-btn', title: 'Move up', 'aria-label': 'Move section up', disabled: i === 0, onclick: () => moveSection(i, -1) }, svg('up')),
       h('button', { class: 'icon-btn', title: 'Move down', 'aria-label': 'Move section down', disabled: i === S.cs.sections.length - 1, onclick: () => moveSection(i, 1) }, svg('down')),
@@ -1382,7 +1436,8 @@ function renderPreviewPane() {
     h('iframe', { id: 'pv-frame', title: 'Live preview', loading: 'eager' }));
   const pane = h('aside', { class: 'preview', id: 'preview', 'aria-label': 'Live preview', hidden: !S.preview },
     h('div', { class: 'preview-bar' },
-      seg([['desktop', 'Desktop'], ['phone', 'Phone']], S.device, (v) => { S.device = v; stage.classList.toggle('phone', v === 'phone'); fitPreview(); refreshPreview(); }),
+      h('button', { class: 'btn small on-dark mob-only', type: 'button', onclick: togglePreview }, 'Done'),
+      h('span', { class: 'desk-only' }, seg([['desktop', 'Desktop'], ['phone', 'Phone']], S.device, (v) => { S.device = v; stage.classList.toggle('phone', v === 'phone'); fitPreview(); refreshPreview(); })),
       h('span', { class: 'grow' }, 'Updates as you build'),
       h('button', { class: 'icon-btn', title: 'Refresh', 'aria-label': 'Refresh preview', onclick: () => refreshPreview() }, svg('refresh')),
       h('button', { class: 'icon-btn', title: 'Open in a new tab', 'aria-label': 'Open preview in a new tab', onclick: openPreviewTab }, svg('open'))),
@@ -1392,6 +1447,12 @@ function renderPreviewPane() {
 }
 function togglePreview() {
   S.preview = !S.preview;
+  if (compact()) {
+    // full-screen phone render; the page behind stays put
+    S.device = 'phone';
+    $('#pv-stage').classList.add('phone');
+    document.body.classList.toggle('preview-open', S.preview);
+  }
   const ed = $('.editor');
   ed.classList.toggle('with-preview', S.preview);
   $('#preview').hidden = !S.preview;
@@ -1403,7 +1464,7 @@ function fitPreview() {
   const stage = $('#pv-stage');
   const f = $('#pv-frame');
   if (!stage || !f) return;
-  if (S.device === 'phone') { f.style.transform = ''; f.style.width = ''; f.style.height = ''; return; }
+  if (S.device === 'phone' || compact()) { f.style.transform = ''; f.style.width = ''; f.style.height = ''; return; }
   const scale = stage.clientWidth / 1440;
   f.style.width = '1440px';
   f.style.height = Math.ceil(stage.clientHeight / scale) + 'px';
