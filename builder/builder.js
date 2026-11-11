@@ -97,26 +97,59 @@ const ICON = {
   eye: I('<path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/>'),
   gear: I('<circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/>'),
   send: I('<path d="M22 2L11 13M22 2l-7 20-4-9-9-4z"/>'),
+  grid: I('<rect x="3" y="3" width="8" height="8" rx="1.5"/><rect x="13" y="3" width="8" height="8" rx="1.5"/><rect x="3" y="13" width="8" height="8" rx="1.5"/><rect x="13" y="13" width="8" height="8" rx="1.5"/>'),
+  split: I('<rect x="3" y="5" width="9" height="14" rx="2"/><path d="M15 8h6M15 12h6M15 16h4"/>'),
+  compare: I('<rect x="3" y="5" width="18" height="14" rx="2"/><path d="M12 3v18M8.5 10l-2 2 2 2M15.5 10l2 2-2 2"/>'),
+  social: I('<rect x="3" y="4" width="5" height="16" rx="1.5"/><rect x="9.5" y="4" width="5" height="16" rx="1.5"/><rect x="16" y="4" width="5" height="16" rx="1.5"/>'),
+  marquee: I('<path d="M3 5h18M3 19h18M4 12h12M13 9l3 3-3 3"/>'),
+  steps: I('<path d="M3 20h5v-5h5v-5h5V5h3"/>'),
+  credits: I('<circle cx="8" cy="8" r="3"/><path d="M3 19c0-3 2.2-5 5-5s5 2 5 5M15 8h6M15 12h6M15 16h4"/>'),
+  logos: I('<circle cx="6" cy="12" r="3"/><rect x="10.5" y="9" width="5" height="6" rx="1"/><path d="M19.5 9l2.5 6h-5z"/>'),
+  palette: I('<path d="M12 3a9 9 0 1 0 0 18c.9 0 1.6-.7 1.6-1.6 0-.4-.2-.8-.4-1.1-.3-.3-.4-.7-.4-1.1 0-.9.7-1.6 1.6-1.6H16a5 5 0 0 0 5-5c0-4.1-4-7.6-9-7.6z"/><circle cx="7.5" cy="11" r="1.2" fill="currentColor"/><circle cx="10.5" cy="7" r="1.2" fill="currentColor"/><circle cx="15" cy="7.5" r="1.2" fill="currentColor"/>'),
 };
 
 /* ---------------- piece types ---------------- */
+// Bricks are colored by family so the bin reads at a glance: words red, pictures blue, proof violet.
+const WORDS = '#ff463d';
+const PICS = '#004fff';
+const PROOF = '#4d25c8';
 const TYPES = {
-  text: { name: 'Text', hint: 'A paragraph or two', color: '#ff463d', icon: 'text', make: () => ({ type: 'text', html: '' }) },
-  text2: { name: 'Two columns', hint: 'Text side by side', color: '#4d25c8', icon: 'cols', make: () => ({ type: 'text2', left: '', right: '' }) },
-  gallery: { name: 'Gallery', hint: 'Slider with thumbnails', color: '#ffb728', ink: true, icon: 'gallery', make: () => ({ type: 'gallery', media: [] }) },
-  fullGallery: { name: 'Wide gallery', hint: 'Big edge-to-edge slider', color: '#95efc9', ink: true, icon: 'wide', make: () => ({ type: 'fullGallery', media: [] }) },
-  video: { name: 'Video', hint: 'A Vimeo player', color: '#004fff', icon: 'play', make: () => ({ type: 'video' }) },
-  image: { name: 'Big image', hint: 'One photo or a looping clip', color: '#f40c70', icon: 'image', make: () => ({ type: 'image', media: null, size: 'contained', caption: '' }) },
-  duo: { name: 'Two-up', hint: 'Two photos side by side', color: '#c2e9f5', ink: true, icon: 'duo', make: () => ({ type: 'duo', items: [null, null], ratio: 'natural' }) },
-  stats: { name: 'Stats', hint: 'Up to four big numbers', color: '#1810a0', icon: 'stats', make: () => ({ type: 'stats', items: [{ value: '', label: '' }, { value: '', label: '' }] }) },
-  quote: { name: 'Quote', hint: 'Words worth repeating', color: '#394656', icon: 'quote', make: () => ({ type: 'quote', text: '', who: '' }) },
-  introGallery: { name: 'Intro photos', hint: 'Slider next to the intro text', color: '#ff142d', icon: 'intro', introOnly: true, make: () => ({ type: 'introGallery', media: [], html: '' }) },
+  text: { name: 'Text', hint: 'A paragraph or two', blurb: 'A paragraph or two of story. Bold, italics and links.', color: WORDS, icon: 'text', make: () => ({ type: 'text', html: '' }) },
+  text2: { name: 'Two columns', hint: 'Text side by side', blurb: 'Two short blocks of text side by side.', color: WORDS, icon: 'cols', make: () => ({ type: 'text2', left: '', right: '' }) },
+  split: { name: 'Photo + text', hint: 'A photo next to words', blurb: 'A photo or loop next to a headline and text. Flip it left or right.', color: WORDS, icon: 'split', make: () => ({ type: 'split', media: null, title: '', html: '', side: 'left', caption: '' }) },
+  quote: { name: 'Quote', hint: 'Words worth repeating', blurb: 'A big pull quote from a client, a fan or the press.', color: WORDS, icon: 'quote', make: () => ({ type: 'quote', text: '', who: '' }) },
+  marquee: { name: 'Marquee', hint: 'Giant scrolling words', blurb: 'Giant scrolling words across the section, solid or outline.', color: WORDS, icon: 'marquee', make: () => ({ type: 'marquee', text: '', style: 'outline', speed: 'normal' }) },
+  steps: { name: 'Steps', hint: 'How it came together', blurb: 'How it came together, in numbered steps.', color: WORDS, icon: 'steps', make: () => ({ type: 'steps', items: [{ title: '', text: '' }, { title: '', text: '' }, { title: '', text: '' }] }) },
+  gallery: { name: 'Gallery', hint: 'Slider with thumbnails', blurb: 'Photos and Vimeo clips one at a time, with thumbnails.', color: PICS, icon: 'gallery', make: () => ({ type: 'gallery', media: [] }) },
+  fullGallery: { name: 'Wide gallery', hint: 'Big edge-to-edge slider', blurb: 'A big edge-to-edge slider. Best with landscape photos.', color: PICS, icon: 'wide', make: () => ({ type: 'fullGallery', media: [] }) },
+  image: { name: 'Big image', hint: 'One photo or a loop', blurb: 'One big photo or a looping MP4, framed or full bleed.', color: PICS, icon: 'image', make: () => ({ type: 'image', media: null, size: 'contained', caption: '' }) },
+  duo: { name: 'Two-up', hint: 'Two photos side by side', blurb: 'Two photos side by side.', color: PICS, icon: 'duo', make: () => ({ type: 'duo', items: [null, null], ratio: 'natural' }) },
+  grid: { name: 'Photo grid', hint: 'Three, four or a mosaic', blurb: 'Three or four across, or a mosaic with a big hero photo.', color: PICS, icon: 'grid', make: () => ({ type: 'grid', media: [], layout: 'three' }) },
+  social: { name: 'Social row', hint: 'Vertical clips in a row', blurb: 'Vertical clips and photos in a row, like Reels and TikToks.', color: PICS, icon: 'social', make: () => ({ type: 'social', media: [] }) },
+  compare: { name: 'Before + after', hint: 'Drag to compare', blurb: 'Drag to compare the render with what got built.', color: PICS, icon: 'compare', make: () => ({ type: 'compare', before: null, after: null, beforeLabel: 'Render', afterLabel: 'Built' }) },
+  video: { name: 'Video', hint: 'A Vimeo player', blurb: 'A Vimeo player.', color: PICS, icon: 'play', make: () => ({ type: 'video' }) },
+  stats: { name: 'Stats', hint: 'Up to four big numbers', blurb: 'Up to four big numbers.', color: PROOF, icon: 'stats', make: () => ({ type: 'stats', items: [{ value: '', label: '' }, { value: '', label: '' }] }) },
+  logos: { name: 'Logos', hint: 'Press and partners', blurb: 'Press, partner or award logos in a row.', color: PROOF, icon: 'logos', make: () => ({ type: 'logos', media: [], title: '', tint: 'mono' }) },
+  credits: { name: 'Credits', hint: 'Who did what', blurb: 'Who did what: client, partners, crew.', color: PROOF, icon: 'credits', make: () => ({ type: 'credits', items: [{ role: '', name: '' }, { role: '', name: '' }, { role: '', name: '' }] }) },
+  introGallery: { name: 'Intro photos', hint: 'Slider by the intro', blurb: 'The slider that sits next to the intro text.', color: '#ffb728', ink: true, icon: 'intro', introOnly: true, make: () => ({ type: 'introGallery', media: [], html: '' }) },
   raw: { name: 'Custom HTML', hint: '', color: '#6f6488', icon: 'code', make: () => ({ type: 'raw', html: '' }) },
 };
+const FAMILIES = [
+  ['Words', ['text', 'text2', 'split', 'quote', 'marquee', 'steps']],
+  ['Photos and video', ['gallery', 'fullGallery', 'image', 'duo', 'grid', 'social', 'compare', 'video']],
+  ['Results and credits', ['stats', 'logos', 'credits']],
+];
+const PALETTE = FAMILIES.flatMap(([, list]) => list);
 const SECTION_COLORS = ['#ff463d', '#004fff', '#4d25c8', '#1810a0', '#16053a'];
+// Section colors. Matches the [data-tone] rules in cs-blocks.css; light ones get dark text.
+const TONES = [
+  ['red', 'Red', '#ff463d'], ['blue', 'Blue', '#004fff'], ['violet', 'Violet', '#4d25c8'], ['purple', 'Purple', '#1810a0'], ['night', 'Night', '#16053a'],
+  ['black', 'Black', '#000'], ['yellow', 'Yellow', '#ffb728', true], ['pink', 'Pink', '#fcd9eb', true], ['sky', 'Sky', '#c2e9f5', true], ['white', 'White', '#fff', true],
+];
+const toneOf = (s, i) => TONES.find((t) => t[0] === s.tone) || [null, 'Auto', SECTION_COLORS[i % SECTION_COLORS.length]];
 // Phones and small tablets get the dock + add sheet layout (matches the CSS breakpoint)
 const compact = () => window.matchMedia('(max-width: 900px)').matches;
-const PALETTE = ['text', 'text2', 'gallery', 'fullGallery', 'video', 'image', 'duo', 'stats', 'quote'];
+const previewSrc = (type) => `/builder/previews/${type}.webp`;
 
 /* ---------------- app state ---------------- */
 const S = {
@@ -511,31 +544,69 @@ function brick(type) {
   return h('button', {
     class: 'brick', type: 'button', 'data-new-type': type,
     style: { '--c': t.color, '--t': t.ink ? '#16053a' : '#fff' },
-    title: 'Drag onto the page, or click to add it to the selected section',
   }, svg(t.icon), h('span', {}, h('b', {}, t.name), h('small', {}, t.hint)));
+}
+
+// Desktop: hovering or focusing a brick shows a real render of the piece beside the bin
+let peekEl = null;
+function peek(b) {
+  const type = b && b.dataset.newType;
+  const t = TYPES[type];
+  if (!t || !t.blurb || compact()) { unpeek(); return; }
+  if (!peekEl) {
+    peekEl = h('div', { class: 'peek', 'aria-hidden': 'true' }, h('div', { class: 'peek-img' }, h('img', { alt: '' })), h('b', {}), h('p', {}));
+    document.body.append(peekEl);
+  }
+  const img = $('img', peekEl);
+  if (img.dataset.type !== type) { img.dataset.type = type; img.src = previewSrc(type); }
+  $('b', peekEl).textContent = t.name;
+  $('p', peekEl).textContent = t.blurb;
+  peekEl.style.setProperty('--c', t.color);
+  const r = b.getBoundingClientRect();
+  const bin = b.closest('.bin').getBoundingClientRect();
+  const ph = 300;
+  peekEl.style.left = Math.round(bin.right + 14) + 'px';
+  peekEl.style.top = Math.round(Math.max(72, Math.min(window.innerHeight - ph - 12, r.top + r.height / 2 - 110))) + 'px';
+  peekEl.classList.add('is-on');
+}
+function unpeek() { if (peekEl) peekEl.classList.remove('is-on'); }
+let previewsWarm = false;
+function warmPreviews() {
+  if (previewsWarm) return;
+  previewsWarm = true;
+  PALETTE.concat('introGallery').forEach((t) => { const im = new Image(); im.decoding = 'async'; im.src = previewSrc(t); });
 }
 
 function renderBin() {
   const secBricks = h('div', { class: 'bricks', id: 'bin-sections' },
-    h('button', { class: 'brick section-brick', type: 'button', 'data-new-type': 'section', title: 'Drag into the sections, or click to add one at the end' },
+    h('button', { class: 'brick section-brick', type: 'button', 'data-new-type': 'section' },
       svg('section'), h('span', {}, h('b', {}, 'Section'), h('small', {}, 'A colored panel with a title'))));
-  const pieceBricks = h('div', { class: 'bricks', id: 'bin-pieces' }, PALETTE.map(brick));
+  const lists = FAMILIES.map(([, types]) => h('div', { class: 'bricks' }, types.map(brick)));
   const introBricks = h('div', { class: 'bricks', id: 'bin-intro' }, brick('introGallery'));
   const bin = h('aside', { class: 'bin', 'aria-label': 'Pieces' },
     h('h2', {}, 'Pieces'),
-    h('p', { class: 'hint' }, 'Drag a piece onto the page, or click one to drop it into the selected section.'),
+    h('p', { class: 'hint' }, 'Drag a piece onto the page, or click one to drop it into the selected section. Hover to see what it looks like.'),
     h('h3', {}, 'Structure'), secBricks,
-    h('h3', {}, 'Inside a section'), pieceBricks,
+    FAMILIES.map(([label], i) => [h('h3', {}, label), lists[i]]),
     h('h3', {}, 'Intro only'), introBricks);
   bin.addEventListener('click', (e) => {
     const b = e.target.closest('.brick');
     if (!b) return;
+    unpeek();
     if (b.dataset.newType === 'section') addSection(); else addPiece(b.dataset.newType);
   });
-  const opts = { sort: false, animation: 150, fallbackOnBody: true, onEnd: syncFromDom };
+  bin.addEventListener('mouseover', (e) => { warmPreviews(); const b = e.target.closest('.brick'); if (b && !S.dragging) peek(b); });
+  bin.addEventListener('mouseleave', unpeek);
+  bin.addEventListener('focusin', (e) => { const b = e.target.closest('.brick'); if (b && b.matches(':focus-visible')) peek(b); });
+  bin.addEventListener('focusout', unpeek);
+  bin.addEventListener('scroll', unpeek, { passive: true });
+  const opts = {
+    sort: false, animation: 150, fallbackOnBody: true,
+    onStart: () => { S.dragging = true; unpeek(); },
+    onEnd: () => { S.dragging = false; syncFromDom(); },
+  };
   Sortable.create(secBricks, { ...opts, group: { name: 'sections', pull: 'clone', put: false } });
-  Sortable.create(pieceBricks, { ...opts, group: { name: 'pieces', pull: 'clone', put: false } });
-  Sortable.create(introBricks, { ...opts, group: { name: 'pieces', pull: 'clone', put: false } });
+  lists.concat(introBricks).forEach((el) => Sortable.create(el, { ...opts, group: { name: 'pieces', pull: 'clone', put: false } }));
   return bin;
 }
 
@@ -566,9 +637,17 @@ function openAddSheet() {
   const opts = [['intro', 'The intro']].concat(S.cs.sections.map((sec, i) => [String(i), String(i + 1).padStart(2, '0') + ' ' + (sec.title || 'Untitled section')]));
   const active = String(Math.min(S.activeSection, Math.max(0, S.cs.sections.length - 1)));
   const where = h('select', { class: 'select', 'aria-label': 'Add it to' }, opts.map(([v, l]) => h('option', { value: v, selected: v === active }, l)));
+  const card = (type) => {
+    const t = TYPES[type];
+    return h('button', { class: 'add-card', type: 'button', 'data-new-type': type, style: { '--c': t.color } },
+      h('span', { class: 'add-card-img' }, h('img', { src: previewSrc(type), alt: '', loading: 'lazy', decoding: 'async', width: 640, height: 360 })),
+      h('b', {}, svg(t.icon), t.name), h('small', {}, t.hint));
+  };
+  const group = (label, kids) => [h('h3', { class: 'sheet-h' }, label), h('div', { class: 'sheet-cards' }, kids)];
   const bricks = h('div', { class: 'sheet-bricks' },
-    h('button', { class: 'brick section-brick', type: 'button', 'data-new-type': 'section' }, svg('section'), h('span', {}, h('b', {}, 'Section'), h('small', {}, 'A new colored panel'))),
-    PALETTE.map(brick), brick('introGallery'));
+    h('button', { class: 'brick section-brick', type: 'button', 'data-new-type': 'section' }, svg('section'), h('span', {}, h('b', {}, 'New section'), h('small', {}, 'A colored panel with a title'))),
+    FAMILIES.map(([label, types]) => group(label, types.map(card))),
+    group('Intro only', [card('introGallery')]));
   const sheet = h('div', { class: 'sheet', role: 'dialog', 'aria-modal': 'true', 'aria-label': 'Add a piece' },
     h('div', { class: 'sheet-grab', 'aria-hidden': 'true' }),
     h('div', { class: 'sheet-head' }, h('h2', {}, 'Add a piece'), h('button', { class: 'icon-btn', 'aria-label': 'Close', onclick: () => close() }, svg('x'))),
@@ -579,7 +658,7 @@ function openAddSheet() {
   const onKey = (e) => { if (e.key === 'Escape') close(); };
   scrim.addEventListener('mousedown', (e) => { if (e.target === scrim) close(); });
   bricks.addEventListener('click', (e) => {
-    const b = e.target.closest('.brick');
+    const b = e.target.closest('.brick, .add-card');
     if (!b) return;
     close();
     if (b.dataset.newType === 'section') addSection();
@@ -669,8 +748,21 @@ function renderCanvas() {
       handle: '.piece-grip, .brick', animation: 160, onEnd: syncFromDom,
     });
   });
+  // photos move between galleries, grids and social rows; Vimeo clips stay in galleries, loops stay out of them, logos stay with logos
+  const fits = (toGroup, drag) => {
+    const k = drag.dataset.kind;
+    if (toGroup === 'logos') return false;
+    if (toGroup === 'photos') return k !== 'vimeo';
+    return k !== 'loop';
+  };
   $$('.tray', inner).forEach((el) => {
-    Sortable.create(el, { group: { name: 'media' }, filter: '.add', preventOnFilter: false, animation: 140, delay: 220, delayOnTouchOnly: true, onEnd: syncMedia, onMove: (e) => !e.related.classList.contains('add') || e.willInsertAfter === false });
+    const g = el.dataset.group || 'media';
+    Sortable.create(el, {
+      group: { name: g, pull: true, put: (to, from, drag) => { const fg = from.options.group.name; return fg === g || (fg !== 'pieces' && fg !== 'sections' && fits(g, drag)); } },
+      filter: '.add', preventOnFilter: false, animation: 140, delay: 220, delayOnTouchOnly: true, onEnd: syncMedia,
+      // the Add tile stays last: anything dropped on or past it goes just before it
+      onMove: (e) => (e.related.classList.contains('add') ? -1 : true),
+    });
   });
   canvas.scrollTop = top;
 }
@@ -802,9 +894,28 @@ function introCard(cs) {
 /* ---- sections ---- */
 function sectionCard(s, i) {
   const collapsed = S.collapsed.has(s._id);
+  const tone = toneOf(s, i);
+  const tones = h('div', { class: 'tone-row', role: 'group', 'aria-label': 'Section color', hidden: !S.toneOpen || S.toneOpen !== s._id },
+    [[null, 'Auto', SECTION_COLORS[i % SECTION_COLORS.length]]].concat(TONES).map(([v, label, hex, light]) => h('button', {
+      type: 'button', class: 'swatch' + (v ? '' : ' auto') + (light ? ' is-light' : ''), style: { '--sw': hex }, 'data-v': v || '',
+      title: v ? label : 'Auto: follows the page’s color order', 'aria-label': v ? label : 'Auto color', 'aria-pressed': (s.tone || null) === v ? 'true' : 'false',
+      onclick: () => {
+        if (v) s.tone = v; else delete s.tone;
+        const t = toneOf(s, i);
+        card.style.setProperty('--sc', t[2]);
+        card.classList.toggle('is-light', !!t[3]);
+        if (s.tone) card.dataset.tone = s.tone; else delete card.dataset.tone;
+        $$('.swatch', tones).forEach((b) => b.setAttribute('aria-pressed', b.dataset.v === (v || '') ? 'true' : 'false'));
+        commit({ redraw: false });
+      },
+    }, v ? null : 'A')));
+  const toneBtn = h('button', {
+    class: 'icon-btn', title: 'Section color', 'aria-label': 'Section color', 'aria-expanded': tones.hidden ? 'false' : 'true',
+    onclick: () => { tones.hidden = !tones.hidden; toneBtn.setAttribute('aria-expanded', tones.hidden ? 'false' : 'true'); S.toneOpen = tones.hidden ? null : s._id; },
+  }, svg('palette'));
   const card = h('section', {
-    class: 'section-card' + (i === S.activeSection ? ' is-active' : '') + (collapsed ? ' is-collapsed' : ''),
-    'data-sid': s._id, style: { '--sc': SECTION_COLORS[i % SECTION_COLORS.length] },
+    class: 'section-card' + (i === S.activeSection ? ' is-active' : '') + (collapsed ? ' is-collapsed' : '') + (tone[3] ? ' is-light' : ''),
+    'data-sid': s._id, 'data-tone': s.tone || null, style: { '--sc': tone[2] },
     onfocusin: () => setActive(i), onmousedown: () => setActive(i),
   },
   h('div', { class: 'section-head' },
@@ -812,11 +923,13 @@ function sectionCard(s, i) {
     h('span', { class: 'num', 'aria-hidden': 'true' }, String(i + 1).padStart(2, '0')),
     autoTitle(s.title, 'Section title', `Section ${i + 1} title`, (v) => { s.title = v; typed(); }, 'sec-title'),
     h('div', { class: 'tools' },
+      toneBtn,
       h('button', { class: 'icon-btn', title: 'Move up', 'aria-label': 'Move section up', disabled: i === 0, onclick: () => moveSection(i, -1) }, svg('up')),
       h('button', { class: 'icon-btn', title: 'Move down', 'aria-label': 'Move section down', disabled: i === S.cs.sections.length - 1, onclick: () => moveSection(i, 1) }, svg('down')),
       h('button', { class: 'icon-btn', title: 'Duplicate', 'aria-label': 'Duplicate section', onclick: () => duplicateSection(i) }, svg('copy')),
       h('button', { class: 'icon-btn danger', title: 'Delete section', 'aria-label': 'Delete section', onclick: () => deleteSection(i) }, svg('trash')),
       h('button', { class: 'icon-btn', title: collapsed ? 'Expand' : 'Collapse', 'aria-label': collapsed ? 'Expand section' : 'Collapse section', 'aria-expanded': collapsed ? 'false' : 'true', onclick: () => { if (collapsed) S.collapsed.delete(s._id); else S.collapsed.add(s._id); renderCanvas(); } }, svg('fold')))),
+  tones,
   h('div', { class: 'section-body' },
     h('div', { class: 'pieces', 'data-empty': 'Drag pieces in here' }, s.pieces.map((p) => pieceCard(p, { intro: false })))));
   return card;
@@ -873,6 +986,15 @@ function summary(p) {
     case 'video': return p.title || (p.vimeo ? 'vimeo.com/' + p.vimeo : p.embed ? embedInfo(p.embed).title : 'No video yet');
     case 'stats': return (p.items || []).map((s) => s.value).filter(Boolean).join(' · ');
     case 'quote': return p.text;
+    case 'grid': case 'social': { const n = (p.media || []).length; return n ? `${n} photo${n === 1 ? '' : 's'}` : 'Empty'; }
+    case 'logos': { const n = (p.media || []).length; return p.title || (n ? `${n} logo${n === 1 ? '' : 's'}` : 'Empty'); }
+    case 'image': return p.media && p.media.src ? (p.caption || (p.media.video ? 'Loop' : 'Photo')) : 'Empty';
+    case 'duo': { const n = (p.items || []).filter((m) => m && m.src).length; return n === 2 ? '' : n ? 'One photo so far' : 'Empty'; }
+    case 'split': return p.title || strip(p.html) || (p.media && p.media.src ? 'Photo, no text yet' : 'Empty');
+    case 'compare': return [p.before, p.after].filter((m) => m && m.src).length === 2 ? `${p.beforeLabel || 'Before'} / ${p.afterLabel || 'After'}` : 'Needs two photos';
+    case 'marquee': return p.text;
+    case 'steps': { const n = (p.items || []).filter((x) => x.title || x.text).length; return n ? `${n} step${n === 1 ? '' : 's'}` : 'Empty'; }
+    case 'credits': return (p.items || []).map((c) => c.name).filter(Boolean).join(', ');
     default: return '';
   }
 }
@@ -942,8 +1064,71 @@ const EDIT = {
   quote: (p) => h('div', { style: { display: 'grid', gap: '10px' } },
     h('label', { class: 'field' }, h('span', {}, 'Quote'), h('textarea', { class: 'textarea', rows: 3, placeholder: 'I think Black Panther would be satisfied…', oninput: (e) => { p.text = e.target.value; typed(); } }, p.text || '')),
     h('label', { class: 'field' }, h('span', {}, 'Who said it'), h('input', { class: 'input', value: p.who || '', placeholder: 'Name, role', oninput: (e) => { p.who = e.target.value; typed(); } }))),
+  grid: (p) => h('div', { class: 'stack' },
+    mediaTray(p, { group: 'photos', video: true, vimeo: false, max: 12, note: 'Photos and short MP4 loops, up to 12.' }),
+    h('div', { class: 'field' }, h('span', {}, 'Layout'),
+      seg([['three', 'Three across'], ['four', 'Four across'], ['mosaic', 'Mosaic']], p.layout || 'three', (v) => { p.layout = v; commit({ redraw: false }); }),
+      h('small', {}, 'Mosaic makes one photo in every five big, so it fills up neatly with 5 or 10.'))),
+  split: (p) => {
+    const box = h('div', { class: 'split-edit' + (p.side === 'right' ? ' v--right' : '') },
+      mediaSlot({ get: () => p.media, set: (m) => { p.media = m; }, kind: 'duo', video: true, label: 'Drop a photo or a short MP4 loop' }),
+      h('div', { class: 'stack' },
+        h('label', { class: 'field' }, h('span', {}, 'Headline (optional)'), h('input', { class: 'input', value: p.title || '', placeholder: 'Built in six weeks', oninput: (e) => { p.title = e.target.value; typed(); } })),
+        rte(p.html, (v) => { p.html = v; typed(); }, { placeholder: 'What happened here' })));
+    return h('div', { class: 'stack' }, box,
+      h('div', { class: 'row' },
+        h('div', { class: 'field' }, h('span', {}, 'Photo goes on the'), seg([['left', 'Left'], ['right', 'Right']], p.side || 'left', (v) => { p.side = v; box.classList.toggle('v--right', v === 'right'); commit({ redraw: false }); })),
+        h('label', { class: 'field' }, h('span', {}, 'Caption (optional)'), h('input', { class: 'input', value: p.caption || '', oninput: (e) => { p.caption = e.target.value; typed(); } }))));
+  },
+  compare: (p) => {
+    const side = (key, labelKey, label, ph) => h('div', { class: 'field' },
+      mediaSlot({ get: () => p[key], set: (m) => { p[key] = m; }, kind: 'big', label }),
+      h('input', { class: 'input', value: p[labelKey] || '', placeholder: ph, 'aria-label': label + ' label', oninput: (e) => { p[labelKey] = e.target.value; typed(); } }));
+    return h('div', { class: 'stack' },
+      h('div', { class: 'duo-slots' }, side('before', 'beforeLabel', 'Before photo', 'Render'), side('after', 'afterLabel', 'After photo', 'Built')),
+      h('small', { class: 'note' }, 'Shoot both from the same spot at the same size so the slider lines up. The after photo sets the shape.'));
+  },
+  social: (p) => mediaTray(p, { group: 'photos', video: true, vimeo: false, max: 8, note: 'Vertical photos and MP4 loops, up to 8. Saved Reels and TikToks work.' }),
+  marquee: (p) => h('div', { class: 'stack' },
+    h('label', { class: 'field' }, h('span', {}, 'Words'), h('input', { class: 'input', value: p.text || '', maxlength: 80, placeholder: 'Sold out in four hours', oninput: (e) => { p.text = e.target.value; typed(); } }), h('small', {}, 'Short is better. It repeats across the screen.')),
+    h('div', { class: 'row' },
+      h('div', { class: 'field' }, h('span', {}, 'Style'), seg([['outline', 'Outline'], ['solid', 'Solid']], p.style || 'outline', (v) => { p.style = v; commit({ redraw: false }); })),
+      h('div', { class: 'field' }, h('span', {}, 'Speed'), seg([['slow', 'Slow'], ['normal', 'Normal'], ['fast', 'Fast']], p.speed || 'normal', (v) => { p.speed = v; commit({ redraw: false }); })))),
+  steps: (p) => rows(p, {
+    max: 8, blank: () => ({ title: '', text: '' }), add: '+ Add a step',
+    row: (x, i) => h('div', { class: 'step-edit-row' },
+      h('span', { class: 'n', 'aria-hidden': 'true' }, String(i + 1).padStart(2, '0')),
+      h('div', { class: 'stack tight' },
+        h('input', { class: 'input', value: x.title, placeholder: ['Scout the space', 'Build the set', 'Open the doors'][i] || 'Step title', 'aria-label': `Step ${i + 1} title`, oninput: (e) => { x.title = e.target.value; typed(); } }),
+        h('textarea', { class: 'textarea', rows: 2, placeholder: 'A sentence or two', 'aria-label': `Step ${i + 1} text`, oninput: (e) => { x.text = e.target.value; typed(); } }, x.text || ''))),
+  }),
+  credits: (p) => rows(p, {
+    max: 24, blank: () => ({ role: '', name: '' }), add: '+ Add a credit',
+    row: (x, i) => h('div', { class: 'credit-edit-row' },
+      h('input', { class: 'input', value: x.role, placeholder: ['Client', 'Agency', 'Fabrication', 'Photography'][i % 4], 'aria-label': `Credit ${i + 1} role`, oninput: (e) => { x.role = e.target.value; typed(); } }),
+      h('input', { class: 'input', value: x.name, placeholder: 'Name', 'aria-label': `Credit ${i + 1} name`, oninput: (e) => { x.name = e.target.value; typed(); } })),
+  }),
+  logos: (p) => h('div', { class: 'stack' },
+    h('label', { class: 'field' }, h('span', {}, 'Heading (optional)'), h('input', { class: 'input', value: p.title || '', placeholder: 'As seen in', oninput: (e) => { p.title = e.target.value; typed(); } })),
+    mediaTray(p, { group: 'logos', kind: 'logo', vimeo: false, add: 'Add logos', max: 24, note: 'SVG, or PNG with a see-through background.' }),
+    h('div', { class: 'field' }, h('span', {}, 'Color'),
+      seg([['mono', 'All white'], ['original', 'Original colors']], p.tint || 'mono', (v) => { p.tint = v; commit({ redraw: false }); }),
+      h('small', {}, 'All white makes a mixed set look tidy. On light section colors they turn dark instead.'))),
   raw: (p) => h('label', { class: 'field' }, h('span', {}, 'HTML'), h('textarea', { class: 'textarea', rows: 6, oninput: (e) => { p.html = e.target.value; typed(); } }, p.html || '')),
 };
+
+// a list of small rows (steps, credits) with add and remove
+function rows(p, { max, blank, add, row }) {
+  p.items = p.items || [];
+  const box = h('div', { class: 'stack tight' });
+  const draw = () => {
+    box.replaceChildren(...p.items.map((x, i) => h('div', { class: 'rows-row' }, row(x, i),
+      h('button', { class: 'icon-btn danger', title: 'Remove', 'aria-label': 'Remove row', onclick: () => { p.items.splice(i, 1); draw(); commit({ redraw: false }); } }, svg('x')))),
+    p.items.length < max ? h('div', {}, h('button', { class: 'btn small', onclick: () => { p.items.push(blank()); draw(); commit({ redraw: false }); const last = $$('.rows-row', box).pop(); if (last) $('input', last).focus(); } }, add)) : null);
+  };
+  draw();
+  return box;
+}
 
 function seg(options, value, onPick) {
   const box = h('div', { class: 'seg', role: 'group' });
@@ -1221,13 +1406,17 @@ function startUpload() { S.uploads++; updateBar(); }
 function endUpload() { S.uploads = Math.max(0, S.uploads - 1); updateBar(); }
 
 // gallery tray: many images and Vimeo clips, sortable, shared between galleries
-function mediaTray(p, { note } = {}) {
+// group: 'media' (galleries: photos + Vimeo), 'photos' (grid, social: photos + MP4 loops), 'logos'
+function mediaTray(p, { note, group = 'media', kind = 'gallery', video = false, vimeo = true, add = 'Add photos', max = 0 } = {}) {
   p.media = p.media || [];
-  const tray = h('div', { class: 'tray', 'data-owner': p._id });
+  const tray = h('div', { class: 'tray', 'data-owner': p._id, 'data-group': group });
+  const full = () => max && p.media.length >= max;
   const tile = (m) => {
     const thumb = mediaThumb(m);
-    const t = h('div', { class: 'tile' + (m._up ? ' uploading' : ''), 'data-mid': m._id, title: m.type === 'video' ? (m.title || (m.embed ? embedInfo(m.embed).title : 'Vimeo')) : (m.alt || 'Drag to reorder') },
+    const what = m.type === 'video' ? 'vimeo' : m.video ? 'loop' : 'photo';
+    const t = h('div', { class: 'tile' + (m._up ? ' uploading' : ''), 'data-mid': m._id, 'data-kind': what, title: m.type === 'video' ? (m.title || (m.embed ? embedInfo(m.embed).title : 'Vimeo')) : (m.alt || 'Drag to reorder') },
       thumb ? h('img', { src: thumb, alt: m.alt || '', loading: 'lazy', draggable: 'false' }) : null,
+      what === 'loop' ? h('span', { class: 'badge' }, '▶ Loop') : null,
       m.type === 'video' ? h('span', { class: 'badge' }, '▶ Vimeo') : h('button', {
         type: 'button', class: 'alt' + (m.alt ? ' has' : ''), title: m.alt ? 'Alt text: ' + m.alt : 'Describe this photo for screen readers',
         onclick: () => altModal(m, () => { t.querySelector('.alt').classList.toggle('has', !!m.alt); typed(); }),
@@ -1236,6 +1425,10 @@ function mediaTray(p, { note } = {}) {
     return t;
   };
   const addFiles = async (files) => {
+    if (max && p.media.length + files.length > max) {
+      toast(`This piece holds up to ${max}. The extra ${p.media.length + files.length - max === 1 ? 'one was' : 'ones were'} left out.`, '', 6000);
+      files = files.slice(0, Math.max(0, max - p.media.length));
+    }
     for (const f of files) {
       const temp = { _id: uid(), type: 'image', src: URL.createObjectURL(f), alt: '', _up: true };
       p.media.push(temp);
@@ -1243,7 +1436,7 @@ function mediaTray(p, { note } = {}) {
       tray.insertBefore(t, $('.add', tray));
       try {
         startUpload();
-        const m = await processFile(f, 'gallery', {}, (pct) => t.style.setProperty('--p', pct + '%'));
+        const m = await processFile(f, kind, { video }, (pct) => t.style.setProperty('--p', pct + '%'));
         URL.revokeObjectURL(temp.src);
         Object.assign(temp, m); delete temp._up;
         t.classList.remove('uploading');
@@ -1255,9 +1448,14 @@ function mediaTray(p, { note } = {}) {
       } finally { endUpload(); }
     }
   };
+  const accept = group === 'logos' ? 'image/svg+xml,image/png,image/webp' : video ? 'image/*,video/mp4,video/webm' : 'image/*';
   tray.append(...p.media.map(tile),
-    h('button', { type: 'button', class: 'tile add', onclick: async () => addFiles(await pickFiles({ multiple: true })) }, 'Add photos'));
+    h('button', { type: 'button', class: 'tile add', onclick: async () => { if (full()) { toast(`This piece holds up to ${max}.`); return; } addFiles(await pickFiles({ multiple: true, accept })); } }, add));
   dropTarget(tray, addFiles);
+  const moveNote = group === 'logos' ? ' Drag to reorder.' : group === 'photos' ? ' Drag tiles to reorder, or move them to another grid or row.' : ' Drag tiles to reorder or move them to another gallery.';
+  if (!vimeo) {
+    return h('div', { class: 'stack tight' }, tray, note ? h('small', { class: 'note' }, note + moveNote) : null);
+  }
   const vimeoInput = h('input', { class: 'input', placeholder: 'Paste a Vimeo link to add a clip', 'aria-label': 'Vimeo link' });
   const addVimeo = async () => {
     const v = parseVimeo(vimeoInput.value);
@@ -1272,7 +1470,7 @@ function mediaTray(p, { note } = {}) {
   return h('div', { style: { display: 'grid', gap: '10px' } },
     tray,
     h('div', { class: 'vimeo-add' }, vimeoInput, h('button', { type: 'button', class: 'btn small', onclick: addVimeo }, 'Add clip')),
-    note ? h('small', { style: { color: 'var(--muted)' } }, note + ' Drag tiles to reorder or move them to another gallery.') : null);
+    note ? h('small', { class: 'note' }, note + moveNote) : null);
 }
 
 function altModal(m, done) {
@@ -1534,8 +1732,11 @@ function problems(cs) {
   const L = cs.listing;
   if (L.listed && !L.work.summary) warn.push('It’s on the Work page without a summary.');
   if (L.listed && L.home.showHomepage && !L.home.image) warn.push('It has a homepage bubble but no bubble photo.');
-  const emptyGal = [...cs.introPieces, ...cs.sections.flatMap((s) => s.pieces)].filter((p) => Array.isArray(p.media) && !p.media.length).length;
-  if (emptyGal) warn.push(`${emptyGal} galler${emptyGal === 1 ? 'y is' : 'ies are'} empty and will show as blank space.`);
+  const all = [...cs.introPieces, ...cs.sections.flatMap((s) => s.pieces)];
+  const emptyGal = all.filter((p) => Array.isArray(p.media) && !p.media.length).length;
+  if (emptyGal) warn.push(`${emptyGal} photo piece${emptyGal === 1 ? ' is' : 's are'} still empty. Galleries show as blank space; grids, rows and logos are left off.`);
+  const halfCompare = all.filter((p) => p.type === 'compare' && !(p.before && p.before.src && p.after && p.after.src)).length;
+  if (halfCompare) warn.push(`${halfCompare === 1 ? 'A before and after needs' : halfCompare + ' before and afters need'} both photos to show up.`);
   const untitled = cs.sections.filter((s) => !s.title.trim()).length;
   if (untitled) warn.push(`${untitled} section${untitled === 1 ? ' has' : 's have'} no title.`);
   return { stop, warn };

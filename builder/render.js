@@ -11,6 +11,8 @@
   'use strict';
 
   var SITE = 'https://www.iheartcomix.com';
+  // section colors you can pick in the builder (styles in builder/src/cs-blocks.css)
+  var TONES = ['red', 'blue', 'violet', 'purple', 'night', 'black', 'yellow', 'pink', 'sky', 'white'];
   var ARROW = '/images/65e54c71f6dbffab76c7798b_Vector-14-.svg';
 
   function esc(s) {
@@ -206,6 +208,81 @@
       '    </blockquote>', '  </div>', '</div>'].filter(function (x) { return x !== null; }).join('\n');
   };
 
+  // ---- more pieces ----
+  function mediaList(list) {
+    return (list || []).filter(function (m) { return m && m.src; });
+  }
+  P.grid = function (p) {
+    var items = mediaList(p.media).slice(0, 12).map(function (m) { return figure(m, 'p-cs__x-grid', m.caption); });
+    if (!items.length) return '';
+    var v = { four: ' v--l4', mosaic: ' v--mosaic' }[p.layout] || ' v--l3';
+    return ['<div class="p-cs__x-grid' + v + '">', '  <div class="c">', '    <div class="p-cs__x-grid__in" data-count="' + items.length + '">', ind(6, items), '    </div>', '  </div>', '</div>'].join('\n');
+  };
+  P.split = function (p) {
+    var fig = figure(p.media, 'p-cs__x-split', p.caption);
+    if (!fig && !p.html && !p.title) return '';
+    return ['<div class="p-cs__x-split' + (p.side === 'right' ? ' v--right' : '') + '">', '  <div class="c">', '    <div class="p-cs__x-split__in">',
+      fig ? '      ' + fig : null,
+      '      <div class="p-cs__x-split__txt">',
+      p.title ? '        <h3 class="p-cs__x-split__h">' + esc(p.title) + '</h3>' : null,
+      p.html ? '        <div class="t-xl w-richtext">\n' + ind(10, String(p.html).trim()) + '\n        </div>' : null,
+      '      </div>', '    </div>', '  </div>', '</div>'].filter(function (x) { return x !== null; }).join('\n');
+  };
+  P.compare = function (p) {
+    var a = p.before, b = p.after;
+    if (!a || !a.src || !b || !b.src) return '';
+    var dims = (+b.w && +b.h) ? ' style="aspect-ratio:' + (+b.w) + ' / ' + (+b.h) + '"' : '';
+    return ['<div class="p-cs__x-compare">', '  <div class="c">',
+      '    <div class="p-cs__x-compare__frame" data-compare=""' + dims + '>',
+      '      <img class="p-cs__x-compare__img" decoding="async" loading="lazy" src="' + attr(b.src) + '" alt="' + attr(b.alt || p.afterLabel || '') + '" />',
+      '      <div class="p-cs__x-compare__before"><img class="p-cs__x-compare__img" decoding="async" loading="lazy" src="' + attr(a.src) + '" alt="' + attr(a.alt || p.beforeLabel || '') + '" /></div>',
+      '      <span class="p-cs__x-compare__lbl v--before">' + esc(p.beforeLabel || 'Before') + '</span>',
+      '      <span class="p-cs__x-compare__lbl v--after">' + esc(p.afterLabel || 'After') + '</span>',
+      '      <span class="p-cs__x-compare__handle" aria-hidden="true"></span>',
+      '      <input class="p-cs__x-compare__range" type="range" min="0" max="100" value="50" aria-label="Drag to compare ' + attr((p.beforeLabel || 'before') + ' and ' + (p.afterLabel || 'after')) + '" />',
+      '    </div>', '  </div>', '</div>'].join('\n');
+  };
+  P.social = function (p) {
+    var items = mediaList(p.media).slice(0, 8).map(function (m) { return figure(m, 'p-cs__x-social', m.caption); });
+    if (!items.length) return '';
+    return ['<div class="p-cs__x-social">', '  <div class="c">', '    <div class="p-cs__x-social__row" data-count="' + items.length + '">', ind(6, items), '    </div>', '  </div>', '</div>'].join('\n');
+  };
+  P.marquee = function (p) {
+    var t = String(p.text || '').trim();
+    if (!t) return '';
+    var unit = '<span class="p-cs__x-marquee__unit">' + esc(t) + '</span>';
+    var run = [unit, unit, unit, unit].join('');
+    var speed = { slow: ' v--slow', fast: ' v--fast' }[p.speed] || '';
+    return ['<div class="p-cs__x-marquee' + (p.style === 'outline' ? ' v--outline' : '') + speed + '" role="img" aria-label="' + attr(t) + '">',
+      '  <div class="p-cs__x-marquee__track" aria-hidden="true"><div class="p-cs__x-marquee__run">' + run + '</div><div class="p-cs__x-marquee__run">' + run + '</div></div>',
+      '</div>'].join('\n');
+  };
+  P.steps = function (p) {
+    var items = (p.items || []).filter(function (s) { return s && (s.title || s.text); }).slice(0, 8);
+    if (!items.length) return '';
+    var li = items.map(function (s, i) {
+      return '<li class="p-cs__x-step"><span class="p-cs__x-step__n">' + String(i + 1).padStart(2, '0') + '</span>' +
+        (s.title ? '<h3 class="p-cs__x-step__t">' + esc(s.title) + '</h3>' : '') + (s.text ? '<p class="p-cs__x-step__p">' + esc(s.text) + '</p>' : '') + '</li>';
+    });
+    return ['<div class="p-cs__x-steps">', '  <div class="c">', '    <ol class="p-cs__x-steps__list" data-count="' + items.length + '">', ind(6, li), '    </ol>', '  </div>', '</div>'].join('\n');
+  };
+  P.credits = function (p) {
+    var items = (p.items || []).filter(function (c) { return c && (c.role || c.name); }).slice(0, 24);
+    if (!items.length) return '';
+    var rows = items.map(function (c) { return '<div class="p-cs__x-credit"><dt>' + esc(c.role) + '</dt><dd>' + esc(c.name) + '</dd></div>'; });
+    return ['<div class="p-cs__x-credits">', '  <div class="c">', '    <dl class="p-cs__x-credits__list">', ind(6, rows), '    </dl>', '  </div>', '</div>'].join('\n');
+  };
+  P.logos = function (p) {
+    var items = mediaList(p.media).slice(0, 24).map(function (m) {
+      var dims = (+m.w && +m.h) ? ' width="' + (+m.w) + '" height="' + (+m.h) + '"' : '';
+      return '<li class="p-cs__x-logos__item"><img decoding="async" loading="lazy" src="' + attr(m.src) + '" alt="' + attr(m.alt || '') + '"' + dims + ' /></li>';
+    });
+    if (!items.length) return '';
+    return ['<div class="p-cs__x-logos' + (p.tint === 'original' ? '' : ' v--mono') + '">', '  <div class="c">',
+      p.title ? '    <h3 class="p-cs__x-logos__h">' + esc(p.title) + '</h3>' : null,
+      '    <ul class="p-cs__x-logos__list">', ind(6, items), '    </ul>', '  </div>', '</div>'].filter(function (x) { return x !== null; }).join('\n');
+  };
+
   function piece(p) {
     var f = p && P[p.type];
     return f ? f(p) : '';
@@ -235,7 +312,7 @@
     var secs = (d.sections || []).map(function (s) {
       var ps = pieces(s.pieces, 4);
       return [
-        '<div class="p-cs__block">',
+        '<div class="p-cs__block"' + (s.tone && TONES.indexOf(s.tone) >= 0 ? ' data-tone="' + s.tone + '"' : '') + '>',
         '  <div class="p-cs__block__title">',
         '    <h2 data-splitting="" class="p-cs__block__title__text">' + esc(s.title) + '</h2>',
         '    <div class="p-cs__block__title__icon"></div>',
@@ -508,7 +585,7 @@
   }
 
   return {
-    page: page, body: body, meta: meta, piece: piece, workItem: workItem, cmsItem: cmsItem,
+    page: page, body: body, meta: meta, piece: piece, workItem: workItem, cmsItem: cmsItem, TONES: TONES,
     indexEntry: indexEntry, spliceWork: spliceWork, spliceCms: spliceCms, spliceSitemap: spliceSitemap, spliceIndex: spliceIndex,
     esc: esc, attr: attr, slugify: slugify, sortKey: sortKey, newPageId: newPageId, ind: ind, absUrl: absUrl
   };

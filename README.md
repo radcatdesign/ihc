@@ -40,11 +40,13 @@ Both sign-up forms post to `/api/subscribe`, which forwards the email as JSON to
 
 Go to `/builder` on the site. It lists every case study. Open one, or start a new one (blank or as a copy of an existing page), and snap it together from pieces:
 
-- **Section:** the colored accordion panels on the page. Drag the dots to reorder them.
-- **Inside a section:** Text, Two columns, Gallery, Wide gallery, Video, and the newer Big image (photo or looping MP4), Two-up, Stats and Quote.
+- **Section:** the colored accordion panels on the page. Drag the dots to reorder them. The palette button in a section's header sets its color (Auto follows the page's usual color order).
+- **Words:** Text, Two columns, Photo + text, Quote, Marquee (giant scrolling words), Steps.
+- **Photos and video:** Gallery, Wide gallery, Big image (photo or looping MP4), Two-up, Photo grid (three, four or mosaic), Social row (vertical clips), Before + after (drag slider), Video.
+- **Results and credits:** Stats, Logos, Credits.
 - **Intro photos:** the slider next to the intro text, only in the Intro.
 
-Drag a piece from the left onto the page, or click it to drop it into the selected section. Photos dropped in are resized and compressed to WebP in the browser, then stored in Vercel Blob. Videos inside galleries are Vimeo links. The live preview on the right is the real page template. Work in progress is saved in the browser until you publish, and Undo/Redo covers everything.
+Hover a piece in the left bin to see a real render of it (on a phone, the Add sheet shows the same previews). The preview images live in `builder/previews/`. Drag a piece onto the page, or click it to drop it into the selected section. Photos dropped in are resized and compressed to WebP in the browser, then stored in Vercel Blob. Videos inside galleries are Vimeo links. The live preview on the right is the real page template. Work in progress is saved in the browser until you publish, and Undo/Redo covers everything.
 
 **Page settings** holds the page title and description for Google and link previews, whether the page shows on the Work page (with its summary and hover photo) and whether it gets a homepage bubble (category, bubble photo, hover clip, award badge).
 

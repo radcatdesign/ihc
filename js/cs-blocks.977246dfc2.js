@@ -1,11 +1,22 @@
 /* Case study helpers.
-   1. Loop videos in big media / two-up pieces play only while on screen.
+   1. Loop videos in the newer pieces play only while on screen; before/after sliders work.
    2. Accordion sections keep the right open height. The page measures each
       section once, a second in, which comes up short when gallery images
       haven't loaded yet. This re-measures as images arrive and on resize. */
 (function () {
-  document.querySelectorAll('.p-cs__x-media video, .p-cs__x-duo video').forEach(function (v) {
+  document.querySelectorAll('.p-cs__x-media video, .p-cs__x-duo video, .p-cs__x-grid video, .p-cs__x-split video, .p-cs__x-social video').forEach(function (v) {
     if (window.ihcObserveVideo) window.ihcObserveVideo(v);
+  });
+
+  // Before and after: the invisible range input drives the divider
+  document.querySelectorAll('[data-compare]').forEach(function (frame) {
+    var range = frame.querySelector('.p-cs__x-compare__range');
+    if (!range) return;
+    var set = function () { frame.style.setProperty('--pos', range.value + '%'); };
+    range.addEventListener('input', set);
+    // stop the page's drag-to-scroll and custom cursor from grabbing the slider
+    ['pointerdown', 'touchstart', 'mousedown'].forEach(function (ev) { range.addEventListener(ev, function (e) { e.stopPropagation(); }, { passive: true }); });
+    set();
   });
 
   // True open height of a section: lift the closed-state clamp for one
