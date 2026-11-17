@@ -1,6 +1,8 @@
 /* IHC case study builder. Plain ES module, no build step.
    Data: content/case-studies/<slug>.json  ->  page: case-study/<slug>.html (rendered by render.js) */
 
+import { dotField } from './login-dots.js';
+
 const R = window.IHCRender;
 const Sortable = window.Sortable;
 
@@ -273,7 +275,7 @@ function renderLogin(app) {
   err, btn);
   // the IHC speech-bubble oval, lifted from the logo, in three brand colors
   const ovals = h('div', { class: 'login-ovals', 'aria-hidden': 'true' }, h('i', { class: 'is-yellow' }), h('i', { class: 'is-blue' }), h('i', { class: 'is-red' }));
-  app.replaceChildren(h('div', { class: 'login' }, ovals, form));
+  app.replaceChildren(h('div', { class: 'login' }, dotField(), ovals, form));
   pw.focus();
 }
 
