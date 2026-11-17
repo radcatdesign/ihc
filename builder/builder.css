@@ -116,13 +116,19 @@ img { display: block; }
 /* ---------- login ---------- */
 .login {
   min-height: 100vh; display: grid; place-items: center; padding: 24px;
-  background:
-    radial-gradient(circle at 12% 18%, var(--yellow) 0 90px, transparent 91px),
-    radial-gradient(circle at 88% 82%, var(--blue) 0 120px, transparent 121px),
-    radial-gradient(circle at 80% 12%, var(--red) 0 46px, transparent 47px),
-    var(--paper);
+  position: relative; overflow: hidden; background: var(--paper);
 }
-.login form { width: min(420px, 100%); background: #fff; border-radius: 28px; padding: 36px 32px 32px; box-shadow: 0 24px 60px -30px rgba(22, 5, 58, .5); display: grid; gap: 18px; }
+/* the IHC speech-bubble oval from the logo (builder/ihc-oval.svg), 62:55 */
+.login-ovals { position: absolute; inset: 0; pointer-events: none; }
+.login-ovals i {
+  position: absolute; aspect-ratio: 62 / 55; translate: -50% -50%;
+  -webkit-mask: url(/builder/ihc-oval.svg) center / contain no-repeat;
+  mask: url(/builder/ihc-oval.svg) center / contain no-repeat;
+}
+.login-ovals .is-yellow { left: 12%; top: 18%; width: clamp(120px, 14vw, 200px); background: var(--yellow); rotate: -8deg; }
+.login-ovals .is-blue { left: 88%; top: 82%; width: clamp(170px, 18.3vw, 264px); background: var(--blue); rotate: 6deg; }
+.login-ovals .is-red { left: 80%; top: 12%; width: clamp(64px, 7.2vw, 104px); background: var(--red); rotate: 10deg; }
+.login form { position: relative; width: min(420px, 100%); background: #fff; border-radius: 28px; padding: 36px 32px 32px; box-shadow: 0 24px 60px -30px rgba(22, 5, 58, .5); display: grid; gap: 18px; }
 .login h1 { font: 700 64px/0.82 var(--display); text-transform: uppercase; margin: 0; letter-spacing: .5px; }
 .login p { margin: 0; color: var(--muted); }
 .login .err { color: var(--red); font-weight: 600; font-size: 14px; margin-top: -8px; }

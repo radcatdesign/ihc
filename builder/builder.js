@@ -271,7 +271,9 @@ function renderLogin(app) {
   h('p', { class: 'hello' }, hello()),
   h('label', { class: 'field' }, h('span', {}, 'Password'), pw),
   err, btn);
-  app.replaceChildren(h('div', { class: 'login' }, form));
+  // the IHC speech-bubble oval, lifted from the logo, in three brand colors
+  const ovals = h('div', { class: 'login-ovals', 'aria-hidden': 'true' }, h('i', { class: 'is-yellow' }), h('i', { class: 'is-blue' }), h('i', { class: 'is-red' }));
+  app.replaceChildren(h('div', { class: 'login' }, ovals, form));
   pw.focus();
 }
 
