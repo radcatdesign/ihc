@@ -305,7 +305,7 @@
       '    <div class="c">',
       '      <div class="p-cs__layouts__intro__i">',
       '        <div class="p-cs__layouts__intro__top-w">',
-      d.headline ? '          <h5 data-line-anim-bk="" data-visible-bk="" class="p-cs__layouts__intro__headline">' + d.headline + '</h5>' : null,
+      d.headline ? '          <h5 data-line-anim-bk="" data-visible-bk="" class="p-cs__layouts__intro__headline">' + noLinks(d.headline) + '</h5>' : null,
       '          <h2 data-line-anim-bk="" data-visible-bk="" class="p-cs__layouts__intro__top__text">' + (d.intro || '') + '</h2>',
       '        </div>',
       '      </div>',
@@ -408,6 +408,8 @@
     return s;
   }
 
+  // The quote pill never carries links: keep the words, drop the <a>
+  function noLinks(html) { return String(html || '').replace(/<\/?a\b[^>]*>/gi, ''); }
   function page(template, d) {
     var stats = d.stats || [];
     var vertical = d.heroLayout === 'vertical' && d.heroVertical && (d.heroVertical.media || []).some(function (m) { return m && m.src; });

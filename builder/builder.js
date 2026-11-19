@@ -59,7 +59,7 @@ const session = {
 };
 
 // The builder's version. main is the live site (1.x); the next version is built on the next branch.
-const VERSION = '1.0.2';
+const VERSION = '1.0.3';
 
 function toast(msg, kind = '', ms = 4200) {
   const t = h('div', { class: 'toast ' + kind });
@@ -1491,7 +1491,7 @@ function introCard(cs) {
   }
   return h('section', { class: 'intro-card', 'aria-label': 'Intro', onfocusin: () => focusPreview('intro') },
     h('div', { class: 'zone-label', style: { margin: 0 } }, h('h2', {}, 'Intro'), h('p', {}, 'The first thing under the hero.')),
-    h('div', { class: 'field pill' }, h('span', {}, 'Quote pill (optional)'), rte(cs.headline, (v) => { cs.headline = v; typed(); }, { inline: true, bare: true, placeholder: 'A short quote in a blue pill' })),
+    h('div', { class: 'field pill' }, h('span', {}, 'Quote pill (optional)'), rte(cs.headline, (v) => { cs.headline = v; typed(); }, { inline: true, bare: true, links: false, placeholder: 'A short quote in a blue pill' })),
     h('div', { class: 'field statement' }, h('span', {}, 'Big intro line'), rte(cs.intro, (v) => { cs.intro = v; typed(); }, { inline: true, bare: true, placeholder: 'What IHC made happen, in one or two lines' })),
     list);
 }
@@ -1751,7 +1751,7 @@ const STRICT = new Set(['P', 'BR', 'STRONG', 'EM', 'A', 'UL', 'OL', 'LI']);
 const INLINE = new Set(['BR', 'STRONG', 'EM', 'A', 'SUP', 'SUB']);
 const DROP = new Set(['SCRIPT', 'STYLE', 'IFRAME', 'OBJECT', 'EMBED', 'META', 'LINK', 'TITLE', 'SVG', 'NOSCRIPT', 'TEMPLATE', 'FORM', 'INPUT', 'BUTTON']);
 const RENAME = { B: 'STRONG', I: 'EM' };
-function sanitize(html, { inline = false, strict = false } = {}) {
+function sanitize(html, { inline = false, strict = false, links = true } = {}) {
   const doc = new DOMParser().parseFromString('<body>' + (html || ''), 'text/html');
   const out = document.createElement('div');
   const walk = (node, into) => {
@@ -1761,7 +1761,7 @@ function sanitize(html, { inline = false, strict = false } = {}) {
       const tag = RENAME[c.tagName] || c.tagName;
       if (DROP.has(tag)) continue;
       const style = c.getAttribute('style') || '';
-      const ok = KEEP.has(tag) && (!strict || STRICT.has(tag)) && (!inline || INLINE.has(tag)) && !(tag === 'STRONG' && /font-weight:\s*(normal|[1-4]00)/.test(style));
+      const ok = KEEP.has(tag) && (links || tag !== 'A') && (!strict || STRICT.has(tag)) && (!inline || INLINE.has(tag)) && !(tag === 'STRONG' && /font-weight:\s*(normal|[1-4]00)/.test(style));
       if (!ok) {
         walk(c, into);
         if (inline && /^(P|DIV|LI|H\d)$/.test(tag) && c.nextElementSibling) into.append(document.createElement('br'));
@@ -1790,11 +1790,12 @@ function sanitize(html, { inline = false, strict = false } = {}) {
   return s;
 }
 
-function rte(html, onChange, { inline = false, placeholder = '', bare = false } = {}) {
+function rte(html, onChange, { inline = false, placeholder = '', bare = false, links = true } = {}) {
   const area = h('div', { class: 'rte-area', contenteditable: 'true', role: 'textbox', 'aria-multiline': inline ? 'false' : 'true', 'aria-label': placeholder, 'data-placeholder': placeholder, spellcheck: 'true' });
-  area.innerHTML = html || '';
+  // links: false (the quote pill) drops the Link button and strips links from typed, pasted and saved text
+  area.innerHTML = links ? html || '' : sanitize(html, { inline, links });
   let touched = false;
-  const emit = () => { touched = true; onChange(sanitize(area.innerHTML, { inline })); };
+  const emit = () => { touched = true; onChange(sanitize(area.innerHTML, { inline, links })); };
   const cmd = (c, v) => { area.focus(); document.execCommand(c, false, v); emit(); };
   const linkRow = h('div', { class: 'vimeo-add', style: { padding: '6px', display: 'none' } });
   const btn = (label, title, fn) => h('button', { type: 'button', title, 'aria-label': title, onmousedown: (e) => e.preventDefault(), onclick: fn }, label);
@@ -1808,29 +1809,30 @@ function rte(html, onChange, { inline = false, placeholder = '', bare = false } 
   };
   linkInput.addEventListener('keydown', (e) => { if (e.key === 'Enter') { e.preventDefault(); applyLink(); } if (e.key === 'Escape') { linkRow.style.display = 'none'; area.focus(); } });
   linkRow.append(linkInput, h('button', { type: 'button', class: 'btn small', onclick: applyLink }, 'Link'));
+  const linkBtn = !links ? null : btn('Link', 'Add a link', () => {
+    const sel = getSelection();
+    saved = sel.rangeCount ? sel.getRangeAt(0).cloneRange() : null;
+    const a = sel.anchorNode && sel.anchorNode.parentElement && sel.anchorNode.parentElement.closest('a');
+    linkInput.value = a ? a.getAttribute('href') : '';
+    linkRow.style.display = 'flex'; linkInput.focus();
+  });
   const bar = h('div', { class: 'rte-bar' },
     btn(h('b', {}, 'B'), 'Bold', () => cmd('bold')),
     btn(h('i', {}, 'I'), 'Italic', () => cmd('italic')),
-    btn('Link', 'Add a link', () => {
-      const sel = getSelection();
-      saved = sel.rangeCount ? sel.getRangeAt(0).cloneRange() : null;
-      const a = sel.anchorNode && sel.anchorNode.parentElement && sel.anchorNode.parentElement.closest('a');
-      linkInput.value = a ? a.getAttribute('href') : '';
-      linkRow.style.display = 'flex'; linkInput.focus();
-    }),
+    linkBtn,
     inline ? null : btn('• List', 'Bulleted list', () => cmd('insertUnorderedList')),
     btn('Clear', 'Remove formatting', () => { cmd('removeFormat'); cmd('unlink'); }));
   area.addEventListener('input', emit);
   area.addEventListener('keydown', (e) => {
     if (inline && e.key === 'Enter') { e.preventDefault(); document.execCommand('insertLineBreak'); emit(); }
-    if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') { e.preventDefault(); $$('button', bar)[2].click(); }
+    if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') { e.preventDefault(); if (linkBtn) linkBtn.click(); }
   });
   area.addEventListener('paste', (e) => {
     e.preventDefault();
     const htmlData = e.clipboardData.getData('text/html');
     const text = e.clipboardData.getData('text/plain');
     let ins;
-    if (htmlData) ins = sanitize(htmlData, { inline, strict: true });
+    if (htmlData) ins = sanitize(htmlData, { inline, strict: true, links });
     else ins = inline ? R.esc(text).replace(/\n/g, '<br>') : text.split(/\n{2,}/).map((t) => '<p>' + R.esc(t).replace(/\n/g, '<br>') + '</p>').join('');
     document.execCommand('insertHTML', false, ins);
     emit();
