@@ -478,6 +478,111 @@ window.addEventListener('load',function(){var go=function(){document.querySelect
           border-bottom: 12px solid #FF142D;
         }
 
+        /* Search row: same rule and type as the Filter row under it */
+        .ihc-sr {
+          position: absolute;
+          width: 1px;
+          height: 1px;
+          overflow: hidden;
+          clip: rect(0 0 0 0);
+          white-space: nowrap;
+        }
+
+        .ihc-search {
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 0 14px;
+          box-sizing: border-box;
+        }
+
+        .ihc-search__row {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          min-height: 58px;
+          padding: 10px 0;
+          box-sizing: border-box;
+          border-top: 2px solid currentColor;
+          cursor: text;
+          margin: 0;
+        }
+
+        .ihc-search__input {
+          flex: 1;
+          min-width: 0;
+          appearance: none;
+          background: none;
+          border: 0;
+          border-radius: 0;
+          outline: none;
+          padding: 0;
+          margin: 0;
+          color: inherit;
+          font-family: "Archivo Black", sans-serif;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 24px;
+          text-transform: uppercase;
+        }
+
+        .ihc-search__input::placeholder {
+          color: inherit;
+          opacity: 1;
+        }
+
+        .ihc-search__input:focus::placeholder {
+          opacity: 0.4;
+        }
+
+        .ihc-search__input::-webkit-search-cancel-button,
+        .ihc-search__input::-webkit-search-decoration {
+          appearance: none;
+          display: none;
+        }
+
+        .ihc-search__row:focus-within {
+          box-shadow: inset 0 2px 0 currentColor;
+        }
+
+        .ihc-search__clear {
+          appearance: none;
+          background: none;
+          border: 0;
+          padding: 6px;
+          margin: 0 -6px 0 0;
+          color: inherit;
+          cursor: pointer;
+          line-height: 0;
+        }
+
+        .ihc-search__clear[hidden] {
+          display: none;
+        }
+
+        .ihc-search__icon {
+          flex: none;
+        }
+
+        .ihc-empty {
+          max-width: 1172px;
+          margin: 40px auto 0;
+          padding: 0 14px;
+          box-sizing: border-box;
+          font-family: "Archivo Black", sans-serif;
+          font-size: 20px;
+          text-transform: uppercase;
+          color: var(--c--red);
+        }
+
+        .ihc-empty[hidden] {
+          display: none;
+        }
+
+        .p-home__body[data-color="blue"] .ihc-empty,
+        .p-home__body[data-color="red"] .ihc-empty {
+          color: var(--c--yellow);
+        }
+
         /* Sort row: project / client / year. The active one carries the arrow; tap it again to flip. */
         .ihc-sort {
           display: flex;
@@ -1800,6 +1905,14 @@ window.addEventListener('load',function(){var go=function(){document.querySelect
         </div>
       </div>
       <div id="p-home__list__filter" class="p-home__list__filter">
+        <div class="ihc-search">
+          <label class="ihc-search__row" for="ihc-search">
+            <span class="ihc-sr">Search case studies</span>
+            <input type="search" id="ihc-search" class="ihc-search__input" placeholder="Search" autocomplete="off" spellcheck="false" enterkeyhint="search" />
+            <button type="button" class="ihc-search__clear" aria-label="Clear search" hidden><svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M2 2l10 10M12 2L2 12" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" /></svg></button>
+            <svg class="ihc-search__icon" width="17" height="17" viewBox="0 0 17 17" aria-hidden="true"><circle cx="7" cy="7" r="5.6" fill="none" stroke="currentColor" stroke-width="2.6" /><path d="M11.2 11.2l4.3 4.3" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" /></svg>
+          </label>
+        </div>
         <div class="p-home__list__filter__c">
           <div id="p-home__list__filter__top" class="p-home__list__filter__top w-node-f1c0d01f-1029-adde-2bce-0340a6a50a6b-a6a8c77e">
             <div class="p-home__list__filter__top__left">
@@ -1888,7 +2001,7 @@ window.addEventListener('load',function(){var go=function(){document.querySelect
         </div>
       </div>
       <div class="p-home__list__items v--scroll w-dyn-list">
-        <div id="p-home__list__items-list" role="list" class="p-home__list__items-list v--padding w-dyn-items">
+        <p class="ihc-empty" hidden>Nothing matches that. Try a client, a show or a service.</p><div id="p-home__list__items-list" role="list" class="p-home__list__items-list v--padding w-dyn-items">
           <div data-month="" data-year="" role="listitem" class="p-home__list__items-item w-dyn-item"><a data-reset-anim-hover="" data-link="abigail" data-page-transition="red" data-page-transition-direction="vertical" data-custom-mouse-bk="view" href="/case-studies-items/abigail" class="p-home__list__items-link w-inline-block">
               <div class="p-home__list__items-left">
                 <h6 class="p-home__list__items-left__client">Universal Pictures</h6>
@@ -5668,6 +5781,17 @@ window.addEventListener('load',function(){var go=function(){document.querySelect
           });
           item.dataset.awards = slugs.join(' ');
         });
+
+        // search: title, client, services, awards and year, folded to plain lowercase
+        const fold = t => String(t || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]+/g, ' ').trim();
+        document.querySelectorAll('.p-home__list__items-item').forEach(item => {
+          const bits = [item.querySelector('.t-title'), item.querySelector('.p-home__list__items-left__client')].map(n => n ? n.textContent : '');
+          item.querySelectorAll('[data-filter-cat], [data-filter-award]').forEach(n => bits.push(n.textContent));
+          bits.push(item.dataset.year || '');
+          item.dataset.search = ' ' + fold(bits.join(' ')) + ' ';
+        });
+        const searchEl = document.getElementById('ihc-search');
+        const searchWords = () => fold(searchEl ? searchEl.value : '').split(' ').filter(Boolean);
         filtersAwardsEl.innerHTML = Object.keys(awardList).sort((a, b) => awardList[a].localeCompare(awardList[b])).map(k =>
           `<div data-filter-awards="${k}" class="p-home__list__filter__bottom__block__value" data-splitting data-btn-splitting>${awardList[k]}</div>`).join('');
 
@@ -5814,8 +5938,42 @@ window.addEventListener('load',function(){var go=function(){document.querySelect
               activeQtyEl.classList.remove('active');
             }
 
-            w.style.display = hasClients && hasServices && hasDates && hasAwards ? 'flex' : 'none';
+            const words = searchWords();
+            const hasQuery = !words.length || words.every(q => (w.dataset.search || '').includes(' ' + q));
+            w.style.display = hasClients && hasServices && hasDates && hasAwards && hasQuery ? 'flex' : 'none';
           });
+          const empty = document.querySelector('.ihc-empty');
+          if (empty) empty.hidden = Array.from(workEls.children).some(w => w.style.display !== 'none');
+        }
+        window.ihcFilterWorks = filterWorks;
+
+        if (searchEl) {
+          const clearEl = document.querySelector('.ihc-search__clear');
+          let t = 0;
+          const run = () => {
+            clearEl.hidden = !searchEl.value;
+            filterWorks();
+            try {
+              const u = new URL(location.href);
+              if (searchEl.value.trim()) u.searchParams.set('q', searchEl.value.trim()); else u.searchParams.delete('q');
+              history.replaceState(history.state, '', u);
+            } catch (e) {}
+          };
+          searchEl.addEventListener('input', () => { clearTimeout(t); t = setTimeout(run, 80); });
+          searchEl.addEventListener('keydown', e => {
+            if (e.key === 'Escape' && searchEl.value) { e.preventDefault(); searchEl.value = ''; run(); }
+            if (e.key === 'Enter') searchEl.blur();
+          });
+          clearEl.addEventListener('click', e => { e.preventDefault(); searchEl.value = ''; run(); searchEl.focus(); });
+          // "/" jumps to search, like most sites with one
+          document.addEventListener('keydown', e => {
+            if (e.key !== '/' || e.metaKey || e.ctrlKey || e.altKey) return;
+            const tag = (document.activeElement && document.activeElement.tagName) || '';
+            if (/INPUT|TEXTAREA|SELECT/.test(tag)) return;
+            e.preventDefault(); searchEl.focus();
+          });
+          const q0 = new URLSearchParams(location.search).get('q');
+          if (q0) { searchEl.value = q0; clearEl.hidden = false; filterWorks(); }
         }
 
         function verifyActiveFilterItems() {
