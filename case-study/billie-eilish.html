@@ -1367,13 +1367,13 @@ window.addEventListener('load',function(){var go=function(){document.querySelect
               <div data-vis="0" class="p-cs__hero__middle v--static">
                 <div data-marquee="left" class="p-cs__hero__middle__m v--mobile">
                   <div id="cs-title-name" data-marquee-content="" class="p-cs__hero__middle__mi">
-                    <div class="p-cs__hero__title">BILLIE EILISH</div>
+                    <div class="p-cs__hero__title">Billie Eilish</div>
                   </div>
                   <div data-marquee-content="" class="p-cs__hero__middle__mi">
-                    <div class="p-cs__hero__title">BILLIE EILISH</div>
+                    <div class="p-cs__hero__title">Billie Eilish</div>
                   </div>
                   <div data-marquee-content="" class="p-cs__hero__middle__mi">
-                    <div class="p-cs__hero__title">BILLIE EILISH</div>
+                    <div class="p-cs__hero__title">Billie Eilish</div>
                   </div>
                 </div>
                 <div class="p-cs__hero__middle__m v--desktop"><canvas id="hero-canvas" class="p-about__kingdom__f__choose__canvas webgl"></canvas>
@@ -5011,7 +5011,8 @@ window.addEventListener('load',function(){var go=function(){document.querySelect
                   top: 0
                 });
 
-                document.querySelector('.p-cs__block').dataset.open = 't';
+                const firstBlock = document.querySelector('.p-cs__block');
+                if (firstBlock) firstBlock.dataset.open = 't';
                 resetAnimation();
 
                 // Splitting();

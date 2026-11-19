@@ -4,9 +4,9 @@
  "seoTitle": "A Goofy Movie 30th Anniversary Mailer",
  "description": "",
  "noindex": false,
- "title": "A Goofy Movie 30th Anniversary Mailer",
+ "title": "A Goofy Movie",
  "client": "Disney",
- "subtitle": "",
+ "subtitle": "30th Anniversary Mailer",
  "heroImage": {
   "src": "/images/69d454700e4411023b6cfaab_20250402_MFG_IHC_0439-p-2000.webp",
   "srcset": "/images/69d454700e4411023b6cfaab_20250402_MFG_IHC_0439-p-500.webp 500w, /images/69d454700e4411023b6cfaab_20250402_MFG_IHC_0439-p-800.webp 800w, /images/69d454700e4411023b6cfaab_20250402_MFG_IHC_0439-p-1080.webp 1080w, /images/69d454700e4411023b6cfaab_20250402_MFG_IHC_0439-p-1600.webp 1600w, /images/69d454700e4411023b6cfaab_20250402_MFG_IHC_0439-p-2000.webp 2000w",
@@ -207,7 +207,7 @@
  "listing": {
   "listed": true,
   "work": {
-   "summary": "We created a mailer that offered more than just nostalgia - it was a full-on interactive experience. Delivered alongside a visit from tour roadies and a surprise special guest, the kit invited fans to do more than relive the movie - they got to step into it. Packed with exclusive collectibles and hands-on activities, it brought the film to life. With every challenge completed, snack enjoyed, and dance move busted, fans became part of the ultimate pop culture celebration.",
+   "summary": "We created a mailer that offered more than just nostalgia - it was a full-on interactive experience.",
    "href": "/case-studies-items/a-goofy-movie",
    "month": "Apr",
    "year": "2025",

@@ -1,0 +1,106 @@
+{
+ "slug": "the-hunger-games-sunrise-on-the-reaping",
+ "pageId": "6af39a3dc59d254a627798c7",
+ "seoTitle": "The Hunger Games: Sunrise on the Reaping",
+ "description": "We collaborated with 6 creators who specialize in design to create a poster series positioned as capital propaganda to live across social media.",
+ "noindex": false,
+ "title": "The Hunger Games: Sunrise on the Reaping",
+ "client": "Lionsgate",
+ "subtitle": "",
+ "heroImage": {
+  "src": "https://cdn.prod.website-files.com/65c69ea350569f2a1164c2f2/6af3b9b40febc0ed4dda26c9_THG_SOTR_album.jpeg"
+ },
+ "heroVimeo": "",
+ "stats": [
+  {
+   "value": "1.3M+",
+   "label": "Instagram Impressions"
+  },
+  {
+   "value": "$79K+",
+   "label": "EMV"
+  }
+ ],
+ "services": [
+  {
+   "name": "Creators",
+   "slug": "creators"
+  },
+  {
+   "name": "Digital Strategy",
+   "slug": "digital-strategy"
+  },
+  {
+   "name": "Marketing",
+   "slug": "marketing"
+  }
+ ],
+ "headline": "They're soo stunning! I love that they're working with real artists! - @thedistrictdispatch",
+ "intro": "IHC produced a creator led olympic-style digital campaign for lionsgate's latest Hunger Games Movie.",
+ "introPieces": [
+  {
+   "type": "introGallery",
+   "html": "<p>This creative digital campaign took inspiration from iconic Olympic Games posters - bold geometric forms and institutional prestige - reimagined through the lens of Capitol propaganda.</p>\n<p>We collaborated with 6 creators who specialize in design to create a poster series positioned as capital propaganda to live across social media.</p>\n<p>Our creators included Renographics, Catarina Agostinho, Ricardo Cavolo, Alex Khabbazi, Elijah Jambalaya, &amp; Kody.</p>",
+   "media": [
+    {
+     "type": "image",
+     "src": "https://cdn.prod.website-files.com/655d45a6119a6572b57e5a44/6af39326f64932b310c10064_renographics-p-3200.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "https://cdn.prod.website-files.com/655d45a6119a6572b57e5a44/6af39325fbf40ff72e648a81_cath.graphics-p-3200.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "https://cdn.prod.website-files.com/655d45a6119a6572b57e5a44/6af393263c2dda20e160d7a1_ricardocavolo-p-3200.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "https://cdn.prod.website-files.com/655d45a6119a6572b57e5a44/6af39325ac0c90934077defb_kbar.design-p-3200.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "https://cdn.prod.website-files.com/655d45a6119a6572b57e5a44/6af3934bf5cd3b79c0e9ed57_toastedbyeli-p-2000.avif",
+     "alt": ""
+    },
+    {
+     "type": "image",
+     "src": "https://cdn.prod.website-files.com/655d45a6119a6572b57e5a44/6af393245c58f2109ed47bfb_by.kody-p-3200.avif",
+     "alt": ""
+    }
+   ]
+  }
+ ],
+ "sections": [],
+ "listing": {
+  "listed": false,
+  "work": {
+   "summary": "We collaborated with 6 creators who specialize in design to create a poster series positioned as capital propaganda to live across social media.",
+   "href": "/case-study/the-hunger-games-sunrise-on-the-reaping",
+   "month": "Aug",
+   "year": "2026",
+   "bg": {
+    "src": "https://cdn.prod.website-files.com/65c69ea350569f2a1164c2f2/6af3b9b40febc0ed4dda26c9_THG_SOTR_album.jpeg",
+    "alt": ""
+   }
+  },
+  "home": {
+   "showHomepage": false,
+   "category": "Film",
+   "image": "",
+   "gif": "",
+   "vimeo": "",
+   "ip": "",
+   "award": false,
+   "awardTitle": "",
+   "awardLogo1": "",
+   "awardLogo2": "",
+   "video": ""
+  }
+ },
+ "updatedAt": "2026-11-19T23:53:41.000Z"
+}

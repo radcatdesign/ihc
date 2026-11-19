@@ -2,7 +2,7 @@
  "caseStudies": [
   {
    "slug": "a-goofy-movie",
-   "title": "A Goofy Movie 30th Anniversary Mailer",
+   "title": "A Goofy Movie",
    "client": "Disney",
    "listed": true,
    "homepage": true,
@@ -178,7 +178,7 @@
   },
   {
    "slug": "billie-eilish",
-   "title": "BILLIE EILISH",
+   "title": "Billie Eilish",
    "client": "SPOTIFY • INTERSCOPE",
    "listed": true,
    "homepage": true,
@@ -200,7 +200,7 @@
   {
    "slug": "black-panther",
    "title": "Black Panther",
-   "client": "DISNEY • MARVEL STUDIOS",
+   "client": "Marvel Studios",
    "listed": true,
    "homepage": true,
    "noindex": false,
@@ -214,7 +214,8 @@
     "Creative Direction",
     "Environment Design",
     "Talent Booking",
-    "Digital Strategy"
+    "Digital Strategy",
+    "Content Production"
    ],
    "awards": [],
    "sections": 4
@@ -222,13 +223,13 @@
   {
    "slug": "black-widow",
    "title": "Black Widow",
-   "client": "DISNEY • MARVEL",
+   "client": "Marvel Studios",
    "listed": true,
    "homepage": false,
    "noindex": false,
    "thumb": "/images/660b6f6cd445f22b8332c4e2_65ea27ada170bf51c2b26083_1-case-studies-black-widow-general-hero-image-p-1600.webp",
    "updatedAt": "2026-11-19T22:53:57.768Z",
-   "category": "",
+   "category": "Events",
    "year": "2021",
    "month": "Jun",
    "services": [
@@ -248,7 +249,7 @@
    "noindex": false,
    "thumb": "/images/69d81b23027dcb92899a8f95_IMG_7476-p-2000.webp",
    "updatedAt": "",
-   "category": "",
+   "category": "Film",
    "year": "",
    "month": "",
    "services": [
@@ -323,7 +324,7 @@
   {
    "slug": "captain-marvel",
    "title": "Captain Marvel",
-   "client": "Marvel Studios • Disney",
+   "client": "Marvel Studios",
    "listed": true,
    "homepage": false,
    "noindex": false,
@@ -384,6 +385,30 @@
    "sections": 2
   },
   {
+   "slug": "crystal-lake",
+   "title": "Crystal Lake",
+   "client": "Peacock",
+   "listed": false,
+   "homepage": false,
+   "noindex": false,
+   "thumb": "https://cdn.prod.website-files.com/65c69ea350569f2a1164c2f2/6af51e9ba915ef838fd1b616_DSC01413.jpeg",
+   "updatedAt": "2026-11-19T23:53:41.000Z",
+   "category": "Television",
+   "year": "2026",
+   "month": "Oct",
+   "services": [
+    "Creative Direction",
+    "Creative Concept",
+    "Development",
+    "Environment Design",
+    "Fabrication Production",
+    "Narrative Development",
+    "Technical Design"
+   ],
+   "awards": [],
+   "sections": 6
+  },
+  {
    "slug": "darby-and-the-dead",
    "title": "Darby and the Dead",
    "client": "20th Century Studios • Hulu",
@@ -404,8 +429,8 @@
   },
   {
    "slug": "daredevil-born-again-mailers",
-   "title": "Daredevil: Born Again Mailers",
-   "client": "Disney",
+   "title": "Daredevil: Born Again",
+   "client": "Marvel Studios",
    "listed": true,
    "homepage": false,
    "noindex": false,
@@ -559,7 +584,7 @@
   },
   {
    "slug": "electronica",
-   "title": "ElecTRONica",
+   "title": "Tron: Ares",
    "client": "Disney",
    "listed": true,
    "homepage": true,
@@ -574,14 +599,16 @@
     "Environment Design",
     "Event Production",
     "Content Production",
-    "Talent Booking"
+    "Talent Booking",
+    "Influencer Guestlist",
+    "Digital Strategy"
    ],
    "awards": [],
    "sections": 5
   },
   {
    "slug": "elio-pixar-creator-day",
-   "title": "Elio Pixar Creator Day",
+   "title": "Elio",
    "client": "Disney • Pixar",
    "listed": true,
    "homepage": true,
@@ -596,7 +623,8 @@
     "Development",
     "Environment Design",
     "Event Production",
-    "Influencer Guestlist"
+    "Influencer Guestlist",
+    "Digital Strategy"
    ],
    "awards": [],
    "sections": 3
@@ -604,7 +632,7 @@
   {
    "slug": "eternals",
    "title": "Eternals",
-   "client": "Marvel Studios • Disney",
+   "client": "Marvel Studios",
    "listed": true,
    "homepage": false,
    "noindex": false,
@@ -624,7 +652,7 @@
   {
    "slug": "fantastic-four",
    "title": "Fantastic Four",
-   "client": "Disney",
+   "client": "Marvel Studios",
    "listed": true,
    "homepage": true,
    "noindex": false,
@@ -696,6 +724,28 @@
    ],
    "awards": [],
    "sections": 3
+  },
+  {
+   "slug": "godzilla-minus-zero-premiere",
+   "title": "Godzilla Minus Zero",
+   "client": "GKIDS • TOHO",
+   "listed": false,
+   "homepage": false,
+   "noindex": false,
+   "thumb": "https://cdn.prod.website-files.com/65c69ea350569f2a1164c2f2/6af3788027c3304c3972c241_IHC_Godzilla_20261028_2152-KKB.jpeg",
+   "updatedAt": "2026-11-19T23:53:41.000Z",
+   "category": "Film",
+   "year": "2026",
+   "month": "Oct",
+   "services": [
+    "Creative Direction",
+    "Development",
+    "Environment Design",
+    "Event Production",
+    "Influencer Guestlist"
+   ],
+   "awards": [],
+   "sections": 6
   },
   {
    "slug": "guardians-of-the-galaxy-vol-3",
@@ -850,7 +900,7 @@
    "noindex": false,
    "thumb": "/images/6a17798d46bd08018fbd14ce__R1A8738.JPG",
    "updatedAt": "",
-   "category": "",
+   "category": "Events",
    "year": "",
    "month": "",
    "services": [
@@ -985,7 +1035,7 @@
   },
   {
    "slug": "ma",
-   "title": "MA",
+   "title": "Ma",
    "client": "Universal Pictures • Blumhouse",
    "listed": true,
    "homepage": false,
@@ -1079,9 +1129,9 @@
    "noindex": false,
    "thumb": "/images/6aeba6837a6134d16cca0abb_VMA_MOON_MOBILE_SATURDAY-01445-p-2000.jpeg",
    "updatedAt": "",
-   "category": "",
-   "year": "",
-   "month": "",
+   "category": "Events",
+   "year": "2026",
+   "month": "Sep",
    "services": [
     "Creative Concept",
     "Creative Direction",
@@ -1135,7 +1185,7 @@
   },
   {
    "slug": "nobody",
-   "title": "NOBODY",
+   "title": "Nobody",
    "client": "Universal Pictures",
    "listed": true,
    "homepage": true,
@@ -1174,7 +1224,7 @@
   },
   {
    "slug": "olivia-rodrigo-guts-world-tour-bus-experience",
-   "title": "Olivia Rodrigo: GUTS World Tour Bus Experience",
+   "title": "Olivia Rodrigo: GUTS World Tour",
    "client": "Interscope • Geffen Records",
    "listed": true,
    "homepage": true,
@@ -1195,7 +1245,7 @@
   },
   {
    "slug": "overnightmare",
-   "title": "OVERNIGHTMARE",
+   "title": "Overnightmare",
    "client": "PEACOCK • BLUMHOUSE",
    "listed": true,
    "homepage": true,
@@ -1342,7 +1392,7 @@
   },
   {
    "slug": "space-jam",
-   "title": "SPACE JAM: A NEW LEGACY",
+   "title": "Space Jam: A New Legacy",
    "client": "Warner Bros. Pictures",
    "listed": true,
    "homepage": true,
@@ -1380,6 +1430,27 @@
    ],
    "awards": [],
    "sections": 4
+  },
+  {
+   "slug": "street-fighter",
+   "title": "Street Fighter",
+   "client": "Paramount",
+   "listed": false,
+   "homepage": false,
+   "noindex": false,
+   "thumb": "https://cdn.prod.website-files.com/65c69ea350569f2a1164c2f2/6af27599d528921f9c87e100_DSC_5781.jpg",
+   "updatedAt": "2026-11-19T23:53:41.000Z",
+   "category": "Film",
+   "year": "2026",
+   "month": "Oct",
+   "services": [
+    "Creative Concept",
+    "Creative Direction",
+    "Set Design",
+    "Fabrication Production"
+   ],
+   "awards": [],
+   "sections": 5
   },
   {
    "slug": "sundance-2022",
@@ -1485,9 +1556,29 @@
    "sections": 4
   },
   {
+   "slug": "the-hunger-games-sunrise-on-the-reaping",
+   "title": "The Hunger Games: Sunrise on the Reaping",
+   "client": "Lionsgate",
+   "listed": false,
+   "homepage": false,
+   "noindex": false,
+   "thumb": "https://cdn.prod.website-files.com/65c69ea350569f2a1164c2f2/6af3b9b40febc0ed4dda26c9_THG_SOTR_album.jpeg",
+   "updatedAt": "2026-11-19T23:53:41.000Z",
+   "category": "Film",
+   "year": "2026",
+   "month": "Aug",
+   "services": [
+    "Creators",
+    "Digital Strategy",
+    "Marketing"
+   ],
+   "awards": [],
+   "sections": 0
+  },
+  {
    "slug": "the-marvels",
    "title": "The Marvels",
-   "client": "Disney",
+   "client": "Marvel Studios",
    "listed": true,
    "homepage": false,
    "noindex": false,
@@ -1531,7 +1622,7 @@
   },
   {
    "slug": "they-them",
-   "title": "THEY/THEM",
+   "title": "They/Them",
    "client": "Peacock",
    "listed": true,
    "homepage": false,
@@ -1550,7 +1641,7 @@
   },
   {
    "slug": "thor-love-and-thunder",
-   "title": "THOR: Love and Thunder",
+   "title": "Thor: Love and Thunder",
    "client": "Marvel Studios",
    "listed": true,
    "homepage": true,
@@ -1684,7 +1775,7 @@
    "noindex": false,
    "thumb": "",
    "updatedAt": "",
-   "category": "",
+   "category": "Events",
    "year": "",
    "month": "",
    "services": [],
@@ -1694,7 +1785,7 @@
   {
    "slug": "wakanda-forever",
    "title": "Black Panther: Wakanda Forever",
-   "client": "Disney • Marvel Studios",
+   "client": "Marvel Studios",
    "listed": true,
    "homepage": false,
    "noindex": false,
@@ -1888,6 +1979,10 @@
   {
    "name": "Narrative Development",
    "slug": "narrative-development"
+  },
+  {
+   "name": "Set Design",
+   "slug": "set-design"
   },
   {
    "name": "Talent Booking",

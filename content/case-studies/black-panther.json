@@ -5,7 +5,7 @@
  "description": "IHEARTCOMIX joined forces with Marvel Studios to create the Taste of Wakanda, a culinary experience celebrating the release of critically acclaimed, award winning film Black Panther.",
  "noindex": false,
  "title": "Black Panther",
- "client": "DISNEY • MARVEL STUDIOS",
+ "client": "Marvel Studios",
  "subtitle": "TASTE OF WAKANDA",
  "heroImage": {
   "src": "/images/66c47f1989ccf0ba814855c4_blackpanther.avif"
@@ -32,6 +32,10 @@
   {
    "name": "Digital Strategy",
    "slug": "digital-strategy"
+  },
+  {
+   "name": "Content Production",
+   "slug": "content-production"
   }
  ],
  "headline": "“I THINK BLACK PANTHER WOULD BE SATISFIED BECAUSE WE’RE BRINGING NEW FRESHNESS AND A NEW TAKE ON THE CUISINE OF WAKANDA.” —Ghetto Gastro",

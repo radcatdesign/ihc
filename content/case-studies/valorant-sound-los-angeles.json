@@ -93,6 +93,26 @@
   }
  ],
  "listing": {
-  "listed": false
+  "listed": false,
+  "work": {
+   "summary": "To reinvigorate fans of Valorant, Riot Games is kicked the year off right with a creator and fan forward event full of teases.",
+   "href": "/case-study/valorant-sound-los-angeles",
+   "month": "",
+   "year": "",
+   "bg": null
+  },
+  "home": {
+   "showHomepage": false,
+   "category": "Events",
+   "image": "",
+   "gif": "",
+   "vimeo": "",
+   "ip": "",
+   "award": false,
+   "awardTitle": "",
+   "awardLogo1": "",
+   "awardLogo2": "",
+   "video": ""
+  }
  }
 }
