@@ -155,6 +155,28 @@
   }
  ],
  "listing": {
-  "listed": false
- }
+  "listed": true,
+  "work": {
+   "summary": "",
+   "href": "/case-study/black-widow",
+   "month": "Jun",
+   "year": "2021",
+   "bg": null
+  },
+  "home": {
+   "showHomepage": false,
+   "category": "",
+   "image": "",
+   "gif": "",
+   "vimeo": "",
+   "ip": "",
+   "award": false,
+   "awardTitle": "",
+   "awardLogo1": "",
+   "awardLogo2": "",
+   "video": ""
+  }
+ },
+ "awards": [],
+ "updatedAt": "2026-11-19T22:53:57.768Z"
 }
