@@ -52,8 +52,14 @@ const store = {
 };
 const session = {
   get() { try { return sessionStorage.getItem('ihc-builder-key') || ''; } catch (e) { return ''; } },
-  set(v) { try { if (v) sessionStorage.setItem('ihc-builder-key', v); else sessionStorage.removeItem('ihc-builder-key'); } catch (e) { /* ignore */ } },
+  set(v) { try { if (v) sessionStorage.setItem('ihc-builder-key', v); else { sessionStorage.removeItem('ihc-builder-key'); sessionStorage.removeItem('ihc-builder-info'); } } catch (e) { /* ignore */ } },
+  // what the server said at sign-in (big uploads allowed, which branch Publish writes to), kept across reloads
+  info() { try { return JSON.parse(sessionStorage.getItem('ihc-builder-info') || '{}'); } catch (e) { return {}; } },
+  setInfo(v) { try { sessionStorage.setItem('ihc-builder-info', JSON.stringify(v)); } catch (e) { /* ignore */ } },
 };
+
+// The builder's version. main is the live site (1.x); the next version is built on the next branch.
+const VERSION = '1.0.0';
 
 function toast(msg, kind = '', ms = 4200) {
   const t = h('div', { class: 'toast ' + kind });
@@ -160,7 +166,9 @@ const previewSrc = (type) => `/builder/previews/${type}.webp`;
 /* ---------------- app state ---------------- */
 const S = {
   key: session.get(),
-  local: false,
+  local: !!session.info().local,
+  bigUploads: !!session.info().bigUploads,
+  branch: session.info().branch || 'main',
   index: null,
   template: '',
   cs: null,
@@ -197,6 +205,7 @@ async function readFiles(paths) {
 /* ---------------- routing ---------------- */
 window.addEventListener('hashchange', () => route());
 function route() {
+  branchFlag();
   const app = $('#app');
   if (!S.key) return renderLogin(app);
   const m = location.hash.match(/^#\/cs\/([a-z0-9-]+)/);
@@ -259,7 +268,9 @@ function renderLogin(app) {
         const r = await fetch('/api/builder/login', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ password: pw.value }) });
         const d = await r.json().catch(() => ({}));
         if (!r.ok) throw new Error(d.error || 'Something went wrong.');
-        S.key = pw.value; session.set(pw.value); S.local = !!d.local; S.bigUploads = !!d.bigUploads;
+        S.key = pw.value; session.set(pw.value); S.local = !!d.local; S.bigUploads = !!d.bigUploads; S.branch = d.branch || 'main';
+        session.setInfo({ local: S.local, bigUploads: S.bigUploads, branch: S.branch });
+        branchFlag();
         store.set('ihc-builder-seen', true);
         if (d.missing && d.missing.length) toast('Heads up: ' + d.missing.join(' and ') + ' still need to be set in Vercel.', 'err', 9000);
         route();
@@ -472,10 +483,19 @@ async function renderLibrary(app) {
   sync();
 }
 
+// A standing flag when Publish doesn't write to the live site (a preview of another branch, or local)
+function branchFlag() {
+  const old = document.getElementById('branch-flag');
+  if (old) old.remove();
+  if (!S.key || S.branch === 'main') return;
+  document.body.append(h('div', { id: 'branch-flag', role: 'status' },
+    S.branch === 'local' ? 'Local copy: Publish writes to this folder' : h('span', {}, 'Test build v' + VERSION + ': Publish writes to ', h('b', {}, S.branch), ', not the live site')));
+}
+
 function topbarLibrary() {
   return h('header', { class: 'topbar' },
     h('a', { class: 'logo-link', href: '/', target: '_blank', rel: 'noopener', title: 'Open the IHC site' }, logo()),
-    h('div', { class: 'crumb' }, h('b', {}, 'Case study builder')),
+    h('div', { class: 'crumb' }, h('b', {}, 'Case study builder'), h('span', { class: 'ver', title: 'Builder version' }, 'v' + VERSION)),
     h('div', { class: 'spacer' }),
     h('a', { class: 'btn on-dark small desk-only', href: '/work', target: '_blank', rel: 'noopener' }, 'View the Work page'),
     h('button', { class: 'btn on-dark small', onclick: () => { session.set(''); S.key = ''; route(); } }, 'Sign out'));

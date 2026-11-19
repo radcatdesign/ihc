@@ -4,7 +4,9 @@
 //   BUILDER_PASSWORD       password for /builder
 //   GITHUB_TOKEN           fine-grained token with Contents: read and write on the site repo
 //   GITHUB_REPO            owner/name, defaults to radcatdesign/ihc
-//   GITHUB_BRANCH          defaults to main
+//   GITHUB_BRANCH          where Publish writes. Defaults to main on the live site. Preview deployments
+//                          (any other branch) default to their own branch, so testing a future
+//                          version never touches the live site.
 //   BLOB_READ_WRITE_TOKEN  added automatically when a Blob store is connected to the project
 //   BUILDER_LOCAL_ROOT     local development only: read and write files in this folder instead of GitHub
 
@@ -13,7 +15,12 @@ const fs = require('fs');
 const path = require('path');
 
 const REPO = process.env.GITHUB_REPO || 'radcatdesign/ihc';
-const BRANCH = process.env.GITHUB_BRANCH || 'main';
+const VERCEL_ENV = process.env.VERCEL_ENV || '';
+const BRANCH = process.env.GITHUB_BRANCH
+  || (VERCEL_ENV && VERCEL_ENV !== 'production' ? process.env.VERCEL_GIT_COMMIT_REF || '' : 'main');
+function needBranch() {
+  if (!BRANCH) throw Object.assign(new Error('This preview doesn’t know which branch it came from, so publishing is off. Set GITHUB_BRANCH for Preview in Vercel.'), { status: 503 });
+}
 const LOCAL = process.env.BUILDER_LOCAL_ROOT || '';
 
 const SLUG = '[a-z0-9]+(?:-[a-z0-9]+)*';
@@ -110,6 +117,7 @@ function gql(query, variables) {
 
 // Read text files at the branch head. Returns { head, files: { path: { text, sha } | null } }
 async function readFiles(paths) {
+  if (!LOCAL) needBranch();
   if (LOCAL) {
     const files = {};
     for (const p of paths) {
@@ -167,6 +175,7 @@ async function currentShas(paths) {
 // Write files in one commit. files: [{ path, content }] (content null deletes).
 // expect: { path: sha | null } checked against the branch head first.
 async function commitFiles(files, expect, message) {
+  if (!LOCAL) needBranch();
   if (LOCAL) {
     const conflicts = Object.entries(expect || {}).filter(([p, sha]) => {
       const f = path.join(LOCAL, p);

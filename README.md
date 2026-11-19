@@ -23,6 +23,15 @@ The iheartcomix.com website: plain static HTML, CSS and JS, a few small serverle
 
 URLs match the old site one to one, so existing links and search results keep working.
 
+## Versions and branches
+
+- **`main` is the live site.** Vercel deploys it to production, which is what the client sees and uses (including the builder at `/builder`). Releases are tagged: `v1.0.0` is the first. The builder shows its version next to its name.
+- **`next` is the next version** (social media tools first). Every push to it gets a Vercel preview deployment, private to the Vercel team. A preview's builder publishes to its own branch, never to `main`, and shows a yellow "Test build" flag so it's never mistaken for the live one.
+- **Fixes for the live site** go on `main` (tag `v1.0.1` and so on), then get merged into `next`.
+- **Content keeps flowing on `main`**: case studies the client publishes land there. Merge `main` into `next` now and then so the preview has current content.
+- **Releasing**: merge `next` into `main` and tag `v2.0.0`.
+- For the preview's builder to sign in and save, `BUILDER_PASSWORD`, `GITHUB_TOKEN` and the Blob variables need **Preview** ticked in Vercel's Environment Variables (they're per environment). To be extra safe, also add `GITHUB_BRANCH` = `next` for Preview.
+
 ## Deploying on Vercel
 
 1. In the IHEARTCOMIX Vercel team, **Add New > Project** and import `radcatdesign/ihc`.
