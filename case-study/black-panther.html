@@ -459,6 +459,17 @@ window.addEventListener('load',function(){var go=function(){document.querySelect
     </script>
   </div>
 </div>
+              <div role="listitem" class="w-dyn-item">
+  <div class="w-embed w-script">
+    <script>
+      window.heroServices = window.heroServices || [];
+      window.heroServices.push({
+        name: 'Content Production',
+        slug: 'content-production'
+      });
+    </script>
+  </div>
+</div>
             </div>
           </div>
           <div id="p-cs__hero" class="p-cs__hero">
@@ -1396,7 +1407,7 @@ window.addEventListener('load',function(){var go=function(){document.querySelect
               </div>
               <div class="p-cs__hero__bottom-n v--content">
                 <div class="p-cs__hero__bottom__left v--content">
-                  <h5 data-line-anim="" data-manual-visible="" class="p-cs__hero__bottom__left__client">DISNEY • MARVEL STUDIOS</h5>
+                  <h5 data-line-anim="" data-manual-visible="" class="p-cs__hero__bottom__left__client">Marvel Studios</h5>
                   <h2 data-line-anim="" data-manual-visible="" class="p-cs__hero__bottom__left__title">TASTE OF WAKANDA</h2>
                   <div id="p-cs__hero__categories" class="p-cs__hero__bottom__left__categories"></div>
                 </div>
@@ -4918,7 +4929,8 @@ window.addEventListener('load',function(){var go=function(){document.querySelect
                   top: 0
                 });
 
-                document.querySelector('.p-cs__block').dataset.open = 't';
+                const firstBlock = document.querySelector('.p-cs__block');
+                if (firstBlock) firstBlock.dataset.open = 't';
                 resetAnimation();
 
                 // Splitting();

@@ -4,7 +4,7 @@
  "seoTitle": "Club ElecTRONica",
  "description": "",
  "noindex": false,
- "title": "ElecTRONica",
+ "title": "Tron: Ares",
  "client": "Disney",
  "subtitle": "",
  "heroImage": {
@@ -51,6 +51,14 @@
   {
    "name": "Talent Booking",
    "slug": "talent-booking"
+  },
+  {
+   "name": "Influencer Guestlist",
+   "slug": "influencer-guestlist"
+  },
+  {
+   "name": "Digital Strategy",
+   "slug": "digital-strategy"
   }
  ],
  "headline": "“Event so good it made it… onto the grid” - Attendee",

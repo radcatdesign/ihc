@@ -1360,7 +1360,7 @@ window.addEventListener('load',function(){var go=function(){document.querySelect
               </div>
               <div class="p-cs__hero__bottom-n v--content">
                 <div class="p-cs__hero__bottom__left v--content">
-                  <h5 data-line-anim="" data-manual-visible="" class="p-cs__hero__bottom__left__client">Disney</h5>
+                  <h5 data-line-anim="" data-manual-visible="" class="p-cs__hero__bottom__left__client">Marvel Studios</h5>
                   <h2 data-line-anim="" data-manual-visible="" class="p-cs__hero__bottom__left__title"></h2>
                   <div id="p-cs__hero__categories" class="p-cs__hero__bottom__left__categories"></div>
                 </div>
@@ -4844,7 +4844,8 @@ window.addEventListener('load',function(){var go=function(){document.querySelect
                   top: 0
                 });
 
-                document.querySelector('.p-cs__block').dataset.open = 't';
+                const firstBlock = document.querySelector('.p-cs__block');
+                if (firstBlock) firstBlock.dataset.open = 't';
                 resetAnimation();
 
                 // Splitting();

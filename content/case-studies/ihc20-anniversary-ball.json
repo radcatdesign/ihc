@@ -304,6 +304,32 @@
   }
  ],
  "listing": {
-  "listed": false
+  "listed": false,
+  "work": {
+   "summary": "We threw ourselves an epic 20th anniversary party to celebrate everything IHEARTCOMIX!",
+   "href": "/case-study/ihc20-anniversary-ball",
+   "month": "",
+   "year": "",
+   "bg": {
+    "src": "/images/6a17798d46bd08018fbd14ce__R1A8738.JPG",
+    "srcset": "/images/6a17798d46bd08018fbd14ce__R1A8738-p-500.jpg 500w, /images/6a17798d46bd08018fbd14ce__R1A8738-p-800.jpg 800w, /images/6a17798d46bd08018fbd14ce__R1A8738-p-1080.jpg 1080w, /images/6a17798d46bd08018fbd14ce__R1A8738-p-1600.jpg 1600w, /images/6a17798d46bd08018fbd14ce__R1A8738.JPG 1620w",
+    "sizes": "100vw",
+    "data-bg": "/images/6a17798d46bd08018fbd14ce__R1A8738-p-1600.jpg",
+    "alt": ""
+   }
+  },
+  "home": {
+   "showHomepage": false,
+   "category": "Events",
+   "image": "",
+   "gif": "",
+   "vimeo": "",
+   "ip": "",
+   "award": false,
+   "awardTitle": "",
+   "awardLogo1": "",
+   "awardLogo2": "",
+   "video": ""
+  }
  }
 }

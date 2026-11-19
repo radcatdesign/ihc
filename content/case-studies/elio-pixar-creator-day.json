@@ -4,9 +4,9 @@
  "seoTitle": "Elio Pixar Creator Day",
  "description": "",
  "noindex": false,
- "title": "Elio Pixar Creator Day",
+ "title": "Elio",
  "client": "Disney • Pixar",
- "subtitle": "",
+ "subtitle": "Creator Day",
  "heroImage": {
   "src": "/images/6a0502f5eb7942ccefb0743b_IMG_5208-p-2000.jpg",
   "srcset": "/images/6a0502f5eb7942ccefb0743b_IMG_5208-p-500.jpg 500w, /images/6a0502f5eb7942ccefb0743b_IMG_5208-p-800.jpg 800w, /images/6a0502f5eb7942ccefb0743b_IMG_5208-p-1080.jpg 1080w, /images/6a0502f5eb7942ccefb0743b_IMG_5208-p-1600.jpg 1600w, /images/6a0502f5eb7942ccefb0743b_IMG_5208-p-2000.jpg 2000w",
@@ -47,6 +47,10 @@
   {
    "name": "Influencer Guestlist",
    "slug": "influencer-guestlist"
+  },
+  {
+   "name": "Digital Strategy",
+   "slug": "digital-strategy"
   }
  ],
  "headline": "“THAT WAS SERIOUSLY ONE OF THE COOLEST EXPERIENCES WE'VE EVER HAD!” — Dylan Bradshaw, Creator",

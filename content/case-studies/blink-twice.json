@@ -186,6 +186,32 @@
   }
  ],
  "listing": {
-  "listed": false
+  "listed": false,
+  "work": {
+   "summary": "Blink Twice captivated festival attendees at Splash House with our exclusive “Good Time Lounge.”",
+   "href": "/case-study/blink-twice",
+   "month": "",
+   "year": "",
+   "bg": {
+    "src": "/images/69d81b23027dcb92899a8f95_IMG_7476-p-2000.webp",
+    "srcset": "/images/69d81b23027dcb92899a8f95_IMG_7476-p-500.webp 500w, /images/69d81b23027dcb92899a8f95_IMG_7476-p-800.webp 800w, /images/69d81b23027dcb92899a8f95_IMG_7476-p-1080.webp 1080w, /images/69d81b23027dcb92899a8f95_IMG_7476-p-1600.webp 1600w, /images/69d81b23027dcb92899a8f95_IMG_7476-p-2000.webp 2000w",
+    "sizes": "100vw",
+    "data-bg": "/images/69d81b23027dcb92899a8f95_IMG_7476-p-1600.webp",
+    "alt": ""
+   }
+  },
+  "home": {
+   "showHomepage": false,
+   "category": "Film",
+   "image": "",
+   "gif": "",
+   "vimeo": "",
+   "ip": "",
+   "award": false,
+   "awardTitle": "",
+   "awardLogo1": "",
+   "awardLogo2": "",
+   "video": ""
+  }
  }
 }

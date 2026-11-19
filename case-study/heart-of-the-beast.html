@@ -4922,7 +4922,8 @@ window.addEventListener('load',function(){var go=function(){document.querySelect
                   top: 0
                 });
 
-                document.querySelector('.p-cs__block').dataset.open = 't';
+                const firstBlock = document.querySelector('.p-cs__block');
+                if (firstBlock) firstBlock.dataset.open = 't';
                 resetAnimation();
 
                 // Splitting();

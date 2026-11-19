@@ -1367,13 +1367,13 @@ window.addEventListener('load',function(){var go=function(){document.querySelect
               <div data-vis="0" class="p-cs__hero__middle v--static">
                 <div data-marquee="left" class="p-cs__hero__middle__m v--mobile">
                   <div id="cs-title-name" data-marquee-content="" class="p-cs__hero__middle__mi">
-                    <div class="p-cs__hero__title">Olivia Rodrigo: GUTS World Tour Bus Experience</div>
+                    <div class="p-cs__hero__title">Olivia Rodrigo: GUTS World Tour</div>
                   </div>
                   <div data-marquee-content="" class="p-cs__hero__middle__mi">
-                    <div class="p-cs__hero__title">Olivia Rodrigo: GUTS World Tour Bus Experience</div>
+                    <div class="p-cs__hero__title">Olivia Rodrigo: GUTS World Tour</div>
                   </div>
                   <div data-marquee-content="" class="p-cs__hero__middle__mi">
-                    <div class="p-cs__hero__title">Olivia Rodrigo: GUTS World Tour Bus Experience</div>
+                    <div class="p-cs__hero__title">Olivia Rodrigo: GUTS World Tour</div>
                   </div>
                 </div>
                 <div class="p-cs__hero__middle__m v--desktop"><canvas id="hero-canvas" class="p-about__kingdom__f__choose__canvas webgl"></canvas>
@@ -1383,7 +1383,7 @@ window.addEventListener('load',function(){var go=function(){document.querySelect
               <div class="p-cs__hero__bottom-n v--content">
                 <div class="p-cs__hero__bottom__left v--content">
                   <h5 data-line-anim="" data-manual-visible="" class="p-cs__hero__bottom__left__client">Interscope • Geffen Records</h5>
-                  <h2 data-line-anim="" data-manual-visible="" class="p-cs__hero__bottom__left__title"></h2>
+                  <h2 data-line-anim="" data-manual-visible="" class="p-cs__hero__bottom__left__title">Bus Experience</h2>
                   <div id="p-cs__hero__categories" class="p-cs__hero__bottom__left__categories"></div>
                 </div>
                 <div id="balls-wrapper" class="p-cs__hero__bottom__left-balls v--full">
@@ -4943,7 +4943,8 @@ window.addEventListener('load',function(){var go=function(){document.querySelect
                   top: 0
                 });
 
-                document.querySelector('.p-cs__block').dataset.open = 't';
+                const firstBlock = document.querySelector('.p-cs__block');
+                if (firstBlock) firstBlock.dataset.open = 't';
                 resetAnimation();
 
                 // Splitting();

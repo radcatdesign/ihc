@@ -1,0 +1,175 @@
+{
+ "slug": "crystal-lake",
+ "pageId": "6af3a0934a6a038f183ebcdb",
+ "seoTitle": "Crystal Lake",
+ "description": "We transformed a central footprint at New York Comic Con into a fully immersive recreation of Camp Crystal Lake.",
+ "noindex": false,
+ "title": "Crystal Lake",
+ "client": "Peacock",
+ "subtitle": "",
+ "heroImage": {
+  "src": "https://cdn.prod.website-files.com/65c69ea350569f2a1164c2f2/6af51e9ba915ef838fd1b616_DSC01413.jpeg"
+ },
+ "heroVimeo": "",
+ "stats": [
+  {
+   "value": "16K+",
+   "label": "Guest Output"
+  },
+  {
+   "value": "15.4K+",
+   "label": "Virtual Queue Signups"
+  },
+  {
+   "value": "930",
+   "label": "Trailer Clicks"
+  }
+ ],
+ "services": [
+  {
+   "name": "Creative Direction",
+   "slug": "creative-direction"
+  },
+  {
+   "name": "Creative Concept",
+   "slug": "creative-concept"
+  },
+  {
+   "name": "Development",
+   "slug": "development"
+  },
+  {
+   "name": "Environment Design",
+   "slug": "environment-design"
+  },
+  {
+   "name": "Fabrication Production",
+   "slug": "fabrication-production"
+  },
+  {
+   "name": "Narrative Development",
+   "slug": "narrative-development"
+  },
+  {
+   "name": "Technical Design",
+   "slug": "technical-design"
+  }
+ ],
+ "headline": "“Best 5 minutes of my life!” - NYCC Guest",
+ "intro": "IHC CRAFTED AN IMMERSIVE HORROR EXPERIENCE AT NYCC FOR PEACOCK'S HIT TV SHOW CRYSTAL LAKE.",
+ "introPieces": [
+  {
+   "type": "introGallery",
+   "html": "<p>IHC transformed a central footprint at New York Comic Con into a fully immersive recreation of Camp Crystal Lake — a weathered cabin exterior giving way to richly detailed forest and shed interiors, brought to life by live theatrical performances and capped by a climactic scare moment inside Jason’s shed.</p>\n<p>The result: a dual-purpose activation that doubled as a fully realized guest experience and a strategic content engine, giving press and creators a dedicated environment to capture the talent walkthrough and the experience’s signature scare moment alike. A virtual queue let fans reserve a spot, driving 15k+ sign-ups across the four-day run and sending hundreds of groups through the full experience.</p>",
+   "media": []
+  }
+ ],
+ "sections": [
+  {
+   "title": "the build",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p>A cabin facade jutted out from the walls to immerse guests into the world. A custom sign hung from a post at the line entrance, and a camp bulletin board had in-world easter eggs that guests could browse while they listened to excerpts from Radio Crystal Lake. The facade was covered in 360 key art, serving as a large scale photo moment.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": []
+    }
+   ]
+  },
+  {
+   "title": "interior details",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p>The interior of the cabin was full of era-accurate decor, camp bunk beds, trunks, lamps, and Jason’s hidden camp sack. Our forest area was filled with foliage, eerie lighting, and a practical shed facade. The interior of Jason's shed was dimly lit with a dead hippie immediately discoverable on entrance as well as knick knacks left behind including lanterns, Chuckles candy bars, and a toy laser gun.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": []
+    }
+   ]
+  },
+  {
+   "title": "immersive beat 1",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p>Guests queued through an immersive pre-show before Barry and Claudette welcomed them as the camp’s newest counselors and brought them inside for orientation. Orientation broke down when a panicked hippie burst in searching for her missing friend, pulling Barry away to chase down a prop thief and leaving Claudette alone with Pam Voorhees.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": []
+    }
+   ]
+  },
+  {
+   "title": "immersive beat 2",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p>Pam uncovered Jason’s machete mid-rant, and a scream outside sent Claudette running back in to report a body in the woods — then Pam snapped, launching the central scare and sending guests fleeing toward Jason’s shed. Fleeing through the woods, the group found a frightened Barry and the hippies’ body among the trees as they reached the entrance to Jason’s shed.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": []
+    }
+   ]
+  },
+  {
+   "title": "immersive beat 3",
+   "pieces": [
+    {
+     "type": "text",
+     "html": "<p>Inside, the lights cut out and Pam reappeared for one final scare (triggering our “scream” photo opp) before Sheriff Brooks arrived and she vanished. On the way out, a BA handed guests a custom Crystal Lake bandana, and guests could complete a consumer insights survey for an exclusive “Pam’s Bloody Sweater” pin.</p>"
+    },
+    {
+     "type": "gallery",
+     "media": []
+    }
+   ]
+  },
+  {
+   "title": "WATCH THE RECAP",
+   "pieces": [
+    {
+     "type": "video",
+     "vimeo": "1245622486",
+     "hash": "",
+     "w": 1920,
+     "h": 1080,
+     "title": "Peacock: Crystal Lake",
+     "thumb": ""
+    }
+   ]
+  }
+ ],
+ "listing": {
+  "listed": false,
+  "work": {
+   "summary": "We transformed a central footprint at New York Comic Con into a fully immersive recreation of Camp Crystal Lake.",
+   "href": "/case-study/crystal-lake",
+   "month": "Oct",
+   "year": "2026",
+   "bg": {
+    "src": "https://cdn.prod.website-files.com/65c69ea350569f2a1164c2f2/6af51e9ba915ef838fd1b616_DSC01413.jpeg",
+    "alt": ""
+   }
+  },
+  "home": {
+   "showHomepage": false,
+   "category": "Television",
+   "image": "",
+   "gif": "",
+   "vimeo": "",
+   "ip": "",
+   "award": false,
+   "awardTitle": "",
+   "awardLogo1": "",
+   "awardLogo2": "",
+   "video": ""
+  }
+ },
+ "updatedAt": "2026-11-19T23:53:41.000Z"
+}
