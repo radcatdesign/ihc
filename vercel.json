@@ -13,15 +13,15 @@
       ]
     },
     {
-      "source": "/(builder|content)/(.*)",
+      "source": "/(builder|content|api)/(.*)",
       "headers": [
-        { "key": "X-Robots-Tag", "value": "noindex" }
+        { "key": "X-Robots-Tag", "value": "noindex, nofollow" }
       ]
     },
     {
       "source": "/builder",
       "headers": [
-        { "key": "X-Robots-Tag", "value": "noindex" }
+        { "key": "X-Robots-Tag", "value": "noindex, nofollow" }
       ]
     }
   ]
