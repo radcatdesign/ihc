@@ -66,6 +66,8 @@ Hover a block in the left column to see a real render of it (on a phone, the Add
 - Hero: a background video (muted loop) instead of a Vimeo link.
 - Big image, Two-up, Photo grid, Social row: muted loops, as before.
 
+**Hero bubbles** are the numbers floating over the hero (300+ Fans). Four rows to start; Add a bubble goes up to eight, and the × on a row removes it. With five or more, every bubble on the page runs a little smaller so they still fit, on phones too. Bubbles five to eight are pink, yellow, mint and white.
+
 **Hero layout** is either Photo or video (the usual) or **Vertical videos**: up to three 9:16 cards (Reels, TikToks, Stories; photos work too) standing in the middle over a blurred copy of the middle one, with the big title running behind them and the client and services along the bottom. On phones they stack: cards, then the title, then client and services.
 
 **Templates** are saved layouts (intro blocks and sections, with their colors and settings). In a case study, the Templates button saves the current layout as one, either just the layout or with the words and photos, or loads one in (replace the blocks or add its sections to the end; Undo puts things back). The Templates tab on the case study list lists them, opens them in the same editor to change, deletes them, and starts new case studies from them. They live in `content/templates/`.

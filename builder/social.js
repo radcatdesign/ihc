@@ -102,7 +102,7 @@ function draftSlides(cs) {
   const slides = [{ type: 'cover', photo: photos[0] || '', title: cs.title || '', kicker: cs.client || '', badge: ((cs.awards || [])[0] || {}).name || '' }];
   if (sum) slides.push({ type: 'text', color: 'violet', heading: (q && q.fromHeadline ? '' : cs.headline) || cs.title || '', body: sum });
   if (photos[1]) slides.push({ type: 'photo', photo: photos[1], caption: '' });
-  for (let i = 0; i < stats.length && i < 6; i += 3) slides.push({ type: 'stats', color: i ? 'night' : 'blue', heading: i ? '' : 'By the numbers', items: stats.slice(i, i + 3).map((s) => ({ value: s.value, label: s.label || '' })), footer: cs.title || '' });
+  for (let i = 0; i < stats.length && i < 9; i += 3) slides.push({ type: 'stats', color: i ? 'night' : 'blue', heading: i ? '' : 'By the numbers', items: stats.slice(i, i + 3).map((s) => ({ value: s.value, label: s.label || '' })), footer: cs.title || '' });
   if (photos[2]) slides.push({ type: 'photo', photo: photos[2], caption: '' });
   if (q) slides.push({ type: 'quote', color: 'pink', quote: q.quote, by: q.by });
   slides.push({ type: 'outro', color: 'yellow', line: 'See the full case study', url: `iheartcomix.com/case-study/${cs.slug}` });

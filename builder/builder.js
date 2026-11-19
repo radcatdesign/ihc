@@ -1382,20 +1382,44 @@ function discardDraft() {
 /* ---- hero ---- */
 function heroCard(cs) {
   const title = autoTitle(cs.title, 'Project name', 'Project name', (v) => { cs.title = v; typed(); }, 'title-input');
+  // Bubbles over the hero: four rows to start, up to MAX_BUBBLES. Past four they run smaller on the page.
+  const MAXB = R.MAX_BUBBLES || 8;
   const statsBox = h('div', { class: 'stats-edit' });
-  const bubbleColors = ['#ff142d', '#004fff', '#4d25c8', '#1810a0'];
-  for (let i = 0; i < 4; i++) {
-    const s = cs.stats[i] || { value: '', label: '' };
-    const set = (k) => (e) => {
-      while (cs.stats.length <= i) cs.stats.push({ value: '', label: '' });
-      cs.stats[i][k] = e.target.value;
-      while (cs.stats.length && !cs.stats[cs.stats.length - 1].value && !cs.stats[cs.stats.length - 1].label) cs.stats.pop();
-      typed();
-    };
-    statsBox.append(h('div', { class: 'stat-row' },
-      h('input', { class: 'input', value: s.value, placeholder: ['300+', '12.2M', '78', '50'][i], 'aria-label': `Bubble ${i + 1} number`, oninput: set('value'), style: { borderColor: bubbleColors[i] } }),
-      h('input', { class: 'input', value: s.label, placeholder: ['Fans', 'Social impressions', 'Videos', 'Talent'][i], 'aria-label': `Bubble ${i + 1} label`, oninput: set('label') })));
-  }
+  const bubbleColors = ['#ff463d', '#004fff', '#4d25c8', '#1810a0', '#f40c70', '#ffb728', '#95efc9', '#fff'];
+  const egValue = ['300+', '12.2M', '78', '50', '24', '1.4B', '9', '6'];
+  const egLabel = ['Fans', 'Social impressions', 'Videos', 'Talent', 'Cities', 'Press reach', 'Activations', 'Countries'];
+  const trimStats = () => { while (cs.stats.length && !cs.stats[cs.stats.length - 1].value && !cs.stats[cs.stats.length - 1].label) cs.stats.pop(); };
+  let statRows = Math.min(MAXB, Math.max(4, cs.stats.length));
+  const drawStats = (focus) => {
+    const rows = [];
+    for (let i = 0; i < statRows; i++) {
+      const s = cs.stats[i] || { value: '', label: '' };
+      const set = (k) => (e) => {
+        while (cs.stats.length <= i) cs.stats.push({ value: '', label: '' });
+        cs.stats[i][k] = e.target.value;
+        trimStats();
+        typed();
+      };
+      rows.push(h('div', { class: 'stat-row' },
+        h('input', { class: 'input', value: s.value, placeholder: egValue[i], 'aria-label': `Bubble ${i + 1} number`, oninput: set('value'), style: { borderColor: bubbleColors[i] } }),
+        h('input', { class: 'input', value: s.label, placeholder: egLabel[i], 'aria-label': `Bubble ${i + 1} label`, oninput: set('label') }),
+        h('button', {
+          class: 'icon-btn', type: 'button', title: 'Remove this bubble', 'aria-label': `Remove bubble ${i + 1}`,
+          onclick: () => {
+            if (i < cs.stats.length) { cs.stats.splice(i, 1); trimStats(); commit({ redraw: false }); }
+            statRows = Math.max(4, statRows - 1);
+            drawStats();
+          },
+        }, svg('x'))));
+    }
+    const full = statRows >= MAXB;
+    statsBox.replaceChildren(...rows,
+      h('div', { class: 'stat-more' },
+        h('button', { class: 'btn small', type: 'button', disabled: full, onclick: () => { statRows++; drawStats(statRows - 1); } }, svg('plus'), 'Add a bubble'),
+        h('small', {}, full ? `${MAXB} is the most that fit.` : statRows > 4 ? 'With five or more, each bubble runs a little smaller.' : `Up to ${MAXB}.`)));
+    if (focus != null) statsBox.children[focus].querySelector('input').focus();
+  };
+  drawStats();
   const vimeo = h('input', {
     class: 'input', value: cs.heroVimeo ? 'https://vimeo.com/' + cs.heroVimeo.replace('?h=', '/') : '', placeholder: 'https://vimeo.com/…',
     onchange: (e) => {

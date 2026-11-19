@@ -408,6 +408,7 @@
     return s;
   }
 
+  var MAX_BUBBLES = 8;
   function page(template, d) {
     var stats = d.stats || [];
     var vertical = d.heroLayout === 'vertical' && d.heroVertical && (d.heroVertical.media || []).some(function (m) { return m && m.src; });
@@ -423,10 +424,16 @@
       heroVimeo: vertical || (d.heroVideo && d.heroVideo.src) ? '' : esc(d.heroVimeo || ''),
       body: body(d)
     };
-    for (var i = 0; i < 4; i++) {
-      vals['stat' + (i + 1) + 'v'] = esc(stats[i] ? stats[i].value : '');
-      vals['stat' + (i + 1) + 'l'] = esc(stats[i] ? stats[i].label : '');
-    }
+    // hero bubbles: one copy of the bubble markup per stat (at least four slots, at most MAX_BUBBLES)
+    var shown = stats.slice(0, MAX_BUBBLES);
+    while (shown.length && !(shown[shown.length - 1] && String(shown[shown.length - 1].value || '').trim())) shown.pop();
+    template = template.replace(/<!--bubble-->([\s\S]*?)<!--\/bubble-->/, function (m, block) {
+      var out = [];
+      for (var i = 0; i < Math.max(4, shown.length); i++) {
+        out.push(block.replace('{{statvis}}', String(10 + i)).replace('{{statv}}', function () { return esc(shown[i] ? shown[i].value : ''); }).replace('{{statl}}', function () { return esc(shown[i] ? shown[i].label : ''); }));
+      }
+      return out.join('\n                  ');
+    });
     return template.replace(/\{\{(\w+)\}\}/g, function (m, k) {
       return Object.prototype.hasOwnProperty.call(vals, k) ? vals[k] : m;
     });
@@ -633,6 +640,7 @@
   }
 
   return {
+    MAX_BUBBLES: MAX_BUBBLES,
     page: page, body: body, meta: meta, piece: piece, workItem: workItem, cmsItem: cmsItem, TONES: TONES,
     indexEntry: indexEntry, spliceWork: spliceWork, spliceCms: spliceCms, spliceSitemap: spliceSitemap, spliceIndex: spliceIndex,
     esc: esc, attr: attr, slugify: slugify, sortKey: sortKey, newPageId: newPageId, ind: ind, absUrl: absUrl

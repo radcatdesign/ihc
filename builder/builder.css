@@ -304,7 +304,18 @@ img { display: block; }
 .hero-card .input:focus { border-color: #fff; box-shadow: 0 0 0 3px rgba(255, 255, 255, .2); }
 .hero-grid { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 18px; align-items: start; }
 .stats-edit { display: grid; gap: 8px; }
-.stat-row { display: grid; grid-template-columns: 90px 1fr; gap: 8px; }
+/* the remove button sits over the end of the label, so the label keeps its width */
+.stat-row { position: relative; display: grid; grid-template-columns: 90px 1fr; gap: 8px; align-items: center; }
+.stat-row .icon-btn { position: absolute; right: 5px; top: 50%; translate: 0 -50%; width: 26px; height: 26px; border-radius: 50%; background: #fff; color: var(--ink); opacity: 0; }
+.stat-row:hover .icon-btn, .stat-row .icon-btn:focus-visible { opacity: 1; }
+.stat-row .icon-btn:hover { background: var(--red); color: #fff; }
+.stat-row .icon-btn svg { width: 13px; height: 13px; }
+@media (hover: none) { .stat-row .icon-btn { opacity: 1; } .stat-row .input:nth-child(2) { padding-right: 36px; } }
+.stat-more { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.stat-more .btn { background: transparent; border-color: rgba(255, 255, 255, .35); color: #fff; gap: 6px; }
+.stat-more .btn:hover:not(:disabled) { background: #fff; color: var(--ink); border-color: #fff; }
+.stat-more .btn:disabled { opacity: .4; }
+.stat-more .btn svg { width: 14px; height: 14px; }
 .bubble-dot { width: 12px; height: 12px; border-radius: 50%; display: inline-block; margin-right: 6px; vertical-align: -1px; }
 .chips { display: flex; flex-wrap: wrap; gap: 6px; }
 .chip { border: 1.5px solid rgba(255, 255, 255, .35); background: transparent; color: #fff; border-radius: 99px; padding: 4px 11px; font-size: 12.5px; font-weight: 600; }

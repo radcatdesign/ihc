@@ -1334,34 +1334,13 @@ window.addEventListener('load',function(){var go=function(){document.querySelect
                   <div id="p-cs__hero__categories" class="p-cs__hero__bottom__left__categories"></div>
                 </div>
                 <div id="balls-wrapper" class="p-cs__hero__bottom__left-balls v--full">
-                  <div data-vis="10" data-manual-visible-bk="" class="p-cs__hero__bottom__right__el">
-                    <div class="p-cs__hero__bottom__right__el__title">{{stat1v}}</div>
-                    <div class="p-cs__hero__bottom__right__el__text">{{stat1l}}</div>
+                  <!--bubble--><div data-vis="{{statvis}}" data-manual-visible-bk="" class="p-cs__hero__bottom__right__el">
+                    <div class="p-cs__hero__bottom__right__el__title">{{statv}}</div>
+                    <div class="p-cs__hero__bottom__right__el__text">{{statl}}</div>
                     <div class="p-cs__hero__bottom__right__el__bg w-embed"><svg width="231" height="203" viewBox="0 0 231 203" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M115.458 0.18335C79.2784 0.510589 48.6094 7.91921 29.263 25.3022C9.53704 42.3579 1.14629 69.401 0.779785 101.313C1.14629 133.226 9.55013 160.269 29.263 177.324C48.6094 194.72 79.2653 202.116 115.458 202.443C151.638 202.116 182.307 194.707 201.653 177.324C221.379 160.269 229.769 133.226 230.136 101.313C229.769 69.401 221.366 42.3579 201.653 25.3022C182.307 7.90612 151.651 0.497499 115.458 0.18335Z" fill="#fcd9eb" />
                       </svg></div>
-                  </div>
-                  <div data-vis="11" data-manual-visible-bk="" class="p-cs__hero__bottom__right__el">
-                    <div class="p-cs__hero__bottom__right__el__title">{{stat2v}}</div>
-                    <div class="p-cs__hero__bottom__right__el__text">{{stat2l}}</div>
-                    <div class="p-cs__hero__bottom__right__el__bg w-embed"><svg width="231" height="203" viewBox="0 0 231 203" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M115.458 0.18335C79.2784 0.510589 48.6094 7.91921 29.263 25.3022C9.53704 42.3579 1.14629 69.401 0.779785 101.313C1.14629 133.226 9.55013 160.269 29.263 177.324C48.6094 194.72 79.2653 202.116 115.458 202.443C151.638 202.116 182.307 194.707 201.653 177.324C221.379 160.269 229.769 133.226 230.136 101.313C229.769 69.401 221.366 42.3579 201.653 25.3022C182.307 7.90612 151.651 0.497499 115.458 0.18335Z" fill="#fcd9eb" />
-                      </svg></div>
-                  </div>
-                  <div data-vis="12" data-manual-visible-bk="" class="p-cs__hero__bottom__right__el">
-                    <div class="p-cs__hero__bottom__right__el__title">{{stat3v}}</div>
-                    <div class="p-cs__hero__bottom__right__el__text">{{stat3l}}</div>
-                    <div class="p-cs__hero__bottom__right__el__bg w-embed"><svg width="231" height="203" viewBox="0 0 231 203" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M115.458 0.18335C79.2784 0.510589 48.6094 7.91921 29.263 25.3022C9.53704 42.3579 1.14629 69.401 0.779785 101.313C1.14629 133.226 9.55013 160.269 29.263 177.324C48.6094 194.72 79.2653 202.116 115.458 202.443C151.638 202.116 182.307 194.707 201.653 177.324C221.379 160.269 229.769 133.226 230.136 101.313C229.769 69.401 221.366 42.3579 201.653 25.3022C182.307 7.90612 151.651 0.497499 115.458 0.18335Z" fill="#fcd9eb" />
-                      </svg></div>
-                  </div>
-                  <div data-vis="13" data-manual-visible-bk="" class="p-cs__hero__bottom__right__el">
-                    <div class="p-cs__hero__bottom__right__el__title">{{stat4v}}</div>
-                    <div class="p-cs__hero__bottom__right__el__text">{{stat4l}}</div>
-                    <div class="p-cs__hero__bottom__right__el__bg w-embed"><svg width="231" height="203" viewBox="0 0 231 203" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M115.458 0.18335C79.2784 0.510589 48.6094 7.91921 29.263 25.3022C9.53704 42.3579 1.14629 69.401 0.779785 101.313C1.14629 133.226 9.55013 160.269 29.263 177.324C48.6094 194.72 79.2653 202.116 115.458 202.443C151.638 202.116 182.307 194.707 201.653 177.324C221.379 160.269 229.769 133.226 230.136 101.313C229.769 69.401 221.366 42.3579 201.653 25.3022C182.307 7.90612 151.651 0.497499 115.458 0.18335Z" fill="#fcd9eb" />
-                      </svg></div>
-                  </div>
+                  </div><!--/bubble-->
                 </div>
               </div>
             </div>
@@ -2621,6 +2600,16 @@ window.addEventListener('load',function(){var go=function(){document.querySelect
             fill: var(--c--purple);
           }
 
+          /* bubbles five to eight: pink, then three light ones with dark type */
+          .p-cs__hero__bottom__right__el:nth-child(5) path { fill: #f40c70; }
+          .p-cs__hero__bottom__right__el:nth-child(6) path { fill: #ffb728; }
+          .p-cs__hero__bottom__right__el:nth-child(7) path { fill: #95efc9; }
+          .p-cs__hero__bottom__right__el:nth-child(8) path { fill: #fff; }
+          .p-cs__hero__bottom__right__el:nth-child(6), .p-cs__hero__bottom__right__el:nth-child(8) { color: #ff142d; }
+          .p-cs__hero__bottom__right__el:nth-child(7) { color: #1810a0; }
+          /* with five or more, each bubble runs smaller (set by heroBalls) */
+          .p-cs__hero__bottom__right__el__title, .p-cs__hero__bottom__right__el__text { zoom: var(--bubble-k, 1); }
+
           .p-cs__layouts .p-cs__block:nth-child(5n + 1) {
             background-color: #ff463d;
           }
@@ -3849,8 +3838,11 @@ window.addEventListener('load',function(){var go=function(){document.querySelect
     const ballsEl = wrapperEl.querySelectorAll('.p-cs__hero__bottom__right__el:has(.p-cs__hero__bottom__right__el__title:not(:empty))');
     if (ballsEl.length < 1) return;
 
+    const bubbleK = ballsEl.length > 6 ? 0.74 : ballsEl.length > 4 ? 0.86 : 1;
     const balls = Array.from(ballsEl).map((ball, index) => {
-    	const b = ball.getBoundingClientRect();
+    	const b = { width: ball.getBoundingClientRect().width * bubbleK };
+      ball.style.setProperty('--bubble-k', bubbleK);
+      if (bubbleK < 1) { ball.style.minWidth = '0'; ball.style.padding = `${Math.round(30 * bubbleK)}px ${Math.round(20 * bubbleK)}px`; }
       ball.style.width = `${b.width}px`;
     	return {
         elem: ball,
@@ -3993,8 +3985,12 @@ window.addEventListener('load',function(){var go=function(){document.querySelect
             const ballsEl = wrapperEl.querySelectorAll('.p-cs__hero__bottom__right__el:has(.p-cs__hero__bottom__right__el__title:not(:empty))');
             if (ballsEl.length < 1) return;
 
+            // five or more bubbles: each one runs smaller so they still fit the hero
+            const bubbleK = ballsEl.length > 6 ? 0.74 : ballsEl.length > 4 ? 0.86 : 1;
             const balls = Array.from(ballsEl).map((ball, index) => {
-              const b = ball.getBoundingClientRect();
+              const b = { width: ball.getBoundingClientRect().width * bubbleK };
+              ball.style.setProperty('--bubble-k', bubbleK);
+              if (bubbleK < 1) { ball.style.minWidth = '0'; ball.style.padding = `${Math.round(30 * bubbleK)}px ${Math.round(20 * bubbleK)}px`; }
               ball.style.width = `${b.width}px`;
 
               const vertices = [];

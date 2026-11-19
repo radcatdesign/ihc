@@ -2788,6 +2788,16 @@ window.addEventListener('load',function(){var go=function(){document.querySelect
             fill: var(--c--purple);
           }
 
+          /* bubbles five to eight: pink, then three light ones with dark type */
+          .p-cs__hero__bottom__right__el:nth-child(5) path { fill: #f40c70; }
+          .p-cs__hero__bottom__right__el:nth-child(6) path { fill: #ffb728; }
+          .p-cs__hero__bottom__right__el:nth-child(7) path { fill: #95efc9; }
+          .p-cs__hero__bottom__right__el:nth-child(8) path { fill: #fff; }
+          .p-cs__hero__bottom__right__el:nth-child(6), .p-cs__hero__bottom__right__el:nth-child(8) { color: #ff142d; }
+          .p-cs__hero__bottom__right__el:nth-child(7) { color: #1810a0; }
+          /* with five or more, each bubble runs smaller (set by heroBalls) */
+          .p-cs__hero__bottom__right__el__title, .p-cs__hero__bottom__right__el__text { zoom: var(--bubble-k, 1); }
+
           .p-cs__layouts .p-cs__block:nth-child(5n + 1) {
             background-color: #ff463d;
           }
@@ -4016,8 +4026,11 @@ window.addEventListener('load',function(){var go=function(){document.querySelect
     const ballsEl = wrapperEl.querySelectorAll('.p-cs__hero__bottom__right__el:has(.p-cs__hero__bottom__right__el__title:not(:empty))');
     if (ballsEl.length < 1) return;
 
+    const bubbleK = ballsEl.length > 6 ? 0.74 : ballsEl.length > 4 ? 0.86 : 1;
     const balls = Array.from(ballsEl).map((ball, index) => {
-    	const b = ball.getBoundingClientRect();
+    	const b = { width: ball.getBoundingClientRect().width * bubbleK };
+      ball.style.setProperty('--bubble-k', bubbleK);
+      if (bubbleK < 1) { ball.style.minWidth = '0'; ball.style.padding = `${Math.round(30 * bubbleK)}px ${Math.round(20 * bubbleK)}px`; }
       ball.style.width = `${b.width}px`;
     	return {
         elem: ball,
@@ -4160,8 +4173,12 @@ window.addEventListener('load',function(){var go=function(){document.querySelect
             const ballsEl = wrapperEl.querySelectorAll('.p-cs__hero__bottom__right__el:has(.p-cs__hero__bottom__right__el__title:not(:empty))');
             if (ballsEl.length < 1) return;
 
+            // five or more bubbles: each one runs smaller so they still fit the hero
+            const bubbleK = ballsEl.length > 6 ? 0.74 : ballsEl.length > 4 ? 0.86 : 1;
             const balls = Array.from(ballsEl).map((ball, index) => {
-              const b = ball.getBoundingClientRect();
+              const b = { width: ball.getBoundingClientRect().width * bubbleK };
+              ball.style.setProperty('--bubble-k', bubbleK);
+              if (bubbleK < 1) { ball.style.minWidth = '0'; ball.style.padding = `${Math.round(30 * bubbleK)}px ${Math.round(20 * bubbleK)}px`; }
               ball.style.width = `${b.width}px`;
 
               const vertices = [];
