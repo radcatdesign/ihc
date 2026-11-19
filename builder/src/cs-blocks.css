@@ -293,3 +293,41 @@ html .p-cs__layouts .p-cs__block:is([data-tone="yellow"], [data-tone="pink"], [d
 html .p-cs__hero__scroll-el.v--new { z-index: 3; }
 html .p-cs__hero__bottom__right__el.is-grabbable { pointer-events: auto; cursor: grab; touch-action: pan-y; user-select: none; -webkit-user-select: none; -webkit-tap-highlight-color: transparent; }
 html .p-cs__hero__bottom__right__el.is-grabbable.is-grabbed { cursor: grabbing; }
+
+/* Uploaded videos (WebM made in the builder) */
+.w-video > video { position: absolute; inset: 0; width: 100%; height: 100%; display: block; background: #000; object-fit: contain; }
+.p-cs__hero__native { z-index: -1; position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; pointer-events: none; opacity: 0; transition: opacity 1s ease; }
+.p-cs__hero__native.is-on { opacity: .8; }
+.p-cs__hero:has(.p-cs__hero__native.is-on) { background-color: #000; }
+.swiper-slide.v--native-video { display: flex; align-items: center; justify-content: center; }
+.p-cs__layouts__gallery__slide__video { width: 100%; height: 100%; object-fit: contain; background: #000; display: block; border-radius: inherit; }
+.p-cs__hero #p-cs__hero__img { transition: opacity 1s ease; }
+.p-cs__hero:has(.p-cs__hero__native.is-on) #p-cs__hero__img { opacity: 0 !important; }
+
+/* Vertical hero: up to three 9:16 cards over a blurred copy of the middle one.
+   The giant title runs behind the cards; client and services sit along the bottom. */
+.p-cs__hero:has(.p-cs__hero__vert) { background-color: #0b0717; }
+.p-cs__hero:has(.p-cs__hero__vert) #p-cs__hero__img { opacity: 0 !important; }
+.p-cs__hero__vert-bg { position: absolute; left: -8%; top: -8%; width: 116%; height: 116%; max-width: none; object-fit: cover; z-index: -1; pointer-events: none; filter: blur(56px) saturate(1.35) brightness(.55); }
+.p-cs__hero__vert { position: absolute; inset: 0; z-index: 1; pointer-events: none; display: flex; align-items: center; justify-content: center; padding: 9vh 0 31vh; padding: 9svh 0 31svh; box-sizing: border-box; }
+.p-cs__hero__vert__row { height: 100%; display: flex; align-items: center; justify-content: center; gap: clamp(20px, 3vw, 48px); }
+.p-cs__hero__vert__card { position: relative; flex: none; height: 100%; aspect-ratio: 9 / 16; border-radius: 28px; overflow: hidden; background: #111; box-shadow: 0 40px 90px -30px rgba(0, 0, 0, .75), 0 0 0 1px rgba(255, 255, 255, .12); animation: ihc-vert-in .9s cubic-bezier(.2, .8, .2, 1) both; }
+.p-cs__hero__vert__card > video, .p-cs__hero__vert__card > img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.p-cs__hero__vert[data-count="3"] .v--1, .p-cs__hero__vert[data-count="3"] .v--3 { height: 82%; }
+.p-cs__hero__vert[data-count="3"] .v--1 { rotate: -5deg; translate: 0 7%; animation-delay: .1s; }
+.p-cs__hero__vert[data-count="3"] .v--3 { rotate: 5deg; translate: 0 7%; animation-delay: .2s; }
+.p-cs__hero__vert[data-count="3"] .v--2 { z-index: 1; }
+.p-cs__hero__vert[data-count="2"] .v--1 { rotate: -3deg; }
+.p-cs__hero__vert[data-count="2"] .v--2 { rotate: 3deg; translate: 0 5%; animation-delay: .1s; }
+@keyframes ihc-vert-in { from { opacity: 0; transform: translateY(56px) scale(.96); } }
+@media (prefers-reduced-motion: reduce) { .p-cs__hero__vert__card { animation: none; } }
+html .p-cs__hero:has(.p-cs__hero__vert) .p-cs__hero__bottom__left.v--content { position: absolute; left: 50%; bottom: 9vh; bottom: 9svh; translate: -50% 0; width: min(680px, 92vw); margin: 0; }
+/* phones: cards up top, then the title, then client and services, all in one column */
+@media screen and (max-width: 767px) {
+  .p-cs__hero__vert { align-items: flex-start; padding: 0; padding-top: max(84px, 10svh); }
+  .p-cs__hero__vert__row { height: min(50svh, 100vw); gap: 12px; }
+  .p-cs__hero__vert__card { border-radius: 18px; box-shadow: 0 24px 60px -24px rgba(0, 0, 0, .8), 0 0 0 1px rgba(255, 255, 255, .12); }
+  html .p-cs__hero:has(.p-cs__hero__vert) { justify-content: flex-start; height: auto; min-height: 100svh; padding-bottom: 96px; }
+  html .p-cs__hero:has(.p-cs__hero__vert) .p-cs__hero__content { margin-top: calc(max(84px, 10svh) + min(50svh, 100vw) + 4px); }
+  html .p-cs__hero:has(.p-cs__hero__vert) .p-cs__hero__bottom__left.v--content { position: relative; left: auto; bottom: auto; translate: none; width: auto; }
+}

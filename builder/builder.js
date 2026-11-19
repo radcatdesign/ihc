@@ -2,6 +2,7 @@
    Data: content/case-studies/<slug>.json  ->  page: case-study/<slug>.html (rendered by render.js) */
 
 import { dotField } from './login-dots.js';
+import { cropPhotos, compressVideo, videoStill, savedLine, fmtBytes } from './media.js';
 
 const R = window.IHCRender;
 const Sortable = window.Sortable;
@@ -929,6 +930,8 @@ function normalize(cs) {
   };
   cs.introPieces.forEach(tag);
   cs.sections.forEach((s) => { if (!s._id) s._id = uid(); (s.pieces = s.pieces || []).forEach(tag); });
+  cs.heroVertical = cs.heroVertical || { media: [] };
+  tag(cs.heroVertical);
   return cs;
 }
 
@@ -943,6 +946,8 @@ function cleanForSave(cs) {
   };
   out.introPieces.forEach(tidy);
   out.sections.forEach((s) => s.pieces.forEach(tidy));
+  if (out.heroVertical) tidy(out.heroVertical);
+  if (out.heroVertical && !out.heroVertical.media.length && out.heroLayout !== 'vertical') delete out.heroVertical;
   return out;
 }
 
@@ -1306,7 +1311,7 @@ function renderCanvas() {
   const fits = (toGroup, drag) => {
     const k = drag.dataset.kind;
     if (toGroup === 'logos') return false;
-    if (toGroup === 'photos') return k !== 'vimeo';
+    if (toGroup === 'photos' || toGroup === 'verticals') return k !== 'vimeo';
     return k !== 'loop';
   };
   $$('.tray', inner).forEach((el) => {
@@ -1327,6 +1332,7 @@ function syncMedia() {
   const visit = (p) => { owners.set(p._id, p); if (Array.isArray(p.media)) p.media.forEach((m) => all.set(m._id, m)); };
   S.cs.introPieces.forEach(visit);
   S.cs.sections.forEach((s) => s.pieces.forEach(visit));
+  if (S.cs.heroVertical) visit(S.cs.heroVertical);
   $$('.tray').forEach((tray) => {
     const p = owners.get(tray.dataset.owner);
     if (p) p.media = $$('.tile[data-mid]', tray).map((t) => all.get(t.dataset.mid)).filter(Boolean);
@@ -1367,19 +1373,36 @@ function heroCard(cs) {
       commit({ redraw: false });
     },
   });
+  const vertical = cs.heroLayout === 'vertical';
+  const layoutPick = h('div', { class: 'seg hero-layout', role: 'group', 'aria-label': 'Hero layout' },
+    [['standard', 'Photo or video'], ['vertical', 'Vertical videos']].map(([k, label]) => h('button', {
+      type: 'button', 'aria-pressed': String((cs.heroLayout || 'standard') === k),
+      onclick: () => { if ((cs.heroLayout || 'standard') === k) return; if (k === 'standard') delete cs.heroLayout; else cs.heroLayout = k; commit(); },
+    }, label)));
+  const verticalBits = h('div', { class: 'field hero-vertical' },
+    h('span', {}, 'Vertical videos'),
+    mediaTray(cs.heroVertical, { group: 'verticals', kind: 'vhero', video: true, vimeo: false, max: 3, add: 'Add videos', note: 'Up to three Reels, TikToks or Stories (photos work too). The middle one sets the blurred backdrop.' }));
   return h('section', { class: 'hero-card', 'aria-label': 'Hero', onfocusin: () => focusPreview('hero') },
     title,
     h('div', { class: 'row' },
       h('label', { class: 'field' }, h('span', {}, 'Client'), h('input', { class: 'input', value: cs.client, placeholder: 'Disney • Marvel Studios', oninput: (e) => { cs.client = e.target.value; typed(); } })),
       h('label', { class: 'field' }, h('span', {}, 'Line under the client (optional)'), h('input', { class: 'input', value: cs.subtitle, placeholder: 'Taste of Wakanda', oninput: (e) => { cs.subtitle = e.target.value; typed(); } }))),
+    h('div', { class: 'field' }, h('span', {}, 'Hero layout'), layoutPick),
+    vertical ? verticalBits : null,
     h('div', { class: 'hero-grid' },
-      h('div', { class: 'field' }, h('span', {}, 'Hero photo'),
+      h('div', { class: 'field' }, h('span', {}, vertical ? 'Hero photo (for sharing, and the backdrop while videos load)' : 'Hero photo'),
         mediaSlot({
-          get: () => (cs.heroImage && cs.heroImage.src ? { type: 'image', src: cs.heroImage.src } : null),
-          set: (m) => { cs.heroImage = m ? { src: m.src, srcset: m.srcset || '', sizes: m.srcset ? '100vw' : '' } : null; },
+          get: () => (cs.heroImage && cs.heroImage.src ? { type: 'image', src: cs.heroImage.src, orig: cs.heroImage.orig, bytes: cs.heroImage.bytes } : null),
+          set: (m) => { cs.heroImage = m ? { src: m.src, srcset: m.srcset || '', sizes: m.srcset ? '100vw' : '', ...(m.orig ? { orig: m.orig, bytes: m.bytes } : {}) } : null; },
           kind: 'hero', label: 'Drop the hero photo', note: 'Landscape, at least 2000px wide',
         }),
-        h('label', { class: 'field', style: { marginTop: '10px' } }, h('span', {}, 'Background video (optional)'), vimeo, h('small', {}, 'A Vimeo link plays behind the title instead of the photo.'))),
+        vertical ? null : h('div', { class: 'field', style: { marginTop: '10px' } }, h('span', {}, 'Background video (optional)'),
+          mediaSlot({
+            get: () => (cs.heroVideo && cs.heroVideo.src ? { type: 'image', src: cs.heroVideo.poster, video: cs.heroVideo.src, orig: cs.heroVideo.orig, bytes: cs.heroVideo.bytes } : null),
+            set: (m) => { cs.heroVideo = m ? { src: m.video, poster: m.src, w: m.w, h: m.h, orig: m.orig, bytes: m.bytes } : null; },
+            kind: 'hero', video: 'background', label: 'Drop a video', note: 'Plays muted on a loop behind the title. Compressed to WebM here first.',
+          }),
+          h('small', {}, 'Or paste a Vimeo link. An uploaded video wins if there are both.'), vimeo)),
       h('div', { class: 'field' }, h('span', {}, 'Bubbles over the hero'), statsBox,
         h('span', { style: { marginTop: '8px' } }, 'Services'), tagPicker(cs, 'services', { noun: 'service' }),
         h('span', { style: { marginTop: '8px' } }, 'Awards'), tagPicker(cs, 'awards', { noun: 'award', example: 'Silver Clio' }),
@@ -1546,7 +1569,7 @@ function summary(p) {
     case 'text': return strip(p.html);
     case 'text2': return strip(p.left);
     case 'gallery': case 'fullGallery': case 'introGallery': { const n = (p.media || []).length; return n ? `${n} item${n === 1 ? '' : 's'}` : 'Empty'; }
-    case 'video': return p.title || (p.vimeo ? 'vimeo.com/' + p.vimeo : p.embed ? embedInfo(p.embed).title : 'No video yet');
+    case 'video': return p.title || (p.file ? 'Uploaded video' : p.vimeo ? 'vimeo.com/' + p.vimeo : p.embed ? embedInfo(p.embed).title : 'No video yet');
     case 'stats': return (p.items || []).map((s) => s.value).filter(Boolean).join(' · ');
     case 'quote': return p.text;
     case 'grid': case 'social': { const n = (p.media || []).length; return n ? `${n} photo${n === 1 ? '' : 's'}` : 'Empty'; }
@@ -1832,42 +1855,44 @@ function embedInfo(embed) {
 }
 function mediaThumb(m) {
   if (!m) return '';
-  if (m.type === 'video') return m.thumb || (m.embed ? embedInfo(m.embed).thumb : '');
+  if (m.type === 'video') return m.poster || m.thumb || (m.embed ? embedInfo(m.embed).thumb : '');
   return m.poster || m.src;
 }
 
-async function compressImage(file, maxW, quality = 0.82) {
+// Resizes (and crops) a photo and saves it as WebP. If the result is still heavy, it steps the
+// quality down, then the size, until it fits `cap` bytes, so a 20 MB original lands well under 2 MB.
+const PHOTO_CAP = 1.6 * 1024 * 1024;
+async function compressImage(file, maxW, { quality = 0.82, crop = null, cap = PHOTO_CAP } = {}) {
   let src;
   try { src = await createImageBitmap(file, { imageOrientation: 'from-image' }); } catch (e) {
-    src = await new Promise((ok, no) => { const im = new Image(); im.onload = () => ok(im); im.onerror = () => no(new Error('Couldn’t read ' + file.name)); im.src = URL.createObjectURL(file); });
+    src = await new Promise((ok, no) => {
+      const im = new Image();
+      im.onload = () => ok(im);
+      im.onerror = () => no(new Error(`Couldn’t read ${file.name}.` + (/hei[cf]/i.test(file.type + file.name) ? ' iPhone HEIC photos need exporting as JPG first.' : '')));
+      im.src = URL.createObjectURL(file);
+    });
   }
-  const sw = src.width || src.naturalWidth;
-  const sh = src.height || src.naturalHeight;
-  const scale = Math.min(1, maxW / sw);
-  const w = Math.round(sw * scale);
-  const hh = Math.round(sh * scale);
-  const c = document.createElement('canvas');
-  c.width = w; c.height = hh;
-  const ctx = c.getContext('2d');
-  ctx.imageSmoothingQuality = 'high';
-  ctx.drawImage(src, 0, 0, w, hh);
-  let blob = await new Promise((ok) => c.toBlob(ok, 'image/webp', quality));
-  if (!blob || blob.type !== 'image/webp') blob = await new Promise((ok) => c.toBlob(ok, 'image/jpeg', 0.86));
-  return { blob, w, h: hh };
-}
-async function videoPoster(file) {
-  const v = document.createElement('video');
-  v.muted = true; v.playsInline = true; v.preload = 'auto';
-  v.src = URL.createObjectURL(file);
-  await new Promise((ok, no) => { v.onloadeddata = ok; v.onerror = () => no(new Error('Couldn’t read that video.')); });
-  await new Promise((ok) => { v.onseeked = ok; v.currentTime = Math.min(0.1, (v.duration || 1) / 2); });
-  const scale = Math.min(1, 1600 / v.videoWidth);
-  const c = document.createElement('canvas');
-  c.width = Math.round(v.videoWidth * scale); c.height = Math.round(v.videoHeight * scale);
-  c.getContext('2d').drawImage(v, 0, 0, c.width, c.height);
-  const blob = await new Promise((ok) => c.toBlob(ok, 'image/webp', 0.8));
-  URL.revokeObjectURL(v.src);
-  return { blob, w: c.width, h: c.height };
+  const iw = src.width || src.naturalWidth;
+  const ih = src.height || src.naturalHeight;
+  const cut = crop ? { x: Math.max(0, crop.x), y: Math.max(0, crop.y), w: Math.min(crop.w, iw), h: Math.min(crop.h, ih) } : { x: 0, y: 0, w: iw, h: ih };
+  const encode = async (scale, q) => {
+    const w = Math.max(1, Math.round(cut.w * scale));
+    const hh = Math.max(1, Math.round(cut.h * scale));
+    const c = document.createElement('canvas');
+    c.width = w; c.height = hh;
+    const ctx = c.getContext('2d');
+    ctx.imageSmoothingQuality = 'high';
+    ctx.drawImage(src, cut.x, cut.y, cut.w, cut.h, 0, 0, w, hh);
+    let blob = await new Promise((ok) => c.toBlob(ok, 'image/webp', q));
+    if (!blob || blob.type !== 'image/webp') blob = await new Promise((ok) => c.toBlob(ok, 'image/jpeg', Math.min(0.86, q + 0.04)));
+    return { blob, w, h: hh };
+  };
+  let scale = Math.min(1, maxW / cut.w);
+  let out = await encode(scale, quality);
+  for (const q of [0.74, 0.66]) { if (out.blob.size <= cap) break; out = await encode(scale, q); }
+  while (out.blob.size > cap && out.w > 900) { scale *= 0.85; out = await encode(scale, 0.7); }
+  if (src.close) src.close();
+  return out;
 }
 function baseName(name, ext) {
   return (R.slugify(String(name).replace(/\.[a-z0-9]+$/i, '')) || 'file').slice(0, 60) + '.' + ext;
@@ -1903,7 +1928,7 @@ async function uploadBlob(blob, name, onProgress) {
     return (await r.json()).url;
   }
   if (blob.size <= DIRECT_MAX) return uploadDirect(path, blob, onProgress);
-  if (!S.bigUploads) throw new Error(`That file is ${(blob.size / 1048576).toFixed(1)} MB. Files over 4 MB need the Blob read-write token set in Vercel (see the README), or put the clip on Vimeo.`);
+  if (!S.bigUploads) throw new Error(`Even compressed, that file is ${fmtBytes(blob.size)}. Files over 4 MB need the Blob read-write token set in Vercel (see the README). Until then, try a shorter clip.`);
   if (!blobClient) blobClient = await import('/builder/vendor/blob-client.2.8.2.js');
   const r = await blobClient.upload(path, blob, {
     access: 'public', handleUploadUrl: '/api/builder/upload', clientPayload: JSON.stringify({ key: S.key }),
@@ -1913,38 +1938,81 @@ async function uploadBlob(blob, name, onProgress) {
   return r.url;
 }
 
-const SIZES = { gallery: 2000, big: 2400, duo: 1600, hero: 2400, bubble: 800, bg: 1600, logo: 400 };
-// Turns a dropped file into a media item: { type: 'image', src, w, h } or a loop { type:'image', src: poster, video, w, h }
-async function processFile(file, kind, { video = false, raw = false } = {}, onProgress) {
-  const isVideo = /^video\/(mp4|webm|quicktime)$/.test(file.type);
+const SIZES = { gallery: 2000, big: 2400, duo: 1600, hero: 2400, bubble: 800, bg: 1600, logo: 400, vhero: 1600 };
+// The crop step's starting shape for each kind of slot
+const CROP_START = { bubble: '1:1', vhero: '9:16' };
+const isPhoto = (f) => /^image\//.test(f.type) && !/^image\/(gif|svg\+xml)$/.test(f.type);
+
+// Runs the crop step for the photos in a drop (logos, GIFs, SVGs and videos skip it).
+// Resolves to [{ file, crop }] in drop order; photos cancelled in the crop step are left out.
+async function prepareFiles(files, kind, { raw = false } = {}) {
+  const croppable = raw || kind === 'logo' ? [] : files.filter(isPhoto);
+  if (!croppable.length) return files.map((file) => ({ file, crop: null }));
+  const done = await cropPhotos(croppable, { ratio: CROP_START[kind] || 'original', maxW: SIZES[kind] || 2000 });
+  const picked = new Map(done.map((d) => [d.file, d.crop]));
+  return files.filter((f) => !croppable.includes(f) || picked.has(f)).map((file) => ({ file, crop: picked.get(file) || null }));
+}
+
+// Turns a dropped file into a media item:
+//   photo  { type: 'image', src, w, h }
+//   loop   { type: 'image', src: poster, video, w, h }            (video: 'loop' or 'background')
+//   clip   { type: 'video', file, poster, w, h, title }           (video: 'clip', keeps sound)
+// Every item also carries orig/bytes: the file's size before and after compression.
+// onProgress(pct, phase) with phase 'compress' or 'upload'.
+async function processFile(file, kind, { video = false, raw = false, crop = null } = {}, onProgress) {
+  const isVideo = /^video\//.test(file.type) || /\.(mp4|m4v|mov|webm|mkv)$/i.test(file.name);
   const isImage = /^image\//.test(file.type);
-  if (isVideo && !video) throw new Error(`${file.name}: videos go in as Vimeo links here, or use a Big image or Two-up block for a short loop.`);
+  const up = (pct) => onProgress && onProgress(pct, 'upload');
+  if (isVideo && !video) throw new Error(`${file.name}: videos go in a gallery, a Video block, or a Big image, Two-up, Photo grid or Social row as a loop.`);
   if (!isVideo && !isImage) throw new Error(`${file.name} isn’t a photo or video.`);
   if (isVideo) {
-    if (file.type === 'video/quicktime') throw new Error(`${file.name} is a .mov. Export it as MP4 first.`);
-    if (file.size > 40 * 1024 * 1024) throw new Error(`${file.name} is ${(file.size / 1048576).toFixed(0)} MB. Compress it under 40 MB first (HandBrake does this well).`);
-    const poster = await videoPoster(file);
+    if (file.size > 2 * 1024 * 1024 * 1024) throw new Error(`${file.name} is over 2 GB. Trim it down first.`);
+    const mode = video === true ? 'loop' : video;
+    let out = file, w = 0, hh = 0;
+    try {
+      const small = kind === 'vhero'; // vertical hero cards never show bigger than 720 wide
+      const r = await compressVideo(file, { mode, maxLong: small ? 1280 : 1920, maxShort: small ? 720 : 1080, onProgress: (p) => onProgress && onProgress(p, 'compress') });
+      if (r.blob.size < file.size || !/^video\/(mp4|webm)$/.test(file.type)) { out = r.blob; w = r.w; hh = r.h; }
+    } catch (e) {
+      if (e.code !== 'unsupported') throw e;
+      if (!/^video\/(mp4|webm)$/.test(file.type)) throw new Error(`This browser can’t convert ${file.name}. Open the builder in Chrome, or export the video as MP4.`);
+      toast('This browser can’t make WebM, so the video goes up as it is. Chrome compresses it.', '', 7000);
+    }
+    const still = await videoStill(out);
+    const ext = out.type === 'video/webm' ? 'webm' : 'mp4';
     const [pUrl, vUrl] = await Promise.all([
-      uploadBlob(poster.blob, baseName(file.name, 'webp'), null),
-      uploadBlob(file, baseName(file.name, file.type === 'video/webm' ? 'webm' : 'mp4'), onProgress),
+      uploadBlob(still.blob, baseName(file.name, 'webp'), null),
+      uploadBlob(out, baseName(file.name, ext), up),
     ]);
-    if (file.size > 20 * 1024 * 1024) toast(`${file.name} is over 20 MB. It’ll work, but a smaller file loads faster.`, '', 7000);
-    return { type: 'image', src: pUrl, video: vUrl, w: poster.w, h: poster.h, alt: '' };
+    const size = { w: w || still.vw, h: hh || still.vh, orig: file.size, bytes: out.size };
+    if (mode === 'clip') return { type: 'video', file: vUrl, poster: pUrl, title: file.name.replace(/\.[a-z0-9]+$/i, ''), ...size };
+    return { type: 'image', src: pUrl, video: vUrl, alt: '', ...size };
   }
   if (raw || file.type === 'image/gif' || file.type === 'image/svg+xml') {
-    if (file.size > 6 * 1024 * 1024) toast(`${file.name} is ${(file.size / 1048576).toFixed(1)} MB, which is heavy for the homepage.`, '', 7000);
+    if (file.size > 6 * 1024 * 1024) toast(`${file.name} is ${fmtBytes(file.size)}, which is heavy for the homepage.`, '', 7000);
     const ext = file.type === 'image/gif' ? 'gif' : file.type === 'image/svg+xml' ? 'svg' : file.type === 'image/webp' ? 'webp' : file.type === 'image/png' ? 'png' : 'jpg';
-    return { type: 'image', src: await uploadBlob(file, baseName(file.name, ext), onProgress), alt: '' };
+    return { type: 'image', src: await uploadBlob(file, baseName(file.name, ext), up), alt: '', orig: file.size, bytes: file.size };
   }
+  onProgress && onProgress(0, 'compress');
   const max = SIZES[kind] || 2000;
-  const big = await compressImage(file, max);
+  const big = await compressImage(file, max, { crop });
   const ext = big.blob.type === 'image/webp' ? 'webp' : 'jpg';
   if (kind === 'hero' && big.w > 1300) {
-    const small = await compressImage(file, 1200);
-    const [bigUrl, smallUrl] = await Promise.all([uploadBlob(big.blob, baseName(file.name, ext), onProgress), uploadBlob(small.blob, baseName(file.name + '-1200', ext), null)]);
-    return { type: 'image', src: bigUrl, srcset: `${smallUrl} 1200w, ${bigUrl} ${big.w}w`, w: big.w, h: big.h, alt: '' };
+    const small = await compressImage(file, 1200, { crop });
+    const [bigUrl, smallUrl] = await Promise.all([uploadBlob(big.blob, baseName(file.name, ext), up), uploadBlob(small.blob, baseName(file.name + '-1200', ext), null)]);
+    return { type: 'image', src: bigUrl, srcset: `${smallUrl} 1200w, ${bigUrl} ${big.w}w`, w: big.w, h: big.h, alt: '', orig: file.size, bytes: big.blob.size };
   }
-  return { type: 'image', src: await uploadBlob(big.blob, baseName(file.name, ext), onProgress), w: big.w, h: big.h, alt: '' };
+  return { type: 'image', src: await uploadBlob(big.blob, baseName(file.name, ext), up), w: big.w, h: big.h, alt: '', orig: file.size, bytes: big.blob.size };
+}
+
+// One toast for a batch: "3 photos: 38 MB → 2.9 MB, 92% smaller"
+function savedToast(items) {
+  const done = items.filter((m) => m && m.orig && m.bytes);
+  if (!done.length) return;
+  const a = done.reduce((t, m) => t + m.orig, 0), b = done.reduce((t, m) => t + m.bytes, 0);
+  const vids = done.filter((m) => m.video || m.type === 'video').length;
+  const what = vids === done.length ? (vids === 1 ? 'Video' : `${vids} videos`) : vids ? `${done.length} files` : done.length === 1 ? 'Photo' : `${done.length} photos`;
+  toast(`${what}: ${savedLine(a, b)}`, '', 6000);
 }
 
 function pickFiles({ multiple = false, accept = 'image/*' } = {}) {
@@ -1974,13 +2042,16 @@ function mediaTray(p, { note, group = 'media', kind = 'gallery', video = false, 
   p.media = p.media || [];
   const tray = h('div', { class: 'tray', 'data-owner': p._id, 'data-group': group });
   const full = () => max && p.media.length >= max;
+  const clips = vimeo && group === 'media'; // galleries take uploaded videos (with sound) as well as Vimeo links
   const tile = (m) => {
     const thumb = mediaThumb(m);
     const what = m.type === 'video' ? 'vimeo' : m.video ? 'loop' : 'photo';
-    const t = h('div', { class: 'tile' + (m._up ? ' uploading' : ''), 'data-mid': m._id, 'data-kind': what, title: m.type === 'video' ? (m.title || (m.embed ? embedInfo(m.embed).title : 'Vimeo')) : (m.alt || 'Drag to reorder') },
+    const saved = m.orig && m.bytes ? ' · ' + savedLine(m.orig, m.bytes) : '';
+    const t = h('div', { class: 'tile' + (m._up ? ' uploading' : ''), 'data-mid': m._id, 'data-kind': what, title: (m.type === 'video' ? (m.title || (m.embed ? embedInfo(m.embed).title : 'Vimeo')) : (m.alt || 'Drag to reorder')) + saved },
       thumb ? h('img', { src: thumb, alt: m.alt || '', loading: 'lazy', draggable: 'false' }) : null,
       what === 'loop' ? h('span', { class: 'badge' }, '▶ Loop') : null,
-      m.type === 'video' ? h('span', { class: 'badge' }, '▶ Vimeo') : h('button', {
+      m._up ? h('span', { class: 'phase' }) : null,
+      m.type === 'video' ? h('span', { class: 'badge' }, m.file ? '▶ Video' : '▶ Vimeo') : h('button', {
         type: 'button', class: 'alt' + (m.alt ? ' has' : ''), title: m.alt ? 'Alt text: ' + m.alt : 'Describe this photo for screen readers',
         onclick: () => altModal(m, () => { t.querySelector('.alt').classList.toggle('has', !!m.alt); typed(); }),
       }, 'Alt'),
@@ -1992,30 +2063,40 @@ function mediaTray(p, { note, group = 'media', kind = 'gallery', video = false, 
       toast(`This block holds up to ${max}. The extra ${p.media.length + files.length - max === 1 ? 'one was' : 'ones were'} left out.`, '', 6000);
       files = files.slice(0, Math.max(0, max - p.media.length));
     }
-    for (const f of files) {
-      const temp = { _id: uid(), type: 'image', src: URL.createObjectURL(f), alt: '', _up: true };
+    const prepped = await prepareFiles(files, kind);
+    const made = [];
+    for (const { file: f, crop } of prepped) {
+      const temp = { _id: uid(), type: 'image', src: isPhoto(f) ? URL.createObjectURL(f) : '', alt: '', _up: true };
       p.media.push(temp);
       const t = tile(temp);
       tray.insertBefore(t, $('.add', tray));
+      const phase = $('.phase', t);
       try {
         startUpload();
-        const m = await processFile(f, kind, { video }, (pct) => t.style.setProperty('--p', pct + '%'));
-        URL.revokeObjectURL(temp.src);
-        Object.assign(temp, m); delete temp._up;
-        t.classList.remove('uploading');
-        $('img', t).src = temp.src;
+        const m = await processFile(f, kind, { video: video ? 'loop' : clips ? 'clip' : false, crop }, (pct, ph) => {
+          t.style.setProperty('--p', pct + '%'); t.dataset.phase = ph;
+          if (phase) phase.textContent = ph === 'compress' ? (pct ? `Compressing ${pct}%` : 'Compressing') : `Uploading ${pct}%`;
+        });
+        if (temp.src) URL.revokeObjectURL(temp.src);
+        delete temp._up; delete temp.src;
+        Object.assign(temp, m);
+        const fresh = tile(temp);
+        t.replaceWith(fresh);
+        made.push(temp);
         commit({ redraw: false });
       } catch (e) {
         p.media = p.media.filter((x) => x !== temp); t.remove();
         toast(e.message, 'err', 7000);
       } finally { endUpload(); }
     }
+    savedToast(made);
   };
-  const accept = group === 'logos' ? 'image/svg+xml,image/png,image/webp' : video ? 'image/*,video/mp4,video/webm' : 'image/*';
+  const vids = 'video/mp4,video/webm,video/quicktime,.mov,.m4v';
+  const accept = group === 'logos' ? 'image/svg+xml,image/png,image/webp' : video || clips ? 'image/*,' + vids : 'image/*';
   tray.append(...p.media.map(tile),
     h('button', { type: 'button', class: 'tile add', onclick: async () => { if (full()) { toast(`This block holds up to ${max}.`); return; } addFiles(await pickFiles({ multiple: true, accept })); } }, add));
   dropTarget(tray, addFiles);
-  const moveNote = group === 'logos' ? ' Drag to reorder.' : group === 'photos' ? ' Drag tiles to reorder, or move them to another grid or row.' : ' Drag tiles to reorder or move them to another gallery.';
+  const moveNote = group === 'logos' || group === 'verticals' ? ' Drag to reorder.' : group === 'photos' ? ' Drag tiles to reorder, or move them to another grid or row.' : ' Drag tiles to reorder or move them to another gallery.';
   if (!vimeo) {
     return h('div', { class: 'stack tight' }, tray, note ? h('small', { class: 'note' }, note + moveNote) : null);
   }
@@ -2048,6 +2129,7 @@ function altModal(m, done) {
 
 // a single photo (or loop) slot
 function mediaSlot({ get, set, kind, video = false, raw = false, label = 'Drop a photo', note = '', accept }) {
+  // video: false, true/'loop' (photo or muted loop), 'background' (video only, high quality, muted)
   const slot = h('div', { class: 'slot', tabindex: '0', role: 'button' });
   const draw = () => {
     const m = get();
@@ -2058,6 +2140,7 @@ function mediaSlot({ get, set, kind, video = false, raw = false, label = 'Drop a
       slot.append(m.video
         ? h('video', { src: m.video, poster: m.src, muted: true, loop: true, autoplay: true, playsinline: true })
         : h('img', { src: m.src, alt: m.alt || '' }),
+      ...(m.orig && m.bytes && m.orig > m.bytes ? [h('span', { class: 'saved', title: 'Compressed in the browser before upload' }, savedLine(m.orig, m.bytes))] : []),
       h('div', { class: 'slot-tools' },
         h('button', { type: 'button', onclick: (e) => { e.stopPropagation(); choose(); } }, 'Replace'),
         h('button', { type: 'button', onclick: (e) => { e.stopPropagation(); set(null); draw(); commit({ redraw: false }); } }, 'Remove')));
@@ -2066,22 +2149,29 @@ function mediaSlot({ get, set, kind, video = false, raw = false, label = 'Drop a
     }
   };
   const handle = async (files) => {
-    const f = files[0];
-    if (!f) return;
-    const bar = h('div', { class: 'bar' });
+    if (!files[0]) return;
+    if (video === 'background' && !/^video\/|\.(mp4|m4v|mov|webm)$/i.test(files[0].type + ' ' + files[0].name)) { toast('Drop a video file here.', 'err'); return; }
+    const [one] = await prepareFiles(files.slice(0, 1), kind, { raw });
+    if (!one) return;
+    const bar = h('div', { class: 'bar' }, h('span', {}));
     slot.append(bar);
     try {
       startUpload();
-      const m = await processFile(f, kind, { video, raw }, (pct) => bar.style.setProperty('--p', pct + '%'));
+      const m = await processFile(one.file, kind, { video, raw, crop: one.crop }, (pct, ph) => {
+        bar.style.setProperty('--p', pct + '%'); bar.dataset.phase = ph;
+        bar.firstChild.textContent = ph === 'compress' ? (pct ? `Compressing ${pct}%` : 'Compressing…') : `Uploading ${pct}%`;
+      });
       set(m);
       draw();
       commit({ redraw: false });
+      savedToast([m]);
     } catch (e) {
       toast(e.message, 'err', 7000);
       bar.remove();
     } finally { endUpload(); }
   };
-  const choose = async () => handle(await pickFiles({ accept: accept || (video ? 'image/*,video/mp4,video/webm' : 'image/*') }));
+  const vids = 'video/mp4,video/webm,video/quicktime,.mov,.m4v';
+  const choose = async () => handle(await pickFiles({ accept: accept || (video === 'background' ? vids : video ? 'image/*,' + vids : 'image/*') }));
   slot.addEventListener('click', () => { if (!slot.classList.contains('filled')) choose(); });
   slot.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); choose(); } });
   dropTarget(slot, handle);
@@ -2092,20 +2182,50 @@ function mediaSlot({ get, set, kind, video = false, raw = false, label = 'Drop a
 function videoEditor(p) {
   const box = h('div', { style: { display: 'grid', gap: '10px' } });
   const draw = () => {
+    if (p.file) {
+      box.replaceChildren(
+        h('div', { class: 'vid-card' }, h('video', { class: 'thumb', src: p.file, poster: p.poster, controls: true, playsinline: true, preload: 'none' }),
+          h('div', {}, h('div', { class: 't' }, p.title || 'Video'), h('div', { class: 's' }, [p.w && p.h ? `${p.w} × ${p.h}` : '', p.orig ? savedLine(p.orig, p.bytes) : ''].filter(Boolean).join(' · ')))),
+        h('div', { class: 'vimeo-add' },
+          h('button', { type: 'button', class: 'btn small', onclick: async () => upload(await pickFiles({ accept: 'video/mp4,video/webm,video/quicktime,.mov,.m4v' })) }, 'Replace video'),
+          h('button', { type: 'button', class: 'btn small ghost', onclick: () => { delete p.file; delete p.poster; delete p.orig; delete p.bytes; draw(); commit({ redraw: false }); } }, 'Use Vimeo instead')));
+      return;
+    }
     const info = p.embed ? embedInfo(p.embed) : p.vimeo ? { thumb: p.thumb, title: p.title || 'Vimeo video', link: 'https://vimeo.com/' + p.vimeo + (p.hash ? '/' + p.hash : '') } : null;
     const input = h('input', { class: 'input', value: info ? info.link : '', placeholder: 'https://vimeo.com/123456789', 'aria-label': 'Vimeo link' });
     const apply = async () => {
       const v = parseVimeo(input.value);
       if (!v) { toast('That doesn’t look like a Vimeo link.', 'err'); return; }
       const m = await vimeoInfo(v);
-      delete p.embed;
+      delete p.embed; delete p.file; delete p.poster; delete p.orig; delete p.bytes;
       Object.assign(p, { vimeo: m.vimeo, hash: m.hash, w: m.w, h: m.h, title: m.title, thumb: m.thumb });
       draw(); commit({ redraw: false });
     };
     input.addEventListener('keydown', (e) => { if (e.key === 'Enter') { e.preventDefault(); apply(); } });
+    const drop = h('button', { type: 'button', class: 'vid-drop', onclick: async () => upload(await pickFiles({ accept: 'video/mp4,video/webm,video/quicktime,.mov,.m4v' })) },
+      h('b', {}, 'Upload a video'), h('small', {}, 'MP4, MOV or WebM. It’s compressed to WebM here before it uploads, sound and all.'));
+    dropTarget(drop, upload);
     box.replaceChildren(
-      info ? h('div', { class: 'vid-card' }, h('div', { class: 'thumb', style: { backgroundImage: info.thumb ? `url("${info.thumb}")` : '' } }), h('div', {}, h('div', { class: 't' }, info.title), h('div', { class: 's' }, info.link))) : null,
-      h('div', { class: 'vimeo-add' }, input, h('button', { type: 'button', class: 'btn small', onclick: apply }, info ? 'Swap video' : 'Add video')));
+      ...(info ? [h('div', { class: 'vid-card' }, h('div', { class: 'thumb', style: { backgroundImage: info.thumb ? `url("${info.thumb}")` : '' } }), h('div', {}, h('div', { class: 't' }, info.title), h('div', { class: 's' }, info.link)))] : []),
+      drop,
+      h('div', { class: 'vimeo-add' }, input, h('button', { type: 'button', class: 'btn small', onclick: apply }, info ? 'Swap video' : 'Add Vimeo link')));
+  };
+  const upload = async (files) => {
+    const f = files && files[0];
+    if (!f) return;
+    const bar = h('div', { class: 'bar static' }, h('span', {}, 'Compressing…'));
+    box.append(bar);
+    try {
+      startUpload();
+      const m = await processFile(f, 'video', { video: 'clip' }, (pct, ph) => {
+        bar.style.setProperty('--p', pct + '%'); bar.dataset.phase = ph;
+        bar.firstChild.textContent = ph === 'compress' ? (pct ? `Compressing ${pct}%` : 'Compressing…') : `Uploading ${pct}%`;
+      });
+      delete p.embed; delete p.vimeo; delete p.hash; delete p.thumb;
+      Object.assign(p, { file: m.file, poster: m.poster, w: m.w, h: m.h, title: m.title, orig: m.orig, bytes: m.bytes });
+      commit();
+      savedToast([m]);
+    } catch (e) { toast(e.message, 'err', 7000); bar.remove(); } finally { endUpload(); }
   };
   draw();
   return box;
@@ -2295,7 +2415,8 @@ function problems(cs) {
   if (!cs.title.trim()) stop.push('Give the project a name.');
   if (!/^[a-z0-9]+(-[a-z0-9]+)*$/.test(cs.slug)) stop.push('The page link can only use lowercase letters, numbers and dashes.');
   if (S.uploads) stop.push('Wait for uploads to finish.');
-  if (!cs.heroImage && !cs.heroVimeo) warn.push('There’s no hero photo or video yet.');
+  if (!cs.heroImage && !cs.heroVimeo && !(cs.heroVideo && cs.heroVideo.src)) warn.push('There’s no hero photo or video yet.');
+  if (cs.heroLayout === 'vertical' && !(cs.heroVertical && cs.heroVertical.media.length)) warn.push('The hero is set to vertical videos, but none are added yet.');
   if (!cs.intro) warn.push('The big intro line is empty.');
   if (!cs.description) warn.push('There’s no description for Google and link previews (Page settings).');
   const L = cs.listing;

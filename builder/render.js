@@ -50,8 +50,14 @@
     w = +w || 16; h = +h || 9;
     return (h / w * 100).toFixed(4).replace(/\.?0+$/, '') + '%';
   }
+  // An uploaded video (WebM made in the builder): plays in place with controls
+  function nativeVideo(m, cls) {
+    return '<video' + (cls ? ' class="' + cls + '"' : '') + ' src="' + attr(m.file) + '"' + (m.poster ? ' poster="' + attr(m.poster) + '"' : '') +
+      ' width="' + (+m.w || 1920) + '" height="' + (+m.h || 1080) + '" controls playsinline preload="none"' + (m.title ? ' title="' + attr(m.title) + '"' : '') + '></video>';
+  }
   // Vimeo video for galleries (hidden collection, read by the gallery script)
   function galleryVideo(m) {
+    if (m.file) return '<div style="padding-top:' + ratioPad(m.w, m.h) + '" class="w-video w-embed" data-native-video="">' + nativeVideo(m) + '</div>';
     if (m.embed) return m.embed;
     return '<div style="padding-top:' + ratioPad(m.w, m.h) + '" class="w-video w-embed"><iframe src="' + attr(vimeoSrc(m)) +
       '" width="' + (+m.w || 1920) + '" height="' + (+m.h || 1080) + '" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen=""' +
@@ -61,7 +67,7 @@
     return '<img decoding="async" src="' + attr(m.src) + '" loading="lazy" alt="' + attr(m.alt || '') + '" />';
   }
   function collection(media) {
-    var out = (media || []).filter(function (m) { return m && (m.type === 'video' ? (m.embed || m.vimeo) : m.src); })
+    var out = (media || []).filter(function (m) { return m && (m.type === 'video' ? (m.embed || m.vimeo || m.file) : m.src); })
       .map(function (m) { return m.type === 'video' ? galleryVideo(m) : galleryImage(m); });
     return '<div class="p-cs__layouts__gallery__collections">' + (out.length ? '\n' + ind(2, out) + '\n' : '') + '</div>';
   }
@@ -137,7 +143,7 @@
     ].join('\n');
   };
   P.video = function (p) {
-    var el = p.embed || ('<div style="padding-top:' + ratioPad(p.w, p.h) + '" class="p-cs__video__el w-video w-embed"><iframe src="' + attr(vimeoSrc(p)) +
+    var el = p.file ? '<div style="padding-top:' + ratioPad(p.w, p.h) + '" class="p-cs__video__el w-video w-embed">' + nativeVideo(p) + '</div>' : p.embed || ('<div style="padding-top:' + ratioPad(p.w, p.h) + '" class="p-cs__video__el w-video w-embed"><iframe src="' + attr(vimeoSrc(p)) +
       '" width="' + (+p.w || 1920) + '" height="' + (+p.h || 1080) + '" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" title="' + attr(p.title || '') + '"></iframe></div>');
     return ['<div class="p-cs__video">', '  <div class="c">', '    <div class="p-cs__video__inner">', ind(6, el), '    </div>', '  </div>', '</div>'].join('\n');
   };
@@ -373,6 +379,29 @@
       (img.sizes ? ' sizes="' + attr(img.sizes) + '"' : '') + (img.srcset ? ' srcset="' + attr(img.srcset) + '"' : '') + ' class="p-cs__hero__img" />';
   }
 
+  // Vertical hero: up to three 9:16 cards (loops or photos) over a blurred copy of the middle one
+  function heroVertical(media) {
+    var list = (media || []).filter(function (m) { return m && m.src; }).slice(0, 3);
+    if (!list.length) return '';
+    var mid = list[list.length === 3 ? 1 : 0];
+    var card = function (m, i) {
+      var inner = m.video
+        ? '<video src="' + attr(m.video) + '" poster="' + attr(m.src) + '" autoplay muted loop playsinline preload="auto" aria-hidden="true"></video>'
+        : '<img src="' + attr(m.src) + '" alt="' + attr(m.alt || '') + '" decoding="async" />';
+      return '                <div class="p-cs__hero__vert__card v--' + (i + 1) + '">' + inner + '</div>';
+    };
+    return '\n            <img class="p-cs__hero__vert-bg" src="' + attr(mid.src) + '" alt="" aria-hidden="true" decoding="async" />' +
+      '\n            <div class="p-cs__hero__vert" data-count="' + list.length + '">\n              <div class="p-cs__hero__vert__row">\n' +
+      list.map(card).join('\n') + '\n              </div>\n            </div>';
+  }
+
+  // Uploaded background video for the hero: muted, looping, fades in over the photo
+  function heroVideo(v) {
+    if (!v || !v.src) return '';
+    return '\n            <video id="p-cs__hero__native" class="p-cs__hero__native" src="' + attr(v.src) + '"' + (v.poster ? ' poster="' + attr(v.poster) + '"' : '') +
+      ' autoplay muted loop playsinline preload="auto" aria-hidden="true" onplaying="this.classList.add(\'is-on\')"></video>';
+  }
+
   function newPageId() {
     var s = '';
     for (var i = 0; i < 24; i++) s += '0123456789abcdef'.charAt(Math.floor(Math.random() * 16));
@@ -381,6 +410,7 @@
 
   function page(template, d) {
     var stats = d.stats || [];
+    var vertical = d.heroLayout === 'vertical' && d.heroVertical && (d.heroVertical.media || []).some(function (m) { return m && m.src; });
     var vals = {
       pageId: d.pageId || newPageId(),
       meta: meta(d),
@@ -389,8 +419,8 @@
       title: esc(d.title),
       client: esc(d.client),
       subtitle: esc(d.subtitle),
-      heroImg: heroImg(d.heroImage),
-      heroVimeo: esc(d.heroVimeo || ''),
+      heroImg: heroImg(d.heroImage) + (vertical ? heroVertical(d.heroVertical.media) : heroVideo(d.heroVideo)),
+      heroVimeo: vertical || (d.heroVideo && d.heroVideo.src) ? '' : esc(d.heroVimeo || ''),
       body: body(d)
     };
     for (var i = 0; i < 4; i++) {

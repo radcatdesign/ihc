@@ -42,11 +42,22 @@ Go to `/builder` on the site. It lists every case study. Open one, or start a ne
 
 - **Section:** the colored accordion panels on the page. Drag the dots to reorder them. The palette button in a section's header sets its color (Auto follows the page's usual color order).
 - **Words:** Text, Two columns, Photo + text, Quote, Marquee (giant scrolling words), Steps.
-- **Photos and video:** Gallery, Wide gallery, Big image (photo or looping MP4), Two-up, Photo grid (three, four or mosaic), Social row (vertical clips), Before + after (drag slider), Video.
+- **Photos and video:** Gallery, Wide gallery, Big image (photo or loop), Two-up, Photo grid (three, four or mosaic), Social row (vertical clips), Before + after (drag slider), Video (an uploaded video or a Vimeo link).
 - **Results and credits:** Stats, Logos, Credits.
 - **Intro photos:** the slider next to the intro text, only in the Intro.
 
-Hover a block in the left column to see a real render of it (on a phone, the Add sheet shows the same previews). The preview images live in `builder/previews/`. Drag a block onto the page, or click it to add it to the selected section. Photos dropped in are resized and compressed to WebP in the browser, then stored in Vercel Blob. Videos inside galleries are Vimeo links. The live preview on the right is the real page template. Work in progress is saved in the browser until you publish, and Undo/Redo covers everything.
+Hover a block in the left column to see a real render of it (on a phone, the Add sheet shows the same previews). The preview images live in `builder/previews/`. Drag a block onto the page, or click it to add it to the selected section. The live preview on the right is the real page template. Work in progress is saved in the browser until you publish, and Undo/Redo covers everything.
+
+**Photos** go through a crop step first (Original, Free, Square, 4:5, 3:2, 16:9, 9:16; bubble photos start square). Logos, GIFs and SVGs skip it. Then they're resized and compressed to WebP in the browser: if the result is still over about 1.6 MB, the quality and then the size step down until it fits, so a 15 MB camera photo lands well under 1 MB. A toast shows the saving ("14 MB → 676 KB, 95% smaller") and the slot keeps it on the photo. Everything is stored in Vercel Blob.
+
+**Videos** (MP4, MOV or WebM) are converted to WebM (VP9, with Opus sound where it's kept) in the browser before they upload, with a progress readout and the saving shown at the end. Long side up to 1920 (1280 for the vertical hero), up to 30 fps. Loops drop the sound; videos in galleries and the Video block keep it. Conversion runs at roughly real time on a recent laptop in Chrome or Edge. Browsers that can't make WebM upload MP4 and WebM files as they are. The encoder is [mediabunny](https://mediabunny.dev) 1.65.2 (MPL-2.0), vendored in `builder/vendor/` and only loaded when a video is dropped in. Where videos go:
+
+- Galleries: uploaded videos play in the slider with controls (Vimeo links still work).
+- Video block: upload a file or paste a Vimeo link.
+- Hero: a background video (muted loop) instead of a Vimeo link.
+- Big image, Two-up, Photo grid, Social row: muted loops, as before.
+
+**Hero layout** is either Photo or video (the usual) or **Vertical videos**: up to three 9:16 cards (Reels, TikToks, Stories; photos work too) standing in the middle over a blurred copy of the middle one, with the big title running behind them and the client and services along the bottom. On phones they stack: cards, then the title, then client and services.
 
 **Templates** are saved layouts (intro blocks and sections, with their colors and settings). In a case study, the Templates button saves the current layout as one, either just the layout or with the words and photos, or loads one in (replace the blocks or add its sections to the end; Undo puts things back). The Templates tab on the case study list lists them, opens them in the same editor to change, deletes them, and starts new case studies from them. They live in `content/templates/`.
 
@@ -65,7 +76,7 @@ In the Vercel project, **Settings > Environment Variables** (Production):
 | `BUILDER_PASSWORD` | The password for `/builder`. Share it with whoever edits case studies |
 | `GITHUB_TOKEN` | A GitHub fine-grained token: Repository access **Only select repositories > radcatdesign/ihc**, Permissions **Contents: Read and write** |
 | `BLOB_STORE_ID` | Added for you when a **public** Blob store is connected to the project (**Storage** tab). A private store won't work: the photos are for the public site |
-| `BLOB_READ_WRITE_TOKEN` | Optional. Only needed to upload files over 4 MB (video loops) straight from the browser. Copy it from the Blob store's `.env.local` tab |
+| `BLOB_READ_WRITE_TOKEN` | Needed for any upload that's still over 4 MB after compression (most hero and full-length videos), which goes straight from the browser to Blob. Copy it from the Blob store's `.env.local` tab |
 
 Optional: `GITHUB_REPO` (default `radcatdesign/ihc`) and `GITHUB_BRANCH` (default `main`). Redeploy after adding variables.
 

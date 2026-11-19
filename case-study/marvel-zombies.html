@@ -20,7 +20,7 @@ window.addEventListener('load',function(){var go=function(){document.querySelect
     <meta content="summary_large_image" name="twitter:card" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link href="/css/ihc.eb4fc740a7.css" rel="stylesheet" type="text/css" />
-    <link href="/css/cs-blocks.3a16a7e227.css" rel="stylesheet" type="text/css" />
+    <link href="/css/cs-blocks.1c34be0207.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css?family=Archivo:300,400,500,600,700%7CArchivo+Black&amp;display=swap" rel="stylesheet" />
@@ -3603,6 +3603,15 @@ window.addEventListener('load',function(){var go=function(){document.querySelect
                 mainImgArr.push(`<div class="swiper-slide" data-media-type="image" data-caption="${img.alt}"><img decoding="async" src="${img.src}" alt="${img.alt}" class="p-cs__layouts__gallery__slide__img"></div>`);
               });
               videos.forEach((v) => {
+                const nativeVid = v && v.hasAttribute('data-native-video') ? v.querySelector('video') : null;
+                if (nativeVid) {
+                  // an uploaded video: poster in the thumbs, the player itself in the slide
+                  const nw = +nativeVid.getAttribute('width'), nh = +nativeVid.getAttribute('height');
+                  const poster = nativeVid.getAttribute('poster') || '';
+                  thumbVideoArr.push(`<div class="swiper-slide v--full-gallery-thumb"><img decoding="async" src="${poster}" class="p-cs__layouts__gallery__thumb__img"><div class="p-cs__layouts__gallery__thumb__box"></div></div>`);
+                  mainVideoArr.push(`<div class="swiper-slide v--native-video" data-media-type="video" data-native-video="t" data-is-vertical="${nw < nh}" data-is-square="${nw === nh}"><video class="p-cs__layouts__gallery__slide__video" src="${nativeVid.getAttribute('src')}" poster="${poster}" controls playsinline preload="none"></video></div>`);
+                  return;
+                }
                 if (v && v.firstChild && v.firstChild.src && v.firstChild.src.indexOf('embedly') > -1) {
                   const params = new URLSearchParams(v.firstChild.src.split('?')[1]);
                   const isVertical = (+v.firstChild.width < +v.firstChild.height) && (+v.firstChild.width !== +v.firstChild.height);
@@ -3801,6 +3810,15 @@ window.addEventListener('load',function(){var go=function(){document.querySelect
                 mainImgArr.push(`<div class="swiper-slide" data-media-type="image" data-caption="${img.alt}"><img decoding="async" src="${img.src}" alt="${img.alt}" class="p-cs__layouts__gallery__slide__img"></div>`);
               });
               videos.forEach((v) => {
+                const nativeVid = v && v.hasAttribute('data-native-video') ? v.querySelector('video') : null;
+                if (nativeVid) {
+                  // an uploaded video: poster in the thumbs, the player itself in the slide
+                  const nw = +nativeVid.getAttribute('width'), nh = +nativeVid.getAttribute('height');
+                  const poster = nativeVid.getAttribute('poster') || '';
+                  thumbVideoArr.push(`<div class="swiper-slide v--full-gallery-thumb"><img decoding="async" src="${poster}" class="p-cs__layouts__gallery__thumb__img"><div class="p-cs__layouts__gallery__thumb__box"></div></div>`);
+                  mainVideoArr.push(`<div class="swiper-slide v--native-video" data-media-type="video" data-native-video="t" data-is-vertical="${nw < nh}" data-is-square="${nw === nh}"><video class="p-cs__layouts__gallery__slide__video" src="${nativeVid.getAttribute('src')}" poster="${poster}" controls playsinline preload="none"></video></div>`);
+                  return;
+                }
                 if (v && v.firstChild && v.firstChild.src && v.firstChild.src.indexOf('embedly') > -1) {
                   const params = new URLSearchParams(v.firstChild.src.split('?')[1]);
                   const isVertical = (+v.firstChild.width < +v.firstChild.height) && (+v.firstChild.width !== +v.firstChild.height);
