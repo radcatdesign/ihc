@@ -665,8 +665,8 @@ async function newTemplateModal() {
   const name = h('input', { class: 'input', required: true, placeholder: 'Premiere activation' });
   const desc = h('input', { class: 'input', placeholder: 'Launch events with a photo moment and press' });
   const from = h('select', { class: 'select' }, h('option', { value: '' }, 'A blank template'),
-    list.length ? h('optgroup', { label: 'Templates' }, list.map((t) => h('option', { value: 'tpl:' + t.slug }, 'A copy of ' + t.name))) : null,
-    h('optgroup', { label: 'Case studies (layout only)' }, S.index.caseStudies.slice().sort((a, b) => a.title.localeCompare(b.title)).map((c) => h('option', { value: 'cs:' + c.slug }, 'The layout of ' + c.title))));
+    list.length ? h('optgroup', { label: 'Copy a template' }, list.map((t) => h('option', { value: 'tpl:' + t.slug }, t.name))) : null,
+    h('optgroup', { label: 'Use the layout of a case study' }, S.index.caseStudies.slice().sort((a, b) => a.title.localeCompare(b.title)).map((c) => h('option', { value: 'cs:' + c.slug }, c.title))));
   const go = h('button', { class: 'btn primary', type: 'submit' }, 'Start building');
   const m = modal(h('form', {
     class: 'modal',
@@ -866,7 +866,7 @@ async function newCaseStudyModal({ from: preset = '' } = {}) {
   const fromNote = h('small', {});
   const from = h('select', { class: 'select', onchange: () => noteFrom() }, h('option', { value: '' }, 'A blank page'),
     templates.length ? h('optgroup', { label: 'Templates' }, templates.map((t) => h('option', { value: 'tpl:' + t.slug, selected: preset === 'tpl:' + t.slug }, t.name))) : null,
-    h('optgroup', { label: 'Copy a case study' }, S.index.caseStudies.slice().sort((a, b) => a.title.localeCompare(b.title)).map((c) => h('option', { value: c.slug }, 'A copy of ' + c.title))));
+    h('optgroup', { label: 'Copy a case study' }, S.index.caseStudies.slice().sort((a, b) => a.title.localeCompare(b.title)).map((c) => h('option', { value: c.slug }, c.title))));
   const noteFrom = () => {
     const t = from.value.startsWith('tpl:') && templates.find((x) => 'tpl:' + x.slug === from.value);
     fromNote.textContent = t ? `Starts with this template’s ${plural(t.sections, 'section')} and ${plural(t.blocks, 'block')}.`
