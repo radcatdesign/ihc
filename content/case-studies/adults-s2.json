@@ -73,7 +73,7 @@
    "slug": "creators"
   }
  ],
- "headline": "<strong>\"SUCH A FUN ACTIVATION STEPPING INTO THE WORLD OF ADULTS\" </strong><em>- </em><a href=\"https://www.instagram.com/pilarscratch/\"><em>Pilarscratch</em></a>",
+ "headline": "<strong>\"SUCH A FUN ACTIVATION STEPPING INTO THE WORLD OF ADULTS\" </strong><em>- </em><em>Pilarscratch</em>",
  "intro": "WE CREATED A BODEGA AND SPEAKEASY IN NEW YORK CITY TO CELEBRATE THE LAUNCH OF <em>Adults</em>  SEASON 2 FOR FX.",
  "introPieces": [
   {
@@ -476,6 +476,28 @@
   }
  ],
  "listing": {
-  "listed": false
- }
+  "listed": true,
+  "work": {
+   "summary": "",
+   "href": "/case-study/adults-s2",
+   "month": "Aug",
+   "year": "2026",
+   "bg": null
+  },
+  "home": {
+   "showHomepage": false,
+   "category": "",
+   "image": "",
+   "gif": "",
+   "vimeo": "",
+   "ip": "",
+   "award": false,
+   "awardTitle": "",
+   "awardLogo1": "",
+   "awardLogo2": "",
+   "video": ""
+  }
+ },
+ "awards": [],
+ "updatedAt": "2026-11-19T22:38:33.967Z"
 }
