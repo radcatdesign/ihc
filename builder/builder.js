@@ -59,7 +59,7 @@ const session = {
 };
 
 // The builder's version. main is the live site (1.x); the next version is built on the next branch.
-const VERSION = '1.0.0';
+const VERSION = '1.0.1';
 
 function toast(msg, kind = '', ms = 4200) {
   const t = h('div', { class: 'toast ' + kind });

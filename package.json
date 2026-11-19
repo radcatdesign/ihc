@@ -1,6 +1,6 @@
 {
   "name": "iheartcomix-site",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "description": "iheartcomix.com: static pages plus the serverless functions for forms and the case study builder.",
   "engines": {
