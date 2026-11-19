@@ -76,6 +76,16 @@ Hover a block in the left column to see a real render of it (on a phone, the Add
 
 **Publish** commits the page, its block data, and any changes to `work.html`, `cms/cs.html`, `sitemap.xml` and `content/index.json` to `main` in one commit. Vercel redeploys and the builder tells you when it's live, usually within a minute or two. If someone else published the same case study after you opened it, it stops and asks you to reload first.
 
+### Social studio (version 2, on `next`)
+
+The **Social** tab in the builder. Three parts:
+
+- **Planner:** a month calendar of posts. Drag a post onto a day to schedule it, set a time, the platforms it's going out on and where it's at (Idea, Draft, Ready to post, Posted). Posts without a date wait in "Not scheduled yet". Save writes `content/social/posts.json`. It tracks posts; it doesn't post to Instagram or anywhere else.
+- **Post maker:** New post, pick a case study and a shape (Story 9:16, Post 4:5, Square 1:1). It drafts slides from the case study: cover, the summary, photos, numbers in IHC bubbles (three to a slide), a pull quote if there is one, and a sign-off with the link. Every slide can be edited, reordered, recolored or given a different photo (from the case study, or uploaded). The Caption tab writes a caption from the case study in three takes and counts characters per platform. Export: one PNG per slide, or an MP4 of all the slides with the site's color wipe between them.
+- **Motion studio:** clips to drop into a video edit: stat bubble, bubble burst, color wipe, title slam, lower third, logo pop. Any shape (plus Wide 16:9), any length. Background can be clear (a WebM with transparency), green screen (an MP4 to key out) or a brand color.
+
+Everything is drawn on a canvas by `builder/social-engine.js` (slides, motion elements, PNG and video export); the screens are in `builder/social.js` and `builder/social.css`. Video export uses the same vendored mediabunny encoder as uploads and needs Chrome or Edge for MP4.
+
 ### Setup (once)
 
 In the Vercel project, **Settings > Environment Variables** (Production):

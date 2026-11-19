@@ -3,6 +3,7 @@
 
 import { dotField } from './login-dots.js';
 import { cropPhotos, compressVideo, videoStill, savedLine, fmtBytes } from './media.js';
+import { socialRoute } from './social.js';
 
 const R = window.IHCRender;
 const Sortable = window.Sortable;
@@ -213,6 +214,16 @@ function route() {
   const t = location.hash.match(/^#\/template\/([a-z0-9-]+)/);
   if (t) return openTemplate(t[1]);
   if (location.hash === '#/templates') return renderTemplates(app);
+  if (location.hash.startsWith('#/social')) {
+    // the social studio (social.js) borrows the builder's helpers
+    const uploadPhoto = async (ratio) => {
+      const [one] = await prepareFiles(await pickFiles(), 'social', { ratio });
+      if (!one) return '';
+      startUpload();
+      try { return (await processFile(one.file, 'gallery', { crop: one.crop })).src; } finally { endUpload(); }
+    };
+    if (socialRoute(app, { h, $, $$, svg, api, readFiles, toast, S, uid, store, modal, clone, debounce, topbarLibrary, libTabs, loadIndex, uploadPhoto })) return;
+  }
   if (location.hash === '#/new') return renderLibrary(app).then(() => newCaseStudyModal());
   return renderLibrary(app);
 }
@@ -598,7 +609,8 @@ function tplOutline(t) {
 }
 const libTabs = (on) => h('nav', { class: 'lib-tabs', 'aria-label': 'Builder' },
   h('a', { href: '#/', class: on === 'cs' ? 'is-on' : '', 'aria-current': on === 'cs' ? 'page' : null }, 'Case studies'),
-  h('a', { href: '#/templates', class: on === 'tpl' ? 'is-on' : '', 'aria-current': on === 'tpl' ? 'page' : null }, 'Templates'));
+  h('a', { href: '#/templates', class: on === 'tpl' ? 'is-on' : '', 'aria-current': on === 'tpl' ? 'page' : null }, 'Templates'),
+  h('a', { href: '#/social', class: on === 'social' ? 'is-on' : '', 'aria-current': on === 'social' ? 'page' : null }, 'Social'));
 
 async function renderTemplates(app) {
   document.title = 'Templates · Builder';
@@ -1965,10 +1977,10 @@ const isPhoto = (f) => /^image\//.test(f.type) && !/^image\/(gif|svg\+xml)$/.tes
 
 // Runs the crop step for the photos in a drop (logos, GIFs, SVGs and videos skip it).
 // Resolves to [{ file, crop }] in drop order; photos cancelled in the crop step are left out.
-async function prepareFiles(files, kind, { raw = false } = {}) {
+async function prepareFiles(files, kind, { raw = false, ratio = '' } = {}) {
   const croppable = raw || kind === 'logo' ? [] : files.filter(isPhoto);
   if (!croppable.length) return files.map((file) => ({ file, crop: null }));
-  const done = await cropPhotos(croppable, { ratio: CROP_START[kind] || 'original', maxW: SIZES[kind] || 2000 });
+  const done = await cropPhotos(croppable, { ratio: ratio || CROP_START[kind] || 'original', maxW: SIZES[kind] || 2000 });
   const picked = new Map(done.map((d) => [d.file, d.crop]));
   return files.filter((f) => !croppable.includes(f) || picked.has(f)).map((file) => ({ file, crop: picked.get(file) || null }));
 }

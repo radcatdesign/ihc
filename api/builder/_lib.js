@@ -31,6 +31,7 @@ const WRITABLE = [
   /^content\/index\.json$/,
   new RegExp(`^content/templates/${SLUG}\\.json$`),
   /^content\/templates\/index\.json$/,
+  /^content\/social\/posts\.json$/,
   /^work\.html$/,
   /^cms\/cs\.html$/,
   /^sitemap\.xml$/,
