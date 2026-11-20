@@ -224,7 +224,62 @@
     },
     {
      "type": "gallery",
-     "media": []
+     "media": [
+      {
+       "type": "image",
+       "alt": "",
+       "src": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/crystal-lake/dsc01614-Zk6OzPNZQF3dTtlbZMgnwEfKWPNEpy.webp",
+       "w": 2000,
+       "h": 1333,
+       "orig": 12279534,
+       "bytes": 253962
+      },
+      {
+       "type": "image",
+       "alt": "",
+       "src": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/crystal-lake/dsc01031-2I55UmuIgn2MGDvrxd8EjNOMAUKXwY.webp",
+       "w": 2000,
+       "h": 3000,
+       "orig": 75311550,
+       "bytes": 1409874
+      },
+      {
+       "type": "image",
+       "alt": "",
+       "src": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/crystal-lake/dsc00430-FUFuIVQDt575gvevhWJSJ9NzTHTaIX.webp",
+       "w": 2000,
+       "h": 1333,
+       "orig": 1028862,
+       "bytes": 320016
+      },
+      {
+       "type": "image",
+       "alt": "",
+       "src": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/crystal-lake/dsc00667-P55slZS96PiijB9hhhNA7Xy7Dms7MT.webp",
+       "w": 2000,
+       "h": 1333,
+       "orig": 968268,
+       "bytes": 286110
+      },
+      {
+       "type": "image",
+       "alt": "",
+       "src": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/crystal-lake/dsc00465-RV9RSpq3Q9nX54ZWcUFjWtEyezgMQ0.webp",
+       "w": 1365,
+       "h": 2048,
+       "orig": 1044321,
+       "bytes": 530140
+      },
+      {
+       "type": "image",
+       "alt": "",
+       "src": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/crystal-lake/dsc00481-wcANw6zHKOGj1CKa3nmKDCdxT3UiJF.webp",
+       "w": 2000,
+       "h": 1333,
+       "orig": 928321,
+       "bytes": 272574
+      }
+     ]
     }
    ]
   },
@@ -237,7 +292,62 @@
     },
     {
      "type": "gallery",
-     "media": []
+     "media": [
+      {
+       "type": "image",
+       "alt": "",
+       "src": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/crystal-lake/dsc00520-1uUQzGar2DByRjF66aROggfUYJjuPw.webp",
+       "w": 2000,
+       "h": 1333,
+       "orig": 1102988,
+       "bytes": 373848
+      },
+      {
+       "type": "image",
+       "alt": "",
+       "src": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/crystal-lake/dsc00764-RIt0LkZdDdX97mS1gYLlZGmCAsMj7g.webp",
+       "w": 1365,
+       "h": 2048,
+       "orig": 1203608,
+       "bytes": 585150
+      },
+      {
+       "type": "image",
+       "alt": "",
+       "src": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/crystal-lake/dsc00605-rsJGOPSiCtuvysGritW5akLPm0WZgY.webp",
+       "w": 2000,
+       "h": 1333,
+       "orig": 777021,
+       "bytes": 193726
+      },
+      {
+       "type": "image",
+       "alt": "",
+       "src": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/crystal-lake/dsc00802-Tu82k8VYYEL356FdfnhmAZ788CYPUO.webp",
+       "w": 2000,
+       "h": 3000,
+       "orig": 55062072,
+       "bytes": 266158
+      },
+      {
+       "type": "image",
+       "alt": "",
+       "src": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/crystal-lake/dsc00810-K28xaoJ7d6mkRtHTMrDuTFBYQGXSSP.webp",
+       "w": 1365,
+       "h": 2048,
+       "orig": 1051654,
+       "bytes": 453962
+      },
+      {
+       "type": "image",
+       "alt": "",
+       "src": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/crystal-lake/dsc01299-OdPD4plSGFXychWJ2zqP7KIjqdUgpv.webp",
+       "w": 2000,
+       "h": 3000,
+       "orig": 76616590,
+       "bytes": 813908
+      }
+     ]
     }
    ]
   },
@@ -292,5 +402,5 @@
    "video": ""
   }
  },
- "updatedAt": "2026-11-20T01:03:31.903Z"
+ "updatedAt": "2026-11-20T01:22:45.562Z"
 }
