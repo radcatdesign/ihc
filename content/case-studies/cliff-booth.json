@@ -54,12 +54,86 @@
    "title": "THE VEHICLE",
    "pieces": [
     {
-     "type": "text",
-     "html": "<p>We transformed one 21-passenger and two 27-passenger Starline Tour buses into rolling tributes to the film’s ’70s-era world, carrying its look and feel onto the streets of Hollywood. Retro graphics wrapped every side of the buses, with the film’s title treatment and logos repeated across the exterior. The all-around design ensured the branding was visible from every angle. Each seat featured a custom cover, with the film’s title treatment on every other one. Bright vinyl wraps and decorative side skirting carried the look throughout the interiors, while fuzzy dice and a dashboard hula girl added era-inspired finishing touches.</p>"
+     "type": "text2",
+     "left": "We transformed a 21-passenger and two 27-passenger Starline Tour buses into rolling tributes to the film’s ’70s-era world, carrying its look and feel onto the streets of Hollywood. Retro graphics wrapped every side of the buses, with title treatment and logos across the exterior.&nbsp;",
+     "right": "Each seat featured a custom cover, with the film’s title treatment on every other one. Bright vinyl wraps and decorative side skirting carried the look throughout the interiors, while fuzzy dice and a dashboard hula girl added era-inspired finishing touches."
     },
     {
      "type": "gallery",
-     "media": []
+     "media": [
+      {
+       "type": "image",
+       "alt": "",
+       "src": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/cliff-booth/ihc-cliffbooth-hollywoodtour-2026-11-16-133627-01420-amv-uqG5G8SxTkNDV2ZixpT5mJs83S2vsx.webp",
+       "w": 2000,
+       "h": 1333,
+       "orig": 3088792,
+       "bytes": 365578
+      },
+      {
+       "type": "image",
+       "alt": "",
+       "src": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/cliff-booth/ihc-cliffbooth-hollywoodtour-2026-11-16-133646-01431-amv-Lp8x6Pw2ejwiwCLIMjr3dXX4i9CEtk.webp",
+       "w": 2000,
+       "h": 1333,
+       "orig": 1504179,
+       "bytes": 173400
+      },
+      {
+       "type": "image",
+       "alt": "",
+       "src": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/cliff-booth/ihc-cliffbooth-hollywoodtour-2026-11-16-133956-01520-amv-gJlUPBdmUeaSmYkmop4alRTsesW8xz.webp",
+       "w": 2000,
+       "h": 1333,
+       "orig": 1759312,
+       "bytes": 119698
+      },
+      {
+       "type": "image",
+       "alt": "",
+       "src": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/cliff-booth/ihc-cliffbooth-hollywoodtour-2026-11-16-133247-01288-amv-VByfnGXmhlK3ugTNKwDMpGYAGb5gRp.webp",
+       "w": 2000,
+       "h": 1333,
+       "orig": 2082159,
+       "bytes": 255994
+      },
+      {
+       "type": "image",
+       "alt": "",
+       "src": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/cliff-booth/ihc-cliffbooth-hollywoodtour-2026-11-16-134144-01561-amv-X1vP2Yi3P8urIeOvwCPjnOs694XDsF.webp",
+       "w": 2000,
+       "h": 1333,
+       "orig": 3120420,
+       "bytes": 287388
+      },
+      {
+       "type": "image",
+       "alt": "",
+       "src": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/cliff-booth/ihc-cliffbooth-hollywoodtour-2026-11-16-134108-01553-amv-aOzrjlL2DsQ2atgPy6eRbPEknSQJUB.webp",
+       "w": 2000,
+       "h": 1333,
+       "orig": 3300813,
+       "bytes": 244296
+      },
+      {
+       "type": "image",
+       "alt": "",
+       "src": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/cliff-booth/ihc-cliffbooth-hollywoodtour-2026-11-16-134116-01560-amv-WUQmfs1LbbthmPIuJsd07rfGxELBUw.webp",
+       "w": 2000,
+       "h": 1333,
+       "orig": 1259720,
+       "bytes": 84002
+      },
+      {
+       "type": "image",
+       "alt": "",
+       "src": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/cliff-booth/ihc-cliffbooth-hollywoodtour-2026-11-16-134459-01590-amv-6lsJfI85kYJnjiuJF0ibl00bmBqpqQ.webp",
+       "w": 2000,
+       "h": 1333,
+       "orig": 2416397,
+       "bytes": 158160
+      }
+     ]
     }
    ]
   },
@@ -122,5 +196,5 @@
    "video": ""
   }
  },
- "updatedAt": "2026-11-20T23:35:31.909Z"
+ "updatedAt": "2026-11-20T23:55:37.270Z"
 }
