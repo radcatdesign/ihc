@@ -147,7 +147,71 @@
     },
     {
      "type": "gallery",
-     "media": []
+     "media": [
+      {
+       "type": "image",
+       "alt": "",
+       "src": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/crystal-lake/dsc00373-wYfXyaHDBJRbfa9APYurFFa1pA78k8.webp",
+       "w": 2000,
+       "h": 1333,
+       "orig": 1239050,
+       "bytes": 456292
+      },
+      {
+       "type": "image",
+       "alt": "",
+       "src": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/crystal-lake/dsc01657-lyh7MeInxzlqRK89Vj0g3I96RAWeei.webp",
+       "w": 2000,
+       "h": 1333,
+       "orig": 12818502,
+       "bytes": 178782
+      },
+      {
+       "type": "image",
+       "alt": "",
+       "src": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/crystal-lake/dsc01656-t3RLJyTlh80tpRzqeKoMdHwi94bObU.webp",
+       "w": 2000,
+       "h": 3000,
+       "orig": 17380534,
+       "bytes": 650470
+      },
+      {
+       "type": "image",
+       "alt": "",
+       "src": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/crystal-lake/dsc01662-NxfUCnqLN8flhJ3iw3MlxOY9wpy6e0.webp",
+       "w": 2000,
+       "h": 3000,
+       "orig": 10348822,
+       "bytes": 539840
+      },
+      {
+       "type": "image",
+       "alt": "",
+       "src": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/crystal-lake/dsc01650-8OhTsXOv3G1KkIuVj2iwl834QPzKip.webp",
+       "w": 2000,
+       "h": 1333,
+       "orig": 5491883,
+       "bytes": 185594
+      },
+      {
+       "type": "image",
+       "alt": "",
+       "src": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/crystal-lake/dsc00821-wjpDSdbz988CFHghzj9ScSbc0jk9fm.webp",
+       "w": 2000,
+       "h": 1333,
+       "orig": 83133790,
+       "bytes": 384560
+      },
+      {
+       "type": "image",
+       "alt": "",
+       "src": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/crystal-lake/dsc01652-ROPpJNs4qamjQXZUNP7Ht6fEWdymqw.webp",
+       "w": 1365,
+       "h": 2048,
+       "orig": 371892,
+       "bytes": 133560
+      }
+     ]
     }
    ]
   },
@@ -228,5 +292,5 @@
    "video": ""
   }
  },
- "updatedAt": "2026-11-20T00:52:28.743Z"
+ "updatedAt": "2026-11-20T01:03:31.903Z"
 }
