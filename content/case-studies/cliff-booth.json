@@ -3,7 +3,7 @@
  "pageId": "a1075a3531ad787d993299e7",
  "title": "Cliff Booth",
  "seoTitle": "Cliff Booth",
- "description": "",
+ "description": "We partnered with Starline Tours to bring guests into the seedy Hollywood world of Cliff Booth through a custom mis-adventures bus tour.",
  "noindex": false,
  "client": "Netflix",
  "subtitle": "",
@@ -46,12 +46,12 @@
   {
    "type": "introGallery",
    "media": [],
-   "html": ""
+   "html": "<p>We partnered with Starline Tours to bring guests into the seedy Hollywood world of Cliff Booth through a custom mis-adventures bus tour that blended historical storytelling and unexpected surprises.</p><p>The tour offered a unique and compelling perspective of Cliff Booth’s world ahead of the film’s premiere. Guests experienced a mix of behind-the-scenes Hollywood insights and visual moments designed for capture, with a mid-way F&amp;B stop at a local tiki bar.</p>"
   }
  ],
  "sections": [
   {
-   "title": "xxx",
+   "title": "THE VEHICLE",
    "pieces": [
     {
      "type": "text",
@@ -64,7 +64,7 @@
    ]
   },
   {
-   "title": "xxx",
+   "title": "THE ROUTE",
    "pieces": [
     {
      "type": "text2",
@@ -78,7 +78,7 @@
    ]
   },
   {
-   "title": "xxx",
+   "title": "TIKI TAKEOVER",
    "pieces": [
     {
      "type": "text",
@@ -135,5 +135,5 @@
    "video": ""
   }
  },
- "updatedAt": "2026-11-20T21:00:14.791Z"
+ "updatedAt": "2026-11-20T22:12:12.063Z"
 }
