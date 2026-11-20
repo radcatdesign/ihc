@@ -8,7 +8,9 @@
  "client": "Peacock",
  "subtitle": "",
  "heroImage": {
-  "src": "https://cdn.prod.website-files.com/65c69ea350569f2a1164c2f2/6af51e9ba915ef838fd1b616_DSC01413.jpeg"
+  "src": "/images/6af51e9ba915ef838fd1b616_DSC01413-p-2000.webp",
+  "srcset": "/images/6af51e9ba915ef838fd1b616_DSC01413-p-800.webp 800w, /images/6af51e9ba915ef838fd1b616_DSC01413-p-1200.webp 1200w, /images/6af51e9ba915ef838fd1b616_DSC01413-p-2000.webp 2000w",
+  "sizes": "100vw"
  },
  "heroVimeo": "",
  "stats": [
@@ -153,7 +155,10 @@
    "month": "Oct",
    "year": "2026",
    "bg": {
-    "src": "https://cdn.prod.website-files.com/65c69ea350569f2a1164c2f2/6af51e9ba915ef838fd1b616_DSC01413.jpeg",
+    "src": "/images/6af51e9ba915ef838fd1b616_DSC01413-p-2000.webp",
+    "srcset": "/images/6af51e9ba915ef838fd1b616_DSC01413-p-800.webp 800w, /images/6af51e9ba915ef838fd1b616_DSC01413-p-1200.webp 1200w, /images/6af51e9ba915ef838fd1b616_DSC01413-p-2000.webp 2000w",
+    "sizes": "100vw",
+    "data-bg": "/images/6af51e9ba915ef838fd1b616_DSC01413-p-1200.webp",
     "alt": ""
    }
   },

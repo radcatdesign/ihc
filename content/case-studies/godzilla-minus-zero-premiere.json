@@ -8,7 +8,9 @@
  "client": "GKIDS • TOHO",
  "subtitle": "",
  "heroImage": {
-  "src": "https://cdn.prod.website-files.com/65c69ea350569f2a1164c2f2/6af3788027c3304c3972c241_IHC_Godzilla_20261028_2152-KKB.jpeg"
+  "src": "/images/6af3788027c3304c3972c241_IHC_Godzilla_20261028_2152-KKB-p-2000.webp",
+  "srcset": "/images/6af3788027c3304c3972c241_IHC_Godzilla_20261028_2152-KKB-p-800.webp 800w, /images/6af3788027c3304c3972c241_IHC_Godzilla_20261028_2152-KKB-p-1200.webp 1200w, /images/6af3788027c3304c3972c241_IHC_Godzilla_20261028_2152-KKB-p-2000.webp 2000w",
+  "sizes": "100vw"
  },
  "heroVimeo": "",
  "stats": [
@@ -73,42 +75,42 @@
      "media": [
       {
        "type": "image",
-       "src": "https://cdn.prod.website-files.com/655d45a6119a6572b57e5a44/6afe4b5107a19eb5d740a530_IHC_Godzilla_20261028_1634-KKB-p-2000.avif",
+       "src": "/images/6afe4b5107a19eb5d740a530_IHC_Godzilla_20261028_1634-KKB-p-2000.avif",
        "alt": ""
       },
       {
        "type": "image",
-       "src": "https://cdn.prod.website-files.com/655d45a6119a6572b57e5a44/6afe4b516fa714e0c3159567_IHC_Godzilla_20261028_1681-KKB-p-2000.avif",
+       "src": "/images/6afe4b516fa714e0c3159567_IHC_Godzilla_20261028_1681-KKB-p-2000.avif",
        "alt": ""
       },
       {
        "type": "image",
-       "src": "https://cdn.prod.website-files.com/655d45a6119a6572b57e5a44/6afe4b5114519afdeb20c3e3_IHC_Godzilla_20261028_1917-KKB-p-2000.avif",
+       "src": "/images/6afe4b5114519afdeb20c3e3_IHC_Godzilla_20261028_1917-KKB-p-2000.avif",
        "alt": ""
       },
       {
        "type": "image",
-       "src": "https://cdn.prod.website-files.com/655d45a6119a6572b57e5a44/6afe4b506e5ca3d4e6c6e4b5_IHC_GODZILLA_LAPREMIERE_2026_10_28_150141-04159_AMV.avif",
+       "src": "/images/6afe4b506e5ca3d4e6c6e4b5_IHC_GODZILLA_LAPREMIERE_2026_10_28_150141-04159_AMV.avif",
        "alt": ""
       },
       {
        "type": "image",
-       "src": "https://cdn.prod.website-files.com/655d45a6119a6572b57e5a44/6afe4d38253e141475e11127_IHC_Godzilla_20261028_2342-KKB-p-2000.avif",
+       "src": "/images/6afe4d38253e141475e11127_IHC_Godzilla_20261028_2342-KKB-p-2000.avif",
        "alt": ""
       },
       {
        "type": "image",
-       "src": "https://cdn.prod.website-files.com/655d45a6119a6572b57e5a44/6afe4b51519521d1124820d9_IHC_GODZILLA_LAPREMIERE_2026_10_28_180425-2374_AMV-p-2000.avif",
+       "src": "/images/6afe4b51519521d1124820d9_IHC_GODZILLA_LAPREMIERE_2026_10_28_180425-2374_AMV-p-2000.avif",
        "alt": ""
       },
       {
        "type": "image",
-       "src": "https://cdn.prod.website-files.com/655d45a6119a6572b57e5a44/6afe4b50cbfc771571359c58_IHC_Godzilla_20261028_1274-KKB-p-2000.avif",
+       "src": "/images/6afe4b50cbfc771571359c58_IHC_Godzilla_20261028_1274-KKB-p-2000.avif",
        "alt": ""
       },
       {
        "type": "image",
-       "src": "https://cdn.prod.website-files.com/655d45a6119a6572b57e5a44/6afe4b503efd25ebb5ff922d_IHC_Godzilla_20261028_1296-KKB-p-2000.avif",
+       "src": "/images/6afe4b503efd25ebb5ff922d_IHC_Godzilla_20261028_1296-KKB-p-2000.avif",
        "alt": ""
       }
      ]
@@ -127,32 +129,32 @@
      "media": [
       {
        "type": "image",
-       "src": "https://cdn.prod.website-files.com/655d45a6119a6572b57e5a44/6aff275d62d5f9b80b12fd6f_IHC_GODZILLA2026_1028_173906-7521_DBM-p-1600.avif",
+       "src": "/images/6aff275d62d5f9b80b12fd6f_IHC_GODZILLA2026_1028_173906-7521_DBM-p-1600.avif",
        "alt": ""
       },
       {
        "type": "image",
-       "src": "https://cdn.prod.website-files.com/655d45a6119a6572b57e5a44/6aff275e4612377de6bfb19f_IHC_Godzilla_20261028_1500-KKB-p-2000.avif",
+       "src": "/images/6aff275e4612377de6bfb19f_IHC_Godzilla_20261028_1500-KKB-p-2000.avif",
        "alt": ""
       },
       {
        "type": "image",
-       "src": "https://cdn.prod.website-files.com/655d45a6119a6572b57e5a44/6aff275d8190f63ff33d5eae_IHC_Godzilla_20261028_2603-KKB-p-1600.avif",
+       "src": "/images/6aff275d8190f63ff33d5eae_IHC_Godzilla_20261028_2603-KKB-p-1600.avif",
        "alt": ""
       },
       {
        "type": "image",
-       "src": "https://cdn.prod.website-files.com/655d45a6119a6572b57e5a44/6aff275d3590abe32b9ee8a6_IHC_Godzilla_20261028_1439-KKB-p-1600.avif",
+       "src": "/images/6aff275d3590abe32b9ee8a6_IHC_Godzilla_20261028_1439-KKB-p-1600.avif",
        "alt": ""
       },
       {
        "type": "image",
-       "src": "https://cdn.prod.website-files.com/655d45a6119a6572b57e5a44/6aff275ed678e9f47bb430e6_20261028_Godzilla_Minus_Zero_Hadji_17507-p-1600.avif",
+       "src": "/images/6aff275ed678e9f47bb430e6_20261028_Godzilla_Minus_Zero_Hadji_17507-p-1600.avif",
        "alt": ""
       },
       {
        "type": "image",
-       "src": "https://cdn.prod.website-files.com/655d45a6119a6572b57e5a44/6aff275e58d249c17e08710f_20261028_Godzilla_Minus_Zero_Hadji_18250-p-2000.avif",
+       "src": "/images/6aff275e58d249c17e08710f_20261028_Godzilla_Minus_Zero_Hadji_18250-p-2000.avif",
        "alt": ""
       }
      ]
@@ -171,37 +173,37 @@
      "media": [
       {
        "type": "image",
-       "src": "https://cdn.prod.website-files.com/655d45a6119a6572b57e5a44/6aff2dcd72d28d7e1a4bf792_IHC_GODZILLA_LAPREMIERE_2026_10_28_150833-04210_AMV-p-2000.avif",
+       "src": "/images/6aff2dcd72d28d7e1a4bf792_IHC_GODZILLA_LAPREMIERE_2026_10_28_150833-04210_AMV-p-2000.avif",
        "alt": ""
       },
       {
        "type": "image",
-       "src": "https://cdn.prod.website-files.com/655d45a6119a6572b57e5a44/6aff2dcb3fcede5bcb156bcd_IMG_8048.avif",
+       "src": "/images/6aff2dcb3fcede5bcb156bcd_IMG_8048.avif",
        "alt": ""
       },
       {
        "type": "image",
-       "src": "https://cdn.prod.website-files.com/655d45a6119a6572b57e5a44/6aff2dcdf8f7dda6d3e9ebe7_IHC_GODZILLA_LAPREMIERE_2026_10_28_150956-04234_AMV-p-2000.avif",
+       "src": "/images/6aff2dcdf8f7dda6d3e9ebe7_IHC_GODZILLA_LAPREMIERE_2026_10_28_150956-04234_AMV-p-2000.avif",
        "alt": ""
       },
       {
        "type": "image",
-       "src": "https://cdn.prod.website-files.com/655d45a6119a6572b57e5a44/6aff2dcc478a6e37c47360b2_IHC_GODZILLA_LAPREMIERE_2026_10_28_150950-04230_AMV-p-2000.avif",
+       "src": "/images/6aff2dcc478a6e37c47360b2_IHC_GODZILLA_LAPREMIERE_2026_10_28_150950-04230_AMV-p-2000.avif",
        "alt": ""
       },
       {
        "type": "image",
-       "src": "https://cdn.prod.website-files.com/655d45a6119a6572b57e5a44/6aff2dcc822c62a1b2d7ab9f_IHC_GODZILLA_LAPREMIERE_2026_10_28_151009-04236_AMV-p-2000.avif",
+       "src": "/images/6aff2dcc822c62a1b2d7ab9f_IHC_GODZILLA_LAPREMIERE_2026_10_28_151009-04236_AMV-p-2000.avif",
        "alt": ""
       },
       {
        "type": "image",
-       "src": "https://cdn.prod.website-files.com/655d45a6119a6572b57e5a44/6aff2dcdba366a793df8b4fc_IHC_GODZILLA_LAPREMIERE_2026_10_28_150908-04215_AMV-p-2000.avif",
+       "src": "/images/6aff2dcdba366a793df8b4fc_IHC_GODZILLA_LAPREMIERE_2026_10_28_150908-04215_AMV-p-2000.avif",
        "alt": ""
       },
       {
        "type": "image",
-       "src": "https://cdn.prod.website-files.com/655d45a6119a6572b57e5a44/6aff2dcc19fe35173cdc836b_IMG_8052-p-1600.avif",
+       "src": "/images/6aff2dcc19fe35173cdc836b_IMG_8052-p-1600.avif",
        "alt": ""
       }
      ]
@@ -220,32 +222,32 @@
      "media": [
       {
        "type": "image",
-       "src": "https://cdn.prod.website-files.com/655d45a6119a6572b57e5a44/6aff300a17de8ac78c42f192_IHC_GODZILLA_LAPREMIERE_2026_10_28_191816-2551_AMV-p-2000.avif",
+       "src": "/images/6aff300a17de8ac78c42f192_IHC_GODZILLA_LAPREMIERE_2026_10_28_191816-2551_AMV-p-2000.avif",
        "alt": ""
       },
       {
        "type": "image",
-       "src": "https://cdn.prod.website-files.com/655d45a6119a6572b57e5a44/6aff300917de8ac78c42f166_IHC_GODZILLA_LAPREMIERE_2026_10_28_183308-04856_AMV-p-2000.avif",
+       "src": "/images/6aff300917de8ac78c42f166_IHC_GODZILLA_LAPREMIERE_2026_10_28_183308-04856_AMV-p-2000.avif",
        "alt": ""
       },
       {
        "type": "image",
-       "src": "https://cdn.prod.website-files.com/655d45a6119a6572b57e5a44/6aff300aa573e52c9d7fdff0_IHC_GODZILLA_LAPREMIERE_2026_10_28_184434-04978_AMV-p-2000.avif",
+       "src": "/images/6aff300aa573e52c9d7fdff0_IHC_GODZILLA_LAPREMIERE_2026_10_28_184434-04978_AMV-p-2000.avif",
        "alt": ""
       },
       {
        "type": "image",
-       "src": "https://cdn.prod.website-files.com/655d45a6119a6572b57e5a44/6aff300a1d9b67573bf91629_IHC_GODZILLA_LAPREMIERE_2026_10_28_205914-05079_AMV-p-2000.avif",
+       "src": "/images/6aff300a1d9b67573bf91629_IHC_GODZILLA_LAPREMIERE_2026_10_28_205914-05079_AMV-p-2000.avif",
        "alt": ""
       },
       {
        "type": "image",
-       "src": "https://cdn.prod.website-files.com/655d45a6119a6572b57e5a44/6aff30081131ec11294ba4cd_IMG_8145-p-1600.avif",
+       "src": "/images/6aff30081131ec11294ba4cd_IMG_8145-p-1600.avif",
        "alt": ""
       },
       {
        "type": "image",
-       "src": "https://cdn.prod.website-files.com/655d45a6119a6572b57e5a44/6aff3008c27d311dfcdadde0_IMG_8140-p-1600.avif",
+       "src": "/images/6aff3008c27d311dfcdadde0_IMG_8140-p-1600.avif",
        "alt": ""
       }
      ]
@@ -265,52 +267,52 @@
      "media": [
       {
        "type": "image",
-       "src": "https://cdn.prod.website-files.com/655d45a6119a6572b57e5a44/6aff339a309ec13ec222deea_IHC_Godzilla_20261029_2931-KKB-p-2000.avif",
+       "src": "/images/6aff339a309ec13ec222deea_IHC_Godzilla_20261029_2931-KKB-p-2000.avif",
        "alt": ""
       },
       {
        "type": "image",
-       "src": "https://cdn.prod.website-files.com/655d45a6119a6572b57e5a44/6aff339a66a6a45824e257f8_IHC_Godzilla_20261029_2954-KKB-p-2000.avif",
+       "src": "/images/6aff339a66a6a45824e257f8_IHC_Godzilla_20261029_2954-KKB-p-2000.avif",
        "alt": ""
       },
       {
        "type": "image",
-       "src": "https://cdn.prod.website-files.com/655d45a6119a6572b57e5a44/6aff326a68d028869c3a386a_IHC_Godzilla_20261029_2754-KKB-p-2600.avif",
+       "src": "/images/6aff326a68d028869c3a386a_IHC_Godzilla_20261029_2754-KKB-p-2000.webp",
        "alt": ""
       },
       {
        "type": "image",
-       "src": "https://cdn.prod.website-files.com/655d45a6119a6572b57e5a44/6aff31a5134fe738c4435707_IHC_Godzilla_20261029_3003-KKB-p-2000.avif",
+       "src": "/images/6aff31a5134fe738c4435707_IHC_Godzilla_20261029_3003-KKB-p-2000.avif",
        "alt": ""
       },
       {
        "type": "image",
-       "src": "https://cdn.prod.website-files.com/655d45a6119a6572b57e5a44/6aff31a5332ce02cc143f22d_IHC_Godzilla_20261029_2841-KKB-p-2000.avif",
+       "src": "/images/6aff31a5332ce02cc143f22d_IHC_Godzilla_20261029_2841-KKB-p-2000.avif",
        "alt": ""
       },
       {
        "type": "image",
-       "src": "https://cdn.prod.website-files.com/655d45a6119a6572b57e5a44/6aff31a51b924254153d9913_IHC_Godzilla_20261029_2795-KKB-p-2000.avif",
+       "src": "/images/6aff31a51b924254153d9913_IHC_Godzilla_20261029_2795-KKB-p-2000.avif",
        "alt": ""
       },
       {
        "type": "image",
-       "src": "https://cdn.prod.website-files.com/655d45a6119a6572b57e5a44/6aff3384f6b602b4614bae1f_IHC_Godzilla_20261029_3017-KKB-p-2000.avif",
+       "src": "/images/6aff3384f6b602b4614bae1f_IHC_Godzilla_20261029_3017-KKB-p-2000.avif",
        "alt": ""
       },
       {
        "type": "image",
-       "src": "https://cdn.prod.website-files.com/655d45a6119a6572b57e5a44/6aff31a58b307c90db0a6aec_IHC_Godzilla_20261029_3138-KKB-p-2000.avif",
+       "src": "/images/6aff31a58b307c90db0a6aec_IHC_Godzilla_20261029_3138-KKB-p-2000.avif",
        "alt": ""
       },
       {
        "type": "image",
-       "src": "https://cdn.prod.website-files.com/655d45a6119a6572b57e5a44/6aff31d6f16e78cae0775761_IHC_Godzilla_20261029_2620-KKB-p-2000.avif",
+       "src": "/images/6aff31d6f16e78cae0775761_IHC_Godzilla_20261029_2620-KKB-p-2000.avif",
        "alt": ""
       },
       {
        "type": "image",
-       "src": "https://cdn.prod.website-files.com/655d45a6119a6572b57e5a44/6aff339adcbea76127e0b134_IHC_Godzilla_20261029_2657-KKB-p-2000.avif",
+       "src": "/images/6aff339adcbea76127e0b134_IHC_Godzilla_20261029_2657-KKB-p-2000.avif",
        "alt": ""
       }
      ]
@@ -340,7 +342,10 @@
    "month": "Oct",
    "year": "2026",
    "bg": {
-    "src": "https://cdn.prod.website-files.com/65c69ea350569f2a1164c2f2/6af3788027c3304c3972c241_IHC_Godzilla_20261028_2152-KKB.jpeg",
+    "src": "/images/6af3788027c3304c3972c241_IHC_Godzilla_20261028_2152-KKB-p-2000.webp",
+    "srcset": "/images/6af3788027c3304c3972c241_IHC_Godzilla_20261028_2152-KKB-p-800.webp 800w, /images/6af3788027c3304c3972c241_IHC_Godzilla_20261028_2152-KKB-p-1200.webp 1200w, /images/6af3788027c3304c3972c241_IHC_Godzilla_20261028_2152-KKB-p-2000.webp 2000w",
+    "sizes": "100vw",
+    "data-bg": "/images/6af3788027c3304c3972c241_IHC_Godzilla_20261028_2152-KKB-p-1200.webp",
     "alt": ""
    }
   },

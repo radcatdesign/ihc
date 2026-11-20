@@ -8,7 +8,9 @@
  "client": "Paramount",
  "subtitle": "",
  "heroImage": {
-  "src": "https://cdn.prod.website-files.com/65c69ea350569f2a1164c2f2/6af27599d528921f9c87e100_DSC_5781.jpg"
+  "src": "/images/6af27599d528921f9c87e100_DSC_5781-p-2000.webp",
+  "srcset": "/images/6af27599d528921f9c87e100_DSC_5781-p-800.webp 800w, /images/6af27599d528921f9c87e100_DSC_5781-p-1200.webp 1200w, /images/6af27599d528921f9c87e100_DSC_5781-p-2000.webp 2000w",
+  "sizes": "100vw"
  },
  "heroVimeo": "",
  "stats": [],
@@ -39,32 +41,32 @@
    "media": [
     {
      "type": "image",
-     "src": "https://cdn.prod.website-files.com/655d45a6119a6572b57e5a44/6af36e9644e6a597bee97709_DSC_5873-2-p-2000.avif",
+     "src": "/images/6af36e9644e6a597bee97709_DSC_5873-2-p-2000.avif",
      "alt": ""
     },
     {
      "type": "image",
-     "src": "https://cdn.prod.website-files.com/655d45a6119a6572b57e5a44/6af36d786ec77a5195a161fe_DSC_5810-2-p-2000.avif",
+     "src": "/images/6af36d786ec77a5195a161fe_DSC_5810-2-p-2000.avif",
      "alt": ""
     },
     {
      "type": "image",
-     "src": "https://cdn.prod.website-files.com/655d45a6119a6572b57e5a44/6af371065e61c2a28483e553_DSC_5863-p-2000.avif",
+     "src": "/images/6af371065e61c2a28483e553_DSC_5863-p-2000.avif",
      "alt": ""
     },
     {
      "type": "image",
-     "src": "https://cdn.prod.website-files.com/655d45a6119a6572b57e5a44/6af36c68fcfa5fade836ab02_DSC_5798-p-2000.avif",
+     "src": "/images/6af36c68fcfa5fade836ab02_DSC_5798-p-2000.avif",
      "alt": ""
     },
     {
      "type": "image",
-     "src": "https://cdn.prod.website-files.com/655d45a6119a6572b57e5a44/6af3710613c404f82ca2774e_DSC_5741-p-2000.avif",
+     "src": "/images/6af3710613c404f82ca2774e_DSC_5741-p-2000.avif",
      "alt": ""
     },
     {
      "type": "image",
-     "src": "https://cdn.prod.website-files.com/655d45a6119a6572b57e5a44/6af3710537a4b2f6b6ee2d90__DSC9849-p-2000.avif",
+     "src": "/images/6af3710537a4b2f6b6ee2d90__DSC9849-p-2000.avif",
      "alt": ""
     }
    ]
@@ -83,22 +85,22 @@
      "media": [
       {
        "type": "image",
-       "src": "https://cdn.prod.website-files.com/655d45a6119a6572b57e5a44/6af368e8c63645761db65562_DSC_5627-p-2000.avif",
+       "src": "/images/6af368e8c63645761db65562_DSC_5627-p-2000.avif",
        "alt": ""
       },
       {
        "type": "image",
-       "src": "https://cdn.prod.website-files.com/655d45a6119a6572b57e5a44/6af368e8c58c382cacffdfe0_DSC_5660-p-2000.avif",
+       "src": "/images/6af368e8c58c382cacffdfe0_DSC_5660-p-2000.avif",
        "alt": ""
       },
       {
        "type": "image",
-       "src": "https://cdn.prod.website-files.com/655d45a6119a6572b57e5a44/6af368e9cccfae317816c4dc_DSC_5795-p-2000.avif",
+       "src": "/images/6af368e9cccfae317816c4dc_DSC_5795-p-2000.avif",
        "alt": ""
       },
       {
        "type": "image",
-       "src": "https://cdn.prod.website-files.com/655d45a6119a6572b57e5a44/6af368eb03e697f6cd2e6125_DSC_5682-p-2000.avif",
+       "src": "/images/6af368eb03e697f6cd2e6125_DSC_5682-p-2000.avif",
        "alt": ""
       }
      ]
@@ -117,22 +119,22 @@
      "media": [
       {
        "type": "image",
-       "src": "https://cdn.prod.website-files.com/655d45a6119a6572b57e5a44/6af368f1566f7a888b034698_DSC_5706-p-2000.avif",
+       "src": "/images/6af368f1566f7a888b034698_DSC_5706-p-2000.avif",
        "alt": ""
       },
       {
        "type": "image",
-       "src": "https://cdn.prod.website-files.com/655d45a6119a6572b57e5a44/6af368f20a9d9322e02993d0_DSC_5711-p-2000.avif",
+       "src": "/images/6af368f20a9d9322e02993d0_DSC_5711-p-2000.avif",
        "alt": ""
       },
       {
        "type": "image",
-       "src": "https://cdn.prod.website-files.com/655d45a6119a6572b57e5a44/6af368f3267c132b82d1aad6_DSC_5714-p-2000.avif",
+       "src": "/images/6af368f3267c132b82d1aad6_DSC_5714-p-2000.avif",
        "alt": ""
       },
       {
        "type": "image",
-       "src": "https://cdn.prod.website-files.com/655d45a6119a6572b57e5a44/6af368f1ecc5389bdc463ff5_DSC_5695-p-2000.avif",
+       "src": "/images/6af368f1ecc5389bdc463ff5_DSC_5695-p-2000.avif",
        "alt": ""
       }
      ]
@@ -151,22 +153,22 @@
      "media": [
       {
        "type": "image",
-       "src": "https://cdn.prod.website-files.com/655d45a6119a6572b57e5a44/6af36c60b1a3adb3698a0ef6_DSC_5635-p-2000.avif",
+       "src": "/images/6af36c60b1a3adb3698a0ef6_DSC_5635-p-2000.avif",
        "alt": ""
       },
       {
        "type": "image",
-       "src": "https://cdn.prod.website-files.com/655d45a6119a6572b57e5a44/6af36c5f45470cc4c1d8d133_DSC_5631-p-2000.avif",
+       "src": "/images/6af36c5f45470cc4c1d8d133_DSC_5631-p-2000.avif",
        "alt": ""
       },
       {
        "type": "image",
-       "src": "https://cdn.prod.website-files.com/655d45a6119a6572b57e5a44/6af36c607e94cc2acd187e5d_DSC_5833-p-2000.avif",
+       "src": "/images/6af36c607e94cc2acd187e5d_DSC_5833-p-2000.avif",
        "alt": ""
       },
       {
        "type": "image",
-       "src": "https://cdn.prod.website-files.com/655d45a6119a6572b57e5a44/6af36c5f97574dcd28e4de08_DSC_5832-p-2000.avif",
+       "src": "/images/6af36c5f97574dcd28e4de08_DSC_5832-p-2000.avif",
        "alt": ""
       }
      ]
@@ -185,22 +187,22 @@
      "media": [
       {
        "type": "image",
-       "src": "https://cdn.prod.website-files.com/655d45a6119a6572b57e5a44/6af36c677e94cc2acd18845b_DSC_5643-p-2000.avif",
+       "src": "/images/6af36c677e94cc2acd18845b_DSC_5643-p-2000.avif",
        "alt": ""
       },
       {
        "type": "image",
-       "src": "https://cdn.prod.website-files.com/655d45a6119a6572b57e5a44/6af36c67a71a2d09ba01a5c9_DSC_5645-p-2000.avif",
+       "src": "/images/6af36c67a71a2d09ba01a5c9_DSC_5645-p-2000.avif",
        "alt": ""
       },
       {
        "type": "image",
-       "src": "https://cdn.prod.website-files.com/655d45a6119a6572b57e5a44/6af36c68fcfa5fade836ab02_DSC_5798-p-2000.avif",
+       "src": "/images/6af36c68fcfa5fade836ab02_DSC_5798-p-2000.avif",
        "alt": ""
       },
       {
        "type": "image",
-       "src": "https://cdn.prod.website-files.com/655d45a6119a6572b57e5a44/6af36c68a71a2d09ba01a6a8_DSC_5666-p-2000.avif",
+       "src": "/images/6af36c68a71a2d09ba01a6a8_DSC_5666-p-2000.avif",
        "alt": ""
       }
      ]
@@ -219,32 +221,32 @@
      "media": [
       {
        "type": "image",
-       "src": "https://cdn.prod.website-files.com/655d45a6119a6572b57e5a44/6af36d79ca372758c78dfc8b_DSC_5847-p-2000.avif",
+       "src": "/images/6af36d79ca372758c78dfc8b_DSC_5847-p-2000.avif",
        "alt": ""
       },
       {
        "type": "image",
-       "src": "https://cdn.prod.website-files.com/655d45a6119a6572b57e5a44/6af36d77df534f534d093b62_DSC_5746-p-2000.avif",
+       "src": "/images/6af36d77df534f534d093b62_DSC_5746-p-2000.avif",
        "alt": ""
       },
       {
        "type": "image",
-       "src": "https://cdn.prod.website-files.com/655d45a6119a6572b57e5a44/6af36d78075fe4b642a65ab2_DSC_5734-p-1600.avif",
+       "src": "/images/6af36d78075fe4b642a65ab2_DSC_5734-p-1600.avif",
        "alt": ""
       },
       {
        "type": "image",
-       "src": "https://cdn.prod.website-files.com/655d45a6119a6572b57e5a44/6af36d776ec77a5195a15f9f_111416-strip.avif",
+       "src": "/images/6af36d776ec77a5195a15f9f_111416-strip.avif",
        "alt": ""
       },
       {
        "type": "image",
-       "src": "https://cdn.prod.website-files.com/655d45a6119a6572b57e5a44/6af36d78fff703d2546b01c5_DSC_5803-p-2000.avif",
+       "src": "/images/6af36d78fff703d2546b01c5_DSC_5803-p-2000.avif",
        "alt": ""
       },
       {
        "type": "image",
-       "src": "https://cdn.prod.website-files.com/655d45a6119a6572b57e5a44/6af36d78f98e5007392235ab_DSC_5655-p-2000.avif",
+       "src": "/images/6af36d78f98e5007392235ab_DSC_5655-p-2000.avif",
        "alt": ""
       }
      ]
@@ -260,7 +262,10 @@
    "month": "Oct",
    "year": "2026",
    "bg": {
-    "src": "https://cdn.prod.website-files.com/65c69ea350569f2a1164c2f2/6af27599d528921f9c87e100_DSC_5781.jpg",
+    "src": "/images/6af27599d528921f9c87e100_DSC_5781-p-2000.webp",
+    "srcset": "/images/6af27599d528921f9c87e100_DSC_5781-p-800.webp 800w, /images/6af27599d528921f9c87e100_DSC_5781-p-1200.webp 1200w, /images/6af27599d528921f9c87e100_DSC_5781-p-2000.webp 2000w",
+    "sizes": "100vw",
+    "data-bg": "/images/6af27599d528921f9c87e100_DSC_5781-p-1200.webp",
     "alt": ""
    }
   },

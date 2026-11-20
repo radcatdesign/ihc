@@ -8,7 +8,9 @@
  "client": "Lionsgate",
  "subtitle": "",
  "heroImage": {
-  "src": "https://cdn.prod.website-files.com/65c69ea350569f2a1164c2f2/6af3b9b40febc0ed4dda26c9_THG_SOTR_album.jpeg"
+  "src": "/images/6af3b9b40febc0ed4dda26c9_THG_SOTR_album-p-2000.webp",
+  "srcset": "/images/6af3b9b40febc0ed4dda26c9_THG_SOTR_album-p-800.webp 800w, /images/6af3b9b40febc0ed4dda26c9_THG_SOTR_album-p-2000.webp 1120w",
+  "sizes": "100vw"
  },
  "heroVimeo": "",
  "stats": [
@@ -44,32 +46,32 @@
    "media": [
     {
      "type": "image",
-     "src": "https://cdn.prod.website-files.com/655d45a6119a6572b57e5a44/6af39326f64932b310c10064_renographics-p-3200.avif",
+     "src": "/images/6af39326f64932b310c10064_renographics-p-2000.webp",
      "alt": ""
     },
     {
      "type": "image",
-     "src": "https://cdn.prod.website-files.com/655d45a6119a6572b57e5a44/6af39325fbf40ff72e648a81_cath.graphics-p-3200.avif",
+     "src": "/images/6af39325fbf40ff72e648a81_cath.graphics-p-2000.webp",
      "alt": ""
     },
     {
      "type": "image",
-     "src": "https://cdn.prod.website-files.com/655d45a6119a6572b57e5a44/6af393263c2dda20e160d7a1_ricardocavolo-p-3200.avif",
+     "src": "/images/6af393263c2dda20e160d7a1_ricardocavolo-p-2000.webp",
      "alt": ""
     },
     {
      "type": "image",
-     "src": "https://cdn.prod.website-files.com/655d45a6119a6572b57e5a44/6af39325ac0c90934077defb_kbar.design-p-3200.avif",
+     "src": "/images/6af39325ac0c90934077defb_kbar.design-p-2000.webp",
      "alt": ""
     },
     {
      "type": "image",
-     "src": "https://cdn.prod.website-files.com/655d45a6119a6572b57e5a44/6af3934bf5cd3b79c0e9ed57_toastedbyeli-p-2000.avif",
+     "src": "/images/6af3934bf5cd3b79c0e9ed57_toastedbyeli-p-2000.avif",
      "alt": ""
     },
     {
      "type": "image",
-     "src": "https://cdn.prod.website-files.com/655d45a6119a6572b57e5a44/6af393245c58f2109ed47bfb_by.kody-p-3200.avif",
+     "src": "/images/6af393245c58f2109ed47bfb_by.kody-p-2000.webp",
      "alt": ""
     }
    ]
@@ -84,7 +86,10 @@
    "month": "Aug",
    "year": "2026",
    "bg": {
-    "src": "https://cdn.prod.website-files.com/65c69ea350569f2a1164c2f2/6af3b9b40febc0ed4dda26c9_THG_SOTR_album.jpeg",
+    "src": "/images/6af3b9b40febc0ed4dda26c9_THG_SOTR_album-p-2000.webp",
+    "srcset": "/images/6af3b9b40febc0ed4dda26c9_THG_SOTR_album-p-800.webp 800w, /images/6af3b9b40febc0ed4dda26c9_THG_SOTR_album-p-2000.webp 1120w",
+    "sizes": "100vw",
+    "data-bg": "/images/6af3b9b40febc0ed4dda26c9_THG_SOTR_album-p-800.webp",
     "alt": ""
    }
   },
