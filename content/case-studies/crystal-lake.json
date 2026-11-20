@@ -1,26 +1,28 @@
 {
  "slug": "crystal-lake",
- "pageId": "6af3a0934a6a038f183ebcdb",
- "seoTitle": "Crystal Lake",
- "description": "We transformed a central footprint at New York Comic Con into a fully immersive recreation of Camp Crystal Lake.",
- "noindex": false,
+ "pageId": "ab5805b81a95582bfebf7d69",
  "title": "Crystal Lake",
+ "seoTitle": "Crystal Lake",
+ "description": "",
+ "noindex": false,
  "client": "Peacock",
  "subtitle": "",
  "heroImage": {
-  "src": "/images/6af51e9ba915ef838fd1b616_DSC01413-p-2000.webp",
-  "srcset": "/images/6af51e9ba915ef838fd1b616_DSC01413-p-800.webp 800w, /images/6af51e9ba915ef838fd1b616_DSC01413-p-1200.webp 1200w, /images/6af51e9ba915ef838fd1b616_DSC01413-p-2000.webp 2000w",
-  "sizes": "100vw"
+  "src": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/crystal-lake/dsc01413-s7HWMOZKvhGAc4mIeXPihgtcOSm5E4.webp",
+  "srcset": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/crystal-lake/dsc01413-jpg-1200-G941jWNehwgQ7ANALmOCMLhA4EsMBP.webp 1200w, https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/crystal-lake/dsc01413-s7HWMOZKvhGAc4mIeXPihgtcOSm5E4.webp 2400w",
+  "sizes": "100vw",
+  "orig": 5556284,
+  "bytes": 308920
  },
  "heroVimeo": "",
  "stats": [
   {
-   "value": "16K+",
-   "label": "Guest Output"
+   "value": "1.6k+",
+   "label": "GUEST THROUGHPUT"
   },
   {
-   "value": "15.4K+",
-   "label": "Virtual Queue Signups"
+   "value": "15.4k+",
+   "label": "VIRTUAL SIGNUPS"
   },
   {
    "value": "930",
@@ -57,22 +59,23 @@
    "slug": "technical-design"
   }
  ],
- "headline": "“Best 5 minutes of my life!” - NYCC Guest",
- "intro": "IHC CRAFTED AN IMMERSIVE HORROR EXPERIENCE AT NYCC FOR PEACOCK'S HIT TV SHOW CRYSTAL LAKE.",
+ "awards": [],
+ "headline": "<strong>“Best 5 minutes of my life!” <em>- NYCC Guest</em></strong>",
+ "intro": "IHC CRAFTED AN IMMERSIVE HORROR EXPERIENCE AT NYCC FOR PEACOCK'S HIT TV SHOW <em>CRYSTAL LAKE</em>.",
  "introPieces": [
   {
    "type": "introGallery",
-   "html": "<p>IHC transformed a central footprint at New York Comic Con into a fully immersive recreation of Camp Crystal Lake — a weathered cabin exterior giving way to richly detailed forest and shed interiors, brought to life by live theatrical performances and capped by a climactic scare moment inside Jason’s shed.</p>\n<p>The result: a dual-purpose activation that doubled as a fully realized guest experience and a strategic content engine, giving press and creators a dedicated environment to capture the talent walkthrough and the experience’s signature scare moment alike. A virtual queue let fans reserve a spot, driving 15k+ sign-ups across the four-day run and sending hundreds of groups through the full experience.</p>",
-   "media": []
+   "media": [],
+   "html": "<p>IHC transformed a central footprint at New York Comic Con into a fully immersive recreation of <strong>Camp Crystal Lake</strong>&nbsp;- a weathered cabin exterior giving way to richly detailed forest and shed interiors, brought to life by live theatrical performances and capped by a climactic scare moment inside Jason’s shed.</p><p>The result: a dual-purpose activation that doubled as a fully realized guest experience and a strategic content engine, giving press and creators a dedicated environment to capture the talent walkthrough and the experience’s signature scare moment alike. A virtual queue let fans reserve a spot, driving <strong>15k+&nbsp;sign-ups</strong> across the four-day run and sending hundreds of groups through the full experience.</p>"
   }
  ],
  "sections": [
   {
-   "title": "the build",
+   "title": "THE BUILD",
    "pieces": [
     {
      "type": "text",
-     "html": "<p>A cabin facade jutted out from the walls to immerse guests into the world. A custom sign hung from a post at the line entrance, and a camp bulletin board had in-world easter eggs that guests could browse while they listened to excerpts from Radio Crystal Lake. The facade was covered in 360 key art, serving as a large scale photo moment.</p>"
+     "html": "<p>A cabin facade jutted out from the walls to immerse guests into the world. A custom sign hung from a post at the line entrance, and a camp bulletin board had in-world easter eggs that guests could browse while they listened to excerpts from Radio Crystal Lake.&nbsp;The facade was covered in 360 key art, serving as a large scale photo moment.</p>"
     },
     {
      "type": "gallery",
@@ -81,11 +84,11 @@
    ]
   },
   {
-   "title": "interior details",
+   "title": "interior DETAILS",
    "pieces": [
     {
      "type": "text",
-     "html": "<p>The interior of the cabin was full of era-accurate decor, camp bunk beds, trunks, lamps, and Jason’s hidden camp sack. Our forest area was filled with foliage, eerie lighting, and a practical shed facade. The interior of Jason's shed was dimly lit with a dead hippie immediately discoverable on entrance as well as knick knacks left behind including lanterns, Chuckles candy bars, and a toy laser gun.</p>"
+     "html": "<p>The interior of the cabin was full of era-accurate decor, camp bunk beds, trunks, lamps, and Jason’s hidden camp sack. Our forest area was filled with foliage, eerie lighting, and a practical shed facade. The interior of Jason's shed was dimly lit with a dead hippie immediately discoverable on entrance as well as knick knacks left behind including lanterns, Chuckles candy bars, and a toy laser gun.&nbsp;</p>"
     },
     {
      "type": "gallery",
@@ -94,7 +97,7 @@
    ]
   },
   {
-   "title": "immersive beat 1",
+   "title": "IMMERSIVE BEAT 1",
    "pieces": [
     {
      "type": "text",
@@ -111,7 +114,7 @@
    "pieces": [
     {
      "type": "text",
-     "html": "<p>Pam uncovered Jason’s machete mid-rant, and a scream outside sent Claudette running back in to report a body in the woods — then Pam snapped, launching the central scare and sending guests fleeing toward Jason’s shed. Fleeing through the woods, the group found a frightened Barry and the hippies’ body among the trees as they reached the entrance to Jason’s shed.</p>"
+     "html": "<p>Pam uncovered Jason’s machete mid-rant, and a scream outside sent Claudette running back in to report a body in the woods - then Pam snapped, launching the central scare and sending guests fleeing toward Jason’s shed. Fleeing through the woods, the group found a frightened Barry and the hippies’ body among the trees as they reached the entrance to Jason’s shed.</p>"
     },
     {
      "type": "gallery",
@@ -124,7 +127,7 @@
    "pieces": [
     {
      "type": "text",
-     "html": "<p>Inside, the lights cut out and Pam reappeared for one final scare (triggering our “scream” photo opp) before Sheriff Brooks arrived and she vanished. On the way out, a BA handed guests a custom Crystal Lake bandana, and guests could complete a consumer insights survey for an exclusive “Pam’s Bloody Sweater” pin.</p>"
+     "html": "<p>Inside, the lights cut out and Pam reappeared for one final scare (triggering our “scream” photo opp) before Sheriff Brooks arrived and she vanished.&nbsp;On the way out, a BA handed guests a custom Crystal Lake bandana, and guests could complete a consumer insights survey for an exclusive “Pam’s Bloody Sweater” pin.</p>"
     },
     {
      "type": "gallery",
@@ -139,10 +142,10 @@
      "type": "video",
      "vimeo": "1245622486",
      "hash": "",
-     "w": 1920,
-     "h": 1080,
+     "w": 1280,
+     "h": 720,
      "title": "Peacock: Crystal Lake",
-     "thumb": ""
+     "thumb": "https://i.vimeocdn.com/video/2224803109-b55e5059af9bb2d0361ba87685ce701431948275d9789a863ae1f6c29c811ee7-d_1280?region=us"
     }
    ]
   }
@@ -150,21 +153,15 @@
  "listing": {
   "listed": false,
   "work": {
-   "summary": "We transformed a central footprint at New York Comic Con into a fully immersive recreation of Camp Crystal Lake.",
+   "summary": "",
    "href": "/case-study/crystal-lake",
-   "month": "Oct",
-   "year": "2026",
-   "bg": {
-    "src": "/images/6af51e9ba915ef838fd1b616_DSC01413-p-2000.webp",
-    "srcset": "/images/6af51e9ba915ef838fd1b616_DSC01413-p-800.webp 800w, /images/6af51e9ba915ef838fd1b616_DSC01413-p-1200.webp 1200w, /images/6af51e9ba915ef838fd1b616_DSC01413-p-2000.webp 2000w",
-    "sizes": "100vw",
-    "data-bg": "/images/6af51e9ba915ef838fd1b616_DSC01413-p-1200.webp",
-    "alt": ""
-   }
+   "month": "",
+   "year": "",
+   "bg": null
   },
   "home": {
    "showHomepage": false,
-   "category": "Television",
+   "category": "",
    "image": "",
    "gif": "",
    "vimeo": "",
@@ -176,5 +173,5 @@
    "video": ""
   }
  },
- "updatedAt": "2026-11-19T23:53:41.000Z"
+ "updatedAt": "2026-11-20T00:17:28.478Z"
 }
