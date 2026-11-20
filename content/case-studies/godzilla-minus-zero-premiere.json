@@ -59,7 +59,98 @@
   {
    "type": "introGallery",
    "html": "<p>Living up to the legends of cinema history, the latest iteration of Godzilla arrived in Hollywood with all the glitz and spectacle he deserved. For one night, the film cast and crew, industry elite, creators and super fans came together to celebrate the unveiling of this latest chapter.</p>\n<p>From a red carpet premiere to an exclusive after party, Godzilla Minus Zero showed up in style, embodying the tone and elevated take of the movie itself while being a content and press opportunity for the world to see.</p>",
-   "media": []
+   "media": [
+    {
+     "type": "image",
+     "alt": "",
+     "src": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/godzilla-minus-zero-premiere/ihc-godzilla-20261028-1829-kkb-qArRihJa2Szt1mWxJ56o6t32OGAx2l.webp",
+     "w": 2000,
+     "h": 1333,
+     "orig": 359294,
+     "bytes": 250934
+    },
+    {
+     "type": "image",
+     "alt": "",
+     "src": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/godzilla-minus-zero-premiere/ihc-godzilla-20261028-2450-kkb-neqsFnIJxG2YjAbqAbAgrKLvNplZaF.webp",
+     "w": 2000,
+     "h": 1333,
+     "orig": 442215,
+     "bytes": 272638
+    },
+    {
+     "type": "image",
+     "alt": "",
+     "src": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/godzilla-minus-zero-premiere/ihc-godzilla-20261028-2036-kkb-wG8Pf3nFSBvzd4QQTdoU62WoCJEH8G.webp",
+     "w": 2000,
+     "h": 1333,
+     "orig": 481691,
+     "bytes": 301014
+    },
+    {
+     "type": "image",
+     "alt": "",
+     "src": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/godzilla-minus-zero-premiere/ihc-godzilla-lapremiere-2026-10-28-161206-04329-amv-lQtsa1wNhIQqE0SzMmz1ZAkMKLtkWT.webp",
+     "w": 2000,
+     "h": 1333,
+     "orig": 1599903,
+     "bytes": 159890
+    },
+    {
+     "type": "image",
+     "alt": "",
+     "src": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/godzilla-minus-zero-premiere/img-8077-8X0zlMYNAZB0rzsIcQSOVZLpDB1q0A.webp",
+     "w": 1134,
+     "h": 756,
+     "orig": 116299,
+     "bytes": 125294
+    },
+    {
+     "type": "image",
+     "alt": "",
+     "src": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/godzilla-minus-zero-premiere/img-7946-kwwm3NIFAxv6iZDxtSG6gFlabici14.webp",
+     "w": 1620,
+     "h": 1080,
+     "orig": 337658,
+     "bytes": 114446
+    },
+    {
+     "type": "image",
+     "alt": "",
+     "src": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/godzilla-minus-zero-premiere/ihc-godzilla-lapremiere-2026-10-28-150603-04172-amv-NRqWmxKc8zEjHgZ2sPFXVVRGFUiwCx.webp",
+     "w": 1433,
+     "h": 955,
+     "orig": 172080,
+     "bytes": 159254
+    },
+    {
+     "type": "image",
+     "alt": "",
+     "src": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/godzilla-minus-zero-premiere/ihc-godzilla-lapremiere-2026-10-28-183641-04896-amv-QnOmbw9Gd0YA2FRTbel7FwVKgq92Uf.webp",
+     "w": 2000,
+     "h": 1333,
+     "orig": 1310421,
+     "bytes": 118824
+    },
+    {
+     "type": "image",
+     "alt": "",
+     "src": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/godzilla-minus-zero-premiere/ihc-godzilla-20261029-2852-kkb-SIzp9yG94MWB4EAcra2wi6ODDn7M8w.webp",
+     "w": 2000,
+     "h": 2500,
+     "orig": 531669,
+     "bytes": 405688
+    },
+    {
+     "type": "image",
+     "alt": "",
+     "src": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/godzilla-minus-zero-premiere/ihc-godzilla-20261029-2891-kkb-sB4kzLujabwM3JYV4vLmhuuot3X1Bg.webp",
+     "w": 2000,
+     "h": 1333,
+     "orig": 451177,
+     "bytes": 267928
+    }
+   ]
   }
  ],
  "sections": [
@@ -363,5 +454,6 @@
    "video": ""
   }
  },
- "updatedAt": "2026-11-19T23:53:41.000Z"
+ "updatedAt": "2026-11-20T19:01:47.964Z",
+ "awards": []
 }
