@@ -308,8 +308,8 @@
   "work": {
    "summary": "We threw ourselves an epic 20th anniversary party to celebrate everything IHEARTCOMIX!",
    "href": "/case-study/ihc20-anniversary-ball",
-   "month": "",
-   "year": "",
+   "month": "Oct",
+   "year": "2024",
    "bg": {
     "src": "/images/6a17798d46bd08018fbd14ce__R1A8738.JPG",
     "srcset": "/images/6a17798d46bd08018fbd14ce__R1A8738-p-500.jpg 500w, /images/6a17798d46bd08018fbd14ce__R1A8738-p-800.jpg 800w, /images/6a17798d46bd08018fbd14ce__R1A8738-p-1080.jpg 1080w, /images/6a17798d46bd08018fbd14ce__R1A8738-p-1600.jpg 1600w, /images/6a17798d46bd08018fbd14ce__R1A8738.JPG 1620w",
@@ -331,5 +331,7 @@
    "awardLogo2": "",
    "video": ""
   }
- }
+ },
+ "awards": [],
+ "updatedAt": "2026-11-20T18:06:10.467Z"
 }
