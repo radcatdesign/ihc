@@ -135,11 +135,11 @@
     {
      "type": "image",
      "alt": "",
-     "src": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/godzilla-minus-zero-premiere/ihc-godzilla-20261029-2852-kkb-SIzp9yG94MWB4EAcra2wi6ODDn7M8w.webp",
-     "w": 2000,
-     "h": 2500,
-     "orig": 531669,
-     "bytes": 405688
+     "src": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/godzilla-minus-zero-premiere/img-8448-sXuyH65Z35qG9kjM0WRrvXEwXudnKz.webp",
+     "w": 1620,
+     "h": 1080,
+     "orig": 480243,
+     "bytes": 222158
     },
     {
      "type": "image",
@@ -454,6 +454,6 @@
    "video": ""
   }
  },
- "updatedAt": "2026-11-20T19:01:47.964Z",
+ "updatedAt": "2026-11-20T19:03:47.985Z",
  "awards": []
 }
