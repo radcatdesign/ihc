@@ -79,7 +79,62 @@
     },
     {
      "type": "gallery",
-     "media": []
+     "media": [
+      {
+       "type": "image",
+       "alt": "",
+       "src": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/crystal-lake/dsc00193-IQEyFfeUsGQu0SuOgqKxhBm5QaxO1A.webp",
+       "w": 1365,
+       "h": 2048,
+       "orig": 1176513,
+       "bytes": 534870
+      },
+      {
+       "type": "image",
+       "alt": "",
+       "src": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/crystal-lake/dsc00232-cBPAQCjhKruqQCl1wIHBvL2jwiXxiA.webp",
+       "w": 1630,
+       "h": 1365,
+       "orig": 1251770,
+       "bytes": 444932
+      },
+      {
+       "type": "image",
+       "alt": "",
+       "src": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/crystal-lake/dsc00357-uX00MGTVGb8OGlkJLWWIgCPb9MW6lw.webp",
+       "w": 1365,
+       "h": 2048,
+       "orig": 1194300,
+       "bytes": 599092
+      },
+      {
+       "type": "image",
+       "alt": "",
+       "src": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/crystal-lake/dsc00242-kqdjgo4Xz6wqZhnc2UQdMSXugGzsNT.webp",
+       "w": 1365,
+       "h": 2048,
+       "orig": 936540,
+       "bytes": 404618
+      },
+      {
+       "type": "image",
+       "alt": "",
+       "src": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/crystal-lake/dsc00267-ASzTnGcdnjVnmtCqqfJRKbYe0E6Jjq.webp",
+       "w": 2000,
+       "h": 1666,
+       "orig": 59677508,
+       "bytes": 543076
+      },
+      {
+       "type": "image",
+       "alt": "",
+       "src": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/crystal-lake/dsc00208-613nJai8ioRW2b5iOduoELOZEZwMc0.webp",
+       "w": 2000,
+       "h": 1333,
+       "orig": 905917,
+       "bytes": 264626
+      }
+     ]
     }
    ]
   },
@@ -173,5 +228,5 @@
    "video": ""
   }
  },
- "updatedAt": "2026-11-20T00:17:28.478Z"
+ "updatedAt": "2026-11-20T00:52:28.743Z"
 }
