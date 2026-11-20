@@ -564,7 +564,7 @@
    "homepage": true,
    "noindex": false,
    "thumb": "/images/6ae2343f7b199ec705df943d_577A0924_7jECkGIL-t800.webp",
-   "updatedAt": "",
+   "updatedAt": "2026-11-20T18:08:29.085Z",
    "category": "Film",
    "year": "2026",
    "month": "Jul",
@@ -579,7 +579,10 @@
     "Narrative Development",
     "Creators"
    ],
-   "awards": [],
+   "awards": [
+    "Silver Clio",
+    "Bronze Clio"
+   ],
    "sections": 6
   },
   {
@@ -1994,6 +1997,10 @@
   }
  ],
  "awards": [
+  {
+   "name": "Bronze Clio",
+   "slug": "bronze-clio"
+  },
   {
    "name": "Clio Shortlist",
    "slug": "clio-shortlist"

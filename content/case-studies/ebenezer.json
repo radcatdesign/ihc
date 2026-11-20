@@ -438,5 +438,16 @@
    "awardLogo2": "",
    "video": ""
   }
- }
+ },
+ "awards": [
+  {
+   "name": "Silver Clio",
+   "slug": "silver-clio"
+  },
+  {
+   "name": "Bronze Clio",
+   "slug": "bronze-clio"
+  }
+ ],
+ "updatedAt": "2026-11-20T18:08:29.085Z"
 }
