@@ -1,0 +1,139 @@
+{
+ "slug": "cliff-booth",
+ "pageId": "a1075a3531ad787d993299e7",
+ "title": "Cliff Booth",
+ "seoTitle": "Cliff Booth",
+ "description": "",
+ "noindex": false,
+ "client": "Netflix",
+ "subtitle": "",
+ "heroImage": {
+  "src": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/cliff-booth/ihc-cliffbooth-hollywoodtour-2026-11-16-142712-02184-amv-PUqNTEUh7zIHxKpaptaVLfBcqA5cte.webp",
+  "srcset": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/cliff-booth/ihc-cliffbooth-hollywoodtour-2026-11-16-142712-02184-amv-jpg-ERlKNWqnudHAzpNgLR7jTH8zESNugt.webp 1200w, https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/cliff-booth/ihc-cliffbooth-hollywoodtour-2026-11-16-142712-02184-amv-PUqNTEUh7zIHxKpaptaVLfBcqA5cte.webp 2048w",
+  "sizes": "100vw",
+  "orig": 2348839,
+  "bytes": 302836
+ },
+ "heroVimeo": "",
+ "stats": [
+  {
+   "value": "4",
+   "label": "Bus Tours"
+  },
+  {
+   "value": "81",
+   "label": "Guests"
+  }
+ ],
+ "services": [
+  {
+   "name": "Fabrication Production",
+   "slug": "fabrication-production"
+  },
+  {
+   "name": "Narrative Development",
+   "slug": "narrative-development"
+  },
+  {
+   "name": "Creative Direction",
+   "slug": "creative-direction"
+  }
+ ],
+ "awards": [],
+ "headline": "“You guys really did the ’70s right!” - guest<br>",
+ "intro": "IHC produced a 1977's inspired bus tour around los angeles for netflix's film <em>the misadventures of cliff booth</em>.",
+ "introPieces": [
+  {
+   "type": "introGallery",
+   "media": [],
+   "html": ""
+  }
+ ],
+ "sections": [
+  {
+   "title": "xxx",
+   "pieces": [
+    {
+     "type": "text",
+     "html": ""
+    },
+    {
+     "type": "gallery",
+     "media": []
+    }
+   ]
+  },
+  {
+   "title": "xxx",
+   "pieces": [
+    {
+     "type": "text2",
+     "left": "",
+     "right": ""
+    },
+    {
+     "type": "gallery",
+     "media": []
+    }
+   ]
+  },
+  {
+   "title": "xxx",
+   "pieces": [
+    {
+     "type": "text",
+     "html": ""
+    },
+    {
+     "type": "gallery",
+     "media": []
+    }
+   ]
+  },
+  {
+   "title": "xxx",
+   "pieces": [
+    {
+     "type": "text",
+     "html": ""
+    },
+    {
+     "type": "gallery",
+     "media": []
+    }
+   ]
+  },
+  {
+   "title": "WATCH THE RECAP",
+   "pieces": [
+    {
+     "type": "video"
+    }
+   ]
+  }
+ ],
+ "listing": {
+  "listed": false,
+  "work": {
+   "summary": "We partnered with Starline Tours to bring guests into the seedy Hollywood world of Cliff Booth through a custom mis-adventures bus tour that blended historical storytelling and unexpected surprises.",
+   "href": "/case-study/cliff-booth",
+   "month": "Nov",
+   "year": "2026",
+   "bg": null
+  },
+  "home": {
+   "showHomepage": false,
+   "category": "",
+   "image": "",
+   "gif": "",
+   "vimeo": "",
+   "ip": "",
+   "award": false,
+   "awardTitle": "",
+   "awardLogo1": "",
+   "awardLogo2": "",
+   "video": ""
+  }
+ },
+ "updatedAt": "2026-11-20T21:00:14.791Z"
+}
