@@ -41,11 +41,93 @@
  ],
  "awards": [],
  "headline": "“You guys really did the ’70s right!” - guest<br>",
- "intro": "IHC produced a 1977's inspired starline bus tour around los angeles for netflix's premiere of<em>the misadventures of cliff booth</em>.",
+ "intro": "IHC produced a 1977 inspired starline bus tour around los angeles for netflix's premiere of<em>the misadventures of cliff booth</em>.",
  "introPieces": [
   {
    "type": "introGallery",
-   "media": [],
+   "media": [
+    {
+     "type": "image",
+     "alt": "",
+     "src": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/cliff-booth/ihc-cliffbooth-hollywoodtour-2026-11-16-151311-02265-amv-J3jGaPsQVi5BqLaVtzIhePvv3Xtn5B.webp",
+     "w": 2000,
+     "h": 1333,
+     "orig": 3228917,
+     "bytes": 310436
+    },
+    {
+     "type": "image",
+     "alt": "",
+     "src": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/cliff-booth/ihc-cliffbooth-hollywoodtour-2026-11-16-140902-01906-amv-ojylAznsS5JMEPVDQcczL4bkY8aLW8.webp",
+     "w": 2000,
+     "h": 1333,
+     "orig": 2199412,
+     "bytes": 259368
+    },
+    {
+     "type": "image",
+     "alt": "",
+     "src": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/cliff-booth/ihc-cliffbooth-hollywoodtour-2026-11-16-142617-02162-amv-C0TwAohMKPIxCPcNmkUTw7tSjRZ7k1.webp",
+     "w": 2000,
+     "h": 1333,
+     "orig": 2696948,
+     "bytes": 286428
+    },
+    {
+     "type": "image",
+     "alt": "",
+     "src": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/cliff-booth/ihc-cliffbooth-hollywoodtour-2026-11-16-142842-02191-amv-eiDnArtBNiqbCC1j6alAAxqRCWNTyH.webp",
+     "w": 2000,
+     "h": 1333,
+     "orig": 2240008,
+     "bytes": 215308
+    },
+    {
+     "type": "image",
+     "alt": "",
+     "src": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/cliff-booth/ihc-cliffbooth-hollywoodtour-2026-11-16-133602-01403-amv-ZvGK2IDlbBNYYvI1tYME8yPrdGvRgE.webp",
+     "w": 2000,
+     "h": 1333,
+     "orig": 2162493,
+     "bytes": 293600
+    },
+    {
+     "type": "image",
+     "alt": "",
+     "src": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/cliff-booth/ihc-cliffbooth-hollywoodtour-2026-11-16-140743-01882-amv-6YZrHxnqVNFJKkemJPPTMClTLSOkki.webp",
+     "w": 2000,
+     "h": 1333,
+     "orig": 2894758,
+     "bytes": 260940
+    },
+    {
+     "type": "image",
+     "alt": "",
+     "src": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/cliff-booth/ihc-cliffbooth-hollywoodtour-2026-11-16-161634-02637-amv-QWi5VGe8SLqX9m9mhB2NulnIruM96P.webp",
+     "w": 2000,
+     "h": 1333,
+     "orig": 3224895,
+     "bytes": 338628
+    },
+    {
+     "type": "image",
+     "alt": "",
+     "src": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/cliff-booth/ihc-cliffbooth-hollywoodtour-2026-11-16-161034-02572-amv-m4qUbPlI3eIfY493JbqtNZBIIjpWSP.webp",
+     "w": 2000,
+     "h": 1333,
+     "orig": 3217838,
+     "bytes": 331120
+    },
+    {
+     "type": "image",
+     "alt": "",
+     "src": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/cliff-booth/ihc-cliffbooth-hollywoodtour-2026-11-16-155736-02357-amv-LXmvY5SV4tIjcHQhvf52b7Tme8dIIq.webp",
+     "w": 2000,
+     "h": 1333,
+     "orig": 3655011,
+     "bytes": 338478
+    }
+   ],
    "html": "<p>We partnered with Starline Tours to bring guests into the seedy Hollywood world of Cliff Booth through a custom mis-adventures bus tour that blended historical storytelling and unexpected surprises.</p><p>The tour offered a unique and compelling perspective of Cliff Booth’s world ahead of the film’s premiere. Guests experienced a mix of behind-the-scenes Hollywood insights and visual moments designed for capture, with a mid-way F&amp;B stop at a local tiki bar.</p>"
   }
  ],
@@ -360,5 +442,5 @@
    "video": ""
   }
  },
- "updatedAt": "2026-11-21T00:12:21.428Z"
+ "updatedAt": "2026-11-21T00:23:33.181Z"
 }
