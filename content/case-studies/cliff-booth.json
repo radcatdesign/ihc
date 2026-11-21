@@ -143,11 +143,93 @@
     {
      "type": "text2",
      "left": "<p>The tour featured locations tied to the film, alongside longtime Hollywood landmarks that evoke the era. Highlights included Astro Burger and Lucy's El Adobe, both appearing in the film. The Cinerama Dome, Vista Theatre, and New Beverly Cinema connected the tour to the moviegoing culture and cinematic influences that shaped Tarantino’s films.</p>",
-     "right": "<p>Before boarding, guests received a branded brochure that previewed the tour route and introduced in-world details. Once aboard, guests were welcomed with ’70s-era snacks, branded sunglasses, and a Polaroid camera with film to capture moments from the tour. Beginning and ending in the heart of Hollywood, the route connected iconic landmarks and filming locations.</p>"
+     "right": "<p>Before boarding, guests received a branded brochure that previewed the tour route and introduced in-world details. Once aboard, guests were welcomed with ’70s-era snacks, branded sunglasses, and a Polaroid camera with film to capture moments from the tour. Our guides followed a custom script developed in collaboration with Starline Tours to bring the film’s world to life.</p>"
     },
     {
      "type": "gallery",
-     "media": []
+     "media": [
+      {
+       "type": "image",
+       "alt": "",
+       "src": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/cliff-booth/ihc-cliffbooth-hollywoodtour-2026-11-16-140319-01783-amv-EeieMjKm2nh6GFmZDZ9ctYzqbvtaJz.webp",
+       "w": 2000,
+       "h": 1333,
+       "orig": 1944570,
+       "bytes": 221542
+      },
+      {
+       "type": "image",
+       "alt": "",
+       "src": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/cliff-booth/ihc-cliffbooth-hollywoodtour-2026-11-16-134633-01610-amv-WuVSxdwat3PJrbB7JVzCpialXQqO1n.webp",
+       "w": 2000,
+       "h": 1333,
+       "orig": 3919136,
+       "bytes": 703518
+      },
+      {
+       "type": "image",
+       "alt": "",
+       "src": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/cliff-booth/ihc-cliffbooth-hollywoodtour-2026-11-16-140623-01852-amv-OLsFxneUnSGixCljHS7zinqKVTEy5q.webp",
+       "w": 2000,
+       "h": 1333,
+       "orig": 2332772,
+       "bytes": 200100
+      },
+      {
+       "type": "image",
+       "alt": "",
+       "src": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/cliff-booth/ihc-cliffbooth-hollywoodtour-2026-11-16-141638-02043-amv-s9lLpylpAnxn766Hobtcnd5oUfT18W.webp",
+       "w": 2000,
+       "h": 1333,
+       "orig": 2869022,
+       "bytes": 220272
+      },
+      {
+       "type": "image",
+       "alt": "",
+       "src": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/cliff-booth/ihc-cliffbooth-hollywoodtour-2026-11-16-142108-02095-amv-8buntRfifJj9qqIkHmdd2dBwhmXXRg.webp",
+       "w": 2000,
+       "h": 1333,
+       "orig": 3161138,
+       "bytes": 217536
+      },
+      {
+       "type": "image",
+       "alt": "",
+       "src": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/cliff-booth/ihc-cliffbooth-hollywoodtour-2026-11-16-164603-02870-amv-euGhi8bouKXW1MkhbDbGgChqNL9rwW.webp",
+       "w": 2000,
+       "h": 1333,
+       "orig": 2983529,
+       "bytes": 215974
+      },
+      {
+       "type": "image",
+       "alt": "",
+       "src": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/cliff-booth/ihc-cliffbooth-hollywoodtour-2026-11-16-151317-02307-amv-71ph4A6BE2WwDDlzjPk16CzU8V1cJ5.webp",
+       "w": 1917,
+       "h": 1278,
+       "orig": 2160669,
+       "bytes": 327508
+      },
+      {
+       "type": "image",
+       "alt": "",
+       "src": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/cliff-booth/ihc-cliffbooth-hollywoodtour-2026-11-16-172420-02934-amv-QwpAGuokBX060hr8Fy9BLPc8OYOQlY.webp",
+       "w": 1793,
+       "h": 1195,
+       "orig": 2612999,
+       "bytes": 367350
+      },
+      {
+       "type": "image",
+       "alt": "",
+       "src": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/cliff-booth/ihc-cliffbooth-hollywoodtour-2026-11-16-142627-02164-amv-kUMQ1ZH2THMKes1ntbFoLrn5Mh0k5J.webp",
+       "w": 2000,
+       "h": 1333,
+       "orig": 2771351,
+       "bytes": 295092
+      }
+     ]
     }
    ]
   },
@@ -196,5 +278,5 @@
    "video": ""
   }
  },
- "updatedAt": "2026-11-20T23:55:37.270Z"
+ "updatedAt": "2026-11-21T00:02:28.880Z"
 }
