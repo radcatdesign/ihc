@@ -62,16 +62,16 @@
   {
    "type": "introGallery",
    "media": [],
-   "html": ""
+   "html": "<p>Ahead of the theatrical release of Ebenezer, Johnny Depp reprised his role as Scrooge for a major public stunt in New York City.&nbsp;</p><p>In a decked out corner of Bryant Park Winter Village, Ebenezer caused festive mayhem and holiday chaos, all designed and captured to cause a media stir. Incognito actors and creators were planted inside the madness to drive the action forward and provide a unique perspective to talk about afterwards.&nbsp;</p><p>Following the stunt, the Bah-Hum-Bus hit the streets. The wrapped double-decker toured the city with carolers on board singing Scrooge-ified versions of classic Christmas carols, continuing the cheer and driving awareness.</p>"
   }
  ],
  "sections": [
   {
-   "title": "xxx",
+   "title": "the details",
    "pieces": [
     {
      "type": "text",
-     "html": ""
+     "html": "<p>Our “stage,” with seasonal props and decor, was set in advance. Each moment was prepared and rehearsed for optimal content capture. We directed Johnny’s movements through an earpiece, and cued the actors and carolers on when to approach him. A combination of hidden-cameras and camera operators captured it all. Key interactions relied on a planted actor or creator, so Johnny knew who to engage with. They were strategically placed throughout the footprint for optimal footage.</p>"
     },
     {
      "type": "gallery",
@@ -80,12 +80,12 @@
    ]
   },
   {
-   "title": "xxx",
+   "title": "the beats",
    "pieces": [
     {
      "type": "text2",
-     "left": "",
-     "right": ""
+     "left": "Ebenezer entered the Winter Village and immediately took issue with all of the holiday cheer. A charity worker dressed as Santa asked Ebenezer to donate. Disgusted, he yanked down Santa’s beard and confiscated his bell. A Last Crumb staffer offered him a cookie, which he promptly tossed. Ebenezer spotted a “free gift wrapping” station and tore it apart. Ebenezer complained about the excessive decor and pulled it all down.",
+     "right": "&nbsp;Just as Ebenezer was making his way through the wreckage, a group of festive carolers descended on him. He tried to silence them, knocking the songbooks out of their hands. Fed up, he fled toward the exit, with the carolers right behind him spreading even more cheer. Just before leaving, he grabbed a stash of snowballs and lobbed them at the carolers until he ran out."
     },
     {
      "type": "gallery",
@@ -94,20 +94,7 @@
    ]
   },
   {
-   "title": "xxx",
-   "pieces": [
-    {
-     "type": "text",
-     "html": ""
-    },
-    {
-     "type": "gallery",
-     "media": []
-    }
-   ]
-  },
-  {
-   "title": "xxx",
+   "title": "bah hum bus",
    "pieces": [
     {
      "type": "text",
@@ -151,5 +138,5 @@
    "video": ""
   }
  },
- "updatedAt": "2026-11-21T00:33:04.667Z"
+ "updatedAt": "2026-11-21T00:43:52.814Z"
 }
