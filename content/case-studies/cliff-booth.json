@@ -242,7 +242,89 @@
     },
     {
      "type": "gallery",
-     "media": []
+     "media": [
+      {
+       "type": "image",
+       "alt": "",
+       "src": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/cliff-booth/ihc-cliffbooth-hollywoodtour-2026-11-16-163239-02709-amv-Pj24osSkNc6jBLwOLOwhCDq1L23bCg.webp",
+       "w": 2000,
+       "h": 1333,
+       "orig": 3534966,
+       "bytes": 407822
+      },
+      {
+       "type": "image",
+       "alt": "",
+       "src": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/cliff-booth/ihc-cliffbooth-hollywoodtour-2026-11-16-163649-02757-amv-NpItmsh1UFot7lDTqzLMn5RF17xb7i.webp",
+       "w": 2000,
+       "h": 1333,
+       "orig": 2874844,
+       "bytes": 214422
+      },
+      {
+       "type": "image",
+       "alt": "",
+       "src": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/cliff-booth/ihc-cliffbooth-hollywoodtour-2026-11-16-155939-02412-amv-eYPxgN2dA4d7EgAtu2B3zN7zFnyRCU.webp",
+       "w": 2000,
+       "h": 1333,
+       "orig": 3515185,
+       "bytes": 342896
+      },
+      {
+       "type": "image",
+       "alt": "",
+       "src": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/cliff-booth/ihc-cliffbooth-hollywoodtour-2026-11-16-160637-02503-amv-u8Mh5bG4xyDcAXsJrXIOyLxmdhbYOL.webp",
+       "w": 2000,
+       "h": 1333,
+       "orig": 3776826,
+       "bytes": 502650
+      },
+      {
+       "type": "image",
+       "alt": "",
+       "src": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/cliff-booth/ihc-cliffbooth-hollywoodtour-2026-11-16-162412-02679-amv-8rOZlXDxOB7eFzd35EcF3hS3BZzuCE.webp",
+       "w": 2000,
+       "h": 1333,
+       "orig": 3498111,
+       "bytes": 456338
+      },
+      {
+       "type": "image",
+       "alt": "",
+       "src": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/cliff-booth/ihc-cliffbooth-hollywoodtour-2026-11-16-160736-02520-amv-bxoxHd4NT3WnFNT3bOUYWzj9ViBwXr.webp",
+       "w": 2000,
+       "h": 1333,
+       "orig": 3847076,
+       "bytes": 500028
+      },
+      {
+       "type": "image",
+       "alt": "",
+       "src": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/cliff-booth/ihc-cliffbooth-hollywoodtour-2026-11-16-163449-02732-amv-UXCahOrHqxIYnzmssvZapc8R5ukfsa.webp",
+       "w": 2000,
+       "h": 1333,
+       "orig": 1880600,
+       "bytes": 98270
+      },
+      {
+       "type": "image",
+       "alt": "",
+       "src": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/cliff-booth/ihc-cliffbooth-hollywoodtour-2026-11-16-161512-02619-amv-73OQcGoagiwqK5BnI1IsF33MMCatHP.webp",
+       "w": 2000,
+       "h": 1333,
+       "orig": 3932340,
+       "bytes": 552388
+      },
+      {
+       "type": "image",
+       "alt": "",
+       "src": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/cliff-booth/ihc-cliffbooth-hollywoodtour-2026-11-16-160924-02548-amv-PoutCba2C6b5Ay7MkusgfXxXYFRHet.webp",
+       "w": 2000,
+       "h": 1333,
+       "orig": 3423960,
+       "bytes": 336978
+      }
+     ]
     }
    ]
   },
@@ -278,5 +360,5 @@
    "video": ""
   }
  },
- "updatedAt": "2026-11-21T00:02:28.880Z"
+ "updatedAt": "2026-11-21T00:12:21.428Z"
 }
