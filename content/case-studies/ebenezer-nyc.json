@@ -1,0 +1,155 @@
+{
+ "slug": "ebenezer-nyc",
+ "pageId": "90b4913c23946cebd0a1648c",
+ "title": "Ebenezer NYC",
+ "seoTitle": "Ebenezer NYC",
+ "description": "",
+ "noindex": false,
+ "client": "Paramount",
+ "subtitle": "",
+ "heroImage": {
+  "src": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/ebenezer-nyc/288sv6-0383-bilqwuwd-ud-lWtvq4BtQ3UHEWVwWWuwTLi3xMQmTZ.webp",
+  "srcset": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/ebenezer-nyc/288sv6-0383-bilqwuwd-ud-jpg-1200-pr6ZVIp0xWuurvvcrAGB4NpbG60jzm.webp 1200w, https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/ebenezer-nyc/288sv6-0383-bilqwuwd-ud-lWtvq4BtQ3UHEWVwWWuwTLi3xMQmTZ.webp 2400w",
+  "sizes": "100vw",
+  "orig": 7616901,
+  "bytes": 429714
+ },
+ "heroVimeo": "",
+ "stats": [
+  {
+   "value": "19.8M+",
+   "label": "Views"
+  },
+  {
+   "value": "$1.1M+",
+   "label": "EMV"
+  },
+  {
+   "value": "750K+",
+   "label": "Likes"
+  }
+ ],
+ "services": [
+  {
+   "name": "Content Production",
+   "slug": "content-production"
+  },
+  {
+   "name": "Creative Concept",
+   "slug": "creative-concept"
+  },
+  {
+   "name": "Creative Direction",
+   "slug": "creative-direction"
+  },
+  {
+   "name": "Creators",
+   "slug": "creators"
+  },
+  {
+   "name": "Fabrication Production",
+   "slug": "fabrication-production"
+  },
+  {
+   "name": "Narrative Development",
+   "slug": "narrative-development"
+  }
+ ],
+ "awards": [],
+ "headline": "",
+ "intro": "",
+ "introPieces": [
+  {
+   "type": "introGallery",
+   "media": [],
+   "html": ""
+  }
+ ],
+ "sections": [
+  {
+   "title": "xxx",
+   "pieces": [
+    {
+     "type": "text",
+     "html": ""
+    },
+    {
+     "type": "gallery",
+     "media": []
+    }
+   ]
+  },
+  {
+   "title": "xxx",
+   "pieces": [
+    {
+     "type": "text2",
+     "left": "",
+     "right": ""
+    },
+    {
+     "type": "gallery",
+     "media": []
+    }
+   ]
+  },
+  {
+   "title": "xxx",
+   "pieces": [
+    {
+     "type": "text",
+     "html": ""
+    },
+    {
+     "type": "gallery",
+     "media": []
+    }
+   ]
+  },
+  {
+   "title": "xxx",
+   "pieces": [
+    {
+     "type": "text",
+     "html": ""
+    },
+    {
+     "type": "gallery",
+     "media": []
+    }
+   ]
+  },
+  {
+   "title": "WATCH THE RECAP",
+   "pieces": [
+    {
+     "type": "video"
+    }
+   ]
+  }
+ ],
+ "listing": {
+  "listed": false,
+  "work": {
+   "summary": "",
+   "href": "/case-study/ebenezer-nyc",
+   "month": "",
+   "year": "",
+   "bg": null
+  },
+  "home": {
+   "showHomepage": false,
+   "category": "",
+   "image": "",
+   "gif": "",
+   "vimeo": "",
+   "ip": "",
+   "award": false,
+   "awardTitle": "",
+   "awardLogo1": "",
+   "awardLogo2": "",
+   "video": ""
+  }
+ },
+ "updatedAt": "2026-11-21T00:33:04.667Z"
+}
