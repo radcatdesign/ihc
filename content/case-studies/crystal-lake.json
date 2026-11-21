@@ -105,6 +105,15 @@
     {
      "type": "image",
      "alt": "",
+     "src": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/crystal-lake/dsc01031-T1KuQP44rnB3ae9HvjojsXKQHY4zMD.webp",
+     "w": 2000,
+     "h": 3000,
+     "orig": 75311550,
+     "bytes": 1409874
+    },
+    {
+     "type": "image",
+     "alt": "",
      "src": "https://drdhjanu9hazf2x1.public.blob.vercel-storage.com/case-studies/crystal-lake/dsc01093-9iL46F2dFiWTlhJ5a1BxyHqzoM8DNT.webp",
      "w": 2000,
      "h": 3000,
@@ -521,5 +530,5 @@
    "video": ""
   }
  },
- "updatedAt": "2026-11-20T21:01:17.573Z"
+ "updatedAt": "2026-11-21T01:32:08.022Z"
 }
