@@ -5,7 +5,7 @@
  "description": "For two days in downtown Los Angeles, Paramount and Legendary hosted a press and creator junket from inside the world of Street Fighter.",
  "noindex": false,
  "title": "Street Fighter",
- "client": "Paramount",
+ "client": "Paramount • Legendary",
  "subtitle": "",
  "heroImage": {
   "src": "/images/6af27599d528921f9c87e100_DSC_5781-p-2000.webp",
@@ -62,11 +62,6 @@
     {
      "type": "image",
      "src": "/images/6af3710613c404f82ca2774e_DSC_5741-p-2000.avif",
-     "alt": ""
-    },
-    {
-     "type": "image",
-     "src": "/images/6af3710537a4b2f6b6ee2d90__DSC9849-p-2000.avif",
      "alt": ""
     }
    ]
@@ -283,5 +278,6 @@
    "video": ""
   }
  },
- "updatedAt": "2026-11-19T23:53:41.000Z"
+ "updatedAt": "2026-11-21T01:11:44.051Z",
+ "awards": []
 }
