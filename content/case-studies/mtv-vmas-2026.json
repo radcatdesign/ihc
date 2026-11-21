@@ -5,7 +5,7 @@
  "description": "",
  "noindex": false,
  "title": "MTV VMAs 2026",
- "client": "CBS • Paramount Pictures",
+ "client": "CBS",
  "subtitle": "",
  "heroImage": {
   "src": "/images/6aeba6837a6134d16cca0abb_VMA_MOON_MOBILE_SATURDAY-01445-p-2000.jpeg",
@@ -54,7 +54,7 @@
   }
  ],
  "headline": "“This just made me more HYPE for the VMAs!” <em>- </em><em>@asantemadrigal</em>",
- "intro": "PARAMOUNT hired IHC TO HYPE UP THE VMAS WITH MOBILE DJ POP UPS AROUND Los Angeles LEADING UP TO THE awards.",
+ "intro": "CBS hired IHC TO HYPE UP THE VMAS WITH MOBILE DJ POP UPS AROUND Los Angeles LEADING UP TO THE awards.",
  "introPieces": [
   {
    "type": "introGallery",
@@ -86,11 +86,6 @@
     },
     {
      "type": "image",
-     "src": "/images/6af241d53963589a764482e4_VMA_MOON_MOBILE_FRIDAY-00860-p-2000.jpg",
-     "alt": ""
-    },
-    {
-     "type": "image",
      "src": "/images/6af241d6940b8d59083969b3_VMA_MOON_MOBILE_FRIDAY-00834-p-2000.avif",
      "alt": ""
     },
@@ -110,7 +105,7 @@
      "alt": ""
     }
    ],
-   "html": "<p>Pop-up performances usually ask people to travel to one fixed venue, but The Moon Mobile turned the journey itself into the show with the final destination being music’s most iconic night. </p>\n<p>Drumming up excitement with the unexpected, in the days leading up to the VMAs, established DJs performed live from our custom moving stage that served as a traveling billboard across Los Angeles. </p>\n<p>At multiple stops, the Moon Mobile met a waiting crowd and created an unmissable sense of urgency as it drove endless social sharing about ‘what happened next’ - as it lead all the way up to the VMAs themselves.</p>"
+   "html": "<p>Pop-up performances usually ask people to travel to one fixed venue, but The Moon Mobile turned the journey itself into the show with the final destination being music’s most iconic night.&nbsp;</p>\n<p>Drumming up excitement with the unexpected, in the days leading up to the VMAs, established DJs performed live from our custom moving stage that served as a traveling billboard across Los Angeles.&nbsp;</p>\n<p>At multiple stops, the Moon Mobile met a waiting crowd and created an unmissable sense of urgency driving endless social sharing about ‘what happened next’ - as it lead all the way up to the VMAs themselves.</p>"
   }
  ],
  "sections": [
@@ -119,7 +114,7 @@
    "pieces": [
     {
      "type": "text",
-     "html": "<p>We worked with <a href=\"https://www.galpinautosports.com/\"><strong>Galpin Auto Sports</strong></a> to pimp out a 36-ft monster limo truck and turned it into the Moon Mobile featuring live DJs sets, creators, and a hot seat for press to come along for the ride. The Moon Mobile included a fully custom blue chrome wrap, VMAs logo custom grill, and branded decals. </p>"
+     "html": "<p>We worked with <a href=\"https://www.galpinautosports.com/\"><strong>Galpin Auto Sports</strong></a> to pimp out a 36-ft monster limo truck and turned it into the Moon Mobile featuring live DJs sets, creators, and a hot seat for press to come along for the ride. The Moon Mobile included a fully custom blue chrome wrap, VMAs logo fabricated grill, and branded decals. </p>"
     },
     {
      "type": "gallery",
@@ -358,5 +353,7 @@
    "awardLogo2": "",
    "video": ""
   }
- }
+ },
+ "awards": [],
+ "updatedAt": "2026-11-21T01:10:09.121Z"
 }
