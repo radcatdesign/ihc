@@ -2,7 +2,7 @@
  "slug": "mtv-vmas-2026",
  "pageId": "6ae12ff6b18a6fa47a9200cb",
  "seoTitle": "MTV VMAs 2026",
- "description": "",
+ "description": "Pop-up performances usually ask people to travel to one fixed venue, but The Moon Mobile turned the journey itself into the show with the final destination being music’s most iconic night. ",
  "noindex": false,
  "title": "MTV VMAs 2026",
  "client": "CBS",
@@ -326,9 +326,9 @@
   }
  ],
  "listing": {
-  "listed": false,
+  "listed": true,
   "work": {
-   "summary": "",
+   "summary": "Pop-up performances usually ask people to travel to one fixed venue, but The Moon Mobile turned the journey itself into the show with the final destination being music’s most iconic night. ",
    "href": "/case-study/mtv-vmas-2026",
    "month": "Sep",
    "year": "2026",
@@ -355,5 +355,5 @@
   }
  },
  "awards": [],
- "updatedAt": "2026-11-21T01:10:09.121Z"
+ "updatedAt": "2026-11-21T01:10:42.771Z"
 }
